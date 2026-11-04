@@ -1,128 +1,86 @@
+**完整产品设计与迭代报告：[阅读 PDF](docs/reports/psychstats-product-design-and-iteration.pdf) · [下载 Word](docs/reports/psychstats-product-design-and-iteration.docx)**
+
 # 心理统计学术语图鉴 · PsychStats Platform
 
-阅读心理统计科普，理解概念与方法；在测试站生成自定义术语解释，通过知识画布组织自己的知识框架。
+从一个陌生术语出发，理解它的含义与用途，再把新概念连接进自己的知识框架。
 
-**[进入正式站：开始学习](https://cdst.site/psy-stats/)**　|　**[进入测试站：体验新功能](https://cdst.site/psy-stats-test/)**
+**[进入正式站：开始学习](https://cdst.site/psy-stats/)**　|　**[进入测试站：体验自定义术语与知识画布](https://cdst.site/psy-stats-test/)**
 
 | 你想做什么？ | 从这里开始 |
 | --- | --- |
-| **学习和使用网站** | [正式站](https://cdst.site/psy-stats/)提供无模型的日常学习功能；[测试站](https://cdst.site/psy-stats-test/)增加自定义术语和知识画布 |
-| **单独使用术语 Skill** | [查看 Skill](term_explainer/skills/explain-research-term/SKILL.md) · [下载完整 Skill 包](downloads/explain-research-term.zip) · [使用说明](docs/SKILL_USAGE.md) |
-| **研究或修改实现** | [查看源码导航](#源码与技术实现) · [本地运行说明](docs/RUNNING.md) · [检查记录](docs/VERIFICATION.md) |
+| **学习和使用网站** | 打开正式站阅读已有科普；在测试站体验自定义术语与知识画布 |
+| **单独使用术语 Skill** | [查看 Skill](term_explainer/skills/explain-research-term/SKILL.md) · [下载完整包](downloads/explain-research-term.zip) · [使用说明](docs/SKILL_USAGE.md) |
+| **研究或修改实现** | [源码导航](#源码与运行) · [本地运行说明](docs/RUNNING.md) |
 
-日常使用直接打开网站网址。下面展示它能帮助你完成的学习任务。
+## 为谁解决什么问题？
 
-## 从一个概念开始，逐步建立知识框架
+面向具备基础心理学认知的本科生、研究生及科研人员。学习时，知道一个术语名称之后，往往还需要理解前置概念、找到具体例子、看懂图表，并判断它能用于什么问题。
 
-### 1. 想看懂一个心理统计概念
-
-学习时，你可能认识“相关系数”这个词，却还想知道它回答什么问题、公式里的符号是什么意思、软件算出的结果该怎么解释。
-
-进入**正式站**，按主题浏览术语，也可以直接搜索。结合解释、图示、公式、R 实操与测验，从概念理解走到分析结果的阅读。常态功能运行时不调用生成模型。
-
-**正式站实景：按主题浏览、筛选和查找术语。**
-
-![正式站首页：主题导航、筛选和术语卡片](docs/images/official-reading.png)
-
-### 2. 想理解一个新的研究术语
-
-遇到网站尚未收录的概念，或希望结合自己的文献学习时，进入**测试站 → 我的知识库 → 生成科普**。按页面提示提供术语及材料，使用生成流程整理解释、图示、理解检查和知识关联。
-
-自定义术语生成目前需要管理员提供的内测邀请。入口：[打开生成科普](https://cdst.site/psy-stats-test/library/index.html#view=generate)。
-
-**测试站实景：自定义术语科普入口，截图显示未登录的邀请验证状态。**
-
-![测试站：生成科普入口及内测邀请验证](docs/images/test-generation.png)
-
-### 3. 想把零散知识连接起来
-
-理解了多个术语后，你可能还想整理它们的先后关系、包含关系和应用联系。进入**测试站 → 我的知识库 → 知识关系**，浏览官方框架，或建立个人副本，组织自己的术语与关系。
-
-画布支持节点阅读、平移缩放、布局与关系编辑；手动整理无需生成调用。模型辅助整理按需使用。
-
-入口：[打开知识画布](https://cdst.site/psy-stats-test/library/index.html#view=network)。
-
-**测试站实景：回归框架中所选术语的一跳知识关系。**
-
-![测试站知识画布：术语节点、关联连线与框架侧栏](docs/images/test-knowledge-canvas.png)
-
-三张截图采集于 2026-11-05，来自在线页面。截图过程使用空白浏览器环境，没有提交生成任务。
+本项目把现实问题、定义、图解、使用方法与理解检验放进同一条学习链，再通过个人知识库和知识关系支持持续积累。
 
 ## 正式站与测试站
 
 | 功能与用途 | 正式站 | 测试站 |
 | --- | --- | --- |
-| 访问入口 | [cdst.site/psy-stats/](https://cdst.site/psy-stats/) | [cdst.site/psy-stats-test/](https://cdst.site/psy-stats-test/) |
-| 常态学习 | 术语科普、图示、公式、示例、测验等无模型功能 | 提供常态学习内容 |
+| 入口 | [cdst.site/psy-stats/](https://cdst.site/psy-stats/) | [cdst.site/psy-stats-test/](https://cdst.site/psy-stats-test/) |
+| 常态学习 | 术语科普、学习路径、练习、示例数据、符号速查和结果阅读 | 提供常态学习内容 |
 | 自定义术语科普 | — | 提供，生成入口需要内测邀请 |
-| 知识画布与框架 | — | 提供知识关系浏览和个人框架组织 |
-| 运行时模型调用 | 不调用生成模型 | 科普生成及模型辅助整理环节使用模型 |
-| 适合谁 | 想直接学习、查阅和复习的人 | 想体验新功能、参与测试和反馈的人 |
+| 个人知识库与画布 | — | 保存读本与资料，浏览和组织知识框架 |
+| 运行时模型调用 | 全部为无模型功能 | 科普生成及模型辅助整理环节使用模型；常态阅读和手动整理无需生成调用 |
 
-个人知识库资料保存在当前浏览器，请使用备份功能保存自己的内容；生成时按页面确认的范围发送材料。
+想查阅和复习已有知识，进入正式站；想尝试新术语学习与个人知识组织，进入测试站。测试站新功能持续迭代。
 
-## 项目状态与反馈
+## 从学习到积累
 
-- **正式站**：提供无模型的常态学习功能。
-- **测试站**：自定义术语科普和知识画布持续迭代；生成使用内测邀请。
-- **源码仓库**：保存项目实现、使用文档和检查记录，当前为私有仓库。
-- **本次展示检查**：三个在线页面已实际打开并检查截图；此前源码归档的构建及测试结果见[验证记录](docs/VERIFICATION.md)。
+### 看懂一个已有概念
 
-遇到问题时，在 [Issues](https://github.com/GoYAY/psychstats-platform/issues) 中写明：正式站或测试站、操作步骤、预期结果、实际结果。提交截图时请移除个人材料和凭证。
+在正式站按主题浏览或直接搜索。术语页面从“你可能会问”的现实需求切入，结合操作定义、生活例子、图示、详细解释、必要公式、R 教学、理解检验和相关术语，帮助你逐步理解和使用知识。
 
-## 单独使用自定义术语 Skill
+例如，面对“均分相同的两个班，成绩分布为什么不同”，图解把集中与分散放到同一刻度下比较，再由正文说明它与统计概念的联系。
 
-这个 Skill 为 AI 提供资料核对、来源阅读、术语教学、图示规划及结构化输出规则。适合希望在支持 Skill 的 AI 工具中，围绕自己的术语和材料开展学习的人。
+![报告中的正式站示例：用两班成绩分布理解集中趋势与离散程度](docs/images/report-official-learning.png)
 
-**[下载完整 Skill 包](downloads/explain-research-term.zip)** · [阅读入口规则](term_explainer/skills/explain-research-term/SKILL.md) · [查看使用方法](docs/SKILL_USAGE.md)
+### 为新术语建立学习读本
 
-下载包包含入口及全部包内依赖。自动生成、绘图和网页交付使用的程序服务见下方源码与运行说明。
+在[测试站生成入口](https://cdst.site/psy-stats-test/library/index.html#view=generate)输入术语，并按需提供文献。流程先核对所指概念，再依据无文献、单篇或多篇材料组织阅读与证据，生成解释、图示、理解检查和知识关联。
 
-## 源码与技术实现
+读本中的必要辅助概念可点击查看简释，也可沿关联继续阅读。完成后先预览，再确认保存到本机。生成目前需要管理员提供的内测邀请。
 
-学习流程由五个模块支持：
+![报告中的自定义术语示例：DTP 读本、模块导航与前置知识关联](docs/images/report-custom-term.png)
 
-| 模块 | 实现内容 | 源码入口 |
+以上两张界面图摘自完整报告，展示术语教学和读本的产品形态。
+
+### 保存资料，组织自己的知识框架
+
+个人知识库支持归档原件与读本、管理文献、更新内容，以及备份和导出。完整备份用于恢复资料与关系，Markdown 用于便携阅读。
+
+进入[测试站知识画布](https://cdst.site/psy-stats-test/library/index.html#view=network)，浏览官方主题网络，或建立个人框架。选中术语后查看局部关系与阅读侧栏，按需要调整布局、成员和关系，并保留人工编辑。
+
+![测试站知识画布：术语节点、关联与框架侧栏](docs/images/test-knowledge-canvas.png)
+
+个人资料保存在当前浏览器，请定期导出备份；生成时按页面确认的范围发送材料。
+
+## 源码与运行
+
+| 模块 | 实现内容 | 入口 |
 | --- | --- | --- |
-| 教材 OCR 与知识检索 | 材料识别、页码映射、分块、索引与检索 | [OCR 工具](ocr/skill/) · [检索工具](rag/) |
-| 常态科普网站 | 内容组织、静态页面构建、图示与学习交互 | [网站源码](site/) |
+| 教材 OCR 与检索 | 文本提取、OCR、页码定位、分块与检索 | [ocr/skill/](ocr/skill/) · [rag/](rag/) |
+| 常态科普网站 | 结构化内容、静态构建和学习交互 | [site/](site/) |
 | 自定义术语 Skill | 教学规则、来源要求和输出合同 | [Skill 目录](term_explainer/skills/explain-research-term/) |
-| 自定义术语生成 | 阅读、编排、绘图、任务管理与交付 | [生成后台](term_explainer/) · [服务与工具](tools/) |
-| 知识画布与框架 | 节点、关系、框架、归档与导入导出 | [画布前端](site/assets/library/) · [框架后台](term_explainer/frameworks_v2.py) |
+| 术语生成服务 | 文献处理、内容编排、绘图和任务交付 | [term_explainer/](term_explainer/) · [tools/](tools/) |
+| 知识库与框架 | 本机归档、导入导出、画布和关系组织 | [画布前端](site/assets/library/) · [框架后台](term_explainer/frameworks_v2.py) |
 
-### 本地运行常态网站
-
-准备 Python 3.11 或更高版本，以及能运行 `.mjs` 的 Node.js。在仓库根目录执行：
+本地构建常态网站需要 Python 3.11 或更高版本，以及能运行 `.mjs` 的 Node.js。在仓库根目录执行：
 
 ```powershell
-python site/build.py --mode public --check
 python site/build.py --mode public
 python -m http.server 8000 --directory site/dist
 ```
 
-打开 `http://localhost:8000`。构建使用仓库自带 KaTeX。知识库前端组装、生成服务和部署配置见[模块与运行说明](docs/RUNNING.md)。
+打开 `http://localhost:8000`。知识库组装与生成服务见[运行说明](docs/RUNNING.md)；教材材料和路径配置见[材料准备](docs/DATA_PREPARATION.md)与[路径说明](docs/PORTABILITY.md)。原件、OCR 全文、私人资料、模型权重和真实密钥由使用者在仓库外管理。
 
-### 材料与依赖
+## 项目说明与反馈
 
-本仓库保留源码、站点内容、必要资源、合成教学数据、测试和第三方许可。教材检索需要使用者按[材料准备说明](docs/DATA_PREPARATION.md)导入自己的材料。
+产品设计、功能取舍和完整迭代过程见页首报告。正式站与测试站按上表提供功能；源码和部署分别维护。
 
-教材 PDF、OCR 全文、课程页截图、课程 OCR 清单、向量索引、模型权重、真实密钥、用户原件及任务数据库未纳入。构建所需图表指纹清单仅保留校验字段。
-
-### 目录导航
-
-```text
-site/             网站源码、内容和画布前端
-term_explainer/   术语 Skill、生成与框架后台
-ocr/skill/        扫描材料 OCR 工具
-rag/              索引与检索工具
-examples/         合成教学数据及分析脚本
-tools/            构建、服务、打包与检查工具
-deploy/           配置示例、服务模板与第三方许可
-tests/            模块测试
-docs/             使用说明、实景截图与验证记录
-downloads/        可单独下载的术语 Skill 包
-```
-
-### 许可与版本
-
-第三方许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。项目开源许可证及公开范围待另行确定。源码归档与在线部署分别记录，部署前按实际版本核对。
+欢迎在 [Issues](https://github.com/GoYAY/psychstats-platform/issues) 中写明所在站点、操作步骤及遇到的问题，提交前请移除个人材料和凭证。第三方许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
