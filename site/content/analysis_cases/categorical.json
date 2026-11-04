@@ -1,0 +1,59 @@
+{
+  "id": "categorical",
+  "unit_id": "categorical",
+  "title": "分类结果是否有关联",
+  "question": "参加辅导的学生和未参加的学生，是否有不同的求助意愿？",
+  "design": "固定种子生成两组独立二元选择，比较列联表。显示 Pearson χ² 的期望频数，并同时演示 Fisher 精确检验；不能只挑较小 p。",
+  "variables": "教学数据由下方代码固定种子生成，非真实参与者资料；参数设定可在代码中查看。",
+  "script": "examples/r/output_reading/categorical.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "chi_squared",
+      "label": "Pearson χ²",
+      "meaning": "观察频数与独立性下期望频数的偏离，不是相关方向。",
+      "term": "chi-square-test",
+      "format": ".3f"
+    },
+    {
+      "field_id": "min_expected",
+      "label": "最小期望频数",
+      "meaning": "检查近似适用性；频数是人数，不能拿比例直接当原始频数输入。",
+      "term": "chi-square-test",
+      "format": ".4g"
+    },
+    {
+      "field_id": "odds_ratio",
+      "label": "Fisher 条件 OR",
+      "meaning": "方向取决于列联表的行列排列，先看表格编码再解释。",
+      "term": "odds-ratio",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这些结果最容易误读的地方",
+      "body": "同一人前后两次分类不是独立列联表问题，应考虑 McNemar；组别关联不能自动解释为辅导效果。"
+    },
+    {
+      "title": "如果没有发现明确证据",
+      "body": "先回到研究问题和估计精度，结合区间、有效样本、数据质量及模型条件判断。证据不足不等于没有作用；不反复更换方法、删样本或放宽阈值来追求显著。"
+    }
+  ],
+  "report_template": "教学列联表的 Pearson χ²({df:.0f}) = {chi_squared:.3f}，p = {p:.4g}，最小期望频数为 {min_expected:.2f}。另示 Fisher 精确检验 p = {fisher_p:.4g}；方法选择依据设计与近似条件，非显著性大小。",
+  "sources": [
+    {
+      "title": "R 官方 chisq.test 文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/chisq.test.html"
+    }
+  ],
+  "related_terms": [
+    "chi-square-test",
+    "odds-ratio"
+  ]
+}

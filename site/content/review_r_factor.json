@@ -1,0 +1,304 @@
+{
+  "terms": {
+    "pca": {
+      "packages": [],
+      "data_shape": "CSV 一行一名学生；item_1 至 item_12 为同向计分的1–5级有序题，示例420行。",
+      "example_code": "d <- read.csv(\"scale_items.csv\", stringsAsFactors = FALSE)\nitems <- paste0(\"item_\", 1:12)\nx <- d[items]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 12, all(vapply(x, sd, numeric(1)) > 0))\nfit <- prcomp(x, center = TRUE, scale. = TRUE)\nvariance_ratio <- fit$sdev^2 / sum(fit$sdev^2)\ncumulative_ratio <- cumsum(variance_ratio)\nprint(round(cbind(variance_ratio, cumulative_ratio), 4))\nprint(round(fit$rotation[, 1:3], 3))\n",
+      "your_data_code": "d <- read.csv(\"your_data.csv\", stringsAsFactors = FALSE)\nitems <- paste0(\"item_\", 1:12)\nx <- d[items]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 12, all(vapply(x, sd, numeric(1)) > 0))\nfit <- prcomp(x, center = TRUE, scale. = TRUE)\nvariance_ratio <- fit$sdev^2 / sum(fit$sdev^2)\ncumulative_ratio <- cumsum(variance_ratio)\nprint(round(cbind(variance_ratio, cumulative_ratio), 4))\nprint(round(fit$rotation[, 1:3], 3))\n",
+      "assumption_checks": [
+        "核对反向题和量纲；这里使用各题标准化后的总变异",
+        "完整案例删行只是教学处理，实际缺失机制需另评估",
+        "有序题在此按数值压缩，不宣称得到公共因素"
+      ],
+      "key_output": [
+        "variance_ratio",
+        "cumulative_ratio",
+        "rotation"
+      ],
+      "interpretation": "示例前三个主成分分别保留总方差约20.47%、18.69%和17.15%，累计56.31%。variance_ratio是各成分比例，rotation是成分权重而非共同因素载荷。三维只是展示压缩效果，不是已验证的因素数；正负方向可整体翻转。",
+      "report_template": "报告题目数、实际有效样本量、中心化与标准化设置、保留维数依据及累计保留方差，并说明用途是数据压缩。",
+      "common_errors": [
+        "把主成分当作已验证心理构念",
+        "按变量原始单位随意比较权重",
+        "在预测任务中用全部资料预先估计权重"
+      ],
+      "validation_code": "stopifnot(nrow(x) == 420, length(variance_ratio) == 12)\nstopifnot(abs(sum(variance_ratio) - 1) < 1e-10)\nstopifnot(all(diff(cumulative_ratio) >= 0))\nstopifnot(max(abs(crossprod(fit$rotation) - diag(12))) < 1e-8)",
+      "verified": true,
+      "validation_report": "logs/review_r_factor_validation.json"
+    },
+    "factor-extraction": {
+      "packages": [],
+      "data_shape": "CSV 一行一名学生；item_1 至 item_12 为同向计分的1–5级有序题，示例420行。",
+      "example_code": "d <- read.csv(\"scale_items.csv\", stringsAsFactors = FALSE)\nitems <- paste0(\"item_\", 1:12)\nx <- d[items]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 12, all(vapply(x, sd, numeric(1)) > 0))\n# 五级题按连续数值作极大似然教学近似；不是有序题推荐通用方案。\nset.seed(20261001)\nfit <- factanal(x, factors = 3, rotation = \"none\",\n               control = list(nstart = 5))\nloadings <- unclass(fit$loadings)\nuniqueness <- fit$uniquenesses\ncommunality <- 1 - uniqueness\nprint(round(loadings, 3))\nprint(round(cbind(communality, uniqueness), 3))\n",
+      "your_data_code": "d <- read.csv(\"your_data.csv\", stringsAsFactors = FALSE)\nitems <- paste0(\"item_\", 1:12)\nx <- d[items]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 12, all(vapply(x, sd, numeric(1)) > 0))\n# 五级题按连续数值作极大似然教学近似；不是有序题推荐通用方案。\nset.seed(20261001)\nfit <- factanal(x, factors = 3, rotation = \"none\",\n               control = list(nstart = 5))\nloadings <- unclass(fit$loadings)\nuniqueness <- fit$uniquenesses\ncommunality <- 1 - uniqueness\nprint(round(loadings, 3))\nprint(round(cbind(communality, uniqueness), 3))\n",
+      "assumption_checks": [
+        "此例用 Pearson 相关和正态极大似然近似；真实有序或偏斜题宜选择相应相关和估计方法",
+        "三因素是教学预设，实际应另行确定数量",
+        "核查独特方差是否触及下界及收敛"
+      ],
+      "key_output": [
+        "loadings",
+        "communality",
+        "uniqueness"
+      ],
+      "interpretation": "示例共同度约0.357–0.480，表示三因素解释每题约36%–48%的标准化变异；独特方差约0.520–0.643。未旋转载荷用于下一步旋转。这里不解读正态极大似然的普通卡方与p值，因为五级有序题仅作连续近似。",
+      "report_template": "报告有效样本量、相关矩阵类型、极大似然提取、预设因素数、独特方差范围及近似处理限制；因素数依据与旋转另述。",
+      "common_errors": [
+        "把成功运行当作估计条件成立",
+        "把 PCA 叫作共同因素提取",
+        "无视独特方差接近约束下界"
+      ],
+      "validation_code": "stopifnot(nrow(x) == 420, all(dim(loadings) == c(12, 3)))\nstopifnot(all(is.finite(loadings)), all(uniqueness > 0))\nstopifnot(all(communality > 0 & communality < 1))",
+      "verified": true,
+      "validation_report": "logs/review_r_factor_validation.json"
+    },
+    "factor-rotation": {
+      "packages": [],
+      "data_shape": "CSV 一行一名学生；item_1 至 item_12 为同向计分的1–5级有序题，示例420行。",
+      "example_code": "d <- read.csv(\"scale_items.csv\", stringsAsFactors = FALSE)\nitems <- paste0(\"item_\", 1:12)\nx <- d[items]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 12, all(vapply(x, sd, numeric(1)) > 0))\n# 同一未旋转解分别作正交与斜交旋转；有序题按连续近似。\nset.seed(20261001)\nfit <- factanal(x, factors = 3, rotation = \"none\",\n               control = list(nstart = 5))\nbase_loadings <- unclass(fit$loadings)\northogonal <- varimax(base_loadings)\noblique <- promax(base_loadings)\npattern <- unclass(oblique$loadings)\nphi <- solve(crossprod(oblique$rotmat))\nstructure <- pattern %*% phi\nprint(round(unclass(orthogonal$loadings), 3))\nprint(round(pattern, 3))\nprint(round(phi, 3))\nprint(round(structure, 3))\n",
+      "your_data_code": "d <- read.csv(\"your_data.csv\", stringsAsFactors = FALSE)\nitems <- paste0(\"item_\", 1:12)\nx <- d[items]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 12, all(vapply(x, sd, numeric(1)) > 0))\n# 同一未旋转解分别作正交与斜交旋转；有序题按连续近似。\nset.seed(20261001)\nfit <- factanal(x, factors = 3, rotation = \"none\",\n               control = list(nstart = 5))\nbase_loadings <- unclass(fit$loadings)\northogonal <- varimax(base_loadings)\noblique <- promax(base_loadings)\npattern <- unclass(oblique$loadings)\nphi <- solve(crossprod(oblique$rotmat))\nstructure <- pattern %*% phi\nprint(round(unclass(orthogonal$loadings), 3))\nprint(round(pattern, 3))\nprint(round(phi, 3))\nprint(round(structure, 3))\n",
+      "assumption_checks": [
+        "正交旋转限制因素不相关；斜交旋转允许相关",
+        "核对模式矩阵、结构矩阵和因素相关的含义",
+        "这里沿用连续近似的教学解，旋转不会改变估计条件"
+      ],
+      "key_output": [
+        "orthogonal$loadings",
+        "pattern",
+        "phi",
+        "structure"
+      ],
+      "interpretation": "示例斜交模式显示第1–4题主要关联第3因素（方向为负）、第5–8题关联第2因素、第9–12题关联第1因素；这些方向和序号均可改变。phi中的因素相关约−0.095、−0.071和−0.002。structure是题目因素相关，pattern是模式系数，不能混称。",
+      "report_template": "报告提取方法、因素数与旋转名称；斜交解应报告模式载荷及因素相关，解释主要载荷、交叉载荷和题意。",
+      "common_errors": [
+        "把斜交模式系数直接当作简单相关",
+        "只为矩阵漂亮而强设因素独立",
+        "把旋转当作修复因素数错误"
+      ],
+      "validation_code": "stopifnot(all(dim(pattern) == c(12, 3)), all(dim(phi) == c(3, 3)))\nstopifnot(max(abs(diag(phi) - 1)) < 1e-8)\nstopifnot(max(abs(pattern %*% phi %*% t(pattern) -\n                     base_loadings %*% t(base_loadings))) < 1e-8)",
+      "verified": true,
+      "validation_report": "logs/review_r_factor_validation.json"
+    },
+    "bartlett-test": {
+      "packages": [],
+      "data_shape": "CSV 一行一名学生；item_1 至 item_12 为同向计分的1–5级有序题，示例420行。",
+      "example_code": "d <- read.csv(\"scale_items.csv\", stringsAsFactors = FALSE)\nitems <- paste0(\"item_\", 1:12)\nx <- d[items]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 12, all(vapply(x, sd, numeric(1)) > 0))\n# 相关矩阵的球形检验；不是 stats::bartlett.test 方差齐性检验。\nr <- cor(x)\nn <- nrow(x)\np <- ncol(x)\neig <- eigen(r, symmetric = TRUE, only.values = TRUE)$values\nstopifnot(all(eig > 0))\nlog_det <- as.numeric(determinant(r, logarithm = TRUE)$modulus)\nchi_square <- -(n - 1 - (2 * p + 5) / 6) * log_det\ndf <- p * (p - 1) / 2\np_value <- pchisq(chi_square, df, lower.tail = FALSE)\nprint(c(n = n, chi_square = chi_square, df = df, p_value = p_value))\n",
+      "your_data_code": "d <- read.csv(\"your_data.csv\", stringsAsFactors = FALSE)\nitems <- paste0(\"item_\", 1:12)\nx <- d[items]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 12, all(vapply(x, sd, numeric(1)) > 0))\n# 相关矩阵的球形检验；不是 stats::bartlett.test 方差齐性检验。\nr <- cor(x)\nn <- nrow(x)\np <- ncol(x)\neig <- eigen(r, symmetric = TRUE, only.values = TRUE)$values\nstopifnot(all(eig > 0))\nlog_det <- as.numeric(determinant(r, logarithm = TRUE)$modulus)\nchi_square <- -(n - 1 - (2 * p + 5) / 6) * log_det\ndf <- p * (p - 1) / 2\np_value <- pchisq(chi_square, df, lower.tail = FALSE)\nprint(c(n = n, chi_square = chi_square, df = df, p_value = p_value))\n",
+      "assumption_checks": [
+        "要求完整案例相关矩阵正定，经典近似基于独立观测及正态等条件",
+        "示例五级题按数值计算 Pearson 相关，仅展示传统公式",
+        "显著不确定因素数，需同时检查相关强度与适切性"
+      ],
+      "key_output": [
+        "chi_square",
+        "df",
+        "p_value"
+      ],
+      "interpretation": "示例χ²≈1061.318，df=66，p≈2.18×10⁻¹⁷⁹，可报告p<0.001，说明存在相关矩阵偏离单位阵的证据。五级题采用Pearson相关，传统正态近似条件未严格满足，所以结果只演示公式；显著不能给出因素数，也不能证明量表结构良好。",
+      "report_template": "报告相关矩阵类型、有效样本量、球形检验 χ²(df) 与 p，并说明该检验只评估偏离单位阵的证据及近似条件。",
+      "common_errors": [
+        "误用 stats::bartlett.test 检验各组方差",
+        "用显著结果直接宣称三因素",
+        "把数值输出零写成 p=0"
+      ],
+      "validation_code": "stopifnot(n == 420, df == 66, chi_square > 0)\nstopifnot(p_value >= 0, p_value <= 1, is.finite(chi_square))",
+      "verified": true,
+      "validation_report": "logs/review_r_factor_validation.json"
+    },
+    "k-means-clustering": {
+      "packages": [],
+      "data_shape": "CSV 一行一名参与者；social_support、stress、well_being 为数值指标，示例360行。",
+      "example_code": "d <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\ncols <- c(\"social_support\", \"stress\", \"well_being\")\nx <- d[cols]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 3, all(vapply(x, sd, numeric(1)) > 0))\nz <- scale(x)\nset.seed(20261001)\nfit <- kmeans(z, centers = 3, nstart = 50)\ncluster_sizes <- table(fit$cluster)\ncenters <- fit$centers\nexplained_fraction <- fit$betweenss / fit$totss\nprint(cluster_sizes)\nprint(round(centers, 3))\nprint(c(within_ss = fit$tot.withinss,\n        explained_fraction = explained_fraction))\n",
+      "your_data_code": "d <- read.csv(\"your_data.csv\", stringsAsFactors = FALSE)\ncols <- c(\"social_support\", \"stress\", \"well_being\")\nx <- d[cols]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 3, all(vapply(x, sd, numeric(1)) > 0))\nz <- scale(x)\nset.seed(20261001)\nfit <- kmeans(z, centers = 3, nstart = 50)\ncluster_sizes <- table(fit$cluster)\ncenters <- fit$centers\nexplained_fraction <- fit$betweenss / fit$totss\nprint(cluster_sizes)\nprint(round(centers, 3))\nprint(c(within_ss = fit$tot.withinss,\n        explained_fraction = explained_fraction))\n",
+      "assumption_checks": [
+        "标准化三指标，避免单位决定距离",
+        "K=3仅为候选，真实研究需比较组数和稳定性",
+        "检查异常值和球形紧凑群体假设的适切性"
+      ],
+      "key_output": [
+        "cluster_sizes",
+        "centers",
+        "tot.withinss",
+        "explained_fraction"
+      ],
+      "interpretation": "示例三组人数149、102、109，组内平方和约547.945，explained_fraction≈0.491。第1组中心为支持0.715、压力−0.687、幸福感0.796，表示支持与幸福感高于样本均值、压力低于均值。组号任意，49.1%是平方和描述，非心理类型存在概率；K=3仍需验证。",
+      "report_template": "报告输入变量、标准化、欧氏距离目标、候选 K、随机种子与初始化次数，给出组规模和中心画像，并说明组数和稳定性验证安排。",
+      "common_errors": [
+        "把组号当成等级或诊断",
+        "用更大 K 导致平方和下降证明更优",
+        "忘记变量尺度与异常值影响"
+      ],
+      "validation_code": "stopifnot(nrow(z) == 360, sum(cluster_sizes) == 360)\nstopifnot(length(cluster_sizes) == 3, all(cluster_sizes > 0))\nstopifnot(max(abs(colMeans(z))) < 1e-8)\nstopifnot(explained_fraction > 0, explained_fraction < 1)\nstopifnot(fit$ifault == 0)",
+      "verified": true,
+      "validation_report": "logs/review_r_factor_validation.json"
+    },
+    "cluster-analysis": {
+      "packages": [],
+      "data_shape": "CSV 一行一名参与者；social_support、stress、well_being 为数值指标，示例360行。",
+      "example_code": "d <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\ncols <- c(\"social_support\", \"stress\", \"well_being\")\nx <- d[cols]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 3, all(vapply(x, sd, numeric(1)) > 0))\nz <- scale(x)\nset.seed(20261001)\nfit <- kmeans(z, centers = 3, nstart = 50)\ncluster_sizes <- table(fit$cluster)\ncenters <- fit$centers\nexplained_fraction <- fit$betweenss / fit$totss\nprint(cluster_sizes)\nprint(round(centers, 3))\nprint(c(within_ss = fit$tot.withinss,\n        explained_fraction = explained_fraction))\n# 用留出的外部变量只作探索性描述，不当独立确证。\n# 本示例完整案例无删行，可按原始行关联 age。\nage_summary <- tapply(d$age, fit$cluster, mean)\nprint(round(age_summary, 2))\n",
+      "your_data_code": "d <- read.csv(\"your_data.csv\", stringsAsFactors = FALSE)\ncols <- c(\"social_support\", \"stress\", \"well_being\")\nx <- d[cols]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 3, all(vapply(x, sd, numeric(1)) > 0))\n# 为维持行对应关系，外部变量随同一完整案例索引筛选。\nkeep <- complete.cases(d[cols])\nage <- d$age[keep]\nz <- scale(x)\nset.seed(20261001)\nfit <- kmeans(z, centers = 3, nstart = 50)\nprint(table(fit$cluster))\nprint(fit$centers)\nprint(tapply(age, fit$cluster, mean, na.rm = TRUE))\n",
+      "assumption_checks": [
+        "按研究问题选变量，避免输入年龄后再称其为外部验证",
+        "三组只是探索方案，需重抽样或新样本稳定性检查",
+        "此处年龄描述不构成诊断或因果证据"
+      ],
+      "key_output": [
+        "cluster_sizes",
+        "centers",
+        "age_summary"
+      ],
+      "interpretation": "示例三组人数149、102、109，中心呈现不同支持、压力和幸福感画像；未用于聚类的年龄均值约37.83、36.80、38.39岁，只是外部描述，不构成独立确证。模拟资料不是已知心理类型，得到三组是因为预设K=3，仍需稳定性与新样本验证。",
+      "report_template": "报告探索目的、输入指标与尺度、算法和候选组数，各组人数及画像；外部变量的描述和独立验证应区别报告。",
+      "common_errors": [
+        "对输入变量再做显著性检验充当验证",
+        "把探索组直接命名为诊断",
+        "修改自己数据后仍按完整原始行拼接"
+      ],
+      "validation_code": "stopifnot(nrow(d) == nrow(x), nrow(x) == 360)\nstopifnot(length(age_summary) == 3, all(is.finite(age_summary)))\nstopifnot(sum(cluster_sizes) == nrow(x))",
+      "verified": true,
+      "validation_report": "logs/review_r_factor_validation.json"
+    },
+    "hierarchical-clustering": {
+      "packages": [],
+      "data_shape": "CSV 一行一名参与者；social_support、stress、well_being 为数值指标，示例360行。",
+      "example_code": "d <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\ncols <- c(\"social_support\", \"stress\", \"well_being\")\nx <- d[cols]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 3, all(vapply(x, sd, numeric(1)) > 0))\nz <- scale(x)\ndistance <- dist(z, method = \"euclidean\")\nfit <- hclust(distance, method = \"ward.D2\")\ngroups <- cutree(fit, k = 3)\ncluster_sizes <- table(groups)\ncenters <- aggregate(as.data.frame(z), list(cluster = groups), mean)\nprint(cluster_sizes)\nprint(centers)\nprint(tail(fit$height, 5))\n# 需要查看树状图时运行 plot(fit, labels = FALSE)。\n",
+      "your_data_code": "d <- read.csv(\"your_data.csv\", stringsAsFactors = FALSE)\ncols <- c(\"social_support\", \"stress\", \"well_being\")\nx <- d[cols]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 3, all(vapply(x, sd, numeric(1)) > 0))\nz <- scale(x)\ndistance <- dist(z, method = \"euclidean\")\nfit <- hclust(distance, method = \"ward.D2\")\ngroups <- cutree(fit, k = 3)\ncluster_sizes <- table(groups)\ncenters <- aggregate(as.data.frame(z), list(cluster = groups), mean)\nprint(cluster_sizes)\nprint(centers)\nprint(tail(fit$height, 5))\n# 需要查看树状图时运行 plot(fit, labels = FALSE)。\n",
+      "assumption_checks": [
+        "说明欧氏距离与 Ward.D2 合并准则",
+        "先检查变量尺度和异常值",
+        "三组为切树候选，合并高度不是显著性检验"
+      ],
+      "key_output": [
+        "cluster_sizes",
+        "centers",
+        "height"
+      ],
+      "interpretation": "示例Ward.D2树切为三组后人数132、154、74，与K均值结果不同，因为算法目标不同。最后两次合并高度约15.015与26.868，表达当前合并准则的代价，不是p值。centers展示标准化画像；叶子左右顺序不能当距离排名。",
+      "report_template": "报告距离、标准化、连接准则、切树依据及组规模和画像，说明结果对变量、异常点和切树位置的敏感性。",
+      "common_errors": [
+        "把合并高度视为 p 值",
+        "只依据树叶横轴位置判断相似",
+        "不同连接准则结果直接当同一标准比较"
+      ],
+      "validation_code": "stopifnot(nrow(z) == 360, sum(cluster_sizes) == 360)\nstopifnot(length(fit$height) == 359, all(diff(fit$height) >= 0))\nstopifnot(length(unique(groups)) == 3, all(cluster_sizes > 0))",
+      "verified": true,
+      "validation_report": "logs/review_r_factor_validation.json"
+    },
+    "cfa": {
+      "packages": [
+        "lavaan"
+      ],
+      "data_shape": "CSV 每行一名学生；item_1至item_12是1–5级有序题，预设每四题测一个维度。",
+      "example_code": "if (!requireNamespace(\"lavaan\", quietly = TRUE)) {\n  stop(\"Install lavaan first: install.packages('lavaan')\")\n}\nlibrary(lavaan)\nd <- read.csv(\"scale_items.csv\", stringsAsFactors = FALSE)\nitems <- paste0(\"item_\", 1:12)\nx <- d[items]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 12, all(vapply(x, sd, numeric(1)) > 0))\nstopifnot(all(as.matrix(x) %in% 1:5))\nmodel <- 'f1 =~ item_1 + item_2 + item_3 + item_4\nf2 =~ item_5 + item_6 + item_7 + item_8\nf3 =~ item_9 + item_10 + item_11 + item_12'\nfit <- cfa(model, data = x, ordered = items,\n           estimator = \"WLSMV\", std.lv = TRUE)\nloading_table <- subset(standardizedSolution(fit), op == \"=~\")\nfit_measures <- fitMeasures(fit,\n                           c(\"chisq.scaled\", \"df.scaled\", \"pvalue.scaled\",\n                             \"cfi.scaled\", \"rmsea.scaled\",\n                             \"rmsea.ci.lower.scaled\", \"rmsea.ci.upper.scaled\",\n                             \"srmr\"))\nprint(loading_table[, c(\"lhs\", \"rhs\", \"est.std\", \"se\", \"ci.lower\", \"ci.upper\")])\nprint(fit_measures)\n",
+      "your_data_code": "if (!requireNamespace(\"lavaan\", quietly = TRUE)) {\n  stop(\"Install lavaan first: install.packages('lavaan')\")\n}\nlibrary(lavaan)\nd <- read.csv(\"your_data.csv\", stringsAsFactors = FALSE)\nitems <- paste0(\"item_\", 1:12)\nx <- d[items]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 12, all(vapply(x, sd, numeric(1)) > 0))\nstopifnot(all(as.matrix(x) %in% 1:5))\nmodel <- 'f1 =~ item_1 + item_2 + item_3 + item_4\nf2 =~ item_5 + item_6 + item_7 + item_8\nf3 =~ item_9 + item_10 + item_11 + item_12'\nfit <- cfa(model, data = x, ordered = items,\n           estimator = \"WLSMV\", std.lv = TRUE)\nloading_table <- subset(standardizedSolution(fit), op == \"=~\")\nfit_measures <- fitMeasures(fit,\n                           c(\"chisq.scaled\", \"df.scaled\", \"pvalue.scaled\",\n                             \"cfi.scaled\", \"rmsea.scaled\",\n                             \"rmsea.ci.lower.scaled\", \"rmsea.ci.upper.scaled\",\n                             \"srmr\"))\nprint(loading_table[, c(\"lhs\", \"rhs\", \"est.std\", \"se\", \"ci.lower\", \"ci.upper\")])\nprint(fit_measures)\n",
+      "assumption_checks": [
+        "预设三因素题目归属，使用 WLSMV 对有序题建模",
+        "检查每题类别和稀疏单元、独立观测及模型识别",
+        "查收敛、残差方差和因素相关；缺失这里仅演示完整案例"
+      ],
+      "key_output": [
+        "loading_table",
+        "fit_measures",
+        "converged"
+      ],
+      "interpretation": "示例标准化载荷约0.628–0.722；缩放χ²(51)≈54.581、p≈0.340，CFI.scaled≈0.997、RMSEA.scaled≈0.013、SRMR≈0.036。est.std及其区间用于逐题阅读，RMSEA区间补充近似误差精度；这些是scaled而非robust字段。模拟三因素设计与预设一致，良好拟合不能证明真实量表的结构唯一。",
+      "report_template": "报告题目计分、有效样本量、三因素预设、WLSMV、潜变量尺度设置，给出标准化载荷与区间、缩放卡方及拟合指标；说明局部残差与人工内容复核。",
+      "common_errors": [
+        "把五级题默认当连续正态",
+        "将 scaled 与 robust 指标混称",
+        "拟合良好便宣称构念真实或结构唯一"
+      ],
+      "validation_code": "stopifnot(nrow(x) == 420, lavInspect(fit, \"converged\"))\nstopifnot(nrow(loading_table) == 12)\nstopifnot(all(loading_table$est.std > 0.3 & loading_table$est.std < 1))\nstopifnot(all(is.finite(fit_measures)))\nstopifnot(all(diag(lavInspect(fit, \"theta\")) > 0))",
+      "verified": true,
+      "validation_report": "logs/review_r_factor_validation.json"
+    },
+    "sem": {
+      "packages": [
+        "lavaan"
+      ],
+      "data_shape": "CSV 每行一名学生；12道1–5级题，三个维度各四题；f1/f2/f3为教学中性名称。",
+      "example_code": "if (!requireNamespace(\"lavaan\", quietly = TRUE)) {\n  stop(\"Install lavaan first: install.packages('lavaan')\")\n}\nlibrary(lavaan)\nd <- read.csv(\"scale_items.csv\", stringsAsFactors = FALSE)\nitems <- paste0(\"item_\", 1:12)\nx <- d[items]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 12, all(vapply(x, sd, numeric(1)) > 0))\nstopifnot(all(as.matrix(x) %in% 1:5))\nmodel <- 'f1 =~ item_1 + item_2 + item_3 + item_4\nf2 =~ item_5 + item_6 + item_7 + item_8\nf3 =~ item_9 + item_10 + item_11 + item_12\nf2 ~ a*f1\nf3 ~ b*f2 + direct*f1\nindirect := a*b\ntotal := direct + a*b'\nfit <- sem(model, data = x, ordered = items,\n           estimator = \"WLSMV\", std.lv = TRUE)\nparameters <- parameterEstimates(fit, standardized = TRUE, ci = TRUE)\npaths <- subset(parameters, op %in% c(\"~\", \":=\"))\nprint(paths[, c(\"lhs\", \"op\", \"rhs\", \"est\", \"se\",\n                \"ci.lower\", \"ci.upper\", \"std.all\")])\nprint(fitMeasures(fit, c(\"cfi.scaled\", \"rmsea.scaled\", \"srmr\")))\n",
+      "your_data_code": "if (!requireNamespace(\"lavaan\", quietly = TRUE)) {\n  stop(\"Install lavaan first: install.packages('lavaan')\")\n}\nlibrary(lavaan)\nd <- read.csv(\"your_data.csv\", stringsAsFactors = FALSE)\nitems <- paste0(\"item_\", 1:12)\nx <- d[items]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 12, all(vapply(x, sd, numeric(1)) > 0))\nstopifnot(all(as.matrix(x) %in% 1:5))\nmodel <- 'f1 =~ item_1 + item_2 + item_3 + item_4\nf2 =~ item_5 + item_6 + item_7 + item_8\nf3 =~ item_9 + item_10 + item_11 + item_12\nf2 ~ a*f1\nf3 ~ b*f2 + direct*f1\nindirect := a*b\ntotal := direct + a*b'\nfit <- sem(model, data = x, ordered = items,\n           estimator = \"WLSMV\", std.lv = TRUE)\nparameters <- parameterEstimates(fit, standardized = TRUE, ci = TRUE)\npaths <- subset(parameters, op %in% c(\"~\", \":=\"))\nprint(paths[, c(\"lhs\", \"op\", \"rhs\", \"est\", \"se\",\n                \"ci.lower\", \"ci.upper\", \"std.all\")])\nprint(fitMeasures(fit, c(\"cfi.scaled\", \"rmsea.scaled\", \"srmr\")))\n",
+      "assumption_checks": [
+        "结构方向为教学假设，不由横断题目数据确立因果",
+        "题目为有序，使用 WLSMV；检查类别稀疏及识别",
+        "先读测量部分，再读结构；间接效应区间为渐近 delta 方法"
+      ],
+      "key_output": [
+        "paths",
+        "est",
+        "ci.lower",
+        "ci.upper",
+        "std.all"
+      ],
+      "interpretation": "示例f1→f2≈−0.009，f2→f3≈−0.071，直接f1→f3≈0.099；间接效应约0.001、95%渐近区间约[−0.009,0.010]，均未提供明确路径证据，符合模拟三个维度独立生成的设计。est及区间为模型单位，std.all是标准化量；联合拟合不能证明因果机制。",
+      "report_template": "报告测量结构、WLSMV、结构方向及依据，给出路径单位、估计和区间；定义间接效应及所用渐近区间，并保留观察设计的解释限制。",
+      "common_errors": [
+        "用模型箭头证明因果",
+        "把 est 区间配给 std.all 数值",
+        "在独立模拟维度上硬解释心理机制"
+      ],
+      "validation_code": "stopifnot(lavInspect(fit, \"converged\"), nrow(paths) == 5)\nstopifnot(all(is.finite(paths$est)), all(is.finite(paths$se)))\na <- paths$est[paths$label == \"a\"]\nb <- paths$est[paths$label == \"b\"]\nab <- paths$est[paths$lhs == \"indirect\"]\nstopifnot(length(a) == 1, length(b) == 1, abs(ab - a * b) < 1e-8)",
+      "verified": true,
+      "validation_report": "logs/review_r_factor_validation.json"
+    },
+    "path-analysis": {
+      "packages": [
+        "lavaan"
+      ],
+      "data_shape": "CSV 一行一名参与者；social_support、stress、well_being 为连续观测总分。",
+      "example_code": "if (!requireNamespace(\"lavaan\", quietly = TRUE)) {\n  stop(\"Install lavaan first: install.packages('lavaan')\")\n}\nlibrary(lavaan)\nd <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\ncols <- c(\"social_support\", \"stress\", \"well_being\")\nx <- d[cols]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 3, all(vapply(x, sd, numeric(1)) > 0))\nmodel <- 'stress ~ a*social_support\nwell_being ~ b*stress + direct*social_support\nindirect := a*b\ntotal := direct + a*b'\nfit <- sem(model, data = x, estimator = \"MLR\", fixed.x = TRUE)\nparameters <- parameterEstimates(fit, ci = TRUE, standardized = TRUE)\npaths <- subset(parameters, op %in% c(\"~\", \":=\"))\nprint(paths[, c(\"lhs\", \"op\", \"rhs\", \"est\", \"ci.lower\", \"ci.upper\", \"std.all\")])\nprint(c(df = fitMeasures(fit, \"df\")))\n",
+      "your_data_code": "if (!requireNamespace(\"lavaan\", quietly = TRUE)) {\n  stop(\"Install lavaan first: install.packages('lavaan')\")\n}\nlibrary(lavaan)\nd <- read.csv(\"your_data.csv\", stringsAsFactors = FALSE)\ncols <- c(\"social_support\", \"stress\", \"well_being\")\nx <- d[cols]\nstopifnot(all(vapply(x, is.numeric, logical(1))))\nx <- x[complete.cases(x), , drop = FALSE]\nstopifnot(nrow(x) > 3, all(vapply(x, sd, numeric(1)) > 0))\nmodel <- 'stress ~ a*social_support\nwell_being ~ b*stress + direct*social_support\nindirect := a*b\ntotal := direct + a*b'\nfit <- sem(model, data = x, estimator = \"MLR\", fixed.x = TRUE)\nparameters <- parameterEstimates(fit, ci = TRUE, standardized = TRUE)\npaths <- subset(parameters, op %in% c(\"~\", \":=\"))\nprint(paths[, c(\"lhs\", \"op\", \"rhs\", \"est\", \"ci.lower\", \"ci.upper\", \"std.all\")])\nprint(c(df = fitMeasures(fit, \"df\")))\n",
+      "assumption_checks": [
+        "核对路径方向、线性关系、遗漏混杂与时间顺序",
+        "MLR提供稳健标准误，但不会解决错设或因果识别",
+        "这个三变量路径网络为零自由度，整体拟合不能验证理论"
+      ],
+      "key_output": [
+        "paths",
+        "est",
+        "ci.lower",
+        "ci.upper",
+        "df"
+      ],
+      "interpretation": "示例支持→压力≈−0.281、压力→幸福感≈−0.369，支持→幸福感条件路径≈0.314。模型内间接效应≈0.104、95%渐近delta区间约[0.060,0.147]，总效应≈0.417。模型df=0，整体拟合不能验证方向；这些是横断模拟资料中的关联分解，不是因果中介效应。",
+      "report_template": "报告总分单位、有效样本量、MLR及路径设定，给出条件系数、间接效应与区间，并明确零自由度和横断关联限制。",
+      "common_errors": [
+        "把总分模型当成自动校正测量误差",
+        "用零自由度的完美拟合证明理论",
+        "将渐近区间称为 bootstrap 区间"
+      ],
+      "validation_code": "stopifnot(lavInspect(fit, \"converged\"), nrow(paths) == 5)\nstopifnot(fitMeasures(fit, \"df\") == 0)\na <- paths$est[paths$label == \"a\"]\nb <- paths$est[paths$label == \"b\"]\nab <- paths$est[paths$lhs == \"indirect\"]\nstopifnot(abs(ab - a * b) < 1e-8, all(is.finite(paths$ci.lower)))\nstopifnot(all(paths$ci.lower <= paths$est & paths$est <= paths$ci.upper))",
+      "verified": true,
+      "validation_report": "logs/review_r_factor_validation.json"
+    },
+    "discriminant-analysis": {
+      "packages": [
+        "MASS"
+      ],
+      "data_shape": "CSV 一行一名学生；condition为已知control/retrieval标签，pre_score和gain为数值预测量。",
+      "example_code": "if (!requireNamespace(\"MASS\", quietly = TRUE)) {\n  stop(\"Install MASS first: install.packages('MASS')\")\n}\nlibrary(MASS)\nd <- read.csv(\"learning_experiment.csv\", stringsAsFactors = FALSE)\nd <- d[complete.cases(d[c(\"condition\", \"pre_score\", \"gain\")]), ]\nd$condition <- factor(d$condition)\nstopifnot(nlevels(d$condition) == 2, all(table(d$condition) > 5))\nset.seed(20261001)\n# 按已知类别分层抽取约三分之二训练资料。\ntrain_id <- unlist(lapply(split(seq_len(nrow(d)), d$condition), function(i) {\n  sample(i, floor(length(i) * 2 / 3))\n}), use.names = FALSE)\ntrain <- d[train_id, ]\ntest <- d[-train_id, ]\nfit <- lda(condition ~ pre_score + gain, data = train,\n           prior = c(0.5, 0.5))\npredicted <- predict(fit, newdata = test)$class\nconfusion <- table(actual = test$condition, predicted = predicted)\naccuracy <- mean(predicted == test$condition)\nrecall <- diag(confusion) / rowSums(confusion)\nprint(confusion)\nprint(c(accuracy = accuracy))\nprint(recall)\n",
+      "your_data_code": "if (!requireNamespace(\"MASS\", quietly = TRUE)) {\n  stop(\"Install MASS first: install.packages('MASS')\")\n}\nlibrary(MASS)\nd <- read.csv(\"your_data.csv\", stringsAsFactors = FALSE)\nd <- d[complete.cases(d[c(\"condition\", \"pre_score\", \"gain\")]), ]\nd$condition <- factor(d$condition)\nstopifnot(nlevels(d$condition) == 2, all(table(d$condition) > 5))\nset.seed(20261001)\n# 按已知类别分层抽取约三分之二训练资料。\ntrain_id <- unlist(lapply(split(seq_len(nrow(d)), d$condition), function(i) {\n  sample(i, floor(length(i) * 2 / 3))\n}), use.names = FALSE)\ntrain <- d[train_id, ]\ntest <- d[-train_id, ]\nfit <- lda(condition ~ pre_score + gain, data = train,\n           prior = c(0.5, 0.5))\npredicted <- predict(fit, newdata = test)$class\nconfusion <- table(actual = test$condition, predicted = predicted)\naccuracy <- mean(predicted == test$condition)\nrecall <- diag(confusion) / rowSums(confusion)\nprint(confusion)\nprint(c(accuracy = accuracy))\nprint(recall)\n",
+      "assumption_checks": [
+        "线性判别假定组内多元正态、共同协方差及独立观测",
+        "标签来自已知实验条件；后测gain用于事后分类而非事前预测",
+        "按人拆分训练测试，真实应用还须考虑先验概率与误分类成本"
+      ],
+      "key_output": [
+        "confusion",
+        "accuracy",
+        "recall"
+      ],
+      "interpretation": "示例测试集60人，混淆矩阵为control组15人预测正确、15人错分，retrieval组24人正确、6人错分；准确率65%，两组召回率50%和80%。这说明对control组识别较弱，不能称为高质量分类。gain是干预后指标，因此只是已知条件的事后判别，不是干预前预测或临床诊断。",
+      "report_template": "报告已知标签来源、预测量及可用时间、分层训练测试拆分、先验概率和 LDA 条件，给出测试混淆矩阵、总体准确率及各组召回率。",
+      "common_errors": [
+        "把训练正确率当泛化准确率",
+        "用干预后变量声称干预前预测",
+        "只看总体正确率忽略某组失误"
+      ],
+      "validation_code": "stopifnot(nrow(train) == 120, nrow(test) == 60)\nstopifnot(length(intersect(train$id, test$id)) == 0)\nstopifnot(sum(confusion) == 60, all(dim(confusion) == c(2, 2)))\nstopifnot(accuracy >= 0, accuracy <= 1, all(recall >= 0 & recall <= 1))",
+      "verified": true,
+      "validation_report": "logs/review_r_factor_validation.json"
+    }
+  }
+}

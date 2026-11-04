@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="840pt" viewBox="0 0 360 840" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">稳定的阅读题成绩，仍需证据才能支持焦虑解释。。情景只说明用途匹配问题，不直接判定某份真实问卷的效度。</desc><title id="title">分数一致还要看测了什么</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:04:54.834527</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 840  L 360 840  L 360 0  L 0 0  L 0 840  z " style="fill: none; opacity: 0" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 67  L 330 67  Q 344 67 344 81  L 344 311  Q 344 325 330 325  L 30 325  Q 16 325 16 311  L 16 81  Q 16 67 30 67  z " clip-path="url(#p8f7415d2a7)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="reading-passage">
+    <path d="M 40 107  L 140 107  Q 145 107 145 112  L 145 192  Q 145 197 140 197  L 40 197  Q 35 197 35 192  L 35 112  Q 35 107 40 107  z " clip-path="url(#p8f7415d2a7)" style="fill: #6741ad; opacity: 0.07" />
+   </g>
+   <g id="patch_3">
+    <path d="M 180 223.000122  Q 180 235.49976 180 246.545955  " clip-path="url(#p8f7415d2a7)" style="fill: none; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 183 240.545955  L 180 246.545955  L 177 240.545955  z " clip-path="url(#p8f7415d2a7)" style="fill: #6741ad; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="response-record">
+    <path d="M 160 253  L 200 253  Q 205 253 205 258  L 205 288  Q 205 293 200 293  L 160 293  Q 155 293 155 288  L 155 258  Q 155 253 160 253  z " clip-path="url(#p8f7415d2a7)" style="fill: #6741ad; opacity: 0.07" />
+   </g>
+   <g id="patch_4">
+    <path d="M 30 356  L 330 356  Q 344 356 344 370  L 344 508  Q 344 522 330 522  L 30 522  Q 16 522 16 508  L 16 370  Q 16 356 30 356  z " clip-path="url(#p8f7415d2a7)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_5">
+    <path d="M 35 442  L 125 442  Q 130 442 130 447  L 130 471  Q 130 476 125 476  L 35 476  Q 30 476 30 471  L 30 447  Q 30 442 35 442  z " clip-path="url(#p8f7415d2a7)" style="fill: #6741ad; opacity: 0.07" />
+   </g>
+   <g id="patch_6">
+    <path d="M 215 442  L 325 442  Q 330 442 330 447  L 330 471  Q 330 476 325 476  L 215 476  Q 210 476 210 471  L 210 447  Q 210 442 215 442  z " clip-path="url(#p8f7415d2a7)" style="fill: #6741ad; opacity: 0.07" />
+   </g>
+   <g id="patch_7">
+    <path d="M 139.996094 459  Q 169.997068 459 198.656402 459  " clip-path="url(#p8f7415d2a7)" style="fill: none; opacity: 0.6; stroke: #6741ad; stroke-width: 1.2; stroke-linecap: round" />
+    <path d="M 198.256402 458.8  L 198.656402 459  L 198.256402 459.2  z " clip-path="url(#p8f7415d2a7)" style="fill: #6741ad; opacity: 0.6; stroke: #6741ad; stroke-width: 1.2; stroke-linecap: round" />
+   </g>
+   <g id="patch_8">
+    <path d="M 30 540  L 330 540  Q 344 540 344 554  L 344 692  Q 344 706 330 706  L 30 706  Q 16 706 16 692  L 16 554  Q 16 540 30 540  z " clip-path="url(#p8f7415d2a7)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_9">
+    <path d="M 35 626  L 125 626  Q 130 626 130 631  L 130 655  Q 130 660 125 660  L 35 660  Q 30 660 30 655  L 30 631  Q 30 626 35 626  z " clip-path="url(#p8f7415d2a7)" style="fill: #6741ad; opacity: 0.07" />
+   </g>
+   <g id="patch_10">
+    <path d="M 215 626  L 325 626  Q 330 626 330 631  L 330 655  Q 330 660 325 660  L 215 660  Q 210 660 210 655  L 210 631  Q 210 626 215 626  z " clip-path="url(#p8f7415d2a7)" style="fill: #167d87; opacity: 0.07" />
+   </g>
+   <g id="patch_11">
+    <path d="M 139.996094 643  Q 169.997068 643 198.656402 643  " clip-path="url(#p8f7415d2a7)" style="fill: none; opacity: 0.6; stroke-dasharray: 4.8,4.8; stroke-dashoffset: 0; stroke: #167d87; stroke-width: 1.2; stroke-linecap: round" />
+    <path d="M 198.256402 642.8  L 198.656402 643  L 198.256402 643.2  z " clip-path="url(#p8f7415d2a7)" style="fill: #167d87; opacity: 0.6; stroke-dasharray: 4.8,4.8; stroke-dashoffset: 0; stroke: #167d87; stroke-width: 1.2; stroke-linecap: round" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 68  L 328 68  " clip-path="url(#p8f7415d2a7)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 51 148  L 128 148  " clip-path="url(#p8f7415d2a7)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.3; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 165 265.8  L 195 265.8  " clip-path="url(#p8f7415d2a7)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.3; stroke-linecap: square" />
+   </g>
+   <g id="line2d_4">
+    <path d="M 165 273  L 195 273  " clip-path="url(#p8f7415d2a7)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.3; stroke-linecap: square" />
+   </g>
+   <g id="line2d_5">
+    <path d="M 165 280.2  L 195 280.2  " clip-path="url(#p8f7415d2a7)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.3; stroke-linecap: square" />
+   </g>
+   <g id="line2d_6">
+    <path d="M 32 357  L 328 357  " clip-path="url(#p8f7415d2a7)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_7">
+    <path d="M 32 541  L 328 541  " clip-path="url(#p8f7415d2a7)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="20" y="32.671406" transform="rotate(-0 20 32.671406)">题目内容，要接得上解释用途</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="51" y="129.067793" transform="rotate(-0 51 129.067793)">短文</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="51" y="178.047012" transform="rotate(-0 51 178.047012)">理解题</text>
+   </g>
+   <g id="task-content">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="167" y="123.101699" transform="rotate(-0 167 123.101699)">阅读任务</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="167" y="157.114824" transform="rotate(-0 167 157.114824)">读文字</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="167" y="189.080918" transform="rotate(-0 167 189.080918)">回答含义</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6741ad" x="180" y="314.789424" transform="rotate(-0 180 314.789424)">得到作答与评分记录</text>
+   </g>
+   <g id="purpose-reading">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="30" y="385.101699" transform="rotate(-0 30 385.101699)">阅读理解用途</text>
+   </g>
+   <g id="evidence-reading">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="424.49793" transform="rotate(-0 30 424.49793)">内容与阅读理解相符：一条线索</text>
+   </g>
+   <g id="score-reading">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="80" y="462.789424" transform="rotate(-0 80 462.789424)">阅读得分</text>
+   </g>
+   <g id="interpretation-reading">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6741ad" x="270" y="462.757939" transform="rotate(-0 270 462.757939)">阅读理解？</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="503.814814" transform="rotate(-0 30 503.814814)">还需用途对应的研究证据</text>
+   </g>
+   <g id="purpose-anxiety">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="30" y="569.08748" transform="rotate(-0 30 569.08748)">焦虑程度用途</text>
+   </g>
+   <g id="evidence-anxiety">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="608.515742" transform="rotate(-0 30 608.515742)">阅读成绩与焦虑解释之间：仍缺证据</text>
+   </g>
+   <g id="score-anxiety">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="80" y="646.789424" transform="rotate(-0 80 646.789424)">阅读得分</text>
+   </g>
+   <g id="interpretation-anxiety">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #167d87" x="270" y="646.828018" transform="rotate(-0 270 646.828018)">焦虑程度？</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="687.814814" transform="rotate(-0 30 687.814814)">还需用途对应的研究证据</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="20" y="796.129043" transform="rotate(-0 20 796.129043)">内容匹配是线索，不是效度已经成立。</text>
+   </g>
+   <g id="validity-note">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="20" y="823.533555" transform="rotate(-0 20 823.533555)">阅读理解用途也须验证；图中未估计效度。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8f7415d2a7">
+   <rect x="0" y="0" width="360" height="840" />
+  </clipPath>
+ </defs>
+</svg>

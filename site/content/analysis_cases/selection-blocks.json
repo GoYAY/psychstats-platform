@@ -1,0 +1,54 @@
+{
+  "id": "selection-blocks",
+  "unit_id": "selection",
+  "title": "分块加入变量增加了什么",
+  "question": "年龄之外，加入支持和压力是否能解释更多幸福感差异？",
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。不能在各块使用不同缺失个案集合比较；加入顺序应由研究目标决定，不是逐步筛选的另一名称。",
+  "variables": "复用已有规范教学 CSV，未改变原始文件。",
+  "script": "examples/r/output_reading/selection-blocks.R",
+  "data_files": [
+    "examples/data/cross_sectional_survey.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "delta_r_squared",
+      "label": "最后一块 ΔR²",
+      "meaning": "压力在年龄和支持之后增加的样本解释比例，依赖加入顺序。",
+      "term": "r-squared",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "最后一块增量检验 p",
+      "meaning": "相同样本嵌套模型的新增压力项检验，不是自动变量选择。",
+      "term": "multiple-regression",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这个变体最重要的边界",
+      "body": "不能在各块使用不同缺失个案集合比较；加入顺序应由研究目标决定，不是逐步筛选的另一名称。"
+    },
+    {
+      "title": "如何继续检查",
+      "body": "先明确独立单位、估计目标及比较方向，结合完整参数与区间判断。方法改变需有研究依据并记录，不以显著性作为选择标准。"
+    }
+  ],
+  "report_template": "预定年龄→支持→压力的分块顺序中，最后压力块的 ΔR² = {delta_r_squared:.3f}，增量 F({df1:.0f}, {df2:.0f}) = {F:.3f}，p = {p:.4g}。增量解释依赖已在模型中的变量，不视作因果贡献。",
+  "sources": [
+    {
+      "title": "R 官方统计函数索引",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "r-squared",
+    "multiple-regression"
+  ]
+}

@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="360pt" height="403pt" viewBox="0 0 360 403" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">概率限制在0到1之间；系数不能直接当概率增量。。教学合成概率曲线；未拟合模型，不能推断压力造成完成率下降。</desc><title id="title">压力与完成训练的概率</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:03:07.390046</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 403  L 360 403  L 360 0  L 0 0  L 0 403  z " style="fill: none" />
+  </g>
+  <g id="data-panel-0">
+   <g id="patch_2">
+    <path d="M 61.2 312  L 345.6 312  L 345.6 65  L 61.2 65  L 61.2 312  z " style="fill: none" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="125.836364" y="328.744141" transform="rotate(-0 125.836364 328.744141)">2</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="229.254545" y="328.744141" transform="rotate(-0 229.254545 328.744141)">4</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="332.672727" y="328.744141" transform="rotate(-0 332.672727 328.744141)">6</text>
+     </g>
+    </g>
+    <g id="text_4">
+     <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #303b4b" x="203.4" y="354.822031" transform="rotate(-0 203.4 354.822031)">压力评分（睡眠条件固定）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4">
+      <path d="M 61.2 254.024194  L 345.6 254.024194  " clip-path="url(#p823a7d1027)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_5" />
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="258.896264" transform="rotate(-0 54.2 258.896264)">0.25</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <path d="M 61.2 188.5  L 345.6 188.5  " clip-path="url(#p823a7d1027)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_7" />
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="193.37207" transform="rotate(-0 54.2 193.37207)">0.50</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8">
+      <path d="M 61.2 122.975806  L 345.6 122.975806  " clip-path="url(#p823a7d1027)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_9" />
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="127.847877" transform="rotate(-0 54.2 127.847877)">0.75</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_10">
+    <path d="M 74.127273 88.903226  L 125.836364 115.112903  L 177.545455 157.048387  L 229.254545 209.467742  L 280.963636 256.645161  L 332.672727 288.096774  " clip-path="url(#p823a7d1027)" style="fill: none; stroke: #8a5200; stroke-width: 1.8; stroke-linecap: square" />
+    <defs>
+     <path id="m1c18d5bd6a" d="M 0 2.25  C 0.596707 2.25 1.169055 2.012926 1.59099 1.59099  C 2.012926 1.169055 2.25 0.596707 2.25 0  C 2.25 -0.596707 2.012926 -1.169055 1.59099 -1.59099  C 1.169055 -2.012926 0.596707 -2.25 0 -2.25  C -0.596707 -2.25 -1.169055 -2.012926 -1.59099 -1.59099  C -2.012926 -1.169055 -2.25 -0.596707 -2.25 0  C -2.25 0.596707 -2.012926 1.169055 -1.59099 1.59099  C -1.169055 2.012926 -0.596707 2.25 0 2.25  z " style="stroke: #8a5200; stroke-width: 1.1" />
+    </defs>
+    <g clip-path="url(#p823a7d1027)">
+     <use xlink:href="#m1c18d5bd6a" x="74.127273" y="88.903226" style="fill: #ffffff; stroke: #8a5200; stroke-width: 1.1" />
+     <use xlink:href="#m1c18d5bd6a" x="125.836364" y="115.112903" style="fill: #ffffff; stroke: #8a5200; stroke-width: 1.1" />
+     <use xlink:href="#m1c18d5bd6a" x="177.545455" y="157.048387" style="fill: #ffffff; stroke: #8a5200; stroke-width: 1.1" />
+     <use xlink:href="#m1c18d5bd6a" x="229.254545" y="209.467742" style="fill: #ffffff; stroke: #8a5200; stroke-width: 1.1" />
+     <use xlink:href="#m1c18d5bd6a" x="280.963636" y="256.645161" style="fill: #ffffff; stroke: #8a5200; stroke-width: 1.1" />
+     <use xlink:href="#m1c18d5bd6a" x="332.672727" y="288.096774" style="fill: #ffffff; stroke: #8a5200; stroke-width: 1.1" />
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 61.2 312  L 61.2 65  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_4">
+    <path d="M 61.2 312  L 345.6 312  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="61.2" y="47" transform="rotate(-0 61.2 47)">预测完成概率（0—1）</text>
+   </g>
+  </g>
+  <g id="legend-swatch-0">
+   <path d="M 36 375  L 46.8 375  " style="fill: none; stroke: #8a5200; stroke-width: 1.8; stroke-linecap: square" />
+   <defs>
+    <path id="m31fef1f06f" d="M 0 2.5  C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767  C 2.236584 1.29895 2.5 0.663008 2.5 0  C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767  C 1.29895 -2.236584 0.663008 -2.5 0 -2.5  C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767  C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0  C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767  C -1.29895 2.236584 -0.663008 2.5 0 2.5  z " style="stroke: #8a5200" />
+   </defs>
+   <g>
+    <use xlink:href="#m31fef1f06f" x="36" y="375" style="fill: #ffffff; stroke: #8a5200" />
+    <use xlink:href="#m31fef1f06f" x="46.8" y="375" style="fill: #ffffff; stroke: #8a5200" />
+   </g>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="54" y="378.0725" transform="rotate(-0 54 378.0725)">完成训练概率</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p823a7d1027">
+   <rect x="61.2" y="65" width="284.4" height="247" />
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,60 @@
+{
+  "id": "contrasts",
+  "unit_id": "contrasts",
+  "title": "研究真正关心的组别差异",
+  "question": "我只想比较两种训练的平均效果和不训练，怎么提前写出这个问题？",
+  "design": "固定种子生成三组教学数据。预先设定一个对比：control −(另一组+再另一组)/2，系数 1,-0.5,-0.5；演示该单一对比而非逐组搜索。",
+  "variables": "三组各 60 人的教学数据由代码生成，非真实参与者。前测、后测与增益（后测减前测）编码见代码。",
+  "script": "examples/r/output_reading/contrasts.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "difference",
+      "label": "计划对比估计",
+      "meaning": "控制组减两训练组的等权均值，负数对应训练组平均增益更高。",
+      "term": "planned-contrast",
+      "format": ".3f"
+    },
+    {
+      "field_id": "se",
+      "label": "对比标准误",
+      "meaning": "考虑均值估计的协方差及对比权重，不是简单平均三个 SE。",
+      "term": "standard-error",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "单一计划对比 p",
+      "meaning": "只有本教学问题的一个预定对比；多个对比需另定义家族并调整。",
+      "term": "multiple-comparison-correction",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这些结果最容易误读的地方",
+      "body": "先看数据再选择权重属于探索，应据实标注；普通同方差对比不自动适合异方差。"
+    },
+    {
+      "title": "如果没有发现明确证据",
+      "body": "先回到研究问题和估计精度，结合区间、有效样本、数据质量及模型条件判断。证据不足不等于没有作用；不反复更换方法、删样本或放宽阈值来追求显著。"
+    }
+  ],
+  "report_template": "预定的控制组相对于两训练组等权平均的增益差为 {difference:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，t({df:.0f}) = {t:.3f}，p = {p:.4g}。方向由 1,-0.5,-0.5 的权重决定。",
+  "sources": [
+    {
+      "title": "R 官方 anova.lm 文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/anova.lm.html"
+    }
+  ],
+  "related_terms": [
+    "planned-contrast",
+    "standard-error",
+    "multiple-comparison-correction"
+  ]
+}

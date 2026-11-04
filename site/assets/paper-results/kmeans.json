@@ -1,0 +1,146 @@
+{
+  "case_id": "kmeans",
+  "covariances": [],
+  "design": "固定种子模拟三项连续特征。标准化后比较 k=2/3/4，50 个随机起点；轮廓系数为探索依据，不作为最终类别证明。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/kmeans.R",
+    "script_sha256": "53db4afdee38ee5ba39679d937ac25510e7241d8c800c99e40576e6a99d96388",
+    "supplement_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+  },
+  "tables": [
+    {
+      "columns": [
+        "k",
+        "within_ss",
+        "silhouette"
+      ],
+      "name": "candidates",
+      "rows": [
+        {
+          "k": 2,
+          "silhouette": 0.5312557362735938,
+          "within_ss": 188.01643768817172
+        },
+        {
+          "k": 3,
+          "silhouette": 0.4809134239803866,
+          "within_ss": 106.75429270911953
+        },
+        {
+          "k": 4,
+          "silhouette": 0.4053866332592574,
+          "within_ss": 94.02717662124083
+        }
+      ],
+      "title": "candidates"
+    },
+    {
+      "columns": [
+        "cluster",
+        "stress",
+        "sleep",
+        "wellbeing"
+      ],
+      "name": "profiles",
+      "rows": [
+        {
+          "cluster": 1,
+          "sleep": 6.05235405347622,
+          "stress": 7.744173043230643,
+          "wellbeing": 3.283065499402838
+        },
+        {
+          "cluster": 2,
+          "sleep": 7.558351344389783,
+          "stress": 3.1084317737905462,
+          "wellbeing": 7.139145943572864
+        }
+      ],
+      "title": "类别画像"
+    },
+    {
+      "columns": [
+        "cluster",
+        "stress",
+        "sleep",
+        "wellbeing"
+      ],
+      "name": "standardized_profiles",
+      "rows": [
+        {
+          "cluster": 1,
+          "sleep": -0.9269650509583198,
+          "stress": 1.0197332999726512,
+          "wellbeing": -1.0379516673917653
+        },
+        {
+          "cluster": 2,
+          "sleep": 0.6038029231012914,
+          "stress": -0.6642299476886078,
+          "wellbeing": 0.6760969576588564
+        }
+      ],
+      "title": "标准化类别画像"
+    },
+    {
+      "columns": [
+        "model",
+        "n"
+      ],
+      "name": "model_summary",
+      "rows": [
+        {
+          "model": "K 均值的类别数和中心怎么看",
+          "n": 180
+        }
+      ],
+      "title": "模型解释率与样本量"
+    },
+    {
+      "column_labels": {
+        "k": "当前候选中选择的 k",
+        "mean_silhouette": "平均轮廓宽度",
+        "min_size": "min_size",
+        "within_ss": "组内平方和"
+      },
+      "columns": [
+        "analysis",
+        "k",
+        "within_ss",
+        "mean_silhouette",
+        "min_size"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "K 均值的类别数和中心怎么看",
+          "k": 2,
+          "mean_silhouette": 0.5312557362735938,
+          "min_size": 71,
+          "within_ss": 188.01643768817172
+        }
+      ],
+      "source_fields": [
+        {
+          "k": "k",
+          "mean_silhouette": "mean_silhouette",
+          "min_size": "min_size",
+          "within_ss": "within_ss"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "K 均值的类别数和中心怎么看",
+  "valid": true,
+  "variances": []
+}

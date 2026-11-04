@@ -1,0 +1,84 @@
+{
+  "case_id": "welch",
+  "covariances": [],
+  "design": "固定种子生成三个独立班级教学样本，样本数和方差不同；Welch 单因素比较总体均值。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/welch.R",
+    "script_sha256": "d7aa1fd5369913568e674e36e353f9d644c739fd8b31ecaa71c1b55094b776de",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "group1",
+        "group2",
+        "p_holm"
+      ],
+      "name": "pairwise_welch_holm",
+      "rows": [
+        {
+          "group1": "B",
+          "group2": "A",
+          "p_holm": 0.57191181124326
+        },
+        {
+          "group1": "C",
+          "group2": "A",
+          "p_holm": 0.00011391661012821921
+        },
+        {
+          "group1": "C",
+          "group2": "B",
+          "p_holm": 0.105602883919324
+        }
+      ],
+      "title": "pairwise_welch_holm"
+    },
+    {
+      "column_labels": {
+        "F": "Welch F",
+        "df1": "df1",
+        "df2": "调整后分母自由度",
+        "p": "总体比较 p"
+      },
+      "columns": [
+        "analysis",
+        "F",
+        "df2",
+        "p",
+        "df1"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "F": 9.663051427747053,
+          "analysis": "三组波动程度不同如何比较",
+          "df1": 2,
+          "df2": 87.37094089717681,
+          "p": 0.00016171120374227583
+        }
+      ],
+      "source_fields": [
+        {
+          "F": "F",
+          "df1": "df1",
+          "df2": "df2",
+          "p": "p"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "三组波动程度不同如何比较",
+  "valid": true,
+  "variances": []
+}

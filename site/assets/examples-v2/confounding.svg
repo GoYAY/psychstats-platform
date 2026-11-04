@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="490pt" viewBox="0 0 760 490" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">家庭资源可能混入辅导与成绩的关联。。场景不证明家庭资源就是实际混杂因素，也不估计辅导效应。</desc><title id="title">辅导与成绩的第三个条件</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:02:40.279026</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 490  L 760 490  L 760 0  L 0 0  L 0 490  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 76  L 344 76  Q 358 76 358 90  L 358 412  Q 358 426 344 426  L 30 426  Q 16 426 16 412  L 16 90  Q 16 76 30 76  z " clip-path="url(#p4fe44f0ecb)" style="fill: #8a5200; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 416 76  L 730 76  Q 744 76 744 90  L 744 412  Q 744 426 730 426  L 416 426  Q 402 426 402 412  L 402 90  Q 402 76 416 76  z " clip-path="url(#p4fe44f0ecb)" style="fill: #8a5200; opacity: 0.055" />
+   </g>
+   <g id="patch_4">
+    <path d="M 366.001831 251  Q 379.500918 251 391.54656 251  " clip-path="url(#p4fe44f0ecb)" style="fill: none; opacity: 0.75; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 385.94656 248.2  L 391.54656 251  L 385.94656 253.8  z " clip-path="url(#p4fe44f0ecb)" style="fill: #8a5200; opacity: 0.75; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_5">
+    <path d="M 49 161  L 325 161  Q 333 161 333 169  L 333 197  Q 333 205 325 205  L 49 205  Q 41 205 41 197  L 41 169  Q 41 161 49 161  z " clip-path="url(#p4fe44f0ecb)" style="fill: #8a5200; opacity: 0.11; stroke: #8a5200; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 187 213.999451  Q 187 235.498584 187 255.544273  " clip-path="url(#p4fe44f0ecb)" style="fill: none; opacity: 0.75; stroke-dasharray: 5.2,5.2; stroke-dashoffset: 0; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 189.8 249.944273  L 187 255.544273  L 184.2 249.944273  z " clip-path="url(#p4fe44f0ecb)" style="fill: #8a5200; opacity: 0.75; stroke-dasharray: 5.2,5.2; stroke-dashoffset: 0; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_7">
+    <path d="M 49 267  L 325 267  Q 333 267 333 275  L 333 303  Q 333 311 325 311  L 49 311  Q 41 311 41 303  L 41 275  Q 41 267 49 267  z " clip-path="url(#p4fe44f0ecb)" style="fill: #6657bd; opacity: 0.11; stroke: #6657bd; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 523 146  L 623 146  Q 631 146 631 154  L 631 178  Q 631 186 623 186  L 523 186  Q 515 186 515 178  L 515 154  Q 515 146 523 146  z " clip-path="url(#p4fe44f0ecb)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="resources-to-tutoring">
+    <path d="M 547.551742 195.383118  Q 516.539342 225.000628 486.578049 253.61431  " clip-path="url(#p4fe44f0ecb)" style="fill: none; opacity: 0.75; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 492.561713 251.771551  L 486.578049 253.61431  L 488.69404 247.721723  z " clip-path="url(#p4fe44f0ecb)" style="fill: #006d70; opacity: 0.75; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="resources-to-grades">
+    <path d="M 598.448258 195.383118  Q 629.460658 225.000628 659.421951 253.61431  " clip-path="url(#p4fe44f0ecb)" style="fill: none; opacity: 0.75; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 657.30596 247.721723  L 659.421951 253.61431  L 653.438287 251.771551  z " clip-path="url(#p4fe44f0ecb)" style="fill: #006d70; opacity: 0.75; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_9">
+    <path d="M 422 263  L 542.8 263  Q 550.8 263 550.8 271  L 550.8 303  Q 550.8 311 542.8 311  L 422 311  Q 414 311 414 303  L 414 271  Q 414 263 422 263  z " clip-path="url(#p4fe44f0ecb)" style="fill: #8a5200; opacity: 0.11; stroke: #8a5200; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_10">
+    <path d="M 603.2 263  L 724 263  Q 732 263 732 271  L 732 303  Q 732 311 724 311  L 603.2 311  Q 595.2 311 595.2 303  L 595.2 271  Q 595.2 263 603.2 263  z " clip-path="url(#p4fe44f0ecb)" style="fill: #6657bd; opacity: 0.11; stroke: #6657bd; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_11">
+    <path d="M 554.481401 286  Q 573.002338 286 590.069831 286  " clip-path="url(#p4fe44f0ecb)" style="fill: none; opacity: 0.75; stroke-dasharray: 5.2,5.2; stroke-dashoffset: 0; stroke: #465366; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 584.469831 283.2  L 590.069831 286  L 584.469831 288.8  z " clip-path="url(#p4fe44f0ecb)" style="fill: #465366; opacity: 0.75; stroke-dasharray: 5.2,5.2; stroke-dashoffset: 0; stroke: #465366; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 77  L 342 77  " clip-path="url(#p4fe44f0ecb)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 418 77  L 728 77  " clip-path="url(#p4fe44f0ecb)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="20" y="34.663906" transform="rotate(-0 20 34.663906)">辅导与成绩的第三个条件</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="62.53918" transform="rotate(-0 20 62.53918)">概念故事 · 操作与关系示意</text>
+   </g>
+   <g id="stage-0">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="32" y="108.095137" transform="rotate(-0 32 108.095137)">看到辅导与成绩相联</text>
+   </g>
+   <g id="stage-1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="418" y="108.080918" transform="rotate(-0 418 108.080918)">加入可能的共同原因</text>
+   </g>
+   <g id="conceptual-only">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="463.53918" transform="rotate(-0 20 463.53918)">位置与连线为概念示意，不代表实际测量或分析结果。</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8a5200" x="187" y="187.101699" transform="rotate(-0 187 187.101699)">参加辅导</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="205" y="239.468867" transform="rotate(-0 205 239.468867)">关联</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6657bd" x="187" y="293.135605" transform="rotate(-0 187 293.135605)">观察到成绩较高</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="367.544805" transform="rotate(-0 32 367.544805)">两组的成绩差中</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="397.53918" transform="rotate(-0 32 397.53918)">可能还混入其他条件</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="573" y="170.135605" transform="rotate(-0 573 170.135605)">家庭资源</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8a5200" x="482.4" y="291.101699" transform="rotate(-0 482.4 291.101699)">参加辅导</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6657bd" x="663.6" y="291.032793" transform="rotate(-0 663.6 291.032793)">成绩</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="418" y="367.53918" transform="rotate(-0 418 367.53918)">机会与成绩都可能受资源影响</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="418" y="397.533555" transform="rotate(-0 418 397.533555)">先核查这两条路径</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4fe44f0ecb">
+   <rect x="0" y="0" width="760" height="490" />
+  </clipPath>
+ </defs>
+</svg>

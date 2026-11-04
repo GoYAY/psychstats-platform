@@ -1,0 +1,5 @@
+"name","label","type","role","values"
+"id","Person ID","integer","id",""
+"time","Time","integer","time","0-3"
+"treatment","Treatment","categorical","group","control|intervention"
+"outcome","Outcome","numeric","outcome","15-100"

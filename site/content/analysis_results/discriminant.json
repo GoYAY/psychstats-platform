@@ -1,0 +1,67 @@
+{
+  "case_id": "discriminant",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] MASS_7.3-65    compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n     predicted\ntruth  A  B  C\n    A 43 21  6\n    B 13 47 10\n    C  8 10 52\n     predicted\ntruth  A  B  C\n    A 42 22  6\n    B 11 47 12\n    C  5 11 54\n",
+  "stderr": "",
+  "metrics": {
+    "lda_accuracy": 0.6761904761904762,
+    "qda_accuracy": 0.680952380952381,
+    "mean_posterior": 0.725618023662609
+  },
+  "warnings": [],
+  "tables": {
+    "confusion": [
+      {
+        "truth": "A",
+        "predicted": "A",
+        "Freq": 43
+      },
+      {
+        "truth": "B",
+        "predicted": "A",
+        "Freq": 13
+      },
+      {
+        "truth": "C",
+        "predicted": "A",
+        "Freq": 8
+      },
+      {
+        "truth": "A",
+        "predicted": "B",
+        "Freq": 21
+      },
+      {
+        "truth": "B",
+        "predicted": "B",
+        "Freq": 47
+      },
+      {
+        "truth": "C",
+        "predicted": "B",
+        "Freq": 10
+      },
+      {
+        "truth": "A",
+        "predicted": "C",
+        "Freq": 6
+      },
+      {
+        "truth": "B",
+        "predicted": "C",
+        "Freq": 10
+      },
+      {
+        "truth": "C",
+        "predicted": "C",
+        "Freq": 52
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "9098d3c54c6fd5bc40b3cc7cf661206958a21a9da36b80954ce235561664378e",
+  "config_sha256": "ac33a472101268860efc3815f8603f8bb539467dd719d90b2d7ca191b20004ba",
+  "data_sha256": {}
+}

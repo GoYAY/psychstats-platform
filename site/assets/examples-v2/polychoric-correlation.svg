@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="282pt" viewBox="0 0 760 282" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">模型假设有更细的连续反应，由阈值分段记录为有序回答。。表为概念假设，不提供阈值估计；五档题不自动满足模型条件。</desc><title id="title">五档回答与更细的感受</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:04:40.165637</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 282  L 760 282  L 760 0  L 0 0  L 0 282  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 12  L 730 12  Q 744 12 744 26  L 744 39  Q 744 53 730 53  L 30 53  Q 16 53 16 39  L 16 26  Q 16 12 30 12  z " clip-path="url(#p87d9918b92)" style="fill: #6741ad; opacity: 0.09" />
+   </g>
+   <g id="patch_3">
+    <path d="M 30 55  L 730 55  Q 744 55 744 69  L 744 82  Q 744 96 730 96  L 30 96  Q 16 96 16 82  L 16 69  Q 16 55 30 55  z " clip-path="url(#p87d9918b92)" style="fill: #6741ad; opacity: 0.035" />
+   </g>
+   <g id="patch_4">
+    <path d="M 30 98  L 730 98  Q 744 98 744 112  L 744 125  Q 744 139 730 139  L 30 139  Q 16 139 16 125  L 16 112  Q 16 98 30 98  z " clip-path="url(#p87d9918b92)" style="fill: #6741ad; opacity: 0.065" />
+   </g>
+   <g id="patch_5">
+    <path d="M 30 141  L 730 141  Q 744 141 744 155  L 744 168  Q 744 182 730 182  L 30 182  Q 16 182 16 168  L 16 155  Q 16 141 30 141  z " clip-path="url(#p87d9918b92)" style="fill: #6741ad; opacity: 0.035" />
+   </g>
+   <g id="patch_6">
+    <path d="M 30 184  L 730 184  Q 744 184 744 198  L 744 211  Q 744 225 730 225  L 30 225  Q 16 225 16 211  L 16 198  Q 16 184 30 184  z " clip-path="url(#p87d9918b92)" style="fill: #6741ad; opacity: 0.065" />
+   </g>
+   <g id="patch_7">
+    <path d="M 30 227  L 730 227  Q 744 227 744 241  L 744 254  Q 744 268 730 268  L 30 268  Q 16 268 16 254  L 16 241  Q 16 227 30 227  z " clip-path="url(#p87d9918b92)" style="fill: #6741ad; opacity: 0.035" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 13  L 728 13  " clip-path="url(#p87d9918b92)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 56  L 728 56  " clip-path="url(#p87d9918b92)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 32 99  L 728 99  " clip-path="url(#p87d9918b92)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_4">
+    <path d="M 32 142  L 728 142  " clip-path="url(#p87d9918b92)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_5">
+    <path d="M 32 185  L 728 185  " clip-path="url(#p87d9918b92)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_6">
+    <path d="M 32 228  L 728 228  " clip-path="url(#p87d9918b92)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="28" y="37.66625" transform="rotate(-0 28 37.66625)">感受范围</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="270.666667" y="37.660625" transform="rotate(-0 270.666667 37.660625)">两题各自的记录档</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="513.333333" y="37.684063" transform="rotate(-0 513.333333 37.684063)">需要检查</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="80.695312" transform="rotate(-0 28 80.695312)">最低一段</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="270.666667" y="80.612812" transform="rotate(-0 270.666667 80.612812)">从不</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="513.333333" y="80.7075" transform="rotate(-0 513.333333 80.7075)">各题阈值不同</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="123.71875" transform="rotate(-0 28 123.71875)">较低一段</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="270.666667" y="123.724375" transform="rotate(-0 270.666667 123.724375)">偶尔</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="513.333333" y="123.695312" transform="rotate(-0 513.333333 123.695312)">连续反应假设</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="166.68875" transform="rotate(-0 28 166.68875)">中间一段</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="270.666667" y="166.759062" transform="rotate(-0 270.666667 166.759062)">有时</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="513.333333" y="166.695312" transform="rotate(-0 513.333333 166.695312)">分布假设</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="209.765625" transform="rotate(-0 28 209.765625)">较高一段</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="270.666667" y="209.713125" transform="rotate(-0 270.666667 209.713125)">经常</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="513.333333" y="209.713125" transform="rotate(-0 513.333333 209.713125)">样本各档记录</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="252.76" transform="rotate(-0 28 252.76)">最高一段</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="270.666667" y="252.683125" transform="rotate(-0 270.666667 252.683125)">总是</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="513.333333" y="252.630625" transform="rotate(-0 513.333333 252.630625)">模型适用性</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p87d9918b92">
+   <rect x="0" y="0" width="760" height="282" />
+  </clipPath>
+ </defs>
+</svg>

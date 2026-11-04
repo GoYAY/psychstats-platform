@@ -1,0 +1,65 @@
+{
+  "id": "mediated-interaction",
+  "unit_id": "mediated-interaction",
+  "title": "交互关联是否通过另一变量传递",
+  "question": "资源对压力的调节，可能是通过改变支持感体现的吗？",
+  "design": "模拟 X×W 预测 M，Y 同时回归 X、W、X×W 和 M。将乘积项视作关注的预测项，间接交互关联 a3×b；300 次逐人 Bootstrap。",
+  "variables": "固定种子生成的连续教学指标。X/W/M/Y 或潜因子的统计角色见设计与代码，非真实参与者。",
+  "script": "examples/r/output_reading/mediated-interaction.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "indirect",
+      "label": "间接交互关联 a3×b",
+      "meaning": "交互项通过 M 的路径乘积；不与条件间接关联在任意 W 处的值混用。",
+      "term": "mediated-moderation",
+      "format": ".3f"
+    },
+    {
+      "field_id": "direct_interaction",
+      "label": "给定 M 后直接交互",
+      "meaning": "控制 M 后剩余的 X×W 条件关联，不是证明 M 解释了真实机制。",
+      "term": "interaction",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_lower",
+      "label": "间接乘积区间下界",
+      "meaning": "300 次百分位 Bootstrap，与单独交互项 p 检验是不同目标。",
+      "term": "bootstrap",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "何时不能这样解释",
+      "body": "不同文献的条件过程命名并不完全一致，优先写清方程和目标量；不依据加入 M 后显著性消失判断中介成立。"
+    },
+    {
+      "title": "路径或交互不显著怎么办",
+      "body": "检查区间精度、测量质量、取值范围及模型条件。零假设证据不足不是证明零效应，不改中心化方式、分组切点或删控制项来追求显著。横断观察不能仅凭路径确立中介机制。"
+    }
+  ],
+  "report_template": "以乘积项 X×W 为关注预测项的教学模型中，通过 M 的间接交互关联为 {indirect:.3f}，300 次 Bootstrap 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]；给定 M 后的直接交互系数为 {direct_interaction:.3f}。该分解依赖明确的路径设定，不替代因果设计。",
+  "sources": [
+    {
+      "title": "估计实现的官方文档",
+      "url": "https://lavaan.ugent.be/tutorial/mediation.html"
+    }
+  ],
+  "related_terms": [
+    "mediated-moderation",
+    "interaction",
+    "bootstrap"
+  ],
+  "table_labels": {
+    "parameters": "完整路径与测量参数",
+    "simple_slopes": "指定条件下的简单斜率及区间",
+    "conditional_effects": "条件间接关联与指数的 Bootstrap 区间"
+  }
+}

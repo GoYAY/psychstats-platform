@@ -1,0 +1,68 @@
+{
+  "id": "reliability",
+  "unit_id": "reliability",
+  "title": "量表内部一致性如何读",
+  "question": "几道题放在一起求总分，可靠吗？",
+  "design": "复用 12 道五级题目教学数据，只对第 1–4 题的同一拟定分量表计算原始与标准化 α。不自动反向题目；量表计分须先核对题意。",
+  "variables": "已有教学 CSV 的列名和题目编码见代码；非真实研究样本。",
+  "script": "examples/r/output_reading/reliability.R",
+  "data_files": [
+    "examples/data/scale_items.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "alpha",
+      "label": "原始 α",
+      "meaning": "依据原始协方差的内部一致性；高 α 不证明单维或效度。",
+      "term": "cronbach-alpha",
+      "format": ".3f"
+    },
+    {
+      "field_id": "standardized_alpha",
+      "label": "标准化 α",
+      "meaning": "依据题间相关，与原始 α 不同；不能择大者报告。",
+      "term": "reliability",
+      "format": ".3f"
+    },
+    {
+      "field_id": "min_item_rest",
+      "label": "最低题目－其余题相关",
+      "meaning": "不含自身的总分相关；是检查线索，不能只为提高 α 删题。",
+      "term": "internal-consistency",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "判断模型之前先检查这些条件",
+      "body": "本例不报告未计算的 ω 或重测信度；多维量表的总 α 可能误导，反向计分要由题目定义决定。"
+    },
+    {
+      "title": "路径或拟合不符合预期时",
+      "body": "先区分测量问题、模型错误与证据不足。检查实际估计器、标准误、编码、有效样本和参数表。不要靠无理论依据的删题、加路径或误差相关来追求显著与完美拟合。"
+    }
+  ],
+  "report_template": "第 1–4 题拟定分量表在 {n:.0f} 人教学数据中的原始 Cronbach α = {alpha:.3f}，标准化 α = {standardized_alpha:.3f}，平均题间相关 {average_r:.3f}。内部一致性不替代结构、内容和效标效度证据。",
+  "sources": [
+    {
+      "title": "实现与估计方法的官方文档",
+      "url": "https://search.r-project.org/CRAN/refmans/psych/html/alpha.html"
+    }
+  ],
+  "related_terms": [
+    "cronbach-alpha",
+    "reliability",
+    "internal-consistency"
+  ],
+  "table_labels": {
+    "parameters": "完整参数表：估计、标准误、区间及标准化参数",
+    "fit": "拟合指标（保留官方字段名）",
+    "loadings": "各题完整载荷",
+    "comparison": "嵌套模型比较"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "case_id": "slope",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 nlme_3.1-168   grid_4.5.1     jsonlite_2.0.0 lattice_0.22-7\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\nLinear mixed-effects model fit by REML\n  Data: d \n       AIC      BIC    logLik\n  4938.595 4975.173 -2461.297\n\nRandom effects:\n Formula: ~mw | class_id\n Structure: Diagonal\n        (Intercept)         mw Residual\nStdDev:    4.815167 0.01544611 6.953281\n\nFixed effects:  achievement ~ mw * tc + motivation_mean \n                   Value Std.Error  DF   t-value p-value\n(Intercept)     57.24945 21.071615 688  2.716899  0.0068\nmw               0.36195  0.027212 688 13.301179  0.0000\ntc               0.06106  0.119817  27  0.509621  0.6145\nmotivation_mean  0.19053  0.383573  27  0.496727  0.6234\nmw:tc           -0.00353  0.003388 688 -1.041757  0.2979\n Correlation: \n                (Intr) mw     tc     mtvtn_\nmw               0.000                     \ntc              -0.095  0.000              \nmotivation_mean -0.999  0.000  0.095       \nmw:tc            0.000 -0.002  0.000  0.000\n\nStandardized Within-Group Residuals:\n        Min          Q1         Med          Q3         Max \n-3.43273574 -0.67687614 -0.01624043  0.63175554  3.16848694 \n\nNumber of Observations: 720\nNumber of Groups: 30 \nclass_id = pdDiag(mw) \n            Variance     StdDev    \n(Intercept) 2.318584e+01 4.81516733\nmw          2.385822e-04 0.01544611\nResidual    4.834812e+01 6.95328111\n",
+  "stderr": "",
+  "metrics": {
+    "interaction": -0.0035295839457171784,
+    "p": 0.29789010565427315,
+    "slope_variance": 0.0002385822,
+    "groups": 30
+  },
+  "warnings": [],
+  "tables": {
+    "fixed": [
+      {
+        "term": "(Intercept)",
+        "Value": 57.249452434189024,
+        "Std.Error": 21.071614557444512,
+        "DF": 688,
+        "t.value": 2.7168991857799067,
+        "p.value": 0.006755343629220829,
+        "_row": "(Intercept)"
+      },
+      {
+        "term": "mw",
+        "Value": 0.3619462903764511,
+        "Std.Error": 0.027211595365140624,
+        "DF": 688,
+        "t.value": 13.301178615941124,
+        "p.value": 4.321534043190747e-36,
+        "_row": "mw"
+      },
+      {
+        "term": "tc",
+        "Value": 0.061061442264521766,
+        "Std.Error": 0.11981731885896679,
+        "DF": 27,
+        "t.value": 0.5096211703451258,
+        "p.value": 0.6144573418612251,
+        "_row": "tc"
+      },
+      {
+        "term": "motivation_mean",
+        "Value": 0.1905312368061373,
+        "Std.Error": 0.38357326520287943,
+        "DF": 27,
+        "t.value": 0.49672710298347195,
+        "p.value": 0.6234018942721969,
+        "_row": "motivation_mean"
+      },
+      {
+        "term": "mw:tc",
+        "Value": -0.0035295839457171784,
+        "Std.Error": 0.0033881055315246418,
+        "DF": 688,
+        "t.value": -1.041757381190211,
+        "p.value": 0.29789010565427315,
+        "_row": "mw:tc"
+      }
+    ],
+    "random": [
+      {
+        "term": "(Intercept)",
+        "variance": 23.18584
+      },
+      {
+        "term": "mw",
+        "variance": 0.0002385822
+      },
+      {
+        "term": "Residual",
+        "variance": 48.34812
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "fc47d667d1375ecebb107684a9d235c68d631347d1c52ad782455c2e74f5f199",
+  "config_sha256": "26ef58983ebe292b61aede2de5e76d33f441a7d76238075d36f0497798ada036",
+  "data_sha256": {
+    "examples/data/nested_classrooms.csv": "fbfb8a3313de70cf112b6337df89b342abc4f5cdf36e1c7b1fd73aeb1205ec87"
+  }
+}

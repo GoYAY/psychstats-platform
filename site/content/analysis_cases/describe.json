@@ -1,0 +1,23 @@
+{
+  "id": "describe", "unit_id": "describe", "title": "先读懂一份问卷的分数分布",
+  "question": "收回一批压力问卷，怎样描述大家的水平与差异？",
+  "design": "固定生成的横断调查教学数据。一行一名参与者，压力为教学量尺分数；描述此样本，不能据此断言整个学生群体的水平。",
+  "variables": "id 是参与者编号；stress 是压力分数。仅排除压力缺失记录，并分别报告样本量和个体差异。",
+  "script": "examples/r/output_reading/describe.R",
+  "data_files": ["examples/data/cross_sectional_survey.csv"],
+  "output_blocks": ["metrics", "stdout"],
+  "annotations": [
+    {"field_id":"n", "label":"有效样本量 n", "meaning":"有可用压力分数的参与者数，不是问卷题目数。", "term":"population-and-sample"},
+    {"field_id":"mean", "label":"平均数 Mean", "meaning":"这批参与者的平均压力分数；若少量极端分数很大，应同时比较中位数和分布。", "term":"central-tendency-and-dispersion"},
+    {"field_id":"sd", "label":"标准差 SD", "meaning":"参与者彼此相差多少，不是平均数的不确定性；后者要看标准误或区间。", "term":"central-tendency-and-dispersion"},
+    {"field_id":"median", "label":"中位数 Median", "meaning":"将分数排好队后，中间位置的分数；与平均数比较有助于注意不对称分布。", "term":"quantile"},
+    {"field_id":"iqr", "label":"四分位距 IQR", "meaning":"中间约一半分数跨越的范围，不是所有参与者的范围。", "term":"quantile"}
+  ],
+  "diagnostics":[
+    {"title":"平均数与中位数差距较大", "body":"先看直方图和实际记录，检查是否有偏态或录入错误；按研究目的补充中位数与四分位距，不为让分布好看而删除真实高分。"},
+    {"title":"样本分数不等于总体结论", "body":"如果要估计总体平均压力，还需说明抽样方式并查看置信区间；方便抽样即使样本量大也不能自动获得代表性。"}
+  ],
+  "report_template":"在本教学样本中，有效压力记录为 {n:.0f} 人，平均压力分数为 {mean:.2f}（SD = {sd:.2f}），中位数为 {median:.2f}，四分位距为 {iqr:.2f}。这些结果描述样本中的分数水平与个体差异，不作因果或总体代表性推断。",
+  "sources":[{"title":"R summary 与描述统计", "url":"https://stat.ethz.ch/R-manual/R-devel/library/base/html/summary.html"}],
+  "related_terms":["descriptive-statistics","central-tendency-and-dispersion","histogram","confidence-interval"]
+}

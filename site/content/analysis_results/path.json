@@ -1,0 +1,296 @@
+{
+  "case_id": "path",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 parallel_4.5.1 lavaan_0.6-21  mnormt_2.1.2   pbivnorm_0.6.0\n[6] jsonlite_2.0.0 stats4_4.5.1   quadprog_1.5-8\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\nLength  Class   Mode \n     1 lavaan     S4 \n",
+  "stderr": "During startup - Warning messages:\n1: Setting LC_COLLATE=C.UTF-8 failed \n2: Setting LC_CTYPE=C.UTF-8 failed \n3: Setting LC_MONETARY=C.UTF-8 failed \n4: Setting LC_TIME=C.UTF-8 failed \n",
+  "metrics": {
+    "a": -0.3567899043962672,
+    "b": 0.3136671830809685,
+    "c": -0.3687488150382937,
+    "df": 0
+  },
+  "warnings": [
+    "During startup - Warning messages:"
+  ],
+  "tables": {
+    "parameters": [
+      {
+        "lhs": "social_support",
+        "op": "~",
+        "rhs": "stress",
+        "label": "a",
+        "est": -0.3567899043962672,
+        "se": 0.05636381458947273,
+        "z": -6.33012344879344,
+        "pvalue": 2.4496515926841766e-10,
+        "ci.lower": -0.467260951022927,
+        "ci.upper": -0.24631885776960738,
+        "std.lv": -0.3567899043962672,
+        "std.all": -0.31647829870287836,
+        "std.nox": -0.03929778861982563
+      },
+      {
+        "lhs": "well_being",
+        "op": "~",
+        "rhs": "social_support",
+        "label": "b",
+        "est": 0.3136671830809685,
+        "se": 0.04355825901590645,
+        "z": 7.201095502150916,
+        "pvalue": 5.972999872483342e-13,
+        "ci.lower": 0.2282945641805248,
+        "ci.upper": 0.39903980198141226,
+        "std.lv": 0.3136671830809685,
+        "std.all": 0.3334366367445334,
+        "std.nox": 0.3334366367445334
+      },
+      {
+        "lhs": "well_being",
+        "op": "~",
+        "rhs": "stress",
+        "label": "c",
+        "est": -0.3687488150382937,
+        "se": 0.0491065173620126,
+        "z": -7.509162425832039,
+        "pvalue": 5.950795411990839e-14,
+        "ci.lower": -0.46499582047402926,
+        "ci.upper": -0.27250180960255815,
+        "std.lv": -0.3687488150382937,
+        "std.all": -0.3477012439690573,
+        "std.nox": -0.043174808649911904
+      },
+      {
+        "lhs": "social_support",
+        "op": "~~",
+        "rhs": "social_support",
+        "label": "",
+        "est": 74.17454688396143,
+        "se": 5.528644301092763,
+        "z": 13.416407864998742,
+        "pvalue": 0,
+        "ci.lower": 63.33860317048699,
+        "ci.upper": 85.01049059743586,
+        "std.lv": 74.17454688396143,
+        "std.all": 0.8998414864501318,
+        "std.nox": 0.8998414864501318
+      },
+      {
+        "lhs": "well_being",
+        "op": "~~",
+        "rhs": "well_being",
+        "label": "",
+        "est": 50.66387796213131,
+        "se": 3.7762625042359734,
+        "z": 13.416407864998728,
+        "pvalue": 0,
+        "ci.lower": 43.26253945765977,
+        "ci.upper": 58.06521646660285,
+        "std.lv": 50.66387796213131,
+        "std.all": 0.6945411871263693,
+        "std.nox": 0.6945411871263693
+      },
+      {
+        "lhs": "stress",
+        "op": "~~",
+        "rhs": "stress",
+        "label": "",
+        "est": 64.85622191358024,
+        "se": 0,
+        "ci.lower": 64.85622191358024,
+        "ci.upper": 64.85622191358024,
+        "std.lv": 64.85622191358024,
+        "std.all": 1,
+        "std.nox": 64.85622191358024
+      }
+    ],
+    "fit": [
+      {
+        "index": "npar",
+        "value": 5
+      },
+      {
+        "index": "fmin",
+        "value": 0
+      },
+      {
+        "index": "chisq",
+        "value": 0
+      },
+      {
+        "index": "df",
+        "value": 0
+      },
+      {
+        "index": "pvalue"
+      },
+      {
+        "index": "baseline.chisq",
+        "value": 169.21456961939276
+      },
+      {
+        "index": "baseline.df",
+        "value": 3
+      },
+      {
+        "index": "baseline.pvalue",
+        "value": 0
+      },
+      {
+        "index": "cfi",
+        "value": 1
+      },
+      {
+        "index": "tli",
+        "value": 1
+      },
+      {
+        "index": "nnfi",
+        "value": 1
+      },
+      {
+        "index": "rfi",
+        "value": 1
+      },
+      {
+        "index": "nfi",
+        "value": 1
+      },
+      {
+        "index": "pnfi",
+        "value": 0
+      },
+      {
+        "index": "ifi",
+        "value": 1
+      },
+      {
+        "index": "rni",
+        "value": 1
+      },
+      {
+        "index": "logl",
+        "value": -2503.329908521656
+      },
+      {
+        "index": "unrestricted.logl",
+        "value": -2503.329908521656
+      },
+      {
+        "index": "aic",
+        "value": 5016.659817043312
+      },
+      {
+        "index": "bic",
+        "value": 5036.090337200562
+      },
+      {
+        "index": "ntotal",
+        "value": 360
+      },
+      {
+        "index": "bic2",
+        "value": 5020.227768950701
+      },
+      {
+        "index": "rmsea",
+        "value": 0
+      },
+      {
+        "index": "rmsea.ci.lower",
+        "value": 0
+      },
+      {
+        "index": "rmsea.ci.upper",
+        "value": 0
+      },
+      {
+        "index": "rmsea.ci.level",
+        "value": 0.9
+      },
+      {
+        "index": "rmsea.pvalue"
+      },
+      {
+        "index": "rmsea.close.h0",
+        "value": 0.05
+      },
+      {
+        "index": "rmsea.notclose.pvalue"
+      },
+      {
+        "index": "rmsea.notclose.h0",
+        "value": 0.08
+      },
+      {
+        "index": "rmr",
+        "value": 5.801557143511545e-15
+      },
+      {
+        "index": "rmr_nomean",
+        "value": 5.801557143511545e-15
+      },
+      {
+        "index": "srmr",
+        "value": 9.064933036736789e-17
+      },
+      {
+        "index": "srmr_bentler",
+        "value": 9.064933036736789e-17
+      },
+      {
+        "index": "srmr_bentler_nomean",
+        "value": 9.064933036736789e-17
+      },
+      {
+        "index": "crmr",
+        "value": 2.0521614974769298e-16
+      },
+      {
+        "index": "crmr_nomean",
+        "value": 2.0521614974769298e-16
+      },
+      {
+        "index": "srmr_mplus",
+        "value": 7.733468515587084e-17
+      },
+      {
+        "index": "srmr_mplus_nomean",
+        "value": 7.733468515587084e-17
+      },
+      {
+        "index": "cn_05"
+      },
+      {
+        "index": "cn_01"
+      },
+      {
+        "index": "gfi",
+        "value": 1
+      },
+      {
+        "index": "agfi",
+        "value": 1
+      },
+      {
+        "index": "pgfi",
+        "value": 0
+      },
+      {
+        "index": "mfi",
+        "value": 1
+      },
+      {
+        "index": "ecvi",
+        "value": 0.027777777777777776
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "696f193dd95d719468680f5efd6af0a9ce0d860d8f038ce0b52ea3c67bf28057",
+  "config_sha256": "0db7385a04cd896789a056d030b07dbbb99cd86595b62027ba73496e2192a03e",
+  "data_sha256": {
+    "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+  }
+}

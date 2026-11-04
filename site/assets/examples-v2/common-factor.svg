@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="539pt" viewBox="0 0 760 539" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">共同方面可以解释几道题一起变化。。箭头是测量设定；相似措辞等也可能使回答相关。</desc><title id="title">三题共享焦虑线索</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:40.674619</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 539  L 760 539  L 760 0  L 0 0  L 0 539  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 259.052502 211.641369  Q 365.622655 160.876117 471.082508 110.639762  " clip-path="url(#pcbcba873a2)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 465.716923 110.537299  L 471.082508 110.639762  L 467.781187 114.870752  z " clip-path="url(#pcbcba873a2)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 259.250942 212.5  Q 365.624405 212.5 470.768031 212.5  " clip-path="url(#pcbcba873a2)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 465.968031 210.1  L 470.768031 212.5  L 465.968031 214.9  z " clip-path="url(#pcbcba873a2)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 259.052502 213.358631  Q 365.622655 264.123883 471.082508 314.360238  " clip-path="url(#pcbcba873a2)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 467.781187 310.129248  L 471.082508 314.360238  L 465.716923 314.462701  z " clip-path="url(#pcbcba873a2)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 178.75 188.5  C 197.977225 188.5 216.419541 191.028791 230.015242 195.529437  C 243.610943 200.030083 251.25 206.135126 251.25 212.5  C 251.25 218.864874 243.610943 224.969917 230.015242 229.470563  C 216.419541 233.971209 197.977225 236.5 178.75 236.5  C 159.522775 236.5 141.080459 233.971209 127.484758 229.470563  C 113.889057 224.969917 106.25 218.864874 106.25 212.5  C 106.25 206.135126 113.889057 200.030083 127.484758 195.529437  C 141.080459 191.028791 159.522775 188.5 178.75 188.5  z " clip-path="url(#pcbcba873a2)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 489 85.25  L 616 85.25  Q 625 85.25 625 94.25  L 625 124.25  Q 625 133.25 616 133.25  L 489 133.25  Q 480 133.25 480 124.25  L 480 94.25  Q 480 85.25 489 85.25  z " clip-path="url(#pcbcba873a2)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 489 188.5  L 616 188.5  Q 625 188.5 625 197.5  L 625 227.5  Q 625 236.5 616 236.5  L 489 236.5  Q 480 236.5 480 227.5  L 480 197.5  Q 480 188.5 489 188.5  z " clip-path="url(#pcbcba873a2)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 489 291.75  L 616 291.75  Q 625 291.75 625 300.75  L 625 330.75  Q 625 339.75 616 339.75  L 489 339.75  Q 480 339.75 480 330.75  L 480 300.75  Q 480 291.75 489 291.75  z " clip-path="url(#pcbcba873a2)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="178.75" y="216.015742" transform="rotate(-0 178.75 216.015742)">焦虑（共同方面）</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="552.5" y="112.730117" transform="rotate(-0 552.5 112.730117)">担忧考试</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="552.5" y="215.933242" transform="rotate(-0 552.5 215.933242)">紧张</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="552.5" y="319.260117" transform="rotate(-0 552.5 319.260117)">难放松</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="453.593867" transform="rotate(-0 20 453.593867)">1. 焦虑（共同方面） → 担忧考试：共同变化</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="481.593867" transform="rotate(-0 20 481.593867)">2. 焦虑（共同方面） → 紧张：共同变化</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="509.593867" transform="rotate(-0 20 509.593867)">3. 焦虑（共同方面） → 难放松：共同变化</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pcbcba873a2">
+   <rect x="0" y="0" width="760" height="539" />
+  </clipPath>
+ </defs>
+</svg>

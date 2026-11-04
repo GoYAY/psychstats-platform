@@ -1,0 +1,8 @@
+source("_common.R")
+d <- latent_teaching(500,4303); d$group <- rep(c("A","B"),each=250)
+config <- lavaan::cfa(measurement_model,d,group="group")
+metric <- lavaan::cfa(measurement_model,d,group="group",group.equal="loadings")
+scalar <- lavaan::cfa(measurement_model,d,group="group",group.equal=c("loadings","intercepts"))
+invisible(lapply(list(config,metric,scalar),check_sem))
+comparison <- lavaan::lavTestLRT(config,metric,scalar); print(comparison); print(summary(scalar,fit.measures=TRUE))
+finish(c(metric_delta_cfi=unname(lavaan::fitMeasures(metric,"cfi"))-unname(lavaan::fitMeasures(config,"cfi")),scalar_delta_cfi=unname(lavaan::fitMeasures(scalar,"cfi"))-unname(lavaan::fitMeasures(metric,"cfi")),metric_p=comparison$"Pr(>Chisq)"[2],scalar_p=comparison$"Pr(>Chisq)"[3]),list(comparison=data.frame(model=rownames(comparison),comparison),parameters=lavaan::parameterEstimates(scalar,standardized=TRUE)))

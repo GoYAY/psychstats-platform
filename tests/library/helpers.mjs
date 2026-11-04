@@ -1,0 +1,7 @@
+export function packageFixture(){
+ const reference={source_id:'s1',start:0,end:10};
+ const term={id:'sample',zh:'样本',en:'Sample',aliases:[],definition:''};
+ const blocks=['real_question','operational_definition','plain_explanation','detailed_explanation','how_to_use'].map(id=>({id,heading:id,paragraphs:[{text:'样本是实际观察的人。',emphasis:[],kind:'factual',refs:[reference]}]}));
+ const lesson={schema_version:1,content_id:'lesson-demo',status:'complete',term,blocks,formulas:[],visual:null,quiz:{question:'哪些人属于样本？',options:['a','b','c','d'].map(id=>({id,text:id,explanation:'本项解释'})),correct_option:'a'},relations:[],missing_evidence:[],limitations:[],glossary:[],source_relations:[],provenance:{human_scientific_review:'pending'}};
+ return {schemaVersion:1,packageId:'pkg-demo',terms:[{id:'sample',zh:'样本',en:'Sample',aliases:[],anchor:term,tags:[],currentRevisionId:'rev-demo',trashed:false}],revisions:[{id:'rev-demo',termId:'sample',lesson,sourceIds:['source-demo'],sourceMap:{s1:'source-demo'},evidenceIds:['evidence-demo'],assetIds:[],provenance:{human_scientific_review:'pending'}}],works:[{id:'work-demo',title:'教学文献',doi:'',authors:[],year:null,url:''}],sources:[{id:'source-demo',localId:'s1',workId:'work-demo',scope:'excerpt',origin:'user',blobHash:null,originalStatus:'missing',fileName:null}],evidence:[{id:'evidence-demo',sourceId:'source-demo',revisionId:'rev-demo',data:{id:'s1',title:'教学文献',scope:'excerpt',text:'样本是实际观察的人。',references:[]}}],edges:[],annotations:[],assets:[]};
+}

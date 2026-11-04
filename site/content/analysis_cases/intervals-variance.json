@@ -1,0 +1,52 @@
+{
+  "id": "intervals-variance",
+  "unit_id": "intervals",
+  "title": "分数波动的区间如何读",
+  "question": "同样的训练，学生表现的分散程度大约是多少？",
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。χ² 方差区间强依赖正态，不用于偏态等待时间；对 SD 的不确定性不是对均值的不确定性。",
+  "variables": "固定种子生成小型教学数据，非真实参与者；不上传数据。",
+  "script": "examples/r/output_reading/intervals-variance.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "variance",
+      "label": "样本方差",
+      "meaning": "以分数平方为单位，不是 SD。",
+      "term": "central-tendency-and-dispersion",
+      "format": ".3f"
+    },
+    {
+      "field_id": "sd_lower",
+      "label": "SD 区间下界",
+      "meaning": "方差区间开方得到 SD 区间，与平均分区间不同。",
+      "term": "confidence-interval",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这个变体最重要的边界",
+      "body": "χ² 方差区间强依赖正态，不用于偏态等待时间；对 SD 的不确定性不是对均值的不确定性。"
+    },
+    {
+      "title": "如何继续检查",
+      "body": "先明确独立单位、估计目标及比较方向，结合完整参数与区间判断。方法改变需有研究依据并记录，不以显著性作为选择标准。"
+    }
+  ],
+  "report_template": "正态独立教学样本 n = {n:.0f}，方差为 {variance:.3f}，方差 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，SD 区间 [{sd_lower:.3f}, {sd_upper:.3f}]。",
+  "sources": [
+    {
+      "title": "R 官方统计函数索引",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "central-tendency-and-dispersion",
+    "confidence-interval"
+  ]
+}

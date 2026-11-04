@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="310" viewBox="0 0 320 310" role="img" aria-labelledby="title desc">
+  <title id="title">压力与幸福感的负相关散点图</title>
+  <desc id="desc">横轴为压力评分、纵轴为幸福感评分。教学构造的数据点整体从左上到右下，表示负线性关联，但不支持因果结论。</desc>
+  <g font-family="system-ui, 'Microsoft YaHei', sans-serif" fill="#111827">
+    <text x="14" y="24" font-size="14" font-weight="700">先看散点，再解释 Pearson r</text>
+    <text x="24" y="48" font-size="12" fill="#485567">幸福感评分 ↑</text>
+    <path d="M35 57 V237 H294" fill="none" stroke="#465465" stroke-width="1.7"/>
+    <path d="M35 192 H294 M35 147 H294 M35 102 H294" fill="none" stroke="#e1e5eb"/>
+    <path d="M55 78 L277 210" fill="none" stroke="#244da4" stroke-width="2" stroke-dasharray="6 5"/>
+    <g fill="#244da4" stroke="#fff" stroke-width="1.5">
+      <circle cx="57" cy="82" r="5"/><circle cx="80" cy="102" r="5"/>
+      <circle cx="103" cy="91" r="5"/><circle cx="123" cy="124" r="5"/>
+      <circle cx="143" cy="119" r="5"/><circle cx="164" cy="149" r="5"/>
+      <circle cx="185" cy="139" r="5"/><circle cx="205" cy="169" r="5"/>
+      <circle cx="226" cy="164" r="5"/><circle cx="245" cy="197" r="5"/>
+      <circle cx="266" cy="187" r="5"/><circle cx="282" cy="217" r="5"/>
+    </g>
+    <text x="164" y="259" text-anchor="middle" font-size="12" fill="#485567">压力评分 →</text>
+    <text x="18" y="283" font-size="13" font-weight="700" fill="#244da4">r &lt; 0</text>
+    <text x="66" y="283" font-size="12">负线性关联，不是因果结论</text>
+    <text x="18" y="302" font-size="11" fill="#596371">散点为教学构造，不对应真实研究数据。</text>
+  </g>
+</svg>

@@ -1,0 +1,158 @@
+{
+  "case_id": "mixed-design",
+  "covariances": [],
+  "design": "固定种子生成72人（每组36人）、三时点完整平衡教学数据。混合设计包含组间因素和组内时间；基于组内残差协方差计算GG校正，要求独立个体、共同组内协方差与正态误差等。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/mixed-design.R",
+    "script_sha256": "ef30efe87d786704185531daa466e3867a508c452ebaf04c68d415dad6a59e13",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "F",
+        "df1",
+        "df2",
+        "epsilon",
+        "reference_df1",
+        "reference_df2",
+        "p_reference"
+      ],
+      "name": "mixed_effects",
+      "rows": [
+        {
+          "F": 4.987057487906622,
+          "df1": 1,
+          "df2": 70,
+          "effect": "group",
+          "epsilon": 1,
+          "p_reference": 0.02873647945751435,
+          "reference_df1": 1,
+          "reference_df2": 70
+        },
+        {
+          "F": 14.961556047446106,
+          "df1": 2,
+          "df2": 140,
+          "effect": "time",
+          "epsilon": 0.8536209726089989,
+          "p_reference": 5.938815694023663e-06,
+          "reference_df1": 1.7072419452179979,
+          "reference_df2": 119.50693616525984
+        },
+        {
+          "F": 3.5495681295560364,
+          "df1": 2,
+          "df2": 140,
+          "effect": "group:time",
+          "epsilon": 0.8536209726089989,
+          "p_reference": 0.03868126915577581,
+          "reference_df1": 1.7072419452179979,
+          "reference_df2": 119.50693616525984
+        }
+      ],
+      "title": "被试间/内效应与实际参考自由度"
+    },
+    {
+      "columns": [
+        "comparison",
+        "difference",
+        "df",
+        "ci_lower",
+        "ci_upper",
+        "p"
+      ],
+      "name": "change_comparison",
+      "rows": [
+        {
+          "ci_lower": -2.2157064079028337,
+          "ci_upper": 7.4626937443318955,
+          "comparison": "practice minus control: followup-pre",
+          "df": 68.33491961071172,
+          "difference": 2.6234936682145307,
+          "p": 0.2831817300289463
+        }
+      ],
+      "title": "指定起止时点的变化差及区间"
+    },
+    {
+      "column_labels": {
+        "change_ci_lower": "change_ci_lower",
+        "change_ci_upper": "change_ci_upper",
+        "change_difference": "随访减前测的组差",
+        "gg_epsilon": "gg_epsilon",
+        "group_F": "组别主效应 F",
+        "group_p": "group_p",
+        "interaction_F": "组别×时间 F",
+        "interaction_df1": "interaction_df1",
+        "interaction_df2": "interaction_df2",
+        "interaction_gg_p": "交互的 GG 校正 p",
+        "observations": "observations",
+        "people": "独立参与者数"
+      },
+      "columns": [
+        "analysis",
+        "people",
+        "group_F",
+        "interaction_F",
+        "interaction_gg_p",
+        "change_difference",
+        "observations",
+        "group_p",
+        "gg_epsilon",
+        "interaction_df1",
+        "interaction_df2",
+        "change_ci_lower",
+        "change_ci_upper"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "两组学生的变化轨迹是否不同",
+          "change_ci_lower": -2.2157064079028337,
+          "change_ci_upper": 7.4626937443318955,
+          "change_difference": 2.6234936682145307,
+          "gg_epsilon": 0.8536209726089989,
+          "group_F": 4.987057487906622,
+          "group_p": 0.02873647945751435,
+          "interaction_F": 3.5495681295560364,
+          "interaction_df1": 1.7072419452179979,
+          "interaction_df2": 119.50693616525984,
+          "interaction_gg_p": 0.03868126915577581,
+          "observations": 216,
+          "people": 72
+        }
+      ],
+      "source_fields": [
+        {
+          "change_ci_lower": "change_ci_lower",
+          "change_ci_upper": "change_ci_upper",
+          "change_difference": "change_difference",
+          "gg_epsilon": "gg_epsilon",
+          "group_F": "group_F",
+          "group_p": "group_p",
+          "interaction_F": "interaction_F",
+          "interaction_df1": "interaction_df1",
+          "interaction_df2": "interaction_df2",
+          "interaction_gg_p": "interaction_gg_p",
+          "observations": "observations",
+          "people": "people"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "两组学生的变化轨迹是否不同",
+  "valid": true,
+  "variances": []
+}

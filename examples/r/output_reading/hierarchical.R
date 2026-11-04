@@ -1,0 +1,7 @@
+source("_common.R")
+set.seed(4202)
+d <- data.frame(stress=rnorm(150,rep(c(2,5,8),each=50),1),sleep=rnorm(150,rep(c(8,7,6),each=50),0.6),wellbeing=rnorm(150,rep(c(8,6,3),each=50),1))
+z <- scale(d); fit <- hclust(dist(z),method="ward.D2"); cluster <- cutree(fit,k=3)
+sil <- cluster::silhouette(cluster,dist(z)); sizes <- table(cluster); print(sizes); print(summary(sil)); print(aggregate(d,list(cluster=cluster),mean))
+print(fit)
+finish(c(k=3,min_size=min(sizes),mean_silhouette=mean(sil[,"sil_width"])),list(profiles=aggregate(d,list(cluster=cluster),mean),dendrogram_merges=data.frame(step=seq_len(nrow(fit$merge)),left=fit$merge[,1],right=fit$merge[,2],height=fit$height),leaf_order=data.frame(position=seq_along(fit$order),leaf=fit$order)))

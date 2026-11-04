@@ -1,0 +1,61 @@
+{
+  "id": "proportions",
+  "unit_id": "proportions",
+  "title": "筛查阳性比例是否不同",
+  "question": "两种招募方式中，筛查阳性的人占比相同吗？",
+  "design": "固定种子生成两组独立教学样本。先比较阳性比例，再另示连续指标的方差比检验；后者依赖正态假设。",
+  "variables": "教学数据由下方代码固定种子生成，非真实参与者资料；参数设定可在代码中查看。",
+  "script": "examples/r/output_reading/proportions.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {"field_id":"single_rate","label":"A 组阳性比例","meaning":"单组的比例，不是两组比例差。下表区间为精确二项比例区间，和两组比例差的区间不同；控制台中的0.20是教学检验参考值。","term":"confidence-interval","format":".3f"},
+    {
+      "field_id": "difference",
+      "label": "阳性比例差",
+      "meaning": "第一组减第二组，是比例百分点差，不是人数差。",
+      "term": "effect-size",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "比例检验 p",
+      "meaning": "检验两组总体阳性比例相等；不显著不等于比例相同。",
+      "term": "p-value",
+      "format": ".4g"
+    },
+    {
+      "field_id": "variance_ratio",
+      "label": "连续指标方差比",
+      "meaning": "第一组方差除以第二组方差；不用于阳性比例的检验。",
+      "term": "central-tendency-and-dispersion",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这些结果最容易误读的地方",
+      "body": "稀少事件或很小样本应考虑精确二项/Fisher 方法；方差检验遇到偏态并不稳健。"
+    },
+    {
+      "title": "如果没有发现明确证据",
+      "body": "先回到研究问题和估计精度，结合区间、有效样本、数据质量及模型条件判断。证据不足不等于没有作用；不反复更换方法、删样本或放宽阈值来追求显著。"
+    }
+  ],
+  "report_template": "两组教学样本的阳性比例差为 {difference:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，比例检验 p = {p:.4g}。独立正态连续指标的方差比示例为 {variance_ratio:.3f}（p = {variance_p:.4g}），与比例比较是不同问题。",
+  "sources": [
+    {
+      "title": "R 官方 prop.test 文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/prop.test.html"
+    }
+  ],
+  "related_terms": [
+    "effect-size",
+    "p-value",
+    "central-tendency-and-dispersion"
+  ]
+}

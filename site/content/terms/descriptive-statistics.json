@@ -1,0 +1,101 @@
+{
+  "id": "descriptive-statistics",
+  "zh": "描述统计",
+  "en": "Descriptive Statistics",
+  "aliases": [],
+  "type": "concept",
+  "level": "basic",
+  "topic": "foundations",
+  "status": "public",
+  "summary": "用表格、图形和概括量描述样本数据的分布。",
+  "relations": {
+    "prerequisites": [
+      "variable"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": [
+      "measurement-scales"
+    ]
+  },
+  "real_question": "拿到一列心理测量分数，怎样先看清数据是什么样？",
+  "operational_definition": "描述统计是对已观察数据的频数、中心位置、离散程度与分布形态进行整理和概括，而不直接对总体作推断。",
+  "plain_explanation": "先画出数据的轮廓，再讨论差异或关系。平均数只是轮廓的一部分。",
+  "problems_solved": [
+    "了解样本特征",
+    "发现偏态、离群和编码异常"
+  ],
+  "not_for": [
+    "样本描述不能单独证明总体差异或因果关系"
+  ],
+  "decision_clues": [
+    "分类变量先看频数",
+    "连续变量同时看中心、离散和图形"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：平均水平之外，谁在拉开差距",
+      "body": "先核对变量与有效样本量；类别看人数和比例，分数看中心位置、离散程度及分布图。均值与中位数差得较多时，查看偏态和异常值；总体汇总看似正常时，也可按研究关心的群体分别描述，避免不同群体被平均在一起。"
+    },
+    {
+      "heading": "容易混淆：样本的轮廓能直接代表所有学生吗",
+      "body": "描述统计呈现的是这批实际观察到的数据。推广到总体还需考虑抽样方式、估计不确定性和研究设计；两组均值不同，也不直接说明某种干预造成了差异。标准误描述估计精度，不能替代描述个体分数散布的标准差。"
+    }
+  ],
+  "formula": {
+    "latex": "",
+    "note": "",
+    "verified": false
+  },
+  "quiz": {
+    "question": "下列哪项属于描述统计？",
+    "options": [
+      "报告样本平均数和标准差",
+      "证明处理造成了变化",
+      "断言总体参数等于样本值",
+      "替代数据清理"
+    ],
+    "answer": 0,
+    "explanation": "平均数和标准差描述样本，不直接证明因果或总体结论。",
+    "option_explanations": [
+      "正确。平均数和标准差分别概括样本的中心与离散程度，但不直接对总体或因果作结论。",
+      "描述统计只能呈现观察到的数据，不能单凭描述量证明处理造成变化。",
+      "样本统计量是总体参数的估计，不能断言两者完全相等。",
+      "描述统计能帮助发现问题，但重复、错误编码和缺失仍需单独清理。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "basic_textbook",
+      "title": "现代心理与教育统计学",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": {
+    "packages": [],
+    "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+    "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\nprint(c(n=nrow(d), stress_mean=mean(d$stress), stress_sd=sd(d$stress), stress_median=median(d$stress)))\n",
+    "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(is.numeric(d$score))\nc(n=sum(!is.na(d$score)),mean=mean(d$score,na.rm=TRUE),sd=sd(d$score,na.rm=TRUE),median=median(d$score,na.rm=TRUE))\nhist(d$score)\n",
+    "assumption_checks": [
+      "分类变量先看频数",
+      "连续变量同时看中心、离散和图形"
+    ],
+    "key_output": [
+      "n",
+      "stress_mean",
+      "stress_sd",
+      "stress_median"
+    ],
+    "interpretation": "本教学数据的 n=360 表示数据行数；数据没有缺失时，它也等于压力分数的有效人数。stress_mean≈48.61 和 stress_median=49 分别是均值与中位数，二者相近仍需结合分布图检查形状。stress_sd≈8.06 描述学生之间的分数散布，不能读成均值估计的误差；换成自己的数据时，应另核对缺失和有效人数。",
+    "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+    "common_errors": [
+      "样本描述不能单独证明总体差异或因果关系"
+    ],
+    "verified": true,
+    "validation_report": "logs/r_validation.json"
+  },
+  "verified": true,
+  "candidate_evidence": {},
+  "plain_example": "例如，想了解班级的考试焦虑，仅报告平均分 50 还不够：多数学生集中在 50 附近，和一半很低、一半很高，会带来不同的后续研究问题。"
+}

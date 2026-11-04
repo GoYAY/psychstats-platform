@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="760pt" viewBox="0 0 360 760" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">时长可以继续细分，孩子人数只能按整个人计数。。比较的是单个家庭的孩子人数，不是多个家庭的平均人数。平均人数可以是小数；记录保留几位小数也不能决定变量是否连续，实际时长记录仍受测量精度限制。</desc><title id="title">睡眠时长与孩子人数</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:01:01.056222</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 760  L 360 760  L 360 0  L 0 0  L 0 760  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 88  L 330 88  Q 344 88 344 102  L 344 320  Q 344 334 330 334  L 30 334  Q 16 334 16 320  L 16 102  Q 16 88 30 88  z " clip-path="url(#p7dc0cc5c23)" style="fill: #244da4; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 30 388  L 330 388  Q 344 388 344 402  L 344 620  Q 344 634 330 634  L 30 634  Q 16 634 16 620  L 16 402  Q 16 388 30 388  z " clip-path="url(#p7dc0cc5c23)" style="fill: #244da4; opacity: 0.055" />
+   </g>
+   <g id="count-before-0">
+    <path d="M 67.8 471  C 69.656422 471 71.437059 471.737564 72.749747 473.050253  C 74.062436 474.362941 74.8 476.143578 74.8 478  C 74.8 479.856422 74.062436 481.637059 72.749747 482.949747  C 71.437059 484.262436 69.656422 485 67.8 485  C 65.943578 485 64.162941 484.262436 62.850253 482.949747  C 61.537564 481.637059 60.8 479.856422 60.8 478  C 60.8 476.143578 61.537564 474.362941 62.850253 473.050253  C 64.162941 471.737564 65.943578 471 67.8 471  z " clip-path="url(#p7dc0cc5c23)" style="fill: #244da4; opacity: 0.75" />
+   </g>
+   <g id="patch_4">
+    <path d="M 63.8 488  L 71.8 488  Q 78.8 488 78.8 495  L 78.8 501  Q 78.8 508 71.8 508  L 63.8 508  Q 56.8 508 56.8 501  L 56.8 495  Q 56.8 488 63.8 488  z " clip-path="url(#p7dc0cc5c23)" style="fill: #244da4; opacity: 0.5" />
+   </g>
+   <g id="count-before-1">
+    <path d="M 97.8 471  C 99.656422 471 101.437059 471.737564 102.749747 473.050253  C 104.062436 474.362941 104.8 476.143578 104.8 478  C 104.8 479.856422 104.062436 481.637059 102.749747 482.949747  C 101.437059 484.262436 99.656422 485 97.8 485  C 95.943578 485 94.162941 484.262436 92.850253 482.949747  C 91.537564 481.637059 90.8 479.856422 90.8 478  C 90.8 476.143578 91.537564 474.362941 92.850253 473.050253  C 94.162941 471.737564 95.943578 471 97.8 471  z " clip-path="url(#p7dc0cc5c23)" style="fill: #244da4; opacity: 0.75" />
+   </g>
+   <g id="patch_5">
+    <path d="M 93.8 488  L 101.8 488  Q 108.8 488 108.8 495  L 108.8 501  Q 108.8 508 101.8 508  L 93.8 508  Q 86.8 508 86.8 501  L 86.8 495  Q 86.8 488 93.8 488  z " clip-path="url(#p7dc0cc5c23)" style="fill: #244da4; opacity: 0.5" />
+   </g>
+   <g id="count-after-0">
+    <path d="M 243.6 471  C 245.456422 471 247.237059 471.737564 248.549747 473.050253  C 249.862436 474.362941 250.6 476.143578 250.6 478  C 250.6 479.856422 249.862436 481.637059 248.549747 482.949747  C 247.237059 484.262436 245.456422 485 243.6 485  C 241.743578 485 239.962941 484.262436 238.650253 482.949747  C 237.337564 481.637059 236.6 479.856422 236.6 478  C 236.6 476.143578 237.337564 474.362941 238.650253 473.050253  C 239.962941 471.737564 241.743578 471 243.6 471  z " clip-path="url(#p7dc0cc5c23)" style="fill: #244da4; opacity: 0.75" />
+   </g>
+   <g id="patch_6">
+    <path d="M 239.6 488  L 247.6 488  Q 254.6 488 254.6 495  L 254.6 501  Q 254.6 508 247.6 508  L 239.6 508  Q 232.6 508 232.6 501  L 232.6 495  Q 232.6 488 239.6 488  z " clip-path="url(#p7dc0cc5c23)" style="fill: #244da4; opacity: 0.5" />
+   </g>
+   <g id="count-after-1">
+    <path d="M 273.6 471  C 275.456422 471 277.237059 471.737564 278.549747 473.050253  C 279.862436 474.362941 280.6 476.143578 280.6 478  C 280.6 479.856422 279.862436 481.637059 278.549747 482.949747  C 277.237059 484.262436 275.456422 485 273.6 485  C 271.743578 485 269.962941 484.262436 268.650253 482.949747  C 267.337564 481.637059 266.6 479.856422 266.6 478  C 266.6 476.143578 267.337564 474.362941 268.650253 473.050253  C 269.962941 471.737564 271.743578 471 273.6 471  z " clip-path="url(#p7dc0cc5c23)" style="fill: #244da4; opacity: 0.75" />
+   </g>
+   <g id="patch_7">
+    <path d="M 269.6 488  L 277.6 488  Q 284.6 488 284.6 495  L 284.6 501  Q 284.6 508 277.6 508  L 269.6 508  Q 262.6 508 262.6 501  L 262.6 495  Q 262.6 488 269.6 488  z " clip-path="url(#p7dc0cc5c23)" style="fill: #244da4; opacity: 0.5" />
+   </g>
+   <g id="count-after-2">
+    <path d="M 303.6 471  C 305.456422 471 307.237059 471.737564 308.549747 473.050253  C 309.862436 474.362941 310.6 476.143578 310.6 478  C 310.6 479.856422 309.862436 481.637059 308.549747 482.949747  C 307.237059 484.262436 305.456422 485 303.6 485  C 301.743578 485 299.962941 484.262436 298.650253 482.949747  C 297.337564 481.637059 296.6 479.856422 296.6 478  C 296.6 476.143578 297.337564 474.362941 298.650253 473.050253  C 299.962941 471.737564 301.743578 471 303.6 471  z " clip-path="url(#p7dc0cc5c23)" style="fill: #187b55; opacity: 0.75" />
+   </g>
+   <g id="patch_8">
+    <path d="M 299.6 488  L 307.6 488  Q 314.6 488 314.6 495  L 314.6 501  Q 314.6 508 307.6 508  L 299.6 508  Q 292.6 508 292.6 501  L 292.6 495  Q 292.6 488 299.6 488  z " clip-path="url(#p7dc0cc5c23)" style="fill: #187b55; opacity: 0.5" />
+   </g>
+   <g id="patch_9">
+    <path d="M 119.798602 484  Q 170.699871 484 220.147695 484  " clip-path="url(#p7dc0cc5c23)" style="fill: none; opacity: 0.7; stroke: #244da4; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 214.147695 481  L 220.147695 484  L 214.147695 487  z " clip-path="url(#p7dc0cc5c23)" style="fill: #244da4; opacity: 0.7; stroke: #244da4; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 89  L 328 89  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 54 174  L 306 174  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-width: 1.5; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 54 165  L 54 185  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_4">
+    <path d="M 70.8 170  L 70.8 179  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-opacity: 0.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_5">
+    <path d="M 87.6 170  L 87.6 179  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-opacity: 0.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_6">
+    <path d="M 104.4 170  L 104.4 179  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-opacity: 0.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_7">
+    <path d="M 121.2 170  L 121.2 179  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-opacity: 0.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_8">
+    <path d="M 138 165  L 138 185  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_9">
+    <path d="M 154.8 170  L 154.8 179  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-opacity: 0.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_10">
+    <path d="M 171.6 170  L 171.6 179  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-opacity: 0.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_11">
+    <path d="M 188.4 170  L 188.4 179  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-opacity: 0.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_12">
+    <path d="M 205.2 170  L 205.2 179  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-opacity: 0.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_13">
+    <path d="M 222 165  L 222 185  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_14">
+    <path d="M 238.8 170  L 238.8 179  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-opacity: 0.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_15">
+    <path d="M 255.6 170  L 255.6 179  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-opacity: 0.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_16">
+    <path d="M 272.4 170  L 272.4 179  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-opacity: 0.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_17">
+    <path d="M 289.2 170  L 289.2 179  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-opacity: 0.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_18">
+    <path d="M 306 165  L 306 185  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #244da4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_19">
+    <path d="M 32 389  L 328 389  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_20">
+    <path d="M 125.8 545  L 130.8 550  L 139.8 538  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #187b55; stroke-width: 1.7; stroke-linecap: square" />
+   </g>
+   <g id="line2d_21">
+    <path d="M 316.6 545  L 321.6 550  L 330.6 538  " clip-path="url(#p7dc0cc5c23)" style="fill: none; stroke: #187b55; stroke-width: 1.7; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="20" y="33.663906" transform="rotate(-0 20 33.663906)">睡眠时长与孩子人数</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="61.48668" transform="rotate(-0 20 61.48668)">生活例子 · 非真实调查记录</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="30" y="117.08748" transform="rotate(-0 30 117.08748)">时长：同一段时间可以细分</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="54" y="213.468867" transform="rotate(-0 54 213.468867)">7小时</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="138" y="213.49793" transform="rotate(-0 138 213.49793)">7小时5分钟</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="222" y="213.49793" transform="rotate(-0 222 213.49793)">7小时10分钟</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="306" y="213.49793" transform="rotate(-0 306 213.49793)">7小时15分钟</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="261.080918" transform="rotate(-0 30 261.080918)">7小时15分钟 = 7.25小时</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="295.834111" transform="rotate(-0 30 295.834111)">每小格1分钟，还能按秒继续细分</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="30" y="417.095137" transform="rotate(-0 30 417.095137)">人数：同一家庭，按完整的人计数</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #244da4" x="82.8" y="548.080918" transform="rotate(-0 82.8 548.080918)">2个孩子</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #244da4" x="273.6" y="548.080918" transform="rotate(-0 273.6 548.080918)">3个孩子</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #187b55" x="176.4" y="456.808721" transform="rotate(-0 176.4 456.808721)">增加1个</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="593.808721" transform="rotate(-0 30 593.808721)">增加的是完整的人，不是切出一小段</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(20 691.797861)">时长可继续分割；人数按个计数。记录精度仍受测</text>
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(20 705.858174)">量工具限制。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7dc0cc5c23">
+   <rect x="0" y="0" width="360" height="760" />
+  </clipPath>
+ </defs>
+</svg>

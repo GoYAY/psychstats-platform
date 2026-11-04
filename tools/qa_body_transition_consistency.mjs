@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import {mkdir,writeFile} from 'node:fs/promises';
+import {args,isolatedPage,wait} from './native-cdp.mjs';
+
+const {base='http://127.0.0.1:8765/psy-stats/',width='1440',cdp='9291'}=args();
+const ctx=await isolatedPage(cdp,Number(width)),{page,run,until}=ctx,results=[],errors=[];
+page.events.set('Runtime.exceptionThrown',e=>errors.push(e.exceptionDetails.exception?.description||e.exceptionDetails.text));
+const settled='!window.PsychSoftMotion?.running&&!document.documentElement.dataset.psychTransition';
+try {
+ await page.send('Page.navigate',{url:base+'index.html'});await until('document.readyState==="complete"');await wait(250);
+ await run(`(()=>{window.__bodyProbe={armed:false,paused:false,frames:[]};window.__identity='body-consistency';
+  const animate=Element.prototype.animate;Element.prototype.animate=function(frames,options){const a=animate.call(this,frames,options);if(__bodyProbe.armed&&!this.closest('.site-head')){__bodyProbe.frames.push({className:this.className,tag:this.tagName,frames,options});a.pause();__bodyProbe.paused=true;}return a;};
+ })()`);
+ const cases=[['topic','[data-topic-link="regression"]'],['paths','.site-head nav a[href$="paths.html"]'],['practice','.site-head nav a[href$="practice.html"]'],['datasets','.site-head nav a[href$="datasets.html"]'],['symbols','.site-head nav a[href$="symbols.html"]'],['analysis','.site-head nav a[href$="analysis.html"]'],['sources','.site-head nav a[href$="sources.html"]'],['index','.site-head nav a[href$="index.html"]']];
+ for(const [name,selector] of cases){
+  await run(`__bodyProbe.armed=true;__bodyProbe.paused=false;__bodyProbe.frames=[];document.querySelector(${JSON.stringify(selector)}).click()`);await until('__bodyProbe.paused');
+  const keyframes=await run('__bodyProbe.frames');results.push({name,keyframes});
+  assert.ok(keyframes.length>0,'body emergence must be animated: '+name);
+  for(const entry of keyframes)assert.equal(entry.options.duration,200,'same body duration: '+name);
+  const positions=[];
+  for(const time of [0,25,60,120,199]){
+   await run(`document.getAnimations().filter(a=>a.playState==='paused').forEach(a=>a.currentTime=${time})`);
+   const sample=await run(`(()=>{const incoming=document.querySelector('.soft-incoming-depth'),outgoing=document.querySelector('.soft-outgoing-layer:not(.soft-incoming-depth)'),style=incoming&&getComputedStyle(incoming),matrix=new DOMMatrixReadOnly(style?.transform||'none'),alpha=Number(style?.opacity||0),base=outgoing?Number(getComputedStyle(outgoing).opacity):0;return {mainTransform:getComputedStyle(document.querySelector('body>main')).transform,mainOpacity:getComputedStyle(document.querySelector('body>main')).opacity,heading:document.querySelector(${JSON.stringify(name==='topic'?'#topic-title':'main h1')}).getBoundingClientRect().toJSON(),incomingHeading:incoming?.querySelector(${JSON.stringify(name==='topic'?'.topic-intro h2':'h1')})?.getBoundingClientRect().toJSON(),incomingHasContent:!!incoming?.textContent.trim(),scale:matrix.m11,x:matrix.m41,y:matrix.m42,alpha,coverage:alpha+(1-alpha)*base}})()`);
+   assert.equal(sample.mainTransform,'none');assert.equal(sample.mainOpacity,'1');assert.equal(sample.incomingHasContent,true,'emergence animates actual content, not an empty shadow');assert.ok(sample.coverage>=0.999,'old opaque content prevents blank frames');assert.ok(Math.abs(sample.x)<0.01&&Math.abs(sample.y)<0.01,'no horizontal/vertical body slide');positions.push({time,...sample});
+   if(time===120&&Number(width)>=1024&&['topic','practice'].includes(name)){await mkdir('logs/complete-nav',{recursive:true});const screenshot=await page.send('Page.captureScreenshot',{format:'png'}),file=`logs/complete-nav/body-${name}-mid-${Date.now()}.png`;await writeFile(file,Buffer.from(screenshot.data,'base64'));results.at(-1).screenshot=file;}
+  }
+  results.at(-1).positions=positions;assert.ok(positions.every(p=>Math.abs(p.heading.x-positions[0].heading.x)<1&&Math.abs(p.heading.y-positions[0].heading.y)<1),'live heading stays still: '+name);assert.ok(positions.some(p=>p.scale<0.999&&p.alpha>0&&p.alpha<1),'restore visible layered depth emergence: '+name);assert.ok(positions.every(p=>p.incomingHeading&&Math.abs(p.incomingHeading.x-p.heading.x)<1&&Math.abs(p.incomingHeading.y-p.heading.y)<1),'snapshot heading anchor stays aligned: '+name);
+  await run('__bodyProbe.armed=false;document.getAnimations().filter(a=>a.playState===\'paused\').forEach(a=>a.play())');await until(settled);await wait(60);
+  assert.equal(await run(`window.__identity==='body-consistency'`),true,'keep the document');assert.equal(await run(`document.querySelectorAll('.soft-depth-surface,.soft-outgoing-layer').length`),0,'remove temporary surfaces');
+ }
+ await run(`__bodyProbe.armed=true;__bodyProbe.paused=false;document.querySelector('[data-topic-link="hypothesis-testing"]').click()`);await until('__bodyProbe.paused');await page.send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});await until(settled);assert.equal(await run(`document.querySelectorAll('.soft-depth-surface').length`),0);assert.equal(await run(`document.documentElement.classList.contains('soft-motion-active')`),false);await run('__bodyProbe.armed=false');await page.send('Emulation.setEmulatedMedia',{features:[]});
+ await run(`document.querySelector('[data-topic-link="favorites"]').click();document.querySelector('[data-topic-link="foundations"]').click();document.querySelector('[data-topic-link="regression"]').click()`);await until(settled);assert.equal(await run(`document.querySelector('#topic-intro').dataset.topic`),'regression');assert.equal(await run(`document.querySelectorAll('.soft-depth-surface').length`),0);
+ await page.send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});await run(`document.querySelector('[data-topic-link="foundations"]').click()`);await until(settled);assert.equal(await run(`document.querySelectorAll('.soft-depth-surface').length`),0);await run(`document.querySelector('.site-head nav a[href$="practice.html"]').click()`);await until(`location.pathname.endsWith('/practice.html')&&${settled}`);assert.equal(await run(`document.querySelectorAll('.soft-depth-surface').length`),0);assert.equal(await run(`!!document.querySelector('#practice-app')`),true);await run(`document.querySelector('#practice-app button').click()`);await until(`document.querySelector('#practice-app button').getAttribute('aria-pressed')==='true'&&!!document.querySelector('.practice-reading h2')`);results.push({name:'rapid-and-reduced',lastTopicWins:true,reducedTopicAndPage:true,cancelActiveMotion:true,practiceAnswerAndReading:true});
+ assert.equal(await run('document.documentElement.scrollWidth>innerWidth'),false);assert.deepEqual(errors,[]);
+}finally{await ctx.close();await mkdir('logs/complete-nav',{recursive:true});const file=`logs/complete-nav/body-consistency-${width}-${Date.now()}.json`;await writeFile(file,JSON.stringify({base,width,results,errors},null,2));console.log(file,JSON.stringify(results.map(r=>r.name)));}

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="539pt" viewBox="0 0 760 539" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">结构部分规定变量或潜在方面之间的联系。。这里省略题目测量部分；方向来自研究设定，拟合好不等于因果正确。</desc><title id="title">方面之间的指定关系</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:36:01.362067</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 539  L 760 539  L 760 0  L 0 0  L 0 539  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="factor-relation-0-1">
+    <path d="M 150 272.25  C 150 25.625 380 25.625 380 108.770163  " clip-path="url(#p771548bd39)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 382.4 103.970163  L 380 108.770163  L 377.6 103.970163  z " clip-path="url(#p771548bd39)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="factor-relation-1-2">
+    <path d="M 380 110  C 380 25.625 610 25.625 610 271.020163  " clip-path="url(#p771548bd39)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 612.4 266.220163  L 610 271.020163  L 607.6 266.220163  z " clip-path="url(#p771548bd39)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="factor-relation-0-2">
+    <path d="M 150 272.25  C 150 -32.083333 610 -32.083333 610 271.020163  " clip-path="url(#p771548bd39)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 612.4 266.220163  L 610 271.020163  L 607.6 266.220163  z " clip-path="url(#p771548bd39)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 150 278.25  C 169.227225 278.25 187.669541 280.778791 201.265242 285.279437  C 214.860943 289.780083 222.5 295.885126 222.5 302.25  C 222.5 308.614874 214.860943 314.719917 201.265242 319.220563  C 187.669541 323.721209 169.227225 326.25 150 326.25  C 130.772775 326.25 112.330459 323.721209 98.734758 319.220563  C 85.139057 314.719917 77.5 308.614874 77.5 302.25  C 77.5 295.885126 85.139057 289.780083 98.734758 285.279437  C 112.330459 280.778791 130.772775 278.25 150 278.25  z " clip-path="url(#p771548bd39)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 380 116  C 399.227225 116 417.669541 118.528791 431.265242 123.029437  C 444.860943 127.530083 452.5 133.635126 452.5 140  C 452.5 146.364874 444.860943 152.469917 431.265242 156.970563  C 417.669541 161.471209 399.227225 164 380 164  C 360.772775 164 342.330459 161.471209 328.734758 156.970563  C 315.139057 152.469917 307.5 146.364874 307.5 140  C 307.5 133.635126 315.139057 127.530083 328.734758 123.029437  C 342.330459 118.528791 360.772775 116 380 116  z " clip-path="url(#p771548bd39)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 610 278.25  C 629.227225 278.25 647.669541 280.778791 661.265242 285.279437  C 674.860943 289.780083 682.5 295.885126 682.5 302.25  C 682.5 308.614874 674.860943 314.719917 661.265242 319.220563  C 647.669541 323.721209 629.227225 326.25 610 326.25  C 590.772775 326.25 572.330459 323.721209 558.734758 319.220563  C 545.139057 314.719917 537.5 308.614874 537.5 302.25  C 537.5 295.885126 545.139057 289.780083 558.734758 285.279437  C 572.330459 280.778791 590.772775 278.25 610 278.25  z " clip-path="url(#p771548bd39)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="150" y="305.742305" transform="rotate(-0 150 305.742305)">压力方面</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="380" y="143.492305" transform="rotate(-0 380 143.492305)">睡眠方面</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="610" y="305.74793" transform="rotate(-0 610 305.74793)">抑郁方面</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="453.82543" transform="rotate(-0 20 453.82543)">1. 压力方面 → 睡眠方面：指定路径</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="481.82543" transform="rotate(-0 20 481.82543)">2. 睡眠方面 → 抑郁方面：指定路径</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="509.82543" transform="rotate(-0 20 509.82543)">3. 压力方面 → 抑郁方面：指定路径</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p771548bd39">
+   <rect x="0" y="0" width="760" height="539" />
+  </clipPath>
+ </defs>
+</svg>

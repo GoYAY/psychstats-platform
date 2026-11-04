@@ -1,0 +1,67 @@
+{
+  "id": "mediation",
+  "unit_id": "mediation",
+  "title": "间接关联的区间怎么看",
+  "question": "压力可能通过减少支持与幸福感相关，如何检查这条链？",
+  "design": "横断教学数据的观测变量中介模型。固定种子 300 次百分位 Bootstrap；仅演示关联分解，不推断时间顺序或机制。",
+  "variables": "横断教学 CSV，压力、支持与幸福感的列名见代码。",
+  "script": "examples/r/output_reading/mediation.R",
+  "data_files": [
+    "examples/data/cross_sectional_survey.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "indirect",
+      "label": "间接关联 a×b",
+      "meaning": "两段路径乘积，不要求总关联先显著，也不证明因果中介。",
+      "term": "indirect-effect",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_lower",
+      "label": "百分位 Bootstrap 下界",
+      "meaning": "来自 300 次教学重抽样；正式研究应增加次数并检查失败与稳定性。",
+      "term": "bootstrap",
+      "format": ".3f"
+    },
+    {
+      "field_id": "direct",
+      "label": "直接路径 c′",
+      "meaning": "给定中介后剩余的条件关联，不以是否显著定义完整机制。",
+      "term": "direct-effect",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "何时不能这样解释",
+      "body": "Bootstrap 不修复时间顺序或未测混杂；重抽样若有非收敛须检查有效次数，不能隐藏失败。"
+    },
+    {
+      "title": "路径或交互不显著怎么办",
+      "body": "检查区间精度、测量质量、取值范围及模型条件。零假设证据不足不是证明零效应，不改中心化方式、分组切点或删控制项来追求显著。横断观察不能仅凭路径确立中介机制。"
+    }
+  ],
+  "report_template": "横断教学数据的间接关联 a×b = {indirect:.3f}，300 次百分位 Bootstrap 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]；直接路径 c′ = {direct:.3f}。结果是模型内关联分解，不足以证实压力通过支持造成幸福感变化。",
+  "sources": [
+    {
+      "title": "估计实现的官方文档",
+      "url": "https://lavaan.ugent.be/tutorial/mediation.html"
+    }
+  ],
+  "related_terms": [
+    "indirect-effect",
+    "bootstrap",
+    "direct-effect"
+  ],
+  "table_labels": {
+    "parameters": "完整路径与测量参数",
+    "simple_slopes": "指定条件下的简单斜率及区间",
+    "conditional_effects": "条件间接关联与指数的 Bootstrap 区间"
+  }
+}

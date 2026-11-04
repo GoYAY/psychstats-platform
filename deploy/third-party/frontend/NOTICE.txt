@@ -1,0 +1,12 @@
+Third-party frontend notices — PsychStats educational site
+
+Bklit UI open-source chart components: MIT; see BKLIT-LICENSE.txt.
+Source: https://github.com/bklit/bklit-ui
+Reviewed source commit: 3e9af3b7bff63cf0cc95a64a3492f364fa2ce348.
+This release does not incorporate proprietary Bklit Studio components.
+
+The chart widget's 47 production dependency license texts are retained in
+NPM-THIRD-PARTY-NOTICES.txt with npm-license-inventory.json. These declarations
+describe the dependencies in the reviewed chart build, not an endorsement by
+their authors. No article text, uploaded PDF, local knowledge library, browser
+identity, key or private evaluation fixture belongs in this directory.

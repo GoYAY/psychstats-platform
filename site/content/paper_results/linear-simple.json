@@ -1,0 +1,41 @@
+{
+  "tables": {
+    "reported_coefficients": [
+      {
+        "outcome": "well_being",
+        "term": "(Intercept)",
+        "estimate": 71.49525168156975,
+        "se": 2.4618605462175482,
+        "statistic": 29.041146051678876,
+        "df": 358,
+        "p": 3.826087568366385e-96,
+        "ci_lower": 66.65372591172645,
+        "ci_upper": 76.33677745141306
+      },
+      {
+        "outcome": "well_being",
+        "term": "stress",
+        "estimate": -0.4806620993019983,
+        "se": 0.049963540830268174,
+        "statistic": -9.620256917636445,
+        "df": 358,
+        "p": 1.227470040238456e-19,
+        "ci_lower": -0.5789210241846531,
+        "ci_upper": -0.3824031744193436
+      }
+    ],
+    "model_summary": [
+      {
+        "n": 360,
+        "r_squared": 0.2054144447574792,
+        "adjusted_r_squared": 0.20319493203333805
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "回归系数：t 分布 95% CI；间接效应：300 次教学 Bootstrap 百分位区间（如适用）",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0",
+  "case_id": "linear-simple",
+  "original_sha256": "672bd21a5f467d2c250e708c7b599e6513fe100f95fb435cf15326c2795d7143",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

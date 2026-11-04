@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="290pt" viewBox="0 0 360 290" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">无总体效应却拒绝是误报；有总体效应却未拒绝是漏报。。单次研究通常不知道真相；不显著不自动表示检验失败或第二类错误。</desc><title id="title">误报和漏报取决于真相</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:02:30.558326</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 290  L 360 290  L 360 0  L 0 0  L 0 290  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 26 12  L 334 12  Q 348 12 348 26  L 348 115  Q 348 129 334 129  L 26 129  Q 12 129 12 115  L 12 26  Q 12 12 26 12  z " clip-path="url(#pf62ff1655d)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 26 145  L 334 145  Q 348 145 348 159  L 348 248  Q 348 262 334 262  L 26 262  Q 12 262 12 248  L 12 159  Q 12 145 26 145  z " clip-path="url(#pf62ff1655d)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 28 13  L 332 13  " clip-path="url(#pf62ff1655d)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 28 146  L 332 146  " clip-path="url(#pf62ff1655d)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="36.014375" transform="rotate(-0 25 36.014375)">真实情况</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="36.924062" transform="rotate(-0 137 36.924062)">无总体效应</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="71.014375" transform="rotate(-0 25 71.014375)">拒绝零假设</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #ae3f53" x="137" y="71.861094" transform="rotate(-0 137 71.861094)">第一类：误报</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="106.014375" transform="rotate(-0 25 106.014375)">未拒绝零假设</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #187b55" x="137" y="106.885469" transform="rotate(-0 137 106.885469)">正确不拒绝</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="169.014375" transform="rotate(-0 25 169.014375)">真实情况</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="169.924062" transform="rotate(-0 137 169.924062)">有总体效应</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="204.014375" transform="rotate(-0 25 204.014375)">拒绝零假设</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #187b55" x="137" y="204.885469" transform="rotate(-0 137 204.885469)">正确拒绝</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="239.014375" transform="rotate(-0 25 239.014375)">未拒绝零假设</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #ae3f53" x="137" y="239.861094" transform="rotate(-0 137 239.861094)">第二类：漏报</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf62ff1655d">
+   <rect x="0" y="0" width="360" height="290" />
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,60 @@
+{
+  "id": "lca",
+  "unit_id": "lca",
+  "title": "潜类别结果的条件概率怎么看",
+  "question": "一组是否求助、是否失眠等分类回答，可以找到不同需求的人群吗？",
+  "design": "固定种子模拟五个二元指标，统一编码 1/2。poLCA 比较 1–4 类，每类五起点；假定给定类别后指标局部独立。",
+  "variables": "固定种子教学生成数据；类别或参数设定用于演示，并不代表真实参与者。",
+  "script": "examples/r/output_reading/lca.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "bic",
+      "label": "poLCA BIC",
+      "meaning": "采用通常 −2logL 加惩罚，越小越好；只比较同一指标与样本。",
+      "term": "fit-indices",
+      "format": ".3f"
+    },
+    {
+      "field_id": "k",
+      "label": "候选中的类别数",
+      "meaning": "由有限候选 BIC 选出，仍需结合理论、局部独立和稳定性。",
+      "term": "latent-class-analysis",
+      "format": ".0f"
+    },
+    {
+      "field_id": "entropy",
+      "label": "相对熵",
+      "meaning": "高值表示分配更清楚，不保证类别数真实，也不免除分类误差。",
+      "term": "cluster-analysis",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "如何识别过度解读",
+      "body": "类内残留关联可能导致虚增类别；小类、不稳定起点和候选范围限制需检查，不假装存在未计算的 LMR/BLRT。"
+    },
+    {
+      "title": "输出不符合预期时",
+      "body": "先检查数据类型、有效样本、量纲和拟合条件；对探索选择保留过程记录。新分析应有研究依据，不通过反复换方法制造满意结果。"
+    }
+  ],
+  "report_template": "对五个二元教学指标拟合 1–4 类模型，每个候选五个起点，最低 BIC 候选为 {k:.0f} 类（BIC = {bic:.3f}），相对熵 {entropy:.3f}，平均最大后验概率 {mean_posterior:.3f}，最小类别比例 {min_proportion:.3f}。类型画像依据各类回答 2 的条件概率，而不是把概率当原始得分。",
+  "sources": [
+    {
+      "title": "模型实现的官方文档",
+      "url": "https://search.r-project.org/CRAN/refmans/poLCA/html/poLCA.html"
+    }
+  ],
+  "related_terms": [
+    "fit-indices",
+    "latent-class-analysis",
+    "cluster-analysis"
+  ]
+}

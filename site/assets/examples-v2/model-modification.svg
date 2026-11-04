@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="539pt" viewBox="0 0 760 539" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">相似句式可能带来共同方面之外的额外联系。。虚线是待检查的残差联系，修改要有依据并用新资料复核。</desc><title id="title">相似措辞的额外联系</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:53.350387</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 539  L 760 539  L 760 0  L 0 0  L 0 539  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 340.939598 171.248322  Q 279.376773 220.498582 218.774289 268.980569  " clip-path="url(#pb8886d0df3)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 224.021727 267.856118  L 218.774289 268.980569  L 221.023191 264.107947  z " clip-path="url(#pb8886d0df3)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 459.030033 141.928482  Q 480.624839 220.499414 501.893716 297.884482  " clip-path="url(#pb8886d0df3)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 502.935818 292.620071  L 501.893716 297.884482  L 498.307449 293.892154  z " clip-path="url(#pb8886d0df3)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 259.246635 301  Q 379.996973 301 499.517472 301  " clip-path="url(#pb8886d0df3)" style="fill: none; opacity: 0.65; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 494.717472 298.6  L 499.517472 301  L 494.717472 303.4  z " clip-path="url(#pb8886d0df3)" style="fill: #244da4; opacity: 0.65; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 380 116  C 399.227225 116 417.669541 118.528791 431.265242 123.029437  C 444.860943 127.530083 452.5 133.635126 452.5 140  C 452.5 146.364874 444.860943 152.469917 431.265242 156.970563  C 417.669541 161.471209 399.227225 164 380 164  C 360.772775 164 342.330459 161.471209 328.734758 156.970563  C 315.139057 152.469917 307.5 146.364874 307.5 140  C 307.5 133.635126 315.139057 127.530083 328.734758 123.029437  C 342.330459 118.528791 360.772775 116 380 116  z " clip-path="url(#pb8886d0df3)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 115.25 277  L 242.25 277  Q 251.25 277 251.25 286  L 251.25 316  Q 251.25 325 242.25 325  L 115.25 325  Q 106.25 325 106.25 316  L 106.25 286  Q 106.25 277 115.25 277  z " clip-path="url(#pb8886d0df3)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 517.75 277  L 644.75 277  Q 653.75 277 653.75 286  L 653.75 316  Q 653.75 325 644.75 325  L 517.75 325  Q 508.75 325 508.75 316  L 508.75 286  Q 508.75 277 517.75 277  z " clip-path="url(#pb8886d0df3)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="380" y="143.515742" transform="rotate(-0 380 143.515742)">共同焦虑</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="178.75" y="304.480117" transform="rotate(-0 178.75 304.480117)">考试时我很担忧</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="581.25" y="304.480117" transform="rotate(-0 581.25 304.480117)">考试时我很紧张</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="453.796367" transform="rotate(-0 20 453.796367)">1. 共同焦虑 → 考试时我很担忧：测量联系</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="481.796367" transform="rotate(-0 20 481.796367)">2. 共同焦虑 → 考试时我很紧张：测量联系</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="509.82543" transform="rotate(-0 20 509.82543)">3. 考试时我很担忧 → 考试时我很紧张：候选残差联系</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb8886d0df3">
+   <rect x="0" y="0" width="760" height="539" />
+  </clipPath>
+ </defs>
+</svg>

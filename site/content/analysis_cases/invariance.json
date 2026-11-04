@@ -1,0 +1,65 @@
+{
+  "id": "invariance",
+  "unit_id": "invariance",
+  "title": "跨组量表比较之前看什么",
+  "question": "同一问卷在两类学生中，分数能直接比较吗？",
+  "design": "模拟两个组的连续指标。逐级比较构型、载荷、截距不变性（ML），展示嵌套比较；此连续模型不能直接套用有序题目阈值流程。",
+  "variables": "下方代码固定种子生成连续教学指标；共享函数同时下载可完全复现。",
+  "script": "examples/r/output_reading/invariance.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "metric_delta_cfi",
+      "label": "载荷约束后的 ΔCFI",
+      "meaning": "受限减不受限，负数表示下降；需与理论和其他证据一起判断。",
+      "term": "measurement-invariance",
+      "format": ".3f"
+    },
+    {
+      "field_id": "scalar_delta_cfi",
+      "label": "截距约束后的 ΔCFI",
+      "meaning": "截距层面的可比性关系到潜均值，不等于总体组均值相同。",
+      "term": "measurement-invariance",
+      "format": ".3f"
+    },
+    {
+      "field_id": "scalar_p",
+      "label": "截距层嵌套比较 p",
+      "meaning": "检验新增约束是否损失拟合，不显著不是不变性的证明。",
+      "term": "model-fit",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "判断模型之前先检查这些条件",
+      "body": "有序题目需考虑阈值和识别限制；部分不变性必须有题目层面的依据并据实记录，不随意解除约束。"
+    },
+    {
+      "title": "路径或拟合不符合预期时",
+      "body": "先区分测量问题、模型错误与证据不足。检查实际估计器、标准误、编码、有效样本和参数表。不要靠无理论依据的删题、加路径或误差相关来追求显著与完美拟合。"
+    }
+  ],
+  "report_template": "连续指标多组 CFA 中，载荷约束相对构型模型的 ΔCFI = {metric_delta_cfi:.3f}，嵌套比较 p = {metric_p:.4g}；进一步约束截距的 ΔCFI = {scalar_delta_cfi:.3f}，p = {scalar_p:.4g}。这些证据用于判断测量可比性，不代替潜均值差异检验。",
+  "sources": [
+    {
+      "title": "实现与估计方法的官方文档",
+      "url": "https://lavaan.ugent.be/tutorial/groups.html"
+    }
+  ],
+  "related_terms": [
+    "measurement-invariance",
+    "model-fit"
+  ],
+  "table_labels": {
+    "parameters": "完整参数表：估计、标准误、区间及标准化参数",
+    "fit": "拟合指标（保留官方字段名）",
+    "loadings": "各题完整载荷",
+    "comparison": "嵌套模型比较"
+  }
+}

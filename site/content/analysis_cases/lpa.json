@@ -1,0 +1,63 @@
+{
+  "id": "lpa",
+  "unit_id": "lpa",
+  "title": "潜剖面输出如何确定人数类型",
+  "question": "学生在压力、支持和幸福感上，可能有哪些不同组合？",
+  "design": "模拟连续指标的混合人群。mclust 拟合 1–4 类对角协方差模型 EEI/VVI；属于高斯混合的潜剖面实现，非 Mplus 专用检验。",
+  "variables": "固定种子教学生成数据；类别或参数设定用于演示，并不代表真实参与者。",
+  "script": "examples/r/output_reading/lpa.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {"field_id":"restart_same_structure","label":"另一初始化是否选同类数与约束","meaning":"1 表示本次另一个子集初始化选中相同类数和模型结构，0 表示不同；只有两次，不能证明全局最优。","term":"convergence","format":".0f"},
+    {"field_id":"restart_bic_gap","label":"另一初始化 BIC 减原 BIC","meaning":"差值用于发现更好的局部解；本包方向越大越好。接近零只是有限稳定性证据。","term":"fit-indices","format":".3f"},
+    {"field_id":"restart_ari","label":"两次归类的调整 Rand 指数","meaning":"比较两次分组的一致性，不受类别编号对调影响；1 为相同分组，不是证明真实类型存在。","term":"cluster-analysis","format":".3f"},
+    {
+      "field_id": "bic",
+      "label": "mclust BIC",
+      "meaning": "此包使用 2logL−参数数×logN，越大越好；与常见越小越好的 BIC 符号相反。",
+      "term": "fit-indices",
+      "format": ".3f"
+    },
+    {
+      "field_id": "entropy",
+      "label": "相对熵",
+      "meaning": "0–1 的分类清晰度（本例自计算）；不是类别数选择的唯一依据。",
+      "term": "cluster-analysis",
+      "format": ".3f"
+    },
+    {
+      "field_id": "mean_posterior",
+      "label": "平均最大后验概率",
+      "meaning": "每人最可能类别的概率平均值，保留不确定性，不能当确定标签。",
+      "term": "latent-profile-analysis",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "如何识别过度解读",
+      "body": "本例额外用 200 人子集构造另一初始化，对比类数/协方差约束、BIC 与调整 Rand 指数。仅两次不能证明全局最优，真实研究需更多起点及稳定性检查。分类后直接 ANOVA 会忽略分类误差；类名是研究者解释。"
+    },
+    {
+      "title": "输出不符合预期时",
+      "body": "先检查数据类型、有效样本、量纲和拟合条件；对探索选择保留过程记录。新分析应有研究依据，不通过反复换方法制造满意结果。"
+    }
+  ],
+  "report_template": "对三项连续教学指标拟合 1–4 类 EEI/VVI 高斯混合候选，mclust 选取 {k:.0f} 类，包定义的 BIC = {bic:.3f}（越大越好），相对熵 {entropy:.3f}，平均最大后验概率 {mean_posterior:.3f}，最小估计类别比例 {min_proportion:.3f}。无本次 BLRT/LMR 输出，不作该检验结论。",
+  "sources": [
+    {
+      "title": "模型实现的官方文档",
+      "url": "https://search.r-project.org/CRAN/refmans/mclust/html/Mclust.html"
+    }
+  ],
+  "related_terms": [
+    "fit-indices",
+    "cluster-analysis",
+    "latent-profile-analysis"
+  ]
+}

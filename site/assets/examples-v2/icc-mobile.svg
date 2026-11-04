@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="273pt" viewBox="0 0 360 273" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">同班记录可能共享班级条件，并非每行都独立。。比例为教学构造，只示意随机截距模型中的分解；其他ICC用途需另行定义。</desc><title id="title">焦虑差异来自两个层面</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:04:09.463070</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 273  L 360 273  L 360 0  L 0 0  L 0 273  z " style="fill: none" />
+  </g>
+  <g id="data-panel-0">
+   <g id="patch_2">
+    <path d="M 36 170  L 345.6 170  L 345.6 10.92  L 36 10.92  L 36 170  z " style="fill: none" />
+   </g>
+   <g id="patch_3">
+    <path d="M 36 129.359124  L 111.145631 129.359124  L 111.145631 89.879416  L 36 89.879416  z " clip-path="url(#pf02d99f2bf)" style="fill: #17643b; opacity: 0.36; stroke: #17643b; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 111.145631 129.359124  L 336.582524 129.359124  L 336.582524 89.879416  L 111.145631 89.879416  z " clip-path="url(#pf02d99f2bf)" style="fill: #7656ab; opacity: 0.36; stroke: #7656ab; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="36" y="183.244141" transform="rotate(-0 36 183.244141)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="96.116505" y="183.244141" transform="rotate(-0 96.116505 183.244141)">20</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="156.23301" y="183.244141" transform="rotate(-0 156.23301 183.244141)">40</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4" />
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="216.349515" y="183.244141" transform="rotate(-0 216.349515 183.244141)">60</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5" />
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="276.466019" y="183.244141" transform="rotate(-0 276.466019 183.244141)">80</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6" />
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="336.582524" y="183.244141" transform="rotate(-0 336.582524 183.244141)">100</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2" />
+   <g id="patch_5">
+    <path d="M 36 170  L 345.6 170  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="73.572816" y="112.970833" transform="rotate(-0 73.572816 112.970833)">25</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="223.864078" y="112.970833" transform="rotate(-0 223.864078 112.970833)">75</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="36" y="75.226722" transform="rotate(-0 36 75.226722)">焦虑总变异（100%）</text>
+   </g>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17643b" x="36" y="220.130625" transform="rotate(-0 36 220.130625)">1. 班级间差异</text>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #7656ab" x="36" y="249.130625" transform="rotate(-0 36 249.130625)">2. 同班学生间差异</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf02d99f2bf">
+   <rect x="36" y="10.92" width="309.6" height="159.08" />
+  </clipPath>
+ </defs>
+</svg>

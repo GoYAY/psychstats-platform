@@ -1,0 +1,23 @@
+{
+  "data-cleaning": {"script": "examples/r/analyses/data-cleaning.R", "required_packages": [], "metrics": {"raw_rows": {"target": 252, "tolerance": 0}, "clean_rows": {"target": 250, "tolerance": 0}, "duplicate_removed": {"target": 2, "tolerance": 0}, "invalid_age": {"min": 2}}},
+  "missing-data": {"script": "examples/r/analyses/missing-data.R", "required_packages": [], "metrics": {"stress_missing": {"min": 2}, "age_missing": {"min": 1}}},
+  "standard-score": {"script": "examples/r/analyses/standard-score.R", "required_packages": [], "metrics": {"z_mean": {"target": 0, "tolerance": 0.000001}, "z_sd": {"target": 1, "tolerance": 0.000001}}},
+  "descriptive-statistics": {"script": "examples/r/analyses/descriptive-statistics.R", "required_packages": [], "metrics": {"n": {"target": 360, "tolerance": 0}, "stress_mean": {"min": 10, "max": 90}, "stress_sd": {"min": 1}}},
+  "sampling-distribution": {"script": "examples/r/analyses/sampling-distribution.R", "required_packages": [], "metrics": {"mean_of_means": {"target": 50, "tolerance": 1}, "sd_of_means": {"target": 1.5811, "tolerance": 0.3}}},
+  "standard-error": {"script": "examples/r/analyses/standard-error.R", "required_packages": [], "metrics": {"standard_error": {"min": 0, "max": 5}, "n": {"target": 360, "tolerance": 0}}},
+  "p-value": {"script": "examples/r/analyses/p-value.R", "required_packages": [], "metrics": {"p_value": {"min": 0, "max": 1}, "df": {"min": 1}}},
+  "confidence-interval": {"script": "examples/r/analyses/confidence-interval.R", "required_packages": [], "metrics": {"estimate": {"min": 10, "max": 90}, "ci_lower": {"min": 0}, "ci_upper": {"min": 0}}},
+  "effect-size": {"script": "examples/r/analyses/effect-size.R", "required_packages": [], "metrics": {"cohens_d": {"min": 0}, "pooled_sd": {"min": 0}}},
+  "outlier": {"script": "examples/r/analyses/outlier.R", "required_packages": [], "metrics": {"outlier_count": {"min": 1, "max": 30}, "max_stress": {"target": 99, "tolerance": 0}}},
+  "t-test": {"script": "examples/r/analyses/t-test.R", "required_packages": [], "metrics": {"group_difference": {"min": 1}, "p_value": {"min": 0, "max": 1}, "n": {"target": 180, "tolerance": 0}}},
+  "anova": {"script": "examples/r/analyses/anova.R", "required_packages": [], "metrics": {"f_statistic": {"min": 1}, "p_value": {"min": 0, "max": 1}, "n": {"target": 180, "tolerance": 0}}},
+  "correlation-coefficient": {"script": "examples/r/analyses/correlation-coefficient.R", "required_packages": [], "metrics": {"r": {"min": 0, "max": 1}, "p_value": {"min": 0, "max": 1}}},
+  "multiple-regression": {"script": "examples/r/analyses/multiple-regression.R", "required_packages": [], "metrics": {"stress_beta": {"max": 0}, "support_beta": {"min": 0}, "r_squared": {"min": 0.1, "max": 1}}},
+  "logistic-regression": {"script": "examples/r/analyses/logistic-regression.R", "required_packages": [], "requires_convergence": true, "metrics": {"stress_log_odds": {"max": 0}, "support_odds_ratio": {"min": 1}}},
+  "efa": {"script": "examples/r/analyses/efa.R", "required_packages": [], "requires_convergence": true, "metrics": {"primary_loading": {"min": 0.2, "max": 1}, "uniqueness_mean": {"min": 0, "max": 1}}},
+  "cfa": {"script": "examples/r/analyses/cfa.R", "required_packages": [], "requires_convergence": true, "metrics": {"mean_loading": {"min": 0.2, "max": 1}, "discrepancy": {"min": 0}}},
+  "mediation-effect": {"script": "examples/r/analyses/mediation-effect.R", "required_packages": [], "metrics": {"indirect_effect": {"min": 0}, "ci_lower": {"min": -1}, "ci_upper": {"min": 0}}},
+  "moderation-effect": {"script": "examples/r/analyses/moderation-effect.R", "required_packages": [], "metrics": {"interaction_beta": {"min": -1, "max": 1}, "r_squared": {"min": 0, "max": 1}}},
+  "icc": {"script": "examples/r/analyses/icc.R", "required_packages": ["nlme"], "requires_convergence": true, "metrics": {"icc": {"min": 0.01, "max": 0.8}, "class_variance": {"min": 0}, "residual_variance": {"min": 0}}},
+  "random-intercept-model": {"script": "examples/r/analyses/random-intercept-model.R", "required_packages": ["nlme"], "requires_convergence": true, "metrics": {"motivation_beta": {"min": 0}, "teacher_beta": {"min": 0}}}
+}

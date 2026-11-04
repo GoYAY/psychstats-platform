@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="627pt" viewBox="0 0 360 627" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">相似句式可能带来共同方面之外的额外联系。。虚线是待检查的残差联系，修改要有依据并用新资料复核。</desc><title id="title">相似措辞的额外联系</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:54.001365</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 627  L 360 627  L 360 0  L 0 0  L 0 627  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 164.549382 176.843781  Q 136.59676 243.500033 109.119749 309.022137  " clip-path="url(#p22a3624572)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 113.189304 305.523748  L 109.119749 309.022137  L 108.762771 303.66746  z " clip-path="url(#p22a3624572)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 216.17424 141.990005  Q 225.499937 248.499282 234.718363 353.783409  " clip-path="url(#p22a3624572)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 236.690541 348.792366  L 234.718363 353.783409  L 231.908835 349.21104  z " clip-path="url(#p22a3624572)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 126.997375 357  Q 179.998358 357 231.769504 357  " clip-path="url(#p22a3624572)" style="fill: none; opacity: 0.65; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 226.969504 354.6  L 231.769504 357  L 226.969504 359.4  z " clip-path="url(#p22a3624572)" style="fill: #244da4; opacity: 0.65; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 180 111  C 187.956093 111 195.587396 114.055623 201.213203 119.493903  C 206.839011 124.932184 210 132.30911 210 140  C 210 147.69089 206.839011 155.067816 201.213203 160.506097  C 195.587396 165.944377 187.956093 169 180 169  C 172.043907 169 164.412604 165.944377 158.786797 160.506097  C 153.160989 155.067816 150 147.69089 150 140  C 150 132.30911 153.160989 124.932184 158.786797 119.493903  C 164.412604 114.055623 172.043907 111 180 111  z " clip-path="url(#p22a3624572)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 68 318  L 110 318  Q 119 318 119 327  L 119 387  Q 119 396 110 396  L 68 396  Q 59 396 59 387  L 59 327  Q 59 318 68 318  z " clip-path="url(#p22a3624572)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 250 318  L 292 318  Q 301 318 301 327  L 301 387  Q 301 396 292 396  L 250 396  Q 241 396 241 387  L 241 327  Q 241 318 250 318  z " clip-path="url(#p22a3624572)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(162 136.968242)">共同焦</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(174 150.063242)">虑</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 347.460117)">考试时</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 360.521367)">我很担</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(83 373.500117)">忧</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(253 347.448867)">考试时</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(253 360.510117)">我很紧</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(265 373.511367)">张</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="523.796367" transform="rotate(-0 20 523.796367)">1. 共同焦虑 → 考试时我很担忧：测量联系</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="551.796367" transform="rotate(-0 20 551.796367)">2. 共同焦虑 → 考试时我很紧张：测量联系</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #465366" transform="translate(20 579.82543)">3. 考试时我很担忧 → 考试时我很紧张：候选残差联</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #465366" transform="translate(20 598.885039)">系</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p22a3624572">
+   <rect x="0" y="0" width="360" height="627" />
+  </clipPath>
+ </defs>
+</svg>

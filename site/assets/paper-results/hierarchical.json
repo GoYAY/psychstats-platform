@@ -1,0 +1,128 @@
+{
+  "case_id": "hierarchical",
+  "covariances": [],
+  "design": "模拟三个连续特征，先标准化，再用欧氏距离与 Ward.D2 层次聚类；切为三组只是教学探索设定。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/hierarchical.R",
+    "script_sha256": "730c51adc497c324d1e8beaf19b07af9bf9183d8f161d1810bbea929f1cc76cc",
+    "supplement_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+  },
+  "tables": [
+    {
+      "columns": [
+        "cluster",
+        "stress",
+        "sleep",
+        "wellbeing"
+      ],
+      "name": "profiles",
+      "rows": [
+        {
+          "cluster": 1,
+          "sleep": 7.990414668107544,
+          "stress": 1.8177125381352797,
+          "wellbeing": 7.731910383761106
+        },
+        {
+          "cluster": 2,
+          "sleep": 7.051523186343729,
+          "stress": 5.066808515783755,
+          "wellbeing": 6.173607245809731
+        },
+        {
+          "cluster": 3,
+          "sleep": 5.822276266195309,
+          "stress": 8.08354910662649,
+          "wellbeing": 2.9664398630883553
+        }
+      ],
+      "title": "类别画像"
+    },
+    {
+      "columns": [
+        "cluster",
+        "stress",
+        "sleep",
+        "wellbeing"
+      ],
+      "name": "standardized_profiles",
+      "rows": [
+        {
+          "cluster": 1,
+          "sleep": 0.9839161495885504,
+          "stress": -1.165628183732223,
+          "wellbeing": 0.958508210649556
+        },
+        {
+          "cluster": 2,
+          "sleep": 0.09895052248893076,
+          "stress": 0.020940619503668673,
+          "wellbeing": 0.25703712816400437
+        },
+        {
+          "cluster": 3,
+          "sleep": -1.0596937859095115,
+          "stress": 1.1226533104104193,
+          "wellbeing": -1.1866711727943924
+        }
+      ],
+      "title": "标准化类别画像"
+    },
+    {
+      "columns": [
+        "model",
+        "n"
+      ],
+      "name": "model_summary",
+      "rows": [
+        {
+          "model": "没有标签时寻找相似人群",
+          "n": 150
+        }
+      ],
+      "title": "模型解释率与样本量"
+    },
+    {
+      "column_labels": {
+        "k": "教学切分组数",
+        "mean_silhouette": "平均轮廓宽度",
+        "min_size": "最小组人数"
+      },
+      "columns": [
+        "analysis",
+        "k",
+        "min_size",
+        "mean_silhouette"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "没有标签时寻找相似人群",
+          "k": 3,
+          "mean_silhouette": 0.4798935135570038,
+          "min_size": 49
+        }
+      ],
+      "source_fields": [
+        {
+          "k": "k",
+          "mean_silhouette": "mean_silhouette",
+          "min_size": "min_size"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "没有标签时寻找相似人群",
+  "valid": true,
+  "variances": []
+}

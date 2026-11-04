@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.0",
+  "topics": [
+    {"id": "foundations", "zh": "心理统计基础", "description": "建立变量、分布、抽样和统计推断所需的共同语言。"},
+    {"id": "data-preparation", "zh": "数据准备", "description": "从原始数据检查到形成可分析数据的流程与诊断。"},
+    {"id": "hypothesis-testing", "zh": "效应量与假设检验", "description": "理解不确定性、显著性、效应大小与检验力。"},
+    {"id": "group-comparisons", "zh": "差异检验与方差分析", "description": "比较两个或多个条件、组别或测量时点。"},
+    {"id": "regression", "zh": "回归", "description": "描述变量关系、进行预测并检验条件效应。"},
+    {"id": "classification-clustering", "zh": "分类与聚类", "description": "依据变量组合区分类别或发现样本结构。"},
+    {"id": "factor-analysis", "zh": "因素分析", "description": "探索或验证观测指标背后的潜在维度。"},
+    {"id": "structural-equation-modeling", "zh": "结构方程", "description": "同时表达测量关系和变量间结构关系。"},
+    {"id": "mediation-moderation", "zh": "中介与调节", "description": "分析作用机制、边界条件与条件间接效应。"},
+    {"id": "multilevel-longitudinal", "zh": "多层与纵向模型", "description": "处理嵌套数据、个体差异和随时间变化。"}
+  ]
+}

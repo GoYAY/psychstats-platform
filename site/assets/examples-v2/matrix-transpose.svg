@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="282pt" viewBox="0 0 760 282" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">转置交换行列位置，六个数值及其对应关系保留。。转置不等于取倒数，也不改变每道题的得分。</desc><title id="title">把学生行转成题目行</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:01:27.560921</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 282  L 760 282  L 760 0  L 0 0  L 0 282  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 12  L 730 12  Q 744 12 744 26  L 744 39  Q 744 53 730 53  L 30 53  Q 16 53 16 39  L 16 26  Q 16 12 30 12  z " clip-path="url(#pa61d7035b4)" style="fill: #244da4; opacity: 0.09" />
+   </g>
+   <g id="patch_3">
+    <path d="M 30 55  L 730 55  Q 744 55 744 69  L 744 82  Q 744 96 730 96  L 30 96  Q 16 96 16 82  L 16 69  Q 16 55 30 55  z " clip-path="url(#pa61d7035b4)" style="fill: #244da4; opacity: 0.035" />
+   </g>
+   <g id="patch_4">
+    <path d="M 30 98  L 730 98  Q 744 98 744 112  L 744 125  Q 744 139 730 139  L 30 139  Q 16 139 16 125  L 16 112  Q 16 98 30 98  z " clip-path="url(#pa61d7035b4)" style="fill: #244da4; opacity: 0.065" />
+   </g>
+   <g id="patch_5">
+    <path d="M 30 141  L 730 141  Q 744 141 744 155  L 744 168  Q 744 182 730 182  L 30 182  Q 16 182 16 168  L 16 155  Q 16 141 30 141  z " clip-path="url(#pa61d7035b4)" style="fill: #244da4; opacity: 0.035" />
+   </g>
+   <g id="patch_6">
+    <path d="M 30 184  L 730 184  Q 744 184 744 198  L 744 211  Q 744 225 730 225  L 30 225  Q 16 225 16 211  L 16 198  Q 16 184 30 184  z " clip-path="url(#pa61d7035b4)" style="fill: #244da4; opacity: 0.065" />
+   </g>
+   <g id="patch_7">
+    <path d="M 30 227  L 730 227  Q 744 227 744 241  L 744 254  Q 744 268 730 268  L 30 268  Q 16 268 16 254  L 16 241  Q 16 227 30 227  z " clip-path="url(#pa61d7035b4)" style="fill: #244da4; opacity: 0.035" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 13  L 728 13  " clip-path="url(#pa61d7035b4)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 56  L 728 56  " clip-path="url(#pa61d7035b4)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 32 99  L 728 99  " clip-path="url(#pa61d7035b4)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_4">
+    <path d="M 32 142  L 728 142  " clip-path="url(#pa61d7035b4)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_5">
+    <path d="M 32 185  L 728 185  " clip-path="url(#pa61d7035b4)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_6">
+    <path d="M 32 228  L 728 228  " clip-path="url(#pa61d7035b4)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="28" y="37.689687" transform="rotate(-0 28 37.689687)">方向</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="173.6" y="37.736562" transform="rotate(-0 173.6 37.736562)">行名</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="319.2" y="37.648438" transform="rotate(-0 319.2 37.648438)">列1</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="464.8" y="37.648438" transform="rotate(-0 464.8 37.648438)">列2</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="610.4" y="37.648438" transform="rotate(-0 610.4 37.648438)">列3</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="80.660625" transform="rotate(-0 28 80.660625)">原：列为题号</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="173.6" y="80.361562" transform="rotate(-0 173.6 80.361562)">甲</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="319.2" y="80.402813" transform="rotate(-0 319.2 80.402813)">题1=2</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="464.8" y="80.402813" transform="rotate(-0 464.8 80.402813)">题2=4</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="610.4" y="80.402813" transform="rotate(-0 610.4 80.402813)">题3=3</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="123.660625" transform="rotate(-0 28 123.660625)">原：列为题号</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="173.6" y="123.549062" transform="rotate(-0 173.6 123.549062)">乙</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="319.2" y="123.402813" transform="rotate(-0 319.2 123.402813)">题1=1</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="464.8" y="123.402813" transform="rotate(-0 464.8 123.402813)">题2=3</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="610.4" y="123.402813" transform="rotate(-0 610.4 123.402813)">题3=5</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="166.671875" transform="rotate(-0 28 166.671875)">转：列为学生</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="173.6" y="166.402812" transform="rotate(-0 173.6 166.402812)">题1</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="319.2" y="166.361562" transform="rotate(-0 319.2 166.361562)">甲=2</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="464.8" y="166.660625" transform="rotate(-0 464.8 166.660625)">乙=1</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="610.4" y="166.094375" transform="rotate(-0 610.4 166.094375)">—</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="209.671875" transform="rotate(-0 28 209.671875)">转：列为学生</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="173.6" y="209.402812" transform="rotate(-0 173.6 209.402812)">题2</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="319.2" y="209.361562" transform="rotate(-0 319.2 209.361562)">甲=4</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="464.8" y="209.637187" transform="rotate(-0 464.8 209.637187)">乙=3</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="610.4" y="209.094375" transform="rotate(-0 610.4 209.094375)">—</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="252.671875" transform="rotate(-0 28 252.671875)">转：列为学生</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="173.6" y="252.402813" transform="rotate(-0 173.6 252.402813)">题3</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="319.2" y="252.361562" transform="rotate(-0 319.2 252.361562)">甲=3</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="464.8" y="252.56125" transform="rotate(-0 464.8 252.56125)">乙=5</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="610.4" y="252.094375" transform="rotate(-0 610.4 252.094375)">—</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa61d7035b4">
+   <rect x="0" y="0" width="760" height="282" />
+  </clipPath>
+ </defs>
+</svg>

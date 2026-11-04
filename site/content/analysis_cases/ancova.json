@@ -1,0 +1,61 @@
+{
+  "id": "ancova",
+  "unit_id": "ancova",
+  "title": "考虑起点后比较学习成绩",
+  "question": "三组学生开始水平不同，怎么比较训练后的表现？",
+  "design": "固定种子生成三组教学数据，线性模型 post_score ~ pre_score + condition。比较共同斜率模型与含基线×组别模型；调整差异依赖基线编码。",
+  "variables": "三组各 60 人的教学数据由代码生成，非真实参与者。前测、后测与增益（后测减前测）编码见代码。",
+  "script": "examples/r/output_reading/ancova.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "F",
+      "label": "调整后组别整体 F",
+      "meaning": "在共同基线斜率条件下，组别是否增加模型解释；不是原始均值比较。",
+      "term": "covariate",
+      "format": ".3f"
+    },
+    {
+      "field_id": "slope",
+      "label": "基线系数",
+      "meaning": "基线相差一分时，对应后测均值差；是全组共同斜率的设定。",
+      "term": "regression-coefficient",
+      "format": ".4g"
+    },
+    {
+      "field_id": "interaction_p",
+      "label": "斜率差异比较 p",
+      "meaning": "比较基线×组别项，不显著并不保证共同斜率真实成立。",
+      "term": "interaction",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {"title":"调整均值是在哪个起点比较","body":"表中的 pre_score 是全样本前测平均，各组 fit 是在共同前测下的条件均值预测，lwr/upr 是该均值的逐组 95% 区间；不是个人预测区间，也不是实际改写每个人的成绩。若组×前测关系明显，应解释不同起点的组差，而非只给共同斜率均值。"},
+    {
+      "title": "这些结果最容易误读的地方",
+      "body": "协变量应由设计和研究目标决定；事后受干预影响的变量不是安全的基线控制项。"
+    },
+    {
+      "title": "如果没有发现明确证据",
+      "body": "先回到研究问题和估计精度，结合区间、有效样本、数据质量及模型条件判断。证据不足不等于没有作用；不反复更换方法、删样本或放宽阈值来追求显著。"
+    }
+  ],
+  "report_template": "控制前测分数后，组别整体检验 F({df1:.0f}, {df2:.0f}) = {F:.3f}，p = {p:.4g}。共同前测斜率为 {slope:.3f}，含组别×前测项与共同斜率模型的比较 p = {interaction_p:.4g}；调整结论限于可比较的基线范围。",
+  "sources": [
+    {
+      "title": "R 官方 anova.lm 文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/anova.lm.html"
+    }
+  ],
+  "related_terms": [
+    "covariate",
+    "regression-coefficient",
+    "interaction"
+  ]
+}

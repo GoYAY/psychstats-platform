@@ -1,0 +1,104 @@
+{
+  "id": "data-cleaning",
+  "zh": "数据清理",
+  "en": "Data Cleaning",
+  "aliases": [],
+  "type": "workflow",
+  "level": "basic",
+  "topic": "data-preparation",
+  "status": "public",
+  "summary": "记录并处理重复、缺失、编码错误与不合理观测的分析前流程。",
+  "relations": {
+    "prerequisites": [
+      "variable"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": [
+      "exploratory-data-analysis"
+    ]
+  },
+  "real_question": "导出的问卷有重复编号、空值和混乱编码，分析前应怎样处理？",
+  "operational_definition": "数据清理是在保留原始数据和处理日志的前提下，按预先说明的规则检查数据结构、重复记录、取值范围、缺失、类别编码和异常观测，并形成可复现的分析数据。",
+  "plain_explanation": "清理需要逐项判断、记录原因，再生成可追溯的新版本。",
+  "problems_solved": [
+    "发现录入和合并错误",
+    "形成可复现的分析样本"
+  ],
+  "not_for": [
+    "不能为得到显著结果而选择性删改记录"
+  ],
+  "decision_clues": [
+    "先保留原始文件",
+    "区分错误、真实极端值与未知情况",
+    "记录删除和重编码规则"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：哪些改动有依据，哪些仍需核查",
+      "body": "先保留原始文件并确认一行代表什么，再核对重复编号、取值范围、空值和类别编码。相同编号可能来自重复导入，也可能是同一被试的多次测量；修正前查来源。完成后比较前后行数、缺失数量和类别频数，每次排除或重编码都留下理由。"
+    },
+    {
+      "heading": "容易混淆：清理后没有异常就算完成了吗",
+      "body": "数据清理的完成条件是处理有依据、过程可复现、剩余问题被说明。真实的极端观测可以保留；未知来源的值应标记并按预设方案处理。不能为了让 p 值变小而调整删改规则，也不能把缺失数据随手填成零。"
+    }
+  ],
+  "formula": {
+    "latex": "",
+    "note": "",
+    "verified": false
+  },
+  "quiz": {
+    "question": "发现一个极端分数时，最合适的第一步是？",
+    "options": [
+      "立即删除",
+      "核对记录与测量背景并保留处理日志",
+      "改成样本平均数",
+      "忽略它"
+    ],
+    "answer": 1,
+    "explanation": "极端值可能真实，也可能是错误，先调查来源。",
+    "option_explanations": [
+      "极端分数可能是真实观测；未核查就删除会改变样本并引入偏差。",
+      "正确。先核对原始记录、计分范围和测量背景，并记录后续处理依据。",
+      "用均值替换会掩盖数据来源，也会改变方差和变量关系。",
+      "忽略它可能让录入错误或真实极端观测悄悄影响结论。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "advanced_textbook",
+      "title": "高级心理统计",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": {
+    "packages": [],
+    "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+    "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"messy_survey.csv\", stringsAsFactors = FALSE)\nraw_n <- nrow(d)\nd <- d[!duplicated(d$id), ]\nd$gender <- trimws(tolower(d$gender))\nd$gender[d$gender == \"m\"] <- \"male\"\nd$age <- suppressWarnings(as.numeric(d$age_text))\nd$stress[d$stress > 90] <- NA_real_\nprint(c(raw_rows=raw_n, clean_rows=nrow(d), duplicate_removed=raw_n-nrow(d),\n       invalid_age=sum(is.na(d$age)), stress_missing=sum(is.na(d$stress))))\n",
+    "your_data_code": "# Replace the file name and column names with your own dataset.\nd <- read.csv(\"your_data.csv\", stringsAsFactors=FALSE)\nstopifnot(all(c(\"id\", \"age_text\", \"gender\", \"stress\") %in% names(d)))\nsum(duplicated(d$id)); colSums(is.na(d))\nd <- d[!duplicated(d$id), ]\nd$age <- suppressWarnings(as.numeric(d$age_text))\nd$gender <- trimws(tolower(d$gender))\nsummary(d$stress); table(d$gender, useNA=\"ifany\")\n# Record exclusions and recoding rules before modeling.\n",
+    "assumption_checks": [
+      "先保留原始文件",
+      "区分错误、真实极端值与未知情况",
+      "记录删除和重编码规则"
+    ],
+    "key_output": [
+      "raw_rows",
+      "clean_rows",
+      "duplicate_removed",
+      "invalid_age",
+      "stress_missing"
+    ],
+    "interpretation": "本教学数据的 raw_rows=252、clean_rows=250，duplicate_removed=2 表示按示例的一人一条记录规则移除了两条重复编号记录。invalid_age=2 是转换后年龄缺失的总数，既可能含原本空白，也可能含无法转成数字的文本；stress_missing=3 同样是处理后的总缺失数。示例把压力分数大于 90 设为缺失，仅演示教学数据的预设规则；用于真实量表前，必须核实合法范围，不能把 90 当通用阈值。",
+    "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+    "common_errors": [
+      "不能为得到显著结果而选择性删改记录"
+    ],
+    "verified": true,
+    "validation_report": "logs/r_validation.json"
+  },
+  "verified": true,
+  "candidate_evidence": {},
+  "plain_example": "例如，同一份问卷被导入两次，性别一列又混用“Male”“m”和“ male ”。先确认重复的来源并统一同义编码，再保存处理记录，后续分析才能追溯到原始问卷。"
+}

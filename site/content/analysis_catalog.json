@@ -1,0 +1,2274 @@
+{
+  "schema_version": "1.0",
+  "units": [
+    {
+      "id": "describe",
+      "title": "描述统计与分布",
+      "group": "foundations",
+      "order": 0,
+      "case_ids": [
+        "describe"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "descriptive-statistics"
+      ]
+    },
+    {
+      "id": "intervals",
+      "title": "参数与区间估计",
+      "group": "hypothesis-testing",
+      "order": 1,
+      "case_ids": [
+        "intervals-variance",
+        "intervals"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "confidence-interval"
+      ]
+    },
+    {
+      "id": "correlation",
+      "title": "相关与偏相关",
+      "group": "foundations",
+      "order": 2,
+      "case_ids": [
+        "correlation-types",
+        "correlation"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "correlation-coefficient",
+        "spearman-correlation",
+        "partial-correlation"
+      ]
+    },
+    {
+      "id": "t-tests",
+      "title": "均值与 t 检验",
+      "group": "group-comparisons",
+      "order": 3,
+      "case_ids": [
+        "t-single",
+        "t-tests"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "t-test"
+      ]
+    },
+    {
+      "id": "proportions",
+      "title": "比例与方差检验",
+      "group": "group-comparisons",
+      "order": 4,
+      "case_ids": [
+        "binary-paired",
+        "proportions"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": []
+    },
+    {
+      "id": "equivalence",
+      "title": "等效性检验",
+      "group": "hypothesis-testing",
+      "order": 5,
+      "case_ids": [
+        "equivalence"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "equivalence-testing"
+      ]
+    },
+    {
+      "id": "power",
+      "title": "样本量与精度规划",
+      "group": "hypothesis-testing",
+      "order": 6,
+      "case_ids": [
+        "power"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "sample-size-planning",
+        "statistical-power"
+      ]
+    },
+    {
+      "id": "sampling",
+      "title": "抽样设计下的估计",
+      "group": "foundations",
+      "order": 7,
+      "case_ids": [
+        "sampling-cluster",
+        "sampling"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": []
+    },
+    {
+      "id": "anova",
+      "title": "单/多因素方差分析",
+      "group": "group-comparisons",
+      "order": 8,
+      "case_ids": [
+        "anova",
+        "factorial-blocks"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "anova",
+        "interaction"
+      ]
+    },
+    {
+      "id": "welch",
+      "title": "Welch 方差分析",
+      "group": "group-comparisons",
+      "order": 9,
+      "case_ids": [
+        "welch"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "welch-anova"
+      ]
+    },
+    {
+      "id": "repeated",
+      "title": "区组与重复测量",
+      "group": "group-comparisons",
+      "order": 10,
+      "case_ids": [
+        "repeated",
+        "mixed-design"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "repeated-measures",
+        "sphericity"
+      ]
+    },
+    {
+      "id": "ancova",
+      "title": "协方差分析",
+      "group": "group-comparisons",
+      "order": 11,
+      "case_ids": [
+        "ancova"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "covariate",
+        "ancova"
+      ]
+    },
+    {
+      "id": "manova",
+      "title": "多元方差/协方差分析",
+      "group": "group-comparisons",
+      "order": 12,
+      "case_ids": [
+        "manova"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "manova",
+        "wilks-lambda",
+        "mancova"
+      ]
+    },
+    {
+      "id": "contrasts",
+      "title": "对比与事后比较",
+      "group": "group-comparisons",
+      "order": 13,
+      "case_ids": [
+        "contrasts"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "planned-contrast",
+        "post-hoc-comparison"
+      ]
+    },
+    {
+      "id": "categorical",
+      "title": "卡方与 Fisher",
+      "group": "group-comparisons",
+      "order": 14,
+      "case_ids": [
+        "categorical",
+        "categorical-gof"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "chi-square-test",
+        "fisher-exact-test"
+      ]
+    },
+    {
+      "id": "ranks",
+      "title": "秩与非参数比较",
+      "group": "group-comparisons",
+      "order": 15,
+      "case_ids": [
+        "friedman-sign",
+        "ranks"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "nonparametric-test",
+        "wilcoxon-rank-sum",
+        "wilcoxon-signed-rank"
+      ]
+    },
+    {
+      "id": "linear",
+      "title": "简单与多元回归",
+      "group": "regression",
+      "order": 16,
+      "case_ids": [
+        "linear-simple",
+        "linear"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "simple-linear-regression",
+        "multiple-regression"
+      ]
+    },
+    {
+      "id": "selection",
+      "title": "分块与选择回归",
+      "group": "regression",
+      "order": 17,
+      "case_ids": [
+        "selection-blocks",
+        "selection"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "stepwise-regression"
+      ]
+    },
+    {
+      "id": "logistic",
+      "title": "Logistic 回归",
+      "group": "regression",
+      "order": 18,
+      "case_ids": [
+        "logistic"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "logistic-regression",
+        "odds-ratio"
+      ]
+    },
+    {
+      "id": "discriminant",
+      "title": "判别分析",
+      "group": "classification-clustering",
+      "order": 19,
+      "case_ids": [
+        "discriminant"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "discriminant-analysis"
+      ]
+    },
+    {
+      "id": "hierarchical",
+      "title": "层次聚类",
+      "group": "classification-clustering",
+      "order": 20,
+      "case_ids": [
+        "hierarchical"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "hierarchical-clustering"
+      ]
+    },
+    {
+      "id": "kmeans",
+      "title": "K 均值聚类",
+      "group": "classification-clustering",
+      "order": 21,
+      "case_ids": [
+        "kmeans"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "k-means-clustering",
+        "cluster-analysis"
+      ]
+    },
+    {
+      "id": "lpa",
+      "title": "潜剖面分析",
+      "group": "classification-clustering",
+      "order": 22,
+      "case_ids": [
+        "lpa"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "latent-profile-analysis"
+      ]
+    },
+    {
+      "id": "lca",
+      "title": "潜类别分析",
+      "group": "classification-clustering",
+      "order": 23,
+      "case_ids": [
+        "lca"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "latent-class-analysis"
+      ]
+    },
+    {
+      "id": "reliability",
+      "title": "内部一致性 α/ω",
+      "group": "factor-analysis",
+      "order": 24,
+      "case_ids": [
+        "reliability-omega",
+        "reliability"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "reliability",
+        "internal-consistency",
+        "cronbach-alpha",
+        "mcdonald-omega"
+      ]
+    },
+    {
+      "id": "pca",
+      "title": "主成分分析",
+      "group": "factor-analysis",
+      "order": 25,
+      "case_ids": [
+        "pca"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "pca"
+      ]
+    },
+    {
+      "id": "efa",
+      "title": "探索性因素分析",
+      "group": "factor-analysis",
+      "order": 26,
+      "case_ids": [
+        "efa"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "efa",
+        "parallel-analysis",
+        "number-of-factors",
+        "factor-extraction",
+        "factor-rotation"
+      ]
+    },
+    {
+      "id": "cfa",
+      "title": "验证性因素分析",
+      "group": "factor-analysis",
+      "order": 27,
+      "case_ids": [
+        "cfa"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "cfa"
+      ]
+    },
+    {
+      "id": "invariance",
+      "title": "测量不变性",
+      "group": "factor-analysis",
+      "order": 28,
+      "case_ids": [
+        "invariance"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "measurement-invariance"
+      ]
+    },
+    {
+      "id": "path",
+      "title": "路径分析",
+      "group": "structural-equation-modeling",
+      "order": 29,
+      "case_ids": [
+        "path"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "path-analysis",
+        "path-coefficient"
+      ]
+    },
+    {
+      "id": "sem",
+      "title": "潜变量结构方程",
+      "group": "structural-equation-modeling",
+      "order": 30,
+      "case_ids": [
+        "sem"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "sem"
+      ]
+    },
+    {
+      "id": "multigroup",
+      "title": "多组结构方程与比较",
+      "group": "structural-equation-modeling",
+      "order": 31,
+      "case_ids": [
+        "multigroup"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": []
+    },
+    {
+      "id": "feedback",
+      "title": "非递归/反馈模型",
+      "group": "structural-equation-modeling",
+      "order": 32,
+      "case_ids": [
+        "feedback"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "non-recursive-model"
+      ]
+    },
+    {
+      "id": "mediation",
+      "title": "显变量中介",
+      "group": "mediation-moderation",
+      "order": 33,
+      "case_ids": [
+        "mediation"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "mediation-effect",
+        "indirect-effect",
+        "sobel-test"
+      ]
+    },
+    {
+      "id": "latent-mediation",
+      "title": "潜变量中介",
+      "group": "mediation-moderation",
+      "order": 34,
+      "case_ids": [
+        "latent-mediation"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": []
+    },
+    {
+      "id": "moderation",
+      "title": "显变量调节与简单斜率",
+      "group": "mediation-moderation",
+      "order": 35,
+      "case_ids": [
+        "moderation"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "moderation-effect",
+        "simple-slope-test"
+      ]
+    },
+    {
+      "id": "latent-interaction",
+      "title": "潜变量调节",
+      "group": "mediation-moderation",
+      "order": 36,
+      "case_ids": [
+        "latent-interaction"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "product-indicator"
+      ]
+    },
+    {
+      "id": "conditional-mediation",
+      "title": "有调节的中介",
+      "group": "mediation-moderation",
+      "order": 37,
+      "case_ids": [
+        "conditional-mediation"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "moderated-mediation"
+      ]
+    },
+    {
+      "id": "mediated-interaction",
+      "title": "有中介的调节",
+      "group": "mediation-moderation",
+      "order": 38,
+      "case_ids": [
+        "mediated-interaction"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "mediated-moderation"
+      ]
+    },
+    {
+      "id": "intercept",
+      "title": "空模型与随机截距",
+      "group": "multilevel-longitudinal",
+      "order": 39,
+      "case_ids": [
+        "intercept"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "null-model",
+        "random-intercept-model",
+        "icc"
+      ]
+    },
+    {
+      "id": "slope",
+      "title": "随机斜率与跨层交互",
+      "group": "multilevel-longitudinal",
+      "order": 40,
+      "case_ids": [
+        "slope"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "random-slope-model",
+        "hlm"
+      ]
+    },
+    {
+      "id": "longitudinal",
+      "title": "纵向混合模型",
+      "group": "multilevel-longitudinal",
+      "order": 41,
+      "case_ids": [
+        "longitudinal"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "longitudinal-data",
+        "time-coding"
+      ]
+    },
+    {
+      "id": "growth",
+      "title": "潜增长模型",
+      "group": "multilevel-longitudinal",
+      "order": 42,
+      "case_ids": [
+        "growth"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "growth-model"
+      ]
+    },
+    {
+      "id": "missing",
+      "title": "缺失与插补",
+      "group": "data-preparation",
+      "order": 43,
+      "case_ids": [
+        "missing"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "missing-data",
+        "multiple-imputation",
+        "missing-data-mechanism"
+      ]
+    },
+    {
+      "id": "diagnostics",
+      "title": "模型诊断与敏感性",
+      "group": "data-preparation",
+      "order": 44,
+      "case_ids": [
+        "design-invalid",
+        "diagnostics"
+      ],
+      "basis": "教材方法与现有术语覆盖表",
+      "term_ids": [
+        "data-cleaning",
+        "sensitivity-analysis",
+        "robust-standard-errors"
+      ]
+    }
+  ],
+  "term_routes": [
+    {
+      "term_id": "anova",
+      "mode": "tutorial",
+      "unit_ids": [
+        "anova"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "bartlett-test",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "bootstrap",
+      "mode": "field",
+      "unit_ids": [
+        "conditional-mediation",
+        "mediated-interaction",
+        "mediation"
+      ],
+      "reason": "在这些案例的实际字段解释或诊断中引用；不是独立分析模型"
+    },
+    {
+      "term_id": "box-plot",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "causal-relationship",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "centering",
+      "mode": "no-output",
+      "unit_ids": [
+        "missing",
+        "diagnostics"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "central-tendency-and-dispersion",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "cfa",
+      "mode": "tutorial",
+      "unit_ids": [
+        "cfa"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "chi-square-test",
+      "mode": "tutorial",
+      "unit_ids": [
+        "categorical"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "cluster-analysis",
+      "mode": "tutorial",
+      "unit_ids": [
+        "kmeans"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "common-factor",
+      "mode": "no-output",
+      "unit_ids": [
+        "reliability",
+        "pca",
+        "efa",
+        "cfa",
+        "invariance"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "communality",
+      "mode": "field",
+      "unit_ids": [
+        "efa"
+      ],
+      "reason": "在这些案例的实际字段解释或诊断中引用；不是独立分析模型"
+    },
+    {
+      "term_id": "conditional-effect",
+      "mode": "no-output",
+      "unit_ids": [
+        "mediation",
+        "latent-mediation",
+        "moderation",
+        "latent-interaction",
+        "conditional-mediation",
+        "mediated-interaction"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "confidence-interval",
+      "mode": "tutorial",
+      "unit_ids": [
+        "intervals"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "confounding",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "continuous-variable",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "convergence",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "correlation-coefficient",
+      "mode": "tutorial",
+      "unit_ids": [
+        "correlation"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "covariance-matrix",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "covariance",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "covariate",
+      "mode": "tutorial",
+      "unit_ids": [
+        "ancova"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "cronbach-alpha",
+      "mode": "tutorial",
+      "unit_ids": [
+        "reliability"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "cross-validation",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "data-cleaning",
+      "mode": "tutorial",
+      "unit_ids": [
+        "diagnostics"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "data-rank",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "degrees-of-freedom",
+      "mode": "no-output",
+      "unit_ids": [
+        "t-tests",
+        "proportions",
+        "anova",
+        "welch",
+        "repeated",
+        "ancova",
+        "manova",
+        "contrasts",
+        "categorical",
+        "ranks"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "descriptive-statistics",
+      "mode": "tutorial",
+      "unit_ids": [
+        "describe"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "design-matrix",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "determinant",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "direct-effect",
+      "mode": "no-output",
+      "unit_ids": [
+        "mediation",
+        "latent-mediation",
+        "moderation",
+        "latent-interaction",
+        "conditional-mediation",
+        "mediated-interaction"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "discriminant-analysis",
+      "mode": "tutorial",
+      "unit_ids": [
+        "discriminant"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "dummy-coding",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "efa",
+      "mode": "tutorial",
+      "unit_ids": [
+        "efa"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "effect-size",
+      "mode": "field",
+      "unit_ids": [
+        "anova",
+        "proportions",
+        "t-tests"
+      ],
+      "reason": "在这些案例的实际字段解释或诊断中引用；不是独立分析模型"
+    },
+    {
+      "term_id": "eigenvalue",
+      "mode": "field",
+      "unit_ids": [
+        "pca"
+      ],
+      "reason": "在这些案例的实际字段解释或诊断中引用；不是独立分析模型"
+    },
+    {
+      "term_id": "equivalence-testing",
+      "mode": "tutorial",
+      "unit_ids": [
+        "equivalence"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "euclidean-distance",
+      "mode": "no-output",
+      "unit_ids": [
+        "discriminant",
+        "hierarchical",
+        "kmeans",
+        "lpa",
+        "lca"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "exploratory-data-analysis",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "extreme-value",
+      "mode": "no-output",
+      "unit_ids": [
+        "missing",
+        "diagnostics"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "f-statistic",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "factor-extraction",
+      "mode": "tutorial",
+      "unit_ids": [
+        "efa"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "factor-loading",
+      "mode": "no-output",
+      "unit_ids": [
+        "reliability",
+        "pca",
+        "efa",
+        "cfa",
+        "invariance"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "factor-rotation",
+      "mode": "tutorial",
+      "unit_ids": [
+        "efa"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "fisher-exact-test",
+      "mode": "tutorial",
+      "unit_ids": [
+        "categorical"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "fit-indices",
+      "mode": "field",
+      "unit_ids": [
+        "cfa",
+        "latent-mediation",
+        "lca",
+        "lpa",
+        "selection",
+        "sem"
+      ],
+      "reason": "在这些案例的实际字段解释或诊断中引用；不是独立分析模型"
+    },
+    {
+      "term_id": "fixed-effect",
+      "mode": "no-output",
+      "unit_ids": [
+        "intercept",
+        "slope",
+        "longitudinal",
+        "growth"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "growth-model",
+      "mode": "tutorial",
+      "unit_ids": [
+        "growth"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "heteroscedasticity",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "hierarchical-clustering",
+      "mode": "tutorial",
+      "unit_ids": [
+        "hierarchical"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "histogram",
+      "mode": "no-output",
+      "unit_ids": [
+        "missing",
+        "diagnostics"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "hlm",
+      "mode": "tutorial",
+      "unit_ids": [
+        "slope"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "homogeneity-of-variance",
+      "mode": "no-output",
+      "unit_ids": [
+        "t-tests",
+        "proportions",
+        "anova",
+        "welch",
+        "repeated",
+        "ancova",
+        "manova",
+        "contrasts",
+        "categorical",
+        "ranks"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "icc",
+      "mode": "tutorial",
+      "unit_ids": [
+        "intercept"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "independence",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "indirect-effect",
+      "mode": "tutorial",
+      "unit_ids": [
+        "mediation"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "influential-point",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "interaction-plot",
+      "mode": "no-output",
+      "unit_ids": [
+        "mediation",
+        "latent-mediation",
+        "moderation",
+        "latent-interaction",
+        "conditional-mediation",
+        "mediated-interaction"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "interaction",
+      "mode": "tutorial",
+      "unit_ids": [
+        "anova"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "intercept",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "internal-consistency",
+      "mode": "tutorial",
+      "unit_ids": [
+        "reliability"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "k-means-clustering",
+      "mode": "tutorial",
+      "unit_ids": [
+        "kmeans"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "kmo",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "latent-variable",
+      "mode": "no-output",
+      "unit_ids": [
+        "path",
+        "sem",
+        "multigroup",
+        "feedback"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "level-one",
+      "mode": "no-output",
+      "unit_ids": [
+        "intercept",
+        "slope",
+        "longitudinal",
+        "growth"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "level-two",
+      "mode": "no-output",
+      "unit_ids": [
+        "intercept",
+        "slope",
+        "longitudinal",
+        "growth"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "likelihood",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "linear-dependence",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "linearity",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "logistic-regression",
+      "mode": "tutorial",
+      "unit_ids": [
+        "logistic"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "longitudinal-data",
+      "mode": "tutorial",
+      "unit_ids": [
+        "longitudinal"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "mahalanobis-distance",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "main-effect",
+      "mode": "no-output",
+      "unit_ids": [
+        "t-tests",
+        "proportions",
+        "anova",
+        "welch",
+        "repeated",
+        "ancova",
+        "manova",
+        "contrasts",
+        "categorical",
+        "ranks"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "manova",
+      "mode": "tutorial",
+      "unit_ids": [
+        "manova"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "matrix-inverse",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "matrix-rank",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "matrix-transpose",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "matrix",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "maximum-likelihood",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "mcdonald-omega",
+      "mode": "tutorial",
+      "unit_ids": [
+        "reliability"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "mean-square",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "measurement-error",
+      "mode": "no-output",
+      "unit_ids": [
+        "reliability",
+        "pca",
+        "efa",
+        "cfa",
+        "invariance"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "measurement-invariance",
+      "mode": "tutorial",
+      "unit_ids": [
+        "invariance"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "measurement-model",
+      "mode": "no-output",
+      "unit_ids": [
+        "path",
+        "sem",
+        "multigroup",
+        "feedback"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "measurement-scales",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "mediated-moderation",
+      "mode": "tutorial",
+      "unit_ids": [
+        "mediated-interaction"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "mediation-effect",
+      "mode": "tutorial",
+      "unit_ids": [
+        "mediation"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "mediator",
+      "mode": "no-output",
+      "unit_ids": [
+        "mediation",
+        "latent-mediation",
+        "moderation",
+        "latent-interaction",
+        "conditional-mediation",
+        "mediated-interaction"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "missing-data-mechanism",
+      "mode": "tutorial",
+      "unit_ids": [
+        "missing"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "missing-data",
+      "mode": "tutorial",
+      "unit_ids": [
+        "missing"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "model-fit",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "model-identification",
+      "mode": "no-output",
+      "unit_ids": [
+        "reliability",
+        "pca",
+        "efa",
+        "cfa",
+        "invariance"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "model-modification",
+      "mode": "no-output",
+      "unit_ids": [
+        "path",
+        "sem",
+        "multigroup",
+        "feedback"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "moderated-mediation",
+      "mode": "tutorial",
+      "unit_ids": [
+        "conditional-mediation"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "moderation-effect",
+      "mode": "tutorial",
+      "unit_ids": [
+        "moderation"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "moderator",
+      "mode": "no-output",
+      "unit_ids": [
+        "mediation",
+        "latent-mediation",
+        "moderation",
+        "latent-interaction",
+        "conditional-mediation",
+        "mediated-interaction"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "modification-index",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "multicollinearity",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "multiple-comparison-correction",
+      "mode": "no-output",
+      "unit_ids": [
+        "intervals",
+        "equivalence",
+        "power"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "multiple-imputation",
+      "mode": "tutorial",
+      "unit_ids": [
+        "missing"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "multiple-regression",
+      "mode": "tutorial",
+      "unit_ids": [
+        "linear"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "multivariate-normality",
+      "mode": "no-output",
+      "unit_ids": [
+        "t-tests",
+        "proportions",
+        "anova",
+        "welch",
+        "repeated",
+        "ancova",
+        "manova",
+        "contrasts",
+        "categorical",
+        "ranks"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "multivariate-outlier",
+      "mode": "no-output",
+      "unit_ids": [
+        "missing",
+        "diagnostics"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "nested-data",
+      "mode": "no-output",
+      "unit_ids": [
+        "intercept",
+        "slope",
+        "longitudinal",
+        "growth"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "non-recursive-model",
+      "mode": "tutorial",
+      "unit_ids": [
+        "feedback"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "nonparametric-test",
+      "mode": "tutorial",
+      "unit_ids": [
+        "ranks"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "normal-distribution",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "normality",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "null-and-alternative-hypotheses",
+      "mode": "no-output",
+      "unit_ids": [
+        "intervals",
+        "equivalence",
+        "power"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "null-hypothesis",
+      "mode": "no-output",
+      "unit_ids": [
+        "intervals",
+        "equivalence",
+        "power"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "null-model",
+      "mode": "tutorial",
+      "unit_ids": [
+        "intercept"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "number-of-factors",
+      "mode": "tutorial",
+      "unit_ids": [
+        "efa"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "odds-ratio",
+      "mode": "tutorial",
+      "unit_ids": [
+        "logistic"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "outlier",
+      "mode": "no-output",
+      "unit_ids": [
+        "missing",
+        "diagnostics"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "overfitting",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "p-value",
+      "mode": "field",
+      "unit_ids": [
+        "anova",
+        "correlation",
+        "linear",
+        "logistic",
+        "manova",
+        "proportions",
+        "t-tests",
+        "welch"
+      ],
+      "reason": "在这些案例的实际字段解释或诊断中引用；不是独立分析模型"
+    },
+    {
+      "term_id": "parallel-analysis",
+      "mode": "tutorial",
+      "unit_ids": [
+        "efa"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "parameter-and-statistic",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "partial-correlation",
+      "mode": "tutorial",
+      "unit_ids": [
+        "correlation"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "partial-eta-squared",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "path-analysis",
+      "mode": "tutorial",
+      "unit_ids": [
+        "path"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "path-coefficient",
+      "mode": "tutorial",
+      "unit_ids": [
+        "path"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "pca",
+      "mode": "tutorial",
+      "unit_ids": [
+        "pca"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "planned-contrast",
+      "mode": "tutorial",
+      "unit_ids": [
+        "contrasts"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "polychoric-correlation",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "population-and-sample",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "post-hoc-comparison",
+      "mode": "tutorial",
+      "unit_ids": [
+        "contrasts"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "probability-density",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "product-indicator",
+      "mode": "tutorial",
+      "unit_ids": [
+        "latent-interaction"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "qq-plot",
+      "mode": "no-output",
+      "unit_ids": [
+        "missing",
+        "diagnostics"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "quantile",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "r-squared",
+      "mode": "field",
+      "unit_ids": [
+        "linear",
+        "selection"
+      ],
+      "reason": "在这些案例的实际字段解释或诊断中引用；不是独立分析模型"
+    },
+    {
+      "term_id": "random-effect",
+      "mode": "no-output",
+      "unit_ids": [
+        "intercept",
+        "slope",
+        "longitudinal",
+        "growth"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "random-intercept-model",
+      "mode": "tutorial",
+      "unit_ids": [
+        "intercept"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "random-slope-model",
+      "mode": "tutorial",
+      "unit_ids": [
+        "slope"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "regression-coefficient",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "reliability",
+      "mode": "tutorial",
+      "unit_ids": [
+        "reliability"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "reml",
+      "mode": "no-output",
+      "unit_ids": [
+        "intercept",
+        "slope",
+        "longitudinal",
+        "growth"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "repeated-measures",
+      "mode": "tutorial",
+      "unit_ids": [
+        "repeated"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "residual",
+      "mode": "no-output",
+      "unit_ids": [
+        "linear",
+        "selection",
+        "logistic"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "reverse-scoring",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "rmsea",
+      "mode": "field",
+      "unit_ids": [
+        "cfa",
+        "sem"
+      ],
+      "reason": "在这些案例的实际字段解释或诊断中引用；不是独立分析模型"
+    },
+    {
+      "term_id": "robust-standard-errors",
+      "mode": "tutorial",
+      "unit_ids": [
+        "diagnostics"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "sample-size-planning",
+      "mode": "tutorial",
+      "unit_ids": [
+        "power"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "sampling-distribution",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "scale-scoring",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "scree-plot",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "sem",
+      "mode": "tutorial",
+      "unit_ids": [
+        "sem"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "sensitivity-analysis",
+      "mode": "tutorial",
+      "unit_ids": [
+        "diagnostics"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "sesoi",
+      "mode": "no-output",
+      "unit_ids": [
+        "intervals",
+        "equivalence",
+        "power"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "significance-level",
+      "mode": "no-output",
+      "unit_ids": [
+        "intervals",
+        "equivalence",
+        "power"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "simple-linear-regression",
+      "mode": "tutorial",
+      "unit_ids": [
+        "linear"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "simple-slope-test",
+      "mode": "tutorial",
+      "unit_ids": [
+        "moderation"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "skewness",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "sobel-test",
+      "mode": "tutorial",
+      "unit_ids": [
+        "mediation"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "spearman-correlation",
+      "mode": "tutorial",
+      "unit_ids": [
+        "correlation"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "sphericity",
+      "mode": "tutorial",
+      "unit_ids": [
+        "repeated"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "standard-error",
+      "mode": "field",
+      "unit_ids": [
+        "contrasts",
+        "latent-mediation",
+        "sampling"
+      ],
+      "reason": "在这些案例的实际字段解释或诊断中引用；不是独立分析模型"
+    },
+    {
+      "term_id": "standard-score",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "standardization",
+      "mode": "no-output",
+      "unit_ids": [
+        "missing",
+        "diagnostics"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "statistical-assumptions",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "statistical-power",
+      "mode": "tutorial",
+      "unit_ids": [
+        "power"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "stepwise-regression",
+      "mode": "tutorial",
+      "unit_ids": [
+        "selection"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "structural-model",
+      "mode": "no-output",
+      "unit_ids": [
+        "path",
+        "sem",
+        "multigroup",
+        "feedback"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "sum-of-squares",
+      "mode": "no-output",
+      "unit_ids": [],
+      "reason": "学习前置概念或专题词条；当前没有对应的独立结果字段，不制造模型输出"
+    },
+    {
+      "term_id": "t-test",
+      "mode": "tutorial",
+      "unit_ids": [
+        "t-tests"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "time-coding",
+      "mode": "tutorial",
+      "unit_ids": [
+        "longitudinal"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "total-effect",
+      "mode": "no-output",
+      "unit_ids": [
+        "mediation",
+        "latent-mediation",
+        "moderation",
+        "latent-interaction",
+        "conditional-mediation",
+        "mediated-interaction"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "type-i-and-type-ii-errors",
+      "mode": "no-output",
+      "unit_ids": [
+        "intervals",
+        "equivalence",
+        "power"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "validity",
+      "mode": "no-output",
+      "unit_ids": [
+        "reliability",
+        "pca",
+        "efa",
+        "cfa",
+        "invariance"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "variable",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "vector",
+      "mode": "no-output",
+      "unit_ids": [
+        "describe",
+        "correlation",
+        "sampling"
+      ],
+      "reason": "概念本身无独立分析输出；在相关方法和词条中解释"
+    },
+    {
+      "term_id": "welch-anova",
+      "mode": "tutorial",
+      "unit_ids": [
+        "welch"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "wilcoxon-rank-sum",
+      "mode": "tutorial",
+      "unit_ids": [
+        "ranks"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "wilcoxon-signed-rank",
+      "mode": "tutorial",
+      "unit_ids": [
+        "ranks"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "wilks-lambda",
+      "mode": "tutorial",
+      "unit_ids": [
+        "manova"
+      ],
+      "reason": "对应方法的完整结果教程"
+    },
+    {
+      "term_id": "latent-profile-analysis",
+      "mode": "tutorial",
+      "unit_ids": [
+        "lpa"
+      ],
+      "reason": "连续/分类混合模型的完整 R 结果教程"
+    },
+    {
+      "term_id": "latent-class-analysis",
+      "mode": "tutorial",
+      "unit_ids": [
+        "lca"
+      ],
+      "reason": "连续/分类混合模型的完整 R 结果教程"
+    },
+    {
+      "term_id": "ancova",
+      "mode": "tutorial",
+      "unit_ids": [
+        "ancova"
+      ],
+      "reason": "有已运行的对应条件组差教学示例"
+    },
+    {
+      "term_id": "mancova",
+      "mode": "tutorial",
+      "unit_ids": [
+        "manova"
+      ],
+      "reason": "有已运行的对应条件组差教学示例"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "discriminant",
+  "unit_id": "discriminant",
+  "title": "已知类别时预测新学生",
+  "question": "已有三类学生的特征，能否判断另一位学生更接近哪类？",
+  "design": "模拟三个已知类别、每类 70 人及两个连续特征。分别作 LDA/QDA，使用留一交叉验证；类先验为教学平衡样本频率。",
+  "variables": "固定种子教学生成数据；类别或参数设定用于演示，并不代表真实参与者。",
+  "script": "examples/r/output_reading/discriminant.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "lda_accuracy",
+      "label": "LDA 留一准确率",
+      "meaning": "每人由不含自身的训练数据预测；仍是本样本内部验证。",
+      "term": "discriminant-analysis",
+      "format": ".3f"
+    },
+    {
+      "field_id": "qda_accuracy",
+      "label": "QDA 留一准确率",
+      "meaning": "允许类别协方差不同但参数更多；不根据较高一点准确率就宣称优胜。",
+      "term": "discriminant-analysis",
+      "format": ".3f"
+    },
+    {
+      "field_id": "mean_posterior",
+      "label": "平均最大后验概率",
+      "meaning": "模型内部分类确信度，依赖先验和分布，不是校准验证。",
+      "term": "discriminant-analysis",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "如何识别过度解读",
+      "body": "不要把训练命中率当预测性能；类别极不平衡时只看准确率会误导，须阅读混淆表及各类指标。"
+    },
+    {
+      "title": "输出不符合预期时",
+      "body": "先检查数据类型、有效样本、量纲和拟合条件；对探索选择保留过程记录。新分析应有研究依据，不通过反复换方法制造满意结果。"
+    }
+  ],
+  "report_template": "三类教学数据中，留一交叉验证的 LDA 准确率为 {lda_accuracy:.3f}，QDA 为 {qda_accuracy:.3f}；LDA 平均最大后验分类概率为 {mean_posterior:.3f}。分类表现仍需独立样本和类别特异的错误代价检验。",
+  "sources": [
+    {
+      "title": "模型实现的官方文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/MASS/html/lda.html"
+    }
+  ],
+  "related_terms": [
+    "discriminant-analysis"
+  ]
+}

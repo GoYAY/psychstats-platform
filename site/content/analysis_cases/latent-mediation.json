@@ -1,0 +1,65 @@
+{
+  "id": "latent-mediation",
+  "unit_id": "latent-mediation",
+  "title": "含测量误差的间接路径",
+  "question": "问卷测量并不完美，怎样研究构念间的间接关联？",
+  "design": "连续教学指标，每潜构念三指标。f1→f2→f3 加直接路径，ML 与默认 Delta 方法区间；明确不是 Bootstrap 区间。",
+  "variables": "固定种子生成的连续教学指标。X/W/M/Y 或潜因子的统计角色见设计与代码，非真实参与者。",
+  "script": "examples/r/output_reading/latent-mediation.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "indirect",
+      "label": "潜变量间接路径",
+      "meaning": "潜构念量纲由测量标定决定，不是题目总分回归的相同数值。",
+      "term": "mediation-effect",
+      "format": ".3f"
+    },
+    {
+      "field_id": "se",
+      "label": "Delta 方法标准误",
+      "meaning": "一阶近似而非重抽样，乘积的非正态性可能影响区间。",
+      "term": "standard-error",
+      "format": ".3f"
+    },
+    {
+      "field_id": "cfi",
+      "label": "整体 CFI",
+      "meaning": "评估测量和结构联合拟合；不证明间接路径因果成立。",
+      "term": "fit-indices",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "何时不能这样解释",
+      "body": "先验证测量结构与不当解；题目若是少类别有序，应换适当估计路线，不能照抄本连续 ML。"
+    },
+    {
+      "title": "路径或交互不显著怎么办",
+      "body": "检查区间精度、测量质量、取值范围及模型条件。零假设证据不足不是证明零效应，不改中心化方式、分组切点或删控制项来追求显著。横断观察不能仅凭路径确立中介机制。"
+    }
+  ],
+  "report_template": "连续指标潜变量中介模型的未标准化间接路径为 {indirect:.3f}，Delta 方法 SE = {se:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，整体 CFI = {cfi:.3f}。区间属于一阶近似，机制解释仍需设计与混杂假设支持。",
+  "sources": [
+    {
+      "title": "估计实现的官方文档",
+      "url": "https://lavaan.ugent.be/tutorial/mediation.html"
+    }
+  ],
+  "related_terms": [
+    "mediation-effect",
+    "standard-error",
+    "fit-indices"
+  ],
+  "table_labels": {
+    "parameters": "完整路径与测量参数",
+    "simple_slopes": "指定条件下的简单斜率及区间",
+    "conditional_effects": "条件间接关联与指数的 Bootstrap 区间"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "path",
+  "unit_id": "path",
+  "title": "路径模型系数怎么读",
+  "question": "压力、支持和幸福感之间的关联可以放在同一张关系图里吗？",
+  "design": "横断教学调查中的观测变量路径模型：压力预测支持，压力和支持共同预测幸福感。该三变量路径模型饱和，不能凭完美拟合支持方向。",
+  "variables": "已有教学 CSV 的列名和题目编码见代码；非真实研究样本。",
+  "script": "examples/r/output_reading/path.R",
+  "data_files": [
+    "examples/data/cross_sectional_survey.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "a",
+      "label": "压力→支持路径 a",
+      "meaning": "观测量纲的条件回归系数，箭头不自动表示因果。",
+      "term": "path-coefficient",
+      "format": ".3f"
+    },
+    {
+      "field_id": "b",
+      "label": "支持→幸福感路径 b",
+      "meaning": "给定压力后的支持条件关联，不是未经调整的相关。",
+      "term": "regression-coefficient",
+      "format": ".3f"
+    },
+    {
+      "field_id": "df",
+      "label": "模型自由度",
+      "meaning": "为零时属于饱和模型，整体拟合无验证方向的能力。",
+      "term": "degrees-of-freedom",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "判断模型之前先检查这些条件",
+      "body": "反向模型可能同样拟合，时间次序与混杂控制来自设计，不来自箭头或显著性。"
+    },
+    {
+      "title": "路径或拟合不符合预期时",
+      "body": "先区分测量问题、模型错误与证据不足。检查实际估计器、标准误、编码、有效样本和参数表。不要靠无理论依据的删题、加路径或误差相关来追求显著与完美拟合。"
+    }
+  ],
+  "report_template": "横断观测变量路径模型得到压力与支持路径 a = {a:.3f}，给定压力后的支持与幸福感路径 b = {b:.3f}，压力直接路径 c = {c:.3f}。模型 df = {df:.0f}，属于饱和设定；结果为条件关联而非机制或因果方向证据。",
+  "sources": [
+    {
+      "title": "实现与估计方法的官方文档",
+      "url": "https://lavaan.ugent.be/tutorial/sem.html"
+    }
+  ],
+  "related_terms": [
+    "path-coefficient",
+    "regression-coefficient",
+    "degrees-of-freedom"
+  ],
+  "table_labels": {
+    "parameters": "完整参数表：估计、标准误、区间及标准化参数",
+    "fit": "拟合指标（保留官方字段名）",
+    "loadings": "各题完整载荷",
+    "comparison": "嵌套模型比较"
+  }
+}

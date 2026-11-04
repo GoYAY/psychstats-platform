@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="539pt" viewBox="0 0 760 539" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">主成分是原始变量的线性组合，可用于概括资料。。图只示意计算关系，未给权重；综合指标不自动等于潜在心理能力。</desc><title id="title">记忆任务计算成综合指标</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:58.548213</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 539  L 760 539  L 760 0  L 0 0  L 0 539  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 259.052502 110.108631  Q 365.622655 160.873883 471.082508 211.110238  " clip-path="url(#p7c759cb71f)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 467.781187 206.879248  L 471.082508 211.110238  L 465.716923 211.212701  z " clip-path="url(#p7c759cb71f)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 259.250942 212.5  Q 365.624405 212.5 470.768031 212.5  " clip-path="url(#p7c759cb71f)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 465.968031 210.1  L 470.768031 212.5  L 465.968031 214.9  z " clip-path="url(#p7c759cb71f)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 259.052502 314.891369  Q 365.622655 264.126117 471.082508 213.889762  " clip-path="url(#p7c759cb71f)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 465.716923 213.787299  L 471.082508 213.889762  L 467.781187 218.120752  z " clip-path="url(#p7c759cb71f)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 115.25 85.25  L 242.25 85.25  Q 251.25 85.25 251.25 94.25  L 251.25 124.25  Q 251.25 133.25 242.25 133.25  L 115.25 133.25  Q 106.25 133.25 106.25 124.25  L 106.25 94.25  Q 106.25 85.25 115.25 85.25  z " clip-path="url(#p7c759cb71f)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 115.25 188.5  L 242.25 188.5  Q 251.25 188.5 251.25 197.5  L 251.25 227.5  Q 251.25 236.5 242.25 236.5  L 115.25 236.5  Q 106.25 236.5 106.25 227.5  L 106.25 197.5  Q 106.25 188.5 115.25 188.5  z " clip-path="url(#p7c759cb71f)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 115.25 291.75  L 242.25 291.75  Q 251.25 291.75 251.25 300.75  L 251.25 330.75  Q 251.25 339.75 242.25 339.75  L 115.25 339.75  Q 106.25 339.75 106.25 330.75  L 106.25 300.75  Q 106.25 291.75 115.25 291.75  z " clip-path="url(#p7c759cb71f)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 489 188.5  L 616 188.5  Q 625 188.5 625 197.5  L 625 227.5  Q 625 236.5 616 236.5  L 489 236.5  Q 480 236.5 480 227.5  L 480 197.5  Q 480 188.5 489 188.5  z " clip-path="url(#p7c759cb71f)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="178.75" y="112.74793" transform="rotate(-0 178.75 112.74793)">词语记忆分数</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="178.75" y="215.99793" transform="rotate(-0 178.75 215.99793)">图形记忆分数</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="178.75" y="319.276992" transform="rotate(-0 178.75 319.276992)">数字记忆分数</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="552.5" y="216.03918" transform="rotate(-0 552.5 216.03918)">综合指标（计算组合）</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="453.617305" transform="rotate(-0 20 453.617305)">1. 词语记忆分数 → 综合指标（计算组合）：加权组合</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="481.617305" transform="rotate(-0 20 481.617305)">2. 图形记忆分数 → 综合指标（计算组合）：加权组合</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="509.617305" transform="rotate(-0 20 509.617305)">3. 数字记忆分数 → 综合指标（计算组合）：加权组合</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7c759cb71f">
+   <rect x="0" y="0" width="760" height="539" />
+  </clipPath>
+ </defs>
+</svg>

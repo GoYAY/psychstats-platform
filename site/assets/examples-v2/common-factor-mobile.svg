@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="609pt" viewBox="0 0 360 609" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">共同方面可以解释几道题一起变化。。箭头是测量设定；相似措辞等也可能使回答相关。</desc><title id="title">三题共享焦虑线索</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:41.052429</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 609  L 360 609  L 360 0  L 0 0  L 0 609  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 126.210724 245.905464  Q 173.501709 183.622749 220.048978 122.319516  " clip-path="url(#pda4f880101)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 215.234848 124.691045  L 220.048978 122.319516  L 219.057724 127.593737  z " clip-path="url(#pda4f880101)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 126.998138 247.5  Q 173.500286 247.5 218.772595 247.5  " clip-path="url(#pda4f880101)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 213.972595 245.1  L 218.772595 247.5  L 213.972595 249.9  z " clip-path="url(#pda4f880101)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 126.210724 249.094536  Q 173.501709 311.377251 220.048978 372.680484  " clip-path="url(#pda4f880101)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 219.057724 367.406263  L 220.048978 372.680484  L 215.234848 370.308955  z " clip-path="url(#pda4f880101)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 89 208.5  C 96.956093 208.5 104.587396 212.609286 110.213203 219.922836  C 115.839011 227.236385 119 237.157079 119 247.5  C 119 257.842921 115.839011 267.763615 110.213203 275.077164  C 104.587396 282.390714 96.956093 286.5 89 286.5  C 81.043907 286.5 73.412604 282.390714 67.786797 275.077164  C 62.160989 267.763615 59 257.842921 59 247.5  C 59 237.157079 62.160989 227.236385 67.786797 219.922836  C 73.412604 212.609286 81.043907 208.5 89 208.5  z " clip-path="url(#pda4f880101)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 237 90.75  L 279 90.75  Q 288 90.75 288 99.75  L 288 139.75  Q 288 148.75 279 148.75  L 237 148.75  Q 228 148.75 228 139.75  L 228 99.75  Q 228 90.75 237 90.75  z " clip-path="url(#pda4f880101)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 237 223.5  L 279 223.5  Q 288 223.5 288 232.5  L 288 262.5  Q 288 271.5 279 271.5  L 237 271.5  Q 228 271.5 228 262.5  L 228 232.5  Q 228 223.5 237 223.5  z " clip-path="url(#pda4f880101)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 237 351.25  L 279 351.25  Q 288 351.25 288 360.25  L 288 390.25  Q 288 399.25 279 399.25  L 237 399.25  Q 228 399.25 228 390.25  L 228 360.25  Q 228 351.25 237 351.25  z " clip-path="url(#pda4f880101)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 238.037109)">焦虑（</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 251.156484)">共同方</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(77 263.994375)">面）</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 116.653555)">担忧考</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(252 129.748555)">试</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="258" y="250.933242" transform="rotate(-0 258 250.933242)">紧张</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="258" y="378.760117" transform="rotate(-0 258 378.760117)">难放松</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="523.593867" transform="rotate(-0 20 523.593867)">1. 焦虑（共同方面） → 担忧考试：共同变化</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="551.593867" transform="rotate(-0 20 551.593867)">2. 焦虑（共同方面） → 紧张：共同变化</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="579.593867" transform="rotate(-0 20 579.593867)">3. 焦虑（共同方面） → 难放松：共同变化</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pda4f880101">
+   <rect x="0" y="0" width="360" height="609" />
+  </clipPath>
+ </defs>
+</svg>

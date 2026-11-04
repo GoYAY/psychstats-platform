@@ -1,0 +1,42 @@
+{
+  "case_id": "categorical-gof",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\n\tChi-squared test for given probabilities\n\ndata:  observed\nX-squared = 5.9, df = 2, p-value = 0.05234\n\n   strategy observed expected pearson_residual\n1    review       48       45        0.4472136\n2 retrieval       75       90       -1.5811388\n3  combined       57       45        1.7888544\n",
+  "stderr": "",
+  "metrics": {
+    "N": 180,
+    "chi_square": 5.9,
+    "df": 2,
+    "p": 0.05233970594843238,
+    "w": 0.1810463415200036
+  },
+  "warnings": [],
+  "tables": {
+    "observed_expected": [
+      {
+        "strategy": "review",
+        "observed": 48,
+        "expected": 45,
+        "pearson_residual": 0.4472135954999579
+      },
+      {
+        "strategy": "retrieval",
+        "observed": 75,
+        "expected": 90,
+        "pearson_residual": -1.5811388300841895
+      },
+      {
+        "strategy": "combined",
+        "observed": 57,
+        "expected": 45,
+        "pearson_residual": 1.7888543819998317
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "2f8fbdc56c1d7b35b63ac9da18e57cc1130a6d06e97582039b042eb072c828cf",
+  "config_sha256": "9907ce8929020aca8e4687fea2bf3deb8c408bcebb963dc6691155cb77cff055",
+  "data_sha256": {}
+}

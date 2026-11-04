@@ -1,0 +1,54 @@
+{
+  "id": "linear-simple",
+  "unit_id": "linear",
+  "title": "简单回归的截距与斜率",
+  "question": "只用压力分数，怎样描述幸福感的变化趋势？",
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。均值线性关联不代表每个人都按该幅度改变，外推必须考虑观察范围和不确定性。",
+  "variables": "复用已有规范教学 CSV，未改变原始文件。",
+  "script": "examples/r/output_reading/linear-simple.R",
+  "data_files": [
+    "examples/data/cross_sectional_survey.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "intercept",
+      "label": "截距",
+      "meaning": "压力为零时模型预测的均值，若零在数据范围外不宜赋予现实含义。",
+      "term": "intercept",
+      "format": ".3f"
+    },
+    {
+      "field_id": "slope",
+      "label": "压力斜率",
+      "meaning": "压力每高一分时幸福感平均差，未控制其他变量。",
+      "term": "simple-linear-regression",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这个变体最重要的边界",
+      "body": "均值线性关联不代表每个人都按该幅度改变，外推必须考虑观察范围和不确定性。"
+    },
+    {
+      "title": "如何继续检查",
+      "body": "先明确独立单位、估计目标及比较方向，结合完整参数与区间判断。方法改变需有研究依据并记录，不以显著性作为选择标准。"
+    }
+  ],
+  "report_template": "简单线性教学模型的截距为 {intercept:.3f}，压力斜率为 {slope:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，R² = {r_squared:.3f}。该模型描述未经其他变量调整的关联，而非压力的因果影响。",
+  "sources": [
+    {
+      "title": "R 官方统计函数索引",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "intercept",
+    "simple-linear-regression"
+  ]
+}

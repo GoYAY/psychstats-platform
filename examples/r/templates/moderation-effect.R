@@ -1,0 +1,6 @@
+d <- read.csv("your_data.csv")
+stopifnot(all(c("x","moderator","y") %in% names(d)))
+d$x_c <- d$x - mean(d$x,na.rm=TRUE)
+d$m_c <- d$moderator - mean(d$moderator,na.rm=TRUE)
+fit <- lm(y ~ x_c * m_c,data=d)
+summary(fit); interaction.plot(cut(d$m_c,3),cut(d$x_c,3),d$y)

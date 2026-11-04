@@ -1,0 +1,28 @@
+[Unit]
+Description=PsychStats invited generation API (test site only)
+After=network.target
+
+[Service]
+Type=simple
+User=psychstats-beta
+Group=psychstats-beta
+WorkingDirectory=/opt/psychstats-beta/current
+EnvironmentFile=/etc/psychstats-beta.env
+Environment=MPLCONFIGDIR=/var/cache/psychstats-beta/matplotlib
+ExecStart=/opt/psychstats-beta/venv/bin/python -X utf8 tools/serve_term_generation.py --port 8782
+Restart=on-failure
+RestartSec=5
+UMask=0077
+StateDirectory=psychstats-beta
+StateDirectoryMode=0700
+CacheDirectory=psychstats-beta
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/psychstats-beta /var/cache/psychstats-beta
+MemoryMax=512M
+TasksMax=32
+
+[Install]
+WantedBy=multi-user.target

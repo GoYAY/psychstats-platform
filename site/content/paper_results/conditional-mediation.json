@@ -1,0 +1,114 @@
+{
+  "tables": {
+    "path_coefficients": [
+      {
+        "outcome": "m",
+        "term": "(Intercept)",
+        "estimate": 0.06845318101663321,
+        "se": 0.05430228303771897,
+        "statistic": 1.2605948992804754,
+        "df": 346,
+        "p": 0.20830426115835526,
+        "ci_lower": -0.038350933034764334,
+        "ci_upper": 0.17525729506803076
+      },
+      {
+        "outcome": "m",
+        "term": "x",
+        "estimate": 0.423443196029684,
+        "se": 0.0603841703614274,
+        "statistic": 7.01248677418567,
+        "df": 346,
+        "p": 1.2354534065312635e-11,
+        "ci_lower": 0.30467695900607356,
+        "ci_upper": 0.5422094330532945
+      },
+      {
+        "outcome": "m",
+        "term": "w",
+        "estimate": 0.2080625370825302,
+        "se": 0.05498069123145027,
+        "statistic": 3.784283762578697,
+        "df": 346,
+        "p": 0.00018163079770698533,
+        "ci_lower": 0.09992410001479923,
+        "ci_upper": 0.31620097415026116
+      },
+      {
+        "outcome": "m",
+        "term": "x:w",
+        "estimate": 0.15809928140043514,
+        "se": 0.0637071104372574,
+        "statistic": 2.4816583316259626,
+        "df": 346,
+        "p": 0.013551448979375194,
+        "ci_lower": 0.03279733996457401,
+        "ci_upper": 0.28340122283629626
+      },
+      {
+        "outcome": "y",
+        "term": "(Intercept)",
+        "estimate": -0.0815555215108425,
+        "se": 0.054861374428710794,
+        "statistic": -1.4865745227877807,
+        "df": 346,
+        "p": 0.13803786583895755,
+        "ci_lower": -0.18945928105315185,
+        "ci_upper": 0.026348238031466867
+      },
+      {
+        "outcome": "y",
+        "term": "x",
+        "estimate": 0.17353590727150442,
+        "se": 0.06532925672100746,
+        "statistic": 2.6563275932037613,
+        "df": 346,
+        "p": 0.00826552216074747,
+        "ci_lower": 0.04504345731545176,
+        "ci_upper": 0.30202835722755705
+      },
+      {
+        "outcome": "y",
+        "term": "m",
+        "estimate": 0.553026866717963,
+        "se": 0.054021103554437615,
+        "statistic": 10.237237492948884,
+        "df": 346,
+        "p": 1.1631822240259366e-21,
+        "ci_lower": 0.4467757888175581,
+        "ci_upper": 0.6592779446183679
+      },
+      {
+        "outcome": "y",
+        "term": "w",
+        "estimate": 0.07026160535939746,
+        "se": 0.056244661394524526,
+        "statistic": 1.2492137674463357,
+        "df": 346,
+        "p": 0.21243133890551083,
+        "ci_lower": -0.04036286371109066,
+        "ci_upper": 0.18088607442988558
+      }
+    ],
+    "model_summary": [
+      {
+        "outcome": "m",
+        "n": 350,
+        "r_squared": 0.18432798255383911,
+        "adjusted_r_squared": 0.1772556818245371
+      },
+      {
+        "outcome": "y",
+        "n": 350,
+        "r_squared": 0.3255875344855048,
+        "adjusted_r_squared": 0.3197400275590786
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "回归系数：t 分布 95% CI；间接效应：300 次教学 Bootstrap 百分位区间（如适用）",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0",
+  "case_id": "conditional-mediation",
+  "original_sha256": "d9859e1611fe44c2e7a6dbe6ef33d651a15fc9bd6894bdd499871a1ea5f52fc0",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

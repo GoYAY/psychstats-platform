@@ -1,0 +1,65 @@
+{
+  "id": "conditional-mediation",
+  "unit_id": "conditional-mediation",
+  "title": "不同条件下的间接关联",
+  "question": "压力通过支持与幸福感相关的链条，会随另一项资源改变吗？",
+  "design": "模拟第一段路径受 W 调节的观测变量中介。W 为均值中心化资源指标；300 次逐人 Bootstrap，报告条件间接关联及有调节中介指数 a3×b。",
+  "variables": "固定种子生成的连续教学指标。X/W/M/Y 或潜因子的统计角色见设计与代码，非真实参与者。",
+  "script": "examples/r/output_reading/conditional-mediation.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "index",
+      "label": "有调节中介指数",
+      "meaning": "第一段交互 a3 与第二段 b 的乘积，直接量化间接关联随 W 改变。",
+      "term": "moderated-mediation",
+      "format": ".3f"
+    },
+    {
+      "field_id": "at_zero",
+      "label": "W 均值处间接关联",
+      "meaning": "在中心化 W=0 的条件间接关联，不是无条件平均因果效应。",
+      "term": "conditional-effect",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_lower",
+      "label": "指数 Bootstrap 下界",
+      "meaning": "指数区间直接检验随条件变化，不用两条件一个显著另一个不显著替代。",
+      "term": "bootstrap",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "何时不能这样解释",
+      "body": "本例只对应第一段调节；第二段或两段均调节是不同公式与估计问题。跨层数据不能逐行独立重抽样。"
+    },
+    {
+      "title": "路径或交互不显著怎么办",
+      "body": "检查区间精度、测量质量、取值范围及模型条件。零假设证据不足不是证明零效应，不改中心化方式、分组切点或删控制项来追求显著。横断观察不能仅凭路径确立中介机制。"
+    }
+  ],
+  "report_template": "第一段受 W 调节的教学模型得到有调节中介指数 {index:.3f}，300 次逐人百分位 Bootstrap 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]；中心化 W=0 时的间接关联为 {at_zero:.3f}。模型特定指数和条件区间用于判断变化，不能由单条件显著性差异替代。",
+  "sources": [
+    {
+      "title": "估计实现的官方文档",
+      "url": "https://lavaan.ugent.be/tutorial/mediation.html"
+    }
+  ],
+  "related_terms": [
+    "moderated-mediation",
+    "conditional-effect",
+    "bootstrap"
+  ],
+  "table_labels": {
+    "parameters": "完整路径与测量参数",
+    "simple_slopes": "指定条件下的简单斜率及区间",
+    "conditional_effects": "条件间接关联与指数的 Bootstrap 区间"
+  }
+}

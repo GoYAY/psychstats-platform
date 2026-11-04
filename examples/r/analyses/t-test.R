@@ -1,0 +1,6 @@
+source("examples/r/analyses/_common.R")
+d <- read_data("learning_experiment")
+d$condition <- factor(d$condition, levels=c("control","retrieval"))
+fit <- t.test(gain ~ condition, data=d)
+effect <- mean(d$gain[d$condition=="retrieval"]) - mean(d$gain[d$condition=="control"])
+emit(c(group_difference=effect, p_value=fit$p.value, n=nrow(d)))

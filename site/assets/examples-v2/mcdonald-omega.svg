@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="403pt" viewBox="0 0 760 403" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">ω可依据测量模型处理题目贡献不同的情况。。载荷为教学构造，不能直接读出ω，也不证明模型合适或单维。</desc><title id="title">题目贡献可以不相等</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:04:18.698077</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 403  L 760 403  L 760 0  L 0 0  L 0 403  z " style="fill: none" />
+  </g>
+  <g id="data-panel-0">
+   <g id="patch_2">
+    <path d="M 76 312  L 729.6 312  L 729.6 65  L 76 65  L 76 312  z " style="fill: none" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="204.739394" y="328.744141" transform="rotate(-0 204.739394 328.744141)">1</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="402.8" y="328.744141" transform="rotate(-0 402.8 328.744141)">2</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="600.860606" y="328.744141" transform="rotate(-0 600.860606 328.744141)">3</text>
+     </g>
+    </g>
+    <g id="text_4">
+     <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #303b4b" x="402.8" y="354.846406" transform="rotate(-0 402.8 354.846406)">题目（1担忧；2紧张；3难放松）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4">
+      <path d="M 76 312  L 729.6 312  " clip-path="url(#p77ef0a5b3a)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_5" />
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="69" y="316.87207" transform="rotate(-0 69 316.87207)">0.0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <path d="M 76 247.565217  L 729.6 247.565217  " clip-path="url(#p77ef0a5b3a)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_7" />
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="69" y="252.437288" transform="rotate(-0 69 252.437288)">0.3</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8">
+      <path d="M 76 183.130435  L 729.6 183.130435  " clip-path="url(#p77ef0a5b3a)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_9" />
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="69" y="188.002505" transform="rotate(-0 69 188.002505)">0.6</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10">
+      <path d="M 76 118.695652  L 729.6 118.695652  " clip-path="url(#p77ef0a5b3a)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_11" />
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="69" y="123.567722" transform="rotate(-0 69 123.567722)">0.9</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 133.437576 312  L 276.041212 312  L 276.041212 129.434783  L 133.437576 129.434783  z " clip-path="url(#p77ef0a5b3a)" style="fill: #6741ad; opacity: 0.35; stroke: #6741ad; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 331.498182 312  L 474.101818 312  L 474.101818 161.652174  L 331.498182 161.652174  z " clip-path="url(#p77ef0a5b3a)" style="fill: #6741ad; opacity: 0.35; stroke: #6741ad; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 529.558788 312  L 672.162424 312  L 672.162424 204.608696  L 529.558788 204.608696  z " clip-path="url(#p77ef0a5b3a)" style="fill: #6741ad; opacity: 0.35; stroke: #6741ad; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 76 312  L 76 65  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_7">
+    <path d="M 76 312  L 729.6 312  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="76" y="47" transform="rotate(-0 76 47)">标准化载荷</text>
+   </g>
+  </g>
+  <g id="legend-swatch-0">
+   <path d="M 76 379  L 96.52 379  L 96.52 371  L 76 371  z " style="fill: #6741ad; opacity: 0.35; stroke: #6741ad; stroke-width: 0.85; stroke-linejoin: miter" />
+  </g>
+  <g id="text_10">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="114" y="378.0725" transform="rotate(-0 114 378.0725)">共同焦虑方面</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p77ef0a5b3a">
+   <rect x="76" y="65" width="653.6" height="247" />
+  </clipPath>
+ </defs>
+</svg>

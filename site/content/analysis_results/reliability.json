@@ -1,0 +1,70 @@
+{
+  "case_id": "reliability",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 tools_4.5.1    parallel_4.5.1 nlme_3.1-168   mnormt_2.1.2  \n[6] grid_4.5.1     psych_2.6.3    jsonlite_2.0.0 lattice_0.22-7\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\nReliability analysis   \nCall: psych::alpha(x = items, check.keys = FALSE, n.iter = 1)\n\n  raw_alpha std.alpha G6(smc) average_r S/N   ase mean  sd median_r\n      0.73      0.73    0.67       0.4 2.7 0.022    3 0.8     0.41\n\n    95% confidence boundaries \n         lower alpha upper\nFeldt     0.69  0.73  0.77\nDuhachek  0.69  0.73  0.77\n\n Reliability if an item is dropped:\n       raw_alpha std.alpha G6(smc) average_r S/N alpha se   var.r med.r\nitem_1      0.67      0.67    0.58      0.41 2.0    0.028 0.00038  0.40\nitem_2      0.69      0.69    0.60      0.42 2.2    0.026 0.00052  0.43\nitem_3      0.66      0.66    0.57      0.40 2.0    0.028 0.00290  0.43\nitem_4      0.66      0.66    0.56      0.39 1.9    0.029 0.00300  0.39\n\n Item statistics \n         n raw.r std.r r.cor r.drop mean  sd\nitem_1 420  0.74  0.74  0.61   0.52  3.0 1.1\nitem_2 420  0.72  0.72  0.57   0.49  3.0 1.1\nitem_3 420  0.75  0.75  0.62   0.53  2.9 1.1\nitem_4 420  0.76  0.76  0.64   0.54  3.0 1.1\n\nNon missing response frequency for each item\n          1    2    3    4    5 miss\nitem_1 0.09 0.24 0.33 0.25 0.09    0\nitem_2 0.10 0.21 0.38 0.23 0.08    0\nitem_3 0.09 0.27 0.34 0.22 0.07    0\nitem_4 0.09 0.26 0.34 0.23 0.09    0\n",
+  "stderr": "",
+  "metrics": {
+    "alpha": 0.7301614278234793,
+    "standardized_alpha": 0.7301707590116115,
+    "average_r": 0.40352346674952716,
+    "min_item_rest": 0.48919804267031447,
+    "n": 420
+  },
+  "warnings": [],
+  "tables": {
+    "items": [
+      {
+        "item": "item_1",
+        "n": 420,
+        "raw.r": 0.7438998078878092,
+        "std.r": 0.7415239926427694,
+        "r.cor": 0.6084698628400876,
+        "r.drop": 0.51695068600093,
+        "mean": 3.007142857142857,
+        "sd": 1.0956396235960648,
+        "_row": "item_1"
+      },
+      {
+        "item": "item_2",
+        "n": 420,
+        "raw.r": 0.7222790487577128,
+        "std.r": 0.7236059821465592,
+        "r.cor": 0.5739807741887428,
+        "r.drop": 0.48919804267031447,
+        "mean": 2.966666666666667,
+        "sd": 1.0764714448969837,
+        "_row": "item_2"
+      },
+      {
+        "item": "item_3",
+        "n": 420,
+        "raw.r": 0.7479509399345752,
+        "std.r": 0.7507343027947021,
+        "r.cor": 0.62243888627893,
+        "r.drop": 0.5315792945190685,
+        "mean": 2.914285714285714,
+        "sd": 1.0668740564384336,
+        "_row": "item_3"
+      },
+      {
+        "item": "item_4",
+        "n": 420,
+        "raw.r": 0.7594223624032064,
+        "std.r": 0.757733139854034,
+        "r.cor": 0.6353441104998004,
+        "r.drop": 0.5427068835754753,
+        "mean": 2.9571428571428573,
+        "sd": 1.0915476646145457,
+        "_row": "item_4"
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "e77063f766a05d7292870c31850748cd3d2a2d7db26d362dc535ba4fbcff4803",
+  "config_sha256": "2a105d1fcb8c939659677b37ba56c2096f535fdb11d34cbccd8e72f9d538b207",
+  "data_sha256": {
+    "examples/data/scale_items.csv": "cb7afdf45041b8b9dc3cbea20381e7cd39abc9486b6706d0e92710cf18678e0e"
+  }
+}

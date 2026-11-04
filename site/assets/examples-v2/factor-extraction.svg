@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="567pt" viewBox="0 0 760 567" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">因素提取针对题目共享的变化，后续还需检查载荷。。图为概念设定；提取方法不同，不能直接照搬主成分结果。</desc><title id="title">情绪题的共同变化</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:42.954048</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 567  L 760 567  L 760 0  L 0 0  L 0 567  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 196.113118 171.88327  Q 178.750211 220.499409 161.800943 267.957359  " clip-path="url(#pe95d52943c)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 165.675539 264.244205  L 161.800943 267.957359  L 161.155177 262.62979  z " clip-path="url(#pe95d52943c)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 224.514275 171.759979  Q 250.62348 220.497163 276.15193 268.15027  " clip-path="url(#pe95d52943c)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 276.000819 262.785834  L 276.15193 268.15027  L 271.769715 265.052497  z " clip-path="url(#pe95d52943c)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 535.485725 171.759979  Q 509.37652 220.497163 483.84807 268.15027  " clip-path="url(#pe95d52943c)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 488.230285 265.052497  L 483.84807 268.15027  L 483.999181 262.785834  z " clip-path="url(#pe95d52943c)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_5">
+    <path d="M 563.886882 171.88327  Q 581.249789 220.499409 598.199057 267.957359  " clip-path="url(#pe95d52943c)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 598.844823 262.62979  L 598.199057 267.957359  L 594.324461 264.244205  z " clip-path="url(#pe95d52943c)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 207.5 116  C 226.727225 116 245.169541 118.528791 258.765242 123.029437  C 272.360943 127.530083 280 133.635126 280 140  C 280 146.364874 272.360943 152.469917 258.765242 156.970563  C 245.169541 161.471209 226.727225 164 207.5 164  C 188.272775 164 169.830459 161.471209 156.234758 156.970563  C 142.639057 152.469917 135 146.364874 135 140  C 135 133.635126 142.639057 127.530083 156.234758 123.029437  C 169.830459 118.528791 188.272775 116 207.5 116  z " clip-path="url(#pe95d52943c)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 552.5 116  C 571.727225 116 590.169541 118.528791 603.765242 123.029437  C 617.360943 127.530083 625 133.635126 625 140  C 625 146.364874 617.360943 152.469917 603.765242 156.970563  C 590.169541 161.471209 571.727225 164 552.5 164  C 533.272775 164 514.830459 161.471209 501.234758 156.970563  C 487.639057 152.469917 480 146.364874 480 140  C 480 133.635126 487.639057 127.530083 501.234758 123.029437  C 514.830459 118.528791 533.272775 116 552.5 116  z " clip-path="url(#pe95d52943c)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 86.5 277  L 213.5 277  Q 222.5 277 222.5 286  L 222.5 316  Q 222.5 325 213.5 325  L 86.5 325  Q 77.5 325 77.5 316  L 77.5 286  Q 77.5 277 86.5 277  z " clip-path="url(#pe95d52943c)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 230.25 277  L 357.25 277  Q 366.25 277 366.25 286  L 366.25 316  Q 366.25 325 357.25 325  L 230.25 325  Q 221.25 325 221.25 316  L 221.25 286  Q 221.25 277 230.25 277  z " clip-path="url(#pe95d52943c)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-4">
+    <path d="M 402.75 277  L 529.75 277  Q 538.75 277 538.75 286  L 538.75 316  Q 538.75 325 529.75 325  L 402.75 325  Q 393.75 325 393.75 316  L 393.75 286  Q 393.75 277 402.75 277  z " clip-path="url(#pe95d52943c)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-5">
+    <path d="M 546.5 277  L 673.5 277  Q 682.5 277 682.5 286  L 682.5 316  Q 682.5 325 673.5 325  L 546.5 325  Q 537.5 325 537.5 316  L 537.5 286  Q 537.5 277 546.5 277  z " clip-path="url(#pe95d52943c)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="207.5" y="143.492305" transform="rotate(-0 207.5 143.492305)">担忧方面</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="552.5" y="143.492305" transform="rotate(-0 552.5 143.492305)">身体紧张方面</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="150" y="304.480117" transform="rotate(-0 150 304.480117)">担忧考试题</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="293.75" y="304.48668" transform="rotate(-0 293.75 304.48668)">担忧未来题</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="466.25" y="304.463242" transform="rotate(-0 466.25 304.463242)">肌肉紧绷题</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="610" y="304.48668" transform="rotate(-0 610 304.48668)">身体不适题</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="453.778555" transform="rotate(-0 20 453.778555)">1. 担忧方面 → 担忧考试题：待检查</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="481.778555" transform="rotate(-0 20 481.778555)">2. 担忧方面 → 担忧未来题：待检查</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="509.778555" transform="rotate(-0 20 509.778555)">3. 身体紧张方面 → 肌肉紧绷题：待检查</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="537.778555" transform="rotate(-0 20 537.778555)">4. 身体紧张方面 → 身体不适题：待检查</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe95d52943c">
+   <rect x="0" y="0" width="760" height="567" />
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,59 @@
+{
+  "id": "hierarchical",
+  "unit_id": "hierarchical",
+  "title": "没有标签时寻找相似人群",
+  "question": "压力、睡眠和幸福感相近的人，会聚成什么样的组？",
+  "design": "模拟三个连续特征，先标准化，再用欧氏距离与 Ward.D2 层次聚类；切为三组只是教学探索设定。",
+  "variables": "固定种子教学生成数据；类别或参数设定用于演示，并不代表真实参与者。",
+  "script": "examples/r/output_reading/hierarchical.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "k",
+      "label": "教学切分组数",
+      "meaning": "本例预设三组，树本身不会证明总体存在三个真实类型。",
+      "term": "hierarchical-clustering",
+      "format": ".0f"
+    },
+    {
+      "field_id": "min_size",
+      "label": "最小组人数",
+      "meaning": "很小组可能来自异常值或切分设定，需检查实际记录。",
+      "term": "cluster-analysis",
+      "format": ".3f"
+    },
+    {
+      "field_id": "mean_silhouette",
+      "label": "平均轮廓宽度",
+      "meaning": "衡量同组紧密和异组分离，依赖距离与尺度，不是统计显著性。",
+      "term": "cluster-analysis",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "如何识别过度解读",
+      "body": "换尺度、距离或切点可能改变结论；聚类号可任意重编号，不据编号高低解释水平。"
+    },
+    {
+      "title": "输出不符合预期时",
+      "body": "先检查数据类型、有效样本、量纲和拟合条件；对探索选择保留过程记录。新分析应有研究依据，不通过反复换方法制造满意结果。"
+    }
+  ],
+  "report_template": "标准化三项指标后，以欧氏距离和 Ward.D2 层次聚类作三组探索切分，最小组 {min_size:.0f} 人，平均轮廓宽度 {mean_silhouette:.3f}。组名须结合原量纲画像，结果不等于发现自然存在的心理类型。",
+  "sources": [
+    {
+      "title": "模型实现的官方文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/hclust.html"
+    }
+  ],
+  "related_terms": [
+    "hierarchical-clustering",
+    "cluster-analysis"
+  ]
+}

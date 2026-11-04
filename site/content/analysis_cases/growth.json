@@ -1,0 +1,67 @@
+{
+  "id": "growth",
+  "unit_id": "growth",
+  "title": "潜增长因子的平均和差异",
+  "question": "学生总体在进步，但每个人起点和进步速度是否不同？",
+  "design": "固定种子生成 240 人四时点连续数据。潜截距时间载荷均为 1、潜斜率载荷为 0/1/2/3，ML 增长模型；无组别预测项。",
+  "variables": "固定种子模拟，数据与缺失机制设定在代码中明示，非真实参与者。",
+  "script": "examples/r/output_reading/growth.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "intercept_mean",
+      "label": "潜截距均值",
+      "meaning": "时间零点总体平均水平；换零点会改变截距而不改变观察轨迹。",
+      "term": "growth-model",
+      "format": ".3f"
+    },
+    {
+      "field_id": "slope_mean",
+      "label": "潜斜率均值",
+      "meaning": "每个设定时间单位的平均线性变化，不是标准化相关。",
+      "term": "growth-model",
+      "format": ".3f"
+    },
+    {
+      "field_id": "slope_variance",
+      "label": "潜斜率方差",
+      "meaning": "不同人的变化速度差异；负值是不当解而非真实负差异。",
+      "term": "random-slope-model",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "先判断这些前提是否成立",
+      "body": "先检查时间载荷与真实测量间隔，再检查残差相关和非线性；增长因子不要与测量模型题目因子混淆。"
+    },
+    {
+      "title": "结果不显著或不稳定时",
+      "body": "分别检查数据结构、模型识别与区间精度。考虑测量质量、组数或时间覆盖是否足够；报告实际不确定性和敏感性，不以反复简化或换编码追求显著。"
+    }
+  ],
+  "report_template": "四时点线性潜增长教学模型以 0/1/2/3 标定时间，潜截距均值为 {intercept_mean:.3f}，潜斜率均值为 {slope_mean:.3f}，斜率方差为 {slope_variance:.3f}，CFI = {cfi:.3f}。模型描述总体趋势与个体差异，不直接识别变化原因。",
+  "sources": [
+    {
+      "title": "估计与诊断的官方资料",
+      "url": "https://lavaan.ugent.be/tutorial/growth.html"
+    }
+  ],
+  "related_terms": [
+    "growth-model",
+    "random-slope-model"
+  ],
+  "table_labels": {
+    "fixed": "固定效应完整表",
+    "random": "随机效应方差",
+    "comparison": "ML 模型比较",
+    "parameters": "增长模型参数表",
+    "imputations": "各插补数据的估计与方差",
+    "fiml_parameters": "FIML 参数表"
+  }
+}

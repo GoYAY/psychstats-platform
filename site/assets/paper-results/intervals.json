@@ -1,0 +1,80 @@
+{
+  "case_id": "intervals",
+  "covariances": [],
+  "design": "同一横断教学样本，估计总体平均压力的区间；有效记录一人一条，抽样代表性另行判断。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/intervals.R",
+    "script_sha256": "0d71304c10376f1932840bb1288e89b95305694a1c80d7d227d1565c2140b3a6",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "n"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": 47.774676785930325,
+          "ci_upper": 49.44643432518078,
+          "effect": "总体均值估计",
+          "estimate": 48.61055555555556,
+          "n": 360
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "column_labels": {
+        "ci_lower": "95% CI 下界",
+        "ci_upper": "95% CI 上界",
+        "estimate": "平均压力",
+        "n": "有效人数"
+      },
+      "columns": [
+        "analysis",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "n"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "平均压力的估计有多精确",
+          "ci_lower": 47.774676785930325,
+          "ci_upper": 49.44643432518078,
+          "estimate": 48.61055555555556,
+          "n": 360
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "estimate": "estimate",
+          "n": "n"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "平均压力的估计有多精确",
+  "valid": true,
+  "variances": []
+}

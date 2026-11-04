@@ -1,0 +1,61 @@
+{
+  "id": "welch",
+  "unit_id": "welch",
+  "title": "三组波动程度不同如何比较",
+  "question": "一个班成绩差异很大，另两个班很集中，仍能比较平均成绩吗？",
+  "design": "固定种子生成三个独立班级教学样本，样本数和方差不同；Welch 单因素比较总体均值。",
+  "variables": "教学数据由下方代码固定种子生成，非真实参与者资料；参数设定可在代码中查看。",
+  "script": "examples/r/output_reading/welch.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "F",
+      "label": "Welch F",
+      "meaning": "按各组方差和样本量调整，目标仍是均值而不是中位数。",
+      "term": "welch-anova",
+      "format": ".3f"
+    },
+    {
+      "field_id": "df2",
+      "label": "调整后分母自由度",
+      "meaning": "可能是小数，是方差信息折算，不是参与者人数。",
+      "term": "degrees-of-freedom",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "总体比较 p",
+      "meaning": "不显著只表示当前精度下证据不足；显著后还需定位组对。",
+      "term": "p-value",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {"title":"整体差异后怎样定位组差","body":"下面的后续表使用不合并方差的逐对 Welch t 检验，并对三次比较作 Holm 调整。这不是等方差 pooled t，也不是 Games–Howell；须说明选择范围，不把整体显著当作所有两组都有差异。"},
+    {
+      "title": "这些结果最容易误读的地方",
+      "body": "不能把 Welch 当作修复重复测量依赖的方法；不根据哪个检验显著来选普通 ANOVA 或 Welch。"
+    },
+    {
+      "title": "如果没有发现明确证据",
+      "body": "先回到研究问题和估计精度，结合区间、有效样本、数据质量及模型条件判断。证据不足不等于没有作用；不反复更换方法、删样本或放宽阈值来追求显著。"
+    }
+  ],
+  "report_template": "异方差独立组的 Welch 单因素检验为 F({df1:.0f}, {df2:.2f}) = {F:.3f}，p = {p:.4g}；具体差异仍须使用与异方差相容且控制比较家族的后续分析。",
+  "sources": [
+    {
+      "title": "R 官方 oneway.test 文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/oneway.test.html"
+    }
+  ],
+  "related_terms": [
+    "welch-anova",
+    "degrees-of-freedom",
+    "p-value"
+  ]
+}

@@ -1,0 +1,12 @@
+Nature figure audit tools: https://github.com/Yuan1z0825/nature-skills
+Upstream license: Apache-2.0; complete text is in LICENSE.txt.
+
+Original audit_panel_alignment.py: commit 8630593a086755d2003cbd1a79cd1118c6963202, unmodified.
+Original audit_pdf_text.py: commit b4f82f145a6b6bcc9ab924a59e88e0623b32e2eb, unmodified.
+Original audit_figure_collisions.py: commit 558eae555d64e09b152efc449ca274bbd7747947.
+
+Project modifications, 2026-10-25: collision extraction and diagnostic overlay
+functions replaced with pdfium_geometry.py (PDFium/pypdf adapter). Collision
+decision core, geometry thresholds, font audit and panel alignment retained.
+Installed skill scripts are not modified. The runtime uses this project copy.
+Historical OCR/authoring tools outside this release may still use PyMuPDF.

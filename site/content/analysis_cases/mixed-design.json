@@ -1,0 +1,83 @@
+{
+  "id": "mixed-design",
+  "unit_id": "repeated",
+  "title": "两组学生的变化轨迹是否不同",
+  "question": "训练组进步了，对照组也进步了，怎样比较两组真正的变化差异？",
+  "design": "固定种子生成72人（每组36人）、三时点完整平衡教学数据。混合设计包含组间因素和组内时间；基于组内残差协方差计算GG校正，要求独立个体、共同组内协方差与正态误差等。",
+  "variables": "ID为人而非记录；共216条记录。group为control/practice，time为pre/post/followup，score为连续分数。非真实研究资料。",
+  "script": "examples/r/output_reading/mixed-design.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "people",
+      "label": "独立参与者数",
+      "meaning": "72个人各有三行，不是216个独立样本。",
+      "term": "repeated-measures",
+      "format": ".0f"
+    },
+    {
+      "field_id": "group_F",
+      "label": "组别主效应 F",
+      "meaning": "在这个平衡设计中比较跨时点平均后的组差，不是干预造成的变化差。",
+      "term": "main-effect",
+      "format": ".3f"
+    },
+    {
+      "field_id": "interaction_F",
+      "label": "组别×时间 F",
+      "meaning": "检验两组时间轨迹是否相同；一组显著另一组不显著不能替代这个交互检验。",
+      "term": "interaction",
+      "format": ".3f"
+    },
+    {
+      "field_id": "interaction_gg_p",
+      "label": "交互的 GG 校正 p",
+      "meaning": "使用组内误差协方差得到的GG参考自由度。不能与未校正自由度混写。",
+      "term": "sphericity",
+      "format": ".4g"
+    },
+    {
+      "field_id": "change_difference",
+      "label": "随访减前测的组差",
+      "meaning": "训练组变化减对照组变化；是指定起止时点的比较，不等于整条轨迹的总体交互。",
+      "term": "planned-contrast",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "不要比较两个单独的显著性标签",
+      "body": "直接检验组别×时间，再解释指定时点或变化的对比。表中group未用GG折减，time与交互用了GG；参照自由度列分别解释。最后的变化比较是教学指定对比，逐比较区间不冒称同时区间。"
+    },
+    {
+      "title": "有缺时点或复杂误差结构怎么办",
+      "body": "这里是完整平衡的共同协方差教学设计，不自动适用于缺时点或组间协方差不同的研究；可转向具有合适时间残差结构的混合模型，说明缺失假设，不默默删除不完整者。变化差异也不自动证明因果，需核对分配与混杂。"
+    }
+  ],
+  "report_template": "72人、216条三时点教学记录的混合设计中，组别×时间采用GG校正，ε = {gg_epsilon:.3f}，F({interaction_df1:.2f}, {interaction_df2:.2f}) = {interaction_F:.3f}，p = {interaction_gg_p:.4g}。指定随访减前测的变化比较，训练组相对对照组的差为 {change_difference:.3f}，95% CI [{change_ci_lower:.3f}, {change_ci_upper:.3f}]。这是本教学设定的条件结果，不能仅凭变化差证明干预因果。",
+  "sources": [
+    {
+      "title": "R 官方被试内与球形性校正说明",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/anova.mlm.html"
+    },
+    {
+      "title": "R 官方分误差层 ANOVA",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/aov.html"
+    }
+  ],
+  "related_terms": [
+    "repeated-measures",
+    "interaction",
+    "sphericity",
+    "planned-contrast"
+  ],
+  "table_labels": {
+    "mixed_effects": "被试间/内效应与实际参考自由度",
+    "change_comparison": "指定起止时点的变化差及区间"
+  }
+}

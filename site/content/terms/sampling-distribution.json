@@ -1,0 +1,100 @@
+{
+  "id": "sampling-distribution",
+  "zh": "抽样分布",
+  "en": "Sampling Distribution",
+  "aliases": [],
+  "type": "concept",
+  "level": "basic",
+  "topic": "foundations",
+  "status": "public",
+  "summary": "描述重复抽样时统计量如何波动，是统计推断的依据。",
+  "relations": {
+    "prerequisites": [
+      "descriptive-statistics"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": [
+      "statistical-assumptions"
+    ]
+  },
+  "real_question": "同一项调查换一批被试，平均结果总有差别，该怎样理解这种波动？",
+  "operational_definition": "抽样分布是在给定总体与抽样方案下，某个统计量在所有可能重复样本中的概率分布。",
+  "plain_explanation": "想象反复从同一总体抽样并每次算平均数：这些平均数本身也形成一个分布。",
+  "problems_solved": [
+    "理解统计量的不确定性",
+    "连接标准误、置信区间与假设检验"
+  ],
+  "not_for": [
+    "不能把单次样本的原始分数分布当作抽样分布"
+  ],
+  "decision_clues": [
+    "明确统计量和抽样方式",
+    "考虑观测独立性"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：横轴上的一个点代表一名学生还是一批样本",
+      "body": "先确认图中统计量是什么、每次抽取多少观测，以及采用了什么抽样规则。若每个点代表一批样本的平均数，就看这些均值的中心和散布；增加每批样本量通常能减少均值的波动，但有偏的抽样方式仍可能让中心偏离研究目标。"
+    },
+    {
+      "heading": "容易混淆：个体分布与均值分布",
+      "body": "学生个人压力分数的分布描述个体差异，抽样分布描述重复抽样后统计量的变化。均值的抽样分布变窄，不代表学生之间的差异变小；它的散布可用标准误概括。一次样本的分布图不能直接展示所有可能样本均值的分布。"
+    }
+  ],
+  "formula": {
+    "latex": "",
+    "note": "",
+    "verified": false
+  },
+  "quiz": {
+    "question": "平均数的抽样分布由什么组成？",
+    "options": [
+      "一次样本的全部个体分数",
+      "重复抽样所得的一组样本平均数",
+      "总体中每个人的年龄",
+      "题目选项的频数"
+    ],
+    "answer": 1,
+    "explanation": "每次抽样算一个统计量，重复后的统计量形成抽样分布。",
+    "option_explanations": [
+      "那是单个样本中个体分数的分布，不是统计量在重复抽样中的分布。",
+      "正确。按同一抽样规则反复取样，每次计算一个均值，这些均值组成抽样分布。",
+      "总体个体值构成总体分布，而不是样本平均数的抽样分布。",
+      "题目选项频数描述类别分布，与重复抽样得到的平均数不同。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "basic_textbook",
+      "title": "现代心理与教育统计学",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": {
+    "packages": [],
+    "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+    "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nset.seed(120)\nmeans <- replicate(2000,mean(rnorm(40,mean=50,sd=10)))\nprint(c(mean_of_means=mean(means), sd_of_means=sd(means), theoretical_se=10/sqrt(40)))\n",
+    "your_data_code": "set.seed(42)\nsample_means <- replicate(2000,mean(sample(your_population_vector,40,replace=TRUE)))\nhist(sample_means); sd(sample_means)\n# Replace your_population_vector with a numeric vector from your data.\n",
+    "assumption_checks": [
+      "明确统计量和抽样方式",
+      "考虑观测独立性"
+    ],
+    "key_output": [
+      "mean_of_means",
+      "sd_of_means",
+      "theoretical_se"
+    ],
+    "interpretation": "这段代码从均值 50、标准差 10 的教学总体中，每次模拟 40 个独立观测，共重复 2000 次。mean_of_means≈50.02 是 2000 个样本均值的平均值；sd_of_means≈1.578 是这些均值的标准差，与 theoretical_se≈1.581 接近。后者由 10/√40 得到，描述均值的抽样波动；改动样本量再运行，可以观察波动如何变化。",
+    "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+    "common_errors": [
+      "不能把单次样本的原始分数分布当作抽样分布"
+    ],
+    "verified": true,
+    "validation_report": "logs/r_validation.json"
+  },
+  "verified": true,
+  "candidate_evidence": {},
+  "plain_example": "例如，想了解全校学生的平均压力，分别随机抽取几批相同人数的学生，得到的平均分会略有不同。这些“每批的平均分”形成的分布，帮助理解一次估计会波动多少。"
+}

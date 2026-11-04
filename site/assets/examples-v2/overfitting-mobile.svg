@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="950pt" viewBox="0 0 360 950" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">挑选太多组合可能连偶然特点也学进去。。场景不确定失准原因；新班分布变化等因素也需要检查。</desc><title id="title">本班预测好，换班就失准</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:03:25.419100</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 950  L 360 950  L 360 0  L 0 0  L 0 950  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 88  L 330 88  Q 344 88 344 102  L 344 454  Q 344 468 330 468  L 30 468  Q 16 468 16 454  L 16 102  Q 16 88 30 88  z " clip-path="url(#pc915433ef6)" style="fill: #8a5200; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 30 506  L 330 506  Q 344 506 344 520  L 344 872  Q 344 886 330 886  L 30 886  Q 16 886 16 872  L 16 520  Q 16 506 30 506  z " clip-path="url(#pc915433ef6)" style="fill: #8a5200; opacity: 0.055" />
+   </g>
+   <g id="patch_4">
+    <path d="M 180 475.998901  Q 180 486.498487 180 495.544629  " clip-path="url(#pc915433ef6)" style="fill: none; opacity: 0.75; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 182.8 489.944629  L 180 495.544629  L 177.2 489.944629  z " clip-path="url(#pc915433ef6)" style="fill: #8a5200; opacity: 0.75; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="original-record-0">
+    <path d="M 64.08 299.6  C 65.671219 299.6 67.197479 300.232198 68.322641 301.357359  C 69.447802 302.482521 70.08 304.008781 70.08 305.6  C 70.08 307.191219 69.447802 308.717479 68.322641 309.842641  C 67.197479 310.967802 65.671219 311.6 64.08 311.6  C 62.488781 311.6 60.962521 310.967802 59.837359 309.842641  C 58.712198 308.717479 58.08 307.191219 58.08 305.6  C 58.08 304.008781 58.712198 302.482521 59.837359 301.357359  C 60.962521 300.232198 62.488781 299.6 64.08 299.6  z " clip-path="url(#pc915433ef6)" style="fill: #8a5200; opacity: 0.8; stroke: #8a5200; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="original-record-1">
+    <path d="M 102.72 228.2  C 104.311219 228.2 105.837479 228.832198 106.962641 229.957359  C 108.087802 231.082521 108.72 232.608781 108.72 234.2  C 108.72 235.791219 108.087802 237.317479 106.962641 238.442641  C 105.837479 239.567802 104.311219 240.2 102.72 240.2  C 101.128781 240.2 99.602521 239.567802 98.477359 238.442641  C 97.352198 237.317479 96.72 235.791219 96.72 234.2  C 96.72 232.608781 97.352198 231.082521 98.477359 229.957359  C 99.602521 228.832198 101.128781 228.2 102.72 228.2  z " clip-path="url(#pc915433ef6)" style="fill: #8a5200; opacity: 0.8; stroke: #8a5200; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="original-record-2">
+    <path d="M 144.12 277.5  C 145.711219 277.5 147.237479 278.132198 148.362641 279.257359  C 149.487802 280.382521 150.12 281.908781 150.12 283.5  C 150.12 285.091219 149.487802 286.617479 148.362641 287.742641  C 147.237479 288.867802 145.711219 289.5 144.12 289.5  C 142.528781 289.5 141.002521 288.867802 139.877359 287.742641  C 138.752198 286.617479 138.12 285.091219 138.12 283.5  C 138.12 281.908781 138.752198 280.382521 139.877359 279.257359  C 141.002521 278.132198 142.528781 277.5 144.12 277.5  z " clip-path="url(#pc915433ef6)" style="fill: #8a5200; opacity: 0.8; stroke: #8a5200; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="original-record-3">
+    <path d="M 182.76 207.8  C 184.351219 207.8 185.877479 208.432198 187.002641 209.557359  C 188.127802 210.682521 188.76 212.208781 188.76 213.8  C 188.76 215.391219 188.127802 216.917479 187.002641 218.042641  C 185.877479 219.167802 184.351219 219.8 182.76 219.8  C 181.168781 219.8 179.642521 219.167802 178.517359 218.042641  C 177.392198 216.917479 176.76 215.391219 176.76 213.8  C 176.76 212.208781 177.392198 210.682521 178.517359 209.557359  C 179.642521 208.432198 181.168781 207.8 182.76 207.8  z " clip-path="url(#pc915433ef6)" style="fill: #8a5200; opacity: 0.8; stroke: #8a5200; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="original-record-4">
+    <path d="M 224.16 246.9  C 225.751219 246.9 227.277479 247.532198 228.402641 248.657359  C 229.527802 249.782521 230.16 251.308781 230.16 252.9  C 230.16 254.491219 229.527802 256.017479 228.402641 257.142641  C 227.277479 258.267802 225.751219 258.9 224.16 258.9  C 222.568781 258.9 221.042521 258.267802 219.917359 257.142641  C 218.792198 256.017479 218.16 254.491219 218.16 252.9  C 218.16 251.308781 218.792198 249.782521 219.917359 248.657359  C 221.042521 247.532198 222.568781 246.9 224.16 246.9  z " clip-path="url(#pc915433ef6)" style="fill: #8a5200; opacity: 0.8; stroke: #8a5200; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="original-record-5">
+    <path d="M 265.56 182.3  C 267.151219 182.3 268.677479 182.932198 269.802641 184.057359  C 270.927802 185.182521 271.56 186.708781 271.56 188.3  C 271.56 189.891219 270.927802 191.417479 269.802641 192.542641  C 268.677479 193.667802 267.151219 194.3 265.56 194.3  C 263.968781 194.3 262.442521 193.667802 261.317359 192.542641  C 260.192198 191.417479 259.56 189.891219 259.56 188.3  C 259.56 186.708781 260.192198 185.182521 261.317359 184.057359  C 262.442521 182.932198 263.968781 182.3 265.56 182.3  z " clip-path="url(#pc915433ef6)" style="fill: #8a5200; opacity: 0.8; stroke: #8a5200; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="original-record-6">
+    <path d="M 301.44 228.2  C 303.031219 228.2 304.557479 228.832198 305.682641 229.957359  C 306.807802 231.082521 307.44 232.608781 307.44 234.2  C 307.44 235.791219 306.807802 237.317479 305.682641 238.442641  C 304.557479 239.567802 303.031219 240.2 301.44 240.2  C 299.848781 240.2 298.322521 239.567802 297.197359 238.442641  C 296.072198 237.317479 295.44 235.791219 295.44 234.2  C 295.44 232.608781 296.072198 231.082521 297.197359 229.957359  C 298.322521 228.832198 299.848781 228.2 301.44 228.2  z " clip-path="url(#pc915433ef6)" style="fill: #8a5200; opacity: 0.8; stroke: #8a5200; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="new-record-0">
+    <path d="M 64.08 666.6  C 65.671219 666.6 67.197479 667.232198 68.322641 668.357359  C 69.447802 669.482521 70.08 671.008781 70.08 672.6  C 70.08 674.191219 69.447802 675.717479 68.322641 676.842641  C 67.197479 677.967802 65.671219 678.6 64.08 678.6  C 62.488781 678.6 60.962521 677.967802 59.837359 676.842641  C 58.712198 675.717479 58.08 674.191219 58.08 672.6  C 58.08 671.008781 58.712198 669.482521 59.837359 668.357359  C 60.962521 667.232198 62.488781 666.6 64.08 666.6  z " clip-path="url(#pc915433ef6)" style="fill: #6657bd; opacity: 0.8; stroke: #6657bd; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="new-record-1">
+    <path d="M 102.72 690.4  C 104.311219 690.4 105.837479 691.032198 106.962641 692.157359  C 108.087802 693.282521 108.72 694.808781 108.72 696.4  C 108.72 697.991219 108.087802 699.517479 106.962641 700.642641  C 105.837479 701.767802 104.311219 702.4 102.72 702.4  C 101.128781 702.4 99.602521 701.767802 98.477359 700.642641  C 97.352198 699.517479 96.72 697.991219 96.72 696.4  C 96.72 694.808781 97.352198 693.282521 98.477359 692.157359  C 99.602521 691.032198 101.128781 690.4 102.72 690.4  z " clip-path="url(#pc915433ef6)" style="fill: #6657bd; opacity: 0.8; stroke: #6657bd; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="new-record-2">
+    <path d="M 144.12 642.8  C 145.711219 642.8 147.237479 643.432198 148.362641 644.557359  C 149.487802 645.682521 150.12 647.208781 150.12 648.8  C 150.12 650.391219 149.487802 651.917479 148.362641 653.042641  C 147.237479 654.167802 145.711219 654.8 144.12 654.8  C 142.528781 654.8 141.002521 654.167802 139.877359 653.042641  C 138.752198 651.917479 138.12 650.391219 138.12 648.8  C 138.12 647.208781 138.752198 645.682521 139.877359 644.557359  C 141.002521 643.432198 142.528781 642.8 144.12 642.8  z " clip-path="url(#pc915433ef6)" style="fill: #6657bd; opacity: 0.8; stroke: #6657bd; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="new-record-3">
+    <path d="M 182.76 690.4  C 184.351219 690.4 185.877479 691.032198 187.002641 692.157359  C 188.127802 693.282521 188.76 694.808781 188.76 696.4  C 188.76 697.991219 188.127802 699.517479 187.002641 700.642641  C 185.877479 701.767802 184.351219 702.4 182.76 702.4  C 181.168781 702.4 179.642521 701.767802 178.517359 700.642641  C 177.392198 699.517479 176.76 697.991219 176.76 696.4  C 176.76 694.808781 177.392198 693.282521 178.517359 692.157359  C 179.642521 691.032198 181.168781 690.4 182.76 690.4  z " clip-path="url(#pc915433ef6)" style="fill: #6657bd; opacity: 0.8; stroke: #6657bd; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="new-record-4">
+    <path d="M 224.16 620.7  C 225.751219 620.7 227.277479 621.332198 228.402641 622.457359  C 229.527802 623.582521 230.16 625.108781 230.16 626.7  C 230.16 628.291219 229.527802 629.817479 228.402641 630.942641  C 227.277479 632.067802 225.751219 632.7 224.16 632.7  C 222.568781 632.7 221.042521 632.067802 219.917359 630.942641  C 218.792198 629.817479 218.16 628.291219 218.16 626.7  C 218.16 625.108781 218.792198 623.582521 219.917359 622.457359  C 221.042521 621.332198 222.568781 620.7 224.16 620.7  z " clip-path="url(#pc915433ef6)" style="fill: #6657bd; opacity: 0.8; stroke: #6657bd; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="new-record-5">
+    <path d="M 265.56 670  C 267.151219 670 268.677479 670.632198 269.802641 671.757359  C 270.927802 672.882521 271.56 674.408781 271.56 676  C 271.56 677.591219 270.927802 679.117479 269.802641 680.242641  C 268.677479 681.367802 267.151219 682 265.56 682  C 263.968781 682 262.442521 681.367802 261.317359 680.242641  C 260.192198 679.117479 259.56 677.591219 259.56 676  C 259.56 674.408781 260.192198 672.882521 261.317359 671.757359  C 262.442521 670.632198 263.968781 670 265.56 670  z " clip-path="url(#pc915433ef6)" style="fill: #6657bd; opacity: 0.8; stroke: #6657bd; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="new-record-6">
+    <path d="M 301.44 613.9  C 303.031219 613.9 304.557479 614.532198 305.682641 615.657359  C 306.807802 616.782521 307.44 618.308781 307.44 619.9  C 307.44 621.491219 306.807802 623.017479 305.682641 624.142641  C 304.557479 625.267802 303.031219 625.9 301.44 625.9  C 299.848781 625.9 298.322521 625.267802 297.197359 624.142641  C 296.072198 623.017479 295.44 621.491219 295.44 619.9  C 295.44 618.308781 296.072198 616.782521 297.197359 615.657359  C 298.322521 614.532198 299.848781 613.9 301.44 613.9  z " clip-path="url(#pc915433ef6)" style="fill: #6657bd; opacity: 0.8; stroke: #6657bd; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 89  L 328 89  " clip-path="url(#pc915433ef6)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 507  L 328 507  " clip-path="url(#pc915433ef6)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 42 168  L 42 343  L 318 343  " clip-path="url(#pc915433ef6)" style="fill: none; stroke: #465366; stroke-opacity: 0.4; stroke-width: 0.8; stroke-linecap: square" />
+   </g>
+   <g id="training-prediction">
+    <path d="M 64.08 302.2  L 102.72 239.3  L 144.12 276.7  L 182.76 217.2  L 224.16 246.1  L 265.56 193.4  L 301.44 230.8  " clip-path="url(#pc915433ef6)" style="fill: none; stroke: #8a5200; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_4">
+    <path d="M 42 586  L 42 761  L 318 761  " clip-path="url(#pc915433ef6)" style="fill: none; stroke: #465366; stroke-opacity: 0.4; stroke-width: 0.8; stroke-linecap: square" />
+   </g>
+   <g id="new-prediction">
+    <path d="M 64.08 720.2  L 102.72 657.3  L 144.12 694.7  L 182.76 635.2  L 224.16 664.1  L 265.56 611.4  L 301.44 648.8  " clip-path="url(#pc915433ef6)" style="fill: none; stroke: #8a5200; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_5">
+    <path d="M 64.08 720.2  L 64.08 672.6  " clip-path="url(#pc915433ef6)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #a33052; stroke-opacity: 0.75" />
+   </g>
+   <g id="line2d_6">
+    <path d="M 102.72 657.3  L 102.72 696.4  " clip-path="url(#pc915433ef6)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #a33052; stroke-opacity: 0.75" />
+   </g>
+   <g id="line2d_7">
+    <path d="M 144.12 694.7  L 144.12 648.8  " clip-path="url(#pc915433ef6)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #a33052; stroke-opacity: 0.75" />
+   </g>
+   <g id="line2d_8">
+    <path d="M 182.76 635.2  L 182.76 696.4  " clip-path="url(#pc915433ef6)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #a33052; stroke-opacity: 0.75" />
+   </g>
+   <g id="line2d_9">
+    <path d="M 224.16 664.1  L 224.16 626.7  " clip-path="url(#pc915433ef6)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #a33052; stroke-opacity: 0.75" />
+   </g>
+   <g id="line2d_10">
+    <path d="M 265.56 611.4  L 265.56 676  " clip-path="url(#pc915433ef6)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #a33052; stroke-opacity: 0.75" />
+   </g>
+   <g id="line2d_11">
+    <path d="M 301.44 648.8  L 301.44 619.9  " clip-path="url(#pc915433ef6)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #a33052; stroke-opacity: 0.75" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="20" y="39.702656" transform="rotate(-0 20 39.702656)">本班预测好，换班就失准</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="73.53918" transform="rotate(-0 20 73.53918)">概念故事 · 操作与关系示意</text>
+   </g>
+   <g id="stage-0">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="32" y="120.095137" transform="rotate(-0 32 120.095137)">在本班挑选模型</text>
+   </g>
+   <g id="stage-1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="32" y="538.074355" transform="rotate(-0 32 538.074355)">同一规则带到新班</text>
+   </g>
+   <g id="conceptual-only">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="923.53918" transform="rotate(-0 20 923.53918)">原班与新班均为概念示意；点和预测线没有真实数值。</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="42" y="160.49793" transform="rotate(-0 42 160.49793)">成绩（概念位置）</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="180" y="369.53918" transform="rotate(-0 180 369.53918)">学生记录的预测条件（示意）</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="42" y="578.49793" transform="rotate(-0 42 578.49793)">成绩（概念位置）</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="180" y="787.53918" transform="rotate(-0 180 787.53918)">学生记录的预测条件（示意）</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="409.48668" transform="rotate(-0 32 409.48668)">尝试很多组合后贴近本班记录</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="439.53918" transform="rotate(-0 32 439.53918)">可能也学入偶然的特点</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="827.515742" transform="rotate(-0 32 827.515742)">紫点：新班记录；虚线：偏离</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="857.503555" transform="rotate(-0 32 857.503555)">还要检查新班分布是否变化</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc915433ef6">
+   <rect x="0" y="0" width="360" height="950" />
+  </clipPath>
+ </defs>
+</svg>

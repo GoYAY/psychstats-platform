@@ -1,0 +1,70 @@
+{
+  "id": "longitudinal",
+  "unit_id": "longitudinal",
+  "title": "连续追踪的时间交互怎么看",
+  "question": "同一批人随时间变化，训练组是否比对照组改善得更快？",
+  "design": "复用四时点教学数据，时间编码 0/1/2/3，随机截距及时间斜率（不相关）。ML 比较有无时间×组别项，人数与记录数分开。",
+  "variables": "数据列、分组 ID 及时间/中心化编码见代码；已有教学数据非真实研究样本。",
+  "script": "examples/r/output_reading/longitudinal.R",
+  "data_files": [
+    "examples/data/longitudinal_growth.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "interaction",
+      "label": "时间×组别系数",
+      "meaning": "与对照组相比，每一编码时间单位的平均变化差，不是某一时点的均值差。",
+      "term": "longitudinal-data",
+      "format": ".3f"
+    },
+    {
+      "field_id": "comparison_p",
+      "label": "ML 嵌套比较 p",
+      "meaning": "相同样本、随机结构和响应下比较新增固定交互项。",
+      "term": "model-fit",
+      "format": ".4g"
+    },
+    {
+      "field_id": "people",
+      "label": "参与者人数",
+      "meaning": "重复观测不是独立人数；缺时点需要说明缺失假设。",
+      "term": "random-slope-model",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "先判断这些前提是否成立",
+      "body": "时间不等间隔时应使用实际时间；随机斜率不能替代所有残差自相关，线性趋势也不是唯一合理形状。"
+    },
+    {
+      "title": "结果不显著或不稳定时",
+      "body": "分别检查数据结构、模型识别与区间精度。考虑测量质量、组数或时间覆盖是否足够；报告实际不确定性和敏感性，不以反复简化或换编码追求显著。"
+    }
+  ],
+  "report_template": "四时点纵向教学数据包含 {people:.0f} 人、{observations:.0f} 条记录。ML 随机截距及时间斜率模型的时间×组别系数为 {interaction:.3f}（p = {p:.4g}），有无该项的嵌套比较 p = {comparison_p:.4g}。变化量以 0–3 编码的每一时间单位解释。",
+  "sources": [
+    {
+      "title": "估计与诊断的官方资料",
+      "url": "https://search.r-project.org/CRAN/refmans/nlme/html/lme.html"
+    }
+  ],
+  "related_terms": [
+    "longitudinal-data",
+    "model-fit",
+    "random-slope-model"
+  ],
+  "table_labels": {
+    "fixed": "固定效应完整表",
+    "random": "随机效应方差",
+    "comparison": "ML 模型比较",
+    "parameters": "增长模型参数表",
+    "imputations": "各插补数据的估计与方差",
+    "fiml_parameters": "FIML 参数表"
+  }
+}

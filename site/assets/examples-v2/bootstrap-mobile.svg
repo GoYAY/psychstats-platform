@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="403pt" viewBox="0 0 360 403" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">重抽均值会变化，可用于评估估计的不确定性。。频数为教学构造；只从已有100人重抽，不能补回未覆盖的人群。</desc><title id="title">反复抽样的睡眠均值</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:03:52.088684</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 403  L 360 403  L 360 0  L 0 0  L 0 403  z " style="fill: none" />
+  </g>
+  <g id="data-panel-0">
+   <g id="patch_2">
+    <path d="M 61.2 312  L 345.6 312  L 345.6 65  L 61.2 65  L 61.2 312  z " style="fill: none" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="67.971429" y="328.744141" transform="rotate(-0 67.971429 328.744141)">6.3</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="135.685714" y="328.744141" transform="rotate(-0 135.685714 328.744141)">6.6</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="203.4" y="328.744141" transform="rotate(-0 203.4 328.744141)">6.9</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4" />
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="271.114286" y="328.744141" transform="rotate(-0 271.114286 328.744141)">7.2</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5" />
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="338.828571" y="328.744141" transform="rotate(-0 338.828571 328.744141)">7.5</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #303b4b" x="203.4" y="354.810781" transform="rotate(-0 203.4 354.810781)">重抽样均值（小时；等宽0.2小时组）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <path d="M 61.2 312  L 345.6 312  " clip-path="url(#p8c4dc1151c)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_7" />
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="316.87207" transform="rotate(-0 54.2 316.87207)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <path d="M 61.2 243.082589  L 345.6 243.082589  " clip-path="url(#p8c4dc1151c)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_9" />
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="247.95466" transform="rotate(-0 54.2 247.95466)">10</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_10">
+      <path d="M 61.2 174.165179  L 345.6 174.165179  " clip-path="url(#p8c4dc1151c)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_11" />
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="179.037249" transform="rotate(-0 54.2 179.037249)">20</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12">
+      <path d="M 61.2 105.247768  L 345.6 105.247768  " clip-path="url(#p8c4dc1151c)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_13" />
+     <g id="text_10">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="110.119838" transform="rotate(-0 54.2 110.119838)">30</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 67.971429 312  L 113.114286 312  L 113.114286 284.433036  L 67.971429 284.433036  z " clip-path="url(#p8c4dc1151c)" style="fill: #953970; opacity: 0.35; stroke: #953970; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 113.114286 312  L 158.257143 312  L 158.257143 229.299107  L 113.114286 229.299107  z " clip-path="url(#p8c4dc1151c)" style="fill: #953970; opacity: 0.35; stroke: #953970; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 158.257143 312  L 203.4 312  L 203.4 146.598214  L 158.257143 146.598214  z " clip-path="url(#p8c4dc1151c)" style="fill: #953970; opacity: 0.35; stroke: #953970; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 203.4 312  L 248.542857 312  L 248.542857 91.464286  L 203.4 91.464286  z " clip-path="url(#p8c4dc1151c)" style="fill: #953970; opacity: 0.35; stroke: #953970; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 248.542857 312  L 293.685714 312  L 293.685714 174.165179  L 248.542857 174.165179  z " clip-path="url(#p8c4dc1151c)" style="fill: #953970; opacity: 0.35; stroke: #953970; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 293.685714 312  L 338.828571 312  L 338.828571 256.866071  L 293.685714 256.866071  z " clip-path="url(#p8c4dc1151c)" style="fill: #953970; opacity: 0.35; stroke: #953970; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_9">
+    <path d="M 61.2 312  L 61.2 65  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_10">
+    <path d="M 61.2 312  L 345.6 312  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="61.2" y="47" transform="rotate(-0 61.2 47)">重抽次数</text>
+   </g>
+  </g>
+  <g id="legend-swatch-0">
+   <path d="M 36 379  L 45.72 379  L 45.72 371  L 36 371  z " style="fill: #953970; opacity: 0.35; stroke: #953970; stroke-width: 0.85; stroke-linejoin: miter" />
+  </g>
+  <g id="text_12">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="54" y="378.036875" transform="rotate(-0 54 378.036875)">教学重抽样分布</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8c4dc1151c">
+   <rect x="61.2" y="65" width="284.4" height="247" />
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="360pt" height="490pt" viewBox="0 0 360 490" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">极大似然估计在指定模型内寻找最能相容于资料的参数。。6.5小时是本例固定标准差的正态模型下的估计；实际分析还需检查所选模型及估计过程。</desc><title id="title">固定资料后寻找似然的峰值</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-20T23:31:52.941609</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 490  L 360 490  L 360 0  L 0 0  L 0 490  z " style="fill: none" />
+  </g>
+  <g id="data-panel">
+   <g id="patch_2">
+    <path d="M 61.2 347.9  L 331.2 347.9  L 331.2 122.5  L 61.2 122.5  L 61.2 347.9  z " style="fill: none" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="61.2" y="363.020117" transform="rotate(-0 61.2 363.020117)">4.0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="115.2" y="363.020117" transform="rotate(-0 115.2 363.020117)">5.0</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="196.2" y="363.020117" transform="rotate(-0 196.2 363.020117)">6.5</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4" />
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="277.2" y="363.020117" transform="rotate(-0 277.2 363.020117)">8.0</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5" />
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="331.2" y="363.020117" transform="rotate(-0 331.2 363.020117)">9.0</text>
+     </g>
+    </g>
+    <g id="text_6">
+     
+     <g style="fill: #303b4b" transform="translate(136.03 378.794297)">
+      <text>
+       <tspan x="0" y="-0.859375" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">候</tspan>
+       <tspan x="11" y="-0.859375" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">选</tspan>
+       <tspan x="22" y="-0.859375" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">平</tspan>
+       <tspan x="33" y="-0.859375" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">均</tspan>
+       <tspan x="44" y="-0.859375" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">时</tspan>
+       <tspan x="55" y="-0.859375" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">长</tspan>
+       <tspan x="66" y="-0.859375" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b"> </tspan>
+       <tspan x="76.253418" y="-0.859375" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">（</tspan>
+       <tspan x="87.253418" y="-0.859375" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">小</tspan>
+       <tspan x="98.253418" y="-0.859375" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">时</tspan>
+       <tspan x="109.253418" y="-0.859375" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">）</tspan>
+       <tspan x="69.254883" y="-0.859375" style="font-style: oblique; font-size: 11px; font-family: 'DejaVu Sans'; fill: #303b4b">μ</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <path d="M 61.2 347.9  L 331.2 347.9  " clip-path="url(#p57828fb2ac)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_7" />
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="351.960059" transform="rotate(-0 54.2 351.960059)">0.0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <path d="M 61.2 310.333333  L 331.2 310.333333  " clip-path="url(#p57828fb2ac)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_9" />
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="314.393392" transform="rotate(-0 54.2 314.393392)">0.2</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_10">
+      <path d="M 61.2 272.766667  L 331.2 272.766667  " clip-path="url(#p57828fb2ac)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_11" />
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="276.826725" transform="rotate(-0 54.2 276.826725)">0.4</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12">
+      <path d="M 61.2 235.2  L 331.2 235.2  " clip-path="url(#p57828fb2ac)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_13" />
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="239.260059" transform="rotate(-0 54.2 239.260059)">0.6</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_14">
+      <path d="M 61.2 197.633333  L 331.2 197.633333  " clip-path="url(#p57828fb2ac)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_15" />
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="201.693392" transform="rotate(-0 54.2 201.693392)">0.8</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_16">
+      <path d="M 61.2 160.066667  L 331.2 160.066667  " clip-path="url(#p57828fb2ac)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_17" />
+     <g id="text_12">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="164.126725" transform="rotate(-0 54.2 164.126725)">1.0</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_18">
+      <path d="M 61.2 122.5  L 331.2 122.5  " clip-path="url(#p57828fb2ac)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_19" />
+     <g id="text_13">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="126.560059" transform="rotate(-0 54.2 126.560059)">1.2</text>
+     </g>
+    </g>
+    <g id="text_14">
+     
+     <g style="fill: #303b4b" transform="translate(33.276465 289.595) rotate(-90)">
+      <text>
+       <tspan x="0" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">相</tspan>
+       <tspan x="11" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">对</tspan>
+       <tspan x="22" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">似</tspan>
+       <tspan x="33" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">然</tspan>
+       <tspan x="44" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b"> </tspan>
+       <tspan x="68.964844" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b"> </tspan>
+       <tspan x="72.219727" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">/</tspan>
+       <tspan x="76.919434" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b"> </tspan>
+       <tspan x="80.174316" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">L</tspan>
+       <tspan x="85.819336" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">(</tspan>
+       <tspan x="89.493164" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">6</tspan>
+       <tspan x="95.943848" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">.</tspan>
+       <tspan x="98.591797" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">5</tspan>
+       <tspan x="105.04248" y="-0.828125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #303b4b">)</tspan>
+       <tspan x="47.254883" y="-0.828125" style="font-style: oblique; font-size: 11px; font-family: 'DejaVu Sans'; fill: #303b4b">L</tspan>
+       <tspan x="57.674805" y="-0.828125" style="font-style: oblique; font-size: 11px; font-family: 'DejaVu Sans'; fill: #303b4b">μ</tspan>
+       <tspan x="53.383301" y="-0.828125" style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #303b4b">(</tspan>
+       <tspan x="64.67334" y="-0.828125" style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #303b4b">)</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="FillBetweenPolyCollection_1">
+    <defs>
+     <path id="m2104b05022" d="M 61.2 -142.1  L 61.2 -142.115932  L 62.28 -142.118499  L 63.36 -142.121454  L 64.44 -142.124851  L 65.52 -142.128752  L 66.6 -142.133225  L 67.68 -142.138348  L 68.76 -142.144208  L 69.84 -142.150902  L 70.92 -142.15854  L 72 -142.167243  L 73.08 -142.177147  L 74.16 -142.188403  L 75.24 -142.201181  L 76.32 -142.215666  L 77.4 -142.232067  L 78.48 -142.250613  L 79.56 -142.271556  L 80.64 -142.295178  L 81.72 -142.321785  L 82.8 -142.351718  L 83.88 -142.385348  L 84.96 -142.423083  L 86.04 -142.46537  L 87.12 -142.512696  L 88.2 -142.565592  L 89.28 -142.624639  L 90.36 -142.690465  L 91.44 -142.763753  L 92.52 -142.845243  L 93.6 -142.935734  L 94.68 -143.036089  L 95.76 -143.147237  L 96.84 -143.270177  L 97.92 -143.405982  L 99 -143.555799  L 100.08 -143.720857  L 101.16 -143.902465  L 102.24 -144.102017  L 103.32 -144.320994  L 104.4 -144.560969  L 105.48 -144.823601  L 106.56 -145.110647  L 107.64 -145.423954  L 108.72 -145.765464  L 109.8 -146.137215  L 110.88 -146.541335  L 111.96 -146.980048  L 113.04 -147.455666  L 114.12 -147.970589  L 115.2 -148.527303  L 116.28 -149.128372  L 117.36 -149.776433  L 118.44 -150.474196  L 119.52 -151.224426  L 120.6 -152.029946  L 121.68 -152.893618  L 122.76 -153.818339  L 123.84 -154.807026  L 124.92 -155.862604  L 126 -156.987993  L 127.08 -158.186092  L 128.16 -159.459763  L 129.24 -160.811813  L 130.32 -162.244978  L 131.4 -163.761902  L 132.48 -165.365115  L 133.56 -167.057017  L 134.64 -168.839852  L 135.72 -170.715686  L 136.8 -172.686387  L 137.88 -174.753598  L 138.96 -176.918716  L 140.04 -179.182867  L 141.12 -181.546883  L 142.2 -184.011282  L 143.28 -186.576237  L 144.36 -189.241563  L 145.44 -192.006689  L 146.52 -194.870644  L 147.6 -197.832031  L 148.68 -200.889017  L 149.76 -204.039311  L 150.84 -207.280155  L 151.92 -210.60831  L 153 -214.020047  L 154.08 -217.511143  L 155.16 -221.076872  L 156.24 -224.712008  L 157.32 -228.410827  L 158.4 -232.167109  L 159.48 -235.974149  L 160.56 -239.824769  L 161.64 -243.71133  L 162.72 -247.625755  L 163.8 -251.559547  L 164.88 -255.503816  L 165.96 -259.44931  L 167.04 -263.386443  L 168.12 -267.305332  L 169.2 -271.195836  L 170.28 -275.047597  L 171.36 -278.850083  L 172.44 -282.592632  L 173.52 -286.264505  L 174.6 -289.854933  L 175.68 -293.353168  L 176.76 -296.748538  L 177.84 -300.030497  L 178.92 -303.188684  L 180 -306.212972  L 181.08 -309.093526  L 182.16 -311.820853  L 183.24 -314.385855  L 184.32 -316.779881  L 185.4 -318.994772  L 186.48 -321.02291  L 187.56 -322.857263  L 188.64 -324.491421  L 189.72 -325.919637  L 190.8 -327.136859  L 191.88 -328.138761  L 192.96 -328.921767  L 194.04 -329.483074  L 195.12 -329.820667  L 196.2 -329.933333  L 197.28 -329.820667  L 198.36 -329.483074  L 199.44 -328.921767  L 200.52 -328.138761  L 201.6 -327.136859  L 202.68 -325.919637  L 203.76 -324.491421  L 204.84 -322.857263  L 205.92 -321.02291  L 207 -318.994772  L 208.08 -316.779881  L 209.16 -314.385855  L 210.24 -311.820853  L 211.32 -309.093526  L 212.4 -306.212972  L 213.48 -303.188684  L 214.56 -300.030497  L 215.64 -296.748538  L 216.72 -293.353168  L 217.8 -289.854933  L 218.88 -286.264505  L 219.96 -282.592632  L 221.04 -278.850083  L 222.12 -275.047597  L 223.2 -271.195836  L 224.28 -267.305332  L 225.36 -263.386443  L 226.44 -259.44931  L 227.52 -255.503816  L 228.6 -251.559547  L 229.68 -247.625755  L 230.76 -243.71133  L 231.84 -239.824769  L 232.92 -235.974149  L 234 -232.167109  L 235.08 -228.410827  L 236.16 -224.712008  L 237.24 -221.076872  L 238.32 -217.511143  L 239.4 -214.020047  L 240.48 -210.60831  L 241.56 -207.280155  L 242.64 -204.039311  L 243.72 -200.889017  L 244.8 -197.832031  L 245.88 -194.870644  L 246.96 -192.006689  L 248.04 -189.241563  L 249.12 -186.576237  L 250.2 -184.011282  L 251.28 -181.546883  L 252.36 -179.182867  L 253.44 -176.918716  L 254.52 -174.753598  L 255.6 -172.686387  L 256.68 -170.715686  L 257.76 -168.839852  L 258.84 -167.057017  L 259.92 -165.365115  L 261 -163.761902  L 262.08 -162.244978  L 263.16 -160.811813  L 264.24 -159.459763  L 265.32 -158.186092  L 266.4 -156.987993  L 267.48 -155.862604  L 268.56 -154.807026  L 269.64 -153.818339  L 270.72 -152.893618  L 271.8 -152.029946  L 272.88 -151.224426  L 273.96 -150.474196  L 275.04 -149.776433  L 276.12 -149.128372  L 277.2 -148.527303  L 278.28 -147.970589  L 279.36 -147.455666  L 280.44 -146.980048  L 281.52 -146.541335  L 282.6 -146.137215  L 283.68 -145.765464  L 284.76 -145.423954  L 285.84 -145.110647  L 286.92 -144.823601  L 288 -144.560969  L 289.08 -144.320994  L 290.16 -144.102017  L 291.24 -143.902465  L 292.32 -143.720857  L 293.4 -143.555799  L 294.48 -143.405982  L 295.56 -143.270177  L 296.64 -143.147237  L 297.72 -143.036089  L 298.8 -142.935734  L 299.88 -142.845243  L 300.96 -142.763753  L 302.04 -142.690465  L 303.12 -142.624639  L 304.2 -142.565592  L 305.28 -142.512696  L 306.36 -142.46537  L 307.44 -142.423083  L 308.52 -142.385348  L 309.6 -142.351718  L 310.68 -142.321785  L 311.76 -142.295178  L 312.84 -142.271556  L 313.92 -142.250613  L 315 -142.232067  L 316.08 -142.215666  L 317.16 -142.201181  L 318.24 -142.188403  L 319.32 -142.177147  L 320.4 -142.167243  L 321.48 -142.15854  L 322.56 -142.150902  L 323.64 -142.144208  L 324.72 -142.138348  L 325.8 -142.133225  L 326.88 -142.128752  L 327.96 -142.124851  L 329.04 -142.121454  L 330.12 -142.118499  L 331.2 -142.115932  L 331.2 -142.1  L 331.2 -142.1  L 330.12 -142.1  L 329.04 -142.1  L 327.96 -142.1  L 326.88 -142.1  L 325.8 -142.1  L 324.72 -142.1  L 323.64 -142.1  L 322.56 -142.1  L 321.48 -142.1  L 320.4 -142.1  L 319.32 -142.1  L 318.24 -142.1  L 317.16 -142.1  L 316.08 -142.1  L 315 -142.1  L 313.92 -142.1  L 312.84 -142.1  L 311.76 -142.1  L 310.68 -142.1  L 309.6 -142.1  L 308.52 -142.1  L 307.44 -142.1  L 306.36 -142.1  L 305.28 -142.1  L 304.2 -142.1  L 303.12 -142.1  L 302.04 -142.1  L 300.96 -142.1  L 299.88 -142.1  L 298.8 -142.1  L 297.72 -142.1  L 296.64 -142.1  L 295.56 -142.1  L 294.48 -142.1  L 293.4 -142.1  L 292.32 -142.1  L 291.24 -142.1  L 290.16 -142.1  L 289.08 -142.1  L 288 -142.1  L 286.92 -142.1  L 285.84 -142.1  L 284.76 -142.1  L 283.68 -142.1  L 282.6 -142.1  L 281.52 -142.1  L 280.44 -142.1  L 279.36 -142.1  L 278.28 -142.1  L 277.2 -142.1  L 276.12 -142.1  L 275.04 -142.1  L 273.96 -142.1  L 272.88 -142.1  L 271.8 -142.1  L 270.72 -142.1  L 269.64 -142.1  L 268.56 -142.1  L 267.48 -142.1  L 266.4 -142.1  L 265.32 -142.1  L 264.24 -142.1  L 263.16 -142.1  L 262.08 -142.1  L 261 -142.1  L 259.92 -142.1  L 258.84 -142.1  L 257.76 -142.1  L 256.68 -142.1  L 255.6 -142.1  L 254.52 -142.1  L 253.44 -142.1  L 252.36 -142.1  L 251.28 -142.1  L 250.2 -142.1  L 249.12 -142.1  L 248.04 -142.1  L 246.96 -142.1  L 245.88 -142.1  L 244.8 -142.1  L 243.72 -142.1  L 242.64 -142.1  L 241.56 -142.1  L 240.48 -142.1  L 239.4 -142.1  L 238.32 -142.1  L 237.24 -142.1  L 236.16 -142.1  L 235.08 -142.1  L 234 -142.1  L 232.92 -142.1  L 231.84 -142.1  L 230.76 -142.1  L 229.68 -142.1  L 228.6 -142.1  L 227.52 -142.1  L 226.44 -142.1  L 225.36 -142.1  L 224.28 -142.1  L 223.2 -142.1  L 222.12 -142.1  L 221.04 -142.1  L 219.96 -142.1  L 218.88 -142.1  L 217.8 -142.1  L 216.72 -142.1  L 215.64 -142.1  L 214.56 -142.1  L 213.48 -142.1  L 212.4 -142.1  L 211.32 -142.1  L 210.24 -142.1  L 209.16 -142.1  L 208.08 -142.1  L 207 -142.1  L 205.92 -142.1  L 204.84 -142.1  L 203.76 -142.1  L 202.68 -142.1  L 201.6 -142.1  L 200.52 -142.1  L 199.44 -142.1  L 198.36 -142.1  L 197.28 -142.1  L 196.2 -142.1  L 195.12 -142.1  L 194.04 -142.1  L 192.96 -142.1  L 191.88 -142.1  L 190.8 -142.1  L 189.72 -142.1  L 188.64 -142.1  L 187.56 -142.1  L 186.48 -142.1  L 185.4 -142.1  L 184.32 -142.1  L 183.24 -142.1  L 182.16 -142.1  L 181.08 -142.1  L 180 -142.1  L 178.92 -142.1  L 177.84 -142.1  L 176.76 -142.1  L 175.68 -142.1  L 174.6 -142.1  L 173.52 -142.1  L 172.44 -142.1  L 171.36 -142.1  L 170.28 -142.1  L 169.2 -142.1  L 168.12 -142.1  L 167.04 -142.1  L 165.96 -142.1  L 164.88 -142.1  L 163.8 -142.1  L 162.72 -142.1  L 161.64 -142.1  L 160.56 -142.1  L 159.48 -142.1  L 158.4 -142.1  L 157.32 -142.1  L 156.24 -142.1  L 155.16 -142.1  L 154.08 -142.1  L 153 -142.1  L 151.92 -142.1  L 150.84 -142.1  L 149.76 -142.1  L 148.68 -142.1  L 147.6 -142.1  L 146.52 -142.1  L 145.44 -142.1  L 144.36 -142.1  L 143.28 -142.1  L 142.2 -142.1  L 141.12 -142.1  L 140.04 -142.1  L 138.96 -142.1  L 137.88 -142.1  L 136.8 -142.1  L 135.72 -142.1  L 134.64 -142.1  L 133.56 -142.1  L 132.48 -142.1  L 131.4 -142.1  L 130.32 -142.1  L 129.24 -142.1  L 128.16 -142.1  L 127.08 -142.1  L 126 -142.1  L 124.92 -142.1  L 123.84 -142.1  L 122.76 -142.1  L 121.68 -142.1  L 120.6 -142.1  L 119.52 -142.1  L 118.44 -142.1  L 117.36 -142.1  L 116.28 -142.1  L 115.2 -142.1  L 114.12 -142.1  L 113.04 -142.1  L 111.96 -142.1  L 110.88 -142.1  L 109.8 -142.1  L 108.72 -142.1  L 107.64 -142.1  L 106.56 -142.1  L 105.48 -142.1  L 104.4 -142.1  L 103.32 -142.1  L 102.24 -142.1  L 101.16 -142.1  L 100.08 -142.1  L 99 -142.1  L 97.92 -142.1  L 96.84 -142.1  L 95.76 -142.1  L 94.68 -142.1  L 93.6 -142.1  L 92.52 -142.1  L 91.44 -142.1  L 90.36 -142.1  L 89.28 -142.1  L 88.2 -142.1  L 87.12 -142.1  L 86.04 -142.1  L 84.96 -142.1  L 83.88 -142.1  L 82.8 -142.1  L 81.72 -142.1  L 80.64 -142.1  L 79.56 -142.1  L 78.48 -142.1  L 77.4 -142.1  L 76.32 -142.1  L 75.24 -142.1  L 74.16 -142.1  L 73.08 -142.1  L 72 -142.1  L 70.92 -142.1  L 69.84 -142.1  L 68.76 -142.1  L 67.68 -142.1  L 66.6 -142.1  L 65.52 -142.1  L 64.44 -142.1  L 63.36 -142.1  L 62.28 -142.1  L 61.2 -142.1  z " style="stroke: #8a5200; stroke-opacity: 0.1" />
+    </defs>
+    <g clip-path="url(#p57828fb2ac)">
+     <use xlink:href="#m2104b05022" x="0" y="490" style="fill: #8a5200; fill-opacity: 0.1; stroke: #8a5200; stroke-opacity: 0.1" />
+    </g>
+   </g>
+   <g id="line2d_20">
+    <path d="M 61.2 347.884068  L 78.48 347.749387  L 87.12 347.487304  L 93.6 347.064266  L 97.92 346.594018  L 102.24 345.897983  L 105.48 345.176399  L 108.72 344.234536  L 111.96 343.019952  L 115.2 341.472697  L 117.36 340.223567  L 119.52 338.775574  L 121.68 337.106382  L 123.84 335.192974  L 126 333.012007  L 128.16 330.540237  L 130.32 327.755022  L 132.48 324.634885  L 134.64 321.160148  L 136.8 317.313613  L 138.96 313.081284  L 141.12 308.453117  L 143.28 303.423763  L 145.44 297.993311  L 148.68 289.110983  L 151.92 279.39169  L 155.16 268.923128  L 159.48 254.025851  L 165.96 230.55069  L 171.36 211.149917  L 174.6 200.145067  L 177.84 189.969503  L 180 183.787028  L 182.16 178.179147  L 184.32 173.220119  L 186.48 168.97709  L 188.64 165.508579  L 189.72 164.080363  L 190.8 162.863141  L 191.88 161.861239  L 192.96 161.078233  L 194.04 160.516926  L 195.12 160.179333  L 196.2 160.066667  L 197.28 160.179333  L 198.36 160.516926  L 199.44 161.078233  L 200.52 161.861239  L 201.6 162.863141  L 202.68 164.080363  L 203.76 165.508579  L 205.92 168.97709  L 208.08 173.220119  L 210.24 178.179147  L 212.4 183.787028  L 214.56 189.969503  L 217.8 200.145067  L 221.04 211.149917  L 226.44 230.55069  L 234 257.832891  L 238.32 272.488857  L 241.56 282.719845  L 244.8 292.167969  L 248.04 300.758437  L 250.2 305.988718  L 252.36 310.817133  L 254.52 315.246402  L 256.68 319.284314  L 258.84 322.942983  L 261 326.238098  L 263.16 329.188187  L 265.32 331.813908  L 267.48 334.137396  L 269.64 336.181661  L 271.8 337.970054  L 273.96 339.525804  L 276.12 340.871628  L 278.28 342.029411  L 281.52 343.458665  L 284.76 344.576046  L 288 345.439031  L 291.24 346.097535  L 295.56 346.729823  L 300.96 347.236247  L 307.44 347.576917  L 316.08 347.784334  L 331.2 347.884068  L 331.2 347.884068  " clip-path="url(#p57828fb2ac)" style="fill: none; stroke: #8a5200; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 196.2 347.9  L 196.2 160.066667  " clip-path="url(#p57828fb2ac)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #167d79; stroke-opacity: 0.6" />
+   </g>
+   <g id="patch_3">
+    <path d="M 61.2 347.9  L 61.2 122.5  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_4">
+    <path d="M 61.2 347.9  L 331.2 347.9  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="mle-location">
+    <defs>
+     <path id="mf3f4097feb" d="M 0 4.031129  C 1.069068 4.031129 2.094493 3.606384 2.850439 2.850439  C 3.606384 2.094493 4.031129 1.069068 4.031129 0  C 4.031129 -1.069068 3.606384 -2.094493 2.850439 -2.850439  C 2.094493 -3.606384 1.069068 -4.031129 0 -4.031129  C -1.069068 -4.031129 -2.094493 -3.606384 -2.850439 -2.850439  C -3.606384 -2.094493 -4.031129 -1.069068 -4.031129 0  C -4.031129 1.069068 -3.606384 2.094493 -2.850439 2.850439  C -2.094493 3.606384 -1.069068 4.031129 0 4.031129  z " style="stroke: #167d79" />
+    </defs>
+    <g clip-path="url(#p57828fb2ac)">
+     <use xlink:href="#mf3f4097feb" x="196.2" y="160.066667" style="fill: #167d79; stroke: #167d79" />
+    </g>
+   </g>
+  </g>
+  <g id="text_15">
+   <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="24" y="42.61875" transform="rotate(-0 24 42.61875)">最高处对应哪一个平均时长？</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="24" y="75.364062" transform="rotate(-0 24 75.364062)">教学睡眠记录：6、6.5、7 小时；固定 σ = 1</text>
+  </g>
+  <g id="text_17">
+   
+   <g style="fill: #8a5200" transform="translate(24.12 411.66)">
+    <text>
+     <tspan x="0" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">峰</tspan>
+     <tspan x="10.5" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">值</tspan>
+     <tspan x="21" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">在</tspan>
+     <tspan x="31.5" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200"> </tspan>
+     <tspan x="41.287354" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200"> </tspan>
+     <tspan x="44.394287" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">=</tspan>
+     <tspan x="52.182129" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200"> </tspan>
+     <tspan x="55.289062" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">6</tspan>
+     <tspan x="61.446533" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">.</tspan>
+     <tspan x="63.974121" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">5</tspan>
+     <tspan x="70.131592" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200"> </tspan>
+     <tspan x="73.238525" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">小</tspan>
+     <tspan x="83.738525" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">时</tspan>
+     <tspan x="94.238525" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">，</tspan>
+     <tspan x="104.738525" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">相</tspan>
+     <tspan x="115.238525" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">对</tspan>
+     <tspan x="125.738525" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">似</tspan>
+     <tspan x="136.238525" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">然</tspan>
+     <tspan x="146.738525" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">为</tspan>
+     <tspan x="157.238525" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200"> </tspan>
+     <tspan x="160.345459" y="-0.421875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #8a5200">1</tspan>
+     <tspan x="41.542664" y="-1.609375" style="font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #8a5200">̂</tspan>
+     <tspan x="34.606934" y="-0.421875" style="font-style: oblique; font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #8a5200">μ</tspan>
+    </text>
+   </g>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 10.5px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="24.12" y="433.833125" transform="rotate(-0 24.12 433.833125)">固定资料，仅改变候选 μ；曲线按峰值缩放。</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 10.5px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="24.12" y="456.792109" transform="rotate(-0 24.12 456.792109)">这里的估计是在已指定的正态模型内得到的。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p57828fb2ac">
+   <rect x="61.2" y="122.5" width="270" height="225.4" />
+  </clipPath>
+ </defs>
+</svg>

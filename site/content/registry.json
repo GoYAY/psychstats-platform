@@ -1,0 +1,4183 @@
+{
+  "schema_version": "2.0",
+  "terms": [
+    {
+      "id": "ancova",
+      "zh": "协方差分析",
+      "en": "Analysis of Covariance",
+      "aliases": [
+        "ANCOVA"
+      ],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "比较组别对连续结果的条件均值差异，同时在模型中纳入选定的协变量；常见模型假设协变量与结果的斜率在组间相同。",
+      "relations": {
+        "prerequisites": [
+          "anova",
+          "covariate"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "post-hoc-comparison"
+        ]
+      }
+    },
+    {
+      "id": "mancova",
+      "zh": "多元协方差分析",
+      "en": "Multivariate Analysis of Covariance",
+      "aliases": [
+        "MANCOVA"
+      ],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "在多元线性模型中将协变量纳入，联合检验组别与多个连续结果的条件均值向量之间的关系。",
+      "relations": {
+        "prerequisites": [
+          "manova",
+          "covariate"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "post-hoc-comparison"
+        ]
+      }
+    },
+    {
+      "id": "latent-profile-analysis",
+      "zh": "潜剖面分析",
+      "en": "Latent Profile Analysis",
+      "aliases": [
+        "LPA",
+        "潜在剖面分析"
+      ],
+      "type": "method",
+      "level": "advanced",
+      "topic": "classification-clustering",
+      "status": "draft",
+      "summary": "用有限混合模型表示连续指标的联合分布，估计潜在类别的均值画像、方差结构、比例和个体后验概率。",
+      "relations": {
+        "prerequisites": [
+          "cluster-analysis",
+          "maximum-likelihood"
+        ],
+        "components": [],
+        "contrasts": [
+          "latent-class-analysis"
+        ],
+        "used_in": [],
+        "next": []
+      }
+    },
+    {
+      "id": "latent-class-analysis",
+      "zh": "潜类别分析",
+      "en": "Latent Class Analysis",
+      "aliases": [
+        "LCA",
+        "潜在类别分析"
+      ],
+      "type": "method",
+      "level": "advanced",
+      "topic": "classification-clustering",
+      "status": "draft",
+      "summary": "用离散潜在类别解释多个分类指标的联合响应分布，通常在给定类别后局部独立的假设下估计类别比例、条件响应概率和后验类别概率。",
+      "relations": {
+        "prerequisites": [
+          "cluster-analysis",
+          "maximum-likelihood"
+        ],
+        "components": [],
+        "contrasts": [
+          "latent-profile-analysis"
+        ],
+        "used_in": [],
+        "next": []
+      }
+    },
+  {
+    "id": "data-rank",
+    "zh": "秩次",
+    "en": "Data Rank",
+    "aliases": [
+      "排序秩",
+      "秩次排序"
+    ],
+    "type": "concept",
+    "level": "basic",
+    "topic": "foundations",
+    "status": "draft",
+    "summary": "用排序位置代替原始数值，保留先后次序但不保留分数间距。",
+    "relations": {
+      "prerequisites": [
+        "measurement-scales"
+      ],
+      "components": [],
+      "contrasts": [
+        "matrix-rank"
+      ],
+      "used_in": [
+        "nonparametric-test",
+        "wilcoxon-rank-sum",
+        "wilcoxon-signed-rank"
+      ],
+      "next": [
+        "spearman-correlation"
+      ]
+    }
+  },
+  {
+    "id": "linear-dependence",
+    "zh": "线性依赖与线性独立",
+    "en": "Linear Dependence and Independence",
+    "aliases": [
+      "线性依赖",
+      "线性独立",
+      "精确线性依赖"
+    ],
+    "type": "concept",
+    "level": "intermediate",
+    "topic": "foundations",
+    "status": "draft",
+    "summary": "判断一列资料能否由其他列按固定倍数相加得到；与概率意义上的独立性不同。",
+    "relations": {
+      "prerequisites": [
+        "matrix",
+        "vector"
+      ],
+      "components": [],
+      "contrasts": [],
+      "used_in": [
+        "multicollinearity",
+        "model-identification"
+      ],
+      "next": [
+        "matrix-rank"
+      ]
+    }
+  },
+  {
+    "id": "matrix-rank",
+    "zh": "矩阵秩",
+    "en": "Matrix Rank",
+    "aliases": [
+      "矩阵的秩",
+      "模型秩",
+      "设计矩阵秩"
+    ],
+    "type": "concept",
+    "level": "intermediate",
+    "topic": "foundations",
+    "status": "draft",
+    "summary": "矩阵中最多能找到多少个线性独立列；回归中的残差自由度与设计矩阵秩有关。",
+    "relations": {
+      "prerequisites": [
+        "linear-dependence",
+        "matrix"
+      ],
+      "components": [],
+      "contrasts": [
+        "data-rank"
+      ],
+      "used_in": [
+        "degrees-of-freedom",
+        "multicollinearity"
+      ],
+      "next": [
+        "matrix-inverse"
+      ]
+    }
+  },
+  {
+    "id": "design-matrix",
+    "zh": "设计矩阵",
+    "en": "Design Matrix",
+    "aliases": [
+      "模型矩阵",
+      "固定效应设计矩阵",
+      "随机效应设计矩阵"
+    ],
+    "type": "concept",
+    "level": "intermediate",
+    "topic": "regression",
+    "status": "draft",
+    "summary": "把研究变量转换成模型真正使用的数值列，可能包括截距、类别编码和交互项。",
+    "relations": {
+      "prerequisites": [
+        "matrix",
+        "dummy-coding"
+      ],
+      "components": [],
+      "contrasts": [],
+      "used_in": [
+        "fixed-effect",
+        "random-effect",
+        "matrix-rank"
+      ],
+      "next": [
+        "multicollinearity"
+      ]
+    }
+  },
+  {
+    "id": "matrix-inverse",
+    "zh": "矩阵逆",
+    "en": "Matrix Inverse",
+    "aliases": [
+      "逆矩阵",
+      "可逆",
+      "可逆性",
+      "矩阵可逆"
+    ],
+    "type": "concept",
+    "level": "intermediate",
+    "topic": "foundations",
+    "status": "draft",
+    "summary": "能撤销方阵所代表的线性变换；不是把每个元素分别取倒数。",
+    "relations": {
+      "prerequisites": [
+        "matrix-rank"
+      ],
+      "components": [],
+      "contrasts": [],
+      "used_in": [
+        "mahalanobis-distance",
+        "structural-model",
+        "robust-standard-errors"
+      ],
+      "next": [
+        "determinant"
+      ]
+    }
+  },
+  {
+    "id": "determinant",
+    "zh": "行列式",
+    "en": "Determinant",
+    "aliases": [
+      "矩阵行列式"
+    ],
+    "type": "concept",
+    "level": "intermediate",
+    "topic": "foundations",
+    "status": "draft",
+    "summary": "把方阵对应的体积变化概括为一个带符号的数，不是元素总和或绝对值。",
+    "relations": {
+      "prerequisites": [
+        "matrix",
+        "matrix-inverse"
+      ],
+      "components": [],
+      "contrasts": [],
+      "used_in": [
+        "wilks-lambda"
+      ],
+      "next": [
+        "wilks-lambda"
+      ]
+    }
+  },
+  {
+    "id": "wilcoxon-rank-sum",
+    "zh": "Wilcoxon 秩和检验",
+    "en": "Wilcoxon Rank-Sum Test",
+    "aliases": [
+      "秩和检验",
+      "Mann–Whitney U 检验",
+      "Mann-Whitney U 检验"
+    ],
+    "type": "method",
+    "level": "intermediate",
+    "topic": "group-comparisons",
+    "status": "draft",
+    "summary": "比较两个独立组的排序位置；位置差解释需要额外的分布形状条件。",
+    "relations": {
+      "prerequisites": [
+        "data-rank",
+        "nonparametric-test",
+        "independence"
+      ],
+      "components": [],
+      "contrasts": [
+        "wilcoxon-signed-rank"
+      ],
+      "used_in": [
+        "nonparametric-test"
+      ],
+      "next": [
+        "wilcoxon-signed-rank"
+      ]
+    }
+  },
+  {
+    "id": "wilcoxon-signed-rank",
+    "zh": "Wilcoxon 符号秩检验",
+    "en": "Wilcoxon Signed-Rank Test",
+    "aliases": [
+      "符号秩检验",
+      "配对符号秩检验"
+    ],
+    "type": "method",
+    "level": "intermediate",
+    "topic": "group-comparisons",
+    "status": "draft",
+    "summary": "对配对差值的绝对大小排序并保留正负方向；常见位置解释要求差值分布对称。",
+    "relations": {
+      "prerequisites": [
+        "data-rank",
+        "nonparametric-test",
+        "repeated-measures"
+      ],
+      "components": [],
+      "contrasts": [
+        "wilcoxon-rank-sum"
+      ],
+      "used_in": [
+        "nonparametric-test"
+      ],
+      "next": []
+    }
+  },
+    {
+      "id": "outlier",
+      "zh": "异常值",
+      "en": "Outlier",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "public",
+      "summary": "识别相对多数观测明显偏离的值，并判断其来源和影响。",
+      "relations": {
+        "prerequisites": [
+          "data-cleaning",
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "multivariate-outlier"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "multivariate-outlier",
+      "zh": "多变量异常值",
+      "en": "Multivariate Outlier",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "用于理解和应用“多变量异常值”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "mahalanobis-distance"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "mahalanobis-distance",
+      "zh": "马氏距离",
+      "en": "Mahalanobis Distance",
+      "aliases": [],
+      "type": "indicator",
+      "level": "intermediate",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "用于理解和应用“马氏距离”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [
+          "covariance",
+          "multivariate-outlier",
+          "matrix-inverse"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "box-plot",
+      "zh": "盒式图",
+      "en": "Box Plot",
+      "aliases": [
+        "箱线图",
+        "箱形图"
+      ],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "盒子表示中间的一部分分数，须和单独的点提示更远的观测。",
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics",
+          "outlier"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "missing-data",
+      "zh": "缺失数据",
+      "en": "Missing Data",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "public",
+      "summary": "记录未观测到的变量取值，并评估缺失模式对分析的影响。",
+      "relations": {
+        "prerequisites": [
+          "data-cleaning"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "missing-data-mechanism",
+          "scale-scoring",
+          "sensitivity-analysis"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "missing-data-mechanism",
+      "zh": "缺失机制",
+      "en": "Missing Data Mechanism",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "用于理解和应用“缺失机制”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "multiple-imputation"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "multiple-imputation",
+      "zh": "多重插补",
+      "en": "Multiple Imputation",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "用于理解和应用“多重插补”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "standardization"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "standardization",
+      "zh": "数据标准化",
+      "en": "Standardization",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "用于理解和应用“数据标准化”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "centering"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "centering",
+      "zh": "数据中心化",
+      "en": "Centering",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "用于理解和应用“数据中心化”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "data-cleaning"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "manova",
+      "zh": "多元方差分析",
+      "en": "MANOVA",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“多元方差分析”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "anova"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "anova",
+      "zh": "一元方差分析",
+      "en": "ANOVA",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "public",
+      "summary": "通过组间与组内变异比较检验多个均值的差异。",
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics",
+          "p-value",
+          "effect-size"
+        ],
+        "components": [
+          "planned-contrast"
+        ],
+        "contrasts": [
+          "welch-anova"
+        ],
+        "used_in": [],
+        "next": [
+          "wilks-lambda"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "wilks-lambda",
+      "zh": "Wilks 统计量",
+      "en": "Wilks' Lambda",
+      "aliases": [],
+      "type": "indicator",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“Wilks 统计量”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [
+          "manova",
+          "determinant"
+        ],
+        "components": [],
+        "contrasts": [
+          "r-squared"
+        ],
+        "used_in": [
+          "manova"
+        ],
+        "next": [
+          "post-hoc-comparison"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "covariate",
+      "zh": "协变量",
+      "en": "Covariate",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“协变量”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "main-effect"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "main-effect",
+      "zh": "主效应",
+      "en": "Main Effect",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“主效应”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "interaction"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "interaction",
+      "zh": "交互作用",
+      "en": "Interaction",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“交互作用”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "simple-slope-test"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "simple-slope-test",
+      "zh": "简单斜率检验",
+      "en": "Simple Slope Test",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "在指定调节变量取值时，估计并检验预测变量的条件斜率。",
+      "relations": {
+        "prerequisites": [
+          "interaction",
+          "regression-coefficient"
+        ],
+        "components": [],
+        "contrasts": [
+          "main-effect"
+        ],
+        "used_in": [
+          "moderation-effect"
+        ],
+        "next": [
+          "conditional-effect"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "homogeneity-of-variance",
+      "zh": "方差齐性",
+      "en": "Homogeneity of Variance",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“方差齐性”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "multivariate-normality"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "multivariate-normality",
+      "zh": "多元正态性",
+      "en": "Multivariate Normality",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“多元正态性”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "sphericity"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "sphericity",
+      "zh": "球形假设",
+      "en": "Sphericity",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“球形假设”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "t-test"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "multiple-regression",
+      "zh": "多元回归",
+      "en": "Multiple Regression",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用多个预测变量共同解释连续结果，并估计各自的条件关系。",
+      "relations": {
+        "prerequisites": [
+          "simple-linear-regression"
+        ],
+        "components": [
+          "regression-coefficient",
+          "residual",
+          "r-squared"
+        ],
+        "contrasts": [
+          "manova"
+        ],
+        "used_in": [
+          "mediation-effect",
+          "moderation-effect"
+        ],
+        "next": [
+          "multicollinearity",
+          "cross-validation",
+          "confounding"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "regression-coefficient",
+      "zh": "回归系数",
+      "en": "Regression Coefficient",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用于理解和应用“回归系数”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "standard-error"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "standard-error",
+      "zh": "标准误",
+      "en": "Standard Error",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "regression",
+      "status": "public",
+      "summary": "用一个数概括统计量在重复抽样中的典型波动。",
+      "relations": {
+        "prerequisites": [
+          "sampling-distribution"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "r-squared"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "r-squared",
+      "zh": "决定系数",
+      "en": "R-squared",
+      "aliases": [],
+      "type": "indicator",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用于理解和应用“决定系数”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "multicollinearity"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "multicollinearity",
+      "zh": "多重共线性",
+      "en": "Multicollinearity",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用于理解和应用“多重共线性”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [
+          "multiple-regression",
+          "correlation-coefficient",
+          "design-matrix",
+          "matrix-rank",
+          "linear-dependence"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [
+          "multiple-regression"
+        ],
+        "next": [
+          "regression-coefficient"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "dummy-coding",
+      "zh": "虚拟编码",
+      "en": "Dummy Coding",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用于理解和应用“虚拟编码”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "stepwise-regression"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "stepwise-regression",
+      "zh": "逐步回归",
+      "en": "Stepwise Regression",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用于理解和应用“逐步回归”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "residual"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "residual",
+      "zh": "残差",
+      "en": "Residual",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用于理解和应用“残差”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "logistic-regression"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "logistic-regression",
+      "zh": "Logistic 回归",
+      "en": "Logistic Regression",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用于理解和应用“Logistic 回归”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "odds-ratio"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "odds-ratio",
+      "zh": "优势比",
+      "en": "Odds Ratio",
+      "aliases": [],
+      "type": "indicator",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用于理解和应用“优势比”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "maximum-likelihood"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "maximum-likelihood",
+      "zh": "极大似然估计",
+      "en": "Maximum Likelihood",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用于理解和应用“极大似然估计”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "product-indicator"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "product-indicator",
+      "zh": "交互项乘积指标",
+      "en": "Product Indicator",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用于理解和应用“交互项乘积指标”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "simple-linear-regression"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "discriminant-analysis",
+      "zh": "判别分析",
+      "en": "Discriminant Analysis",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "classification-clustering",
+      "status": "draft",
+      "summary": "用于理解和应用“判别分析”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "cluster-analysis"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "cluster-analysis",
+      "zh": "聚类分析",
+      "en": "Cluster Analysis",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "classification-clustering",
+      "status": "draft",
+      "summary": "用于理解和应用“聚类分析”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "hierarchical-clustering"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "hierarchical-clustering",
+      "zh": "层次聚类",
+      "en": "Hierarchical Clustering",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "classification-clustering",
+      "status": "draft",
+      "summary": "用于理解和应用“层次聚类”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "k-means-clustering"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "k-means-clustering",
+      "zh": "K 均值聚类",
+      "en": "K-means Clustering",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "classification-clustering",
+      "status": "draft",
+      "summary": "用于理解和应用“K 均值聚类”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "euclidean-distance"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "euclidean-distance",
+      "zh": "欧氏距离",
+      "en": "Euclidean Distance",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "classification-clustering",
+      "status": "draft",
+      "summary": "用于理解和应用“欧氏距离”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "efa",
+      "zh": "探索性因素分析",
+      "en": "EFA",
+      "aliases": [
+        "探索性因子分析",
+        "Exploratory Factor Analysis",
+        "EFA"
+      ],
+      "type": "method",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "在不预设完整题目归属的情况下探索量表的共同维度。",
+      "relations": {
+        "prerequisites": [
+          "correlation-coefficient"
+        ],
+        "components": [
+          "factor-extraction",
+          "factor-rotation",
+          "number-of-factors",
+          "parallel-analysis",
+          "polychoric-correlation"
+        ],
+        "contrasts": [
+          "cfa",
+          "pca"
+        ],
+        "used_in": [],
+        "next": [
+          "cfa"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "cfa",
+      "zh": "验证性因素分析",
+      "en": "CFA",
+      "aliases": [
+        "验证性因子分析",
+        "Confirmatory Factor Analysis",
+        "CFA"
+      ],
+      "type": "method",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "把预先提出的题目与因素关系转成模型，检查数据支持程度。",
+      "relations": {
+        "prerequisites": [
+          "latent-variable",
+          "measurement-error"
+        ],
+        "components": [
+          "measurement-model",
+          "factor-loading"
+        ],
+        "contrasts": [
+          "efa"
+        ],
+        "used_in": [
+          "sem"
+        ],
+        "next": [
+          "fit-indices",
+          "measurement-invariance"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "factor-loading",
+      "zh": "因素载荷",
+      "en": "Factor Loading",
+      "aliases": ["因子载荷", "载荷"],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“因素载荷”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "common-factor"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "common-factor",
+      "zh": "公共因素",
+      "en": "Common Factor",
+      "aliases": ["共同因素", "公共因子", "公因子"],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“公共因素”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "eigenvalue"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "eigenvalue",
+      "zh": "特征根",
+      "en": "Eigenvalue",
+      "aliases": [],
+      "type": "indicator",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“特征根”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "scree-plot"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "scree-plot",
+      "zh": "碎石图",
+      "en": "Scree Plot",
+      "aliases": [],
+      "type": "indicator",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“碎石图”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "factor-rotation"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "factor-rotation",
+      "zh": "因子旋转",
+      "en": "Factor Rotation",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“因子旋转”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "number-of-factors"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "number-of-factors",
+      "zh": "公共因素数确定",
+      "en": "Number of Factors",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "综合统计依据和心理解释，决定保留多少公共因素。",
+      "relations": {
+        "prerequisites": [
+          "eigenvalue"
+        ],
+        "components": [
+          "scree-plot",
+          "parallel-analysis",
+          "polychoric-correlation"
+        ],
+        "contrasts": [],
+        "used_in": [
+          "efa",
+          "factor-extraction"
+        ],
+        "next": [
+          "factor-rotation"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "model-identification",
+      "zh": "模型识别",
+      "en": "Model Identification",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“模型识别”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "fit-indices"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "fit-indices",
+      "zh": "模型拟合指数",
+      "en": "Fit Indices",
+      "aliases": [],
+      "type": "indicator",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“模型拟合指数”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "rmsea"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "rmsea",
+      "zh": "RMSEA",
+      "en": "RMSEA",
+      "aliases": [],
+      "type": "indicator",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“RMSEA”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "modification-index"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "modification-index",
+      "zh": "修正指数",
+      "en": "Modification Index",
+      "aliases": [],
+      "type": "indicator",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“修正指数”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "measurement-error"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "path-analysis",
+      "zh": "路径分析",
+      "en": "Path Analysis",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "structural-equation-modeling",
+      "status": "draft",
+      "summary": "用于理解和应用“路径分析”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "sem"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "sem",
+      "zh": "结构方程模型",
+      "en": "SEM",
+      "aliases": ["SEM"],
+      "type": "method",
+      "level": "advanced",
+      "topic": "structural-equation-modeling",
+      "status": "draft",
+      "summary": "用于理解和应用“结构方程模型”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "latent-variable"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "latent-variable",
+      "zh": "潜变量",
+      "en": "Latent Variable",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "structural-equation-modeling",
+      "status": "draft",
+      "summary": "用于理解和应用“潜变量”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "measurement-model"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "measurement-model",
+      "zh": "测量模型",
+      "en": "Measurement Model",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "structural-equation-modeling",
+      "status": "draft",
+      "summary": "用于理解和应用“测量模型”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "structural-model"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "structural-model",
+      "zh": "结构模型",
+      "en": "Structural Model",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "structural-equation-modeling",
+      "status": "draft",
+      "summary": "用于理解和应用“结构模型”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "non-recursive-model"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "non-recursive-model",
+      "zh": "非递归模型",
+      "en": "Non-recursive Model",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "structural-equation-modeling",
+      "status": "draft",
+      "summary": "用于理解和应用“非递归模型”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "model-modification"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "model-modification",
+      "zh": "模型修正",
+      "en": "Model Modification",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "structural-equation-modeling",
+      "status": "draft",
+      "summary": "用于理解和应用“模型修正”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "mediation-effect",
+      "zh": "中介效应",
+      "en": "Mediation Effect",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "用于理解和应用“中介效应”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "mediator"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "mediator",
+      "zh": "中介变量",
+      "en": "Mediator",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "用于理解和应用“中介变量”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "indirect-effect"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "indirect-effect",
+      "zh": "间接效应",
+      "en": "Indirect Effect",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "用于理解和应用“间接效应”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "bootstrap"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "bootstrap",
+      "zh": "Bootstrap 重抽样",
+      "en": "Bootstrap",
+      "aliases": [
+        "Bootstrap 检验",
+        "自助法",
+        "自助重抽样"
+      ],
+      "type": "method",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "通过有放回重抽样近似统计量的抽样变异。",
+      "relations": {
+        "prerequisites": [
+          "sampling-distribution",
+          "confidence-interval"
+        ],
+        "components": [],
+        "contrasts": [
+          "sobel-test"
+        ],
+        "used_in": [
+          "indirect-effect",
+          "moderated-mediation"
+        ],
+        "next": []
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "sobel-test",
+      "zh": "Sobel 检验",
+      "en": "Sobel Test",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "用于理解和应用“Sobel 检验”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "moderation-effect"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "moderation-effect",
+      "zh": "调节效应",
+      "en": "Moderation Effect",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "一个变量与结果的关系随另一变量取值而改变。",
+      "relations": {
+        "prerequisites": [
+          "multiple-regression",
+          "interaction"
+        ],
+        "components": [
+          "moderator",
+          "conditional-effect"
+        ],
+        "contrasts": [
+          "mediation-effect"
+        ],
+        "used_in": [
+          "moderated-mediation"
+        ],
+        "next": [
+          "interaction-plot",
+          "simple-slope-test"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "moderator",
+      "zh": "调节变量",
+      "en": "Moderator",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "用于理解和应用“调节变量”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "moderated-mediation"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "moderated-mediation",
+      "zh": "有调节的中介",
+      "en": "Moderated Mediation",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "用于理解和应用“有调节的中介”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "mediated-moderation"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "mediated-moderation",
+      "zh": "有中介的调节",
+      "en": "Mediated Moderation",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "用于理解和应用“有中介的调节”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "interaction-plot"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "interaction-plot",
+      "zh": "交互作用图",
+      "en": "Interaction Plot",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "用于理解和应用“交互作用图”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "direct-effect"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "hlm",
+      "zh": "多层线性模型",
+      "en": "HLM",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“多层线性模型”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "null-model"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "null-model",
+      "zh": "零模型",
+      "en": "Null Model",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“零模型”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "random-intercept-model"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "random-intercept-model",
+      "zh": "随机截距模型",
+      "en": "Random Intercept Model",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“随机截距模型”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "random-slope-model"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "random-slope-model",
+      "zh": "随机斜率模型",
+      "en": "Random Slope Model",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“随机斜率模型”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "icc"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "icc",
+      "zh": "组内相关系数",
+      "en": "ICC",
+      "aliases": [],
+      "type": "indicator",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“组内相关系数”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "fixed-effect"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "fixed-effect",
+      "zh": "固定效应",
+      "en": "Fixed Effect",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“固定效应”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [
+          "multiple-regression",
+          "design-matrix"
+        ],
+        "components": [],
+        "contrasts": [
+          "random-effect"
+        ],
+        "used_in": [
+          "hlm",
+          "growth-model"
+        ],
+        "next": [
+          "random-effect"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "random-effect",
+      "zh": "随机效应",
+      "en": "Random Effect",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“随机效应”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "growth-model"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "growth-model",
+      "zh": "增长模型",
+      "en": "Growth Model",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“增长模型”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "longitudinal-data"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "longitudinal-data",
+      "zh": "追踪研究数据",
+      "en": "Longitudinal Data",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“追踪研究数据”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "nested-data"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "effect-size",
+      "zh": "效应量",
+      "en": "Effect Size",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "hypothesis-testing",
+      "status": "public",
+      "summary": "量化差异或关联的大小，辅助判断研究结果的实际意义。",
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "partial-eta-squared"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "partial-eta-squared",
+      "zh": "偏 η²",
+      "en": "Partial Eta Squared",
+      "aliases": [],
+      "type": "indicator",
+      "level": "intermediate",
+      "topic": "hypothesis-testing",
+      "status": "draft",
+      "summary": "用于理解和应用“偏 η²”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "statistical-power"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "statistical-power",
+      "zh": "统计检验力",
+      "en": "Statistical Power",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "hypothesis-testing",
+      "status": "draft",
+      "summary": "在指定真实效应与模型条件下，检验拒绝零假设的概率。",
+      "relations": {
+        "prerequisites": [
+          "effect-size",
+          "type-i-and-type-ii-errors"
+        ],
+        "components": [],
+        "contrasts": [
+          "p-value"
+        ],
+        "used_in": [
+          "t-test",
+          "anova"
+        ],
+        "next": [
+          "confidence-interval",
+          "sample-size-planning"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "significance-level",
+      "zh": "显著性水平",
+      "en": "Significance Level",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "hypothesis-testing",
+      "status": "draft",
+      "summary": "用于理解和应用“显著性水平”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "p-value"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "p-value",
+      "zh": "p 值",
+      "en": "p-value",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "hypothesis-testing",
+      "status": "public",
+      "summary": "在零假设与检验模型下，衡量观察结果及更极端结果的概率。",
+      "relations": {
+        "prerequisites": [
+          "null-hypothesis"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "confidence-interval"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "confidence-interval",
+      "zh": "置信区间",
+      "en": "Confidence Interval",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "hypothesis-testing",
+      "status": "public",
+      "summary": "用区间展示参数估计的不确定性与可兼容范围。",
+      "relations": {
+        "prerequisites": [
+          "standard-error"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "multiple-comparison-correction"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "multiple-comparison-correction",
+      "zh": "多重比较校正",
+      "en": "Multiple Comparison Correction",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "hypothesis-testing",
+      "status": "draft",
+      "summary": "用于理解和应用“多重比较校正”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "null-hypothesis"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "t-test",
+      "zh": "t 检验",
+      "en": "t-test",
+      "aliases": [],
+      "type": "method",
+      "level": "basic",
+      "topic": "group-comparisons",
+      "status": "public",
+      "summary": "比较均值差异，并根据设计选择独立、配对或单样本检验。",
+      "relations": {
+        "prerequisites": [
+          "standard-error",
+          "p-value",
+          "effect-size"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "chi-square-test"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "chi-square-test",
+      "zh": "卡方检验",
+      "en": "Chi-square Test",
+      "aliases": [],
+      "type": "method",
+      "level": "basic",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用观察与期望频数的偏离，检验类别分布或类别关联。",
+      "relations": {
+        "prerequisites": [
+          "measurement-scales",
+          "independence"
+        ],
+        "components": [
+          "degrees-of-freedom"
+        ],
+        "contrasts": [
+          "t-test",
+          "fisher-exact-test"
+        ],
+        "used_in": [],
+        "next": [
+          "multiple-comparison-correction"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "post-hoc-comparison",
+      "zh": "事后比较",
+      "en": "Post Hoc Comparison",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "在总体比较之后定位具体差异，并安排同一比较族的错误控制。",
+      "relations": {
+        "prerequisites": [
+          "anova",
+          "multiple-comparison-correction"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [
+          "anova",
+          "manova"
+        ],
+        "next": [
+          "confidence-interval"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "nonparametric-test",
+      "zh": "非参数检验",
+      "en": "Nonparametric Test",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“非参数检验”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [
+          "measurement-scales",
+          "independence"
+        ],
+        "components": [],
+        "contrasts": [
+          "t-test"
+        ],
+        "used_in": [],
+        "next": [
+          "effect-size",
+          "wilcoxon-rank-sum",
+          "wilcoxon-signed-rank"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "degrees-of-freedom",
+      "zh": "自由度",
+      "en": "Degrees of Freedom",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“自由度”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [
+          "parameter-and-statistic",
+          "matrix-rank"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [
+          "t-test",
+          "f-statistic",
+          "chi-square-test"
+        ],
+        "next": [
+          "mean-square"
+        ]
+      },
+      "candidate_origin": "legacy-candidate"
+    },
+    {
+      "id": "variable",
+      "zh": "变量",
+      "en": "Variable",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "public",
+      "summary": "识别数据中的观测对象、属性与取值，是选择统计方法的起点。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "standard-score"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "standard-score",
+      "zh": "标准分数",
+      "en": "Standard Score",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "public",
+      "summary": "把观测值转换为相对平均水平的标准差单位。",
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "descriptive-statistics"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "null-hypothesis",
+      "zh": "零假设",
+      "en": "Null Hypothesis",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "hypothesis-testing",
+      "status": "public",
+      "summary": "给统计检验指定一个供比较的基准主张。",
+      "relations": {
+        "prerequisites": [
+          "sampling-distribution"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "null-and-alternative-hypotheses"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "data-cleaning",
+      "zh": "数据清理",
+      "en": "Data Cleaning",
+      "aliases": [],
+      "type": "workflow",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "public",
+      "summary": "记录并处理重复、缺失、编码错误与不合理观测的分析前流程。",
+      "relations": {
+        "prerequisites": [
+          "variable"
+        ],
+        "components": [
+          "reverse-scoring",
+          "scale-scoring",
+          "sensitivity-analysis"
+        ],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "exploratory-data-analysis"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "exploratory-data-analysis",
+      "zh": "探索性数据分析",
+      "en": "Exploratory Data Analysis",
+      "aliases": [],
+      "type": "workflow",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "用于理解和应用“探索性数据分析”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "descriptive-statistics",
+      "zh": "描述统计",
+      "en": "Descriptive Statistics",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "public",
+      "summary": "用表格、图形和概括量描述样本数据的分布。",
+      "relations": {
+        "prerequisites": [
+          "variable"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "measurement-scales"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "measurement-scales",
+      "zh": "变量与测量尺度",
+      "en": "Variables and Measurement Scales",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "用于理解和应用“变量与测量尺度”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "population-and-sample"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "population-and-sample",
+      "zh": "总体与样本",
+      "en": "Population and Sample",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "用于理解和应用“总体与样本”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "parameter-and-statistic"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "parameter-and-statistic",
+      "zh": "参数与统计量",
+      "en": "Parameter and Statistic",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "用于理解和应用“参数与统计量”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "central-tendency-and-dispersion"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "central-tendency-and-dispersion",
+      "zh": "集中趋势与离散程度",
+      "en": "Central Tendency and Dispersion",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "用于理解和应用“集中趋势与离散程度”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "normal-distribution"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "normal-distribution",
+      "zh": "正态分布",
+      "en": "Normal Distribution",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "用于理解和应用“正态分布”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "sampling-distribution"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "sampling-distribution",
+      "zh": "抽样分布",
+      "en": "Sampling Distribution",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "public",
+      "summary": "描述重复抽样时统计量如何波动，是统计推断的依据。",
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "statistical-assumptions"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "null-and-alternative-hypotheses",
+      "zh": "零假设与备择假设",
+      "en": "Null and Alternative Hypotheses",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "hypothesis-testing",
+      "status": "draft",
+      "summary": "用于理解和应用“零假设与备择假设”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "type-i-and-type-ii-errors"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "type-i-and-type-ii-errors",
+      "zh": "第一类错误与第二类错误",
+      "en": "Type I and Type II Errors",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "hypothesis-testing",
+      "status": "draft",
+      "summary": "用于理解和应用“第一类错误与第二类错误”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "statistical-assumptions",
+      "zh": "统计假设",
+      "en": "Statistical Assumptions",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "用于理解和应用“统计假设”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "normality"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "normality",
+      "zh": "正态性",
+      "en": "Normality",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "用于理解和应用“正态性”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "linearity"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "linearity",
+      "zh": "线性",
+      "en": "Linearity",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "用于理解和应用“线性”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "independence"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "independence",
+      "zh": "独立性",
+      "en": "Independence",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "用于理解和应用“独立性”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "covariance"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "covariance",
+      "zh": "协方差",
+      "en": "Covariance",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "用于理解和应用“协方差”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "correlation-coefficient"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "correlation-coefficient",
+      "zh": "相关系数",
+      "en": "Correlation Coefficient",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "public",
+      "summary": "描述两个变量共同变化的方向和强度。",
+      "relations": {
+        "prerequisites": [
+          "variable",
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "spearman-correlation",
+          "partial-correlation"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "simple-linear-regression",
+      "zh": "简单线性回归",
+      "en": "Simple Linear Regression",
+      "aliases": [],
+      "type": "method",
+      "level": "basic",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用于理解和应用“简单线性回归”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "influential-point"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "influential-point",
+      "zh": "影响点",
+      "en": "Influential Point",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用于理解和应用“影响点”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "sum-of-squares",
+      "zh": "平方和",
+      "en": "Sum of Squares",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“平方和”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "mean-square"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "mean-square",
+      "zh": "均方",
+      "en": "Mean Square",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“均方”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "f-statistic"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "f-statistic",
+      "zh": "F 统计量",
+      "en": "F Statistic",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“F 统计量”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "repeated-measures"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "repeated-measures",
+      "zh": "重复测量",
+      "en": "Repeated Measures",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "用于理解和应用“重复测量”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "measurement-error",
+      "zh": "测量误差",
+      "en": "Measurement Error",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“测量误差”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "communality"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "communality",
+      "zh": "共同度",
+      "en": "Communality",
+      "aliases": [],
+      "type": "indicator",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“共同度”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "kmo"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "kmo",
+      "zh": "KMO 指数",
+      "en": "KMO",
+      "aliases": [
+        "KMO 检验",
+        "Kaiser–Meyer–Olkin 指数"
+      ],
+      "type": "indicator",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "比较简单相关与偏相关，评估共同因素分析的相关模式适切性。",
+      "relations": {
+        "prerequisites": [
+          "correlation-coefficient"
+        ],
+        "components": [],
+        "contrasts": [
+          "bartlett-test"
+        ],
+        "used_in": [
+          "efa"
+        ],
+        "next": [
+          "efa"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "bartlett-test",
+      "zh": "Bartlett 球形检验",
+      "en": "Bartlett's Test of Sphericity",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“Bartlett 球形检验”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "pca"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "pca",
+      "zh": "主成分分析",
+      "en": "Principal Component Analysis",
+      "aliases": ["PCA"],
+      "type": "method",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“主成分分析”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "factor-extraction"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "factor-extraction",
+      "zh": "因素提取",
+      "en": "Factor Extraction",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "用于理解和应用“因素提取”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "direct-effect",
+      "zh": "直接效应",
+      "en": "Direct Effect",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "用于理解和应用“直接效应”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "total-effect"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "total-effect",
+      "zh": "总效应",
+      "en": "Total Effect",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "用于理解和应用“总效应”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "conditional-effect"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "conditional-effect",
+      "zh": "条件效应",
+      "en": "Conditional Effect",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "mediation-moderation",
+      "status": "draft",
+      "summary": "用于理解和应用“条件效应”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "nested-data",
+      "zh": "嵌套数据",
+      "en": "Nested Data",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“嵌套数据”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "level-one"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "level-one",
+      "zh": "水平一",
+      "en": "Level 1",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“水平一”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "level-two"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "level-two",
+      "zh": "水平二",
+      "en": "Level 2",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“水平二”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "reml"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "reml",
+      "zh": "限制性极大似然估计",
+      "en": "Restricted Maximum Likelihood",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“限制性极大似然估计”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "time-coding"
+        ]
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "time-coding",
+      "zh": "时间编码",
+      "en": "Time Coding",
+      "aliases": [],
+      "type": "concept",
+      "level": "advanced",
+      "topic": "multilevel-longitudinal",
+      "status": "draft",
+      "summary": "用于理解和应用“时间编码”的心理统计候选条目。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      },
+      "candidate_origin": "design-spec"
+    },
+    {
+      "id": "reliability",
+      "zh": "信度",
+      "en": "Reliability",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "在指定人群、计分与研究设计下评估分数受测量误差影响的程度。",
+      "relations": {
+        "prerequisites": [
+          "measurement-error"
+        ],
+        "components": [
+          "internal-consistency"
+        ],
+        "contrasts": [
+          "validity"
+        ],
+        "used_in": [],
+        "next": [
+          "icc"
+        ]
+      }
+    },
+    {
+      "id": "internal-consistency",
+      "zh": "内部一致性",
+      "en": "Internal Consistency",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "评估同一反映性维度内条目之间的关联与共同测量表现。",
+      "relations": {
+        "prerequisites": [
+          "reliability"
+        ],
+        "components": [
+          "cronbach-alpha",
+          "mcdonald-omega"
+        ],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "efa"
+        ]
+      }
+    },
+    {
+      "id": "cronbach-alpha",
+      "zh": "Cronbach's α",
+      "en": "Cronbach's Alpha",
+      "aliases": [
+        "克隆巴赫α",
+        "Cronbach α",
+        "克朗巴赫系数"
+      ],
+      "type": "indicator",
+      "level": "intermediate",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "从条目方差与合成总分方差估计原始α，需说明其模型与计分条件。",
+      "relations": {
+        "prerequisites": [
+          "internal-consistency"
+        ],
+        "components": [],
+        "contrasts": [
+          "mcdonald-omega"
+        ],
+        "used_in": [],
+        "next": []
+      }
+    },
+    {
+      "id": "mcdonald-omega",
+      "zh": "McDonald's ω",
+      "en": "McDonald's Omega",
+      "aliases": [
+        "麦克唐纳ω",
+        "McDonald ω"
+      ],
+      "type": "indicator",
+      "level": "intermediate",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "在明确因素模型和计分方式下估计合成分数中公共因素相关变异的比例。",
+      "relations": {
+        "prerequisites": [
+          "internal-consistency",
+          "factor-loading"
+        ],
+        "components": [],
+        "contrasts": [
+          "cronbach-alpha"
+        ],
+        "used_in": [],
+        "next": []
+      }
+    },
+    {
+      "id": "validity",
+      "zh": "效度",
+      "en": "Validity",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "为特定用途下的分数解释积累内容、结构和外部关系等证据。",
+      "relations": {
+        "prerequisites": [
+          "reliability"
+        ],
+        "components": [
+          "measurement-invariance"
+        ],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      }
+    },
+    {
+      "id": "measurement-invariance",
+      "zh": "测量不变性",
+      "en": "Measurement Invariance",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "评估跨群体或时间的测量模型是否足以支持同一尺度上的比较。",
+      "relations": {
+        "prerequisites": [
+          "cfa"
+        ],
+        "components": [],
+        "contrasts": [
+          "validity"
+        ],
+        "used_in": [],
+        "next": []
+      }
+    },
+    {
+      "id": "parallel-analysis",
+      "zh": "平行分析",
+      "en": "Parallel Analysis",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "与匹配随机资料的特征根比较，为因素数提供参考。",
+      "relations": {
+        "prerequisites": [
+          "eigenvalue"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "number-of-factors"
+        ]
+      }
+    },
+    {
+      "id": "polychoric-correlation",
+      "zh": "多分相关",
+      "en": "Polychoric Correlation",
+      "aliases": [
+        "多序相关",
+        "多级相关"
+      ],
+      "type": "method",
+      "level": "advanced",
+      "topic": "factor-analysis",
+      "status": "draft",
+      "summary": "在阈值与潜在双变量正态模型下估计有序题的潜在连续关联。",
+      "relations": {
+        "prerequisites": [
+          "measurement-scales",
+          "correlation-coefficient"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "efa",
+          "cfa"
+        ]
+      }
+    },
+    {
+      "id": "spearman-correlation",
+      "zh": "Spearman 相关",
+      "en": "Spearman Rank Correlation",
+      "aliases": [
+        "斯皮尔曼相关",
+        "秩相关"
+      ],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "用秩的相关量化两个变量的单调关联。",
+      "relations": {
+        "prerequisites": [
+          "correlation-coefficient",
+          "data-rank"
+        ],
+        "components": [],
+        "contrasts": [
+          "partial-correlation"
+        ],
+        "used_in": [],
+        "next": []
+      }
+    },
+    {
+      "id": "partial-correlation",
+      "zh": "偏相关",
+      "en": "Partial Correlation",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "描述去除指定控制项线性关系后两个变量剩余部分的关联。",
+      "relations": {
+        "prerequisites": [
+          "correlation-coefficient"
+        ],
+        "components": [],
+        "contrasts": [
+          "spearman-correlation"
+        ],
+        "used_in": [],
+        "next": [
+          "multiple-regression"
+        ]
+      }
+    },
+    {
+      "id": "sample-size-planning",
+      "zh": "样本量规划",
+      "en": "Sample Size Planning",
+      "aliases": [],
+      "type": "workflow",
+      "level": "intermediate",
+      "topic": "hypothesis-testing",
+      "status": "draft",
+      "summary": "在研究前结合效应、精度、设计与资源确定招募需求。",
+      "relations": {
+        "prerequisites": [
+          "statistical-power",
+          "effect-size"
+        ],
+        "components": [
+          "sesoi"
+        ],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      }
+    },
+    {
+      "id": "sesoi",
+      "zh": "最小有意义效应",
+      "en": "Smallest Effect Size of Interest",
+      "aliases": [
+        "SESOI",
+        "最小关注效应"
+      ],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "hypothesis-testing",
+      "status": "draft",
+      "summary": "以理论、应用或成本为依据定义值得关注的效应边界。",
+      "relations": {
+        "prerequisites": [
+          "effect-size"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "equivalence-testing"
+        ]
+      }
+    },
+    {
+      "id": "equivalence-testing",
+      "zh": "等效性检验",
+      "en": "Equivalence Testing",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "hypothesis-testing",
+      "status": "draft",
+      "summary": "判断效应是否落在事先论证的可忽略区间内，而非是否严格等于零。",
+      "relations": {
+        "prerequisites": [
+          "sesoi",
+          "confidence-interval"
+        ],
+        "components": [],
+        "contrasts": [
+          "measurement-invariance"
+        ],
+        "used_in": [],
+        "next": []
+      }
+    },
+    {
+      "id": "welch-anova",
+      "zh": "Welch 方差分析",
+      "en": "Welch ANOVA",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "在独立多组且方差不齐时检验总体均值相等，调整权重与自由度。",
+      "relations": {
+        "prerequisites": [
+          "anova",
+          "homogeneity-of-variance"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "planned-contrast"
+        ]
+      }
+    },
+    {
+      "id": "planned-contrast",
+      "zh": "计划对比",
+      "en": "Planned Contrast",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "把预先明确的组均值研究问题写成有解释的线性组合。",
+      "relations": {
+        "prerequisites": [
+          "anova"
+        ],
+        "components": [],
+        "contrasts": [
+          "post-hoc-comparison"
+        ],
+        "used_in": [],
+        "next": []
+      }
+    },
+    {
+      "id": "fisher-exact-test",
+      "zh": "Fisher 精确检验",
+      "en": "Fisher's Exact Test",
+      "aliases": [
+        "费舍尔精确检验"
+      ],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "draft",
+      "summary": "在列联计数表的固定边缘条件下检验关联，适用于稀疏表的相应设计。",
+      "relations": {
+        "prerequisites": [
+          "chi-square-test"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "odds-ratio"
+        ]
+      }
+    },
+    {
+      "id": "reverse-scoring",
+      "zh": "反向计分",
+      "en": "Reverse Scoring",
+      "aliases": [],
+      "type": "workflow",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "按量表手册把指定条目转为与分数解释一致的方向。",
+      "relations": {
+        "prerequisites": [
+          "measurement-scales"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "scale-scoring"
+        ]
+      }
+    },
+    {
+      "id": "scale-scoring",
+      "zh": "量表计分",
+      "en": "Scale Scoring",
+      "aliases": [],
+      "type": "workflow",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "依据量表版本、维度和手册缺失规则生成具有明确含义的分数。",
+      "relations": {
+        "prerequisites": [
+          "reverse-scoring"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "internal-consistency"
+        ]
+      }
+    },
+    {
+      "id": "heteroscedasticity",
+      "zh": "异方差",
+      "en": "Heteroscedasticity",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "误差的条件变异随预测条件改变，影响普通SE与区间的适用性。",
+      "relations": {
+        "prerequisites": [
+          "residual"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "robust-standard-errors"
+        ]
+      }
+    },
+    {
+      "id": "robust-standard-errors",
+      "zh": "稳健标准误",
+      "en": "Robust Standard Errors",
+      "aliases": [],
+      "type": "method",
+      "level": "advanced",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "在指定误差失配范围内调整协方差估计，而不自动修改回归系数。",
+      "relations": {
+        "prerequisites": [
+          "heteroscedasticity",
+          "standard-error"
+        ],
+        "components": [],
+        "contrasts": [
+          "confounding"
+        ],
+        "used_in": [],
+        "next": [
+          "sensitivity-analysis"
+        ]
+      }
+    },
+    {
+      "id": "cross-validation",
+      "zh": "交叉验证",
+      "en": "Cross-Validation",
+      "aliases": [],
+      "type": "workflow",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "用不参与训练的折估计预测误差，所有学习到的预处理都须在训练折内。",
+      "relations": {
+        "prerequisites": [
+          "multiple-regression"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      }
+    },
+    {
+      "id": "confounding",
+      "zh": "混杂",
+      "en": "Confounding",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "目标关系受共同原因等结构影响，观察关联可能不同于欲识别的因果效应。",
+      "relations": {
+        "prerequisites": [
+          "correlation-coefficient"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "partial-correlation",
+          "multiple-regression"
+        ]
+      }
+    },
+    {
+      "id": "sensitivity-analysis",
+      "zh": "敏感性分析",
+      "en": "Sensitivity Analysis",
+      "aliases": [],
+      "type": "workflow",
+      "level": "intermediate",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "透明比较合理假设或处理选择改变时，估计与结论如何变化。",
+      "relations": {
+        "prerequisites": [
+          "statistical-assumptions"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "robust-standard-errors"
+        ]
+      }
+    },
+    {
+      "id": "intercept",
+      "zh": "截距",
+      "en": "Intercept",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "模型中预测变量处于零点或参考条件时的预期结果。",
+      "relations": {
+        "prerequisites": [
+          "simple-linear-regression"
+        ],
+        "components": [],
+        "contrasts": [
+          "regression-coefficient"
+        ],
+        "used_in": [
+          "multiple-regression",
+          "sem"
+        ],
+        "next": [
+          "centering"
+        ]
+      }
+    },
+    {
+      "id": "path-coefficient",
+      "zh": "路径系数",
+      "en": "Path Coefficient",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "structural-equation-modeling",
+      "status": "draft",
+      "summary": "指定模型中一条有向路径的条件关系强度，不自动等于因果效应。",
+      "relations": {
+        "prerequisites": [
+          "regression-coefficient"
+        ],
+        "components": [],
+        "contrasts": [
+          "correlation-coefficient",
+          "causal-relationship"
+        ],
+        "used_in": [
+          "path-analysis",
+          "sem",
+          "mediation-effect"
+        ],
+        "next": [
+          "direct-effect",
+          "indirect-effect"
+        ]
+      }
+    },
+    {
+      "id": "model-fit",
+      "zh": "模型拟合",
+      "en": "Model Fit",
+      "aliases": [
+        "拟合"
+      ],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "检查模型能否恰当地描述数据结构，与显著、预测和因果分别判断。",
+      "relations": {
+        "prerequisites": [
+          "simple-linear-regression",
+          "residual"
+        ],
+        "components": [],
+        "contrasts": [
+          "r-squared",
+          "cross-validation"
+        ],
+        "used_in": [
+          "multiple-regression",
+          "cfa",
+          "sem"
+        ],
+        "next": [
+          "fit-indices",
+          "rmsea"
+        ]
+      }
+    },
+    {
+      "id": "causal-relationship",
+      "zh": "因果关系",
+      "en": "Causal Relationship",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "明确改变一个条件是否会使结果改变，而不只是观察两者一起变化。",
+      "relations": {
+        "prerequisites": [
+          "correlation-coefficient"
+        ],
+        "components": [],
+        "contrasts": [
+          "correlation-coefficient",
+          "model-fit"
+        ],
+        "used_in": [
+          "path-analysis",
+          "mediation-effect"
+        ],
+        "next": [
+          "confounding",
+          "sensitivity-analysis"
+        ]
+      }
+    },
+    {
+      "id": "histogram",
+      "zh": "直方图",
+      "en": "Histogram",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "把分数分装进相邻的箱子，比较各箱装了多少人。箱子怎么分，会影响看到的轮廓。",
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "qq-plot",
+          "skewness"
+        ]
+      }
+    },
+    {
+      "id": "qq-plot",
+      "zh": "Q-Q 图",
+      "en": "Quantile–Quantile Plot",
+      "aliases": [
+        "QQ 图",
+        "QQ图",
+        "Q-Q图",
+        "正态 Q-Q 图"
+      ],
+      "type": "concept",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "按从小到大排列后，比一比数据中的位置和参照分布中的位置是否沿直线对得上。",
+      "relations": {
+        "prerequisites": [
+          "quantile",
+          "normal-distribution"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "normality",
+          "histogram"
+        ]
+      }
+    },
+    {
+      "id": "skewness",
+      "zh": "偏态与偏度",
+      "en": "Skewness",
+      "aliases": [
+        "偏态",
+        "偏度"
+      ],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "哪一边拖着更长的尾巴，就称向哪一边偏；不由最高柱在哪边决定。",
+      "relations": {
+        "prerequisites": [
+          "central-tendency-and-dispersion"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "histogram",
+          "normal-distribution"
+        ]
+      }
+    },
+    {
+      "id": "extreme-value",
+      "zh": "极端值",
+      "en": "Extreme Observation",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "draft",
+      "summary": "极端只是位置很靠边，不是数据有错的判决。",
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "outlier",
+          "influential-point"
+        ]
+      }
+    },
+    {
+      "id": "quantile",
+      "zh": "分位数",
+      "en": "Quantile",
+      "aliases": [
+        "四分位数",
+        "百分位数"
+      ],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "先把分数排好队，再找走到某个比例的位置时对应多少分。",
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "box-plot",
+          "qq-plot"
+        ]
+      }
+    },
+    {
+      "id": "probability-density",
+      "zh": "概率密度",
+      "en": "Probability Density",
+      "aliases": [
+        "概率密度函数"
+      ],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "高度像单位长度内的集中程度，面积才是落入一段范围的比例。",
+      "relations": {
+        "prerequisites": [
+          "continuous-variable"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "normal-distribution",
+          "histogram"
+        ]
+      }
+    },
+    {
+      "id": "continuous-variable",
+      "zh": "连续变量",
+      "en": "Continuous Variable",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "连续是在说理论上可以细分得更细，不是在说表格里一定带小数。",
+      "relations": {
+        "prerequisites": [
+          "variable",
+          "measurement-scales"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "probability-density",
+          "normal-distribution"
+        ]
+      }
+    },
+    {
+      "id": "vector",
+      "zh": "向量",
+      "en": "Vector",
+      "aliases": ["矢量"],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "一个符号可以打包一串有顺序的数，但每个位置代表什么不能省略。",
+      "relations": {
+        "prerequisites": [
+          "variable"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "matrix",
+          "factor-loading"
+        ]
+      }
+    },
+    {
+      "id": "matrix",
+      "zh": "矩阵",
+      "en": "Matrix",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "它像一张有严格行列顺序的数字表；一个大写字母可以代表整张表。",
+      "relations": {
+        "prerequisites": [
+          "vector"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "matrix-transpose",
+          "covariance-matrix",
+          "linear-dependence"
+        ]
+      }
+    },
+    {
+      "id": "matrix-transpose",
+      "zh": "矩阵转置",
+      "en": "Matrix Transpose",
+      "aliases": [
+        "转置"
+      ],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "把表格的行横着改成列，不重新估计表中的数字。",
+      "relations": {
+        "prerequisites": [
+          "matrix"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "covariance-matrix",
+          "common-factor"
+        ]
+      }
+    },
+    {
+      "id": "covariance-matrix",
+      "zh": "协方差矩阵",
+      "en": "Covariance Matrix",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "foundations",
+      "status": "draft",
+      "summary": "这张表把每列自己的散布放在对角线，把两列一起变化的量放在交叉位置。",
+      "relations": {
+        "prerequisites": [
+          "matrix",
+          "covariance"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "cfa",
+          "sem"
+        ]
+      }
+    },
+    {
+      "id": "likelihood",
+      "zh": "似然",
+      "en": "Likelihood",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "数据已经拿到手，换一组参数，看看这组参数让眼前数据有多相容。",
+      "relations": {
+        "prerequisites": [
+          "parameter-and-statistic",
+          "probability-density"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "maximum-likelihood",
+          "reml"
+        ]
+      }
+    },
+    {
+      "id": "convergence",
+      "zh": "收敛",
+      "en": "Convergence",
+      "aliases": [
+        "模型收敛"
+      ],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "程序说已经走到它允许停止的位置，还要检查这个位置是不是可信的解。",
+      "relations": {
+        "prerequisites": [
+          "maximum-likelihood"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "sem",
+          "model-fit"
+        ]
+      }
+    },
+    {
+      "id": "overfitting",
+      "zh": "过拟合",
+      "en": "Overfitting",
+      "aliases": [],
+      "type": "concept",
+      "level": "intermediate",
+      "topic": "regression",
+      "status": "draft",
+      "summary": "不仅学到了稳定模式，还把这批人的偶然特点当成普遍规律。",
+      "relations": {
+        "prerequisites": [
+          "model-fit"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "cross-validation",
+          "stepwise-regression"
+        ]
+      }
+    }
+  ]
+}

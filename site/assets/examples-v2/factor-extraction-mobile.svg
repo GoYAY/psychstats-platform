@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="637pt" viewBox="0 0 360 637" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">因素提取针对题目共享的变化，后续还需检查载荷。。图为概念设定；提取方法不同，不能直接照搬主成分结果。</desc><title id="title">情绪题的共同变化</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:43.684420</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 637  L 360 637  L 360 0  L 0 0  L 0 637  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 97.568338 176.987335  Q 88.999981 248.500157 80.577932 318.791876  " clip-path="url(#pbf286eed27)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 83.531919 314.311479  L 80.577932 318.791876  L 78.766007 313.740448  z " clip-path="url(#pbf286eed27)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 108.644268 176.969391  Q 121.499985 248.499914 134.138156 318.819994  " clip-path="url(#pbf286eed27)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 135.65124 313.671152  L 134.138156 318.819994  L 130.926933 314.520221  z " clip-path="url(#pbf286eed27)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 251.355732 176.969391  Q 238.500015 248.499914 225.861844 318.819994  " clip-path="url(#pbf286eed27)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 229.073067 314.520221  L 225.861844 318.819994  L 224.34876 313.671152  z " clip-path="url(#pbf286eed27)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_5">
+    <path d="M 262.431662 176.987335  Q 271.000019 248.500157 279.422068 318.791876  " clip-path="url(#pbf286eed27)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 281.233993 313.740448  L 279.422068 318.791876  L 276.468081 314.311479  z " clip-path="url(#pbf286eed27)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 102 111  C 109.956093 111 117.587396 114.055623 123.213203 119.493903  C 128.839011 124.932184 132 132.30911 132 140  C 132 147.69089 128.839011 155.067816 123.213203 160.506097  C 117.587396 165.944377 109.956093 169 102 169  C 94.043907 169 86.412604 165.944377 80.786797 160.506097  C 75.160989 155.067816 72 147.69089 72 140  C 72 132.30911 75.160989 124.932184 80.786797 119.493903  C 86.412604 114.055623 94.043907 111 102 111  z " clip-path="url(#pbf286eed27)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 258 111  C 265.956093 111 273.587396 114.055623 279.213203 119.493903  C 284.839011 124.932184 288 132.30911 288 140  C 288 147.69089 284.839011 155.067816 279.213203 160.506097  C 273.587396 165.944377 265.956093 169 258 169  C 250.043907 169 242.412604 165.944377 236.786797 160.506097  C 231.160989 155.067816 228 147.69089 228 140  C 228 132.30911 231.160989 124.932184 236.786797 119.493903  C 242.412604 114.055623 250.043907 111 258 111  z " clip-path="url(#pbf286eed27)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 55 328  L 97 328  Q 106 328 106 337  L 106 377  Q 106 386 97 386  L 55 386  Q 46 386 46 377  L 46 337  Q 46 328 55 328  z " clip-path="url(#pbf286eed27)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 120 328  L 162 328  Q 171 328 171 337  L 171 377  Q 171 386 162 386  L 120 386  Q 111 386 111 377  L 111 337  Q 111 328 120 328  z " clip-path="url(#pbf286eed27)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-4">
+    <path d="M 198 328  L 240 328  Q 249 328 249 337  L 249 377  Q 249 386 240 386  L 198 386  Q 189 386 189 377  L 189 337  Q 189 328 198 328  z " clip-path="url(#pbf286eed27)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-5">
+    <path d="M 263 328  L 305 328  Q 314 328 314 337  L 314 377  Q 314 386 305 386  L 263 386  Q 254 386 254 377  L 254 337  Q 254 328 263 328  z " clip-path="url(#pbf286eed27)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(84 137.073359)">担忧方</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(96 149.91125)">面</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 136.926992)">身体紧</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 150.046367)">张方面</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(58 353.903555)">担忧考</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(64 366.998555)">试题</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(123 353.914805)">担忧未</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(129 367.02293)">来题</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(201 353.90918)">肌肉紧</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(207 366.97043)">绷题</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(266 354.061992)">身体不</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(272 366.911367)">适题</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="523.778555" transform="rotate(-0 20 523.778555)">1. 担忧方面 → 担忧考试题：待检查</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="551.778555" transform="rotate(-0 20 551.778555)">2. 担忧方面 → 担忧未来题：待检查</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="579.778555" transform="rotate(-0 20 579.778555)">3. 身体紧张方面 → 肌肉紧绷题：待检查</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="607.778555" transform="rotate(-0 20 607.778555)">4. 身体紧张方面 → 身体不适题：待检查</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbf286eed27">
+   <rect x="0" y="0" width="360" height="637" />
+  </clipPath>
+ </defs>
+</svg>

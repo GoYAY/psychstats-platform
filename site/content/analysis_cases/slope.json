@@ -1,0 +1,69 @@
+{
+  "id": "slope",
+  "unit_id": "slope",
+  "title": "班级之间的斜率也会不同吗",
+  "question": "动机与成绩的联系，是否随老师支持水平而改变？",
+  "design": "复用班级教学数据，动机按班级均值中心化，教师支持总体中心化。班级随机截距和动机随机斜率设为不相关（pdDiag），固定项含跨层交互。",
+  "variables": "数据列、分组 ID 及时间/中心化编码见代码；已有教学数据非真实研究样本。",
+  "script": "examples/r/output_reading/slope.R",
+  "data_files": [
+    "examples/data/nested_classrooms.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "interaction",
+      "label": "动机×教师支持系数",
+      "meaning": "班级教师支持每增加一单位，班内动机斜率变化；这是跨层交互。",
+      "term": "hlm",
+      "format": ".3f"
+    },
+    {
+      "field_id": "slope_variance",
+      "label": "随机斜率方差",
+      "meaning": "班级斜率剩余差异，接近零可能是边界解，不能用普通 p 判断方差为零。",
+      "term": "random-slope-model",
+      "format": ".3f"
+    },
+    {
+      "field_id": "groups",
+      "label": "班级数",
+      "meaning": "跨层交互主要依赖组层信息；很多学生不能补偿极少班级。",
+      "term": "hlm",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "先判断这些前提是否成立",
+      "body": "非收敛与方差边界需要先处理；随机结构简化须有设计和稳定性依据，不只因为某一版本显著。"
+    },
+    {
+      "title": "结果不显著或不稳定时",
+      "body": "分别检查数据结构、模型识别与区间精度。考虑测量质量、组数或时间覆盖是否足够；报告实际不确定性和敏感性，不以反复简化或换编码追求显著。"
+    }
+  ],
+  "report_template": "包含班内动机、班级平均动机及教师支持的随机斜率模型，跨层交互系数为 {interaction:.4f}（p = {p:.4g}），班内动机的随机斜率方差为 {slope_variance:.4f}，共 {groups:.0f} 个班级。截距与斜率随机项在本例设为不相关。",
+  "sources": [
+    {
+      "title": "估计与诊断的官方资料",
+      "url": "https://search.r-project.org/CRAN/refmans/nlme/html/lme.html"
+    }
+  ],
+  "related_terms": [
+    "hlm",
+    "random-slope-model"
+  ],
+  "table_labels": {
+    "fixed": "固定效应完整表",
+    "random": "随机效应方差",
+    "comparison": "ML 模型比较",
+    "parameters": "增长模型参数表",
+    "imputations": "各插补数据的估计与方差",
+    "fiml_parameters": "FIML 参数表"
+  }
+}

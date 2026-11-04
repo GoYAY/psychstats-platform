@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="416pt" viewBox="0 0 360 416" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">六、七、七、八小时的均值为七，最短六、最长八。。本班示意记录的描述不能直接推广为全校情况。</desc><title id="title">描述本班四人的睡眠</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:01:09.850029</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 416  L 360 416  L 360 0  L 0 0  L 0 416  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 26 12  L 334 12  Q 348 12 348 26  L 348 80  Q 348 94 334 94  L 26 94  Q 12 94 12 80  L 12 26  Q 12 12 26 12  z " clip-path="url(#p8405eed91c)" style="fill: #244da4; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 26 110  L 334 110  Q 348 110 348 124  L 348 178  Q 348 192 334 192  L 26 192  Q 12 192 12 178  L 12 124  Q 12 110 26 110  z " clip-path="url(#p8405eed91c)" style="fill: #244da4; opacity: 0.055" />
+   </g>
+   <g id="patch_4">
+    <path d="M 26 208  L 334 208  Q 348 208 348 222  L 348 276  Q 348 290 334 290  L 26 290  Q 12 290 12 276  L 12 222  Q 12 208 26 208  z " clip-path="url(#p8405eed91c)" style="fill: #244da4; opacity: 0.055" />
+   </g>
+   <g id="patch_5">
+    <path d="M 26 306  L 334 306  Q 348 306 348 320  L 348 374  Q 348 388 334 388  L 26 388  Q 12 388 12 374  L 12 320  Q 12 306 26 306  z " clip-path="url(#p8405eed91c)" style="fill: #244da4; opacity: 0.055" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 28 13  L 332 13  " clip-path="url(#p8405eed91c)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 28 111  L 332 111  " clip-path="url(#p8405eed91c)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 28 209  L 332 209  " clip-path="url(#p8405eed91c)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_4">
+    <path d="M 28 307  L 332 307  " clip-path="url(#p8405eed91c)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="25" y="36.048125" transform="rotate(-0 25 36.048125)">记录或统计量</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="36.556152" transform="rotate(-0 137 36.556152)">甲、乙、丙、丁</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="25" y="70.920625" transform="rotate(-0 25 70.920625)">睡眠（小时）</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="71.556152" transform="rotate(-0 137 71.556152)">6、7、7、8</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="25" y="134.048125" transform="rotate(-0 25 134.048125)">记录或统计量</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="134.810313" transform="rotate(-0 137 134.810313)">平均</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="25" y="168.920625" transform="rotate(-0 25 168.920625)">睡眠（小时）</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="169.556152" transform="rotate(-0 137 169.556152)">7</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="25" y="232.048125" transform="rotate(-0 25 232.048125)">记录或统计量</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="232.848906" transform="rotate(-0 137 232.848906)">最短</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="25" y="266.920625" transform="rotate(-0 25 266.920625)">睡眠（小时）</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="267.556152" transform="rotate(-0 137 267.556152)">6</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="25" y="330.048125" transform="rotate(-0 25 330.048125)">记录或统计量</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="330.798125" transform="rotate(-0 137 330.798125)">最长</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="25" y="364.920625" transform="rotate(-0 25 364.920625)">睡眠（小时）</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="365.556152" transform="rotate(-0 137 365.556152)">8</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8405eed91c">
+   <rect x="0" y="0" width="360" height="416" />
+  </clipPath>
+ </defs>
+</svg>

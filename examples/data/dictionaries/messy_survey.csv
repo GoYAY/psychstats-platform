@@ -1,0 +1,6 @@
+"name","label","type","role","values"
+"id","ID","integer","id",""
+"age_text","Age text","string","dirty predictor",""
+"gender","Raw gender","string","dirty category",""
+"stress","Stress","numeric","dirty outcome",""
+"submitted_at","Submission date","string","dirty date",""

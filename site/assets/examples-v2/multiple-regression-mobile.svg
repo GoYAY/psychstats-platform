@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="609pt" viewBox="0 0 360 609" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">每项系数的解释依赖模型规定的其他条件。。概念预测图中的箭头不是因果证据，也不表示三项已被充分控制。</desc><title id="title">三个条件一起预测成绩</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:40.243877</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 609  L 360 609  L 360 0  L 0 0  L 0 609  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 126.329132 139.500412  Q 173.500347 192.750392 219.85607 245.07979  " clip-path="url(#pd8bd050050)" style="fill: none; opacity: 0.65; stroke: #8a5200; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 218.469733 239.895383  L 219.85607 245.07979  L 214.876742 243.078215  z " clip-path="url(#pd8bd050050)" style="fill: #8a5200; opacity: 0.65; stroke: #8a5200; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 126.998138 247.5  Q 173.500286 247.5 218.772595 247.5  " clip-path="url(#pd8bd050050)" style="fill: none; opacity: 0.65; stroke: #8a5200; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 213.972595 245.1  L 218.772595 247.5  L 213.972595 249.9  z " clip-path="url(#pd8bd050050)" style="fill: #8a5200; opacity: 0.65; stroke: #8a5200; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 126.329132 355.499588  Q 173.500347 302.249608 219.85607 249.92021  " clip-path="url(#pd8bd050050)" style="fill: none; opacity: 0.65; stroke: #8a5200; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 214.876742 251.921785  L 219.85607 249.92021  L 218.469733 255.104617  z " clip-path="url(#pd8bd050050)" style="fill: #8a5200; opacity: 0.65; stroke: #8a5200; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 68 114  L 110 114  Q 119 114 119 123  L 119 153  Q 119 162 110 162  L 68 162  Q 59 162 59 153  L 59 123  Q 59 114 68 114  z " clip-path="url(#pd8bd050050)" style="fill: #8a5200; fill-opacity: 0.09; stroke: #8a5200; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 68 218.5  L 110 218.5  Q 119 218.5 119 227.5  L 119 267.5  Q 119 276.5 110 276.5  L 68 276.5  Q 59 276.5 59 267.5  L 59 227.5  Q 59 218.5 68 218.5  z " clip-path="url(#pd8bd050050)" style="fill: #8a5200; fill-opacity: 0.09; stroke: #8a5200; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 68 333  L 110 333  Q 119 333 119 342  L 119 372  Q 119 381 110 381  L 68 381  Q 59 381 59 372  L 59 342  Q 59 333 68 333  z " clip-path="url(#pd8bd050050)" style="fill: #8a5200; fill-opacity: 0.09; stroke: #8a5200; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 237 223.5  L 279 223.5  Q 288 223.5 288 232.5  L 288 262.5  Q 288 271.5 279 271.5  L 237 271.5  Q 228 271.5 228 262.5  L 228 232.5  Q 228 223.5 237 223.5  z " clip-path="url(#pd8bd050050)" style="fill: #8a5200; fill-opacity: 0.09; stroke: #8a5200; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="89" y="141.351562" transform="rotate(-0 89 141.351562)">睡眠</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 244.467305)">学习时</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(83 257.528555)">长</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="89" y="360.463242" transform="rotate(-0 89 360.463242)">压力</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="258" y="250.95668" transform="rotate(-0 258 250.95668)">成绩</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="523.725117" transform="rotate(-0 20 523.725117)">1. 睡眠 → 成绩：进入预测</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="551.766367" transform="rotate(-0 20 551.766367)">2. 学习时长 → 成绩：进入预测</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="579.73168" transform="rotate(-0 20 579.73168)">3. 压力 → 成绩：进入预测</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd8bd050050">
+   <rect x="0" y="0" width="360" height="609" />
+  </clipPath>
+ </defs>
+</svg>

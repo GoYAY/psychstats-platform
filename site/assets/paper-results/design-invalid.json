@@ -1,0 +1,50 @@
+{
+  "case_id": "design-invalid",
+  "covariances": [],
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。训练班仅一个且班级与条件混杂，不能以普通 t 检验或增加学生数修复；需要设计层面的独立重复。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/design-invalid.R",
+    "script_sha256": "46301ff39c362288ab5664ed28dc54a0f6e368a8fea9ef7dc2d3b7fe16fc3c32",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "column_labels": {
+        "classes": "独立分配单位数",
+        "records": "学生记录数"
+      },
+      "columns": [
+        "analysis",
+        "classes",
+        "records"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "先停止：组别与班级完全混在一起",
+          "classes": 3,
+          "records": 60
+        }
+      ],
+      "source_fields": [
+        {
+          "classes": "classes",
+          "records": "records"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "先停止：组别与班级完全混在一起",
+  "valid": false,
+  "variances": []
+}

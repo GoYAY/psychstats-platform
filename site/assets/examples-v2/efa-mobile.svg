@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="689pt" viewBox="0 0 360 689" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">一起变化的题可能指向候选方面，还要结合题意命名。。载荷为教学构造；分组须用新资料复核，不是自动发现真实类别。</desc><title id="title">从题目联系探索分组</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:04:00.920667</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 689  L 360 689  L 360 0  L 0 0  L 0 689  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 26 12  L 334 12  Q 348 12 348 26  L 348 115  Q 348 129 334 129  L 26 129  Q 12 129 12 115  L 12 26  Q 12 12 26 12  z " clip-path="url(#p04d0b67491)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 26 145  L 334 145  Q 348 145 348 159  L 348 248  Q 348 262 334 262  L 26 262  Q 12 262 12 248  L 12 159  Q 12 145 26 145  z " clip-path="url(#p04d0b67491)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_4">
+    <path d="M 26 278  L 334 278  Q 348 278 348 292  L 348 381  Q 348 395 334 395  L 26 395  Q 12 395 12 381  L 12 292  Q 12 278 26 278  z " clip-path="url(#p04d0b67491)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_5">
+    <path d="M 26 411  L 334 411  Q 348 411 348 425  L 348 514  Q 348 528 334 528  L 26 528  Q 12 528 12 514  L 12 425  Q 12 411 26 411  z " clip-path="url(#p04d0b67491)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_6">
+    <path d="M 26 544  L 334 544  Q 348 544 348 558  L 348 647  Q 348 661 334 661  L 26 661  Q 12 661 12 647  L 12 558  Q 12 544 26 544  z " clip-path="url(#p04d0b67491)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 28 13  L 332 13  " clip-path="url(#p04d0b67491)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 28 146  L 332 146  " clip-path="url(#p04d0b67491)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 28 279  L 332 279  " clip-path="url(#p04d0b67491)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_4">
+    <path d="M 28 412  L 332 412  " clip-path="url(#p04d0b67491)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_5">
+    <path d="M 28 545  L 332 545  " clip-path="url(#p04d0b67491)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="35.744141" transform="rotate(-0 25 35.744141)">题目</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="36.733125" transform="rotate(-0 137 36.733125)">担忧</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="70.99" transform="rotate(-0 25 70.99)">候选方面A</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="71.556152" transform="rotate(-0 137 71.556152)">0.80</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="105.99" transform="rotate(-0 25 105.99)">候选方面B</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="106.556152" transform="rotate(-0 137 106.556152)">0.10</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="168.744141" transform="rotate(-0 25 168.744141)">题目</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="169.783906" transform="rotate(-0 137 169.783906)">失眠</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="203.99" transform="rotate(-0 25 203.99)">候选方面A</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="204.556152" transform="rotate(-0 137 204.556152)">0.70</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="238.99" transform="rotate(-0 25 238.99)">候选方面B</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="239.556152" transform="rotate(-0 137 239.556152)">0.20</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="301.744141" transform="rotate(-0 25 301.744141)">题目</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="302.733125" transform="rotate(-0 137 302.733125)">紧张</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="336.99" transform="rotate(-0 25 336.99)">候选方面A</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="337.556152" transform="rotate(-0 137 337.556152)">0.75</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="371.99" transform="rotate(-0 25 371.99)">候选方面B</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="372.556152" transform="rotate(-0 137 372.556152)">0.15</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="434.744141" transform="rotate(-0 25 434.744141)">题目</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="435.911875" transform="rotate(-0 137 435.911875)">回避聚会</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="469.99" transform="rotate(-0 25 469.99)">候选方面A</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="470.556152" transform="rotate(-0 137 470.556152)">0.15</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="504.99" transform="rotate(-0 25 504.99)">候选方面B</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="505.556152" transform="rotate(-0 137 505.556152)">0.80</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="567.744141" transform="rotate(-0 25 567.744141)">题目</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="568.911875" transform="rotate(-0 137 568.911875)">回避发言</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="602.99" transform="rotate(-0 25 602.99)">候选方面A</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="603.556152" transform="rotate(-0 137 603.556152)">0.20</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="637.99" transform="rotate(-0 25 637.99)">候选方面B</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="638.556152" transform="rotate(-0 137 638.556152)">0.75</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p04d0b67491">
+   <rect x="0" y="0" width="360" height="689" />
+  </clipPath>
+ </defs>
+</svg>

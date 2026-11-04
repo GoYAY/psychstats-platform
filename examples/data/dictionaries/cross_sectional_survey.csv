@@ -1,0 +1,7 @@
+"name","label","type","role","values"
+"id","ID","integer","id",""
+"age","Age","integer","predictor","18-60"
+"gender","Gender","categorical","predictor","female|male|nonbinary"
+"social_support","Social support","numeric","predictor","15-85"
+"stress","Stress","numeric","predictor","10-90"
+"well_being","Well-being","numeric","outcome","5-90"

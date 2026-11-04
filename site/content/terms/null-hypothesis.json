@@ -1,0 +1,79 @@
+{
+  "id": "null-hypothesis",
+  "zh": "零假设",
+  "en": "Null Hypothesis",
+  "aliases": [],
+  "type": "concept",
+  "level": "basic",
+  "topic": "hypothesis-testing",
+  "status": "public",
+  "summary": "给统计检验指定一个供比较的基准主张。",
+  "relations": {
+    "prerequisites": [
+      "sampling-distribution"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": [
+      "null-and-alternative-hypotheses"
+    ]
+  },
+  "real_question": "想判断一门新课程是否改变了学生的焦虑水平，应该先设什么比较基准？",
+  "operational_definition": "零假设 H0 是统计检验在计算证据时暂作成立的参数或分布主张，常取无差异或无关联，也可以是研究规定的其他基准值。",
+  "plain_explanation": "先设一个可计算的比较基准，再问观察到的数据相对它有多反常。",
+  "problems_solved": [
+    "规定检验的比较对象",
+    "使 p 值和检验统计量有明确条件"
+  ],
+  "not_for": [
+    "拒绝零假设不自动证明研究的因果解释"
+  ],
+  "decision_clues": [
+    "写清参数与基准值",
+    "说明单侧或双侧方向"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：把没有差异写成可以检验的具体主张",
+      "body": "先明确比较对象、结果变量和参数，再说明零假设的基准值与备择方向。例如比较训练组和对照组的总体平均进步，基准可以是均值差为 0；同时写清独立组还是同一人的前后测，以便选择匹配的 t 检验等方法。"
+    },
+    {
+      "heading": "容易混淆：未拒绝零假设就证明没有效果吗",
+      "body": "未拒绝只表示当前检验没有给出足够的反对证据，较小样本或较不精确的估计也可能造成这种结果。若目标是证明差异小到可忽略，还需预先界定什么差异没有实际意义，并采用相应设计；p 值和置信区间也不能替代这项研究判断。"
+    }
+  ],
+  "formula": {
+    "latex": "",
+    "note": "",
+    "verified": false
+  },
+  "quiz": {
+    "question": "计算 p 值时通常暂时假定什么成立？",
+    "options": [
+      "研究假设",
+      "零假设及检验模型条件",
+      "样本没有误差",
+      "所有变量正态"
+    ],
+    "answer": 1,
+    "explanation": "p 值是在零假设及相关模型条件下计算的。",
+    "option_explanations": [
+      "p 值不是在研究假设已成立的条件下计算的。",
+      "正确。先给定零假设及所用检验模型的条件，再评估观测结果有多极端。",
+      "抽样误差正是统计检验要处理的不确定性，并不会被假定为零。",
+      "不同检验有不同条件，不能笼统假定所有变量都必须正态。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "basic_textbook",
+      "title": "现代心理与教育统计学",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": null,
+  "verified": true,
+  "candidate_evidence": {},
+  "plain_example": "例如，评估一种学习训练时，可以先把“两组总体平均进步没有差别”设为比较基准，再看样本里的差别是否与这个基准相容。基准应在看见结果前明确。"
+}

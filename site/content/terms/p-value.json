@@ -1,0 +1,142 @@
+{
+  "id": "p-value",
+  "zh": "p 值",
+  "en": "p-value",
+  "aliases": [],
+  "type": "indicator",
+  "level": "basic",
+  "topic": "hypothesis-testing",
+  "status": "public",
+  "summary": "在零假设与检验模型下，衡量观察结果及更极端结果的概率。",
+  "relations": {
+    "prerequisites": [
+      "null-hypothesis"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": [
+      "confidence-interval"
+    ]
+  },
+  "real_question": "两种干预后的分数有差别，怎样判断这可能只是抽样波动？",
+  "operational_definition": "p 值是在零假设及检验模型成立时，得到与当前样本统计量同样或更不利于零假设的结果的概率。",
+  "plain_explanation": "它衡量‘如果基准主张成立，这样的数据有多意外’，不衡量基准主张本身为真的概率。",
+  "problems_solved": [
+    "为预先指定的检验提供证据尺度"
+  ],
+  "not_for": [
+    "不能单独表示效应大小、实际价值或零假设为真的概率"
+  ],
+  "decision_clues": [
+    "同时报告效应大小和区间",
+    "核对检验方向、多重比较及模型条件"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：一个很小的 p 值之后还要看什么",
+      "body": "先确认检验针对的零假设、方向和模型条件，再把 p 值与预先约定的判断规则对照。接着看效应量、置信区间和实际意义：样本量很大时，很小的差异也可能得到很小的 p 值；检验很多问题时，还要核对多重比较的安排。"
+    },
+    {
+      "heading": "容易混淆：显著、真实和重要",
+      "body": "p 值不能读成零假设为真的概率，也不能用 1−p 得到干预有效的概率。显著性阈值是决策约定，p=0.049 与 p=0.051 不应被讲成两种截然不同的研究事实；未达到阈值也不等于两组完全相同。判断干预是否值得采用，还需看差异多大、估计多精确及研究设计。"
+    }
+  ],
+  "formula": {
+    "latex": "",
+    "note": "",
+    "verified": false
+  },
+  "quiz": {
+    "question": "p=0.03 的正确含义更接近哪项？",
+    "options": [
+      "零假设有 3% 概率为真",
+      "在零假设和模型成立时，这样或更极端结果的概率为 3%",
+      "效应有 97% 概率为真",
+      "效应一定很大"
+    ],
+    "answer": 1,
+    "explanation": "p 值条件化于零假设，不直接给假设的后验概率。",
+    "option_explanations": [
+      "p 值假定零假设成立后计算，不是零假设为真的概率。",
+      "正确。在零假设和检验模型条件下，当前或更极端统计结果出现的概率约为 3%。",
+      "不能用 1−p 得到效应或研究假设为真的概率。",
+      "很小的 p 值也可能来自大样本中的很小效应；需另看效应量。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "basic_textbook",
+      "title": "现代心理与教育统计学",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": {
+    "packages": [],
+    "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+    "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"learning_experiment.csv\", stringsAsFactors = FALSE)\nfit <- t.test(gain ~ condition,data=d)\nprint(c(p_value=fit$p.value, t_statistic=unname(fit$statistic), df=unname(fit$parameter)))\n",
+    "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(nlevels(factor(d$group))==2)\nt.test(outcome ~ group,data=d) # Interpret the p-value with effect size and interval.\n",
+    "assumption_checks": [
+      "同时报告效应大小和区间",
+      "核对检验方向、多重比较及模型条件"
+    ],
+    "key_output": [
+      "p_value",
+      "t_statistic",
+      "df"
+    ],
+    "interpretation": "本示例比较两组进步分数，p_value≈3.64e−08，即约 0.0000000364，可按报告规范写为 p<0.001，不能写成 p=0。t_statistic≈−5.76 的负号来自代码按组别顺序计算“control 减 retrieval”，本身不表示训练有害；df≈177.76 是 Welch 检验的自由度，可以是小数。若要说明差异大小与方向，还应查看组均值、均值差及其区间，不能只报告这三个字段。",
+    "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+    "common_errors": [
+      "不能单独表示效应大小、实际价值或零假设为真的概率"
+    ],
+    "verified": true,
+    "validation_report": "logs/r_validation.json"
+  },
+  "verified": true,
+  "candidate_evidence": {
+    "textbook": [
+      {
+        "chunk_id": 151,
+        "page_print": 88,
+        "page_pdf": 101,
+        "path": "第四章Logistic回归分析",
+        "sim": 0.588,
+        "snippet": "，得到的对数发生比（logodds）称为p的logit 值。如此一来，发生比小于1对应logit值为负数，发生比大于1对应logit值为正数。经 过以上两步转换，我们将二分结果变量"
+      }
+    ],
+    "course": [
+      {
+        "chunk_id": 234,
+        "doc": "w02-week2",
+        "page_course": 3,
+        "block_source": "TEXT_LAYER",
+        "xref": null,
+        "numeric_risk": 0,
+        "sim": 0.6364,
+        "snippet": "[讲义 w02-week2 第3页] 本章节内容 p数据分布 p假设检验 pP值 pPermutation test与P值"
+      },
+      {
+        "chunk_id": 288,
+        "doc": "w02-week2",
+        "page_course": 27,
+        "block_source": "TEXT_LAYER",
+        "xref": null,
+        "numeric_risk": 0,
+        "sim": 0.5953,
+        "snippet": "[讲义 w02-week2 第27页] 假设检验---如何正确理解P值 研究结论的真伪并不总是能恰当地用p值（P-Value)表示和概括"
+      },
+      {
+        "chunk_id": 307,
+        "doc": "w02-week2",
+        "page_course": 37,
+        "block_source": "TEXT_LAYER",
+        "xref": null,
+        "numeric_risk": 0,
+        "sim": 0.5996,
+        "snippet": "[讲义 w02-week2 第37页] 假设检验---如何正确理解P值 研究结论的真伪并不总是能恰当地用p值（P-Value)表示和概括"
+      }
+    ]
+  },
+  "plain_example": "例如，两组学生接受不同的学习训练后，平均进步分数出现差别。p 值帮助你评估：在两组总体平均进步相同的基准下，这样或更极端的差别是否少见。"
+}

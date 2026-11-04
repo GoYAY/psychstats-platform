@@ -1,0 +1,52 @@
+{
+  "id": "t-single",
+  "unit_id": "t-tests",
+  "title": "单样本平均值的比较方向",
+  "question": "学生的平均睡眠时长与教学参照 7 小时相比如何？",
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。参照不是随机样本估计时才用这一单样本路线；不是把两个独立研究平均数直接相减后套本检验。",
+  "variables": "固定种子生成小型教学数据，非真实参与者；不上传数据。",
+  "script": "examples/r/output_reading/t-single.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "mean",
+      "label": "样本平均小时数",
+      "meaning": "实际观察的平均，与待比较参照 7 小时不同。",
+      "term": "central-tendency-and-dispersion",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "均值等于 7 的检验 p",
+      "meaning": "不是样本均值等于零的检验，参照需有研究依据。",
+      "term": "t-test",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这个变体最重要的边界",
+      "body": "参照不是随机样本估计时才用这一单样本路线；不是把两个独立研究平均数直接相减后套本检验。"
+    },
+    {
+      "title": "如何继续检查",
+      "body": "先明确独立单位、估计目标及比较方向，结合完整参数与区间判断。方法改变需有研究依据并记录，不以显著性作为选择标准。"
+    }
+  ],
+  "report_template": "教学睡眠均值为 {mean:.3f} 小时，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]；相对教学参照 7 小时，t({df:.0f}) = {t:.3f}，p = {p:.4g}。参照只是本次演示设定。",
+  "sources": [
+    {
+      "title": "R 官方统计函数索引",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "central-tendency-and-dispersion",
+    "t-test"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "purpose": "Software contract controls, not provider semantic benchmarks",
+  "cases": [
+    {"title":"因素分析框架","scope":"研究多个测量指标背后的共同维度","core":{"name":"探索性因素分析","definition":"以共同因素解释多个观测指标间的协变结构。"},"support":{"name":"相关系数","definition":"量化两个变量共同变化的方向和强度。"}},
+    {"title":"多层模型框架","scope":"研究学生嵌套于班级时的组内和组间差异","core":{"name":"多层线性模型","definition":"同时建模个体层和群体层变异的线性模型。"},"support":{"name":"组内相关系数","definition":"量化总变异中群体间变异所占比例。"}},
+    {"title":"估计不确定性研究","scope":"研究估计量的抽样波动","core":{"name":"抽样分布","definition":"相同抽样机制下统计量随重复样本变化的分布。"},"support":{"name":"标准误","definition":"统计量抽样分布的标准差。"}}
+  ]
+}

@@ -1,0 +1,6 @@
+source("examples/r/analyses/_common.R")
+d <- read_data("cross_sectional_survey")
+d$stress_c <- d$stress - mean(d$stress)
+d$support_c <- d$social_support - mean(d$social_support)
+fit <- lm(well_being ~ stress_c * support_c + age, data=d)
+emit(c(interaction_beta=unname(coef(fit)["stress_c:support_c"]), r_squared=summary(fit)$r.squared))

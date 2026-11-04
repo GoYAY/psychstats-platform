@@ -1,0 +1,319 @@
+{
+  "case_id": "missing",
+  "covariances": [],
+  "design": "模拟单一连续预测变量 X 在给定 Z 后随机缺失（MAR）。以完整 Y/Z 条件正态回归进行 20 次适当参数抽样插补，Rubin 合并、Barnard–Rubin 自由度；另示 FIML 联合正态模型。限于单变量连续缺失教学。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/missing.R",
+    "script_sha256": "c9cd619aebd116ca58d2513e56e54ffd35cd3a41a554140e02f0371207c8daa5",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "se",
+        "df"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": 0.37068726437529265,
+          "ci_upper": 0.6296795045079265,
+          "df": 163.9996234492889,
+          "effect": "多重插补合并系数",
+          "estimate": 0.5001833844416096,
+          "se": 0.06558310978169189
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "columns": [
+        "imputation",
+        "estimate",
+        "variance"
+      ],
+      "name": "imputations",
+      "rows": [
+        {
+          "estimate": 0.4371916913385344,
+          "imputation": 1,
+          "variance": 0.003721018771012478
+        },
+        {
+          "estimate": 0.5245597804982052,
+          "imputation": 2,
+          "variance": 0.002675309048905081
+        },
+        {
+          "estimate": 0.46974673496029923,
+          "imputation": 3,
+          "variance": 0.0037262209093603593
+        },
+        {
+          "estimate": 0.548539121444473,
+          "imputation": 4,
+          "variance": 0.0032217996469706815
+        },
+        {
+          "estimate": 0.5101466997478543,
+          "imputation": 5,
+          "variance": 0.003642153275143615
+        },
+        {
+          "estimate": 0.49047507502542387,
+          "imputation": 6,
+          "variance": 0.003264750165583157
+        },
+        {
+          "estimate": 0.4945734297439266,
+          "imputation": 7,
+          "variance": 0.003492258803034141
+        },
+        {
+          "estimate": 0.5285932402647392,
+          "imputation": 8,
+          "variance": 0.0034572734851692787
+        },
+        {
+          "estimate": 0.4795018440514881,
+          "imputation": 9,
+          "variance": 0.0037083322303962736
+        },
+        {
+          "estimate": 0.46617359030368893,
+          "imputation": 10,
+          "variance": 0.0037927418481574046
+        },
+        {
+          "estimate": 0.5180560148544954,
+          "imputation": 11,
+          "variance": 0.003548768715263806
+        },
+        {
+          "estimate": 0.5187728505289807,
+          "imputation": 12,
+          "variance": 0.0034933019040587587
+        },
+        {
+          "estimate": 0.5023706942080849,
+          "imputation": 13,
+          "variance": 0.0035913313773602343
+        },
+        {
+          "estimate": 0.48969573597546884,
+          "imputation": 14,
+          "variance": 0.003286969063715254
+        },
+        {
+          "estimate": 0.5026267022028889,
+          "imputation": 15,
+          "variance": 0.003305999342179811
+        },
+        {
+          "estimate": 0.5087559395248981,
+          "imputation": 16,
+          "variance": 0.003648745545181857
+        },
+        {
+          "estimate": 0.5542404504669244,
+          "imputation": 17,
+          "variance": 0.0032227689332570966
+        },
+        {
+          "estimate": 0.4885215187856804,
+          "imputation": 18,
+          "variance": 0.003360775073596001
+        },
+        {
+          "estimate": 0.4811297063085331,
+          "imputation": 19,
+          "variance": 0.0038828814932560045
+        },
+        {
+          "estimate": 0.48999686859760344,
+          "imputation": 20,
+          "variance": 0.0035911550342603384
+        }
+      ],
+      "title": "各插补数据的估计与方差"
+    },
+    {
+      "columns": [
+        "lhs",
+        "op",
+        "rhs",
+        "est",
+        "se",
+        "z",
+        "pvalue",
+        "ci.lower",
+        "ci.upper"
+      ],
+      "name": "fiml_parameters",
+      "rows": [
+        {
+          "ci.lower": 0.375638509925947,
+          "ci.upper": 0.6354553710216304,
+          "est": 0.5055469404737887,
+          "lhs": "y",
+          "op": "~",
+          "pvalue": 2.398081733190338e-14,
+          "rhs": "x",
+          "se": 0.06628102943347064,
+          "z": 7.6273248136743215
+        },
+        {
+          "ci.lower": 0.23618113447738315,
+          "ci.upper": 0.47144892198050564,
+          "est": 0.3538150282289444,
+          "lhs": "y",
+          "op": "~",
+          "pvalue": 3.7443246281299025e-09,
+          "rhs": "z",
+          "se": 0.06001839558249153,
+          "z": 5.895109737524519
+        },
+        {
+          "ci.lower": 0.830838176836468,
+          "ci.upper": 1.1813934812194105,
+          "est": 1.0061158290279393,
+          "lhs": "y",
+          "op": "~~",
+          "pvalue": 0,
+          "rhs": "y",
+          "se": 0.08942901684624772,
+          "z": 11.25044045555952
+        },
+        {
+          "ci.lower": 0.8599239997995018,
+          "ci.upper": 1.2559517040841695,
+          "est": 1.0579378519418356,
+          "lhs": "x",
+          "op": "~~",
+          "pvalue": 0,
+          "rhs": "x",
+          "se": 0.10102933202050743,
+          "z": 10.471591079381682
+        },
+        {
+          "ci.lower": 0.11673753497449521,
+          "ci.upper": 0.39016583407625194,
+          "est": 0.2534516845253736,
+          "lhs": "x",
+          "op": "~~",
+          "pvalue": 0.00027956033249210144,
+          "rhs": "z",
+          "se": 0.0697533988528678,
+          "z": 3.633538848192676
+        },
+        {
+          "ci.lower": 0.8891478164228956,
+          "ci.upper": 1.227945192731197,
+          "est": 1.0585465045770464,
+          "lhs": "z",
+          "op": "~~",
+          "pvalue": 0,
+          "rhs": "z",
+          "se": 0.08642949028163065,
+          "z": 12.247515299786805
+        },
+        {
+          "ci.lower": -0.024397927924281818,
+          "ci.upper": 0.21176606892564986,
+          "est": 0.09368407050068402,
+          "lhs": "y",
+          "op": "~1",
+          "pvalue": 0.11994627796642043,
+          "rhs": "",
+          "se": 0.06024702461697338,
+          "z": 1.554999123961558
+        },
+        {
+          "ci.lower": -0.0721286957359892,
+          "ci.upper": 0.19346162416637022,
+          "est": 0.060666464215190515,
+          "lhs": "x",
+          "op": "~1",
+          "pvalue": 0.37057612268005125,
+          "rhs": "",
+          "se": 0.06775387762155378,
+          "z": 0.8953947190159249
+        },
+        {
+          "ci.lower": -0.031460670737514185,
+          "ci.upper": 0.2013872855791979,
+          "est": 0.08496330742084186,
+          "lhs": "z",
+          "op": "~1",
+          "pvalue": 0.1526215550207768,
+          "rhs": "",
+          "se": 0.05940108036509526,
+          "z": 1.430332695948191
+        }
+      ],
+      "title": "FIML 参数表"
+    },
+    {
+      "column_labels": {
+        "ci_lower": "95% CI 下限",
+        "ci_upper": "95% CI 上限",
+        "df": "df",
+        "fiml": "FIML 的 X 系数",
+        "missing_proportion": "missing_proportion",
+        "pooled": "插补合并系数",
+        "se": "合并标准误"
+      },
+      "columns": [
+        "analysis",
+        "pooled",
+        "se",
+        "fiml",
+        "df",
+        "ci_lower",
+        "ci_upper",
+        "missing_proportion"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "缺失处理后看的是哪个结果",
+          "ci_lower": 0.37068726437529265,
+          "ci_upper": 0.6296795045079265,
+          "df": 163.9996234492889,
+          "fiml": 0.5055469404737887,
+          "missing_proportion": 0.27,
+          "pooled": 0.5001833844416096,
+          "se": 0.06558310978169189
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "df": "df",
+          "fiml": "fiml",
+          "missing_proportion": "missing_proportion",
+          "pooled": "pooled",
+          "se": "se"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "缺失处理后看的是哪个结果",
+  "valid": true,
+  "variances": []
+}

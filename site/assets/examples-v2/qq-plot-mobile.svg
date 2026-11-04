@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="360pt" height="428pt" viewBox="0 0 360 428" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">中间贴近参照、两端弯离，提示尾部与正态形状不一致。。这些是排序分位点而非原始个体散点；偏离不等于记录错误。</desc><title id="title">睡眠分位数对照正态</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:02:02.372152</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 428  L 360 428  L 360 0  L 0 0  L 0 428  z " style="fill: none" />
+  </g>
+  <g id="data-panel-0">
+   <g id="patch_2">
+    <path d="M 61.2 312  L 345.6 312  L 345.6 65  L 61.2 65  L 61.2 312  z " style="fill: none" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="65.509091" y="328.744141" transform="rotate(-0 65.509091 328.744141)">−1.6</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="134.454545" y="328.744141" transform="rotate(-0 134.454545 328.744141)">−0.8</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="203.4" y="328.744141" transform="rotate(-0 203.4 328.744141)">0.0</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4" />
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="272.345455" y="328.744141" transform="rotate(-0 272.345455 328.744141)">0.8</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5" />
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="341.290909" y="328.744141" transform="rotate(-0 341.290909 328.744141)">1.6</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #303b4b" x="203.4" y="354.915781" transform="rotate(-0 203.4 354.915781)">正态理论分位数（标准差单位）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <path d="M 61.2 308.016129  L 345.6 308.016129  " clip-path="url(#pf91b29de9f)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_7" />
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="312.888199" transform="rotate(-0 54.2 312.888199)">4</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <path d="M 61.2 228.33871  L 345.6 228.33871  " clip-path="url(#pf91b29de9f)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_9" />
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="233.21078" transform="rotate(-0 54.2 233.21078)">6</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_10">
+      <path d="M 61.2 148.66129  L 345.6 148.66129  " clip-path="url(#pf91b29de9f)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_11" />
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="153.533361" transform="rotate(-0 54.2 153.533361)">8</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12">
+      <path d="M 61.2 68.983871  L 345.6 68.983871  " clip-path="url(#pf91b29de9f)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_13" />
+     <g id="text_10">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="73.855941" transform="rotate(-0 54.2 73.855941)">10</text>
+     </g>
+    </g>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="m7f2f02b3a6" d="M 0 3.041381  C 0.806584 3.041381 1.58024 2.720922 2.150581 2.150581  C 2.720922 1.58024 3.041381 0.806584 3.041381 0  C 3.041381 -0.806584 2.720922 -1.58024 2.150581 -2.150581  C 1.58024 -2.720922 0.806584 -3.041381 0 -3.041381  C -0.806584 -3.041381 -1.58024 -2.720922 -2.150581 -2.150581  C -2.720922 -1.58024 -3.041381 -0.806584 -3.041381 0  C -3.041381 0.806584 -2.720922 1.58024 -2.150581 2.150581  C -1.58024 2.720922 -0.806584 3.041381 0 3.041381  z " style="stroke: #006d70; stroke-opacity: 0.62; stroke-width: 0.8" />
+    </defs>
+    <g clip-path="url(#pf91b29de9f)">
+     <use xlink:href="#m7f2f02b3a6" x="74.127273" y="288.096774" style="fill: #006d70; fill-opacity: 0.62; stroke: #006d70; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#m7f2f02b3a6" x="117.218182" y="228.33871" style="fill: #006d70; fill-opacity: 0.62; stroke: #006d70; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#m7f2f02b3a6" x="160.309091" y="208.419355" style="fill: #006d70; fill-opacity: 0.62; stroke: #006d70; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#m7f2f02b3a6" x="203.4" y="188.5" style="fill: #006d70; fill-opacity: 0.62; stroke: #006d70; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#m7f2f02b3a6" x="246.490909" y="168.580645" style="fill: #006d70; fill-opacity: 0.62; stroke: #006d70; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#m7f2f02b3a6" x="289.581818" y="148.66129" style="fill: #006d70; fill-opacity: 0.62; stroke: #006d70; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#m7f2f02b3a6" x="332.672727" y="88.903226" style="fill: #006d70; fill-opacity: 0.62; stroke: #006d70; stroke-opacity: 0.62; stroke-width: 0.8" />
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <defs>
+     <path id="mdbc96af875" d="M -3.041381 3.041381  L 3.041381 3.041381  L 3.041381 -3.041381  L -3.041381 -3.041381  z " style="stroke: #7656ab; stroke-opacity: 0.62; stroke-width: 0.8" />
+    </defs>
+    <g clip-path="url(#pf91b29de9f)">
+     <use xlink:href="#mdbc96af875" x="74.127273" y="248.258065" style="fill: #7656ab; fill-opacity: 0.62; stroke: #7656ab; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#mdbc96af875" x="117.218182" y="228.33871" style="fill: #7656ab; fill-opacity: 0.62; stroke: #7656ab; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#mdbc96af875" x="160.309091" y="208.419355" style="fill: #7656ab; fill-opacity: 0.62; stroke: #7656ab; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#mdbc96af875" x="203.4" y="188.5" style="fill: #7656ab; fill-opacity: 0.62; stroke: #7656ab; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#mdbc96af875" x="246.490909" y="168.580645" style="fill: #7656ab; fill-opacity: 0.62; stroke: #7656ab; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#mdbc96af875" x="289.581818" y="148.66129" style="fill: #7656ab; fill-opacity: 0.62; stroke: #7656ab; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#mdbc96af875" x="332.672727" y="128.741935" style="fill: #7656ab; fill-opacity: 0.62; stroke: #7656ab; stroke-opacity: 0.62; stroke-width: 0.8" />
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 61.2 312  L 61.2 65  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_4">
+    <path d="M 61.2 312  L 345.6 312  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="61.2" y="47" transform="rotate(-0 61.2 47)">排序后的睡眠时长（小时）</text>
+   </g>
+  </g>
+  <g id="legend-swatch-0">
+   <defs>
+    <path id="mf2852c7489" d="M 0 2.5  C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767  C 2.236584 1.29895 2.5 0.663008 2.5 0  C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767  C 1.29895 -2.236584 0.663008 -2.5 0 -2.5  C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767  C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0  C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767  C -1.29895 2.236584 -0.663008 2.5 0 2.5  z " style="stroke: #006d70; stroke-opacity: 0.62" />
+   </defs>
+   <g>
+    <use xlink:href="#mf2852c7489" x="36" y="375" style="fill: #006d70; fill-opacity: 0.62; stroke: #006d70; stroke-opacity: 0.62" />
+    <use xlink:href="#mf2852c7489" x="46.8" y="375" style="fill: #006d70; fill-opacity: 0.62; stroke: #006d70; stroke-opacity: 0.62" />
+   </g>
+  </g>
+  <g id="legend-swatch-1">
+   <defs>
+    <path id="m91b75c5c70" d="M -2.5 2.5  L 2.5 2.5  L 2.5 -2.5  L -2.5 -2.5  z " style="stroke: #7656ab; stroke-opacity: 0.62; stroke-linejoin: miter" />
+   </defs>
+   <g>
+    <use xlink:href="#m91b75c5c70" x="36" y="400" style="fill: #7656ab; fill-opacity: 0.62; stroke: #7656ab; stroke-opacity: 0.62; stroke-linejoin: miter" />
+    <use xlink:href="#m91b75c5c70" x="46.8" y="400" style="fill: #7656ab; fill-opacity: 0.62; stroke: #7656ab; stroke-opacity: 0.62; stroke-linejoin: miter" />
+   </g>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="54" y="378.036875" transform="rotate(-0 54 378.036875)">睡眠样本分位点</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="54" y="403.0725" transform="rotate(-0 54 403.0725)">直线参照上的点</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf91b29de9f">
+   <rect x="61.2" y="65" width="284.4" height="247" />
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,92 @@
+{
+  "case_id": "categorical-gof",
+  "covariances": [],
+  "design": "180人的独立分类教学计数；参考概率0.25/0.50/0.25只是本教学设定，不伪称真实预注册。单样本拟合优度检验不同于两变量独立性检验。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/categorical-gof.R",
+    "script_sha256": "2f8fbdc56c1d7b35b63ac9da18e57cc1130a6d06e97582039b042eb072c828cf",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "strategy",
+        "observed",
+        "expected",
+        "pearson_residual"
+      ],
+      "name": "observed_expected",
+      "rows": [
+        {
+          "expected": 45,
+          "observed": 48,
+          "pearson_residual": 0.4472135954999579,
+          "strategy": "review"
+        },
+        {
+          "expected": 90,
+          "observed": 75,
+          "pearson_residual": -1.5811388300841895,
+          "strategy": "retrieval"
+        },
+        {
+          "expected": 45,
+          "observed": 57,
+          "pearson_residual": 1.7888543819998317,
+          "strategy": "combined"
+        }
+      ],
+      "title": "观察/预设期望频数与 Pearson 残差"
+    },
+    {
+      "column_labels": {
+        "N": "N",
+        "chi_square": "拟合优度 χ²",
+        "df": "参考自由度",
+        "p": "拟合优度 p",
+        "w": "Cohen w"
+      },
+      "columns": [
+        "analysis",
+        "chi_square",
+        "df",
+        "p",
+        "w",
+        "N"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "N": 180,
+          "analysis": "选择比例是否符合预设分布",
+          "chi_square": 5.9,
+          "df": 2,
+          "p": 0.05233970594843238,
+          "w": 0.1810463415200036
+        }
+      ],
+      "source_fields": [
+        {
+          "N": "N",
+          "chi_square": "chi_square",
+          "df": "df",
+          "p": "p",
+          "w": "w"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "选择比例是否符合预设分布",
+  "valid": true,
+  "variances": []
+}

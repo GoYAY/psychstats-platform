@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="518.4pt" height="158.4pt" viewBox="0 0 518.4 158.4" version="1.1" role="img">
+ <ns0:title>潜变量交互不等于总分乘积 · estimates</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-17T19:08:22.644138</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 158.4  L 518.4 158.4  L 518.4 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 155.52 117.216  L 352.512 117.216  L 352.512 12.672  L 155.52 12.672  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_1">
+    <ns0:g id="xtick_1">
+     <ns0:g id="line2d_1">
+      <ns0:defs>
+       <ns0:path id="m20c6a20378" d="M 0 0  L 0 3.5  " style="stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:defs>
+      <ns0:g>
+       <ns0:use ns4:href="#m20c6a20378" x="189.792819" y="117.216" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_1">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="189.792819" y="130.712094" transform="rotate(-0 189.792819 130.712094)">0.0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_2">
+     <ns0:g id="line2d_2">
+      <ns0:g>
+       <ns0:use ns4:href="#m20c6a20378" x="229.228941" y="117.216" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_2">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="229.228941" y="130.712094" transform="rotate(-0 229.228941 130.712094)">0.2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_3">
+     <ns0:g id="line2d_3">
+      <ns0:g>
+       <ns0:use ns4:href="#m20c6a20378" x="268.665063" y="117.216" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_3">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="268.665063" y="130.712094" transform="rotate(-0 268.665063 130.712094)">0.4</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_4">
+     <ns0:g id="line2d_4">
+      <ns0:g>
+       <ns0:use ns4:href="#m20c6a20378" x="308.101185" y="117.216" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_4">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="308.101185" y="130.712094" transform="rotate(-0 308.101185 130.712094)">0.6</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_5">
+     <ns0:g id="line2d_5">
+      <ns0:g>
+       <ns0:use ns4:href="#m20c6a20378" x="347.537307" y="117.216" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_5">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="347.537307" y="130.712094" transform="rotate(-0 347.537307 130.712094)">0.8</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_6">
+     <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #343e4c" x="254.016" y="143.461938" transform="rotate(-0 254.016 143.461938)">效应估计与 95% CI（本表量纲）</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_2">
+    <ns0:g id="ytick_1">
+     <ns0:g id="line2d_6">
+      <ns0:defs>
+       <ns0:path id="mcc832e1753" d="M 0 0  L -3.5 0  " style="stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:defs>
+      <ns0:g>
+       <ns0:use ns4:href="#mcc832e1753" x="155.52" y="17.424" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_7">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="148.52" y="20.672047" transform="rotate(-0 148.52 20.672047)">W = -1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_2">
+     <ns0:g id="line2d_7">
+      <ns0:g>
+       <ns0:use ns4:href="#mcc832e1753" x="155.52" y="64.944" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_8">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="148.52" y="68.192047" transform="rotate(-0 148.52 68.192047)">W = 0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_3">
+     <ns0:g id="line2d_8">
+      <ns0:g>
+       <ns0:use ns4:href="#mcc832e1753" x="155.52" y="112.464" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_9">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="148.52" y="115.712047" transform="rotate(-0 148.52 115.712047)">W = 1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="line2d_9">
+    <ns0:path d="M 171.936 17.424  L 229.999182 17.424  " clip-path="url(#p78a72a3b13)" style="fill: none; stroke: #953970; stroke-width: 1.3; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_10">
+    <ns0:path d="M 235.900947 64.944  L 271.87394 64.944  " clip-path="url(#p78a72a3b13)" style="fill: none; stroke: #953970; stroke-width: 1.3; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_11">
+    <ns0:path d="M 277.518591 112.464  L 336.096 112.464  " clip-path="url(#p78a72a3b13)" style="fill: none; stroke: #953970; stroke-width: 1.3; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_12">
+    <ns0:path d="M 189.792819 117.216  L 189.792819 12.672  " clip-path="url(#p78a72a3b13)" style="fill: none; stroke-dasharray: 2.59,1.12; stroke-dashoffset: 0; stroke: #8b95a3; stroke-width: 0.7" />
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 155.52 117.216  L 155.52 12.672  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 155.52 117.216  L 352.512 117.216  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="PathCollection_1">
+    <ns0:defs>
+     <ns0:path id="m021593d444" d="M 0 2.345208  C 0.621956 2.345208 1.218523 2.098102 1.658312 1.658312  C 2.098102 1.218523 2.345208 0.621956 2.345208 0  C 2.345208 -0.621956 2.098102 -1.218523 1.658312 -1.658312  C 1.218523 -2.098102 0.621956 -2.345208 0 -2.345208  C -0.621956 -2.345208 -1.218523 -2.098102 -1.658312 -1.658312  C -2.098102 -1.218523 -2.345208 -0.621956 -2.345208 0  C -2.345208 0.621956 -2.098102 1.218523 -1.658312 1.658312  C -1.218523 2.098102 -0.621956 2.345208 0 2.345208  z " style="stroke: #953970" />
+    </ns0:defs>
+    <ns0:g clip-path="url(#p78a72a3b13)">
+     <ns0:use ns4:href="#m021593d444" x="200.967591" y="17.424" style="fill: #953970; stroke: #953970" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="text_10">
+    <ns0:text style="font-size: 7px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #243041" x="364.33152" y="19.379078" transform="rotate(-0 364.33152 19.379078)">0.057 [-0.091, 0.204]</ns0:text>
+   </ns0:g>
+   <ns0:g id="PathCollection_2">
+    <ns0:g clip-path="url(#p78a72a3b13)">
+     <ns0:use ns4:href="#m021593d444" x="253.887443" y="64.944" style="fill: #953970; stroke: #953970" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="text_11">
+    <ns0:text style="font-size: 7px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #243041" x="364.33152" y="66.899078" transform="rotate(-0 364.33152 66.899078)">0.325 [0.234, 0.416]</ns0:text>
+   </ns0:g>
+   <ns0:g id="PathCollection_3">
+    <ns0:g clip-path="url(#p78a72a3b13)">
+     <ns0:use ns4:href="#m021593d444" x="306.807296" y="112.464" style="fill: #953970; stroke: #953970" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="text_12">
+    <ns0:text style="font-size: 7px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #243041" x="364.33152" y="114.419078" transform="rotate(-0 364.33152 114.419078)">0.593 [0.445, 0.742]</ns0:text>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="p78a72a3b13">
+   <ns0:rect x="155.52" y="12.672" width="196.992" height="104.544" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

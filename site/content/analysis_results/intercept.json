@@ -1,0 +1,53 @@
+{
+  "case_id": "intercept",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 nlme_3.1-168   grid_4.5.1     jsonlite_2.0.0 lattice_0.22-7\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\nLinear mixed-effects model fit by REML\n  Data: d \n       AIC      BIC    logLik\n  5071.823 5085.557 -2532.912\n\nRandom effects:\n Formula: ~1 | class_id\n        (Intercept) Residual\nStdDev:    4.618392 7.799755\n\nFixed effects:  achievement ~ 1 \n               Value Std.Error  DF  t-value p-value\n(Intercept) 67.70639 0.8918965 690 75.91283       0\n\nStandardized Within-Group Residuals:\n        Min          Q1         Med          Q3         Max \n-4.04270237 -0.63015569 -0.04158868  0.66499068  2.85878204 \n\nNumber of Observations: 720\nNumber of Groups: 30 \nLinear mixed-effects model fit by REML\n  Data: d \n       AIC      BIC    logLik\n  4921.996 4944.872 -2455.998\n\nRandom effects:\n Formula: ~1 | class_id\n        (Intercept) Residual\nStdDev:    4.745354 6.955336\n\nFixed effects:  achievement ~ motivation_within + motivation_mean \n                     Value Std.Error  DF   t-value p-value\n(Intercept)       58.26672 20.697696 689  2.815131  0.0050\nmotivation_within  0.36182  0.027065 689 13.368261  0.0000\nmotivation_mean    0.17200  0.376763  28  0.456509  0.6515\n Correlation: \n                  (Intr) mtvtn_w\nmotivation_within  0.000        \nmotivation_mean   -0.999  0.000 \n\nStandardized Within-Group Residuals:\n         Min           Q1          Med           Q3          Max \n-3.471272840 -0.661977473 -0.006341397  0.624920838  3.166633027 \n\nNumber of Observations: 720\nNumber of Groups: 30 \nclass_id = pdLogChol(1) \n            Variance StdDev  \n(Intercept) 21.32954 4.618392\nResidual    60.83618 7.799755\n",
+  "stderr": "",
+  "metrics": {
+    "icc": 0.25959171294306194,
+    "within_beta": 0.36181565649106134,
+    "within_p": 2.0883093676484785e-36,
+    "people": 720,
+    "groups": 30
+  },
+  "warnings": [],
+  "tables": {
+    "fixed": [
+      {
+        "term": "(Intercept)",
+        "Value": 58.26672132841733,
+        "Std.Error": 20.69769631029425,
+        "DF": 689,
+        "t.value": 2.815130749572244,
+        "p.value": 0.005015004196179488,
+        "_row": "(Intercept)"
+      },
+      {
+        "term": "motivation_within",
+        "Value": 0.36181565649106134,
+        "Std.Error": 0.027065273751393316,
+        "DF": 689,
+        "t.value": 13.368261478324605,
+        "p.value": 2.0883093676484785e-36,
+        "_row": "motivation_within"
+      },
+      {
+        "term": "motivation_mean",
+        "Value": 0.17199602800751917,
+        "Std.Error": 0.3767634797251249,
+        "DF": 28,
+        "t.value": 0.4565092883551299,
+        "p.value": 0.6515453985507813,
+        "_row": "motivation_mean"
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "6b263c78557a66d7c65d0267e3ba0a9b8814500be837e676ce00e2f636865b61",
+  "config_sha256": "ba856b25229ab76eab09f04727ac6a22cb5cda76c5296e52bb9f0f9c42b29509",
+  "data_sha256": {
+    "examples/data/nested_classrooms.csv": "fbfb8a3313de70cf112b6337df89b342abc4f5cdf36e1c7b1fd73aeb1205ec87"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "case_id": "categorical",
+  "covariances": [],
+  "design": "固定种子生成两组独立二元选择，比较列联表。显示 Pearson χ² 的期望频数，并同时演示 Fisher 精确检验；不能只挑较小 p。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/categorical.R",
+    "script_sha256": "a5cac2861b1c85ac3a0d01459a8ddf7fabcc82316614748113b8dcf3bca0833e",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "Var1",
+        "Var2",
+        "Freq"
+      ],
+      "name": "counts",
+      "rows": [
+        {
+          "Freq": 63,
+          "Var1": "no",
+          "Var2": "0"
+        },
+        {
+          "Freq": 44,
+          "Var1": "yes",
+          "Var2": "0"
+        },
+        {
+          "Freq": 27,
+          "Var1": "no",
+          "Var2": "1"
+        },
+        {
+          "Freq": 46,
+          "Var1": "yes",
+          "Var2": "1"
+        }
+      ],
+      "title": "counts"
+    },
+    {
+      "columns": [
+        "Var1",
+        "Var2",
+        "Freq"
+      ],
+      "name": "expected",
+      "rows": [
+        {
+          "Freq": 53.5,
+          "Var1": "no",
+          "Var2": "0"
+        },
+        {
+          "Freq": 53.5,
+          "Var1": "yes",
+          "Var2": "0"
+        },
+        {
+          "Freq": 36.5,
+          "Var1": "no",
+          "Var2": "1"
+        },
+        {
+          "Freq": 36.5,
+          "Var1": "yes",
+          "Var2": "1"
+        }
+      ],
+      "title": "expected"
+    },
+    {
+      "column_labels": {
+        "chi_squared": "Pearson χ²",
+        "df": "df",
+        "fisher_p": "fisher_p",
+        "min_expected": "最小期望频数",
+        "odds_ratio": "Fisher 条件 OR",
+        "p": "p"
+      },
+      "columns": [
+        "analysis",
+        "chi_squared",
+        "min_expected",
+        "odds_ratio",
+        "df",
+        "p",
+        "fisher_p"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "分类结果是否有关联",
+          "chi_squared": 8.319037255152988,
+          "df": 1,
+          "fisher_p": 0.0061067736158379755,
+          "min_expected": 36.5,
+          "odds_ratio": 2.426985320141477,
+          "p": 0.003923170793984089
+        }
+      ],
+      "source_fields": [
+        {
+          "chi_squared": "chi_squared",
+          "df": "df",
+          "fisher_p": "fisher_p",
+          "min_expected": "min_expected",
+          "odds_ratio": "odds_ratio",
+          "p": "p"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "分类结果是否有关联",
+  "valid": true,
+  "variances": []
+}

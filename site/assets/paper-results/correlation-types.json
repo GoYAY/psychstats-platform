@@ -1,0 +1,78 @@
+{
+  "case_id": "correlation-types",
+  "covariances": [],
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。偏相关检验要扣除控制变量的自由度，不能直接将残差 cor.test 默认 df 当正确结果。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/correlation-types.R",
+    "script_sha256": "1f6c6004ad558652024977a4c078ed50fe6605b6662309671a2ab6f4a239e049",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "variables",
+        "method",
+        "coefficient",
+        "df",
+        "p"
+      ],
+      "name": "correlations",
+      "rows": [
+        {
+          "coefficient": -0.45309115319511706,
+          "df": 357,
+          "method": "偏相关 r（控制年龄）",
+          "p": 1.4179015762027236e-19,
+          "variables": "压力（stress）与幸福感（well_being）"
+        },
+        {
+          "coefficient": -0.3005444657430034,
+          "method": "Kendall τ",
+          "p": "<2.2e-16",
+          "variables": "压力（stress）与幸福感（well_being）"
+        },
+        {
+          "coefficient": -0.055213874296739816,
+          "method": "点二列相关 r",
+          "variables": "二元响应（binary）与幸福感（well_being）"
+        },
+        {
+          "coefficient": -0.060594226182026485,
+          "method": "φ 系数",
+          "variables": "二元响应（binary）与二元响应（another）"
+        }
+      ],
+      "source_fields": [
+        {
+          "coefficient": "partial_r",
+          "df": "df",
+          "p": "partial_p"
+        },
+        {
+          "coefficient": "kendall_tau"
+        },
+        {
+          "coefficient": "point_biserial"
+        },
+        {
+          "coefficient": "phi"
+        }
+      ],
+      "title": "各变量对与相关方法的结果"
+    }
+  ],
+  "title": "偏相关、Kendall 与二元相关",
+  "valid": true,
+  "variances": []
+}

@@ -1,0 +1,89 @@
+{
+  "case_id": "binary-paired",
+  "covariances": [],
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。不能将这张表当两组独立样本 Fisher；不一致配对很少时应预先考虑精确方法。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/binary-paired.R",
+    "script_sha256": "73359fc90229b9f279aee4e33f2dcd6dd7cf4ab1e45e62fc657f1f1fd5bbc117",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "before",
+        "after",
+        "Freq"
+      ],
+      "name": "paired_counts",
+      "rows": [
+        {
+          "Freq": 36,
+          "after": "0",
+          "before": "0"
+        },
+        {
+          "Freq": 14,
+          "after": "0",
+          "before": "1"
+        },
+        {
+          "Freq": 37,
+          "after": "1",
+          "before": "0"
+        },
+        {
+          "Freq": 13,
+          "after": "1",
+          "before": "1"
+        }
+      ],
+      "title": "paired_counts"
+    },
+    {
+      "column_labels": {
+        "difference": "后−前比例差",
+        "discordant": "前后不一致人数",
+        "exact_p": "exact_p",
+        "p": "p"
+      },
+      "columns": [
+        "analysis",
+        "discordant",
+        "difference",
+        "p",
+        "exact_p"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "同一批人前后分类的变化",
+          "difference": 0.22999999999999998,
+          "discordant": 51,
+          "exact_p": 0.0017691971837869942,
+          "p": 0.002065727431006296
+        }
+      ],
+      "source_fields": [
+        {
+          "difference": "difference",
+          "discordant": "discordant",
+          "exact_p": "exact_p",
+          "p": "p"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "同一批人前后分类的变化",
+  "valid": true,
+  "variances": []
+}

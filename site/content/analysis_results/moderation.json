@@ -1,0 +1,81 @@
+{
+  "case_id": "moderation",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\nCall:\nlm(formula = well_being ~ x * w, data = d)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-19.6228  -4.6606  -0.1282   4.7948  20.6424 \n\nCoefficients:\n              Estimate Std. Error t value Pr(>|t|)    \n(Intercept) 48.1163097  0.3958647 121.547  < 2e-16 ***\nx           -0.3687687  0.0493810  -7.468 6.35e-13 ***\nw            0.3129036  0.0443099   7.062 8.68e-12 ***\nx:w         -0.0005916  0.0051858  -0.114    0.909    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 7.158 on 356 degrees of freedom\nMultiple R-squared:  0.3055,\tAdjusted R-squared:  0.2996 \nF-statistic:  52.2 on 3 and 356 DF,  p-value: < 2.2e-16\n\n  support_centered      slope         se   ci_lower   ci_upper\n1        -9.091771 -0.3633898 0.06815392 -0.4974247 -0.2293549\n2         0.000000 -0.3687687 0.04938103 -0.4658839 -0.2716535\n3         9.091771 -0.3741477 0.06839492 -0.5086565 -0.2396388\n",
+  "stderr": "",
+  "metrics": {
+    "interaction": -0.0005916261833766095,
+    "p": 0.9092336891460289,
+    "mean_slope": -0.36876872282834017,
+    "low_slope": -0.36338979326576704,
+    "high_slope": -0.3741476523909133
+  },
+  "warnings": [],
+  "tables": {
+    "simple_slopes": [
+      {
+        "support_centered": -9.091770637793186,
+        "slope": -0.36338979326576704,
+        "se": 0.06815391512364202,
+        "ci_lower": -0.49742469011735324,
+        "ci_upper": -0.22935489641418083
+      },
+      {
+        "support_centered": 0,
+        "slope": -0.36876872282834017,
+        "se": 0.04938103167234099,
+        "ci_lower": -0.4658839285303107,
+        "ci_upper": -0.27165351712636965
+      },
+      {
+        "support_centered": 9.091770637793186,
+        "slope": -0.3741476523909133,
+        "se": 0.0683949189032496,
+        "ci_lower": -0.5086565193245108,
+        "ci_upper": -0.2396387854573158
+      }
+    ],
+    "coefficients": [
+      {
+        "term": "(Intercept)",
+        "Estimate": 48.11630974336567,
+        "Std. Error": 0.39586468644713413,
+        "t value": 121.54736552837576,
+        "Pr(>|t|)": 6.012256436233896e-292,
+        "_row": "(Intercept)"
+      },
+      {
+        "term": "x",
+        "Estimate": -0.36876872282834017,
+        "Std. Error": 0.04938103167234099,
+        "t value": -7.467821354467422,
+        "Pr(>|t|)": 6.345799041744638e-13,
+        "_row": "x"
+      },
+      {
+        "term": "w",
+        "Estimate": 0.3129036284402108,
+        "Std. Error": 0.04430985580439977,
+        "t value": 7.061716242577816,
+        "Pr(>|t|)": 8.680773449002627e-12,
+        "_row": "w"
+      },
+      {
+        "term": "x:w",
+        "Estimate": -0.0005916261833766095,
+        "Std. Error": 0.005185777281528902,
+        "t value": -0.11408630784895235,
+        "Pr(>|t|)": 0.9092336891460289,
+        "_row": "x:w"
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "93668c89e4552aeb9b98af509f2c92edc80510943e01268447e59b53ed35d813",
+  "config_sha256": "f7a14f39efa39677a89e085b15d1b9dfd9ad3e0e1bf1a11a0b0eb5de6e03df17",
+  "data_sha256": {
+    "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+  }
+}

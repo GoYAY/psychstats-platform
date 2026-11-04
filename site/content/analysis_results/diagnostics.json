@@ -1,0 +1,47 @@
+{
+  "case_id": "diagnostics",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\nCall:\nlm(formula = well_being ~ stress + social_support + age, data = d)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-19.7890  -4.7977  -0.1401   4.7135  20.8625 \n\nCoefficients:\n               Estimate Std. Error t value Pr(>|t|)    \n(Intercept)    49.98950    3.90425  12.804  < 2e-16 ***\nstress         -0.36858    0.04937  -7.466 6.42e-13 ***\nsocial_support  0.31337    0.04379   7.155 4.79e-12 ***\nage             0.01451    0.03123   0.464    0.643    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 7.156 on 356 degrees of freedom\nMultiple R-squared:  0.3059,\tAdjusted R-squared:    0.3 \nF-statistic: 52.29 on 3 and 356 DF,  p-value: < 2.2e-16\n\n    max_Cook      row.351       HC3_SE \n  0.03973015 351.00000000   0.04909842 \n\nCall:\nlm(formula = well_being ~ stress + social_support + age, data = d[-target, \n    ])\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-19.8620  -4.7595  -0.0663   4.7818  20.7972 \n\nCoefficients:\n               Estimate Std. Error t value Pr(>|t|)    \n(Intercept)    50.30735    3.87414  12.985  < 2e-16 ***\nstress         -0.36163    0.04903  -7.375 1.17e-12 ***\nsocial_support  0.30199    0.04365   6.918 2.14e-11 ***\nage             0.01066    0.03101   0.344    0.731    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 7.097 on 355 degrees of freedom\nMultiple R-squared:  0.2944,\tAdjusted R-squared:  0.2885 \nF-statistic: 49.38 on 3 and 355 DF,  p-value: < 2.2e-16\n\n",
+  "stderr": "",
+  "metrics": {
+    "beta": -0.3685833367434522,
+    "hc3_se": 0.049098416872121034,
+    "ci_lower": -0.4648144655107431,
+    "ci_upper": -0.2723522079761612,
+    "max_cook": 0.03973014753379695,
+    "sensitivity_beta": -0.36163356133980956
+  },
+  "warnings": [],
+  "tables": {
+    "influential": [
+      {
+        "row": 351,
+        "cook": 0.03973014753379695
+      },
+      {
+        "row": 289,
+        "cook": 0.02744568147177479
+      },
+      {
+        "row": 334,
+        "cook": 0.0235687692731925
+      },
+      {
+        "row": 51,
+        "cook": 0.02301793013145225
+      },
+      {
+        "row": 245,
+        "cook": 0.019016426012300885
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "7bb89e2cd6f30a7112dd5fcd595e45445b69cb7f2731c426ecf1d545c14a7c95",
+  "config_sha256": "1d667714a5b28e819b58770af0f8ba1ccba991741d8a53c0e6eaadb25c838733",
+  "data_sha256": {
+    "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+  }
+}

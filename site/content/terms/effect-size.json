@@ -1,0 +1,158 @@
+{
+  "id": "effect-size",
+  "zh": "效应量",
+  "en": "Effect Size",
+  "aliases": [],
+  "type": "indicator",
+  "level": "basic",
+  "topic": "hypothesis-testing",
+  "status": "public",
+  "summary": "量化差异或关联的大小，辅助判断研究结果的实际意义。",
+  "relations": {
+    "prerequisites": [
+      "descriptive-statistics"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": [
+      "partial-eta-squared"
+    ]
+  },
+  "real_question": "两组学生的成绩确实有差别，怎样判断这个差别在实际教学中有多大？",
+  "operational_definition": "效应量是描述差异、关联或模型解释程度大小的统计指标，可使用原量纲或标准化量纲；具体指标必须与设计和问题匹配。",
+  "plain_explanation": "p 值谈证据，效应量谈差异或关系有多大，两者回答不同问题。",
+  "problems_solved": [
+    "比较结果量级",
+    "规划样本量并辅助研究综合"
+  ],
+  "not_for": [
+    "同一数值在不同指标、情境和测量质量下不能机械套统一阈值"
+  ],
+  "decision_clues": [
+    "先选择对应设计的指标",
+    "同时给出区间和领域背景"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：差多少、朝哪个方向、是否值得关注",
+      "body": "先确认使用的是原始均值差、标准化均值差还是相关系数等指标，并核对组别顺序、单位和估计区间。把标准化结果与原始分数变化、量表含义及研究领域的判断标准一起解释；惯用的大小标签可以辅助描述，不能代替研究情境。"
+    },
+    {
+      "heading": "容易混淆：效应量大就是有因果效果吗",
+      "body": "效应量概括差异或关联的大小，p 值与标准误描述另一些方面。大效应仍可能估计不精确，观察到的组间差异也可能受混杂影响；要作因果判断，需要研究设计的支持。不同效应量的数值不能不加说明地直接比较。"
+    }
+  ],
+  "formula": {
+    "latex": "",
+    "note": "",
+    "verified": false
+  },
+  "quiz": {
+    "question": "下列哪项最稳妥？",
+    "options": [
+      "p<.05 表示效应很大",
+      "报告效应量并结合区间和情境解释",
+      "效应量可替代研究设计",
+      "不同效应量指标的数值可直接比较"
+    ],
+    "answer": 1,
+    "explanation": "量级、精度和情境需要结合判断。",
+    "option_explanations": [
+      "p 值不直接衡量差异大小；大样本中的小效应也可能显著。",
+      "正确。效应量说明量级，区间说明精度，研究情境决定它是否有实际意义。",
+      "效应量是结果指标，不能弥补混杂、偏差或不恰当的研究设计。",
+      "不同指标定义和量尺不同，不能只比数字大小而忽略其含义。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "basic_textbook",
+      "title": "现代心理与教育统计学",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": {
+    "packages": [],
+    "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+    "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"learning_experiment.csv\", stringsAsFactors = FALSE)\na <- d$gain[d$condition==\"retrieval\"]; b <- d$gain[d$condition==\"control\"]\npooled <- sqrt(((length(a)-1)*var(a)+(length(b)-1)*var(b))/(length(a)+length(b)-2))\nprint(c(cohens_d=(mean(a)-mean(b))/pooled, pooled_sd=pooled))\n",
+    "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(nlevels(factor(d$group))==2)\nparts <- split(d$outcome,d$group); a <- na.omit(parts[[1]]); b <- na.omit(parts[[2]])\npooled_sd <- sqrt(((length(a)-1)*var(a)+(length(b)-1)*var(b))/(length(a)+length(b)-2))\ncohens_d <- (mean(a)-mean(b))/pooled_sd; cohens_d\n",
+    "assumption_checks": [
+      "先选择对应设计的指标",
+      "同时给出区间和领域背景"
+    ],
+    "key_output": [
+      "cohens_d",
+      "pooled_sd"
+    ],
+    "interpretation": "本代码按“retrieval 减 control”计算，cohens_d≈0.86 表示训练组的平均进步高出对照组约 0.86 个合并标准差，pooled_sd≈8.44 是用于标准化的组内合并标准差。它不是提高了 86%，正负号也随组别顺序改变；这一标准化值还应结合原始均值差、研究背景与估计区间判断。当前简化输出没有给出 d 的置信区间。",
+    "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+    "common_errors": [
+      "同一数值在不同指标、情境和测量质量下不能机械套统一阈值"
+    ],
+    "verified": true,
+    "validation_report": "logs/r_validation.json"
+  },
+  "verified": true,
+  "candidate_evidence": {
+    "textbook": [
+      {
+        "chunk_id": 436,
+        "page_print": 288,
+        "page_pdf": 301,
+        "path": "第十一章中介分析",
+        "sim": 0.6671,
+        "snippet": "验的结果会依赖于样本量，即，如果样本量足够大，即使很小的效应也会显著，但是如果 样本量很小，即使很大的效应也可能不显著。因此，显著性检验的结果并不能很好地表示 实际效应的大小及意义"
+      },
+      {
+        "chunk_id": 438,
+        "page_print": 289,
+        "page_pdf": 302,
+        "path": "第十一章·中介分析",
+        "sim": 0.6134,
+        "snippet": "的部分。对于中介效应，MacKinnon（2008）提出了3种中介效应的R2度量方式，可见 公式（11-8）至公式（11-10）。 R.M=M-(RY.MX-rx) (11-8) "
+      },
+      {
+        "chunk_id": 472,
+        "page_print": 310,
+        "page_pdf": 323,
+        "path": "第十二章调节效应",
+        "sim": 0.6303,
+        "snippet": "—2.194 ZSSZSCABOVE :029 a.DependentVariable：Zscore：抑郁倾向 （四）效应量 实际上，调节项（即变量乘积项）的标准化回归系数本身就是"
+      }
+    ],
+    "course": [
+      {
+        "chunk_id": 749,
+        "doc": "w07-regression",
+        "page_course": 52,
+        "block_source": "TEXT_LAYER",
+        "xref": null,
+        "numeric_risk": 0,
+        "sim": 0.6558,
+        "snippet": "[讲义 w07-regression 第52页] 回归分析效应量 Cohen (1988) 提出的标准"
+      },
+      {
+        "chunk_id": 110,
+        "doc": "w09-mediation",
+        "page_course": 11,
+        "block_source": "TEXT_LAYER",
+        "xref": null,
+        "numeric_risk": 9,
+        "sim": 0.6201,
+        "snippet": "[讲义 w09-mediation 第11页] Conditional indirect effects of X on Y: INDIRECT EFFECT: TEACHSUP "
+      },
+      {
+        "chunk_id": 95,
+        "doc": "w09-mediation",
+        "page_course": 7,
+        "block_source": "TEXT_LAYER",
+        "xref": null,
+        "numeric_risk": 13,
+        "sim": 0.5816,
+        "snippet": "[讲义 w09-mediation 第7页] IVAT .0036 .0010 .0016 .0055 ANXTEST .0104 .0011 .0083 .0128Complet"
+      }
+    ]
+  },
+  "plain_example": "例如，两种学习训练都可能得到显著结果，但平均多进步 1 分与多进步 10 分对教学决策的意义不同。效应量帮助把差异放回分数单位或共同的比较尺度。"
+}

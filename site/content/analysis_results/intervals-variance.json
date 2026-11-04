@@ -1,0 +1,22 @@
+{
+  "case_id": "intervals-variance",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n      variance variance_lower variance_upper             sd \n      77.64975       57.08538      111.79815        8.81191 \n",
+  "stderr": "",
+  "metrics": {
+    "variance": 77.64975023325499,
+    "ci_lower": 57.08538468774462,
+    "ci_upper": 111.79815092810034,
+    "sd_lower": 7.555487058273915,
+    "sd_upper": 10.573464471406727,
+    "n": 70
+  },
+  "warnings": [],
+  "tables": [],
+  "figures": [],
+  "script_sha256": "59cf8cc756a5063e0eaa95d90ddc46478f78d12eef1a06d7ba96de8db52e7f53",
+  "config_sha256": "2eee48da7221a60cceeb7325f66898c0cb98b0ce22a493b95a279c5379e959d6",
+  "data_sha256": {}
+}

@@ -1,0 +1,174 @@
+{
+  "case_id": "lpa",
+  "covariances": [],
+  "design": "模拟连续指标的混合人群。mclust 拟合 1–4 类对角协方差模型 EEI/VVI；属于高斯混合的潜剖面实现，非 Mplus 专用检验。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/lpa.R",
+    "script_sha256": "69ed37cf14ab8ebeb059e4920295dd2f231ead3155ed7a5342606b5308fbf362",
+    "supplement_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+  },
+  "tables": [
+    {
+      "columns": [
+        "class",
+        "stress",
+        "support",
+        "wellbeing"
+      ],
+      "name": "profiles",
+      "rows": [
+        {
+          "class": 1,
+          "stress": 0.38500445694847424,
+          "support": 0.1705095233857103,
+          "wellbeing": -0.04379181434668059
+        },
+        {
+          "class": 2,
+          "stress": -1.072161927554888,
+          "support": 0.9267183403898386,
+          "wellbeing": 0.9632546193840641
+        },
+        {
+          "class": 3,
+          "stress": 1.5416771144289196,
+          "support": -0.9669731668265716,
+          "wellbeing": -1.3801819671214122
+        }
+      ],
+      "title": "类别画像"
+    },
+    {
+      "columns": [
+        "class",
+        "expected_count",
+        "assigned_count"
+      ],
+      "name": "posterior_summary",
+      "rows": [
+        {
+          "assigned_count": 118,
+          "class": 1,
+          "expected_count": 119.29714622393658
+        },
+        {
+          "assigned_count": 109,
+          "class": 2,
+          "expected_count": 108.61095951304928
+        },
+        {
+          "assigned_count": 73,
+          "class": 3,
+          "expected_count": 72.09189426301414
+        }
+      ],
+      "title": "posterior_summary"
+    },
+    {
+      "columns": [
+        "class",
+        "stress",
+        "support",
+        "wellbeing"
+      ],
+      "name": "standardized_profiles",
+      "rows": [
+        {
+          "class": 1,
+          "stress": 0.2101787745637145,
+          "support": -0.0004503958078206983,
+          "wellbeing": -0.040693430376741356
+        },
+        {
+          "class": 2,
+          "stress": -1.0168869466934416,
+          "support": 0.7898908350986172,
+          "wellbeing": 0.902580718967699
+        },
+        {
+          "class": 3,
+          "stress": 1.1842016341381278,
+          "support": -1.1892747645565305,
+          "wellbeing": -1.2924552581614521
+        }
+      ],
+      "title": "标准化类别画像"
+    },
+    {
+      "columns": [
+        "model",
+        "n"
+      ],
+      "name": "model_summary",
+      "rows": [
+        {
+          "model": "潜剖面输出如何确定人数类型",
+          "n": 300
+        }
+      ],
+      "title": "模型解释率与样本量"
+    },
+    {
+      "column_labels": {
+        "bic": "mclust BIC",
+        "entropy": "相对熵",
+        "k": "k",
+        "mean_posterior": "平均最大后验概率",
+        "min_proportion": "min_proportion",
+        "restart_ari": "两次归类的调整 Rand 指数",
+        "restart_bic_gap": "另一初始化 BIC 减原 BIC",
+        "restart_same_structure": "另一初始化是否选同类数与约束"
+      },
+      "columns": [
+        "analysis",
+        "restart_same_structure",
+        "restart_bic_gap",
+        "restart_ari",
+        "bic",
+        "entropy",
+        "mean_posterior",
+        "k",
+        "min_proportion"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "潜剖面输出如何确定人数类型",
+          "bic": -2278.7727452886566,
+          "entropy": 0.8362380562261096,
+          "k": 3,
+          "mean_posterior": 0.9256294920035206,
+          "min_proportion": 0.24030631421004708,
+          "restart_ari": 0.9684586896797697,
+          "restart_bic_gap": -0.0035745887366829265,
+          "restart_same_structure": 1
+        }
+      ],
+      "source_fields": [
+        {
+          "bic": "bic",
+          "entropy": "entropy",
+          "k": "k",
+          "mean_posterior": "mean_posterior",
+          "min_proportion": "min_proportion",
+          "restart_ari": "restart_ari",
+          "restart_bic_gap": "restart_bic_gap",
+          "restart_same_structure": "restart_same_structure"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "潜剖面输出如何确定人数类型",
+  "valid": true,
+  "variances": []
+}

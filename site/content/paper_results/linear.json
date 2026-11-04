@@ -1,0 +1,63 @@
+{
+  "tables": {
+    "reported_coefficients": [
+      {
+        "outcome": "well_being",
+        "term": "(Intercept)",
+        "estimate": 49.989502467248165,
+        "se": 3.9042541785102767,
+        "statistic": 12.803854508858429,
+        "df": 356,
+        "p": 3.9135339167619426e-31,
+        "ci_lower": 42.3112010057747,
+        "ci_upper": 57.66780392872163
+      },
+      {
+        "outcome": "well_being",
+        "term": "stress",
+        "estimate": -0.3685833367434522,
+        "se": 0.04936795419570198,
+        "statistic": -7.466044375311411,
+        "df": 356,
+        "p": 6.420287293424325e-13,
+        "ci_lower": -0.4656728236260532,
+        "ci_upper": -0.2714938498608511
+      },
+      {
+        "outcome": "well_being",
+        "term": "social_support",
+        "estimate": 0.31336636236277954,
+        "se": 0.04379380629062765,
+        "statistic": 7.155495009572697,
+        "df": 356,
+        "p": 4.788716488045557e-12,
+        "ci_lower": 0.2272392734310036,
+        "ci_upper": 0.3994934512945555
+      },
+      {
+        "outcome": "well_being",
+        "term": "age",
+        "estimate": 0.014505935997353126,
+        "se": 0.031229380242608778,
+        "statistic": 0.4644964416412434,
+        "df": 356,
+        "p": 0.642576047185868,
+        "ci_lower": -0.046911324507245576,
+        "ci_upper": 0.07592319650195183
+      }
+    ],
+    "model_summary": [
+      {
+        "n": 360,
+        "r_squared": 0.30587949073894616,
+        "adjusted_r_squared": 0.3000301606047239
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "回归系数：t 分布 95% CI；间接效应：300 次教学 Bootstrap 百分位区间（如适用）",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0",
+  "case_id": "linear",
+  "original_sha256": "c3c2a8a8fee9518fd9e1a87f46e8da951f81bf7f93f7d4414a223bb482b843a9",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

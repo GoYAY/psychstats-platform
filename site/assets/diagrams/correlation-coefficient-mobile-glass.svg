@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="320pt" height="310pt" viewBox="0 0 320 310" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">横轴为压力评分、纵轴为幸福感评分。教学构造的数据点整体从左上到右下，表示负线性关联，但不支持因果结论。</desc><title id="title">压力与幸福感的负相关散点图</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:26:57.546430</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 310  L 320 310  L 320 0  L 0 0  L 0 310  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 35 57  L 35 237  L 294 237  " clip-path="url(#pb71a768f20)" style="fill: none; stroke: #465465; stroke-opacity: 0.75; stroke-width: 1.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_3">
+    <path d="M 35 192  L 294 192  M 35 147  L 294 147  M 35 102  L 294 102  " clip-path="url(#pb71a768f20)" style="fill: none; stroke: #e1e5eb; stroke-opacity: 0.75; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 55 78  L 277 210  " clip-path="url(#pb71a768f20)" style="fill: none; stroke-dasharray: 10.8,9; stroke-dashoffset: 0; stroke: #244da4; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 57 77  C 58.326015 77 59.597899 77.526832 60.535534 78.464466  C 61.473168 79.402101 62 80.673985 62 82  C 62 83.326015 61.473168 84.597899 60.535534 85.535534  C 59.597899 86.473168 58.326015 87 57 87  C 55.673985 87 54.402101 86.473168 53.464466 85.535534  C 52.526832 84.597899 52 83.326015 52 82  C 52 80.673985 52.526832 79.402101 53.464466 78.464466  C 54.402101 77.526832 55.673985 77 57 77  z " clip-path="url(#pb71a768f20)" style="fill: #244da4; fill-opacity: 0.46; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 1.5; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 80 97  C 81.326015 97 82.597899 97.526832 83.535534 98.464466  C 84.473168 99.402101 85 100.673985 85 102  C 85 103.326015 84.473168 104.597899 83.535534 105.535534  C 82.597899 106.473168 81.326015 107 80 107  C 78.673985 107 77.402101 106.473168 76.464466 105.535534  C 75.526832 104.597899 75 103.326015 75 102  C 75 100.673985 75.526832 99.402101 76.464466 98.464466  C 77.402101 97.526832 78.673985 97 80 97  z " clip-path="url(#pb71a768f20)" style="fill: #244da4; fill-opacity: 0.46; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 1.5; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 103 86  C 104.326015 86 105.597899 86.526832 106.535534 87.464466  C 107.473168 88.402101 108 89.673985 108 91  C 108 92.326015 107.473168 93.597899 106.535534 94.535534  C 105.597899 95.473168 104.326015 96 103 96  C 101.673985 96 100.402101 95.473168 99.464466 94.535534  C 98.526832 93.597899 98 92.326015 98 91  C 98 89.673985 98.526832 88.402101 99.464466 87.464466  C 100.402101 86.526832 101.673985 86 103 86  z " clip-path="url(#pb71a768f20)" style="fill: #244da4; fill-opacity: 0.46; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 1.5; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 123 119  C 124.326015 119 125.597899 119.526832 126.535534 120.464466  C 127.473168 121.402101 128 122.673985 128 124  C 128 125.326015 127.473168 126.597899 126.535534 127.535534  C 125.597899 128.473168 124.326015 129 123 129  C 121.673985 129 120.402101 128.473168 119.464466 127.535534  C 118.526832 126.597899 118 125.326015 118 124  C 118 122.673985 118.526832 121.402101 119.464466 120.464466  C 120.402101 119.526832 121.673985 119 123 119  z " clip-path="url(#pb71a768f20)" style="fill: #244da4; fill-opacity: 0.46; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 1.5; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_9">
+    <path d="M 143 114  C 144.326016 114 145.597899 114.526832 146.535534 115.464466  C 147.473168 116.402101 148 117.673985 148 119  C 148 120.326015 147.473168 121.597899 146.535534 122.535534  C 145.597899 123.473168 144.326016 124 143 124  C 141.673984 124 140.402101 123.473168 139.464466 122.535534  C 138.526832 121.597899 138 120.326015 138 119  C 138 117.673985 138.526832 116.402101 139.464466 115.464466  C 140.402101 114.526832 141.673984 114 143 114  z " clip-path="url(#pb71a768f20)" style="fill: #244da4; fill-opacity: 0.46; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 1.5; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_10">
+    <path d="M 164 144  C 165.326016 144 166.597899 144.526832 167.535534 145.464466  C 168.473168 146.402101 169 147.673984 169 149  C 169 150.326016 168.473168 151.597899 167.535534 152.535534  C 166.597899 153.473168 165.326016 154 164 154  C 162.673984 154 161.402101 153.473168 160.464466 152.535534  C 159.526832 151.597899 159 150.326016 159 149  C 159 147.673984 159.526832 146.402101 160.464466 145.464466  C 161.402101 144.526832 162.673984 144 164 144  z " clip-path="url(#pb71a768f20)" style="fill: #244da4; fill-opacity: 0.46; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 1.5; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_11">
+    <path d="M 185 134  C 186.326016 134 187.597899 134.526832 188.535534 135.464466  C 189.473168 136.402101 190 137.673984 190 139  C 190 140.326016 189.473168 141.597899 188.535534 142.535534  C 187.597899 143.473168 186.326016 144 185 144  C 183.673984 144 182.402101 143.473168 181.464466 142.535534  C 180.526832 141.597899 180 140.326016 180 139  C 180 137.673984 180.526832 136.402101 181.464466 135.464466  C 182.402101 134.526832 183.673984 134 185 134  z " clip-path="url(#pb71a768f20)" style="fill: #244da4; fill-opacity: 0.46; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 1.5; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_12">
+    <path d="M 205 164  C 206.326016 164 207.597899 164.526832 208.535534 165.464466  C 209.473168 166.402101 210 167.673984 210 169  C 210 170.326016 209.473168 171.597899 208.535534 172.535534  C 207.597899 173.473168 206.326016 174 205 174  C 203.673984 174 202.402101 173.473168 201.464466 172.535534  C 200.526832 171.597899 200 170.326016 200 169  C 200 167.673984 200.526832 166.402101 201.464466 165.464466  C 202.402101 164.526832 203.673984 164 205 164  z " clip-path="url(#pb71a768f20)" style="fill: #244da4; fill-opacity: 0.46; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 1.5; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_13">
+    <path d="M 226 159  C 227.326016 159 228.597899 159.526832 229.535534 160.464466  C 230.473168 161.402101 231 162.673984 231 164  C 231 165.326016 230.473168 166.597899 229.535534 167.535534  C 228.597899 168.473168 227.326016 169 226 169  C 224.673984 169 223.402101 168.473168 222.464466 167.535534  C 221.526832 166.597899 221 165.326016 221 164  C 221 162.673984 221.526832 161.402101 222.464466 160.464466  C 223.402101 159.526832 224.673984 159 226 159  z " clip-path="url(#pb71a768f20)" style="fill: #244da4; fill-opacity: 0.46; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 1.5; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_14">
+    <path d="M 245 192  C 246.326016 192 247.597899 192.526832 248.535534 193.464466  C 249.473168 194.402101 250 195.673984 250 197  C 250 198.326016 249.473168 199.597899 248.535534 200.535534  C 247.597899 201.473168 246.326016 202 245 202  C 243.673984 202 242.402101 201.473168 241.464466 200.535534  C 240.526832 199.597899 240 198.326016 240 197  C 240 195.673984 240.526832 194.402101 241.464466 193.464466  C 242.402101 192.526832 243.673984 192 245 192  z " clip-path="url(#pb71a768f20)" style="fill: #244da4; fill-opacity: 0.46; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 1.5; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_15">
+    <path d="M 266 182  C 267.326015 182 268.597899 182.526832 269.535534 183.464466  C 270.473168 184.402101 271 185.673984 271 187  C 271 188.326016 270.473168 189.597899 269.535534 190.535534  C 268.597899 191.473168 267.326015 192 266 192  C 264.673985 192 263.402101 191.473168 262.464466 190.535534  C 261.526832 189.597899 261 188.326016 261 187  C 261 185.673984 261.526832 184.402101 262.464466 183.464466  C 263.402101 182.526832 264.673985 182 266 182  z " clip-path="url(#pb71a768f20)" style="fill: #244da4; fill-opacity: 0.46; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 1.5; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_16">
+    <path d="M 282 212  C 283.326015 212 284.597899 212.526832 285.535534 213.464466  C 286.473168 214.402101 287 215.673984 287 217  C 287 218.326016 286.473168 219.597899 285.535534 220.535534  C 284.597899 221.473168 283.326015 222 282 222  C 280.673985 222 279.402101 221.473168 278.464466 220.535534  C 277.526832 219.597899 277 218.326016 277 217  C 277 215.673984 277.526832 214.402101 278.464466 213.464466  C 279.402101 212.526832 280.673985 212 282 212  z " clip-path="url(#pb71a768f20)" style="fill: #244da4; fill-opacity: 0.46; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 1.5; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #111827" x="14" y="24" transform="rotate(-0 14 24)">先看散点，再解释 Pearson r</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #485567" x="24" y="48" transform="rotate(-0 24 48)">幸福感评分 ↑</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: middle; fill: #485567" x="164" y="259" transform="rotate(-0 164 259)">压力评分 →</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #244da4" x="18" y="283" transform="rotate(-0 18 283)">r &lt; 0</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #111827" x="66" y="283" transform="rotate(-0 66 283)">负线性关联，不是因果结论</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #596371" x="18" y="302" transform="rotate(-0 18 302)">散点为教学构造，不对应真实研究数据。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb71a768f20">
+   <rect x="0" y="0" width="320" height="310" />
+  </clipPath>
+ </defs>
+</svg>

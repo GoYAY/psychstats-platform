@@ -1,0 +1,67 @@
+{
+  "id": "moderation",
+  "unit_id": "moderation",
+  "title": "交互项与简单斜率怎么看",
+  "question": "社会支持多一些，压力与幸福感的联系会不同吗？",
+  "design": "横断教学数据，压力和支持均按样本均值中心化。模型包含主项和乘积项；在支持均值及 ±1 SD 给出简单斜率与 t 区间。",
+  "variables": "横断教学 CSV，压力、支持与幸福感的列名见代码。",
+  "script": "examples/r/output_reading/moderation.R",
+  "data_files": [
+    "examples/data/cross_sectional_survey.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "interaction",
+      "label": "交互系数",
+      "meaning": "支持每多一分，压力斜率变化多少；不能用两条斜率 p 不同代替。",
+      "term": "interaction",
+      "format": ".3f"
+    },
+    {
+      "field_id": "mean_slope",
+      "label": "平均支持时的压力斜率",
+      "meaning": "中心化后支持为零就是样本平均支持，不是没有支持。",
+      "term": "simple-slope-test",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "交互项 p",
+      "meaning": "检验斜率是否随支持变化，而不是单独检验压力关联。",
+      "term": "moderation-effect",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "何时不能这样解释",
+      "body": "简单斜率值应在数据实际支持范围；中心化不消除共线性、混杂或异常值。"
+    },
+    {
+      "title": "路径或交互不显著怎么办",
+      "body": "检查区间精度、测量质量、取值范围及模型条件。零假设证据不足不是证明零效应，不改中心化方式、分组切点或删控制项来追求显著。横断观察不能仅凭路径确立中介机制。"
+    }
+  ],
+  "report_template": "中心化压力与支持后，乘积项系数 b = {interaction:.3f}，p = {p:.4g}。支持处于均值时的压力斜率为 {mean_slope:.3f}，均值下/上一个 SD 时分别为 {low_slope:.3f} 与 {high_slope:.3f}；具体区间见简单斜率表。该横断交互不自动证明支持的保护作用。",
+  "sources": [
+    {
+      "title": "估计实现的官方文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/lm.html"
+    }
+  ],
+  "related_terms": [
+    "interaction",
+    "simple-slope-test",
+    "moderation-effect"
+  ],
+  "table_labels": {
+    "parameters": "完整路径与测量参数",
+    "simple_slopes": "指定条件下的简单斜率及区间",
+    "conditional_effects": "条件间接关联与指数的 Bootstrap 区间"
+  }
+}

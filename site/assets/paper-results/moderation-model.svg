@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="590.4pt" height="288pt" viewBox="0 0 590.4 288" version="1.1" role="img">
+ <ns0:title>交互项与简单斜率怎么看 · model</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-17T19:08:28.080872</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 288  L 590.4 288  L 590.4 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 44.11395 163.944  L 134.48205 163.944  Q 139.05765 163.944 139.05765 160.488  L 139.05765 133.272  Q 139.05765 129.816 134.48205 129.816  L 44.11395 129.816  Q 39.53835 129.816 39.53835 133.272  L 39.53835 160.488  Q 39.53835 163.944 44.11395 163.944  z " clip-path="url(#pa528e2b707)" style="fill: #953970; fill-opacity: 0.055; stroke: #953970; stroke-width: 0.8; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 455.91795 163.944  L 546.28605 163.944  Q 550.86165 163.944 550.86165 160.488  L 550.86165 133.272  Q 550.86165 129.816 546.28605 129.816  L 455.91795 129.816  Q 451.34235 129.816 451.34235 133.272  L 451.34235 160.488  Q 451.34235 163.944 455.91795 163.944  z " clip-path="url(#pa528e2b707)" style="fill: #953970; fill-opacity: 0.055; stroke: #953970; stroke-width: 0.8; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 250.01595 77.544  L 340.38405 77.544  Q 344.95965 77.544 344.95965 74.088  L 344.95965 46.872  Q 344.95965 43.416 340.38405 43.416  L 250.01595 43.416  Q 245.44035 43.416 245.44035 46.872  L 245.44035 74.088  Q 245.44035 77.544 250.01595 77.544  z " clip-path="url(#pa528e2b707)" style="fill: #953970; fill-opacity: 0.055; stroke: #953970; stroke-width: 0.8; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="effect-x-well_being">
+    <ns0:path d="M 139.05765 146.88  Q 295.2 146.88 450.168414 146.88  " clip-path="url(#pa528e2b707)" style="fill: none; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+    <ns0:path d="M 446.168414 144.88  L 450.168414 146.88  L 446.168414 148.88  z " clip-path="url(#pa528e2b707)" style="fill: #953970; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="moderates-x-well_being">
+    <ns0:path d="M 295.2 77.544  Q 295.2 112.212 295.2 145.706064  " clip-path="url(#pa528e2b707)" style="fill: none; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+    <ns0:path d="M 297.2 141.706064  L 295.2 145.706064  L 293.2 141.706064  z " clip-path="url(#pa528e2b707)" style="fill: #953970; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="text_1">
+    <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="89.298" y="149.114375" transform="rotate(-0 89.298 149.114375)">X</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_2">
+    <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="501.102" y="149.215703" transform="rotate(-0 501.102 149.215703)">幸福感</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_3">
+    <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="295.2" y="62.714375" transform="rotate(-0 295.2 62.714375)">W</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_4">
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(238.691813 168.79957)">b1 = -0.3688</ns0:text>
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(245.536875 176.502305)">p &lt;0.001</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_5">
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(316.9341 110.37157)">b3 = -0.0006</ns0:text>
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(316.9341 118.074305)">p = 0.9092</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_6">
+    <ns0:text style="font-size: 7px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #526575" x="295.2" y="220.214131" transform="rotate(-0 295.2 220.214131)">W 对 幸福感 的主效应 b2 = 0.3129</ns0:text>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="pa528e2b707">
+   <ns0:rect x="20.664" y="17.28" width="549.072" height="250.56" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

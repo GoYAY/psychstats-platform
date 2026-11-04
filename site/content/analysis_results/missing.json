@@ -1,0 +1,227 @@
+{
+  "case_id": "missing",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 parallel_4.5.1 lavaan_0.6-21  mnormt_2.1.2   pbivnorm_0.6.0\n[6] jsonlite_2.0.0 stats4_4.5.1   quadprog_1.5-8\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n   imputation  estimate    variance\n1           1 0.4371917 0.003721019\n2           2 0.5245598 0.002675309\n3           3 0.4697467 0.003726221\n4           4 0.5485391 0.003221800\n5           5 0.5101467 0.003642153\n6           6 0.4904751 0.003264750\n7           7 0.4945734 0.003492259\n8           8 0.5285932 0.003457273\n9           9 0.4795018 0.003708332\n10         10 0.4661736 0.003792742\n11         11 0.5180560 0.003548769\n12         12 0.5187729 0.003493302\n13         13 0.5023707 0.003591331\n14         14 0.4896957 0.003286969\n15         15 0.5026267 0.003305999\n16         16 0.5087559 0.003648746\n17         17 0.5542405 0.003222769\n18         18 0.4885215 0.003360775\n19         19 0.4811297 0.003882881\n20         20 0.4899969 0.003591155\n      pooled           se           df \n  0.50018338   0.06558311 163.99962345 \nLength  Class   Mode \n     1 lavaan     S4 \n",
+  "stderr": "",
+  "metrics": {
+    "pooled": 0.5001833844416096,
+    "se": 0.06558310978169189,
+    "df": 163.9996234492889,
+    "ci_lower": 0.37068726437529265,
+    "ci_upper": 0.6296795045079265,
+    "fiml": 0.5055469404737887,
+    "missing_proportion": 0.27
+  },
+  "warnings": [],
+  "tables": {
+    "imputations": [
+      {
+        "imputation": 1,
+        "estimate": 0.4371916913385344,
+        "variance": 0.003721018771012478
+      },
+      {
+        "imputation": 2,
+        "estimate": 0.5245597804982052,
+        "variance": 0.002675309048905081
+      },
+      {
+        "imputation": 3,
+        "estimate": 0.46974673496029923,
+        "variance": 0.0037262209093603593
+      },
+      {
+        "imputation": 4,
+        "estimate": 0.548539121444473,
+        "variance": 0.0032217996469706815
+      },
+      {
+        "imputation": 5,
+        "estimate": 0.5101466997478543,
+        "variance": 0.003642153275143615
+      },
+      {
+        "imputation": 6,
+        "estimate": 0.49047507502542387,
+        "variance": 0.003264750165583157
+      },
+      {
+        "imputation": 7,
+        "estimate": 0.4945734297439266,
+        "variance": 0.003492258803034141
+      },
+      {
+        "imputation": 8,
+        "estimate": 0.5285932402647392,
+        "variance": 0.0034572734851692787
+      },
+      {
+        "imputation": 9,
+        "estimate": 0.4795018440514881,
+        "variance": 0.0037083322303962736
+      },
+      {
+        "imputation": 10,
+        "estimate": 0.46617359030368893,
+        "variance": 0.0037927418481574046
+      },
+      {
+        "imputation": 11,
+        "estimate": 0.5180560148544954,
+        "variance": 0.003548768715263806
+      },
+      {
+        "imputation": 12,
+        "estimate": 0.5187728505289807,
+        "variance": 0.0034933019040587587
+      },
+      {
+        "imputation": 13,
+        "estimate": 0.5023706942080849,
+        "variance": 0.0035913313773602343
+      },
+      {
+        "imputation": 14,
+        "estimate": 0.48969573597546884,
+        "variance": 0.003286969063715254
+      },
+      {
+        "imputation": 15,
+        "estimate": 0.5026267022028889,
+        "variance": 0.003305999342179811
+      },
+      {
+        "imputation": 16,
+        "estimate": 0.5087559395248981,
+        "variance": 0.003648745545181857
+      },
+      {
+        "imputation": 17,
+        "estimate": 0.5542404504669244,
+        "variance": 0.0032227689332570966
+      },
+      {
+        "imputation": 18,
+        "estimate": 0.4885215187856804,
+        "variance": 0.003360775073596001
+      },
+      {
+        "imputation": 19,
+        "estimate": 0.4811297063085331,
+        "variance": 0.0038828814932560045
+      },
+      {
+        "imputation": 20,
+        "estimate": 0.48999686859760344,
+        "variance": 0.0035911550342603384
+      }
+    ],
+    "fiml_parameters": [
+      {
+        "lhs": "y",
+        "op": "~",
+        "rhs": "x",
+        "est": 0.5055469404737887,
+        "se": 0.06628102943347064,
+        "z": 7.6273248136743215,
+        "pvalue": 2.398081733190338e-14,
+        "ci.lower": 0.375638509925947,
+        "ci.upper": 0.6354553710216304
+      },
+      {
+        "lhs": "y",
+        "op": "~",
+        "rhs": "z",
+        "est": 0.3538150282289444,
+        "se": 0.06001839558249153,
+        "z": 5.895109737524519,
+        "pvalue": 3.7443246281299025e-09,
+        "ci.lower": 0.23618113447738315,
+        "ci.upper": 0.47144892198050564
+      },
+      {
+        "lhs": "y",
+        "op": "~~",
+        "rhs": "y",
+        "est": 1.0061158290279393,
+        "se": 0.08942901684624772,
+        "z": 11.25044045555952,
+        "pvalue": 0,
+        "ci.lower": 0.830838176836468,
+        "ci.upper": 1.1813934812194105
+      },
+      {
+        "lhs": "x",
+        "op": "~~",
+        "rhs": "x",
+        "est": 1.0579378519418356,
+        "se": 0.10102933202050743,
+        "z": 10.471591079381682,
+        "pvalue": 0,
+        "ci.lower": 0.8599239997995018,
+        "ci.upper": 1.2559517040841695
+      },
+      {
+        "lhs": "x",
+        "op": "~~",
+        "rhs": "z",
+        "est": 0.2534516845253736,
+        "se": 0.0697533988528678,
+        "z": 3.633538848192676,
+        "pvalue": 0.00027956033249210144,
+        "ci.lower": 0.11673753497449521,
+        "ci.upper": 0.39016583407625194
+      },
+      {
+        "lhs": "z",
+        "op": "~~",
+        "rhs": "z",
+        "est": 1.0585465045770464,
+        "se": 0.08642949028163065,
+        "z": 12.247515299786805,
+        "pvalue": 0,
+        "ci.lower": 0.8891478164228956,
+        "ci.upper": 1.227945192731197
+      },
+      {
+        "lhs": "y",
+        "op": "~1",
+        "rhs": "",
+        "est": 0.09368407050068402,
+        "se": 0.06024702461697338,
+        "z": 1.554999123961558,
+        "pvalue": 0.11994627796642043,
+        "ci.lower": -0.024397927924281818,
+        "ci.upper": 0.21176606892564986
+      },
+      {
+        "lhs": "x",
+        "op": "~1",
+        "rhs": "",
+        "est": 0.060666464215190515,
+        "se": 0.06775387762155378,
+        "z": 0.8953947190159249,
+        "pvalue": 0.37057612268005125,
+        "ci.lower": -0.0721286957359892,
+        "ci.upper": 0.19346162416637022
+      },
+      {
+        "lhs": "z",
+        "op": "~1",
+        "rhs": "",
+        "est": 0.08496330742084186,
+        "se": 0.05940108036509526,
+        "z": 1.430332695948191,
+        "pvalue": 0.1526215550207768,
+        "ci.lower": -0.031460670737514185,
+        "ci.upper": 0.2013872855791979
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "c9cd619aebd116ca58d2513e56e54ffd35cd3a41a554140e02f0371207c8daa5",
+  "config_sha256": "a74859d014a70d98b2060868dfdd45006c3358a0fb5ede5909d39896775cb390",
+  "data_sha256": {}
+}

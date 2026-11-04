@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="663pt" viewBox="0 0 360 663" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">主成分是原始变量的线性组合，可用于概括资料。。图只示意计算关系，未给权重；综合指标不自动等于潜在心理能力。</desc><title id="title">记忆任务计算成综合指标</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:59.221878</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 663  L 360 663  L 360 0  L 0 0  L 0 663  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 126.210724 121.344536  Q 173.501709 183.627251 220.048978 244.930484  " clip-path="url(#pd6a29ddbc8)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 219.057724 239.656263  L 220.048978 244.930484  L 215.234848 242.558955  z " clip-path="url(#pd6a29ddbc8)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 126.998138 247.5  Q 173.500286 247.5 218.772595 247.5  " clip-path="url(#pd6a29ddbc8)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 213.972595 245.1  L 218.772595 247.5  L 213.972595 249.9  z " clip-path="url(#pd6a29ddbc8)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 126.210724 373.655464  Q 173.501709 311.372749 220.048978 250.069516  " clip-path="url(#pd6a29ddbc8)" style="fill: none; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 215.234848 252.441045  L 220.048978 250.069516  L 219.057724 255.343737  z " clip-path="url(#pd6a29ddbc8)" style="fill: #6741ad; opacity: 0.65; stroke: #6741ad; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 68 90.75  L 110 90.75  Q 119 90.75 119 99.75  L 119 139.75  Q 119 148.75 110 148.75  L 68 148.75  Q 59 148.75 59 139.75  L 59 99.75  Q 59 90.75 68 90.75  z " clip-path="url(#pd6a29ddbc8)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 68 218.5  L 110 218.5  Q 119 218.5 119 227.5  L 119 267.5  Q 119 276.5 110 276.5  L 68 276.5  Q 59 276.5 59 267.5  L 59 227.5  Q 59 218.5 68 218.5  z " clip-path="url(#pd6a29ddbc8)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 68 346.25  L 110 346.25  Q 119 346.25 119 355.25  L 119 395.25  Q 119 404.25 110 404.25  L 68 404.25  Q 59 404.25 59 395.25  L 59 355.25  Q 59 346.25 68 346.25  z " clip-path="url(#pd6a29ddbc8)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 237 198.5  L 279 198.5  Q 288 198.5 288 207.5  L 288 287.5  Q 288 296.5 279 296.5  L 237 296.5  Q 228 296.5 228 287.5  L 228 207.5  Q 228 198.5 237 198.5  z " clip-path="url(#pd6a29ddbc8)" style="fill: #6741ad; fill-opacity: 0.09; stroke: #6741ad; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 116.559805)">词语记</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 129.69043)">忆分数</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 244.338867)">图形记</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 257.469492)">忆分数</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 372.21168)">数字记</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 385.342305)">忆分数</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 231.542109)">综合指</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 244.578984)">标（计</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 257.698359)">算组合</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(252 270.53625)">）</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #465366" transform="translate(20 523.617305)">1. 词语记忆分数 → 综合指标（计算组合）：加权组</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #465366" transform="translate(20 542.850352)">合</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #465366" transform="translate(20 569.617305)">2. 图形记忆分数 → 综合指标（计算组合）：加权组</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #465366" transform="translate(20 588.850352)">合</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #465366" transform="translate(20 615.617305)">3. 数字记忆分数 → 综合指标（计算组合）：加权组</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #465366" transform="translate(20 634.850352)">合</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd6a29ddbc8">
+   <rect x="0" y="0" width="360" height="663" />
+  </clipPath>
+ </defs>
+</svg>

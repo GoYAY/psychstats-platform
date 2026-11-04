@@ -1,0 +1,24 @@
+{
+  "case_id": "intervals",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\n\tOne Sample t-test\n\ndata:  d$stress\nt = 114.37, df = 359, p-value < 2.2e-16\nalternative hypothesis: true mean is not equal to 0\n95 percent confidence interval:\n 47.77468 49.44643\nsample estimates:\nmean of x \n 48.61056 \n\n",
+  "stderr": "During startup - Warning messages:\n1: Setting LC_COLLATE=C.UTF-8 failed \n2: Setting LC_CTYPE=C.UTF-8 failed \n3: Setting LC_MONETARY=C.UTF-8 failed \n4: Setting LC_TIME=C.UTF-8 failed \n",
+  "metrics": {
+    "estimate": 48.61055555555556,
+    "ci_lower": 47.774676785930325,
+    "ci_upper": 49.44643432518078,
+    "n": 360
+  },
+  "warnings": [
+    "During startup - Warning messages:"
+  ],
+  "tables": [],
+  "figures": [],
+  "script_sha256": "0d71304c10376f1932840bb1288e89b95305694a1c80d7d227d1565c2140b3a6",
+  "config_sha256": "5bec6b4dbfcb8b46f1370e7cde10397d9d4ed64f940849d5f418a854d30c15d3",
+  "data_sha256": {
+    "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+  }
+}

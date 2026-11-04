@@ -1,0 +1,109 @@
+{
+  "case_id": "sampling",
+  "covariances": [],
+  "design": "模拟两个年级总体，各自简单随机不放回抽样。年级总体规模已知，按分层权重估计均值；显式加入有限总体修正。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/sampling.R",
+    "script_sha256": "3deae900c9ad1abfb1e0789c6650221c3a775cc64419a5186c38fcdaa7c528b5",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "se"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": 6.4220395728457085,
+          "ci_upper": 6.937107869275918,
+          "effect": "分层加权均值",
+          "estimate": 6.679573721060813,
+          "se": 0.13139738803697487
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "columns": [
+        "stratum",
+        "N",
+        "n",
+        "weight",
+        "mean"
+      ],
+      "name": "strata",
+      "rows": [
+        {
+          "N": 800,
+          "mean": 6.508538067801351,
+          "n": 50,
+          "stratum": "lower_year",
+          "weight": 0.8
+        },
+        {
+          "N": 200,
+          "mean": 7.36371633409866,
+          "n": 50,
+          "stratum": "upper_year",
+          "weight": 0.2
+        }
+      ],
+      "title": "strata"
+    },
+    {
+      "column_labels": {
+        "ci_lower": "95% CI 下限",
+        "ci_upper": "95% CI 上限",
+        "mean": "分层加权均值",
+        "naive_mean": "未加权均值",
+        "se": "设计标准误"
+      },
+      "columns": [
+        "analysis",
+        "mean",
+        "se",
+        "naive_mean",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "不同年级抽样比例不同怎么办",
+          "ci_lower": 6.4220395728457085,
+          "ci_upper": 6.937107869275918,
+          "mean": 6.679573721060813,
+          "naive_mean": 6.936127200950006,
+          "se": 0.13139738803697487
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "mean": "mean",
+          "naive_mean": "naive_mean",
+          "se": "se"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "不同年级抽样比例不同怎么办",
+  "valid": true,
+  "variances": []
+}

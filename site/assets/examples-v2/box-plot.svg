@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="760pt" height="400pt" viewBox="0 0 760 400" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">两班中位数相同，甲班中间一半成绩更集中；甲班六十和一百分被单独标出。。盒内线是中位数而非均值；须外点只供核查，不能自动删除或宣布组差显著。</desc><title id="title">两班中间成绩的集中程度</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:00:53.974125</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 400  L 760 400  L 760 0  L 0 0  L 0 400  z " style="fill: none" />
+  </g>
+  <g id="data-panel-0">
+   <g id="patch_2">
+    <path d="M 91.2 300  L 722 300  L 722 20  L 91.2 20  L 91.2 300  z " style="fill: none" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="119.872727" y="316.744141" transform="rotate(-0 119.872727 316.744141)">60</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="191.554545" y="316.744141" transform="rotate(-0 191.554545 316.744141)">65</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="263.236364" y="316.744141" transform="rotate(-0 263.236364 316.744141)">70</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4" />
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="334.918182" y="316.744141" transform="rotate(-0 334.918182 316.744141)">75</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5" />
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="406.6" y="316.744141" transform="rotate(-0 406.6 316.744141)">80</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6" />
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="478.281818" y="316.744141" transform="rotate(-0 478.281818 316.744141)">85</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7" />
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="549.963636" y="316.744141" transform="rotate(-0 549.963636 316.744141)">90</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_8" />
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="621.645455" y="316.744141" transform="rotate(-0 621.645455 316.744141)">95</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_9" />
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="693.327273" y="316.744141" transform="rotate(-0 693.327273 316.744141)">100</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #303b4b" x="406.6" y="342.880156" transform="rotate(-0 406.6 342.880156)">学生成绩（分；须取1.5倍四分位距界限内最远观测）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2" />
+   <g id="patch_3">
+    <path d="M 377.927273 111  L 377.927273 69  L 435.272727 69  L 435.272727 111  L 377.927273 111  z " clip-path="url(#pb1dc600357)" style="fill: #006d70; opacity: 0.24; stroke: #006d70; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_10">
+    <path d="M 377.927273 90  L 291.909091 90  " clip-path="url(#pb1dc600357)" style="fill: none; stroke: #006d70; stroke-linecap: square" />
+   </g>
+   <g id="line2d_11">
+    <path d="M 435.272727 90  L 521.290909 90  " clip-path="url(#pb1dc600357)" style="fill: none; stroke: #006d70; stroke-linecap: square" />
+   </g>
+   <g id="line2d_12">
+    <path d="M 291.909091 100.5  L 291.909091 79.5  " clip-path="url(#pb1dc600357)" style="fill: none; stroke: #006d70; stroke-linecap: square" />
+   </g>
+   <g id="line2d_13">
+    <path d="M 521.290909 100.5  L 521.290909 79.5  " clip-path="url(#pb1dc600357)" style="fill: none; stroke: #006d70; stroke-linecap: square" />
+   </g>
+   <g id="line2d_14">
+    <defs>
+     <path id="m5233a70449" d="M 0 2.5  C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767  C 2.236584 1.29895 2.5 0.663008 2.5 0  C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767  C 1.29895 -2.236584 0.663008 -2.5 0 -2.5  C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767  C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0  C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767  C -1.29895 2.236584 -0.663008 2.5 0 2.5  z " style="stroke: #9b5160" />
+    </defs>
+    <g clip-path="url(#pb1dc600357)">
+     <use xlink:href="#m5233a70449" x="119.872727" y="90" style="fill: #ffffff; stroke: #9b5160" />
+     <use xlink:href="#m5233a70449" x="693.327273" y="90" style="fill: #ffffff; stroke: #9b5160" />
+    </g>
+   </g>
+   <g id="patch_4">
+    <path d="M 263.236364 251  L 263.236364 209  L 549.963636 209  L 549.963636 251  L 263.236364 251  z " clip-path="url(#pb1dc600357)" style="fill: #006d70; opacity: 0.24; stroke: #006d70; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_15">
+    <path d="M 263.236364 230  L 119.872727 230  " clip-path="url(#pb1dc600357)" style="fill: none; stroke: #006d70; stroke-linecap: square" />
+   </g>
+   <g id="line2d_16">
+    <path d="M 549.963636 230  L 693.327273 230  " clip-path="url(#pb1dc600357)" style="fill: none; stroke: #006d70; stroke-linecap: square" />
+   </g>
+   <g id="line2d_17">
+    <path d="M 119.872727 240.5  L 119.872727 219.5  " clip-path="url(#pb1dc600357)" style="fill: none; stroke: #006d70; stroke-linecap: square" />
+   </g>
+   <g id="line2d_18">
+    <path d="M 693.327273 240.5  L 693.327273 219.5  " clip-path="url(#pb1dc600357)" style="fill: none; stroke: #006d70; stroke-linecap: square" />
+   </g>
+   <g id="line2d_19" />
+   <g id="line2d_20">
+    <path d="M 406.6 111  L 406.6 69  " clip-path="url(#pb1dc600357)" style="fill: none; stroke: #006d70; stroke-width: 2" />
+   </g>
+   <g id="line2d_21">
+    <path d="M 406.6 251  L 406.6 209  " clip-path="url(#pb1dc600357)" style="fill: none; stroke: #006d70; stroke-width: 2" />
+   </g>
+   <g id="patch_5">
+    <path d="M 91.2 300  L 722 300  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="91.2" y="42.158984" transform="rotate(-0 91.2 42.158984)">甲班</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="91.2" y="182.158984" transform="rotate(-0 91.2 182.158984)">乙班</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb1dc600357">
+   <rect x="91.2" y="20" width="630.8" height="280" />
+  </clipPath>
+ </defs>
+</svg>

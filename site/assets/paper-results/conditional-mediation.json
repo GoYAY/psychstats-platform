@@ -1,0 +1,294 @@
+{
+  "case_id": "conditional-mediation",
+  "covariances": [],
+  "design": "模拟第一段路径受 W 调节的观测变量中介。W 为均值中心化资源指标；300 次逐人 Bootstrap，报告条件间接关联及有调节中介指数 a3×b。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [
+    {
+      "beta": null,
+      "estimate": 0.423443196029684,
+      "label": "a1",
+      "p": 1.2354534065312635e-11,
+      "source": "x",
+      "target": "m"
+    },
+    {
+      "beta": null,
+      "estimate": 0.2080625370825302,
+      "label": "a2",
+      "p": 0.00018163079770698533,
+      "source": "w",
+      "target": "m"
+    },
+    {
+      "beta": null,
+      "estimate": 0.15809928140043514,
+      "label": "a3",
+      "p": 0.013551448979375194,
+      "source": "x:w",
+      "target": "m"
+    },
+    {
+      "beta": null,
+      "estimate": 0.17353590727150442,
+      "label": "c1′",
+      "p": 0.00826552216074747,
+      "source": "x",
+      "target": "y"
+    },
+    {
+      "beta": null,
+      "estimate": 0.553026866717963,
+      "label": "b",
+      "p": 1.1631822240259366e-21,
+      "source": "m",
+      "target": "y"
+    },
+    {
+      "beta": null,
+      "estimate": 0.07026160535939746,
+      "label": "c2′",
+      "p": 0.21243133890551083,
+      "source": "w",
+      "target": "y"
+    }
+  ],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/conditional-mediation.R",
+    "script_sha256": "b80c2749f897a1b5def8b5f66ed98a658e9e839ba00bb4ffa966a759ace3defe",
+    "supplement_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": 0.010405882189662274,
+          "ci_upper": 0.17480549148413438,
+          "effect": "调节中介指数 a3 × b",
+          "estimate": 0.08743315022324416
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "conditional_effects",
+      "rows": [
+        {
+          "_row": "index",
+          "ci_lower": 0.010405882189662274,
+          "ci_upper": 0.17480549148413438,
+          "effect": "index",
+          "estimate": 0.08743315022324416
+        },
+        {
+          "_row": "at_zero",
+          "ci_lower": 0.15994013403673873,
+          "ci_upper": 0.32863685944376975,
+          "effect": "at_zero",
+          "estimate": 0.23417546393333633
+        },
+        {
+          "_row": "at_low",
+          "ci_lower": 0.045267707734171186,
+          "ci_upper": 0.23104538487550766,
+          "effect": "at_low",
+          "estimate": 0.14674231371009216
+        },
+        {
+          "_row": "at_high",
+          "ci_lower": 0.20363152131866014,
+          "ci_upper": 0.4465452863145085,
+          "effect": "at_high",
+          "estimate": 0.3216086141565805
+        }
+      ],
+      "title": "条件间接关联与指数的 Bootstrap 区间"
+    },
+    {
+      "columns": [
+        "outcome",
+        "term",
+        "estimate",
+        "se",
+        "statistic",
+        "df",
+        "p",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "path_coefficients",
+      "rows": [
+        {
+          "ci_lower": -0.038350933034764334,
+          "ci_upper": 0.17525729506803076,
+          "df": 346,
+          "estimate": 0.06845318101663321,
+          "outcome": "m",
+          "p": 0.20830426115835526,
+          "se": 0.05430228303771897,
+          "statistic": 1.2605948992804754,
+          "term": "(Intercept)"
+        },
+        {
+          "ci_lower": 0.30467695900607356,
+          "ci_upper": 0.5422094330532945,
+          "df": 346,
+          "estimate": 0.423443196029684,
+          "outcome": "m",
+          "p": 1.2354534065312635e-11,
+          "se": 0.0603841703614274,
+          "statistic": 7.01248677418567,
+          "term": "x"
+        },
+        {
+          "ci_lower": 0.09992410001479923,
+          "ci_upper": 0.31620097415026116,
+          "df": 346,
+          "estimate": 0.2080625370825302,
+          "outcome": "m",
+          "p": 0.00018163079770698533,
+          "se": 0.05498069123145027,
+          "statistic": 3.784283762578697,
+          "term": "w"
+        },
+        {
+          "ci_lower": 0.03279733996457401,
+          "ci_upper": 0.28340122283629626,
+          "df": 346,
+          "estimate": 0.15809928140043514,
+          "outcome": "m",
+          "p": 0.013551448979375194,
+          "se": 0.0637071104372574,
+          "statistic": 2.4816583316259626,
+          "term": "x:w"
+        },
+        {
+          "ci_lower": -0.18945928105315185,
+          "ci_upper": 0.026348238031466867,
+          "df": 346,
+          "estimate": -0.0815555215108425,
+          "outcome": "y",
+          "p": 0.13803786583895755,
+          "se": 0.054861374428710794,
+          "statistic": -1.4865745227877807,
+          "term": "(Intercept)"
+        },
+        {
+          "ci_lower": 0.04504345731545176,
+          "ci_upper": 0.30202835722755705,
+          "df": 346,
+          "estimate": 0.17353590727150442,
+          "outcome": "y",
+          "p": 0.00826552216074747,
+          "se": 0.06532925672100746,
+          "statistic": 2.6563275932037613,
+          "term": "x"
+        },
+        {
+          "ci_lower": 0.4467757888175581,
+          "ci_upper": 0.6592779446183679,
+          "df": 346,
+          "estimate": 0.553026866717963,
+          "outcome": "y",
+          "p": 1.1631822240259366e-21,
+          "se": 0.054021103554437615,
+          "statistic": 10.237237492948884,
+          "term": "m"
+        },
+        {
+          "ci_lower": -0.04036286371109066,
+          "ci_upper": 0.18088607442988558,
+          "df": 346,
+          "estimate": 0.07026160535939746,
+          "outcome": "y",
+          "p": 0.21243133890551083,
+          "se": 0.056244661394524526,
+          "statistic": 1.2492137674463357,
+          "term": "w"
+        }
+      ],
+      "title": "各段路径系数"
+    },
+    {
+      "columns": [
+        "outcome",
+        "n",
+        "r_squared",
+        "adjusted_r_squared"
+      ],
+      "name": "model_summary",
+      "rows": [
+        {
+          "adjusted_r_squared": 0.1772556818245371,
+          "n": 350,
+          "outcome": "m",
+          "r_squared": 0.18432798255383911
+        },
+        {
+          "adjusted_r_squared": 0.3197400275590786,
+          "n": 350,
+          "outcome": "y",
+          "r_squared": 0.3255875344855048
+        }
+      ],
+      "title": "模型解释率与样本量"
+    },
+    {
+      "column_labels": {
+        "at_zero": "W 均值处间接关联",
+        "ci_lower": "指数 Bootstrap 下界",
+        "ci_upper": "95% CI 上限",
+        "index": "有调节中介指数"
+      },
+      "columns": [
+        "analysis",
+        "index",
+        "at_zero",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "不同条件下的间接关联",
+          "at_zero": 0.23417546393333633,
+          "ci_lower": 0.010405882189662274,
+          "ci_upper": 0.17480549148413438,
+          "index": 0.08743315022324416
+        }
+      ],
+      "source_fields": [
+        {
+          "at_zero": "at_zero",
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "index": "index"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "不同条件下的间接关联",
+  "valid": true,
+  "variances": []
+}

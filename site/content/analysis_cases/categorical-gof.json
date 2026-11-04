@@ -1,0 +1,70 @@
+{
+  "id": "categorical-gof",
+  "unit_id": "categorical",
+  "title": "选择比例是否符合预设分布",
+  "question": "三种学习方案的选择人数，是否与事先设定的25%、50%、25%接近？",
+  "design": "180人的独立分类教学计数；参考概率0.25/0.50/0.25只是本教学设定，不伪称真实预注册。单样本拟合优度检验不同于两变量独立性检验。",
+  "variables": "review=48、retrieval=75、combined=57；每人只能归入一种类别，所有期望频数均大于5。",
+  "script": "examples/r/output_reading/categorical-gof.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "chi_square",
+      "label": "拟合优度 χ²",
+      "meaning": "累加观察与预设期望计数的标准化偏离；不是检验两个变量是否独立。",
+      "term": "chi-square-test",
+      "format": ".3f"
+    },
+    {
+      "field_id": "df",
+      "label": "参考自由度",
+      "meaning": "三个类别、预设概率且未估计额外参数，本例为2；从当前数据估计参考参数需另处理自由度。",
+      "term": "degrees-of-freedom",
+      "format": ".0f"
+    },
+    {
+      "field_id": "p",
+      "label": "拟合优度 p",
+      "meaning": "不显著不证明比例完全一样；结合频数偏离和样本精度解释，不把p当分布正确的概率。",
+      "term": "p-value",
+      "format": ".4g"
+    },
+    {
+      "field_id": "w",
+      "label": "Cohen w",
+      "meaning": "按预设概率定义的偏离幅度，不是二变量列联表的Cramér V。",
+      "term": "effect-size",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "看哪些类别偏离较多",
+      "body": "逐类对比observed和expected；Pearson残差正号表示多于预设、负号表示少于预设，其平方加总得到χ²。残差不是已经完成多重校正的单类别显著检验。"
+    },
+    {
+      "title": "期望人数太少怎么办",
+      "body": "这里的χ²近似依赖独立计数与足够期望人数。稀疏时可考虑适合该预设分布的精确或模拟校准，并报告过程；Fisher独立性检验不是所有拟合优度问题的自动替代。"
+    }
+  ],
+  "report_template": "180人的教学分类计数相对预设0.25/0.50/0.25分布的拟合优度检验为 χ²({df:.0f}) = {chi_square:.3f}，p = {p:.4g}，Cohen w = {w:.3f}。观察/期望计数及残差见表；未拒绝不证明比例完全相同，参考概率只是教学设定。",
+  "sources": [
+    {
+      "title": "R 官方卡方拟合优度与独立性检验",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/chisq.test.html"
+    }
+  ],
+  "related_terms": [
+    "chi-square-test",
+    "p-value",
+    "effect-size"
+  ],
+  "table_labels": {
+    "observed_expected": "观察/预设期望频数与 Pearson 残差"
+  }
+}

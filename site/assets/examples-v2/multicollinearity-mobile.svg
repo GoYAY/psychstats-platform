@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="632pt" viewBox="0 0 360 632" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">高度重复的预测变量难以区分各自贡献。。教学合成完全重复示例；实际共线性也可能是近似重复，预测好不保证系数稳定。</desc><title id="title">两项时长几乎是同一信息</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:03:17.461279</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 632  L 360 632  L 360 0  L 0 0  L 0 632  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 26 12  L 334 12  Q 348 12 348 26  L 348 134  Q 348 148 334 148  L 26 148  Q 12 148 12 134  L 12 26  Q 12 12 26 12  z " clip-path="url(#pd79486c87f)" style="fill: #8a5200; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 26 164  L 334 164  Q 348 164 348 178  L 348 286  Q 348 300 334 300  L 26 300  Q 12 300 12 286  L 12 178  Q 12 164 26 164  z " clip-path="url(#pd79486c87f)" style="fill: #8a5200; opacity: 0.055" />
+   </g>
+   <g id="patch_4">
+    <path d="M 26 316  L 334 316  Q 348 316 348 330  L 348 438  Q 348 452 334 452  L 26 452  Q 12 452 12 438  L 12 330  Q 12 316 26 316  z " clip-path="url(#pd79486c87f)" style="fill: #8a5200; opacity: 0.055" />
+   </g>
+   <g id="patch_5">
+    <path d="M 26 468  L 334 468  Q 348 468 348 482  L 348 590  Q 348 604 334 604  L 26 604  Q 12 604 12 590  L 12 482  Q 12 468 26 468  z " clip-path="url(#pd79486c87f)" style="fill: #8a5200; opacity: 0.055" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 28 13  L 332 13  " clip-path="url(#pd79486c87f)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 28 165  L 332 165  " clip-path="url(#pd79486c87f)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 28 317  L 332 317  " clip-path="url(#pd79486c87f)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_4">
+    <path d="M 28 469  L 332 469  " clip-path="url(#pd79486c87f)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="25" y="36.108125" transform="rotate(-0 25 36.108125)">学生</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="36.556152" transform="rotate(-0 137 36.556152)">甲</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="25" y="71.108125" transform="rotate(-0 25 71.108125)">每周学习（小时）</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="71.556152" transform="rotate(-0 137 71.556152)">7</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #8a5200" transform="translate(25 106.134492)">每日学习×7（小</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #8a5200" transform="translate(25 119.148867)">时）</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="106.556152" transform="rotate(-0 137 106.556152)">7</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="25" y="188.108125" transform="rotate(-0 25 188.108125)">学生</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="188.556152" transform="rotate(-0 137 188.556152)">乙</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="25" y="223.108125" transform="rotate(-0 25 223.108125)">每周学习（小时）</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="223.556152" transform="rotate(-0 137 223.556152)">14</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #8a5200" transform="translate(25 258.134492)">每日学习×7（小</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #8a5200" transform="translate(25 271.148867)">时）</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="258.556152" transform="rotate(-0 137 258.556152)">14</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="25" y="340.108125" transform="rotate(-0 25 340.108125)">学生</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="340.556152" transform="rotate(-0 137 340.556152)">丙</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="25" y="375.108125" transform="rotate(-0 25 375.108125)">每周学习（小时）</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="375.556152" transform="rotate(-0 137 375.556152)">21</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #8a5200" transform="translate(25 410.134492)">每日学习×7（小</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #8a5200" transform="translate(25 423.148867)">时）</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="410.556152" transform="rotate(-0 137 410.556152)">21</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="25" y="492.108125" transform="rotate(-0 25 492.108125)">学生</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="492.556152" transform="rotate(-0 137 492.556152)">丁</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="25" y="527.108125" transform="rotate(-0 25 527.108125)">每周学习（小时）</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="527.556152" transform="rotate(-0 137 527.556152)">28</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #8a5200" transform="translate(25 562.134492)">每日学习×7（小</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #8a5200" transform="translate(25 575.148867)">时）</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="562.556152" transform="rotate(-0 137 562.556152)">28</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd79486c87f">
+   <rect x="0" y="0" width="360" height="632" />
+  </clipPath>
+ </defs>
+</svg>

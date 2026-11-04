@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="273pt" viewBox="0 0 760 273" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">训练平方和二十、相应误差八十，偏η²为20/(20+80)=0.20。。分母不是全部成绩平方和；其他条件的偏η²通常不能直接相加。</desc><title id="title">偏η平方的分母是谁</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:01:56.788360</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 273  L 760 273  L 760 0  L 0 0  L 0 273  z " style="fill: none" />
+  </g>
+  <g id="data-panel-0">
+   <g id="patch_2">
+    <path d="M 76 170  L 729.6 170  L 729.6 10.92  L 76 10.92  L 76 170  z " style="fill: none" />
+   </g>
+   <g id="patch_3">
+    <path d="M 76 129.359124  L 202.912621 129.359124  L 202.912621 89.879416  L 76 89.879416  z " clip-path="url(#pea1405064a)" style="fill: #6741ad; opacity: 0.36; stroke: #6741ad; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 202.912621 129.359124  L 710.563107 129.359124  L 710.563107 89.879416  L 202.912621 89.879416  z " clip-path="url(#pea1405064a)" style="fill: #246b91; opacity: 0.36; stroke: #246b91; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="76" y="183.244141" transform="rotate(-0 76 183.244141)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="202.912621" y="183.244141" transform="rotate(-0 202.912621 183.244141)">20</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="329.825243" y="183.244141" transform="rotate(-0 329.825243 183.244141)">40</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4" />
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="456.737864" y="183.244141" transform="rotate(-0 456.737864 183.244141)">60</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5" />
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="583.650485" y="183.244141" transform="rotate(-0 583.650485 183.244141)">80</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6" />
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="710.563107" y="183.244141" transform="rotate(-0 710.563107 183.244141)">100</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2" />
+   <g id="patch_5">
+    <path d="M 76 170  L 729.6 170  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="139.456311" y="112.970833" transform="rotate(-0 139.456311 112.970833)">20</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="456.737864" y="112.970833" transform="rotate(-0 456.737864 112.970833)">80</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="76" y="75.226722" transform="rotate(-0 76 75.226722)">分母：训练与相应误差之和</text>
+   </g>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="76" y="220.06125" transform="rotate(-0 76 220.06125)">1. 训练平方和（分²）</text>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #246b91" x="76" y="249.130625" transform="rotate(-0 76 249.130625)">2. 相应误差平方和（分²）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pea1405064a">
+   <rect x="76" y="10.92" width="653.6" height="159.08" />
+  </clipPath>
+ </defs>
+</svg>

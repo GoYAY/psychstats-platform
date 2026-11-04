@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="340pt" viewBox="0 0 760 340" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">图解为教学用途，完整说明见页面文字和图注。</desc><title id="title">测量不变性的比较条件</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:27:02.994252</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 340  L 760 340  L 760 0  L 0 0  L 0 340  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 36 70  L 238 70  Q 250 70 250 82  L 250 196  Q 250 208 238 208  L 36 208  Q 24 208 24 196  L 24 82  Q 24 70 36 70  z " clip-path="url(#p68c5a0df90)" style="fill: #6741ad; fill-opacity: 0.06; stroke: #cbd5e1; stroke-opacity: 0.75; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_3">
+    <path d="M 281 70  L 483 70  Q 495 70 495 82  L 495 196  Q 495 208 483 208  L 281 208  Q 269 208 269 196  L 269 82  Q 269 70 281 70  z " clip-path="url(#p68c5a0df90)" style="fill: #6741ad; fill-opacity: 0.06; stroke: #cbd5e1; stroke-opacity: 0.75; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 526 70  L 728 70  Q 740 70 740 82  L 740 196  Q 740 208 728 208  L 526 208  Q 514 208 514 196  L 514 82  Q 514 70 526 70  z " clip-path="url(#p68c5a0df90)" style="fill: #6741ad; fill-opacity: 0.06; stroke: #cbd5e1; stroke-opacity: 0.75; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 42 130  L 232 130  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 42 162  L 232 162  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 46 125  L 46 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_4">
+    <path d="M 46 157  L 46 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_5">
+    <path d="M 91.5 125  L 91.5 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_6">
+    <path d="M 91.5 157  L 91.5 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_7">
+    <path d="M 137 125  L 137 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_8">
+    <path d="M 137 157  L 137 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_9">
+    <path d="M 182.5 125  L 182.5 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_10">
+    <path d="M 182.5 157  L 182.5 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_11">
+    <path d="M 228 125  L 228 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_12">
+    <path d="M 228 157  L 228 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_13">
+    <path d="M 287 130  L 477 130  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_14">
+    <path d="M 287 162  L 477 162  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_15">
+    <path d="M 291 125  L 291 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_16">
+    <path d="M 291 157  L 291 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_17">
+    <path d="M 336.5 125  L 336.5 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_18">
+    <path d="M 336.5 157  L 336.5 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_19">
+    <path d="M 382 125  L 382 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_20">
+    <path d="M 382 157  L 382 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_21">
+    <path d="M 427.5 125  L 427.5 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_22">
+    <path d="M 427.5 157  L 427.5 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_23">
+    <path d="M 473 125  L 473 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_24">
+    <path d="M 473 157  L 473 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_25">
+    <path d="M 532 130  L 722 130  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_26">
+    <path d="M 532 162  L 722 162  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_27">
+    <path d="M 536 125  L 536 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_28">
+    <path d="M 536 157  L 536 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_29">
+    <path d="M 581.5 125  L 581.5 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_30">
+    <path d="M 581.5 157  L 581.5 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_31">
+    <path d="M 627 125  L 627 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_32">
+    <path d="M 627 157  L 627 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_33">
+    <path d="M 672.5 125  L 672.5 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_34">
+    <path d="M 672.5 157  L 672.5 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_35">
+    <path d="M 718 125  L 718 135  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_36">
+    <path d="M 718 157  L 718 167  " clip-path="url(#p68c5a0df90)" style="fill: none; stroke: #6741ad; stroke-opacity: 0.9; stroke-width: 1.8; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 20px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #171717" x="24" y="32" transform="rotate(-0 24 32)">比较群体之前，先确认量尺可比</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #171717" x="36" y="98" transform="rotate(-0 36 98)">形态相同</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #171717" x="36" y="192" transform="rotate(-0 36 192)">相同题目对应同一因素</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #171717" x="281" y="98" transform="rotate(-0 281 98)">载荷相同</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #171717" x="281" y="192" transform="rotate(-0 281 192)">单位可比，尚非均值可比</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #171717" x="526" y="98" transform="rotate(-0 526 98)">截距 / 阈值条件</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #171717" x="526" y="192" transform="rotate(-0 526 192)">核查位置与有序模型识别</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 18px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #6741ad" x="24" y="290" transform="rotate(-0 24 290)">尺子可比 ≠ 群体真实均值必须相同</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p68c5a0df90">
+   <rect x="0" y="0" width="760" height="340" />
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,25 @@
+{
+  "case_id": "describe",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  25.10   43.27   49.00   48.61   53.80   79.40 \n         n       mean         sd     median        IQR \n360.000000  48.610556   8.064545  49.000000  10.525000 \n",
+  "stderr": "During startup - Warning messages:\n1: Setting LC_COLLATE=C.UTF-8 failed \n2: Setting LC_CTYPE=C.UTF-8 failed \n3: Setting LC_MONETARY=C.UTF-8 failed \n4: Setting LC_TIME=C.UTF-8 failed \n",
+  "metrics": {
+    "n": 360,
+    "mean": 48.61055555555556,
+    "sd": 8.064544619092855,
+    "median": 49,
+    "iqr": 10.525000000000006
+  },
+  "warnings": [
+    "During startup - Warning messages:"
+  ],
+  "tables": [],
+  "figures": [],
+  "script_sha256": "ae0ea0e6b250355ec8cbf6c534a0443c562945d3885365202fd456e2f6eb5d60",
+  "config_sha256": "d19c040e4a417e9ab00d034fb867828b02510466b7eb8736fb1f932be32718fd",
+  "data_sha256": {
+    "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+  }
+}

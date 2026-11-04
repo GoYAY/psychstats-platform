@@ -1,0 +1,7 @@
+# Online API; scientific extraction/rendering reuse the existing figure environment.
+fastapi==0.159.1
+uvicorn==0.54.0
+matplotlib==3.11.2
+pdfplumber==0.11.10
+pypdf==6.21.2
+# Tests also require httpx; deployment lock is recorded after compatibility checks.

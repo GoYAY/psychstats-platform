@@ -1,0 +1,66 @@
+{
+  "id": "feedback",
+  "unit_id": "feedback",
+  "title": "双向反馈模型需要哪些条件",
+  "question": "压力和睡眠可能相互影响，能直接画双箭头分析吗？",
+  "design": "模拟同时方程：y1=压力、y2=睡眠困扰，x/z 为各方程专属外生预测变量。用排除约束提供识别，残差可相关；本例只是识别与稳定性教学。",
+  "variables": "下方代码固定种子生成连续教学指标；共享函数同时下载可完全复现。",
+  "script": "examples/r/output_reading/feedback.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "a",
+      "label": "睡眠困扰→压力系数",
+      "meaning": "依赖 z 对压力无直接作用等排除约束，不是单纯互相关。",
+      "term": "non-recursive-model",
+      "format": ".3f"
+    },
+    {
+      "field_id": "b",
+      "label": "压力→睡眠困扰系数",
+      "meaning": "依赖 x 对睡眠困扰无直接作用等识别假设，现实中需论证。",
+      "term": "path-coefficient",
+      "format": ".3f"
+    },
+    {
+      "field_id": "feedback_product",
+      "label": "反馈系数乘积",
+      "meaning": "绝对值小于 1 是本两变量线性反馈稳定性条件，不是全部识别条件。",
+      "term": "model-identification",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "判断模型之前先检查这些条件",
+      "body": "没有可信识别条件时不能把两个内生变量直接互回归；纵向设计也不自动消除混杂，饱和拟合不验证排除约束。"
+    },
+    {
+      "title": "路径或拟合不符合预期时",
+      "body": "先区分测量问题、模型错误与证据不足。检查实际估计器、标准误、编码、有效样本和参数表。不要靠无理论依据的删题、加路径或误差相关来追求显著与完美拟合。"
+    }
+  ],
+  "report_template": "在明确方程专属外生变量与排除约束的同时方程教学模型中，双向路径估计为 {a:.3f} 与 {b:.3f}，反馈乘积为 {feedback_product:.3f}，模型 df = {df:.0f}。解释依赖外生性、排除约束及系统稳定性，不因双向系数可估就证明真实反馈。",
+  "sources": [
+    {
+      "title": "实现与估计方法的官方文档",
+      "url": "https://lavaan.ugent.be/tutorial/sem.html"
+    }
+  ],
+  "related_terms": [
+    "non-recursive-model",
+    "path-coefficient",
+    "model-identification"
+  ],
+  "table_labels": {
+    "parameters": "完整参数表：估计、标准误、区间及标准化参数",
+    "fit": "拟合指标（保留官方字段名）",
+    "loadings": "各题完整载荷",
+    "comparison": "嵌套模型比较"
+  }
+}

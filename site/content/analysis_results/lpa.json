@@ -1,0 +1,64 @@
+{
+  "case_id": "lpa",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nother attached packages:\n[1] mclust_6.1.3\n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n---------------------------------------------------- \nGaussian finite mixture model fitted by EM algorithm \n---------------------------------------------------- \n\nMclust EEI (diagonal, equal volume and shape) model with 3 components: \n\n log-likelihood   n df       BIC       ICL\n       -1099.46 300 14 -2278.773 -2332.021\n\nClustering table:\n  1   2   3 \n118 109  73 \nBayesian Information Criterion (BIC): \n        EEI       VVI\n1 -2701.192 -2701.192\n2 -2382.908 -2391.266\n3 -2278.773 -2298.641\n4 -2291.689 -2321.425\n\nTop 3 models based on the BIC criterion: \n    EEI,3     EEI,4     VVI,3 \n-2278.773 -2291.689 -2298.641 \n                 [,1]       [,2]       [,3]\nstress     0.38500446 -1.0721619  1.5416771\nsupport    0.17050952  0.9267183 -0.9669732\nwellbeing -0.04379181  0.9632546 -1.3801820\n---------------------------------------------------- \nGaussian finite mixture model fitted by EM algorithm \n---------------------------------------------------- \n\nMclust EEI (diagonal, equal volume and shape) model with 3 components: \n\n log-likelihood   n df       BIC       ICL\n      -1099.462 300 14 -2278.776 -2331.382\n\nClustering table:\n  1   2   3 \n119 107  74 \nsame_structure        bic_gap  adjusted_rand \n   1.000000000   -0.003574589    0.968458690 \n",
+  "stderr": "Warning: package 'mclust' was built under R version 4.5.3\nPackage 'mclust' version 6.1.3\nType 'citation(\"mclust\")' for citing this R package in publications.\n",
+  "metrics": {
+    "k": 3,
+    "bic": -2278.7727452886566,
+    "entropy": 0.8362380562261096,
+    "mean_posterior": 0.9256294920035206,
+    "min_proportion": 0.24030631421004708,
+    "restart_same_structure": 1,
+    "restart_bic_gap": -0.0035745887366829265,
+    "restart_ari": 0.9684586896797697
+  },
+  "warnings": [
+    "Warning: package 'mclust' was built under R version 4.5.3"
+  ],
+  "tables": {
+    "profiles": [
+      {
+        "class": 1,
+        "stress": 0.38500445694847424,
+        "support": 0.1705095233857103,
+        "wellbeing": -0.04379181434668059
+      },
+      {
+        "class": 2,
+        "stress": -1.072161927554888,
+        "support": 0.9267183403898386,
+        "wellbeing": 0.9632546193840641
+      },
+      {
+        "class": 3,
+        "stress": 1.5416771144289196,
+        "support": -0.9669731668265716,
+        "wellbeing": -1.3801819671214122
+      }
+    ],
+    "posterior_summary": [
+      {
+        "class": 1,
+        "expected_count": 119.29714622393658,
+        "assigned_count": 118
+      },
+      {
+        "class": 2,
+        "expected_count": 108.61095951304928,
+        "assigned_count": 109
+      },
+      {
+        "class": 3,
+        "expected_count": 72.09189426301414,
+        "assigned_count": 73
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "69ed37cf14ab8ebeb059e4920295dd2f231ead3155ed7a5342606b5308fbf362",
+  "config_sha256": "adeb0f34ed815062e73a35dbc51fa78140a4b52c2462b01f8a705aaa53598b10",
+  "data_sha256": {}
+}

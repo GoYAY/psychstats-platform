@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="539pt" viewBox="0 0 760 539" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">模型可同时纳入个人与班级条件，并允许班级起点不同。。图为模型设定，不证明班级支持导致焦虑改善。</desc><title id="title">个人与班级一起进入模型</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:44.404914</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 539  L 760 539  L 760 0  L 0 0  L 0 539  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 259.224268 123.678071  Q 404.452384 100.424413 500.627143 210.071112  " clip-path="url(#p4f273cc425)" style="fill: none; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 499.266239 204.879971  L 500.627143 210.071112  L 495.657688 208.045151  z " clip-path="url(#p4f273cc425)" style="fill: #17643b; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 259.224268 301.321929  Q 404.452384 324.575587 500.627143 214.928888  " clip-path="url(#p4f273cc425)" style="fill: none; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 495.657688 216.954849  L 500.627143 214.928888  L 499.266239 220.120029  z " clip-path="url(#p4f273cc425)" style="fill: #17643b; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 460.501297 212.5  Q 480.626419 212.5 499.521704 212.5  " clip-path="url(#p4f273cc425)" style="fill: none; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 494.721704 210.1  L 499.521704 212.5  L 494.721704 214.9  z " clip-path="url(#p4f273cc425)" style="fill: #17643b; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 115.25 100  L 242.25 100  Q 251.25 100 251.25 109  L 251.25 139  Q 251.25 148 242.25 148  L 115.25 148  Q 106.25 148 106.25 139  L 106.25 109  Q 106.25 100 115.25 100  z " clip-path="url(#p4f273cc425)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 115.25 277  L 242.25 277  Q 251.25 277 251.25 286  L 251.25 316  Q 251.25 325 242.25 325  L 115.25 325  Q 106.25 325 106.25 316  L 106.25 286  Q 106.25 277 115.25 277  z " clip-path="url(#p4f273cc425)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 380 188.5  C 399.227225 188.5 417.669541 191.028791 431.265242 195.529437  C 444.860943 200.030083 452.5 206.135126 452.5 212.5  C 452.5 218.864874 444.860943 224.969917 431.265242 229.470563  C 417.669541 233.971209 399.227225 236.5 380 236.5  C 360.772775 236.5 342.330459 233.971209 328.734758 229.470563  C 315.139057 224.969917 307.5 218.864874 307.5 212.5  C 307.5 206.135126 315.139057 200.030083 328.734758 195.529437  C 342.330459 191.028791 360.772775 188.5 380 188.5  z " clip-path="url(#p4f273cc425)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 517.75 188.5  L 644.75 188.5  Q 653.75 188.5 653.75 197.5  L 653.75 227.5  Q 653.75 236.5 644.75 236.5  L 517.75 236.5  Q 508.75 236.5 508.75 227.5  L 508.75 197.5  Q 508.75 188.5 517.75 188.5  z " clip-path="url(#p4f273cc425)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="178.75" y="127.49793" transform="rotate(-0 178.75 127.49793)">个人压力（学生层）</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="178.75" y="304.480117" transform="rotate(-0 178.75 304.480117)">班级支持（班级层）</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="380" y="216.044805" transform="rotate(-0 380 216.044805)">班级起点差异</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="581.25" y="216.015742" transform="rotate(-0 581.25 216.015742)">学生焦虑</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="453.593867" transform="rotate(-0 20 453.593867)">1. 个人压力（学生层） → 学生焦虑：个人联系</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="481.593867" transform="rotate(-0 20 481.593867)">2. 班级支持（班级层） → 学生焦虑：班级联系</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="509.842305" transform="rotate(-0 20 509.842305)">3. 班级起点差异 → 学生焦虑：允许起点不同</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4f273cc425">
+   <rect x="0" y="0" width="760" height="539" />
+  </clipPath>
+ </defs>
+</svg>

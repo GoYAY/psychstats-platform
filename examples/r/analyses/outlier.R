@@ -1,0 +1,6 @@
+source("examples/r/analyses/_common.R")
+d <- read_data("messy_survey")
+q <- quantile(d$stress, c(.25,.75), na.rm=TRUE)
+iqr <- diff(q)
+flag <- !is.na(d$stress) & (d$stress < q[1]-1.5*iqr | d$stress > q[2]+1.5*iqr)
+emit(c(outlier_count=sum(flag), max_stress=max(d$stress,na.rm=TRUE), iqr=iqr))

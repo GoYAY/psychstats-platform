@@ -1,0 +1,11 @@
+export const workspaceHeight=({height,top})=>Math.max(160,Math.floor(height-top));
+export function mountCanvasWorkspace({main,canvasRoot,panel,signal,state={},onPanelChange=()=>{}}){
+ const abort=new AbortController();let disposed=false,open=state.panelOpen!==false;main?.classList.add('library-network-page');canvasRoot.classList.add('canvas-workspace');
+ const toggle=document.createElement('button');toggle.type='button';toggle.className='canvas-panel-toggle';toggle.dataset.canvasPanelToggle='';panel.id||='canvas-panel-'+crypto.randomUUID();toggle.setAttribute('aria-controls',panel.id);canvasRoot.append(toggle);
+ function setPanelOpen(value,{focus=false}={}){if(disposed)return;open=!!value;panel.inert=!open;panel.setAttribute('aria-hidden',String(!open));canvasRoot.dataset.panelOpen=String(open);toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'收起':'术语栏';toggle.setAttribute('aria-label',open?'收起框架与术语栏':'展开框架与术语栏');if(!open&&panel.contains(document.activeElement)||focus)toggle.focus({preventScroll:true});onPanelChange(open);}
+ function measure(){if(disposed)return;const viewport=window.visualViewport,top=canvasRoot.getBoundingClientRect().top;canvasRoot.style.setProperty('--canvas-workspace-height',workspaceHeight({height:viewport?.height||window.innerHeight,top})+'px');}
+ toggle.addEventListener('click',()=>setPanelOpen(!open),{signal:abort.signal});window.addEventListener('resize',measure,{signal:abort.signal});window.visualViewport?.addEventListener('resize',measure,{signal:abort.signal});
+ const observer=typeof ResizeObserver==='function'?new ResizeObserver(measure):null;for(const n of [...document.querySelectorAll('header,.site-header'),...main?.querySelectorAll('.library-tabs,.library-topbar')||[]])observer?.observe(n);setPanelOpen(open);measure();
+ function dispose(){if(disposed)return;disposed=true;abort.abort();observer?.disconnect();toggle.remove();main?.classList.remove('library-network-page');canvasRoot.classList.remove('canvas-workspace');canvasRoot.style.removeProperty('--canvas-workspace-height');panel.inert=false;signal?.removeEventListener('abort',dispose);}
+ signal?.addEventListener('abort',dispose,{once:true});if(signal?.aborted)dispose();return {setPanelOpen,capture:()=>({panelOpen:open}),dispose};
+}

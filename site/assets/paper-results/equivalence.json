@@ -1,0 +1,90 @@
+{
+  "case_id": "equivalence",
+  "covariances": [],
+  "design": "固定种子模拟独立组。教学设定：可忽略的分数差为 ±3，须在看数据前根据实际意义确定。使用 Welch 的两个单侧检验（TOST）。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/equivalence.R",
+    "script_sha256": "b9c75539592510c2d9af08580a4cdf388143039da23889c9aaf994233d335411",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "p"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": -3.569442050128875,
+          "ci_upper": 0.5027424010168501,
+          "effect": "组间均值差",
+          "estimate": -1.5333498245560122,
+          "p": 0.1176130204909429
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "column_labels": {
+        "ci_lower": "90% CI 下界",
+        "ci_upper": "90% CI 上界",
+        "difference": "difference",
+        "lower_p": "lower_p",
+        "margin": "margin",
+        "tost_p": "TOST p",
+        "upper_p": "upper_p"
+      },
+      "columns": [
+        "analysis",
+        "tost_p",
+        "ci_lower",
+        "ci_upper",
+        "difference",
+        "lower_p",
+        "upper_p",
+        "margin"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "差别小到可以忽略吗",
+          "ci_lower": -3.569442050128875,
+          "ci_upper": 0.5027424010168501,
+          "difference": -1.5333498245560122,
+          "lower_p": 0.1176130204909429,
+          "margin": 3,
+          "tost_p": 0.1176130204909429,
+          "upper_p": 0.00015371984832276007
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "difference": "difference",
+          "lower_p": "lower_p",
+          "margin": "margin",
+          "tost_p": "tost_p",
+          "upper_p": "upper_p"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "差别小到可以忽略吗",
+  "valid": true,
+  "variances": []
+}

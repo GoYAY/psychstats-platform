@@ -1,0 +1,52 @@
+{
+  "id": "friedman-sign",
+  "unit_id": "ranks",
+  "title": "重复排序与方向改变",
+  "question": "同一批学生体验三种学习方式，评分差异怎样比较？",
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。符号检验和符号秩检验不同，后者利用绝对差值的秩；不能因同称“非参数”忽略对称性等条件。",
+  "variables": "固定种子生成小型教学数据，非真实参与者；不上传数据。",
+  "script": "examples/r/output_reading/friedman-sign.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "chi_squared",
+      "label": "Friedman 统计量",
+      "meaning": "在每位参与者内排秩比较三条件，不能改成独立组 Kruskal–Wallis。",
+      "term": "nonparametric-test",
+      "format": ".3f"
+    },
+    {
+      "field_id": "sign_p",
+      "label": "B−A 符号检验 p",
+      "meaning": "只计正/负方向，不利用差值大小；零差值排除后需报告人数。",
+      "term": "data-rank",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这个变体最重要的边界",
+      "body": "符号检验和符号秩检验不同，后者利用绝对差值的秩；不能因同称“非参数”忽略对称性等条件。"
+    },
+    {
+      "title": "如何继续检查",
+      "body": "先明确独立单位、估计目标及比较方向，结合完整参数与区间判断。方法改变需有研究依据并记录，不以显著性作为选择标准。"
+    }
+  ],
+  "report_template": "35 人三条件评分的 Friedman χ²({df:.0f}) = {chi_squared:.3f}，p = {p:.4g}。预定 B−A 对照另示符号检验，非零配对 {nonzero_pairs:.0f}，p = {sign_p:.4g}；多次后续比较需要控制检验家族。",
+  "sources": [
+    {
+      "title": "R 官方统计函数索引",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "nonparametric-test",
+    "data-rank"
+  ]
+}

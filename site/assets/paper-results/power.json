@@ -1,0 +1,76 @@
+{
+  "case_id": "power",
+  "covariances": [],
+  "design": "规划情境而不是已完成的研究：两组独立、双侧 0.05，目标功效 0.80，预期标准差 8；对差值 2/3/4 分进行敏感性规划。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/power.R",
+    "script_sha256": "89b0936d09f12a86c0a8066db20e2314f494f8dd557a0bbfae9edafac2da5707",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "delta",
+        "per_group"
+      ],
+      "name": "sensitivity",
+      "rows": [
+        {
+          "delta": 2,
+          "per_group": 253
+        },
+        {
+          "delta": 3,
+          "per_group": 113
+        },
+        {
+          "delta": 4,
+          "per_group": 64
+        }
+      ],
+      "title": "sensitivity"
+    },
+    {
+      "column_labels": {
+        "per_group": "每组可分析人数",
+        "power": "目标功效",
+        "recruit_per_group": "考虑流失后的每组招募数"
+      },
+      "columns": [
+        "analysis",
+        "per_group",
+        "recruit_per_group",
+        "power"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "下一项研究需要多少人",
+          "per_group": 113,
+          "power": 0.8,
+          "recruit_per_group": 133
+        }
+      ],
+      "source_fields": [
+        {
+          "per_group": "per_group",
+          "power": "power",
+          "recruit_per_group": "recruit_per_group"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "下一项研究需要多少人",
+  "valid": true,
+  "variances": []
+}

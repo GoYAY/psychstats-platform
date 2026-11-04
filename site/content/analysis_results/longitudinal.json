@@ -1,0 +1,88 @@
+{
+  "case_id": "longitudinal",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nother attached packages:\n[1] nlme_3.1-168\n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 grid_4.5.1     jsonlite_2.0.0 lattice_0.22-7\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\n     control intervention \n         288          352 \nLinear mixed-effects model fit by maximum likelihood\n  Data: d \n       AIC      BIC    logLik\n  4034.486 4065.717 -2010.243\n\nRandom effects:\n Formula: ~time | id\n Structure: Diagonal\n        (Intercept)      time Residual\nStdDev:    7.301734 0.8493921 3.862024\n\nFixed effects:  outcome ~ time * treatment \n                              Value Std.Error  DF  t-value p-value\n(Intercept)                51.53264 0.9439645 478 54.59171  0.0000\ntime                        1.72153 0.2275416 478  7.56577  0.0000\ntreatmentintervention      -2.52355 1.2728414 158 -1.98261  0.0491\ntime:treatmentintervention  2.69097 0.3068170 478  8.77061  0.0000\n Correlation: \n                           (Intr) time   trtmnt\ntime                       -0.291              \ntreatmentintervention      -0.742  0.216       \ntime:treatmentintervention  0.216 -0.742 -0.291\n\nStandardized Within-Group Residuals:\n        Min          Q1         Med          Q3         Max \n-2.34381629 -0.54354341 -0.02792234  0.60007059  3.08598622 \n\nNumber of Observations: 640\nNumber of Groups: 160 \n     Model df      AIC      BIC    logLik   Test  L.Ratio p-value\nbase     1  6 4096.948 4123.717 -2042.474                        \nfit      2  7 4034.486 4065.717 -2010.243 1 vs 2 64.46199  <.0001\n",
+  "stderr": "",
+  "metrics": {
+    "interaction": 2.6909722222222183,
+    "p": 3.141728506880421e-17,
+    "comparison_p": 9.841244529250717e-16,
+    "people": 160,
+    "observations": 640
+  },
+  "warnings": [],
+  "tables": {
+    "fixed": [
+      {
+        "term": "(Intercept)",
+        "Value": 51.53263888888874,
+        "Std.Error": 0.9439644684013668,
+        "DF": 478,
+        "t.value": 54.59171463959959,
+        "p.value": 1.5509135923910121e-207,
+        "_row": "(Intercept)"
+      },
+      {
+        "term": "time",
+        "Value": 1.7215277777777807,
+        "Std.Error": 0.22754158190296175,
+        "DF": 478,
+        "t.value": 7.565772213502277,
+        "p.value": 1.9959590219473532e-13,
+        "_row": "time"
+      },
+      {
+        "term": "treatmentintervention",
+        "Value": -2.523547979797966,
+        "Std.Error": 1.2728414295327821,
+        "DF": 158,
+        "t.value": -1.9826098689483078,
+        "p.value": 0.0491447756291096,
+        "_row": "treatmentintervention"
+      },
+      {
+        "term": "time:treatmentintervention",
+        "Value": 2.6909722222222183,
+        "Std.Error": 0.30681700644729104,
+        "DF": 478,
+        "t.value": 8.770609730476293,
+        "p.value": 3.141728506880421e-17,
+        "_row": "time:treatmentintervention"
+      }
+    ],
+    "comparison": [
+      {
+        "model": "base",
+        "call": "lme.formula(fixed = outcome ~ time + treatment, data = d, random = list(id = nlme::pdDiag(~time)),     method = \"ML\", control = nlme::lmeControl(msMaxIter = 200))",
+        "Model": 1,
+        "df": 6,
+        "AIC": 4096.948374492638,
+        "BIC": 4123.71718355076,
+        "logLik": -2042.474187246319,
+        "Test": "",
+        "_row": "base"
+      },
+      {
+        "model": "fit",
+        "call": "lme.formula(fixed = outcome ~ time * treatment, data = d, random = list(id = nlme::pdDiag(~time)),     method = \"ML\", control = nlme::lmeControl(msMaxIter = 200))",
+        "Model": 2,
+        "df": 7,
+        "AIC": 4034.486380278006,
+        "BIC": 4065.716657512482,
+        "logLik": -2010.243190139003,
+        "Test": "1 vs 2",
+        "L.Ratio": 64.46199421463189,
+        "p.value": 9.841244529250717e-16,
+        "_row": "fit"
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "5f0ee9a84610e3229795792d074d1d72a46651f6250d372569aa815841f792de",
+  "config_sha256": "bc6e716e6fe89ee43f4f27bcd43574814c485aa342f32e3a730364946f56c831",
+  "data_sha256": {
+    "examples/data/longitudinal_growth.csv": "1055bca512a10b280c162f77b194e072f8201950dbd78ba8bd5f9797cc0aa9fe"
+  }
+}

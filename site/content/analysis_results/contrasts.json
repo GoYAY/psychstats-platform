@@ -1,0 +1,38 @@
+{
+  "case_id": "contrasts",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\nCall:\nlm(formula = gain ~ 0 + condition, data = d)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-18.1030  -5.2288  -0.7545   5.0562  23.2384 \n\nCoefficients:\n                  Estimate Std. Error t value Pr(>|t|)    \nconditioncombined  10.6219     0.9806  10.832  < 2e-16 ***\nconditioncontrol    3.3616     0.9806   3.428 0.000756 ***\nconditionpractice   6.3045     0.9806   6.429 1.15e-09 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 7.595 on 177 degrees of freedom\nMultiple R-squared:  0.4905,\tAdjusted R-squared:  0.4819 \nF-statistic: 56.81 on 3 and 177 DF,  p-value: < 2.2e-16\n\n[1] \"conditioncombined\" \"conditioncontrol\"  \"conditionpractice\"\n     estimate            SE             t            df             p \n-5.101661e+00  1.200941e+00 -4.248054e+00  1.770000e+02  3.479552e-05 \n",
+  "stderr": "",
+  "metrics": {
+    "difference": -5.101661366598961,
+    "se": 1.2009408508764423,
+    "t": -4.248053817867705,
+    "df": 177,
+    "p": 3.4795524551607305e-05,
+    "ci_lower": -7.471666737449263,
+    "ci_upper": -2.731655995748659
+  },
+  "warnings": [],
+  "tables": {
+    "weights": [
+      {
+        "group": "conditioncombined",
+        "weight": -0.5
+      },
+      {
+        "group": "conditioncontrol",
+        "weight": 1
+      },
+      {
+        "group": "conditionpractice",
+        "weight": -0.5
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "dc4c302e2c6853f9d8eff355e44781bea9eb8becd51d02305916fba1f2b2d68c",
+  "config_sha256": "df58269d6330d242747117357af26cdc2fefde30fed94485bb4ed38cb2df8635",
+  "data_sha256": {}
+}

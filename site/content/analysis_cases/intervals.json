@@ -1,0 +1,68 @@
+{
+  "id": "intervals",
+  "unit_id": "intervals",
+  "title": "平均压力的估计有多精确",
+  "question": "这次调查得到平均压力，换一批人还会相近吗？",
+  "design": "同一横断教学样本，估计总体平均压力的区间；有效记录一人一条，抽样代表性另行判断。",
+  "variables": "数据列与编码见教学数据和下方 R 脚本；本页指标与完整控制台来自同一次运行。",
+  "script": "examples/r/output_reading/intervals.R",
+  "data_files": [
+    "examples/data/cross_sectional_survey.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "estimate",
+      "label": "平均压力",
+      "meaning": "点估计，不代表每个人都接近它。",
+      "term": "parameter-and-statistic",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_lower",
+      "label": "95% CI 下界",
+      "meaning": "与上界一起看精度；区间不是个体分数的范围。",
+      "term": "confidence-interval",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_upper",
+      "label": "95% CI 上界",
+      "meaning": "宽区间表示当前估计不够精确，不等于总体没有差异。",
+      "term": "confidence-interval",
+      "format": ".3f"
+    },
+    {
+      "field_id": "n",
+      "label": "有效人数",
+      "meaning": "本区间按独立观测计算；聚类调查不能机械套用。",
+      "term": "independence",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "遇到不符合预期的结果",
+      "body": "区间宽，先判断抽样和样本量是否支持精度，不用只盯着均值。"
+    },
+    {
+      "title": "这次结果的解释边界",
+      "body": "同一横断教学样本，估计总体平均压力的区间；有效记录一人一条，抽样代表性另行判断。"
+    }
+  ],
+  "report_template": "平均压力为 {estimate:.2f}，95% CI [{ci_lower:.2f}, {ci_upper:.2f}]，有效记录 {n:.0f} 人。此区间基于独立观测假设，不弥补抽样代表性的限制。",
+  "sources": [
+    {
+      "title": "R 官方统计函数文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "parameter-and-statistic",
+    "confidence-interval",
+    "independence"
+  ]
+}

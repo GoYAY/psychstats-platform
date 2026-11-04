@@ -1,0 +1,11 @@
+source("_common.R")
+set.seed(4103)
+N <- c(800,200); n <- c(50,50); pop <- list(rnorm(N[1],6.5,1),rnorm(N[2],7.2,1))
+sampled <- Map(function(p,k) sample(p,k),pop,n)
+means <- sapply(sampled,mean); vars <- sapply(sampled,var); weights <- N/sum(N)
+estimate <- sum(weights*means)
+se <- sqrt(sum(weights^2*(1-n/N)*vars/n))
+tab <- data.frame(stratum=c("lower_year","upper_year"),N=N,n=n,weight=weights,mean=means)
+print(tab); print(c(weighted_mean=estimate,SE=se,unweighted_mean=mean(unlist(sampled))))
+finish(c(mean=estimate,se=se,ci_lower=estimate-qnorm(0.975)*se,ci_upper=estimate+qnorm(0.975)*se,naive_mean=mean(unlist(sampled))),list(strata=tab))
+

@@ -1,0 +1,2 @@
+# Preserve file bytes: existing build receipts use SHA-256 of source files.
+* -text

@@ -1,0 +1,76 @@
+{
+  "id": "correlation",
+  "unit_id": "correlation",
+  "title": "压力与幸福感的关系有多强",
+  "question": "压力高的人幸福感往往低，怎样量化这种关系？",
+  "design": "横断教学调查，压力和幸福感在同一人上配对。Pearson 描述线性关联，Spearman 描述秩的单调关联。",
+  "variables": "数据列与编码见教学数据和下方 R 脚本；本页指标与完整控制台来自同一次运行。",
+  "script": "examples/r/output_reading/correlation.R",
+  "data_files": [
+    "examples/data/cross_sectional_survey.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "r",
+      "label": "Pearson r",
+      "meaning": "方向与线性强度；接近零不能排除非线性关联。",
+      "term": "correlation-coefficient",
+      "format": ".3f"
+    },
+    {
+      "field_id": "rho",
+      "label": "Spearman ρ",
+      "meaning": "同一数据的秩关联，不是失败后换一个方法做到显著。",
+      "term": "spearman-correlation",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_lower",
+      "label": "Pearson 95% CI 下界",
+      "meaning": "与上界一起判断关联强度的不确定性。",
+      "term": "confidence-interval",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_upper",
+      "label": "Pearson 95% CI 上界",
+      "meaning": "这个区间只对应 Pearson，不移用到 Spearman。",
+      "term": "confidence-interval",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "Pearson p 值",
+      "meaning": "检验总体 Pearson 相关为零，不检验因果关系。",
+      "term": "p-value",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "遇到不符合预期的结果",
+      "body": "方向意外时先看编码、散点及异常记录，不把负号翻转成符合预期的方向。"
+    },
+    {
+      "title": "这次结果的解释边界",
+      "body": "横断教学调查，压力和幸福感在同一人上配对。Pearson 描述线性关联，Spearman 描述秩的单调关联。"
+    }
+  ],
+  "report_template": "压力与幸福感的 Pearson 相关为 r = {r:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，p = {p:.4g}（n = {n:.0f}）。Spearman 秩相关为 ρ = {rho:.3f}，作为不同目标量的补充描述；横断关联不证明压力导致幸福感变化。",
+  "sources": [
+    {
+      "title": "R 官方统计函数文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "correlation-coefficient",
+    "spearman-correlation",
+    "confidence-interval",
+    "p-value"
+  ]
+}

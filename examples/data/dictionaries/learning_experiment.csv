@@ -1,0 +1,6 @@
+"name","label","type","role","values"
+"id","ID","integer","id",""
+"condition","Condition","categorical","group","control|retrieval"
+"pre_score","Pretest","numeric","baseline","30-95"
+"post_score","Posttest","numeric","outcome","25-100"
+"gain","Gain","numeric","derived",""

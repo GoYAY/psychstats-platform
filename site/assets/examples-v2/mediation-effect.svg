@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="511pt" viewBox="0 0 760 511" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">把自信纳入模型是在检查一条可能的过程线索。。路径是研究设定，不是已证明的因果过程。</desc><title id="title">自信是候选过程环节</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:50.790787</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 511  L 760 511  L 760 0  L 0 0  L 0 511  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 230.500549 212.5  Q 265.001412 212.5 298.272436 212.5  " clip-path="url(#p1f3947c542)" style="fill: none; opacity: 0.65; stroke: #953970; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 293.472436 210.1  L 298.272436 212.5  L 293.472436 214.9  z " clip-path="url(#p1f3947c542)" style="fill: #953970; opacity: 0.65; stroke: #953970; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 460.500549 212.5  Q 495.001412 212.5 528.272436 212.5  " clip-path="url(#p1f3947c542)" style="fill: none; opacity: 0.65; stroke: #953970; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 523.472436 210.1  L 528.272436 212.5  L 523.472436 214.9  z " clip-path="url(#p1f3947c542)" style="fill: #953970; opacity: 0.65; stroke: #953970; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 86.5 188.5  L 213.5 188.5  Q 222.5 188.5 222.5 197.5  L 222.5 227.5  Q 222.5 236.5 213.5 236.5  L 86.5 236.5  Q 77.5 236.5 77.5 227.5  L 77.5 197.5  Q 77.5 188.5 86.5 188.5  z " clip-path="url(#p1f3947c542)" style="fill: #953970; fill-opacity: 0.09; stroke: #953970; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 316.5 188.5  L 443.5 188.5  Q 452.5 188.5 452.5 197.5  L 452.5 227.5  Q 452.5 236.5 443.5 236.5  L 316.5 236.5  Q 307.5 236.5 307.5 227.5  L 307.5 197.5  Q 307.5 188.5 316.5 188.5  z " clip-path="url(#p1f3947c542)" style="fill: #953970; fill-opacity: 0.09; stroke: #953970; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 546.5 188.5  L 673.5 188.5  Q 682.5 188.5 682.5 197.5  L 682.5 227.5  Q 682.5 236.5 673.5 236.5  L 546.5 236.5  Q 537.5 236.5 537.5 227.5  L 537.5 197.5  Q 537.5 188.5 546.5 188.5  z " clip-path="url(#p1f3947c542)" style="fill: #953970; fill-opacity: 0.09; stroke: #953970; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="150" y="216.010117" transform="rotate(-0 150 216.010117)">学习训练</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="380" y="216.03918" transform="rotate(-0 380 216.03918)">建立自信</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="610" y="215.99793" transform="rotate(-0 610 215.99793)">坚持学习</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="453.819805" transform="rotate(-0 20 453.819805)">1. 学习训练 → 建立自信：候选第一段</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="481.819805" transform="rotate(-0 20 481.819805)">2. 建立自信 → 坚持学习：候选第二段</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p1f3947c542">
+   <rect x="0" y="0" width="760" height="511" />
+  </clipPath>
+ </defs>
+</svg>

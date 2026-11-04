@@ -1,0 +1,603 @@
+{
+  "variable_sets": {
+    "survey": [
+      {"zh":"压力", "code":"stress", "role":"压力得分"},
+      {"zh":"社会支持", "code":"social_support", "role":"社会支持得分"},
+      {"zh":"幸福感", "code":"well_being", "role":"幸福感得分"},
+      {"zh":"年龄", "code":"age", "role":"年龄（岁）；进入模型时作为协变量"}
+    ],
+    "stress": [{"zh":"压力", "code":"stress", "role":"每位参与者的压力得分；本例汇总的测量值"}],
+    "stress_wellbeing": [
+      {"zh":"压力", "code":"stress", "role":"预测变量"},
+      {"zh":"幸福感", "code":"well_being", "role":"结果变量"}
+    ],
+    "mediation": [
+      {"zh":"压力", "code":"stress", "role":"预测变量 X"},
+      {"zh":"社会支持", "code":"social_support", "role":"中介变量 M"},
+      {"zh":"幸福感", "code":"well_being", "role":"结果变量 Y"}
+    ],
+    "three_conditions": [
+      {"zh":"教学条件", "code":"condition", "role":"control：对照；practice：练习；combined：组合条件"},
+      {"zh":"前测成绩", "code":"pre_score", "role":"学习前的成绩"},
+      {"zh":"后测成绩", "code":"post_score", "role":"学习后的成绩"},
+      {"zh":"成绩变化", "code":"gain", "role":"后测减前测；正值表示成绩提高"}
+    ],
+    "items": [{"zh":"量表题目", "code":"item_1 … item_12", "role":"12 个五级作答题目；题号与数据列一一对应"}],
+    "latent_items": [
+      {"zh":"连续教学指标", "code":"x1 … x9", "role":"九个连续观测指标，尚未赋予具体心理构念名称"},
+      {"zh":"三个潜构念", "code":"f1、f2、f3", "role":"分别由 x1–x3、x4–x6、x7–x9 测量；构念名称需由实际研究定义"}
+    ],
+    "nested": [
+      {"zh":"学生编号", "code":"student_id", "role":"识别每位学生"},
+      {"zh":"班级编号", "code":"class_id", "role":"学生所属班级；随机效应的分组单位"},
+      {"zh":"学习动机", "code":"motivation", "role":"学生层面的测量值"},
+      {"zh":"教师支持", "code":"teacher_support", "role":"班级层面的测量值，同班学生取值相同"},
+      {"zh":"学业成绩", "code":"achievement", "role":"结果变量"}
+    ],
+    "cluster_features": [
+      {"zh":"压力", "code":"stress", "role":"聚类特征之一"},
+      {"zh":"睡眠", "code":"sleep", "role":"聚类特征之一"},
+      {"zh":"幸福感", "code":"wellbeing", "role":"聚类特征之一；本脚本拼写为 wellbeing"},
+      {"zh":"标准化特征", "code":"z", "role":"将三个特征转为可比较的尺度后用于距离计算"}
+    ],
+    "generic_mediation": [
+      {"zh":"压力", "code":"x", "role":"情境中的预测变量 X；连续教学数值"},
+      {"zh":"支持感", "code":"m", "role":"情境中的中介变量 M；连续教学数值"},
+      {"zh":"另一项资源", "code":"w", "role":"情境中的调节变量 W；连续教学数值"},
+      {"zh":"幸福感", "code":"y", "role":"情境中的结果变量 Y；本例四项数值用于演示路径计算"}
+    ],
+    "binary_paired": [
+      {"zh":"前后求助意愿", "code":"before、after", "role":"0：不愿意，1：愿意；每行是同一人的前后记录"}],
+    "generic_groups": [{"zh":"各组等待时间", "code":"a、b、c", "role":"三个独立组的正值教学记录；小写变量名对应组 A、B、C，数值用于演示等待时间的偏态分布"}],
+    "growth": [
+      {"zh":"四次观测", "code":"y0、y1、y2、y3", "role":"同一对象在四个等距时点的连续教学测量值"},
+      {"zh":"初始水平", "code":"i", "role":"潜增长模型的截距因子"},
+      {"zh":"线性变化速度", "code":"s", "role":"潜增长模型的斜率因子；时间载荷为 0、1、2、3"}
+    ]
+  },
+  "cases": {
+    "describe": {
+      "variable_sets":["stress"],
+      "diagnostics":[
+        {"title":"平均数与中位数相差较大", "condition":"少数高分或低分把平均数拉向一侧时，", "action":"查看直方图与原始记录，同时呈现中位数、四分位距和平均数、标准差，让读者看见分布形状。"},
+        {"title":"有效人数少于问卷总份数", "condition":"输出 n 只计入 stress 有效的记录，", "action":"核对该列缺失数与排除记录，说明这次汇总实际使用了多少份压力记录。"}
+      ]
+    },
+    "correlation": {
+      "variable_sets":["stress_wellbeing"],
+      "diagnostics":[
+        {"title":"相关方向与预期相反", "condition":"压力与幸福感的相关符号出乎预期时，", "action":"先核对反向计分与变量方向，再看散点图是否有弯曲关系或少数极端点；按实际方向报告 r 与区间。"},
+        {"title":"Pearson 与 Spearman 结果差异明显", "condition":"两种相关对关系强弱给出不同判断时，", "action":"对照散点图、离群记录与并列值，依据线性或单调关系的研究目标选用指标，并说明敏感性分析。"},
+        {"title":"相关的区间跨过 0", "condition":"相关检验未达到显著且区间包含 0 时，", "action":"报告 r、区间和有效配对人数，检查取值范围及测量可靠性，评估现有精度是否足以回答问题。"}
+      ]
+    },
+    "intervals": {
+      "variable_sets":["stress"],
+      "diagnostics":[
+        {"title":"平均数的区间很宽", "condition":"均值区间覆盖很宽的压力分数范围时，", "action":"结合标准差、有效人数和缺失情况判断精度来源；以研究需要的精度规划后续样本。"},
+        {"title":"想知道多数个人会落在哪个分数范围", "condition":"研究问题关注个体分布时，", "action":"查看原始分布、分位数与标准差；均值置信区间用于判断平均水平的估计精度。"}
+      ]
+    },
+    "linear-simple": {
+      "variable_sets":["stress_wellbeing"],
+      "diagnostics":[
+        {"title":"截距看起来很奇怪", "condition":"(Intercept) 对应 stress = 0，而本例压力观测范围从 10 开始，", "action":"解释观测范围内的斜率；需要有意义的基准预测时，把压力中心化到平均数或有实际意义的取值。"},
+        {"title":"斜率未达到显著", "condition":"stress 行的区间包含 0 时，", "action":"结合斜率区间、散点图、样本范围和影响点判断当前精度，并报告每增加一分压力对应的幸福感变化。"}
+      ]
+    },
+    "linear": {
+      "variable_sets":["survey"],
+      "diagnostics":[
+        {"title":"加入其他变量后压力系数改变方向", "condition":"多元回归与两变量相关的方向不一致时，", "action":"对照预测变量之间的相关和共线性，解释给定社会支持与年龄后的压力系数，明确两种分析回答的条件不同。"},
+        {"title":"某个系数的区间很宽", "condition":"回归系数估计不够精确时，", "action":"检查该变量的取值范围、共线性、有效样本与残差；保留研究设计要求的协变量，报告估计及区间。"}
+      ]
+    },
+    "mediation": {
+      "variable_sets":["mediation"],
+      "variable_map":[
+        {"zh":"路径标签", "code":"a、b、c", "role":"a：压力→支持；b：支持→幸福感（控制压力）；脚本 c 对应图中的直接路径 c′"},
+        {"zh":"间接与总关联", "code":"indirect、total", "role":"indirect = a×b；total = c + a×b"}
+      ],
+      "design":"在同一次问卷的教学数据中，估计压力→社会支持→幸福感的两段路径和压力→幸福感的直接路径，并用 300 次百分位 Bootstrap 计算间接关联的区间。",
+      "locations":{
+        "indirect":"parameters → indirect := a*b → est；压力→社会支持→幸福感的间接关联",
+        "ci_lower":"parameters → indirect := a*b → ci.lower；同一间接关联的 Bootstrap 区间下界",
+        "direct":"parameters → well_being ~ stress → label=c → est；幸福感←压力的直接路径 c′"
+      },
+      "meanings":{
+        "indirect":"先读 social_support ~ stress（a：压力→社会支持），再读 well_being ~ social_support（b：社会支持→幸福感，控制压力）。indirect 行给出 a×b，表示这两段路径合在一起对应的间接关联。",
+        "ci_lower":"与同一行的 ci.upper 一起读，判断 a×b 的区间是否包含 0。本例请求 300 次重抽样，运行警告记录其中 1 次失败或未收敛；复核时需同时检查成功次数与区间稳定性。",
+        "direct":"well_being ~ stress 是控制社会支持后，压力与幸福感的条件关联。脚本把这条路径命名为 c，图和论文通常标为 c′；与 a×b 一起读可理解总关联的组成。"
+      },
+      "diagnostics":[
+        {"title":"出现 Bootstrap failed 或 did not converge", "condition":"本例 300 次重抽样中有 1 次失败或未收敛，剩余 299 次成功完成。", "action":"保留这条运行提示，检查原模型收敛、方差与异常记录；正式复核时增加重抽样次数，并比较不同种子下的成功比例和区间端点。"},
+        {"title":"间接关联的区间包含 0", "condition":"indirect 行的 ci.lower 与 ci.upper 跨过 0 时，", "action":"报告 a×b 及区间，并分别检查 a、b 两段路径的精度、题目计分和变量取值范围，确定不确定性集中在哪一段。"},
+        {"title":"直接与间接关联方向相反", "condition":"c′ 与 a×b 的符号相反时，", "action":"分别报告两条关联，再看 total = c′ + a×b 如何抵消；结合变量编码和理论解释这种分解。"},
+        {"title":"想研究压力怎样先改变支持、再改变幸福感", "condition":"研究目标要求时间先后，而本例三个变量来自同一次问卷，", "action":"后续设计可按压力、支持、幸福感的预期发生顺序安排测量，并记录共同影响这些变量的因素；本例用于学习同一时点的路径分解。"}
+      ]
+    },
+    "moderation": {
+      "variable_sets":["mediation"],
+      "variable_map":[
+        {"zh":"中心化压力", "code":"x", "role":"stress 减去平均压力；主效应的支持基准取平均值"},
+        {"zh":"中心化社会支持", "code":"w", "role":"social_support 减去平均支持；简单斜率取平均支持及其上下 1 个标准差"},
+        {"zh":"交互项", "code":"x:w", "role":"压力×支持；检验压力斜率随支持改变的程度"}
+      ],
+      "diagnostics":[
+        {"title":"一条简单斜率显著，另一条不显著", "condition":"不同支持水平下的斜率得到不同显著性判断时，", "action":"直接查看 x:w 的估计、区间与检验，判断斜率差异；同时展示各支持水平的斜率及区间。"},
+        {"title":"交互项的区间包含 0", "condition":"x:w 未达到显著时，", "action":"报告交互估计与区间，结合简单斜率图判断变化幅度和精度，并保留压力、支持主效应的实际结果。"}
+      ]
+    },
+    "conditional-mediation": {
+      "variable_sets":["generic_mediation"],
+      "variable_map":[{"zh":"条件间接关联的系数", "code":"x、x:w、m", "role":"中介方程 x 行对应 a1，x:w 行对应 a3；结果方程 m 行对应 b。条件间接关联为 (a1+a3×W)×b，W 取 −1、0、1 个中心化教学单位"}],
+      "diagnostics":[
+        {"title":"一个条件下区间跨 0，另一个没有", "condition":"不同 W 水平的间接关联呈现不同区间判断时，", "action":"查看调节中介指数 a3×b 的 Bootstrap 区间，直接判断间接关联随 W 的变化，再呈现各指定水平的估计。"},
+        {"title":"自己的调节发生在中介到结果这段", "condition":"理论要求 W 调节 m→y，而本例调节 x→m，", "action":"按真实假设重写结果方程及条件间接关联公式；本例的 (a1+a3×W)×b 对应第一段路径被调节的模型。"}
+      ]
+    },
+    "mediated-interaction": {
+      "variable_sets":["generic_mediation"],
+      "variable_map":[{"zh":"交互的两条路径", "code":"x:w、m、indirect", "role":"中介方程 x:w 系数对应 a3；结果方程 m 系数对应 b、x:w 系数为直接交互；indirect = a3×b"}],
+      "diagnostics":[
+        {"title":"加入中介后直接交互的 p 值改变", "condition":"两次模型中的交互显著性不同，", "action":"直接查看 a3×b 的 Bootstrap 区间，量化经中介传递的交互；并列报告直接交互与间接交互。"},
+        {"title":"直接交互与间接交互结论不同", "condition":"两个区间支持的方向或精度不同，", "action":"分别读取结果方程 x:w 与间接交互 a3×b，说明各自对应的路径，并核对乘积项与中心化方式。"}
+      ]
+    },
+    "latent-mediation": {
+      "variable_sets":["latent_items"],
+      "variable_map":[{"zh":"潜变量中介路径", "code":"a、b、c、indirect", "role":"f1→f2（a），f2→f3（b），f1→f3（c，即 c′）；indirect = a×b。本例区间采用 Delta 方法"}],
+      "diagnostics":[
+        {"title":"间接关联的区间包含 0", "condition":"indirect 的 Delta 方法区间跨过 0 时，", "action":"结合 a、b 各自的估计与测量载荷判断精度来源；需要 Bootstrap 区间时，在分析代码中明确更换区间计算方式。"},
+        {"title":"测量指标表现差，路径却很大", "condition":"低载荷、异常残差或不合理方差与大路径系数同时出现时，", "action":"先核对题目方向、测量模型和构念区分，再评估结构路径及间接关联。"}
+      ]
+    },
+    "latent-interaction": {
+      "variable_sets":["latent_items"],
+      "variable_map":[
+        {"zh":"乘积指标", "code":"p1、p2、p3", "role":"分别来自 x1×x4、x2×x5、x3×x6，并进行双重均值中心化"},
+        {"zh":"交互因子及系数", "code":"interaction、bw", "role":"interaction 由乘积指标测量；bw 为其预测 f3 的系数"}
+      ],
+      "diagnostics":[
+        {"title":"交互系数 bw 未达到显著", "condition":"bw 的区间包含 0 时，", "action":"报告区间并检查两个预测构念的测量质量与取值范围，结合简单斜率判断变化幅度。"},
+        {"title":"简单斜率的 −1、0、1 不知道是什么单位", "condition":"本例 f2 使用标记指标定标，", "action":"按 f2_marker_units 阅读指定水平；套用到自己的量表时，先确认潜变量尺度，再选择有意义的调节水平。"}
+      ]
+    },
+    "path": {
+      "variable_sets":["mediation"],
+      "variable_map":[{"zh":"路径标签", "code":"a、b、c", "role":"a：压力→支持；b：支持→幸福感；c：控制支持后的压力→幸福感"}],
+      "diagnostics":[
+        {"title":"拟合指标非常好，同时 df = 0", "condition":"本例是自由度为 0 的饱和路径模型，", "action":"重点读取每条路径的估计与区间；比较理论模型时，需要有可检验的约束或新的数据。"},
+        {"title":"直接路径与两变量相关不同", "condition":"well_being ~ stress 的系数与简单相关差异明显时，", "action":"对照支持与压力的关系，按给定支持后的压力系数解释该路径，逐条对应模型图。"}
+      ]
+    },
+    "sem": {
+      "variable_sets":["latent_items"],
+      "variable_map":[{"zh":"结构路径", "code":"a、b", "role":"a：f1→f3；b：f2→f3；路径含义需结合实际构念命名"}],
+      "diagnostics":[
+        {"title":"整体拟合欠佳", "condition":"拟合指标与残差显示模型未充分描述数据时，", "action":"先检查测量载荷、题目方向和残差模式，再按理论核对遗漏或多设的结构路径。"},
+        {"title":"出现负方差或未收敛", "condition":"方差估计不合理或优化没有收敛时，", "action":"核对指标分布、构念定标、样本信息和模型识别；完成这些检查后再读取路径估计。"}
+      ]
+    },
+    "cfa": {
+      "variable_sets":["items"],
+      "variable_map":[{"zh":"三个测量维度", "code":"f1、f2、f3", "role":"分别由 item_1–item_4、item_5–item_8、item_9–item_12 测量；本例用 WLSMV 处理五级作答"}],
+      "diagnostics":[
+        {"title":"某个题目载荷低或模型拟合欠佳", "condition":"题目与指定维度的对应不够清晰时，", "action":"核对反向计分、类别频数和题意，结合残差检查三维结构；按理论比较可解释的备选模型。"},
+        {"title":"未收敛或出现不合理方差", "condition":"估计警告与负方差同时出现时，", "action":"检查稀少类别、重复题目、构念定标与识别；确认估计可用后再解释载荷和拟合。"}
+      ]
+    },
+    "efa": {
+      "variable_sets":["items"],
+      "variable_map":[{"zh":"探索得到的因子", "code":"MR1、MR2、MR3", "role":"minres 提取并用 oblimin 旋转的因子；编号顺序需按载荷与题意解释"}],
+      "diagnostics":[
+        {"title":"平行分析建议的因子数与三因子方案不同", "condition":"数据建议与预设三维结构不一致时，", "action":"增加平行分析模拟次数，并对照相邻因子数方案的载荷、共同度和题目内容，说明选择依据。"},
+        {"title":"一个题目在多个因子上都有载荷", "condition":"出现交叉载荷时，", "action":"在允许因子相关的旋转下区分模式矩阵与结构矩阵，结合题意、共同度及因子相关判断归属。"}
+      ]
+    },
+    "pca": {
+      "variable_map":[
+        {"zh":"连续教学指标", "code":"x1 … x9", "role":"九个连续观测指标，是本例降维的输入"},
+        {"zh":"主成分", "code":"PC1、PC2、PC3", "role":"由标准化指标的线性组合得到；按各成分载荷解释信息压缩方向"}
+      ],
+      "diagnostics":[
+        {"title":"不知道保留几个主成分", "condition":"累计解释比例与希望保留的维数不一致时，", "action":"结合碎石图、保留信息的目标及后续任务比较维数，并说明选择的累计解释比例。"},
+        {"title":"一个变量几乎主导了主成分", "condition":"变量原尺度差异很大或存在极端值时，", "action":"核对本例 scale.=TRUE 的标准化、常数列与异常记录，再对照载荷判断信息来源。"}
+      ]
+    },
+    "reliability": {
+      "variable_map":[{"zh":"同一维度的四道题", "code":"item_1 … item_4", "role":"本例计算 α 的题目；先确认计分方向一致"}],
+      "diagnostics":[
+        {"title":"某题的题目—总分相关为负", "condition":"r.drop 为负或明显低于其他题时，", "action":"先核对反向题计分与录入，再看题意是否属于该维度；重新计分后复核 α。"},
+        {"title":"删除题目后 α 升高", "condition":"alpha if deleted 显示删题会提高 α 时，", "action":"同时评估内容覆盖与维度结构，记录删题依据，再在新样本中检验最终量表。"}
+      ]
+    },
+    "reliability-omega": {
+      "variable_map":[
+        {"zh":"三个连续指标", "code":"x1、x2、x3", "role":"组成未加权总分的三个教学指标"},
+        {"zh":"共同因子", "code":"f", "role":"用于估计载荷、因子方差与残差方差，从而计算总分 ω"}
+      ],
+      "diagnostics":[
+        {"title":"ω 与 α 相差较大", "condition":"两个可靠性指标给出不同数值时，", "action":"检查载荷是否相等、单因子模型与残差关系，并按实际总分定义报告对应可靠性。"},
+        {"title":"实际得分使用了加权或多个维度", "condition":"计分方法与本例未加权单因子总分不同，", "action":"按实际权重与维度结构选择 ω 的计算形式，明确报告的是哪一种得分的可靠性。"}
+      ]
+    },
+    "invariance": {
+      "variable_sets":["latent_items"],
+      "variable_map":[{"zh":"比较组别", "code":"group", "role":"A 与 B 两组；依次比较相同结构、相等载荷、相等截距"}],
+      "diagnostics":[
+        {"title":"约束截距后模型拟合下降", "condition":"scalar 相比 metric 的拟合明显变差时，", "action":"定位不一致的题目截距，结合题意评估有理论依据的部分不变性，并说明保留的共同锚点。"},
+        {"title":"希望比较两组潜变量平均数", "condition":"分析目标转向组间潜均值时，", "action":"先查看截距层面的不变性与定标；以可比较的共同测量尺度估计潜均值差异。"}
+      ]
+    },
+    "multigroup": {
+      "variable_sets":["latent_items"],
+      "variable_map":[
+        {"zh":"组别", "code":"group", "role":"A 与 B 两组；测量载荷和截距设置相等"},
+        {"zh":"待比较的路径", "code":"a1、a2、b", "role":"a1、a2 分别为 A、B 组 f1→f3；b 为两组共同约束的 f2→f3 路径"}
+      ],
+      "diagnostics":[
+        {"title":"一组路径显著，另一组不显著", "condition":"两组显著性判断不同，", "action":"读取 a1−a2 的直接比较及相等路径约束模型的检验，判断组间路径差异。"},
+        {"title":"测量不变性尚未得到支持", "condition":"两组的题目尺度缺少共同依据时，", "action":"先处理载荷、截距的可比性，再比较结构路径，并注明允许组间差异的参数。"}
+      ]
+    },
+    "feedback": {
+      "variable_map":[
+        {"zh":"压力与睡眠", "code":"y1、y2", "role":"在页面情境中将 y1 读作压力、y2 读作睡眠；两项连续教学变量互相预测"},
+        {"zh":"外部预测变量", "code":"x、z", "role":"x 直接进入 y1 方程，z 直接进入 y2 方程；用于模型识别"},
+        {"zh":"反馈路径", "code":"a、b", "role":"a：y2→y1；b：y1→y2；本例检查 |a×b| < 1 的稳定条件"}
+      ],
+      "diagnostics":[
+        {"title":"反馈模型无法识别或未收敛", "condition":"模型缺少区分两条反馈路径的信息时，", "action":"核对 x、z 的方程排除约束及其理论依据，检查参数识别和估计稳定性。"},
+        {"title":"路径乘积的绝对值接近 1", "condition":"|a×b| 接近稳定边界时，", "action":"检查标准误、区间和模型设定，对照反馈强度与数据中的实际变化，复核稳定条件。"}
+      ]
+    },
+    "growth": {
+      "variable_sets":["growth"],
+      "diagnostics":[
+        {"title":"平均变化不显著，但斜率方差较大", "condition":"平均斜率接近 0，而个体斜率仍有差异时，", "action":"分别报告平均变化与个体差异，查看轨迹图，并评估哪些变量能解释不同变化速度。"},
+        {"title":"实际轨迹明显弯曲", "condition":"观测趋势与等距线性增长不一致时，", "action":"核对测量间隔，按理论比较实际时间编码、自由载荷或非线性增长形式。"}
+      ]
+    },
+    "longitudinal": {
+      "variable_map":[
+        {"zh":"参与者", "code":"id", "role":"同一编号的多行记录是重复测量"},
+        {"zh":"时间", "code":"time", "role":"0、1、2、3 四个时点；斜率按每增加一个时间单位解释"},
+        {"zh":"条件", "code":"treatment", "role":"control：对照；intervention：干预"},
+        {"zh":"结果指标", "code":"outcome", "role":"随时间测量的连续教学结果"}
+      ],
+      "diagnostics":[
+        {"title":"time×treatment 未达到显著", "condition":"两组变化速度差异的区间包含 0 时，", "action":"报告交互估计与区间，对照两组轨迹、各时点覆盖及随访缺失，判断变化差异的精度。"},
+        {"title":"实际测量间隔不相等", "condition":"自己的随访间隔与本例等距 0–3 不同，", "action":"把 time 改为真实经过的时间，并按该时间单位解释变化速度。"}
+      ]
+    },
+    "intercept": {
+      "variable_sets":["nested"],
+      "variable_map":[
+        {"zh":"班级平均动机", "code":"motivation_mean", "role":"本班 motivation 的平均值；比较班级间差异"},
+        {"zh":"相对本班的动机", "code":"motivation_within", "role":"学生动机减本班平均动机；比较同班学生"}
+      ],
+      "diagnostics":[
+        {"title":"班内与班间动机系数方向不同", "condition":"两个层面的动机关联符号不一致时，", "action":"分别解释同班学生之间与班级平均水平之间的关系，保留两层系数及区间。"},
+        {"title":"空模型的 ICC 较小", "condition":"班级方差占比不高时，", "action":"结合班级数量、设计和班级协变量继续评估模型，核对班内相关对标准误的影响。"}
+      ]
+    },
+    "slope": {
+      "variable_sets":["nested"],
+      "variable_map":[
+        {"zh":"班内中心化动机", "code":"mw", "role":"motivation 减去本班平均动机"},
+        {"zh":"中心化教师支持", "code":"tc", "role":"teacher_support 减去数据中教师支持的平均值"},
+        {"zh":"班级平均动机", "code":"motivation_mean", "role":"用于区分班内与班间关联"},
+        {"zh":"跨层交互", "code":"mw:tc", "role":"检验班内动机斜率是否随教师支持改变"}
+      ],
+      "diagnostics":[
+        {"title":"随机斜率方差接近 0", "condition":"班级间动机斜率差异很小或出现奇异拟合时，", "action":"核对班级数量、班内取值范围及随机效应结构，并按预定设计比较较简模型。"},
+        {"title":"跨层交互未达到显著", "condition":"mw:tc 的区间包含 0 时，", "action":"报告跨层交互与区间，结合不同教师支持水平下的斜率和班级覆盖判断精度。"}
+      ]
+    },
+    "diagnostics": {
+      "variable_sets":["survey"],
+      "diagnostics":[
+        {"title":"某条记录的 Cook 距离很大", "condition":"一位参与者对系数有较强影响时，", "action":"核对录入、残差和杠杆值，保留有依据的记录；并列呈现包含该记录与敏感性分析的估计。"},
+        {"title":"HC3 与常规标准误差异明显", "condition":"稳健标准误与常规模型给出不同精度时，", "action":"查看残差随预测值的分布，评估异方差，并说明所采用的标准误与区间计算方式。"}
+      ]
+    },
+    "selection": {
+      "variable_sets":["survey"],
+      "diagnostics":[
+        {"title":"AIC 更低，但新数据预测更差", "condition":"逐步选择的模型在验证中表现下降时，", "action":"用交叉验证或独立样本评估预测误差，比较完整模型与选择模型并记录选择过程。"},
+        {"title":"换一份样本就选出不同变量", "condition":"变量选择对样本变化敏感时，", "action":"检查共线性与选择稳定性，保留研究设计要求的控制变量，把探索结果交由后续数据验证。"}
+      ]
+    },
+    "selection-blocks": {
+      "variable_sets":["survey"],
+      "variable_map":[{"zh":"分块进入顺序", "code":"age → social_support → stress", "role":"先年龄，再社会支持，最后压力；比较最后一块带来的 ΔR² 与嵌套模型 F 检验"}],
+      "diagnostics":[
+        {"title":"新增压力后 ΔR² 很小", "condition":"第三块对解释比例的增量有限时，", "action":"同时读取压力系数区间和新增块检验，结合研究问题说明增加了多少信息。"},
+        {"title":"比较模型使用的人数不同", "condition":"各模型因缺失值使用不同记录时，", "action":"先按参与比较的全部变量确定共同完整记录，再进行嵌套检验与 ΔR² 比较。"}
+      ]
+    },
+    "missing": {
+      "variable_map":[
+        {"zh":"有缺失的压力分数", "code":"x", "role":"情境中的压力教学变量；本例缺失概率与 z 有关"},
+        {"zh":"完整的辅助预测变量", "code":"z", "role":"同时进入缺失处理与结果模型"},
+        {"zh":"结果变量", "code":"y", "role":"分析 y ~ x + z；比较多重插补与 FIML"}
+      ],
+      "diagnostics":[
+        {"title":"多重插补与 FIML 结果差异较大", "condition":"两种方法的估计或区间明显不同，", "action":"核对变量集合、缺失模式与模型假设，确认辅助变量 z 在相应缺失处理模型中的角色。"},
+        {"title":"插补估计随种子改变明显", "condition":"有限次插补的汇总结果不稳定时，", "action":"增加插补次数，查看各次分布与诊断，并检查插补模型是否符合变量类型及合理范围。"}
+      ]
+    },
+    "logistic": {
+      "variable_map":[
+        {"zh":"筛查结果", "code":"screen_positive", "role":"1：筛查阳性，0：非阳性；模型预测事件 1"},
+        {"zh":"睡眠时长", "code":"sleep_hours", "role":"小时；OR 按增加 1 小时解释"},
+        {"zh":"压力与年龄", "code":"stress、age", "role":"压力得分与年龄（岁）；共同进入模型"}
+      ],
+      "diagnostics":[
+        {"title":"OR 方向与直觉相反", "condition":"睡眠或压力的 OR 符号方向不符合预期时，", "action":"核对事件确实编码为 1、变量单位和参照水平，结合调整后的系数区间解释。"},
+        {"title":"OR 极大，标准误很大或模型未收敛", "condition":"某些预测组合几乎完全对应一种结果时，", "action":"查看事件频数和分离情况，检查模型复杂度，并评估适合稀疏数据的惩罚估计。"}
+      ]
+    },
+    "kmeans": {
+      "variable_sets":["cluster_features"],
+      "diagnostics":[
+        {"title":"不同指标建议的组数不同", "condition":"轮廓系数与分组可解释性支持不同 k 时，", "action":"对照各组人数、标准化画像和研究用途，比较候选方案并记录选择依据。"},
+        {"title":"多次初始化得到不同分组", "condition":"随机初始中心导致分组变化时，", "action":"增加 nstart，在相同特征和标准化方式下重复拟合，对照组内平方和与分组一致性。"}
+      ]
+    },
+    "hierarchical": {
+      "variable_sets":["cluster_features"],
+      "diagnostics":[
+        {"title":"切出的某组人数很少或轮廓系数低", "condition":"切分对少数记录或阈值较敏感时，", "action":"核对标准化和极端值，比较相邻切分高度及各组画像，评估分组稳定性。"},
+        {"title":"不知道树状图应在哪一层切开", "condition":"多个高度都可得到合理分组时，", "action":"按合并高度的变化、目标组数和画像解释性比较方案，报告所用距离与 Ward.D2 方法。"}
+      ]
+    },
+    "discriminant": {
+      "variable_map":[
+        {"zh":"已知组别", "code":"group", "role":"A、B、C 三组，作为分类目标"},
+        {"zh":"分类特征", "code":"x1、x2", "role":"两个连续教学指标；比较线性与二次判别"}
+      ],
+      "diagnostics":[
+        {"title":"总准确率高，但某一组经常分错", "condition":"混淆矩阵显示错误集中在一个组时，", "action":"逐组读取召回与误分类去向，结合该组人数评估模型，并用验证结果比较方案。"},
+        {"title":"二次判别对少量记录很敏感", "condition":"组内样本不足或协方差估计不稳定时，", "action":"检查各组人数、共线性和协方差矩阵，比较更简单或正则化的分类模型。"}
+      ]
+    },
+    "lpa": {
+      "variable_map":[
+        {"zh":"剖面指标", "code":"stress、support、wellbeing", "role":"压力、支持与幸福感的连续教学指标；本脚本用 support、wellbeing 拼写"},
+        {"zh":"协方差方案", "code":"EEI、VVI", "role":"候选剖面模型的方差结构名称；与组数一起比较"}
+      ],
+      "diagnostics":[
+        {"title":"最佳组数刚好是搜索上限", "condition":"候选 1–4 组中四组的 mclust BIC 最大时，", "action":"结合人数和画像评估是否扩大候选范围，并用更多初始化检查同一方案的稳定性。"},
+        {"title":"部分人的所属剖面概率很分散", "condition":"后验概率较低或重复拟合的分组不一致时，", "action":"对照各剖面画像和分类不确定性；后续分析需处理成员归属的不确定性，并按画像匹配分组。"}
+      ]
+    },
+    "lca": {
+      "variable_map":[
+        {"zh":"五个分类指标", "code":"q1 … q5", "role":"每题编码 1、2；剖面图呈现响应为 2 的概率"},
+        {"zh":"生成时的类别", "code":"g", "role":"仅用于生成教学数据；拟合时根据五个指标估计潜类别"}
+      ],
+      "diagnostics":[
+        {"title":"某个类别很小或重复拟合的解不同", "condition":"类别人数不足或随机起点得到不同似然时，", "action":"增加随机起点，比较最佳似然、BIC、类别比例和响应画像，检查类别稳定性。"},
+        {"title":"同一类别内几个题目仍紧密关联", "condition":"局部独立假设难以描述题目关系时，", "action":"检查题目内容与类内残余关联，评估有理论依据的模型扩展或指标调整。"}
+      ]
+    },
+    "t-tests": {
+      "variable_map":[
+        {"zh":"教学条件", "code":"condition", "role":"retrieval：提取练习；control：对照"},
+        {"zh":"前后测与变化", "code":"pre_score、post_score、gain", "role":"gain = post_score − pre_score；组间差异按提取练习减对照解释"},
+        {"zh":"参与者编号", "code":"id", "role":"同一人的前后测按配对记录分析"}
+      ],
+      "diagnostics":[
+        {"title":"两组波动差异明显", "condition":"组间成绩变化的标准差相差较大时，", "action":"读取 Welch 检验的均值差、区间和自由度，并对照各组人数与分布。"},
+        {"title":"不确定该用组间还是配对结果", "condition":"本页同时有两组 gain 比较与同一人前后测比较，", "action":"先按研究问题确认比较对象；不同组使用独立样本结果，同一人的前后测使用配对结果。"}
+      ]
+    },
+    "t-single": {
+      "variable_map":[{"zh":"睡眠时长", "code":"x", "role":"情境中的连续教学记录，单位为小时；比较基准为 mu = 7 小时"}],
+      "diagnostics":[
+        {"title":"t 值为负，不知道方向", "condition":"样本平均数低于比较基准 7 时，", "action":"按样本均值减 7 读取差异方向，并报告均值、区间与检验结果。"},
+        {"title":"均值区间包含比较基准", "condition":"区间覆盖 7 时，", "action":"查看区间宽度与实际均值差，判断当前精度是否能区分研究关注的差异。"}
+      ]
+    },
+    "anova": {
+      "variable_sets":["three_conditions"],
+      "diagnostics":[
+        {"title":"总体 F 显著，想知道哪些组不同", "condition":"三组 gain 的总体检验达到显著时，", "action":"读取 Tukey 表每一行的组间差、区间和调整后 p 值，按行名确认相减方向。"},
+        {"title":"三组方差明显不一致", "condition":"各组波动相差较大时，", "action":"检查组内分布与样本量，评估 Welch 总体检验及匹配的组间比较方法。"}
+      ]
+    },
+    "ancova": {
+      "variable_sets":["three_conditions"],
+      "diagnostics":[
+        {"title":"前测×条件交互明显", "condition":"不同条件下前测与后测的关系斜率不同，", "action":"按有实际意义的前测水平比较条件结果，展示交互模型的条件预测与区间。"},
+        {"title":"调整均值的区间重叠", "condition":"各条件 adjusted_means 区间存在重叠时，", "action":"直接检验研究关注的组间对比；本页均值是在前测取样本平均数时的条件预测。"}
+      ]
+    },
+    "contrasts": {
+      "variable_sets":["three_conditions"],
+      "diagnostics":[
+        {"title":"对比估计的方向出乎预期", "condition":"本例权重为 control=1、practice=−0.5、combined=−0.5，", "action":"按对照减去两个学习条件的平均变化解释符号，核对权重顺序与组别名称。"},
+        {"title":"计划同时检验多个对比", "condition":"自己的研究设定了多个对比时，", "action":"在分析前明确比较家族与权重，选择对应的多重比较策略，报告每个对比的估计及区间。"}
+      ]
+    },
+    "welch": {
+      "variable_map":[{"zh":"组别与成绩", "code":"group、score", "role":"A、B、C 三组的连续教学成绩；组内方差与人数不同"}],
+      "diagnostics":[
+        {"title":"Welch 总体检验显著", "condition":"三组均值的总体检验达到显著时，", "action":"读取两两 Welch 比较的 Holm 调整 p 值，确认差异方向及各组波动。"},
+        {"title":"自由度出现小数", "condition":"Welch 输出给出非整数自由度时，", "action":"按异方差下的近似自由度照实读取和报告，同时核对组别人数及方差。"}
+      ]
+    },
+    "factorial-blocks": {
+      "variable_map":[
+        {"zh":"训练与反馈", "code":"training、feedback", "role":"training 为 A/B；feedback 为 no/yes；检验两因素及交互"},
+        {"zh":"结果成绩", "code":"score", "role":"连续教学成绩"},
+        {"zh":"另一个区组示范", "code":"block、condition", "role":"八个区组内比较 A/B/C 条件；与上方两因素示范分别读取"}
+      ],
+      "diagnostics":[
+        {"title":"训练×反馈交互显著", "condition":"训练差异随反馈条件改变时，", "action":"按各反馈条件读取训练的简单比较，展示组均值与区间，明确交互方向。"},
+        {"title":"区组之间差异很大", "condition":"block 对成绩有较大影响时，", "action":"按控制区组后的条件差异读取模型，并保留区组结构与比较方法说明。"}
+      ]
+    },
+    "repeated": {
+      "variable_map":[
+        {"zh":"参与者", "code":"id", "role":"同一人的三次测量相互对应"},
+        {"zh":"测量时点", "code":"time", "role":"pre：前测；post：后测；followup：随访"},
+        {"zh":"成绩", "code":"score", "role":"各时点的连续教学测量值"}
+      ],
+      "diagnostics":[
+        {"title":"球形性检验提示偏离", "condition":"Mauchly 检验提示球形性不足时，", "action":"读取 Greenhouse–Geisser 的 epsilon、修正自由度与 p 值，完整注明修正方式。"},
+        {"title":"时间总体效应显著", "condition":"总体检验显示时点之间存在差异时，", "action":"继续查看 Holm 调整的配对比较，并按 pre、post、followup 的时间顺序解释变化。"}
+      ]
+    },
+    "mixed-design": {
+      "variable_map":[
+        {"zh":"参与者与组别", "code":"id、group", "role":"每人属于 control 或 practice，并在三个时点测量"},
+        {"zh":"测量时点与成绩", "code":"time、score", "role":"pre、post、followup；score 为各时点成绩"}
+      ],
+      "diagnostics":[
+        {"title":"组别×时间交互明显", "condition":"两组变化轨迹不同，", "action":"按组别查看各时点成绩，再读取随访减前测的变化差（practice 减 control）及 Welch 区间。"},
+        {"title":"部分参与者缺少随访", "condition":"完整配对记录明显减少时，", "action":"汇总缺失模式及各组留存，评估保留可用重复测量的混合模型，并说明缺失处理。"}
+      ]
+    },
+    "manova": {
+      "variable_map":[
+        {"zh":"条件", "code":"group", "role":"control：对照；practice：练习；combined：组合"},
+        {"zh":"两个结果", "code":"memory、attention", "role":"记忆与注意成绩，进入联合检验"},
+        {"zh":"基线测量", "code":"baseline", "role":"MANCOVA 中的前测协变量"}
+      ],
+      "diagnostics":[
+        {"title":"Pillai 联合检验显著", "condition":"两个结果合在一起的组间检验显著时，", "action":"查看 Holm 调整后的结果特异检验与两两比较，明确差异集中在哪个结果及哪些组。"},
+        {"title":"记忆与注意高度重叠", "condition":"两个结果几乎提供相同信息时，", "action":"检查协方差矩阵、冗余测量与极端记录，评估联合模型的数值稳定性。"}
+      ]
+    },
+    "categorical": {
+      "variable_map":[
+        {"zh":"是否参加辅导", "code":"group", "role":"no：未参加；yes：参加"},
+        {"zh":"求助选择", "code":"help", "role":"0 与 1 两种状态；按列联表核对事件方向"}
+      ],
+      "diagnostics":[
+        {"title":"某些格子的期望频数较小", "condition":"列联表较稀疏时，", "action":"查看期望频数，并读取适用的 Fisher 精确检验及其优势比区间，明确事件与组别方向。"},
+        {"title":"自己的两列来自同一人的前后状态", "condition":"记录具有一一配对关系时，", "action":"保留同一人的配对表，使用针对二分类变化的 McNemar 或精确配对检验。"}
+      ]
+    },
+    "categorical-gof": {
+      "variable_map":[
+        {"zh":"策略类别", "code":"review、retrieval、combined", "role":"复习、提取练习与组合；观测频数分别为 48、75、57"},
+        {"zh":"参照比例", "code":"reference", "role":"三类别参照比例为 0.25、0.50、0.25，作为 chisq.test 的 p 参数，与观测频数按同一顺序对应"}
+      ],
+      "diagnostics":[
+        {"title":"想知道偏离集中在哪个类别", "condition":"总体拟合优度检验提示比例偏离时，", "action":"查看 observed、expected 与 pearson_residual；正残差对应高于参照的频数，负残差对应低于参照。"},
+        {"title":"参照比例或类别顺序不确定", "condition":"策略类别与 p 的顺序可能错位时，", "action":"先一一核对类别标签及参照比例来源，再计算期望频数与总体检验。"}
+      ]
+    },
+    "binary-paired": {
+      "variable_sets":["binary_paired"],
+      "diagnostics":[
+        {"title":"改变状态的人很少", "condition":"0→1 与 1→0 的不一致配对总数较少时，", "action":"读取基于这两类变化的精确二项检验，并报告每种变化的人数。"},
+        {"title":"两次阳性人数接近，却有很多人换了状态", "condition":"总比例掩盖了双向变化时，", "action":"对照 before×after 配对表，分别报告 0→1、1→0 与保持状态的人数。"}
+      ]
+    },
+    "ranks": {
+      "variable_sets":["generic_groups"],
+      "variable_map":[{"zh":"同一人的前后值", "code":"before、after", "role":"另一个配对示范；按同一人的差值进行符号秩检验"}],
+      "diagnostics":[
+        {"title":"两组分布形状明显不同", "condition":"偏态或离散程度在组间不同，", "action":"结合分位数与分布图解释秩比较反映的分布差异，明确位置解释所需条件。"},
+        {"title":"并列值很多或存在零差值", "condition":"秩排序包含大量并列或配对差为 0 时，", "action":"查看实际使用的有效记录与检验近似方式，保持配对顺序并说明并列处理。"}
+      ]
+    },
+    "friedman-sign": {
+      "variable_map":[
+        {"zh":"三种条件", "code":"A、B、C", "role":"同一参与者在三种条件下的测量；矩阵 y 每行为一个人"},
+        {"zh":"配对差值", "code":"B − A", "role":"符号检验统计正差与负差；差为 0 的配对单独记录"}
+      ],
+      "diagnostics":[
+        {"title":"Friedman 总体检验显著", "condition":"三种配对条件的总体检验显著时，", "action":"按研究计划进行配对条件比较并处理多重比较，展示各条件分布。"},
+        {"title":"符号检验人数少于总人数", "condition":"B−A 中存在零差值时，", "action":"将正差、负差与零差分别计数；精确二项检验使用正差加负差的有效人数。"}
+      ]
+    },
+    "proportions": {
+      "variable_map":[
+        {"zh":"两组筛查结果", "code":"a、b", "role":"0：非阳性，1：阳性；两种招募方式的比例差按 A 减 B 解释"},
+        {"zh":"另一个方差比较示范", "code":"x、y", "role":"两个独立组的连续教学测量值；与比例分析分别读取"}
+      ],
+      "diagnostics":[
+        {"title":"事件发生次数很少", "condition":"某组的 1 很少时，", "action":"同时列出事件数与总人数，查看适合稀疏记录的精确比例区间与检验。"},
+        {"title":"连续变量很偏，方差比不稳定", "condition":"x、y 存在明显偏态或极端值时，", "action":"检查各组分布，评估稳健的方差比较；明确区分比例结果与连续变量方差结果。"}
+      ]
+    },
+    "intervals-variance": {
+      "variable_map":[{"zh":"连续测量值", "code":"x", "role":"70 个连续教学值；输出方差及标准差的区间"}],
+      "diagnostics":[
+        {"title":"数据明显偏态或有长尾", "condition":"正态总体假设与实际分布差距较大时，", "action":"评估 χ² 方差区间的适用性，检查记录并考虑与分布条件匹配的重抽样区间。"},
+        {"title":"方差与标准差数值难以比较", "condition":"输出同时出现 variance 与 SD 时，", "action":"按方差的平方单位与标准差的原单位阅读；标准差区间由方差区间端点开平方得到。"}
+      ]
+    },
+    "equivalence": {
+      "variable_map":[
+        {"zh":"两组测量值", "code":"x、y", "role":"连续教学分数；差异按 x 减 y 解释"},
+        {"zh":"等效界限", "code":"−3、3", "role":"预先设定的可接受差异范围；读取两次单侧检验及 90% 区间"}
+      ],
+      "diagnostics":[
+        {"title":"90% 区间没有完全落入等效界限", "condition":"区间触及或越过 −3、3 的界限时，", "action":"报告实际均值差与区间，判断精度是否足以确认预设的可接受差异。"},
+        {"title":"普通差异检验不显著，想判定相近", "condition":"研究目标是确认两组差异足够小时，", "action":"先依据实际用途设定等效界限，再读取 TOST 的两次单侧检验和对应 90% 区间。"}
+      ]
+    },
+    "power": {
+      "variable_map":[
+        {"zh":"目标均值差", "code":"delta", "role":"计划识别的差异，本例设为 3"},
+        {"zh":"预期标准差", "code":"sd", "role":"组内波动，本例设为 8"},
+        {"zh":"检验规划", "code":"power、sig.level", "role":"功效 0.80、显著性水平 0.05；两组双侧比较"},
+        {"zh":"人数", "code":"n", "role":"每组所需人数；随后按预计 15% 损失上调招募"}
+      ],
+      "diagnostics":[
+        {"title":"目标差异没有可靠依据", "condition":"不知道 delta 应取多大时，", "action":"按有实际意义的差异和既有资料列出多个规划情境，比较每组人数随差异、波动的变化。"},
+        {"title":"实际流失高于预计", "condition":"随访或有效数据损失超过规划时，", "action":"更新留存预期与招募人数，并明确 n 是每组可分析人数；总招募量需覆盖两组。"}
+      ]
+    },
+    "correlation-types": {
+      "variable_sets":["survey"],
+      "variable_map":[
+        {"zh":"年龄调整后的残差", "code":"rx、ry", "role":"压力和幸福感分别回归年龄后的残差；用于偏相关"},
+        {"zh":"二分类教学变量", "code":"binary、another", "role":"0/1 编码；binary 与连续变量用于点二列相关，两列 0/1 用于 φ 相关"}
+      ],
+      "diagnostics":[
+        {"title":"加入年龄后相关明显改变", "condition":"偏相关与原始相关不同，", "action":"对照年龄与两个变量的关系，报告控制年龄后的相关及人数；本例控制一个变量，自由度为 n−3。"},
+        {"title":"二分类相关的方向难以理解", "condition":"点二列或 φ 相关符号出乎预期时，", "action":"先明确 0、1 对应的实际类别，按编码方向读组间差异或列联表，再报告相关。"}
+      ]
+    },
+    "sampling": {
+      "variable_map":[
+        {"zh":"年级层", "code":"lower_year、upper_year", "role":"低年级与高年级两个抽样层"},
+        {"zh":"层总体与样本人数", "code":"N、n", "role":"两层总体为 800、200；各抽样 50 人"},
+        {"zh":"总体层权重", "code":"weights / weight", "role":"代码向量 weights，对照表字段 weight；低年级 0.8、高年级 0.2，用于组合层内均值"}
+      ],
+      "diagnostics":[
+        {"title":"加权均值与直接平均不同", "condition":"两层样本各占一半，而总体构成为 80% 与 20%，", "action":"按总体层权重组合层内均值，并说明样本分配与总体构成。"},
+        {"title":"总体层人数已发生变化", "condition":"抽样框中的 N 与当前总体不一致时，", "action":"先更新层规模和权重，再计算总体均值与包含有限总体修正的精度。"}
+      ]
+    },
+    "sampling-cluster": {
+      "variable_map":[
+        {"zh":"总体与抽中班级数", "code":"Nc、nc", "role":"40 个班级中抽取 10 个班级"},
+        {"zh":"每班人数", "code":"pupils", "role":"每个抽中班级记录 20 名学生"},
+        {"zh":"班级均值", "code":"means", "role":"以各班均值估计总体水平与抽样误差"}
+      ],
+      "diagnostics":[
+        {"title":"用 200 名学生算出的区间特别窄", "condition":"同班记录存在关联，而独立抽样单位是 10 个班级，", "action":"按班级均值及班级数计算抽样精度；本例 t 自由度按 10−1 读取。"},
+        {"title":"自己的班级人数不相等", "condition":"实际整群样本的群大小不同，", "action":"根据目标是学生平均还是班级平均核对抽样概率及权重，选择与设计一致的估计方法。"}
+      ]
+    },
+    "design-invalid": {
+      "variable_map":[
+        {"zh":"班级", "code":"class", "role":"A、B、C 三个班级"},
+        {"zh":"条件", "code":"condition", "role":"只有 A 班接受 training，B/C 为 control；班级与条件缺少独立重复"}
+      ],
+      "diagnostics":[
+        {"title":"干预条件只有一个班级", "condition":"A 班同时代表班级身份与干预条件时，", "action":"增加接受各条件的独立班级，在班级层面安排分配，让设计能够区分班级差异与条件差异。"},
+        {"title":"想通过继续增加 A 班学生来解决", "condition":"新增记录仍来自同一个干预班级时，", "action":"优先增加独立班级重复，并在后续分析保留班级层级与相应样本量说明。"}
+      ]
+    }
+  }
+}

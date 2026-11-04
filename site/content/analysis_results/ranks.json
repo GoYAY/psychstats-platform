@@ -1,0 +1,21 @@
+{
+  "case_id": "ranks",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\n\tWilcoxon rank sum test with continuity correction\n\ndata:  a and b\nW = 1334, p-value = 0.07732\nalternative hypothesis: true location shift is not equal to 0\n95 percent confidence interval:\n -4.8321843  0.2382996\nsample estimates:\ndifference in location \n             -2.119853 \n\n\n\tKruskal-Wallis rank sum test\n\ndata:  list(a, b, c)\nKruskal-Wallis chi-squared = 3.1197, df = 2, p-value = 0.2102\n\n\n\tWilcoxon signed rank test with continuity correction\n\ndata:  before and after\nV = 719, p-value = 3.374e-05\nalternative hypothesis: true location shift is not equal to 0\n\n",
+  "stderr": "",
+  "metrics": {
+    "W": 1334,
+    "p": 0.0773185604444636,
+    "shift": -2.119853417303479,
+    "kw_p": 0.21016997022425016,
+    "paired_p": 3.3738958929743724e-05
+  },
+  "warnings": [],
+  "tables": [],
+  "figures": [],
+  "script_sha256": "6c6c6aa8bf1fff6267b040384bf2f7beb45e958fb82ac8df5c8a42b1b06c94c6",
+  "config_sha256": "863cd939db373fb8ded081fb3167417dd05422b1c1aa68080673e8c8442c0491",
+  "data_sha256": {}
+}

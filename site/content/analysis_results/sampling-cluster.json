@@ -1,0 +1,22 @@
+{
+  "case_id": "sampling-cluster",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\nsampled_classes student_records        estimate              se \n      10.000000      200.000000       66.164539        1.606609 \n[1] 62.53014 69.79894\n",
+  "stderr": "",
+  "metrics": {
+    "mean": 66.16453908790368,
+    "se": 1.6066088448721778,
+    "ci_lower": 62.53013738166113,
+    "ci_upper": 69.79894079414622,
+    "classes": 10,
+    "records": 200
+  },
+  "warnings": [],
+  "tables": [],
+  "figures": [],
+  "script_sha256": "4085881a773be6c9a4e39b5aa26d95a3e810c27e01d7a935a351973b14308ef8",
+  "config_sha256": "f8df87dbb4e61cabbdfcbedaa66df987380deaac89743684b31ad0ef045ccbef",
+  "data_sha256": {}
+}

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="900pt" viewBox="0 0 360 900" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">不合理年龄、重复提交、单位混用需要不同核查方式。。这些是概念示例，不是可直接套用的清洗规则。重复编号不一定是重复个体，极端值也不一定是错误；真实资料应依研究设计、来源与预先规则处理。</desc><title id="title">三种需要核对的记录</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:01:06.490964</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 900  L 360 900  L 360 0  L 0 0  L 0 900  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 62  L 330 62  Q 344 62 344 76  L 344 312  Q 344 326 330 326  L 30 326  Q 16 326 16 312  L 16 76  Q 16 62 30 62  z " clip-path="url(#p2d57c1fedd)" style="fill: #006d70; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 180 172.001831  Q 180 185.500918 180 197.54656  " clip-path="url(#p2d57c1fedd)" style="fill: none; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 183 191.54656  L 180 197.54656  L 177 191.54656  z " clip-path="url(#p2d57c1fedd)" style="fill: #006d70; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 30 341  L 330 341  Q 344 341 344 355  L 344 591  Q 344 605 330 605  L 30 605  Q 16 605 16 591  L 16 355  Q 16 341 30 341  z " clip-path="url(#p2d57c1fedd)" style="fill: #006d70; opacity: 0.055" />
+   </g>
+   <g id="patch_5">
+    <path d="M 180 451.001831  Q 180 464.500918 180 476.54656  " clip-path="url(#p2d57c1fedd)" style="fill: none; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 183 470.54656  L 180 476.54656  L 177 470.54656  z " clip-path="url(#p2d57c1fedd)" style="fill: #006d70; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_6">
+    <path d="M 30 620  L 330 620  Q 344 620 344 634  L 344 870  Q 344 884 330 884  L 30 884  Q 16 884 16 870  L 16 634  Q 16 620 30 620  z " clip-path="url(#p2d57c1fedd)" style="fill: #006d70; opacity: 0.055" />
+   </g>
+   <g id="patch_7">
+    <path d="M 180 730.001831  Q 180 743.500918 180 755.54656  " clip-path="url(#p2d57c1fedd)" style="fill: none; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 183 749.54656  L 180 755.54656  L 177 749.54656  z " clip-path="url(#p2d57c1fedd)" style="fill: #006d70; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 63  L 328 63  " clip-path="url(#p2d57c1fedd)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 342  L 328 342  " clip-path="url(#p2d57c1fedd)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 32 621  L 328 621  " clip-path="url(#p2d57c1fedd)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #006d70" x="20" y="31.656406" transform="rotate(-0 20 31.656406)">先核对证据，再改记录</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="89.080918" transform="rotate(-0 30 89.080918)">年龄</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="30" y="122.093857" transform="rotate(-0 30 122.093857)">原记录</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #ae3f53" x="30" y="152.248193" transform="rotate(-0 30 152.248193)">200 岁</text>
+   </g>
+   <g id="cleaning-check-0">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="180" y="225.503555" transform="rotate(-0 180 225.503555)">原始问卷确认：20岁</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #187b55" x="30" y="264.306787" transform="rotate(-0 30 264.306787)">20 岁</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="295.468867" transform="rotate(-0 30 295.468867)">修正多输入的一个零</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="368.080918" transform="rotate(-0 30 368.080918)">同一编号</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="30" y="401.093857" transform="rotate(-0 30 401.093857)">原记录</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #966111" x="30" y="431.189453" transform="rotate(-0 30 431.189453)">ID07 / ID07</text>
+   </g>
+   <g id="cleaning-check-1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="180" y="504.503555" transform="rotate(-0 180 504.503555)">核对提交时间与有效版本</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #187b55" x="30" y="543.299756" transform="rotate(-0 30 543.299756)">ID07 一份</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="574.503555" transform="rotate(-0 30 574.503555)">按预先规则保留有效版本</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="647.047012" transform="rotate(-0 30 647.047012)">睡眠时长</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="30" y="680.093857" transform="rotate(-0 30 680.093857)">原记录</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #966111" x="30" y="710.372412" transform="rotate(-0 30 710.372412)">7 小时 / 420 分钟</text>
+   </g>
+   <g id="cleaning-check-2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="180" y="783.510117" transform="rotate(-0 180 783.510117)">原问卷确认各自填写单位</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #187b55" x="30" y="822.299756" transform="rotate(-0 30 822.299756)">7 小时 / 7 小时</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="853.510117" transform="rotate(-0 30 853.510117)">换成同一单位，含义不变</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2d57c1fedd">
+   <rect x="0" y="0" width="360" height="900" />
+  </clipPath>
+ </defs>
+</svg>

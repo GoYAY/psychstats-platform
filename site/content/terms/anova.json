@@ -1,0 +1,143 @@
+{
+  "id": "anova",
+  "zh": "一元方差分析",
+  "en": "ANOVA",
+  "aliases": [],
+  "type": "method",
+  "level": "intermediate",
+  "topic": "group-comparisons",
+  "status": "public",
+  "summary": "通过组间与组内变异比较检验多个均值的差异。",
+  "relations": {
+    "prerequisites": [
+      "descriptive-statistics",
+      "p-value",
+      "effect-size"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": [
+      "wilks-lambda"
+    ]
+  },
+  "real_question": "三种教学方式下的成绩看起来不同，怎样判断是否存在组间差异？",
+  "operational_definition": "方差分析用组间均方与误差均方的比值形成 F 统计量，在相应设计和假设下检验各组总体均值是否全相等。",
+  "plain_explanation": "先比较不同组均值的差异相对于组内波动是否足够大；总体检验本身不指出哪两组不同。",
+  "problems_solved": [
+    "比较多组均值",
+    "区分总体检验与事后比较"
+  ],
+  "not_for": [
+    "F 检验显著不等于每两组之间都显著"
+  ],
+  "decision_clues": [
+    "区分独立、重复测量及混合设计",
+    "核对方差齐性和异常观测",
+    "事后比较控制多重检验"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：总体结果之后，怎样定位组间差异",
+      "body": "先核对独立组、重复测量或嵌套设计，再看各组人数、均值与散布。总体 F 检验提供是否存在组均值差异的证据；需要定位时，按事先计划的对比或合适的事后比较继续分析，并报告差异方向、效应量和区间，同时检查多重比较与模型条件。"
+    },
+    {
+      "heading": "容易混淆：总体显著等于每两组都不同吗",
+      "body": "总体检验显著只表示至少存在某种组均值差异，不能说明所有组两两不同，也不直接给出哪种教学安排最好。同一学生在多种条件下测量时，需要处理重复测量关系；方差明显不齐时，也须选择或核查匹配的方法，不能只增加样本量后忽略条件。"
+    }
+  ],
+  "formula": {
+    "latex": "",
+    "note": "",
+    "verified": false
+  },
+  "quiz": {
+    "question": "单因素 ANOVA 的总体 F 检验显著，能直接断定什么？",
+    "options": [
+      "每两组都不同",
+      "至少有组均值不全相等",
+      "处理必然导致差异",
+      "数据必然正态"
+    ],
+    "answer": 1,
+    "explanation": "总体检验只拒绝所有组均值相等的主张。",
+    "option_explanations": [
+      "总体 F 检验不指出哪些具体组对不同，更不能说明每一组对都不同。",
+      "正确。总体检验提供各组均值并非全相等的证据；定位组对还需事后比较或预设对比。",
+      "统计差异本身不能排除混杂，也不能单独建立因果关系。",
+      "显著的 F 值不能证明数据正态，模型条件应单独检查。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "basic_textbook",
+      "title": "现代心理与教育统计学",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": {
+    "packages": [],
+    "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+    "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"learning_experiment.csv\", stringsAsFactors = FALSE)\nfit <- aov(post_score ~ condition, data=d)\ntab <- summary(fit)[[1]]\nprint(c(f_statistic=tab[1,\"F value\"], p_value=tab[1,\"Pr(>F)\"], n=nrow(d)))\n",
+    "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(all(c(\"group\",\"outcome\") %in% names(d)))\nd$group <- factor(d$group)\nfit <- aov(outcome ~ group,data=d)\nplot(fit); summary(fit)\nTukeyHSD(fit) # Use only when the design and assumptions support this comparison.\n",
+    "assumption_checks": [
+      "区分独立、重复测量及混合设计",
+      "核对方差齐性和异常观测",
+      "事后比较控制多重检验"
+    ],
+    "key_output": [
+      "f_statistic",
+      "p_value",
+      "n"
+    ],
+    "interpretation": "这段示例代码比较两种教学条件的后测 post_score，f_statistic≈27.54、p_value≈4.34e−07，n=180 为总人数；示例虽只有两组，仍可运行单因素方差分析。它检验的是后测均值，不是前后进步，也没有展示组别方向或控制前测差异。换成三个及以上独立组后，总体显著不能定位具体组对，需要另做有依据的对比并核对适用条件。",
+    "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+    "common_errors": [
+      "F 检验显著不等于每两组之间都显著"
+    ],
+    "verified": true,
+    "validation_report": "logs/r_validation.json"
+  },
+  "verified": true,
+  "candidate_evidence": {
+    "textbook": [
+      {
+        "chunk_id": 97,
+        "page_print": 56,
+        "page_pdf": 69,
+        "path": "第二章",
+        "sim": 0.7883,
+        "snippet": "一元方差分析（ANOVA） 多元方差分析（MANOVA） HotellingT检验因 素设计 多元协方差分析（MANCOVA） 一元协方差分析（ANCOVA） 方差一协方 多元正态"
+      },
+      {
+        "chunk_id": 62,
+        "page_print": 36,
+        "page_pdf": 49,
+        "path": "第二章",
+        "sim": 0.7464,
+        "snippet": "多元方差分析 核心要点 1了解多元方差分析的零假设与一元方差分析的零假设的差异。 2.知道多元方差分析与一元方差分析的主要类型及其差异。 3.了解多元方差分析的假设。 4.知道多元"
+      },
+      {
+        "chunk_id": 67,
+        "page_print": 39,
+        "page_pdf": 52,
+        "path": "第二章多元方差分析",
+        "sim": 0.7147,
+        "snippet": "扩展。 多元方差分析零假设的数学表达式如下： (421 1122 2k Ho: pp2 式中，表示因变量个数，表示水平个数，表示变量力在第个水平上的均值。多元 方差分析的零假设即为"
+      }
+    ],
+    "course": [
+      {
+        "chunk_id": 710,
+        "doc": "w07-regression",
+        "page_course": 34,
+        "block_source": "TEXT_LAYER",
+        "xref": null,
+        "numeric_risk": 0,
+        "sim": 0.6374,
+        "snippet": "[讲义 w07-regression 第34页] 多元回归的报告报告 p分析整体方差分析表，判断方程是否有效 p分析复决定系数，判断方程整体解释力 p分析每一个系数（系数显著性、偏"
+      }
+    ]
+  },
+  "plain_example": "例如，比较三种教学安排的后测平均成绩时，先用一个总体检验评估组间差异。若有进一步证据，再根据研究问题检查哪些组或哪些事先计划的对比不同。"
+}

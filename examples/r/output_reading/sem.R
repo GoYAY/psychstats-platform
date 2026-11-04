@@ -1,0 +1,6 @@
+source("_common.R")
+d <- latent_teaching()
+fit <- lavaan::sem(paste(measurement_model,'f3 ~ a*f1+b*f2',sep="\n"),d)
+check_sem(fit); print(summary(fit,fit.measures=TRUE,standardized=TRUE))
+pe <- lavaan::parameterEstimates(fit); m <- lavaan::fitMeasures(fit)
+finish(c(a=pe$est[pe$label=="a"],b=pe$est[pe$label=="b"],a_p=pe$pvalue[pe$label=="a"],cfi=unname(m["cfi"]),rmsea=unname(m["rmsea"]),srmr=unname(m["srmr"])),sem_tables(fit))

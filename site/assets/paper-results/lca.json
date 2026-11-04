@@ -1,0 +1,164 @@
+{
+  "case_id": "lca",
+  "covariances": [],
+  "design": "固定种子模拟五个二元指标，统一编码 1/2。poLCA 比较 1–4 类，每类五起点；假定给定类别后指标局部独立。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/lca.R",
+    "script_sha256": "177989cdbf3e98220fdcdf053d64c01598d29bf67c2455891120e2889484a661",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "k",
+        "bic",
+        "aic"
+      ],
+      "name": "candidates",
+      "rows": [
+        {
+          "aic": 2204.7196013436233,
+          "bic": 2223.561206322592,
+          "k": 1
+        },
+        {
+          "aic": 2057.224978194195,
+          "bic": 2098.6765091479265,
+          "k": 2
+        },
+        {
+          "aic": 2037.9981086538612,
+          "bic": 2102.0595655823554,
+          "k": 3
+        },
+        {
+          "aic": 2044.198384034185,
+          "bic": 2130.869766937442,
+          "k": 4
+        }
+      ],
+      "title": "candidates"
+    },
+    {
+      "columns": [
+        "item",
+        "class",
+        "probability_response_2"
+      ],
+      "name": "conditional_probabilities",
+      "rows": [
+        {
+          "_row": "class 1: ",
+          "class": 1,
+          "item": "q1",
+          "probability_response_2": 0.8587282593546527
+        },
+        {
+          "_row": "class 2: ",
+          "class": 2,
+          "item": "q1",
+          "probability_response_2": 0.26909974037473094
+        },
+        {
+          "_row": "class 1: 1",
+          "class": 1,
+          "item": "q2",
+          "probability_response_2": 0.6617754189896812
+        },
+        {
+          "_row": "class 2: 1",
+          "class": 2,
+          "item": "q2",
+          "probability_response_2": 0.23545844788797027
+        },
+        {
+          "_row": "class 1: 2",
+          "class": 1,
+          "item": "q3",
+          "probability_response_2": 0.80861978062097
+        },
+        {
+          "_row": "class 2: 2",
+          "class": 2,
+          "item": "q3",
+          "probability_response_2": 0.25294617793951735
+        },
+        {
+          "_row": "class 1: 3",
+          "class": 1,
+          "item": "q4",
+          "probability_response_2": 0.6493298750235962
+        },
+        {
+          "_row": "class 2: 3",
+          "class": 2,
+          "item": "q4",
+          "probability_response_2": 0.189155256139861
+        },
+        {
+          "_row": "class 1: 4",
+          "class": 1,
+          "item": "q5",
+          "probability_response_2": 0.7887062130091763
+        },
+        {
+          "_row": "class 2: 4",
+          "class": 2,
+          "item": "q5",
+          "probability_response_2": 0.29702022596029726
+        }
+      ],
+      "title": "conditional_probabilities"
+    },
+    {
+      "column_labels": {
+        "bic": "poLCA BIC",
+        "entropy": "相对熵",
+        "k": "候选中的类别数",
+        "mean_posterior": "mean_posterior",
+        "min_proportion": "min_proportion"
+      },
+      "columns": [
+        "analysis",
+        "bic",
+        "k",
+        "entropy",
+        "min_proportion",
+        "mean_posterior"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "潜类别结果的条件概率怎么看",
+          "bic": 2098.6765091479265,
+          "entropy": 0.6324335279593333,
+          "k": 2,
+          "mean_posterior": 0.8978286154958717,
+          "min_proportion": 0.44460240844319726
+        }
+      ],
+      "source_fields": [
+        {
+          "bic": "bic",
+          "entropy": "entropy",
+          "k": "k",
+          "mean_posterior": "mean_posterior",
+          "min_proportion": "min_proportion"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "潜类别结果的条件概率怎么看",
+  "valid": true,
+  "variances": []
+}

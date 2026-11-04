@@ -1,0 +1,52 @@
+{
+  "case_id": "kmeans",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1  jsonlite_2.0.0  cluster_2.1.8.1\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n  k within_ss silhouette\n1 2 188.01644  0.5312557\n2 3 106.75429  0.4809134\n3 4  94.02718  0.4053866\nK-means clustering with 2 clusters of sizes 71, 109\n\nCluster means:\n      stress      sleep wellbeing\n1  1.0197333 -0.9269651 -1.037952\n2 -0.6642299  0.6038029  0.676097\n\nClustering vector:\n  [1] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n [38] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 2 2 2 2 2\n [75] 2 2 1 1 2 1 2 1 2 2 1 1 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 1 2 2\n[112] 1 2 2 2 2 2 2 1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[149] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n\nWithin cluster sum of squares by cluster:\n[1]  56.84115 131.17528\n (between_SS / total_SS =  65.0 %)\n\nAvailable components:\n\n[1] \"cluster\"      \"centers\"      \"totss\"        \"withinss\"     \"tot.withinss\"\n[6] \"betweenss\"    \"size\"         \"iter\"         \"ifault\"      \n  cluster   stress    sleep wellbeing\n1       1 7.744173 6.052354  3.283065\n2       2 3.108432 7.558351  7.139146\n",
+  "stderr": "",
+  "metrics": {
+    "k": 2,
+    "within_ss": 188.01643768817172,
+    "mean_silhouette": 0.5312557362735938,
+    "min_size": 71
+  },
+  "warnings": [],
+  "tables": {
+    "candidates": [
+      {
+        "k": 2,
+        "within_ss": 188.01643768817172,
+        "silhouette": 0.5312557362735938
+      },
+      {
+        "k": 3,
+        "within_ss": 106.75429270911953,
+        "silhouette": 0.4809134239803866
+      },
+      {
+        "k": 4,
+        "within_ss": 94.02717662124083,
+        "silhouette": 0.4053866332592574
+      }
+    ],
+    "profiles": [
+      {
+        "cluster": 1,
+        "stress": 7.744173043230643,
+        "sleep": 6.05235405347622,
+        "wellbeing": 3.283065499402838
+      },
+      {
+        "cluster": 2,
+        "stress": 3.1084317737905462,
+        "sleep": 7.558351344389783,
+        "wellbeing": 7.139145943572864
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "53db4afdee38ee5ba39679d937ac25510e7241d8c800c99e40576e6a99d96388",
+  "config_sha256": "d84ff9b3f4733fb307c18932c885056d04777a99fe94f9e5bfdcf702773401c9",
+  "data_sha256": {}
+}

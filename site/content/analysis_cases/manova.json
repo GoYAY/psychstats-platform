@@ -1,0 +1,63 @@
+{
+  "id": "manova",
+  "unit_id": "manova",
+  "title": "多个结果怎样一起比较",
+  "question": "训练同时关注注意力和记忆，怎么避免把两个结果割裂看？",
+  "design": "固定种子生成独立三组、两个连续相关结果和基线。先 MANOVA，再另示 MANCOVA（控制基线），均读取 Pillai 多变量检验。",
+  "variables": "教学数据由下方代码固定种子生成，非真实参与者资料；参数设定可在代码中查看。",
+  "script": "examples/r/output_reading/manova.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {"field_id":"adjusted_pillai","label":"MANCOVA 的 Pillai 迹","meaning":"控制基线后的联合统计量，不能与未调整模型的 Pillai 和 F 自由度拼成一项检验。","term":"mancova","format":".3f"},
+    {"field_id":"adjusted_F","label":"MANCOVA 的近似 F","meaning":"对应调整后联合模型，自由度和 p 同时使用调整后字段。","term":"mancova","format":".3f"},
+    {
+      "field_id": "pillai",
+      "label": "Pillai 迹",
+      "meaning": "概括多个结果联合的组差异，不能解释为某一结果提升了多少。",
+      "term": "manova",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "MANOVA 组别 p",
+      "meaning": "目标是联合均值向量，不是每一个结果的独立检验。",
+      "term": "p-value",
+      "format": ".4g"
+    },
+    {
+      "field_id": "adjusted_p",
+      "label": "MANCOVA 组别 p",
+      "meaning": "控制基线后的联合检验，与未调整 MANOVA 是不同问题。",
+      "term": "covariate",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {"title":"联合检验后如何定位差异","body":"下方实际运行了基线调整后的两项单变量组别检验和每项结果的三组逐对比较；八个后续检验作为一个教学比较家族进行 Holm 调整。difference 明确后一组减前一组，区间是逐比较 95% 区间，不是同时区间；联合显著不能代替这些比较。"},
+    {
+      "title": "这些结果最容易误读的地方",
+      "body": "联合显著不意味着每个结果都显著；高度冗余结果、异常点和组协方差差异需要诊断。"
+    },
+    {
+      "title": "如果没有发现明确证据",
+      "body": "先回到研究问题和估计精度，结合区间、有效样本、数据质量及模型条件判断。证据不足不等于没有作用；不反复更换方法、删样本或放宽阈值来追求显著。"
+    }
+  ],
+  "report_template": "未调整联合组别比较得到 Pillai 迹 = {pillai:.3f}，F({df1:.0f}, {df2:.0f}) = {F:.3f}，p = {p:.4g}；控制基线后的 MANCOVA 得到 Pillai 迹 = {adjusted_pillai:.3f}，F({adjusted_df1:.0f}, {adjusted_df2:.0f}) = {adjusted_F:.3f}，p = {adjusted_p:.4g}。两项单变量组检验与六项调整后逐对比较共八个后续检验采用 Holm 调整，方向和逐比较 95% 区间见表；这些调整不自动消除混杂。",
+  "sources": [
+    {
+      "title": "R 官方 summary.manova 文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/summary.manova.html"
+    }
+  ],
+  "related_terms": [
+    "manova",
+    "p-value",
+    "covariate"
+  ]
+}

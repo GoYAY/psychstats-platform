@@ -1,0 +1,1803 @@
+{
+  "schema_version": "2.0",
+  "terms": [
+    {
+      "id": "anova",
+      "zh": "一元方差分析",
+      "en": "ANOVA",
+      "aliases": [],
+      "type": "method",
+      "level": "intermediate",
+      "topic": "group-comparisons",
+      "status": "public",
+      "summary": "通过组间与组内变异比较检验多个均值的差异。",
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics",
+          "p-value",
+          "effect-size"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "wilks-lambda"
+        ]
+      },
+      "real_question": "三种教学方式下的成绩看起来不同，怎样判断是否存在组间差异？",
+      "operational_definition": "方差分析用组间均方与误差均方的比值形成 F 统计量，在相应设计和假设下检验各组总体均值是否全相等。",
+      "plain_explanation": "先比较不同组均值的差异相对于组内波动是否足够大；总体检验本身不指出哪两组不同。",
+      "problems_solved": [
+        "比较多组均值",
+        "区分总体检验与事后比较"
+      ],
+      "not_for": [
+        "F 检验显著不等于每两组之间都显著"
+      ],
+      "decision_clues": [
+        "区分独立、重复测量及混合设计",
+        "核对方差齐性和异常观测",
+        "事后比较控制多重检验"
+      ],
+      "sections": [
+        {
+          "heading": "显著之后",
+          "body": "若研究问题需要定位组间差异，再进行有依据的对比或事后比较，并报告效应量。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "单因素 ANOVA 的总体 F 检验显著，能直接断定什么？",
+        "options": [
+          "每两组都不同",
+          "至少有组均值不全相等",
+          "处理必然导致差异",
+          "数据必然正态"
+        ],
+        "answer": 1,
+        "explanation": "总体检验只拒绝所有组均值相等的主张。",
+        "option_explanations": [
+          "总体 F 检验不指出哪些具体组对不同，更不能说明每一组对都不同。",
+          "正确。总体检验提供各组均值并非全相等的证据；定位组对还需事后比较或预设对比。",
+          "统计差异本身不能排除混杂，也不能单独建立因果关系。",
+          "显著的 F 值不能证明数据正态，模型条件应单独检查。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "basic_textbook",
+          "title": "现代心理与教育统计学",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"learning_experiment.csv\", stringsAsFactors = FALSE)\nfit <- aov(post_score ~ condition, data=d)\ntab <- summary(fit)[[1]]\nprint(c(f_statistic=tab[1,\"F value\"], p_value=tab[1,\"Pr(>F)\"], n=nrow(d)))\n",
+        "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(all(c(\"group\",\"outcome\") %in% names(d)))\nd$group <- factor(d$group)\nfit <- aov(outcome ~ group,data=d)\nplot(fit); summary(fit)\nTukeyHSD(fit) # Use only when the design and assumptions support this comparison.\n",
+        "assumption_checks": [
+          "区分独立、重复测量及混合设计",
+          "核对方差齐性和异常观测",
+          "事后比较控制多重检验"
+        ],
+        "key_output": [
+          "f_statistic",
+          "p_value",
+          "n"
+        ],
+        "interpretation": "先比较不同组均值的差异相对于组内波动是否足够大；总体检验本身不指出哪两组不同。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "F 检验显著不等于每两组之间都显著"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {
+        "textbook": [
+          {
+            "chunk_id": 97,
+            "page_print": 56,
+            "page_pdf": 69,
+            "path": "第二章",
+            "sim": 0.7883,
+            "snippet": "一元方差分析（ANOVA） 多元方差分析（MANOVA） HotellingT检验因 素设计 多元协方差分析（MANCOVA） 一元协方差分析（ANCOVA） 方差一协方 多元正态"
+          },
+          {
+            "chunk_id": 62,
+            "page_print": 36,
+            "page_pdf": 49,
+            "path": "第二章",
+            "sim": 0.7464,
+            "snippet": "多元方差分析 核心要点 1了解多元方差分析的零假设与一元方差分析的零假设的差异。 2.知道多元方差分析与一元方差分析的主要类型及其差异。 3.了解多元方差分析的假设。 4.知道多元"
+          },
+          {
+            "chunk_id": 67,
+            "page_print": 39,
+            "page_pdf": 52,
+            "path": "第二章多元方差分析",
+            "sim": 0.7147,
+            "snippet": "扩展。 多元方差分析零假设的数学表达式如下： (421 1122 2k Ho: pp2 式中，表示因变量个数，表示水平个数，表示变量力在第个水平上的均值。多元 方差分析的零假设即为"
+          }
+        ],
+        "course": [
+          {
+            "chunk_id": 710,
+            "doc": "w07-regression",
+            "page_course": 34,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 0,
+            "sim": 0.6374,
+            "snippet": "[讲义 w07-regression 第34页] 多元回归的报告报告 p分析整体方差分析表，判断方程是否有效 p分析复决定系数，判断方程整体解释力 p分析每一个系数（系数显著性、偏"
+          }
+        ]
+      }
+    },
+    {
+      "id": "confidence-interval",
+      "zh": "置信区间",
+      "en": "Confidence Interval",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "hypothesis-testing",
+      "status": "public",
+      "summary": "用区间展示参数估计的不确定性与可兼容范围。",
+      "relations": {
+        "prerequisites": [
+          "standard-error"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "multiple-comparison-correction"
+        ]
+      },
+      "real_question": "估计学生的平均压力水平时，怎样说明这个数字有多不确定？",
+      "operational_definition": "95% 置信区间由重复抽样下覆盖目标参数约 95% 的构造程序生成；对已计算的区间，参数是否在内并非频率学概率事件。",
+      "plain_explanation": "把程序反复用于新样本，长期看约 95% 的区间会覆盖真值；这次区间同时提示估计精度。",
+      "problems_solved": [
+        "表达估计的不确定性",
+        "评估与理论上重要效应值的兼容性"
+      ],
+      "not_for": [
+        "不能在不核对模型与抽样设计时机械解释覆盖率"
+      ],
+      "decision_clues": [
+        "标明置信水平和目标参数",
+        "检查区间构造方法与研究设计"
+      ],
+      "sections": [
+        {
+          "heading": "与显著性检验",
+          "body": "对于匹配的双侧检验和区间，区间是否包含零值常对应特定显著性判断；但区间提供更多关于量级的信息。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "频率学 95% 置信区间中的 95% 主要指什么？",
+        "options": [
+          "真值每次随机移动的概率",
+          "构造程序在重复抽样中的长期覆盖率",
+          "样本有 95% 概率正确",
+          "效应为零的概率"
+        ],
+        "answer": 1,
+        "explanation": "95% 描述构造方法的长期表现。",
+        "option_explanations": [
+          "频率学解释把目标参数视为固定值，随机变化的是样本和由此得到的区间。",
+          "正确。若在相同条件下重复抽样并按同一方法构造区间，约 95% 的区间会覆盖目标参数。",
+          "置信水平不是给整个样本贴上“正确”的概率。",
+          "区间的置信水平不等于效应为零的概率；可另看区间与零值的关系。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "basic_textbook",
+          "title": "现代心理与教育统计学",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\nfit <- t.test(d$stress)\nprint(c(estimate=unname(fit$estimate), ci_lower=unname(fit$conf.int[1]), ci_upper=unname(fit$conf.int[2])))\n",
+        "your_data_code": "d <- read.csv(\"your_data.csv\")\nt.test(d$score,conf.level=.95)$conf.int\n# The interval procedure's assumptions and sampling design matter.\n",
+        "assumption_checks": [
+          "标明置信水平和目标参数",
+          "检查区间构造方法与研究设计"
+        ],
+        "key_output": [
+          "estimate",
+          "ci_lower",
+          "ci_upper"
+        ],
+        "interpretation": "把程序反复用于新样本，长期看约 95% 的区间会覆盖真值；这次区间同时提示估计精度。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "不能在不核对模型与抽样设计时机械解释覆盖率"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {
+        "textbook": [
+          {
+            "chunk_id": 424,
+            "page_print": 280,
+            "page_pdf": 293,
+            "path": "第十一章中介分析",
+            "sim": 0.6491,
+            "snippet": "可以从PRODCLIN程序①中得到，在程序中输人估计的a、Sa、6、 sb、a和6的相关，以及设定的一类错误率即可。 基于乘积分布临界值的不对称置信区间和Bootstrap方法得到"
+          },
+          {
+            "chunk_id": 422,
+            "page_print": 279,
+            "page_pdf": 292,
+            "path": "第十一章中介分析",
+            "sim": 0.6521,
+            "snippet": "。根据所抽取的N个样本，就能得到ab的 分布情况，进而获得a6的置信区间（一般是使用95%置信区间）。如果置信区间不包括 0，则说明该参数估计值显著。该置信区间是从多个样本统计量构"
+          },
+          {
+            "chunk_id": 423,
+            "page_print": 280,
+            "page_pdf": 293,
+            "path": "第十一章中介分析",
+            "sim": 0.6011,
+            "snippet": "如此（Fritz，Taylor，&MacKinnon，2012）。因此，如果希望获得高检验力，那么推荐 使用偏差校正的Bootstrap方法；但如果研究者也在乎一类错误率，那么使用"
+          }
+        ],
+        "course": [
+          {
+            "chunk_id": 74,
+            "doc": "w09-mediation",
+            "page_course": 2,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 3,
+            "sim": 0.6076,
+            "snippet": "[讲义 w09-mediation 第2页] 2025/11/20 2 中介效应 • 中介效应分析 中介效应 5 1 2 3 Y c X M a X Y b M c X   "
+          },
+          {
+            "chunk_id": 359,
+            "doc": "w02-week2",
+            "page_course": 57,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 1,
+            "sim": 0.5254,
+            "snippet": "[讲义 w02-week2 第57页] 课后问题 • 1、一个学生做48道单项选择题（4个选项），每题2分。如果学生完全不会做，全靠猜测， TA得分的范围是多大？（按照正态分布95"
+          }
+        ]
+      }
+    },
+    {
+      "id": "correlation-coefficient",
+      "zh": "相关系数",
+      "en": "Correlation Coefficient",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "public",
+      "summary": "描述两个变量共同变化的方向和强度。",
+      "relations": {
+        "prerequisites": [
+          "variable",
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": []
+      },
+      "real_question": "压力与幸福感一起变化，怎样量化这种关系？",
+      "operational_definition": "相关系数是按指定关联形式计算的无量纲指标；Pearson r 衡量两个数值变量之间的线性关联，范围为 -1 到 1。",
+      "plain_explanation": "正值表示一起升高的倾向，负值表示一升一降；接近零只说明线性关联弱。",
+      "problems_solved": [
+        "量化线性关联方向和强度",
+        "为回归与量表分析提供初步信息"
+      ],
+      "not_for": [
+        "相关不证明因果；r≈0 也不排除非线性关系"
+      ],
+      "decision_clues": [
+        "先看散点图",
+        "关注异常观测、线性与独立性"
+      ],
+      "sections": [
+        {
+          "heading": "解释前先看图",
+          "body": "相同 r 值可能来自不同形状的数据；散点图能揭示曲线、分群和极端观测。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "Pearson r 接近 0，最谨慎的解释是？",
+        "options": [
+          "两个变量毫无关系",
+          "样本中线性关联较弱",
+          "必定存在因果关系",
+          "一定没有异常值"
+        ],
+        "answer": 1,
+        "explanation": "r 衡量线性关联，不能排除其他关系形式。",
+        "option_explanations": [
+          "r 接近零只说明所测线性关联较弱，仍可能存在非线性关系。",
+          "正确。Pearson r 衡量样本中的线性共同变化；还应查看散点图和不确定性。",
+          "相关系数不证明因果，接近零更不能推出必然因果。",
+          "异常观测可让 r 增大或减小，需要单独查看散点图和数据。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "basic_textbook",
+          "title": "现代心理与教育统计学",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\nfit <- cor.test(d$social_support, d$well_being, method=\"pearson\")\nprint(c(r=unname(fit$estimate), p_value=fit$p.value, n=nrow(d)))\n",
+        "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(is.numeric(d$x),is.numeric(d$y))\nplot(d$x,d$y); cor.test(d$x,d$y,method=\"pearson\")\n# Inspect shape, outliers, and independence before interpreting r.\n",
+        "assumption_checks": [
+          "先看散点图",
+          "关注异常观测、线性与独立性"
+        ],
+        "key_output": [
+          "r",
+          "p_value",
+          "n"
+        ],
+        "interpretation": "正值表示一起升高的倾向，负值表示一升一降；接近零只说明线性关联弱。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "相关不证明因果；r≈0 也不排除非线性关系"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {}
+    },
+    {
+      "id": "data-cleaning",
+      "zh": "数据清理",
+      "en": "Data Cleaning",
+      "aliases": [],
+      "type": "workflow",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "public",
+      "summary": "记录并处理重复、缺失、编码错误与不合理观测的分析前流程。",
+      "relations": {
+        "prerequisites": [
+          "variable"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "exploratory-data-analysis"
+        ]
+      },
+      "real_question": "导出的问卷有重复编号、空值和混乱编码，分析前应怎样处理？",
+      "operational_definition": "数据清理是在保留原始数据和处理日志的前提下，按预先说明的规则检查数据结构、重复记录、取值范围、缺失、类别编码和异常观测，并形成可复现的分析数据。",
+      "plain_explanation": "清理需要逐项判断、记录原因，再生成可追溯的新版本。",
+      "problems_solved": [
+        "发现录入和合并错误",
+        "形成可复现的分析样本"
+      ],
+      "not_for": [
+        "不能为得到显著结果而选择性删改记录"
+      ],
+      "decision_clues": [
+        "先保留原始文件",
+        "区分错误、真实极端值与未知情况",
+        "记录删除和重编码规则"
+      ],
+      "sections": [
+        {
+          "heading": "检查顺序",
+          "body": "先核对行列与观测单位，再检查重复、数据类型、范围、类别编码、缺失和异常值；修改后重新汇总。"
+        },
+        {
+          "heading": "完成条件",
+          "body": "每项处理有理由、代码和前后数量对照，原始文件保持不变。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "发现一个极端分数时，最合适的第一步是？",
+        "options": [
+          "立即删除",
+          "核对记录与测量背景并保留处理日志",
+          "改成样本平均数",
+          "忽略它"
+        ],
+        "answer": 1,
+        "explanation": "极端值可能真实，也可能是错误，先调查来源。",
+        "option_explanations": [
+          "极端分数可能是真实观测；未核查就删除会改变样本并引入偏差。",
+          "正确。先核对原始记录、计分范围和测量背景，并记录后续处理依据。",
+          "用均值替换会掩盖数据来源，也会改变方差和变量关系。",
+          "忽略它可能让录入错误或真实极端观测悄悄影响结论。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "advanced_textbook",
+          "title": "高级心理统计",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"messy_survey.csv\", stringsAsFactors = FALSE)\nraw_n <- nrow(d)\nd <- d[!duplicated(d$id), ]\nd$gender <- trimws(tolower(d$gender))\nd$gender[d$gender == \"m\"] <- \"male\"\nd$age <- suppressWarnings(as.numeric(d$age_text))\nd$stress[d$stress > 90] <- NA_real_\nprint(c(raw_rows=raw_n, clean_rows=nrow(d), duplicate_removed=raw_n-nrow(d),\n       invalid_age=sum(is.na(d$age)), stress_missing=sum(is.na(d$stress))))\n",
+        "your_data_code": "# Replace the file name and column names with your own dataset.\nd <- read.csv(\"your_data.csv\", stringsAsFactors=FALSE)\nstopifnot(all(c(\"id\", \"age_text\", \"gender\", \"stress\") %in% names(d)))\nsum(duplicated(d$id)); colSums(is.na(d))\nd <- d[!duplicated(d$id), ]\nd$age <- suppressWarnings(as.numeric(d$age_text))\nd$gender <- trimws(tolower(d$gender))\nsummary(d$stress); table(d$gender, useNA=\"ifany\")\n# Record exclusions and recoding rules before modeling.\n",
+        "assumption_checks": [
+          "先保留原始文件",
+          "区分错误、真实极端值与未知情况",
+          "记录删除和重编码规则"
+        ],
+        "key_output": [
+          "raw_rows",
+          "clean_rows",
+          "duplicate_removed",
+          "invalid_age",
+          "stress_missing"
+        ],
+        "interpretation": "清理需要逐项判断、记录原因，再生成可追溯的新版本。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "不能为得到显著结果而选择性删改记录"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {}
+    },
+    {
+      "id": "descriptive-statistics",
+      "zh": "描述统计",
+      "en": "Descriptive Statistics",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "public",
+      "summary": "用表格、图形和概括量描述样本数据的分布。",
+      "relations": {
+        "prerequisites": [
+          "variable"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "measurement-scales"
+        ]
+      },
+      "real_question": "拿到一列心理测量分数，怎样先看清数据是什么样？",
+      "operational_definition": "描述统计是对已观察数据的频数、中心位置、离散程度与分布形态进行整理和概括，而不直接对总体作推断。",
+      "plain_explanation": "先画出数据的轮廓，再讨论差异或关系。平均数只是轮廓的一部分。",
+      "problems_solved": [
+        "了解样本特征",
+        "发现偏态、离群和编码异常"
+      ],
+      "not_for": [
+        "样本描述不能单独证明总体差异或因果关系"
+      ],
+      "decision_clues": [
+        "分类变量先看频数",
+        "连续变量同时看中心、离散和图形"
+      ],
+      "sections": [
+        {
+          "heading": "报告时保留背景",
+          "body": "连续变量通常同时给出样本量、中心与离散信息；严重偏态时补充中位数和分位数。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "下列哪项属于描述统计？",
+        "options": [
+          "报告样本平均数和标准差",
+          "证明处理造成了变化",
+          "断言总体参数等于样本值",
+          "替代数据清理"
+        ],
+        "answer": 0,
+        "explanation": "平均数和标准差描述样本，不直接证明因果或总体结论。",
+        "option_explanations": [
+          "正确。平均数和标准差分别概括样本的中心与离散程度，但不直接对总体或因果作结论。",
+          "描述统计只能呈现观察到的数据，不能单凭描述量证明处理造成变化。",
+          "样本统计量是总体参数的估计，不能断言两者完全相等。",
+          "描述统计能帮助发现问题，但重复、错误编码和缺失仍需单独清理。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "basic_textbook",
+          "title": "现代心理与教育统计学",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\nprint(c(n=nrow(d), stress_mean=mean(d$stress), stress_sd=sd(d$stress), stress_median=median(d$stress)))\n",
+        "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(is.numeric(d$score))\nc(n=sum(!is.na(d$score)),mean=mean(d$score,na.rm=TRUE),sd=sd(d$score,na.rm=TRUE),median=median(d$score,na.rm=TRUE))\nhist(d$score)\n",
+        "assumption_checks": [
+          "分类变量先看频数",
+          "连续变量同时看中心、离散和图形"
+        ],
+        "key_output": [
+          "n",
+          "stress_mean",
+          "stress_sd",
+          "stress_median"
+        ],
+        "interpretation": "先画出数据的轮廓，再讨论差异或关系。平均数只是轮廓的一部分。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "样本描述不能单独证明总体差异或因果关系"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {}
+    },
+    {
+      "id": "effect-size",
+      "zh": "效应量",
+      "en": "Effect Size",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "hypothesis-testing",
+      "status": "public",
+      "summary": "量化差异或关联的大小，辅助判断研究结果的实际意义。",
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "partial-eta-squared"
+        ]
+      },
+      "real_question": "两组学生的成绩确实有差别，怎样判断这个差别在实际教学中有多大？",
+      "operational_definition": "效应量是描述差异、关联或模型解释程度大小的统计指标，可使用原量纲或标准化量纲；具体指标必须与设计和问题匹配。",
+      "plain_explanation": "p 值谈证据，效应量谈差异或关系有多大，两者回答不同问题。",
+      "problems_solved": [
+        "比较结果量级",
+        "规划样本量并辅助研究综合"
+      ],
+      "not_for": [
+        "同一数值在不同指标、情境和测量质量下不能机械套统一阈值"
+      ],
+      "decision_clues": [
+        "先选择对应设计的指标",
+        "同时给出区间和领域背景"
+      ],
+      "sections": [
+        {
+          "heading": "报告策略",
+          "body": "说明效应量的定义、方向和单位；标准化指标应结合原始量纲解读。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "下列哪项最稳妥？",
+        "options": [
+          "p<.05 表示效应很大",
+          "报告效应量并结合区间和情境解释",
+          "效应量可替代研究设计",
+          "不同效应量指标的数值可直接比较"
+        ],
+        "answer": 1,
+        "explanation": "量级、精度和情境需要结合判断。",
+        "option_explanations": [
+          "p 值不直接衡量差异大小；大样本中的小效应也可能显著。",
+          "正确。效应量说明量级，区间说明精度，研究情境决定它是否有实际意义。",
+          "效应量是结果指标，不能弥补混杂、偏差或不恰当的研究设计。",
+          "不同指标定义和量尺不同，不能只比数字大小而忽略其含义。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "basic_textbook",
+          "title": "现代心理与教育统计学",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"learning_experiment.csv\", stringsAsFactors = FALSE)\na <- d$gain[d$condition==\"retrieval\"]; b <- d$gain[d$condition==\"control\"]\npooled <- sqrt(((length(a)-1)*var(a)+(length(b)-1)*var(b))/(length(a)+length(b)-2))\nprint(c(cohens_d=(mean(a)-mean(b))/pooled, pooled_sd=pooled))\n",
+        "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(nlevels(factor(d$group))==2)\nparts <- split(d$outcome,d$group); a <- na.omit(parts[[1]]); b <- na.omit(parts[[2]])\npooled_sd <- sqrt(((length(a)-1)*var(a)+(length(b)-1)*var(b))/(length(a)+length(b)-2))\ncohens_d <- (mean(a)-mean(b))/pooled_sd; cohens_d\n",
+        "assumption_checks": [
+          "先选择对应设计的指标",
+          "同时给出区间和领域背景"
+        ],
+        "key_output": [
+          "cohens_d",
+          "pooled_sd"
+        ],
+        "interpretation": "p 值谈证据，效应量谈差异或关系有多大，两者回答不同问题。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "同一数值在不同指标、情境和测量质量下不能机械套统一阈值"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {
+        "textbook": [
+          {
+            "chunk_id": 436,
+            "page_print": 288,
+            "page_pdf": 301,
+            "path": "第十一章中介分析",
+            "sim": 0.6671,
+            "snippet": "验的结果会依赖于样本量，即，如果样本量足够大，即使很小的效应也会显著，但是如果 样本量很小，即使很大的效应也可能不显著。因此，显著性检验的结果并不能很好地表示 实际效应的大小及意义"
+          },
+          {
+            "chunk_id": 438,
+            "page_print": 289,
+            "page_pdf": 302,
+            "path": "第十一章·中介分析",
+            "sim": 0.6134,
+            "snippet": "的部分。对于中介效应，MacKinnon（2008）提出了3种中介效应的R2度量方式，可见 公式（11-8）至公式（11-10）。 R.M=M-(RY.MX-rx) (11-8) "
+          },
+          {
+            "chunk_id": 472,
+            "page_print": 310,
+            "page_pdf": 323,
+            "path": "第十二章调节效应",
+            "sim": 0.6303,
+            "snippet": "—2.194 ZSSZSCABOVE :029 a.DependentVariable：Zscore：抑郁倾向 （四）效应量 实际上，调节项（即变量乘积项）的标准化回归系数本身就是"
+          }
+        ],
+        "course": [
+          {
+            "chunk_id": 749,
+            "doc": "w07-regression",
+            "page_course": 52,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 0,
+            "sim": 0.6558,
+            "snippet": "[讲义 w07-regression 第52页] 回归分析效应量 Cohen (1988) 提出的标准"
+          },
+          {
+            "chunk_id": 110,
+            "doc": "w09-mediation",
+            "page_course": 11,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 9,
+            "sim": 0.6201,
+            "snippet": "[讲义 w09-mediation 第11页] Conditional indirect effects of X on Y: INDIRECT EFFECT: TEACHSUP "
+          },
+          {
+            "chunk_id": 95,
+            "doc": "w09-mediation",
+            "page_course": 7,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 13,
+            "sim": 0.5816,
+            "snippet": "[讲义 w09-mediation 第7页] IVAT .0036 .0010 .0016 .0055 ANXTEST .0104 .0011 .0083 .0128Complet"
+          }
+        ]
+      }
+    },
+    {
+      "id": "missing-data",
+      "zh": "缺失数据",
+      "en": "Missing Data",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "public",
+      "summary": "记录未观测到的变量取值，并评估缺失模式对分析的影响。",
+      "relations": {
+        "prerequisites": [
+          "data-cleaning"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "missing-data-mechanism"
+        ]
+      },
+      "real_question": "问卷有空题，直接删掉整位被试会带来什么问题？",
+      "operational_definition": "缺失数据指本应在研究设计中观测的单元或变量取值未获得；需区分缺失比例、模式、原因与分析方法的缺失处理方式。",
+      "plain_explanation": "空白并不总等于零；删掉空白记录也可能改变留下来的样本。",
+      "problems_solved": [
+        "量化各变量缺失程度",
+        "选择有根据的缺失处理策略"
+      ],
+      "not_for": [
+        "不能仅凭缺失比例判定数据随机缺失"
+      ],
+      "decision_clues": [
+        "按变量与群体查看缺失",
+        "记录缺失原因",
+        "比较完整个案与原样本"
+      ],
+      "sections": [
+        {
+          "heading": "先描述，再处理",
+          "body": "检查缺失集中在哪些变量、群体或时点；完全个案分析、插补等方法各有适用条件。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "下列哪种做法最稳妥？",
+        "options": [
+          "把所有空白填 0",
+          "先查看缺失模式并记录处理理由",
+          "只看总缺失比例",
+          "忽略软件自动删行"
+        ],
+        "answer": 1,
+        "explanation": "处理方式应根据缺失的分布与研究背景决定。",
+        "option_explanations": [
+          "空白通常表示未获得数据，不等于实际得分为零。",
+          "正确。按变量、群体和时点查看缺失，并结合原因选择和记录处理方法。",
+          "相同的总比例可能掩盖缺失集中在某些群体或关键变量上的问题。",
+          "软件自动删行会改变有效样本，应核对删除了哪些记录及其影响。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "advanced_textbook",
+          "title": "高级心理统计",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"messy_survey.csv\", stringsAsFactors = FALSE)\nmissing <- colSums(is.na(d) | d == \"\")\nprint(c(stress_missing=as.numeric(missing[\"stress\"]), age_missing=as.numeric(missing[\"age_text\"]), rows=nrow(d)))\n",
+        "your_data_code": "d <- read.csv(\"your_data.csv\",stringsAsFactors=FALSE)\ncolSums(is.na(d)); colMeans(is.na(d))\n# Inspect patterns and study context before choosing complete cases or imputation.\n",
+        "assumption_checks": [
+          "按变量与群体查看缺失",
+          "记录缺失原因",
+          "比较完整个案与原样本"
+        ],
+        "key_output": [
+          "stress_missing",
+          "age_missing",
+          "rows"
+        ],
+        "interpretation": "空白并不总等于零；删掉空白记录也可能改变留下来的样本。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "不能仅凭缺失比例判定数据随机缺失"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {
+        "textbook": [
+          {
+            "chunk_id": 20,
+            "page_print": 5,
+            "page_pdf": 18,
+            "path": "第一章娄",
+            "sim": 0.6921,
+            "snippet": "数据的清理与准备 第三节 缺失数据的处理 、缺失数据的定义及影响 缺失数据是指在一个数据集中，由各种各样的原因而导致个案在一个或多个变量上信 息的缺失。缺失数据是数据分析过程中普遍"
+          },
+          {
+            "chunk_id": 23,
+            "page_print": 8,
+            "page_pdf": 21,
+            "path": "第一章",
+            "sim": 0.7193,
+            "snippet": "（三）诊断数据的缺失机制 常见的数据缺失机制有以下三种：完全随机缺失（missingcompletelyatrandom， MCAR）、随机缺失（missingatrandom，M"
+          },
+          {
+            "chunk_id": 21,
+            "page_print": 6,
+            "page_pdf": 19,
+            "path": "第一章娄",
+            "sim": 0.6445,
+            "snippet": "高级心理统计量一 步骤1：检查数据的缺失类型 对于可忽略的缺 缺失数据（设计上）是否可以忽略？ 失数据，采取专 门的技术 步骤2：检查数据的缺失程度 缺失数据是否多到需要处理？ 删"
+          }
+        ],
+        "course": [
+          {
+            "chunk_id": 457,
+            "doc": "w04-week4",
+            "page_course": 54,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 1,
+            "sim": 0.7339,
+            "snippet": "[讲义 w04-week4 第54页] 缺失数据识别与处理（R） library(VIM) library(mice) # VIM聚合可视化 aggr(df, col=c(\"#3B"
+          }
+        ]
+      }
+    },
+    {
+      "id": "null-hypothesis",
+      "zh": "零假设",
+      "en": "Null Hypothesis",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "hypothesis-testing",
+      "status": "public",
+      "summary": "给统计检验指定一个供比较的基准主张。",
+      "relations": {
+        "prerequisites": [
+          "sampling-distribution"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "null-and-alternative-hypotheses"
+        ]
+      },
+      "real_question": "想判断一门新课程是否改变了学生的焦虑水平，应该先设什么比较基准？",
+      "operational_definition": "零假设 H0 是统计检验在计算证据时暂作成立的参数或分布主张，常取无差异或无关联，也可以是研究规定的其他基准值。",
+      "plain_explanation": "先设一个可计算的比较基准，再问观察到的数据相对它有多反常。",
+      "problems_solved": [
+        "规定检验的比较对象",
+        "使 p 值和检验统计量有明确条件"
+      ],
+      "not_for": [
+        "拒绝零假设不自动证明研究的因果解释"
+      ],
+      "decision_clues": [
+        "写清参数与基准值",
+        "说明单侧或双侧方向"
+      ],
+      "sections": [
+        {
+          "heading": "与研究假设",
+          "body": "研究者关注的备择假设需与零假设、检验方向和研究设计共同写清。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "计算 p 值时通常暂时假定什么成立？",
+        "options": [
+          "研究假设",
+          "零假设及检验模型条件",
+          "样本没有误差",
+          "所有变量正态"
+        ],
+        "answer": 1,
+        "explanation": "p 值是在零假设及相关模型条件下计算的。",
+        "option_explanations": [
+          "p 值不是在研究假设已成立的条件下计算的。",
+          "正确。先给定零假设及所用检验模型的条件，再评估观测结果有多极端。",
+          "抽样误差正是统计检验要处理的不确定性，并不会被假定为零。",
+          "不同检验有不同条件，不能笼统假定所有变量都必须正态。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "basic_textbook",
+          "title": "现代心理与教育统计学",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": null,
+      "verified": true,
+      "candidate_evidence": {}
+    },
+    {
+      "id": "outlier",
+      "zh": "异常值",
+      "en": "Outlier",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "data-preparation",
+      "status": "public",
+      "summary": "识别相对多数观测明显偏离的值，并判断其来源和影响。",
+      "relations": {
+        "prerequisites": [
+          "data-cleaning",
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "multivariate-outlier"
+        ]
+      },
+      "real_question": "散点图里有一个特别高的分数，我应该删除它吗？",
+      "operational_definition": "异常值是在指定变量或变量组合中，按预设规则相对于其余观测明显偏离的记录；标记规则、数据尺度和研究情境都必须明确。",
+      "plain_explanation": "异常值是提醒你检查的标记，不是自动删除的判决；它也是数据清理中需要核查的一类线索。",
+      "problems_solved": [
+        "定位可能的录入或测量问题",
+        "检查结论对极端观测的敏感性"
+      ],
+      "not_for": [
+        "不能只因影响显著性而剔除真实观测"
+      ],
+      "decision_clues": [
+        "区分单变量与多变量异常",
+        "核查原始记录",
+        "比较含与不含该观测的结果"
+      ],
+      "sections": [
+        {
+          "heading": "规则与解释",
+          "body": "盒式图的 1.5 倍四分位距规则可用于初筛，但不同分布和样本量会改变标记数量。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "盒式图标记一个点为异常值，意味着什么？",
+        "options": [
+          "该记录必定错误",
+          "该记录值得进一步核查",
+          "必须删掉",
+          "变量一定不是正态分布"
+        ],
+        "answer": 1,
+        "explanation": "图形规则提供检查线索，不直接决定删除。",
+        "option_explanations": [
+          "盒式图只按相对位置标记，真实而少见的观测也会被标出。",
+          "正确。标记是核对录入、测量和分析影响的起点，不是删除指令。",
+          "是否删除应依据错误证据和预设规则，而非单个图形标记。",
+          "出现被标记的点并不能单独判定整列数据不服从正态分布。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "advanced_textbook",
+          "title": "高级心理统计",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"messy_survey.csv\", stringsAsFactors = FALSE)\nq <- quantile(d$stress, c(.25,.75), na.rm=TRUE)\niqr <- diff(q)\nflag <- !is.na(d$stress) & (d$stress < q[1]-1.5*iqr | d$stress > q[2]+1.5*iqr)\nprint(c(outlier_count=sum(flag), max_stress=max(d$stress,na.rm=TRUE), iqr=iqr))\n",
+        "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(is.numeric(d$score))\nq <- quantile(d$score,c(.25,.75),na.rm=TRUE); iqr <- diff(q)\nd$outlier_flag <- !is.na(d$score) & (d$score < q[1]-1.5*iqr | d$score > q[2]+1.5*iqr)\ntable(d$outlier_flag); d[d$outlier_flag, ]\n# Check entry errors and context; do not delete flagged cases automatically.\n",
+        "assumption_checks": [
+          "区分单变量与多变量异常",
+          "核查原始记录",
+          "比较含与不含该观测的结果"
+        ],
+        "key_output": [
+          "outlier_count",
+          "max_stress",
+          "iqr.75%"
+        ],
+        "interpretation": "异常值是提醒你检查的标记，不是自动删除的判决；它也是数据清理中需要核查的一类线索。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "不能只因影响显著性而剔除真实观测"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {
+        "textbook": [
+          {
+            "chunk_id": 17,
+            "page_print": 2,
+            "page_pdf": 15,
+            "path": "第一章",
+            "sim": 0.7401,
+            "snippet": "值（multivariateoutlier）两种。单变量异常值即在某个变量上明显高或者低的值。多变 量异常值指在两个或多个变量上值的奇怪组合，这使得该观测与其他观测明显不同。异常 "
+          },
+          {
+            "chunk_id": 37,
+            "page_print": 18,
+            "page_pdf": 31,
+            "path": "第一章",
+            "sim": 0.6872,
+            "snippet": "x3为离散变量，x4～x10为连续变量，其中x10为因变量。共有100名顾客填写了该问 卷。数据参见文件“1_1data.sav”，异常值检测部分的SPSS语句参见文件“1_2异常"
+          },
+          {
+            "chunk_id": 19,
+            "page_print": 4,
+            "page_pdf": 17,
+            "path": "第一章数据的清理与准备",
+            "sim": 0.6473,
+            "snippet": "X19 图1-3 利用散点图检验双变量异常值 （三）多变量异常值的检测 多变量异常值可以通过计算观测点的马氏距离（MahalanobisD²）进行检测。马氏距 离代表数据的协方差距"
+          }
+        ],
+        "course": [
+          {
+            "chunk_id": 400,
+            "doc": "w04-week4",
+            "page_course": 23,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 0,
+            "sim": 0.7022,
+            "snippet": "[讲义 w04-week4 第23页] 异常数据识别---多变量异常值（库克距离）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-value",
+      "zh": "p 值",
+      "en": "p-value",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "hypothesis-testing",
+      "status": "public",
+      "summary": "在零假设与检验模型下，衡量观察结果及更极端结果的概率。",
+      "relations": {
+        "prerequisites": [
+          "null-hypothesis"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "confidence-interval"
+        ]
+      },
+      "real_question": "两种干预后的分数有差别，怎样判断这可能只是抽样波动？",
+      "operational_definition": "p 值是在零假设及检验模型成立时，得到与当前样本统计量同样或更不利于零假设的结果的概率。",
+      "plain_explanation": "它衡量‘如果基准主张成立，这样的数据有多意外’，不衡量基准主张本身为真的概率。",
+      "problems_solved": [
+        "为预先指定的检验提供证据尺度"
+      ],
+      "not_for": [
+        "不能单独表示效应大小、实际价值或零假设为真的概率"
+      ],
+      "decision_clues": [
+        "同时报告效应大小和区间",
+        "核对检验方向、多重比较及模型条件"
+      ],
+      "sections": [
+        {
+          "heading": "避免二元化",
+          "body": "显著性阈值是决策约定；接近阈值的两个 p 值不应被讲成性质完全不同的研究结果。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "p=0.03 的正确含义更接近哪项？",
+        "options": [
+          "零假设有 3% 概率为真",
+          "在零假设和模型成立时，这样或更极端结果的概率为 3%",
+          "效应有 97% 概率为真",
+          "效应一定很大"
+        ],
+        "answer": 1,
+        "explanation": "p 值条件化于零假设，不直接给假设的后验概率。",
+        "option_explanations": [
+          "p 值假定零假设成立后计算，不是零假设为真的概率。",
+          "正确。在零假设和检验模型条件下，当前或更极端统计结果出现的概率约为 3%。",
+          "不能用 1−p 得到效应或研究假设为真的概率。",
+          "很小的 p 值也可能来自大样本中的很小效应；需另看效应量。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "basic_textbook",
+          "title": "现代心理与教育统计学",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"learning_experiment.csv\", stringsAsFactors = FALSE)\nfit <- t.test(gain ~ condition,data=d)\nprint(c(p_value=fit$p.value, t_statistic=unname(fit$statistic), df=unname(fit$parameter)))\n",
+        "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(nlevels(factor(d$group))==2)\nt.test(outcome ~ group,data=d) # Interpret the p-value with effect size and interval.\n",
+        "assumption_checks": [
+          "同时报告效应大小和区间",
+          "核对检验方向、多重比较及模型条件"
+        ],
+        "key_output": [
+          "p_value",
+          "t_statistic",
+          "df"
+        ],
+        "interpretation": "它衡量‘如果基准主张成立，这样的数据有多意外’，不衡量基准主张本身为真的概率。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "不能单独表示效应大小、实际价值或零假设为真的概率"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {
+        "textbook": [
+          {
+            "chunk_id": 151,
+            "page_print": 88,
+            "page_pdf": 101,
+            "path": "第四章Logistic回归分析",
+            "sim": 0.588,
+            "snippet": "，得到的对数发生比（logodds）称为p的logit 值。如此一来，发生比小于1对应logit值为负数，发生比大于1对应logit值为正数。经 过以上两步转换，我们将二分结果变量"
+          }
+        ],
+        "course": [
+          {
+            "chunk_id": 234,
+            "doc": "w02-week2",
+            "page_course": 3,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 0,
+            "sim": 0.6364,
+            "snippet": "[讲义 w02-week2 第3页] 本章节内容 p数据分布 p假设检验 pP值 pPermutation test与P值"
+          },
+          {
+            "chunk_id": 288,
+            "doc": "w02-week2",
+            "page_course": 27,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 0,
+            "sim": 0.5953,
+            "snippet": "[讲义 w02-week2 第27页] 假设检验---如何正确理解P值 研究结论的真伪并不总是能恰当地用p值（P-Value)表示和概括"
+          },
+          {
+            "chunk_id": 307,
+            "doc": "w02-week2",
+            "page_course": 37,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 0,
+            "sim": 0.5996,
+            "snippet": "[讲义 w02-week2 第37页] 假设检验---如何正确理解P值 研究结论的真伪并不总是能恰当地用p值（P-Value)表示和概括"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sampling-distribution",
+      "zh": "抽样分布",
+      "en": "Sampling Distribution",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "public",
+      "summary": "描述重复抽样时统计量如何波动，是统计推断的依据。",
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "statistical-assumptions"
+        ]
+      },
+      "real_question": "同一项调查换一批被试，平均结果总有差别，该怎样理解这种波动？",
+      "operational_definition": "抽样分布是在给定总体与抽样方案下，某个统计量在所有可能重复样本中的概率分布。",
+      "plain_explanation": "想象反复从同一总体抽样并每次算平均数：这些平均数本身也形成一个分布。",
+      "problems_solved": [
+        "理解统计量的不确定性",
+        "连接标准误、置信区间与假设检验"
+      ],
+      "not_for": [
+        "不能把单次样本的原始分数分布当作抽样分布"
+      ],
+      "decision_clues": [
+        "明确统计量和抽样方式",
+        "考虑观测独立性"
+      ],
+      "sections": [
+        {
+          "heading": "与原始数据分布的区别",
+          "body": "横轴可以是样本平均数，而不是个体分数；样本量增加通常会缩小均值的抽样波动。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "平均数的抽样分布由什么组成？",
+        "options": [
+          "一次样本的全部个体分数",
+          "重复抽样所得的一组样本平均数",
+          "总体中每个人的年龄",
+          "题目选项的频数"
+        ],
+        "answer": 1,
+        "explanation": "每次抽样算一个统计量，重复后的统计量形成抽样分布。",
+        "option_explanations": [
+          "那是单个样本中个体分数的分布，不是统计量在重复抽样中的分布。",
+          "正确。按同一抽样规则反复取样，每次计算一个均值，这些均值组成抽样分布。",
+          "总体个体值构成总体分布，而不是样本平均数的抽样分布。",
+          "题目选项频数描述类别分布，与重复抽样得到的平均数不同。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "basic_textbook",
+          "title": "现代心理与教育统计学",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nset.seed(120)\nmeans <- replicate(2000,mean(rnorm(40,mean=50,sd=10)))\nprint(c(mean_of_means=mean(means), sd_of_means=sd(means), theoretical_se=10/sqrt(40)))\n",
+        "your_data_code": "set.seed(42)\nsample_means <- replicate(2000,mean(sample(your_population_vector,40,replace=TRUE)))\nhist(sample_means); sd(sample_means)\n# Replace your_population_vector with a numeric vector from your data.\n",
+        "assumption_checks": [
+          "明确统计量和抽样方式",
+          "考虑观测独立性"
+        ],
+        "key_output": [
+          "mean_of_means",
+          "sd_of_means",
+          "theoretical_se"
+        ],
+        "interpretation": "想象反复从同一总体抽样并每次算平均数：这些平均数本身也形成一个分布。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "不能把单次样本的原始分数分布当作抽样分布"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {}
+    },
+    {
+      "id": "standard-error",
+      "zh": "标准误",
+      "en": "Standard Error",
+      "aliases": [],
+      "type": "indicator",
+      "level": "basic",
+      "topic": "regression",
+      "status": "public",
+      "summary": "用一个数概括统计量在重复抽样中的典型波动。",
+      "relations": {
+        "prerequisites": [
+          "sampling-distribution"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "r-squared"
+        ]
+      },
+      "real_question": "两项调查得到的平均压力分数相近，怎样判断哪个估计更稳定？",
+      "operational_definition": "标准误是统计量抽样分布的标准差；在独立同分布样本中，样本均值的估计标准误常用样本标准差除以样本量平方根。",
+      "plain_explanation": "标准差描述个体分数的散布，标准误描述换样本后估计值的散布。",
+      "problems_solved": [
+        "量化估计精度",
+        "构造区间和检验统计量"
+      ],
+      "not_for": [
+        "有聚类、配对或复杂抽样时不能机械套用独立样本公式"
+      ],
+      "decision_clues": [
+        "识别统计量与抽样设计",
+        "检查独立性"
+      ],
+      "sections": [
+        {
+          "heading": "样本量的作用",
+          "body": "其他条件相近时，样本量更大通常使均值估计更稳定，但不会自动消除偏差。"
+        }
+      ],
+      "formula": {
+        "latex": "SE(平均数)=s/√n（独立样本近似）",
+        "note": "按页面所述前提使用；公式中的量须与研究设计一致。",
+        "verified": true
+      },
+      "quiz": {
+        "question": "均值标准误主要描述什么？",
+        "options": [
+          "个体得分之间的差异",
+          "重复抽样下均值的波动",
+          "测量工具的信度",
+          "效应大小"
+        ],
+        "answer": 1,
+        "explanation": "标准误以统计量的抽样分布为对象。",
+        "option_explanations": [
+          "个体得分的散布通常用样本标准差描述，而不是均值的标准误。",
+          "正确。均值标准误概括相同抽样设计下，样本均值在重复抽样中的典型波动。",
+          "信度讨论测量结果的一致性，与均值抽样波动不是同一概念。",
+          "效应大小描述差异或关联的量级，不是估计值的抽样精度。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "basic_textbook",
+          "title": "现代心理与教育统计学",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\nse <- sd(d$stress)/sqrt(sum(!is.na(d$stress)))\nprint(c(standard_error=se, sample_sd=sd(d$stress), n=nrow(d)))\n",
+        "your_data_code": "d <- read.csv(\"your_data.csv\")\nx <- na.omit(d$score)\nse_mean <- sd(x)/sqrt(length(x)); se_mean\n# The formula assumes independent observations; clustered data need another method.\n",
+        "assumption_checks": [
+          "识别统计量与抽样设计",
+          "检查独立性"
+        ],
+        "key_output": [
+          "standard_error",
+          "sample_sd",
+          "n"
+        ],
+        "interpretation": "标准差描述个体分数的散布，标准误描述换样本后估计值的散布。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "有聚类、配对或复杂抽样时不能机械套用独立样本公式"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {
+        "textbook": [
+          {
+            "chunk_id": 385,
+            "page_print": 251,
+            "page_pdf": 264,
+            "path": "第十章结构方程模型",
+            "sim": 0.5639,
+            "snippet": "然，这不是说应用 协方差结构模型时绝对不能使用相关矩阵，在符合下列两个条件时，完全可以应用相关 矩阵来进行分析：（1）模型为“不随量标转变”模型（scale-invariantmo"
+          },
+          {
+            "chunk_id": 308,
+            "page_print": 196,
+            "page_pdf": 209,
+            "path": "第八章",
+            "sim": 0.5829,
+            "snippet": "X9 0. 533 6.059 0.088 0.000 X10 0. 680 0.078 8. 699 0. 000 X11 0. 995 0.013 76.907 0. 000 "
+          },
+          {
+            "chunk_id": 53,
+            "page_print": 28,
+            "page_pdf": 41,
+            "path": "第一章数据的清理与准备",
+            "sim": 0.5546,
+            "snippet": "计量的值分别由各变量的偏度值或峰度值除以相应的标准误（偏度标准误0.241，峰度 标准误0.478）得到。由偏度和峰度的检验可知，x7和x9在偏度检验上显著，它们可 能服从偏态分布"
+          }
+        ],
+        "course": [
+          {
+            "chunk_id": 9,
+            "doc": "w01-ch1-intro",
+            "page_course": 6,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 4,
+            "sim": 0.6134,
+            "snippet": "[讲义 w01-ch1-intro 第6页] 验 高级心理统计 24 X X t b SE  crit X crit X CI b F SE        1 1 "
+          },
+          {
+            "chunk_id": 703,
+            "doc": "w07-regression",
+            "page_course": 30,
+            "block_source": "TABLE_CANDIDATE",
+            "xref": 206,
+            "numeric_risk": 9,
+            "sim": 0.5487,
+            "snippet": "[讲义 w07-regression 第30页] 775 0. 439 ## MASTGOAL 7. 831 1. 726 4. 536 5.91e-06 *** ## Signi"
+          },
+          {
+            "chunk_id": 672,
+            "doc": "w07-regression",
+            "page_course": 17,
+            "block_source": "TABLE_CANDIDATE",
+            "xref": 150,
+            "numeric_risk": 24,
+            "sim": 0.5393,
+            "snippet": "[讲义 w07-regression 第17页] nif.codes:0***0.001***0.01*0.05.0.1²1 | | | | | | | | | | | ## | "
+          }
+        ]
+      }
+    },
+    {
+      "id": "standard-score",
+      "zh": "标准分数",
+      "en": "Standard Score",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "public",
+      "summary": "把观测值转换为相对平均水平的标准差单位。",
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "descriptive-statistics"
+        ]
+      },
+      "real_question": "两份量表分数范围不同，怎样比较同一个人的相对位置？",
+      "operational_definition": "标准分数 z 是观测值与参照组均值之差除以该组标准差，表示该观测距均值多少个标准差。",
+      "plain_explanation": "z 为 1 表示高于参照组均值约一个标准差；参照组一变，解释也会变。",
+      "problems_solved": [
+        "比较不同量尺上的相对位置",
+        "识别远离均值的观测"
+      ],
+      "not_for": [
+        "标准化不会消除偏态或证明量表等值"
+      ],
+      "decision_clues": [
+        "说明参照组",
+        "标准差须大于零"
+      ],
+      "sections": [
+        {
+          "heading": "解释边界",
+          "body": "z 分数只改变位置和单位，不改变原数据的排序和分布形状。"
+        }
+      ],
+      "formula": {
+        "latex": "z=(x-平均数)/标准差",
+        "note": "按页面所述前提使用；公式中的量须与研究设计一致。",
+        "verified": true
+      },
+      "quiz": {
+        "question": "同一分数换一个参照群体后，z 值可能怎样变化？",
+        "options": [
+          "一定相同",
+          "可能变化",
+          "一定变成 0",
+          "无法计算"
+        ],
+        "answer": 1,
+        "explanation": "均值和标准差来自参照群体，群体变化会影响 z 值。",
+        "option_explanations": [
+          "同一原始分数相对不同参照群体的均值和标准差，位置可能不同。",
+          "正确。参照群体的均值或标准差变化后，同一个人的 z 值也可能改变。",
+          "只有分数恰好等于新参照群体均值时，z 值才是零。",
+          "只要参照群体有可用均值且标准差大于零，仍可计算 z 值。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "basic_textbook",
+          "title": "现代心理与教育统计学",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\nz <- as.numeric(scale(d$stress))\nprint(c(z_mean=mean(z), z_sd=sd(z), first_z=z[1]))\n",
+        "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(is.numeric(d$score))\nd$z_score <- as.numeric(scale(d$score))\nsummary(d$z_score)\n",
+        "assumption_checks": [
+          "说明参照组",
+          "标准差须大于零"
+        ],
+        "key_output": [
+          "z_mean",
+          "z_sd",
+          "first_z"
+        ],
+        "interpretation": "z 为 1 表示高于参照组均值约一个标准差；参照组一变，解释也会变。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "标准化不会消除偏态或证明量表等值"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {}
+    },
+    {
+      "id": "t-test",
+      "zh": "t 检验",
+      "en": "t-test",
+      "aliases": [],
+      "type": "method",
+      "level": "basic",
+      "topic": "group-comparisons",
+      "status": "public",
+      "summary": "比较均值差异，并根据设计选择独立、配对或单样本检验。",
+      "relations": {
+        "prerequisites": [
+          "standard-error",
+          "p-value",
+          "effect-size"
+        ],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "chi-square-test"
+        ]
+      },
+      "real_question": "两种教学方式下，学生的测验成绩是否有差别，该怎样比较？",
+      "operational_definition": "t 检验使用均值差异与其标准误构成检验统计量，在相应设计和模型假设下检验均值参数主张。",
+      "plain_explanation": "把观察到的均值差异除以预期的抽样波动，再判断差异相对噪声有多大。",
+      "problems_solved": [
+        "比较两组或前后测均值",
+        "估计均值差异及其区间"
+      ],
+      "not_for": [
+        "分组不是随机时，显著差异不自动等于处理因果效应"
+      ],
+      "decision_clues": [
+        "先区分独立组与配对数据",
+        "独立两组优先考虑 Welch 版本",
+        "检查分布和异常观测"
+      ],
+      "sections": [
+        {
+          "heading": "从设计到报告",
+          "body": "先核对观测单位和组别，再检查缺失与分布，报告每组描述量、均值差、置信区间、t、自由度和 p 值。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "同一批被试接受干预前后测量，通常选哪种 t 检验？",
+        "options": [
+          "独立样本 t 检验",
+          "配对样本 t 检验",
+          "单样本 t 检验",
+          "卡方检验"
+        ],
+        "answer": 1,
+        "explanation": "同一人的两次测量形成配对观测。",
+        "option_explanations": [
+          "独立样本检验用于不同个体组成的两组；同一人的前后测不独立。",
+          "正确。同一名被试的前后测是一对观测，配对检验分析每人的差值。",
+          "单样本检验比较一组均值与指定基准，不直接处理同一人的两次测量。",
+          "卡方检验主要针对类别频数，不是比较成对连续分数均值的首选。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "basic_textbook",
+          "title": "现代心理与教育统计学",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": {
+        "packages": [],
+        "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+        "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"learning_experiment.csv\", stringsAsFactors = FALSE)\nd$condition <- factor(d$condition, levels=c(\"control\",\"retrieval\"))\nfit <- t.test(gain ~ condition, data=d)\neffect <- mean(d$gain[d$condition==\"retrieval\"]) - mean(d$gain[d$condition==\"control\"])\nprint(c(group_difference=effect, p_value=fit$p.value, n=nrow(d)))\n",
+        "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(all(c(\"group\",\"outcome\") %in% names(d)))\nd$group <- factor(d$group)\nstopifnot(nlevels(d$group)==2)\nboxplot(outcome ~ group,data=d)\nt.test(outcome ~ group,data=d) # Welch test by default\n",
+        "assumption_checks": [
+          "先区分独立组与配对数据",
+          "独立两组优先考虑 Welch 版本",
+          "检查分布和异常观测"
+        ],
+        "key_output": [
+          "group_difference",
+          "p_value",
+          "n"
+        ],
+        "interpretation": "把观察到的均值差异除以预期的抽样波动，再判断差异相对噪声有多大。",
+        "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+        "common_errors": [
+          "分组不是随机时，显著差异不自动等于处理因果效应"
+        ],
+        "verified": true,
+        "validation_report": "logs/r_validation.json"
+      },
+      "verified": true,
+      "candidate_evidence": {
+        "textbook": [
+          {
+            "chunk_id": 65,
+            "page_print": 38,
+            "page_pdf": 51,
+            "path": "第二章多元方差分析 > 第三节",
+            "sim": 0.5164,
+            "snippet": "第三节 多元方差分析的主要类型 在单个因变量的差异检验中，零假设是单一因变量的均值在自变量的不同水平上相 等，此时检验组间差异的方法是t检验（两个水平）和一元方差分析（两个水平及以"
+          },
+          {
+            "chunk_id": 421,
+            "page_print": 279,
+            "page_pdf": 292,
+            "path": "第十一章中介分析",
+            "sim": 0.5787,
+            "snippet": "Sobel检验的主要区别在于，前者是用总效应与直接效应的差值来表示间接效应，而后者 是直接对间接效应进行检验。 该方法的步骤为：先计算间接效应一的标准误s一），之后对该间接效应进行"
+          },
+          {
+            "chunk_id": 66,
+            "page_print": 38,
+            "page_pdf": 51,
+            "path": "第二章多元方差分析 > 第三节",
+            "sim": 0.5137,
+            "snippet": "i+nz-p-1 式中，力为因变量的个数，ni和n2分别为自变量两个水平上的样本量，Ferit为F检验的临界 值。若Hotelling'sT的值大于临界值Tri，即检验结果显著，则"
+          }
+        ],
+        "course": [
+          {
+            "chunk_id": 139,
+            "doc": "ch14-expstats",
+            "page_course": 9,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 0,
+            "sim": 0.5465,
+            "snippet": "[讲义 ch14-expstats 第9页] 方差齐性检验不显著，看第1行t 检验结果； 如果方差齐性显著，看第2行t检 验结果。"
+          },
+          {
+            "chunk_id": 124,
+            "doc": "ch14-expstats",
+            "page_course": 2,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 3,
+            "sim": 0.5659,
+            "snippet": "[讲义 ch14-expstats 第2页] 第14章心理实验常用统计方法 • 14.1 t检验 • 14.2 方差分析 • 14.3 2 检验"
+          },
+          {
+            "chunk_id": 685,
+            "doc": "w07-regression",
+            "page_course": 24,
+            "block_source": "TEXT_LAYER",
+            "xref": null,
+            "numeric_risk": 0,
+            "sim": 0.5374,
+            "snippet": "[讲义 w07-regression 第24页] 多元线性回归---多元回归中系数的t检验 采用t 统计量用于对模型的偏回归系数做显著性检验， 即每个自变量对因变量是否有显著影响 "
+          }
+        ]
+      }
+    },
+    {
+      "id": "variable",
+      "zh": "变量",
+      "en": "Variable",
+      "aliases": [],
+      "type": "concept",
+      "level": "basic",
+      "topic": "foundations",
+      "status": "public",
+      "summary": "识别数据中的观测对象、属性与取值，是选择统计方法的起点。",
+      "relations": {
+        "prerequisites": [],
+        "components": [],
+        "contrasts": [],
+        "used_in": [],
+        "next": [
+          "standard-score"
+        ]
+      },
+      "real_question": "想研究学习时间和考试焦虑的关系，我该把哪些信息记录成数据？",
+      "operational_definition": "变量是研究中可在观测单位之间或同一单位的不同条件、时点之间取不同值的属性；分析前须明确观测单位、编码和测量尺度。",
+      "plain_explanation": "一列数据通常记录一个属性，但列名并不会自动说明它怎样测量、能否相加或比较。",
+      "problems_solved": [
+        "界定研究对象与数据列的含义",
+        "判断后续统计方法需要的变量类型"
+      ],
+      "not_for": [
+        "不能仅凭列名认定变量有效地测量了心理构念"
+      ],
+      "decision_clues": [
+        "先说明观测单位",
+        "核对编码与测量尺度"
+      ],
+      "sections": [
+        {
+          "heading": "先问观测单位",
+          "body": "一行可以代表一个人、一次测量或一个班级；同名变量在不同数据结构中的统计独立性可能不同。"
+        }
+      ],
+      "formula": {
+        "latex": "",
+        "note": "",
+        "verified": false
+      },
+      "quiz": {
+        "question": "问卷用数字 1、2、3 记录专业类别，分析前应先确认什么？",
+        "options": [
+          "数字可以直接相加求平均",
+          "编码所代表的类别及测量尺度",
+          "样本量大就能当作连续变量",
+          "先标准化再判断变量类型"
+        ],
+        "answer": 1,
+        "explanation": "数字也可能只是类别编码，先确认测量含义。",
+        "option_explanations": [
+          "这些数字只是类别标签，平均编码值通常没有明确的专业含义。",
+          "正确。先核对每个编码对应的类别和测量尺度，再决定用频数还是其他统计量描述。",
+          "样本量增加不会把类别编码变成具有数值间距的连续变量。",
+          "标准化不能补上编码的测量含义，应先确认变量类型。"
+        ]
+      },
+      "sources": [
+        {
+          "kind": "basic_textbook",
+          "title": "现代心理与教育统计学",
+          "role": "概念与方法核对"
+        }
+      ],
+      "r_practice": null,
+      "verified": true,
+      "candidate_evidence": {}
+    }
+  ],
+  "source_catalog": [
+    {
+      "kind": "advanced_textbook",
+      "title": "高级心理统计",
+      "role": "概念与方法核对"
+    },
+    {
+      "kind": "basic_textbook",
+      "title": "现代心理与教育统计学",
+      "role": "概念与方法核对"
+    }
+  ]
+}

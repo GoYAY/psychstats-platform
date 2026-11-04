@@ -1,0 +1,76 @@
+{
+  "id": "linear",
+  "unit_id": "linear",
+  "title": "控制年龄后，压力与幸福感怎样关联",
+  "question": "年龄不同会影响结果，怎样在比较压力时考虑它？",
+  "design": "横断调查，幸福感为连续结果，压力、社会支持与年龄同时进入线性模型。系数是给定其他变量后的条件关联。",
+  "variables": "数据列与编码见教学数据和下方 R 脚本；本页指标与完整控制台来自同一次运行。",
+  "script": "examples/r/output_reading/linear.R",
+  "data_files": [
+    "examples/data/cross_sectional_survey.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "beta",
+      "label": "压力未标准化 b",
+      "meaning": "年龄与社会支持固定时，压力每高一分对应的幸福感平均差。",
+      "term": "regression-coefficient",
+      "format": ".3f"
+    },
+    {
+      "field_id": "r_squared",
+      "label": "R²",
+      "meaning": "样本中被模型解释的变异比例，不是因果贡献比例。",
+      "term": "r-squared",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_lower",
+      "label": "b 的 95% CI 下界",
+      "meaning": "系数量纲与编码决定解释，不与标准化系数混用。",
+      "term": "confidence-interval",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_upper",
+      "label": "b 的 95% CI 上界",
+      "meaning": "跨零说明当前数据对方向的证据不足，不证明无关联。",
+      "term": "confidence-interval",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "压力系数 p",
+      "meaning": "这是压力系数检验，不是模型整体 F 检验。",
+      "term": "p-value",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "遇到不符合预期的结果",
+      "body": "系数不显著先看区间、共线性和量纲；不要反复删控制变量寻找显著结果。"
+    },
+    {
+      "title": "这次结果的解释边界",
+      "body": "横断调查，幸福感为连续结果，压力、社会支持与年龄同时进入线性模型。系数是给定其他变量后的条件关联。"
+    }
+  ],
+  "report_template": "在包含年龄与社会支持的线性模型中，压力的未标准化系数 b = {beta:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，p = {p:.4g}；模型 R² = {r_squared:.3f}，有效样本 n = {n:.0f}。该横断条件关联不排除未测量混杂。",
+  "sources": [
+    {
+      "title": "R 官方统计函数文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "regression-coefficient",
+    "r-squared",
+    "confidence-interval",
+    "p-value"
+  ]
+}

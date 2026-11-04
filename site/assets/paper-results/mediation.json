@@ -1,0 +1,288 @@
+{
+  "case_id": "mediation",
+  "covariances": [],
+  "design": "横断教学数据的观测变量中介模型。固定种子 300 次百分位 Bootstrap；仅演示关联分解，不推断时间顺序或机制。",
+  "measurement": [],
+  "model_scale": "raw",
+  "observations": [],
+  "paths": [
+    {
+      "beta": null,
+      "estimate": -0.3567899043962672,
+      "group": null,
+      "label": "a",
+      "p": 1.1478551442678508e-10,
+      "source": "stress",
+      "target": "social_support"
+    },
+    {
+      "beta": null,
+      "estimate": 0.3136671830809685,
+      "group": null,
+      "label": "b",
+      "p": 7.194245199571014e-14,
+      "source": "social_support",
+      "target": "well_being"
+    },
+    {
+      "beta": null,
+      "estimate": -0.3687488150382937,
+      "group": null,
+      "label": "c′",
+      "p": 1.0524914273446484e-13,
+      "source": "stress",
+      "target": "well_being"
+    }
+  ],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/mediation.R",
+    "script_sha256": "0bd856aa5630f4cdafeb97eae6ae9a389dfe2c73439c2f35b5cb0e567d5d5be6",
+    "supplement_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": -0.1613664501526061,
+          "ci_upper": -0.07226275100141662,
+          "effect": "间接效应 a × b",
+          "estimate": -0.1119132842637052
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "columns": [
+        "lhs",
+        "op",
+        "rhs",
+        "label",
+        "est",
+        "se",
+        "z",
+        "pvalue",
+        "ci.lower",
+        "ci.upper"
+      ],
+      "name": "parameters",
+      "rows": [
+        {
+          "ci.lower": -0.4697339648991853,
+          "ci.upper": -0.24765434131797992,
+          "est": -0.3567899043962672,
+          "label": "a",
+          "lhs": "social_support",
+          "op": "~",
+          "pvalue": 1.1478551442678508e-10,
+          "rhs": "stress",
+          "se": 0.055349963625095276,
+          "z": -6.446072969675832
+        },
+        {
+          "ci.lower": 0.24243390536849524,
+          "ci.upper": 0.3979250397299693,
+          "est": 0.3136671830809685,
+          "label": "b",
+          "lhs": "well_being",
+          "op": "~",
+          "pvalue": 7.194245199571014e-14,
+          "rhs": "social_support",
+          "se": 0.041910393571444396,
+          "z": 7.4842337747619085
+        },
+        {
+          "ci.lower": -0.47272952591586265,
+          "ci.upper": -0.2733958416085825,
+          "est": -0.3687488150382937,
+          "label": "c",
+          "lhs": "well_being",
+          "op": "~",
+          "pvalue": 1.0524914273446484e-13,
+          "rhs": "stress",
+          "se": 0.04960167937440374,
+          "z": -7.434200206305544
+        },
+        {
+          "ci.lower": 64.53392593026629,
+          "ci.upper": 82.91925508517562,
+          "est": 74.17454688396143,
+          "label": "",
+          "lhs": "social_support",
+          "op": "~~",
+          "pvalue": 0,
+          "rhs": "social_support",
+          "se": 4.6957786858080555,
+          "z": 15.796005699360888
+        },
+        {
+          "ci.lower": 43.04319239297903,
+          "ci.upper": 57.71410797135256,
+          "est": 50.66387796213131,
+          "label": "",
+          "lhs": "well_being",
+          "op": "~~",
+          "pvalue": 0,
+          "rhs": "well_being",
+          "se": 3.8146499129095592,
+          "z": 13.281396489537437
+        },
+        {
+          "ci.lower": 64.85622191358024,
+          "ci.upper": 64.85622191358024,
+          "est": 64.85622191358024,
+          "label": "",
+          "lhs": "stress",
+          "op": "~~",
+          "rhs": "stress",
+          "se": 0
+        },
+        {
+          "ci.lower": -0.1613664501526061,
+          "ci.upper": -0.07226275100141662,
+          "est": -0.1119132842637052,
+          "label": "indirect",
+          "lhs": "indirect",
+          "op": ":=",
+          "pvalue": 1.5153952068747145e-06,
+          "rhs": "a*b",
+          "se": 0.023270690901902532,
+          "z": -4.809194739231208
+        },
+        {
+          "ci.lower": -0.5901104762148414,
+          "ci.upper": -0.3768172818959676,
+          "est": -0.4806620993019989,
+          "label": "total",
+          "lhs": "total",
+          "op": ":=",
+          "pvalue": 0,
+          "rhs": "c+a*b",
+          "se": 0.052989843153194605,
+          "z": -9.070834535448538
+        }
+      ],
+      "title": "完整路径与测量参数"
+    },
+    {
+      "columns": [
+        "group",
+        "n"
+      ],
+      "name": "model_summary",
+      "rows": [
+        {
+          "group": 1,
+          "n": 360
+        }
+      ],
+      "title": "模型解释率与样本量"
+    },
+    {
+      "columns": [
+        "group",
+        "outcome",
+        "r_squared"
+      ],
+      "name": "explained_variance",
+      "rows": [
+        {
+          "group": 1,
+          "outcome": "social_support",
+          "r_squared": 0.10015851354986816
+        },
+        {
+          "group": 1,
+          "outcome": "well_being",
+          "r_squared": 0.30545881287363075
+        }
+      ],
+      "title": "各结果变量与指标的解释率"
+    },
+    {
+      "column_labels": {
+        "ci_lower": "百分位 Bootstrap 下界",
+        "ci_upper": "95% CI 上限",
+        "direct": "直接路径 c′",
+        "indirect": "间接关联 a×b"
+      },
+      "columns": [
+        "analysis",
+        "indirect",
+        "ci_lower",
+        "direct",
+        "ci_upper"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "间接关联的区间怎么看",
+          "ci_lower": -0.1613664501526061,
+          "ci_upper": -0.07226275100141662,
+          "direct": -0.3687488150382937,
+          "indirect": -0.1119132842637052
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "direct": "direct",
+          "indirect": "indirect"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "间接关联的区间怎么看",
+  "valid": true,
+  "variances": [
+    {
+      "ci.lower": 64.53392593026629,
+      "ci.upper": 82.91925508517562,
+      "est": 74.17454688396143,
+      "label": "",
+      "lhs": "social_support",
+      "op": "~~",
+      "pvalue": 0,
+      "rhs": "social_support",
+      "se": 4.6957786858080555,
+      "z": 15.796005699360888
+    },
+    {
+      "ci.lower": 43.04319239297903,
+      "ci.upper": 57.71410797135256,
+      "est": 50.66387796213131,
+      "label": "",
+      "lhs": "well_being",
+      "op": "~~",
+      "pvalue": 0,
+      "rhs": "well_being",
+      "se": 3.8146499129095592,
+      "z": 13.281396489537437
+    },
+    {
+      "ci.lower": 64.85622191358024,
+      "ci.upper": 64.85622191358024,
+      "est": 64.85622191358024,
+      "label": "",
+      "lhs": "stress",
+      "op": "~~",
+      "rhs": "stress",
+      "se": 0
+    }
+  ]
+}

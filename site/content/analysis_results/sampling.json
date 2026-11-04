@@ -1,0 +1,38 @@
+{
+  "case_id": "sampling",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n     stratum   N  n weight     mean\n1 lower_year 800 50    0.8 6.508538\n2 upper_year 200 50    0.2 7.363716\n  weighted_mean              SE unweighted_mean \n      6.6795737       0.1313974       6.9361272 \n",
+  "stderr": "",
+  "metrics": {
+    "mean": 6.679573721060813,
+    "se": 0.13139738803697487,
+    "ci_lower": 6.4220395728457085,
+    "ci_upper": 6.937107869275918,
+    "naive_mean": 6.936127200950006
+  },
+  "warnings": [],
+  "tables": {
+    "strata": [
+      {
+        "stratum": "lower_year",
+        "N": 800,
+        "n": 50,
+        "weight": 0.8,
+        "mean": 6.508538067801351
+      },
+      {
+        "stratum": "upper_year",
+        "N": 200,
+        "n": 50,
+        "weight": 0.2,
+        "mean": 7.36371633409866
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "3deae900c9ad1abfb1e0789c6650221c3a775cc64419a5186c38fcdaa7c528b5",
+  "config_sha256": "a405b204bfc50b97d129e4ed5fb1f2ff76183bd9f0cb8a3d3586a1cdc2f7a597",
+  "data_sha256": {}
+}

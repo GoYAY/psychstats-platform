@@ -1,0 +1,80 @@
+{
+  "case_id": "ancova",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\nCall:\nlm(formula = post_score ~ pre_score + condition, data = d)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-17.8482  -5.2841   0.3551   5.0633  22.0875 \n\nCoefficients:\n                  Estimate Std. Error t value Pr(>|t|)    \n(Intercept)       32.54330    4.38204   7.427 4.62e-12 ***\npre_score          0.66313    0.06585  10.071  < 2e-16 ***\nconditioncontrol  -7.53595    1.29864  -5.803 2.97e-08 ***\nconditionpractice -4.04795    1.29860  -3.117  0.00213 ** \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 7.107 on 176 degrees of freedom\nMultiple R-squared:  0.4437,\tAdjusted R-squared:  0.4343 \nF-statistic:  46.8 on 3 and 176 DF,  p-value: < 2.2e-16\n\nAnalysis of Variance Table\n\nModel 1: post_score ~ pre_score\nModel 2: post_score ~ pre_score + condition\n  Res.Df     RSS Df Sum of Sq      F    Pr(>F)    \n1    178 10593.6                                  \n2    176  8889.3  2    1704.3 16.872 1.978e-07 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nModel 1: post_score ~ pre_score + condition\nModel 2: post_score ~ pre_score * condition\n  Res.Df    RSS Df Sum of Sq      F Pr(>F)\n1    176 8889.3                           \n2    174 8743.3  2    145.97 1.4525 0.2368\n  pre_score condition      fit      lwr      upr\n1  65.06826  combined 75.69223 73.88153 77.50293\n2  65.06826   control 68.15628 66.34251 69.97005\n3  65.06826  practice 71.64428 69.83056 73.45801\n",
+  "stderr": "",
+  "metrics": {
+    "F": 16.872294415220882,
+    "df1": 2,
+    "df2": 176,
+    "p": 1.9784606511520872e-07,
+    "slope": 0.6631332086560052,
+    "interaction_p": 0.2368116350912416
+  },
+  "warnings": [],
+  "tables": {
+    "coefficients": [
+      {
+        "term": "(Intercept)",
+        "Estimate": 32.543300994690256,
+        "Std. Error": 4.382039168178069,
+        "t value": 7.426519879378637,
+        "Pr(>|t|)": 4.615156774029027e-12,
+        "_row": "(Intercept)"
+      },
+      {
+        "term": "pre_score",
+        "Estimate": 0.6631332086560052,
+        "Std. Error": 0.06584650774963273,
+        "t value": 10.07089413424061,
+        "Pr(>|t|)": 3.9950657445251734e-19,
+        "_row": "pre_score"
+      },
+      {
+        "term": "conditioncontrol",
+        "Estimate": -7.535948965437381,
+        "Std. Error": 1.2986439597737176,
+        "t value": -5.8029369087047415,
+        "Pr(>|t|)": 2.9711955376462563e-08,
+        "_row": "conditioncontrol"
+      },
+      {
+        "term": "conditionpractice",
+        "Estimate": -4.0479458446830465,
+        "Std. Error": 1.2985953328208375,
+        "t value": -3.117172642142498,
+        "Pr(>|t|)": 0.0021331193424117623,
+        "_row": "conditionpractice"
+      }
+    ],
+    "adjusted_means": [
+      {
+        "pre_score": 65.06826351202172,
+        "condition": "combined",
+        "fit": 75.69222735909167,
+        "lwr": 73.88152965714728,
+        "upr": 77.50292506103607
+      },
+      {
+        "pre_score": 65.06826351202172,
+        "condition": "control",
+        "fit": 68.15627839365429,
+        "lwr": 66.34250868502208,
+        "upr": 69.9700481022865
+      },
+      {
+        "pre_score": 65.06826351202172,
+        "condition": "practice",
+        "fit": 71.64428151440863,
+        "lwr": 69.83055700702523,
+        "upr": 73.45800602179203
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "64d55882ce4c210314617eeaf5ee57e38d7e4aa2c2e765f822846dab8899c35b",
+  "config_sha256": "c561c4ee0ec299b317997e3ec594032c27a72fb606f08a0e5ad05c2cb7709f65",
+  "data_sha256": {}
+}

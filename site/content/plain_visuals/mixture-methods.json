@@ -1,0 +1,12 @@
+{
+  "ancova": {"decision":"skip","reason":"用实际分析教程中共同前测设定与系数表解释调整；不画暗示已经随机化的故事图。"},
+  "mancova": {"decision":"skip","reason":"多个结果的联合检验使用实际输出表讲解，避免单一图形误导每项均显著。"},
+  "latent-profile-analysis": {
+    "decision": "skip",
+    "reason": "实际类别组合与不确定性由完整分析教程的均值画像/条件概率表呈现；不单独画脱离运行数据的类别故事图。"
+  },
+  "latent-class-analysis": {
+    "decision": "skip",
+    "reason": "实际类别组合与不确定性由完整分析教程的均值画像/条件概率表呈现；不单独画脱离运行数据的类别故事图。"
+  }
+}

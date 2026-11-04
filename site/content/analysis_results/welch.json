@@ -1,0 +1,38 @@
+{
+  "case_id": "welch",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\n\tOne-way analysis of means (not assuming equal variances)\n\ndata:  score and group\nF = 9.6631, num df = 2.000, denom df = 87.371, p-value = 0.0001617\n\n  group   score.n score.mean  score.sd\n1     A 35.000000  70.228785  4.768455\n2     B 50.000000  71.321041 12.345365\n3     C 65.000000  75.085871  6.249792\n\n\tPairwise comparisons using t tests with non-pooled SD \n\ndata:  d$score and d$group \n\n  A       B      \nB 0.57191 -      \nC 0.00011 0.10560\n\nP value adjustment method: holm \n",
+  "stderr": "",
+  "metrics": {
+    "F": 9.663051427747053,
+    "df1": 2,
+    "df2": 87.37094089717681,
+    "p": 0.00016171120374227583
+  },
+  "warnings": [],
+  "tables": {
+    "pairwise_welch_holm": [
+      {
+        "group1": "B",
+        "group2": "A",
+        "p_holm": 0.57191181124326
+      },
+      {
+        "group1": "C",
+        "group2": "A",
+        "p_holm": 0.00011391661012821921
+      },
+      {
+        "group1": "C",
+        "group2": "B",
+        "p_holm": 0.105602883919324
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "d7aa1fd5369913568e674e36e353f9d644c739fd8b31ecaa71c1b55094b776de",
+  "config_sha256": "d742581a12498d31b1aa8e6c33171d6cefe5e9e8b66586db983c35c1cc288d22",
+  "data_sha256": {}
+}

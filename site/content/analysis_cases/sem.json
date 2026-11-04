@@ -1,0 +1,66 @@
+{
+  "id": "sem",
+  "unit_id": "sem",
+  "title": "潜变量结构方程的整张输出",
+  "question": "想同时考虑测量误差和几个心理构念的关联，怎么看结果？",
+  "design": "固定种子生成九个连续指标，三个潜因子，每因子三指标；f3 同时回归于 f1、f2，ML 估计。因子间关联和结构方向由模型设定。",
+  "variables": "下方代码固定种子生成连续教学指标；共享函数同时下载可完全复现。",
+  "script": "examples/r/output_reading/sem.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "a",
+      "label": "f1→f3 未标准化路径",
+      "meaning": "量纲由首指标固定载荷的标定决定；要与 std.all 列区分。",
+      "term": "path-coefficient",
+      "format": ".3f"
+    },
+    {
+      "field_id": "cfi",
+      "label": "CFI",
+      "meaning": "相对基线模型拟合，良好数值不保证路径有因果意义。",
+      "term": "fit-indices",
+      "format": ".3f"
+    },
+    {
+      "field_id": "rmsea",
+      "label": "RMSEA",
+      "meaning": "总体近似误差指标，不掩盖不当解或题目残差。",
+      "term": "rmsea",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "判断模型之前先检查这些条件",
+      "body": "正态 ML 不直接适合少类别有序题；拟合好不保证测量有效或结构真实，先排除负方差和非收敛。"
+    },
+    {
+      "title": "路径或拟合不符合预期时",
+      "body": "先区分测量问题、模型错误与证据不足。检查实际估计器、标准误、编码、有效样本和参数表。不要靠无理论依据的删题、加路径或误差相关来追求显著与完美拟合。"
+    }
+  ],
+  "report_template": "连续教学指标的潜变量 SEM 采用 ML，f1→f3 的未标准化路径为 {a:.3f}（p = {a_p:.4g}），f2→f3 为 {b:.3f}；CFI = {cfi:.3f}，RMSEA = {rmsea:.3f}，SRMR = {srmr:.3f}。测量模型和参数合理性需与整体拟合共同审查。",
+  "sources": [
+    {
+      "title": "实现与估计方法的官方文档",
+      "url": "https://lavaan.ugent.be/tutorial/sem.html"
+    }
+  ],
+  "related_terms": [
+    "path-coefficient",
+    "fit-indices",
+    "rmsea"
+  ],
+  "table_labels": {
+    "parameters": "完整参数表：估计、标准误、区间及标准化参数",
+    "fit": "拟合指标（保留官方字段名）",
+    "loadings": "各题完整载荷",
+    "comparison": "嵌套模型比较"
+  }
+}

@@ -1,0 +1,39 @@
+import assert from 'node:assert/strict';
+import {writeFile,mkdir} from 'node:fs/promises';
+import {isolatedPage,args} from './native-cdp.mjs';
+const o=args(),b=await isolatedPage(Number(o.cdp||9296),1440);
+await mkdir('logs/focused-knowledge-canvas',{recursive:true});
+try{
+ if(o.scenario==='frameworks'){
+  await b.page.send('Page.navigate',{url:'http://127.0.0.1:8773/psy-stats/library/index.html#view=network'});await b.until('!!document.querySelector(".library-content")');
+  await b.until('!!document.querySelector("[data-framework-create]")');
+  await b.run(`(()=>{document.querySelector('[data-framework-create]').click();const form=document.querySelector('[data-framework-create-form]');form.querySelector('input').value='人工研究框架';form.requestSubmit();})()`);
+  await b.until('document.querySelector("[data-framework-title]")?.textContent==="人工研究框架"');
+  const manual=await b.run(`document.querySelector('[data-framework-select]').value`);
+  await b.run(`(()=>{const form=document.querySelector('[data-framework-note]');form.querySelector('[name="name"]').value='我的概念';form.querySelector('[name="definition"]').value='尚在积累的个人理解';form.requestSubmit();})()`);
+  await b.until('[...document.querySelectorAll("[data-member-key]")].some(n=>n.textContent.includes("我的概念"))');
+  await b.run(`[...document.querySelectorAll('[data-member-key]')].find(n=>n.textContent.includes('我的概念')).click()`);assert.equal(await b.run('document.querySelectorAll(".canvas-node").length'),1);assert.ok(await b.run('document.querySelector(".canvas-detail").textContent.includes("尚在积累")'));
+  await b.run(`document.querySelector('[data-framework-template]').value='factor-analysis';document.querySelector('[data-framework-use-template]').click()`);
+  await b.until('document.querySelectorAll("[data-member-key]").length>=26');assert.ok(await b.run('document.querySelectorAll(".canvas-edge").length>0'),'Framework entry shows representative relations');
+  await b.run(`document.querySelector('[data-member-key="official:efa"]').click()`);assert.ok(await b.run('document.querySelectorAll(".canvas-edge").length>0'));
+  await b.run(`document.querySelector('[data-framework-select]').value=${JSON.stringify(manual)};document.querySelector('[data-framework-select]').dispatchEvent(new Event('change',{bubbles:true}));`);
+  await b.until('document.querySelector("[data-framework-title]")?.textContent==="人工研究框架"');await b.page.send('Page.reload');await b.until('!!document.querySelector("[data-member-key]")');assert.ok(await b.run('document.querySelector("[data-member-key]").textContent.includes("我的概念")'));
+  for(const width of [390,320]){await b.page.send('Emulation.setDeviceMetricsOverride',{width,height:1000,deviceScaleFactor:1,mobile:true});assert.ok(await b.run('document.documentElement.scrollWidth<=innerWidth'));await b.run(`document.querySelector('[data-canvas-panel-toggle]').click()`);assert.equal(await b.run('document.querySelector(".canvas-side").inert'),true);assert.notEqual(await b.run('getComputedStyle(document.querySelector(".canvas-stage")).display'),'none');await b.run(`document.querySelector('[data-canvas-panel-toggle]').click()`);assert.equal(await b.run('document.querySelector(".canvas-side").inert'),false);}
+  const report={scenario:'frameworks',status:'passed',create:true,personalNote:true,template:true,rightListSelection:true,reload:true};await writeFile('logs/focused-knowledge-canvas/frameworks.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));
+ }else{
+ await b.page.send('Page.navigate',{url:'http://127.0.0.1:8773/psy-stats/qa/library-host.html'});await b.until('document.readyState==="complete"');
+ await b.run(`(async()=>{const {mountCanvas}=await import('/psy-stats/assets/library/canvas.mjs'),{buildGraph}=await import('/psy-stats/assets/library/graph-model.mjs'),{defaultGraphView}=await import('/psy-stats/assets/library/graph-commands.mjs');const official=await(await fetch('/psy-stats/assets/library/official-graph.json')).json();const records={terms:[],revisions:[],edges:[],graphViews:[],frameworks:[]};globalThis.focusModel=buildGraph({records,catalogue:official.terms,officialGraph:official,view:{frameworkId:'factor-analysis'}});globalThis.focusAbort=new AbortController();globalThis.focusWrites=0;globalThis.focusSelections=[];globalThis.focusController=mountCanvas(document.querySelector('main'),{model:focusModel,view:defaultGraphView('qa-focused'),signal:focusAbort.signal,onCommand:async()=>{focusWrites++;},onRead:()=>{},onSelect:s=>focusSelections.push(s)});await focusController.ready;return true;})()`);
+ const initial=await b.run(`({points:document.querySelectorAll('.canvas-point').length,cards:document.querySelectorAll('.canvas-node').length,edges:document.querySelectorAll('.canvas-edge').length,nodes:focusModel.nodes.length})`);
+ assert.equal(initial.cards,0,'Overview must not render hidden or visible cards');assert.equal(initial.edges,0);assert.equal(initial.points,initial.nodes);
+ await b.run(`document.querySelector('.canvas-point[data-node-key="official:efa"]').focus()`);await b.page.send('Input.dispatchKeyEvent',{type:'keyDown',key:'Enter',code:'Enter'});await b.page.send('Input.dispatchKeyEvent',{type:'keyUp',key:'Enter',code:'Enter'});assert.equal(await b.run(`document.activeElement?.matches('.canvas-node[data-node-key="official:efa"]')`),true,'Keyboard selection must transfer focus to expanded card');await b.run(`document.querySelector('.canvas-stage').dispatchEvent(new KeyboardEvent('keydown',{key:'Escape',bubbles:true}))`);assert.equal(await b.run(`document.activeElement?.matches('.canvas-point[data-node-key="official:efa"]')`),true,'Collapse must return focus to point');
+ const observed=await b.run(`(()=>{globalThis.focusBefore=JSON.stringify(focusController.capture().nodes);focusController.select({space:'official',id:'efa'});return {keys:[...document.querySelectorAll('.canvas-node')].map(n=>n.dataset.nodeKey),edges:[...document.querySelectorAll('.canvas-edge')].map(e=>e.dataset.edgeKey),expected:focusModel.edges.filter(e=>e.from.id==='efa'||e.to.id==='efa').map(e=>e.key)};})()`);
+ assert.deepEqual(observed.edges.sort(),observed.expected.sort());assert.ok(observed.keys.includes('official:efa'));
+ assert.equal(await b.run('JSON.stringify(focusController.capture().nodes)===focusBefore'),true,'Selecting must not persist temporary expanded coordinates');assert.equal(await b.run('focusWrites'),0);
+ await b.run(`document.querySelector('.canvas-stage').dispatchEvent(new KeyboardEvent('keydown',{key:'Escape',bubbles:true}))`);assert.equal(await b.run('document.querySelectorAll(".canvas-node").length'),0);assert.equal(await b.run('document.querySelectorAll(".canvas-edge").length'),0);
+ await b.run(`focusController.select({space:'official',id:'efa'});document.querySelector('[data-canvas-action="relation-filter"]').value='contrasts';document.querySelector('[data-canvas-action="relation-filter"]').dispatchEvent(new Event('change',{bubbles:true}));`);
+ assert.ok(await b.run(`[...document.querySelectorAll('.canvas-edge')].every(p=>p.dataset.type==='contrasts')`));
+ for(const width of [390,320]){await b.page.send('Emulation.setDeviceMetricsOverride',{width,height:1000,deviceScaleFactor:1,mobile:true});assert.ok(await b.run('document.documentElement.scrollWidth<=innerWidth'));}
+ await b.run('focusAbort.abort()');const before=await b.run('focusWrites');await b.run(`document.querySelector('[data-canvas-action="fit"]').click()`);assert.equal(await b.run('focusWrites'),before);
+ const report={scenario:'focus',status:'passed',initial,expandedCards:observed.keys.length,expandedEdges:observed.edges.length,selectionDoesNotSave:true,smallScreen:[390,320],disposed:true};await writeFile('logs/focused-knowledge-canvas/focus.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));
+ }
+}finally{await b.close();}

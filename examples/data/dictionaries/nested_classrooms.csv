@@ -1,0 +1,6 @@
+"name","label","type","role","values"
+"student_id","Student ID","integer","id",""
+"class_id","Class ID","categorical","cluster",""
+"teacher_support","Teacher support","numeric","level2 predictor",""
+"motivation","Motivation","numeric","level1 predictor",""
+"achievement","Achievement","numeric","outcome",""

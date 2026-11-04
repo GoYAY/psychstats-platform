@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="420pt" viewBox="0 0 360 420" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">右偏的方向看长尾，不看多数人在左边还是右边。。这是教学合成的完成时间分布，未计算偏度值；右偏并不表示右边的人最多，也不表示长时间记录必定有错。</desc><title id="title">多数很快但尾巴向右</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:02:18.785995</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 420  L 360 420  L 360 0  L 0 0  L 0 420  z " style="fill: none" />
+  </g>
+  <g id="data-panel">
+   <g id="patch_2">
+    <path d="M 64.8 336  L 349.2 336  L 349.2 105  L 64.8 105  L 64.8 336  z " style="fill: none" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="64.8" y="352.744141" transform="rotate(-0 64.8 352.744141)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="121.68" y="352.744141" transform="rotate(-0 121.68 352.744141)">20</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="178.56" y="352.744141" transform="rotate(-0 178.56 352.744141)">40</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4" />
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="235.44" y="352.744141" transform="rotate(-0 235.44 352.744141)">60</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5" />
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="292.32" y="352.744141" transform="rotate(-0 292.32 352.744141)">80</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6" />
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="349.2" y="352.744141" transform="rotate(-0 349.2 352.744141)">100</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #303b4b" x="207" y="378.735625" transform="rotate(-0 207 378.735625)">完成任务时间（秒）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7">
+      <path d="M 64.8 336  L 349.2 336  " clip-path="url(#p9e1fa4e320)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_8" />
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="57.8" y="340.87207" transform="rotate(-0 57.8 340.87207)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_9">
+      <path d="M 64.8 268.058824  L 349.2 268.058824  " clip-path="url(#p9e1fa4e320)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_10" />
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="57.8" y="272.930894" transform="rotate(-0 57.8 272.930894)">5</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_11">
+      <path d="M 64.8 200.117647  L 349.2 200.117647  " clip-path="url(#p9e1fa4e320)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_12" />
+     <g id="text_10">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="57.8" y="204.989717" transform="rotate(-0 57.8 204.989717)">10</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_13">
+      <path d="M 64.8 132.176471  L 349.2 132.176471  " clip-path="url(#p9e1fa4e320)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_14" />
+     <g id="text_11">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="57.8" y="137.048541" transform="rotate(-0 57.8 137.048541)">15</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #303b4b" x="30.431816" y="220.5" transform="rotate(-90 30.431816 220.5)">完成人数（人）</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 64.8 336  L 93.24 336  L 93.24 227.294118  L 64.8 227.294118  z " clip-path="url(#p9e1fa4e320)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 93.24 336  L 121.68 336  L 121.68 132.176471  L 93.24 132.176471  z " clip-path="url(#p9e1fa4e320)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 121.68 336  L 150.12 336  L 150.12 213.705882  L 121.68 213.705882  z " clip-path="url(#p9e1fa4e320)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 150.12 336  L 178.56 336  L 178.56 268.058824  L 150.12 268.058824  z " clip-path="url(#p9e1fa4e320)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 178.56 336  L 207 336  L 207 295.235294  L 178.56 295.235294  z " clip-path="url(#p9e1fa4e320)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 207 336  L 235.44 336  L 235.44 308.823529  L 207 308.823529  z " clip-path="url(#p9e1fa4e320)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_9">
+    <path d="M 235.44 336  L 263.88 336  L 263.88 322.411765  L 235.44 322.411765  z " clip-path="url(#p9e1fa4e320)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_10">
+    <path d="M 263.88 336  L 292.32 336  L 292.32 322.411765  L 263.88 322.411765  z " clip-path="url(#p9e1fa4e320)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_11">
+    <path d="M 292.32 336  L 320.76 336  L 320.76 322.411765  L 292.32 322.411765  z " clip-path="url(#p9e1fa4e320)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_12">
+    <path d="M 320.76 336  L 349.2 336  L 349.2 322.411765  L 320.76 322.411765  z " clip-path="url(#p9e1fa4e320)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_13">
+    <path d="M 64.8 336  L 64.8 105  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_14">
+    <path d="M 64.8 336  L 349.2 336  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_15">
+    <path d="M 260.881072 226.912023  Q 299.834293 263.832378 314.180268 315.113434  " style="fill: none; stroke: #244da4; stroke-width: 1.2; stroke-linecap: round" />
+    <path d="M 315.19837 309.844329  L 314.180268 315.113434  L 310.575846 311.137489  " style="fill: none; stroke: #244da4; stroke-width: 1.2; stroke-linecap: round" />
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #244da4" x="249.66" y="220.5" transform="rotate(-0 249.66 220.5)">右侧长尾</text>
+   </g>
+  </g>
+  <g id="text_14">
+   <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="64.8" y="33.6" transform="rotate(-0 64.8 33.6)">大多数人较快完成</text>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="64.8" y="63" transform="rotate(-0 64.8 63)">少数人的较长用时，把尾巴拖向右边。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9e1fa4e320">
+   <rect x="64.8" y="105" width="284.4" height="231" />
+  </clipPath>
+ </defs>
+</svg>

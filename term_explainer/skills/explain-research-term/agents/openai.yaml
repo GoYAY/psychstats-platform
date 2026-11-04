@@ -1,0 +1,4 @@
+interface:
+  display_name: "研究术语科普读本"
+  short_description: "基于用户术语与文献生成可视化科普、必要辅助释义和知识关联"
+  default_prompt: "请使用 $explain-research-term，依据我提供的术语和资料生成一份易理解、可视化且可核对来源的科普读本。"

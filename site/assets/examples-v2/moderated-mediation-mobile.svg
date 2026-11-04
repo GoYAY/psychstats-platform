@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="360pt" height="320pt" viewBox="0 0 360 320" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">间接联系可随压力水平改变，需要直接评估这种差别。。估计与区间为教学构造；两个区间的样子不能代替差异检验或因果设计。</desc><title id="title">压力条件下的间接联系</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:04:30.390821</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 320  L 360 320  L 360 0  L 0 0  L 0 320  z " style="fill: none" />
+  </g>
+  <g id="data-panel-0">
+   <g id="patch_2">
+    <path d="M 46.8 250  L 342 250  L 342 25.6  L 46.8 25.6  L 46.8 250  z " style="fill: none" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="96" y="266.744141" transform="rotate(-0 96 266.744141)">0.00</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="157.5" y="266.744141" transform="rotate(-0 157.5 266.744141)">0.25</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="219" y="266.744141" transform="rotate(-0 219 266.744141)">0.50</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4" />
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="280.5" y="266.744141" transform="rotate(-0 280.5 266.744141)">0.75</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5" />
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="342" y="266.744141" transform="rotate(-0 342 266.744141)">1.00</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #303b4b" x="194.4" y="291.822031" transform="rotate(-0 194.4 291.822031)">经自信的间接联系（坚持分）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2" />
+   <g id="line2d_6">
+    <path d="M 169.8 96.356757  L 317.4 96.356757  " clip-path="url(#pe79c922f1a)" style="fill: none; stroke: #953970; stroke-opacity: 0.65; stroke-width: 2.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_7">
+    <defs>
+     <path id="m6196ad1555" d="M 0 6  L 0 -6  " style="stroke: #953970" />
+    </defs>
+    <g clip-path="url(#pe79c922f1a)">
+     <use xlink:href="#m6196ad1555" x="169.8" y="96.356757" style="fill: #953970; stroke: #953970" />
+     <use xlink:href="#m6196ad1555" x="317.4" y="96.356757" style="fill: #953970; stroke: #953970" />
+    </g>
+   </g>
+   <g id="line2d_8">
+    <path d="M 71.4 197.437838  L 219 197.437838  " clip-path="url(#pe79c922f1a)" style="fill: none; stroke: #953970; stroke-opacity: 0.65; stroke-width: 2.4; stroke-linecap: square" />
+   </g>
+   <g id="line2d_9">
+    <g clip-path="url(#pe79c922f1a)">
+     <use xlink:href="#m6196ad1555" x="71.4" y="197.437838" style="fill: #953970; stroke: #953970" />
+     <use xlink:href="#m6196ad1555" x="219" y="197.437838" style="fill: #953970; stroke: #953970" />
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 46.8 250  L 342 250  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="46.8" y="73.099525" transform="rotate(-0 46.8 73.099525)">低压力</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="194.4" y="133.392789" transform="rotate(-0 194.4 133.392789)">0.3 — 0.6 — 0.9</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="46.8" y="174.180606" transform="rotate(-0 46.8 174.180606)">高压力</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="194.4" y="234.47387" transform="rotate(-0 194.4 234.47387)">-0.1 — 0.2 — 0.5</text>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="mace5d991ad" d="M 0 2.95804  C 0.784481 2.95804 1.536938 2.646362 2.09165 2.09165  C 2.646362 1.536938 2.95804 0.784481 2.95804 0  C 2.95804 -0.784481 2.646362 -1.536938 2.09165 -2.09165  C 1.536938 -2.646362 0.784481 -2.95804 0 -2.95804  C -0.784481 -2.95804 -1.536938 -2.646362 -2.09165 -2.09165  C -2.646362 -1.536938 -2.95804 -0.784481 -2.95804 0  C -2.95804 0.784481 -2.646362 1.536938 -2.09165 2.09165  C -1.536938 2.646362 -0.784481 2.95804 0 2.95804  z " style="stroke: #953970" />
+    </defs>
+    <g clip-path="url(#pe79c922f1a)">
+     <use xlink:href="#mace5d991ad" x="243.6" y="96.356757" style="fill: #953970; stroke: #953970" />
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <g clip-path="url(#pe79c922f1a)">
+     <use xlink:href="#mace5d991ad" x="145.2" y="197.437838" style="fill: #953970; stroke: #953970" />
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe79c922f1a">
+   <rect x="46.8" y="25.6" width="295.2" height="224.4" />
+  </clipPath>
+ </defs>
+</svg>

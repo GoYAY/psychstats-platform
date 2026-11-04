@@ -1,0 +1,71 @@
+{
+  "case_id": "repeated",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\nError: id\n          Df Sum Sq Mean Sq F value Pr(>F)\nResiduals 44   5576   126.7               \n\nError: id:time\n          Df Sum Sq Mean Sq F value   Pr(>F)    \ntime       2  810.1   405.0   22.82 1.04e-08 ***\nResiduals 88 1561.9    17.7                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\tMauchly's test of sphericity\n\tContrasts orthogonal to\n\t~1\n\n\ndata:  SSD matrix from lm(formula = wide ~ 1)\nW = 0.98438, p-value = 0.7128\n\nAnalysis of Variance Table\n\nModel 1: wide ~ 1\nModel 2: wide ~ 1 - 1\n\nContrasts orthogonal to\n~1\n\nGreenhouse-Geisser epsilon: 0.9846\nHuynh-Feldt epsilon:        1.0304\n\n  Res.Df Df Gen.var.      F num Df den Df     Pr(>F)     G-G Pr     H-F Pr\n1     44      10.167                                                      \n2     45  1   13.888 22.821      2     88 1.0372e-08 1.3073e-08 1.0372e-08\n           comparison difference  ci_lower  ci_upper            p       p_holm\n1      post minus pre   5.696441  3.879294 7.5135869 1.150054e-07 3.450162e-07\n2  followup minus pre   4.480833  2.612340 6.3493258 1.670134e-05 3.340268e-05\n3 followup minus post  -1.215608 -2.894523 0.4633068 1.516089e-01 1.516089e-01\n",
+  "stderr": "",
+  "metrics": {
+    "F": 22.820587399510682,
+    "df1": 2,
+    "df2": 88,
+    "p": 1.0372060618957662e-08,
+    "people": 45,
+    "observations": 135,
+    "gg_epsilon": 0.9846190477122266,
+    "gg_p": 1.3073000341078073e-08,
+    "gg_df1": 1.9692380954244533,
+    "gg_df2": 86.64647619867594,
+    "mauchly_p": 0.7128336834296514
+  },
+  "warnings": [],
+  "tables": {
+    "sphericity_corrections": [
+      {
+        "Res.Df": 44,
+        "Gen.var.": 10.166908140721267
+      },
+      {
+        "Res.Df": 45,
+        "Df": 1,
+        "Gen.var.": 13.887913160674348,
+        "F": 22.820587398978464,
+        "num Df": 2,
+        "den Df": 88,
+        "Pr(>F)": 1.0372060622592592e-08,
+        "G-G Pr": 1.3073000341078073e-08,
+        "H-F Pr": 1.0372060622592592e-08
+      }
+    ],
+    "paired_comparisons": [
+      {
+        "comparison": "post minus pre",
+        "difference": 5.696440547353859,
+        "ci_lower": 3.8792941461638284,
+        "ci_upper": 7.51358694854389,
+        "p": 1.1500538639983358e-07,
+        "p_holm": 3.4501615919950076e-07
+      },
+      {
+        "comparison": "followup minus pre",
+        "difference": 4.480832674883658,
+        "ci_lower": 2.6123395065347355,
+        "ci_upper": 6.34932584323258,
+        "p": 1.670133971110033e-05,
+        "p_holm": 3.340267942220066e-05
+      },
+      {
+        "comparison": "followup minus post",
+        "difference": -1.2156078724702006,
+        "ci_lower": -2.894522580686987,
+        "ci_upper": 0.4633068357465858,
+        "p": 0.15160885168895918,
+        "p_holm": 0.15160885168895918
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "38741e96f5bc94de2c2fda17437f7cd89cd434e503e0ac817b8edc1b608b5938",
+  "config_sha256": "04203ea4d65ce81c7ae90bbc9947d205fba2090087254a1db9aef82f42de647a",
+  "data_sha256": {}
+}

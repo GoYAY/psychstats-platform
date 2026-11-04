@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="290pt" viewBox="0 0 360 290" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">题间一起变化可能来自重复内容，高α仍要检查覆盖范围。。表中不计算α，也不由题意直接判定单维性。</desc><title id="title">题目相似不等于内容全面</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:03:58.109756</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 290  L 360 290  L 360 0  L 0 0  L 0 290  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 26 12  L 334 12  Q 348 12 348 26  L 348 115  Q 348 129 334 129  L 26 129  Q 12 129 12 115  L 12 26  Q 12 12 26 12  z " clip-path="url(#pc5564ed9a3)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 26 145  L 334 145  Q 348 145 348 159  L 348 248  Q 348 262 334 262  L 26 262  Q 12 262 12 248  L 12 159  Q 12 145 26 145  z " clip-path="url(#pc5564ed9a3)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 28 13  L 332 13  " clip-path="url(#pc5564ed9a3)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 28 146  L 332 146  " clip-path="url(#pc5564ed9a3)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="36.048125" transform="rotate(-0 25 36.048125)">问卷安排</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="36.899687" transform="rotate(-0 137 36.899687)">反复询问紧张</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="71.036875" transform="rotate(-0 25 71.036875)">题目内容</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="71.798125" transform="rotate(-0 137 71.798125)">紧张／紧绷／绷紧</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="106.048125" transform="rotate(-0 25 106.048125)">需要再问</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="106.861094" transform="rotate(-0 137 106.861094)">是否重复过多</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="169.048125" transform="rotate(-0 25 169.048125)">问卷安排</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="169.885469" transform="rotate(-0 137 169.885469)">覆盖不同体验</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="204.036875" transform="rotate(-0 25 204.036875)">题目内容</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="204.899687" transform="rotate(-0 137 204.899687)">担忧／紧张／难放松</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="25" y="239.048125" transform="rotate(-0 25 239.048125)">需要再问</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="137" y="239.810313" transform="rotate(-0 137 239.810313)">是否适合共同解释</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc5564ed9a3">
+   <rect x="0" y="0" width="360" height="290" />
+  </clipPath>
+ </defs>
+</svg>

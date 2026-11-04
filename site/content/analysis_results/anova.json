@@ -1,0 +1,48 @@
+{
+  "case_id": "anova",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n             Df Sum Sq Mean Sq F value   Pr(>F)    \ncondition     2   1600   800.1   13.87 2.54e-06 ***\nResiduals   177  10211    57.7                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n                       diff         lwr       upr        p adj\ncontrol-combined  -7.260384 -10.5380497 -3.982719 1.381471e-06\npractice-combined -4.317446  -7.5951113 -1.039781 6.082594e-03\npractice-control   2.942938  -0.3347269  6.220604 8.825234e-02\n",
+  "stderr": "",
+  "metrics": {
+    "F": 13.869632859086254,
+    "df1": 2,
+    "df2": 177,
+    "p": 2.537073564126287e-06,
+    "eta_squared": 0.1354858122640536
+  },
+  "warnings": [],
+  "tables": {
+    "pairwise": [
+      {
+        "comparison": "control-combined",
+        "diff": -7.2603843625264854,
+        "lwr": -10.53804965326241,
+        "upr": -3.982719071790561,
+        "p adj": 1.3814707250370262e-06,
+        "_row": "control-combined"
+      },
+      {
+        "comparison": "practice-combined",
+        "diff": -4.317445991855086,
+        "lwr": -7.595111282591011,
+        "upr": -1.0397807011191618,
+        "p adj": 0.006082593703541805,
+        "_row": "practice-combined"
+      },
+      {
+        "comparison": "practice-control",
+        "diff": 2.9429383706713996,
+        "lwr": -0.33472692006452487,
+        "upr": 6.220603661407324,
+        "p adj": 0.08825233536347032,
+        "_row": "practice-control"
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "b6c2c953340eae791b0bf7462b65a580f5ebbdd9461e8d355e5a2650a0addd31",
+  "config_sha256": "895740eebd87ad6bc9d42c836acc8e32da40c949c1f14597a57082bb3554f785",
+  "data_sha256": {}
+}

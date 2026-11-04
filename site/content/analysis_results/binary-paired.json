@@ -1,0 +1,43 @@
+{
+  "case_id": "binary-paired",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n      after\nbefore  0  1\n     0 36 37\n     1 14 13\n\n\tMcNemar's Chi-squared test with continuity correction\n\ndata:  tab\nMcNemar's chi-squared = 9.4902, df = 1, p-value = 0.002066\n\n\n\tExact binomial test\n\ndata:  tab[1, 2] and discordant\nnumber of successes = 37, number of trials = 51, p-value = 0.001769\nalternative hypothesis: true probability of success is not equal to 0.5\n95 percent confidence interval:\n 0.5825525 0.8410727\nsample estimates:\nprobability of success \n             0.7254902 \n\n",
+  "stderr": "",
+  "metrics": {
+    "p": 0.002065727431006296,
+    "exact_p": 0.0017691971837869942,
+    "discordant": 51,
+    "difference": 0.22999999999999998
+  },
+  "warnings": [],
+  "tables": {
+    "paired_counts": [
+      {
+        "before": "0",
+        "after": "0",
+        "Freq": 36
+      },
+      {
+        "before": "1",
+        "after": "0",
+        "Freq": 14
+      },
+      {
+        "before": "0",
+        "after": "1",
+        "Freq": 37
+      },
+      {
+        "before": "1",
+        "after": "1",
+        "Freq": 13
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "73359fc90229b9f279aee4e33f2dcd6dd7cf4ab1e45e62fc657f1f1fd5bbc117",
+  "config_sha256": "99075f8661485317a8f22699a56aa3951a1bdbfc772505e27e2396eef013a572",
+  "data_sha256": {}
+}

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="609pt" viewBox="0 0 360 609" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">模型可同时纳入个人与班级条件，并允许班级起点不同。。图为模型设定，不证明班级支持导致焦虑改善。</desc><title id="title">个人与班级一起进入模型</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:45.041915</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 609  L 360 609  L 360 0  L 0 0  L 0 609  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 126.924049 138.547965  Q 209.976887 162.636943 234.09564 244.399977  " clip-path="url(#pc4b0b64d39)" style="fill: none; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 235.03951 239.117069  L 234.09564 244.399977  L 230.435636 240.475137  z " clip-path="url(#pc4b0b64d39)" style="fill: #17643b; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 126.924049 356.452035  Q 209.976887 332.363057 234.09564 250.600023  " clip-path="url(#pc4b0b64d39)" style="fill: none; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 230.435636 254.524863  L 234.09564 250.600023  L 235.03951 255.882931  z " clip-path="url(#pc4b0b64d39)" style="fill: #17643b; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 217.999268 247.5  Q 225.501422 247.5 231.773739 247.5  " clip-path="url(#pc4b0b64d39)" style="fill: none; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 226.973739 245.1  L 231.773739 247.5  L 226.973739 249.9  z " clip-path="url(#pc4b0b64d39)" style="fill: #17643b; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 68 99  L 110 99  Q 119 99 119 108  L 119 168  Q 119 177 110 177  L 68 177  Q 59 177 59 168  L 59 108  Q 59 99 68 99  z " clip-path="url(#pc4b0b64d39)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 68 318  L 110 318  Q 119 318 119 327  L 119 387  Q 119 396 110 396  L 68 396  Q 59 396 59 387  L 59 327  Q 59 318 68 318  z " clip-path="url(#pc4b0b64d39)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 180 218.5  C 187.956093 218.5 195.587396 221.555623 201.213203 226.993903  C 206.839011 232.432184 210 239.80911 210 247.5  C 210 255.19089 206.839011 262.567816 201.213203 268.006097  C 195.587396 273.444377 187.956093 276.5 180 276.5  C 172.043907 276.5 164.412604 273.444377 158.786797 268.006097  C 153.160989 262.567816 150 255.19089 150 247.5  C 150 239.80911 153.160989 232.432184 158.786797 226.993903  C 164.412604 221.555623 172.043907 218.5 180 218.5  z " clip-path="url(#pc4b0b64d39)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 250 218.5  L 292 218.5  Q 301 218.5 301 227.5  L 301 267.5  Q 301 276.5 292 276.5  L 250 276.5  Q 241 276.5 241 267.5  L 241 227.5  Q 241 218.5 250 218.5  z " clip-path="url(#pc4b0b64d39)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 128.255742)">个人压</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 141.386367)">力（学</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 154.494492)">生层）</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 347.41418)">班级支</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 360.451055)">持（班</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(71 373.546055)">级层）</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(162 244.36793)">班级起</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(162 257.592305)">点差异</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(253 244.468242)">学生焦</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(265 257.563242)">虑</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="523.593867" transform="rotate(-0 20 523.593867)">1. 个人压力（学生层） → 学生焦虑：个人联系</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="551.593867" transform="rotate(-0 20 551.593867)">2. 班级支持（班级层） → 学生焦虑：班级联系</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="579.842305" transform="rotate(-0 20 579.842305)">3. 班级起点差异 → 学生焦虑：允许起点不同</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc4b0b64d39">
+   <rect x="0" y="0" width="360" height="609" />
+  </clipPath>
+ </defs>
+</svg>

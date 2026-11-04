@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="650pt" viewBox="0 0 760 650" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">重复测量与共同考试可能使记录相关，独立性需结合设计判断。。场景只提示可能依赖，不能由图断言依赖程度或选定模型。</desc><title id="title">两行记录未必两名学生</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:01:18.737297</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 650  L 760 650  L 760 0  L 0 0  L 0 650  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 88  L 730 88  Q 744 88 744 102  L 744 296  Q 744 310 730 310  L 30 310  Q 16 310 16 296  L 16 102  Q 16 88 30 88  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 65 168  C 66.856422 168 68.637059 168.737564 69.949747 170.050253  C 71.262436 171.362941 72 173.143578 72 175  C 72 176.856422 71.262436 178.637059 69.949747 179.949747  C 68.637059 181.262436 66.856422 182 65 182  C 63.143578 182 61.362941 181.262436 60.050253 179.949747  C 58.737564 178.637059 58 176.856422 58 175  C 58 173.143578 58.737564 171.362941 60.050253 170.050253  C 61.362941 168.737564 63.143578 168 65 168  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.7" />
+   </g>
+   <g id="patch_4">
+    <path d="M 61 185  L 69 185  Q 76 185 76 192  L 76 198  Q 76 205 69 205  L 61 205  Q 54 205 54 198  L 54 192  Q 54 185 61 185  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.55" />
+   </g>
+   <g id="patch_5">
+    <path d="M 65 163  C 71.630077 163 77.989497 165.634158 82.67767 170.32233  C 87.365842 175.010503 90 181.369923 90 188  C 90 194.630077 87.365842 200.989497 82.67767 205.67767  C 77.989497 210.365842 71.630077 213 65 213  C 58.369923 213 52.010503 210.365842 47.32233 205.67767  C 42.634158 200.989497 40 194.630077 40 188  C 40 181.369923 42.634158 175.010503 47.32233 170.32233  C 52.010503 165.634158 58.369923 163 65 163  L 65 163  z " clip-path="url(#p674adbc948)" style="fill: none; opacity: 0.6; stroke: #244da4; stroke-width: 1.2; stroke-linejoin: miter" />
+   </g>
+   <g id="person-to-today">
+    <path d="M 99.981934 193.710968  Q 170.000637 183.499907 238.581109 173.498588  " clip-path="url(#p674adbc948)" style="fill: none; opacity: 0.7; stroke: #244da4; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 232.210991 171.395831  L 238.581109 173.498588  L 233.076832 177.333029  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.7; stroke: #244da4; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="person-to-tomorrow">
+    <path d="M 99.929199 194.535889  Q 169.999916 213.999977 238.670213 233.075059  " clip-path="url(#p674adbc948)" style="fill: none; opacity: 0.7; stroke: #244da4; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 233.692037 228.578642  L 238.670213 233.075059  L 232.086174 234.35975  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.7; stroke: #244da4; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_6">
+    <path d="M 258 151  L 722 151  Q 730 151 730 159  L 730 188  Q 730 196 722 196  L 258 196  Q 250 196 250 188  L 250 159  Q 250 151 258 151  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.1; stroke: #244da4; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 258 212  L 722 212  Q 730 212 730 220  L 730 249  Q 730 257 722 257  L 258 257  Q 250 257 250 249  L 250 220  Q 250 212 258 212  z " clip-path="url(#p674adbc948)" style="fill: #167d87; opacity: 0.1; stroke: #167d87; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 30 350  L 730 350  Q 744 350 744 364  L 744 558  Q 744 572 730 572  L 30 572  Q 16 572 16 558  L 16 364  Q 16 350 30 350  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.055" />
+   </g>
+   <g id="patch_9">
+    <path d="M 378.047119 437.411133  Q 304.001192 452.999749 231.377532 468.288941  " clip-path="url(#p674adbc948)" style="fill: none; opacity: 0.7; stroke: #244da4; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 237.866863 469.988527  L 231.377532 468.288941  L 236.6308 464.117228  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.7; stroke: #244da4; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_10">
+    <path d="M 228 473  C 229.856422 473 231.637059 473.737564 232.949747 475.050253  C 234.262436 476.362941 235 478.143578 235 480  C 235 481.856422 234.262436 483.637059 232.949747 484.949747  C 231.637059 486.262436 229.856422 487 228 487  C 226.143578 487 224.362941 486.262436 223.050253 484.949747  C 221.737564 483.637059 221 481.856422 221 480  C 221 478.143578 221.737564 476.362941 223.050253 475.050253  C 224.362941 473.737564 226.143578 473 228 473  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.7" />
+   </g>
+   <g id="patch_11">
+    <path d="M 224 490  L 232 490  Q 239 490 239 497  L 239 503  Q 239 510 232 510  L 224 510  Q 217 510 217 503  L 217 497  Q 217 490 224 490  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.55" />
+   </g>
+   <g id="patch_12">
+    <path d="M 228 468  C 234.630077 468 240.989497 470.634158 245.67767 475.32233  C 250.365842 480.010503 253 486.369922 253 493  C 253 499.630078 250.365842 505.989497 245.67767 510.67767  C 240.989497 515.365842 234.630077 518 228 518  C 221.369923 518 215.010503 515.365842 210.32233 510.67767  C 205.634158 505.989497 203 499.630078 203 493  C 203 486.369922 205.634158 480.010503 210.32233 475.32233  C 215.010503 470.634158 221.369923 468 228 468  L 228 468  z " clip-path="url(#p674adbc948)" style="fill: none; opacity: 0.6; stroke: #244da4; stroke-width: 1.2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_13">
+    <path d="M 381.952881 437.411133  Q 455.998808 452.999749 528.622468 468.288941  " clip-path="url(#p674adbc948)" style="fill: none; opacity: 0.7; stroke: #244da4; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 523.3692 464.117228  L 528.622468 468.288941  L 522.133137 469.988527  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.7; stroke: #244da4; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_14">
+    <path d="M 532 473  C 533.856422 473 535.637059 473.737564 536.949747 475.050253  C 538.262436 476.362941 539 478.143578 539 480  C 539 481.856422 538.262436 483.637059 536.949747 484.949747  C 535.637059 486.262436 533.856422 487 532 487  C 530.143578 487 528.362941 486.262436 527.050253 484.949747  C 525.737564 483.637059 525 481.856422 525 480  C 525 478.143578 525.737564 476.362941 527.050253 475.050253  C 528.362941 473.737564 530.143578 473 532 473  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.7" />
+   </g>
+   <g id="patch_15">
+    <path d="M 528 490  L 536 490  Q 543 490 543 497  L 543 503  Q 543 510 536 510  L 528 510  Q 521 510 521 503  L 521 497  Q 521 490 528 490  z " clip-path="url(#p674adbc948)" style="fill: #244da4; opacity: 0.55" />
+   </g>
+   <g id="patch_16">
+    <path d="M 532 468  C 538.630077 468 544.989497 470.634158 549.67767 475.32233  C 554.365842 480.010503 557 486.369922 557 493  C 557 499.630078 554.365842 505.989497 549.67767 510.67767  C 544.989497 515.365842 538.630077 518 532 518  C 525.369923 518 519.010503 515.365842 514.32233 510.67767  C 509.634158 505.989497 507 499.630078 507 493  C 507 486.369922 509.634158 480.010503 514.32233 475.32233  C 519.010503 470.634158 525.369923 468 532 468  L 532 468  z " clip-path="url(#p674adbc948)" style="fill: none; opacity: 0.6; stroke: #244da4; stroke-width: 1.2; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 89  L 728 89  " clip-path="url(#p674adbc948)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 351  L 728 351  " clip-path="url(#p674adbc948)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="20" y="33.733906" transform="rotate(-0 20 33.733906)">两行记录未必两名学生</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="61.53918" transform="rotate(-0 20 61.53918)">概念示意 · 图形不对应实际人数或结果</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="30" y="117.108262" transform="rotate(-0 30 117.108262)">不同记录，共享同一个人</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="65" y="232.789424" transform="rotate(-0 65 232.789424)">学生甲</text>
+   </g>
+   <g id="record-today">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="262" y="176.49793" transform="rotate(-0 262 176.49793)">甲 · 今天 · 压力6分</text>
+   </g>
+   <g id="record-tomorrow">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #167d87" x="262" y="237.49793" transform="rotate(-0 262 237.49793)">甲 · 明天 · 压力7分</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="296.78333" transform="rotate(-0 30 296.78333)">两行记录需要保留同一身份关系</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #244da4" x="30" y="379.080918" transform="rotate(-0 30 379.080918)">不同的人，也要考虑设计与环境</text>
+   </g>
+   <g id="shared-exam">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #244da4" x="380" y="422.080918" transform="rotate(-0 380 422.080918)">共同期末考试</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="228" y="537.630859" transform="rotate(-0 228 537.630859)">甲</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="532" y="537.630859" transform="rotate(-0 532 537.630859)">乙</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="20" y="588.834111" transform="rotate(-0 20 588.834111)">记录是否独立需要结合身份、抽样与共同环境判断；图没有估计依赖程度。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p674adbc948">
+   <rect x="0" y="0" width="760" height="650" />
+  </clipPath>
+ </defs>
+</svg>

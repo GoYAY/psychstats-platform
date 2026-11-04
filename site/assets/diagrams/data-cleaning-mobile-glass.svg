@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="320pt" height="480pt" viewBox="0 0 320 480" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">保留原始数据，检查缺失、重复与异常，核实原始记录；可核实的修正并留痕，无法核实的标记并按预设规则处理，最后输出分析数据和日志。</desc><title id="title">数据清理的核实与处理流程</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:26:54.673524</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 480  L 320 480  L 320 0  L 0 0  L 0 480  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 24 39  L 296 39  Q 304 39 304 47  L 304 82  Q 304 90 296 90  L 24 90  Q 16 90 16 82  L 16 47  Q 16 39 24 39  z " clip-path="url(#p414a22f4c9)" style="fill: #f4f7fb; fill-opacity: 0.4; stroke: #aebbc9; stroke-opacity: 0.75; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_3">
+    <path d="M 24 108  L 296 108  Q 304 108 304 116  L 304 151  Q 304 159 296 159  L 24 159  Q 16 159 16 151  L 16 116  Q 16 108 24 108  z " clip-path="url(#p414a22f4c9)" style="fill: #f4f7fb; fill-opacity: 0.4; stroke: #aebbc9; stroke-opacity: 0.75; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 24 177  L 296 177  Q 304 177 304 185  L 304 220  Q 304 228 296 228  L 24 228  Q 16 228 16 220  L 16 185  Q 16 177 24 177  z " clip-path="url(#p414a22f4c9)" style="fill: #f4f7fb; fill-opacity: 0.4; stroke: #aebbc9; stroke-opacity: 0.75; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 24 266  L 148 266  Q 156 266 156 274  L 156 361  Q 156 369 148 369  L 24 369  Q 16 369 16 361  L 16 274  Q 16 266 24 266  z " clip-path="url(#p414a22f4c9)" style="fill: #eaf4f0; fill-opacity: 0.4; stroke: #91b6a8; stroke-opacity: 0.75; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 172 266  L 296 266  Q 304 266 304 274  L 304 361  Q 304 369 296 369  L 172 369  Q 164 369 164 361  L 164 274  Q 164 266 172 266  z " clip-path="url(#p414a22f4c9)" style="fill: #f4f0e8; fill-opacity: 0.4; stroke: #c5ad83; stroke-opacity: 0.75; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 24 406  L 296 406  Q 304 406 304 414  L 304 453  Q 304 461 296 461  L 24 461  Q 16 461 16 453  L 16 414  Q 16 406 24 406  z " clip-path="url(#p414a22f4c9)" style="fill: #eef2fb; fill-opacity: 0.4; stroke: #9dafd6; stroke-opacity: 0.75; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 160 91  Q 160 98.5 160 104.658359  " clip-path="url(#p414a22f4c9)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.2; stroke-linecap: round" />
+    <path d="M 161.6 101.458359  L 160 104.658359  L 158.4 101.458359  z " clip-path="url(#p414a22f4c9)" style="fill: #64748b; fill-opacity: 0.75; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.2; stroke-linecap: round" />
+   </g>
+   <g id="patch_9">
+    <path d="M 160 160  Q 160 167.5 160 173.658359  " clip-path="url(#p414a22f4c9)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.2; stroke-linecap: round" />
+    <path d="M 161.6 170.458359  L 160 173.658359  L 158.4 170.458359  z " clip-path="url(#p414a22f4c9)" style="fill: #64748b; fill-opacity: 0.75; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.2; stroke-linecap: round" />
+   </g>
+   <g id="patch_10">
+    <path d="M 160 229  C 160 245 82 245 82 259.658359  " clip-path="url(#p414a22f4c9)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.2; stroke-linecap: round" />
+    <path d="M 83.6 256.458359  L 82 259.658359  L 80.4 256.458359  z " clip-path="url(#p414a22f4c9)" style="fill: #64748b; fill-opacity: 0.75; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.2; stroke-linecap: round" />
+   </g>
+   <g id="patch_11">
+    <path d="M 160 229  C 160 245 238 245 238 259.658359  " clip-path="url(#p414a22f4c9)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.2; stroke-linecap: round" />
+    <path d="M 239.6 256.458359  L 238 259.658359  L 236.4 256.458359  z " clip-path="url(#p414a22f4c9)" style="fill: #64748b; fill-opacity: 0.75; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.2; stroke-linecap: round" />
+   </g>
+   <g id="patch_12">
+    <path d="M 82 370  C 82 389 160 389 160 401.658359  " clip-path="url(#p414a22f4c9)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.2; stroke-linecap: round" />
+    <path d="M 161.6 398.458359  L 160 401.658359  L 158.4 398.458359  z " clip-path="url(#p414a22f4c9)" style="fill: #64748b; fill-opacity: 0.75; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.2; stroke-linecap: round" />
+   </g>
+   <g id="patch_13">
+    <path d="M 238 370  C 238 389 160 389 160 401.658359  " clip-path="url(#p414a22f4c9)" style="fill: none; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.2; stroke-linecap: round" />
+    <path d="M 161.6 398.458359  L 160 401.658359  L 158.4 398.458359  z " clip-path="url(#p414a22f4c9)" style="fill: #64748b; fill-opacity: 0.75; stroke: #64748b; stroke-opacity: 0.75; stroke-width: 1.2; stroke-linecap: round" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #111827" x="14" y="24" transform="rotate(-0 14 24)">数据清理：先核实，再处理</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #111827" x="30" y="60" transform="rotate(-0 30 60)">1  保留原始数据副本</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #485567" x="30" y="78" transform="rotate(-0 30 78)">确保每一步都可以追溯</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #111827" x="30" y="129" transform="rotate(-0 30 129)">2  检查缺失、重复、异常值</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #485567" x="30" y="147" transform="rotate(-0 30 147)">先定位记录，不自动删除</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #111827" x="30" y="198" transform="rotate(-0 30 198)">3  核实原始记录与编码</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #485567" x="30" y="216" transform="rotate(-0 30 216)">判断是否有修正依据</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #485567" x="30" y="258" transform="rotate(-0 30 258)">可核实</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #485567" x="250" y="258" transform="rotate(-0 250 258)">无法核实</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #111827" x="27" y="289" transform="rotate(-0 27 289)">依据原记录</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #111827" x="27" y="308" transform="rotate(-0 27 308)">修正或保留</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #344e46" x="27" y="342" transform="rotate(-0 27 342)">记录依据与改动</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #111827" x="175" y="289" transform="rotate(-0 175 289)">标记问题</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #111827" x="175" y="308" transform="rotate(-0 175 308)">按预设规则处理</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #62543d" x="175" y="342" transform="rotate(-0 175 342)">记录处理决定</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #111827" x="30" y="429" transform="rotate(-0 30 429)">4  输出分析数据 + 处理日志</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans'; text-anchor: start; fill: #485567" x="30" y="448" transform="rotate(-0 30 448)">报告保留、修正及排除的规则</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p414a22f4c9">
+   <rect x="0" y="0" width="320" height="480" />
+  </clipPath>
+ </defs>
+</svg>

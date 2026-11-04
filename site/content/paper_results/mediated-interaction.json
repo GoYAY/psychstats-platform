@@ -1,0 +1,145 @@
+{
+  "tables": {
+    "path_coefficients": [
+      {
+        "outcome": "m",
+        "term": "(Intercept)",
+        "estimate": -0.021847581705051886,
+        "se": 0.0519292778302689,
+        "statistic": -0.420717996049566,
+        "df": 346,
+        "p": 0.6742222074883558,
+        "ci_lower": -0.12398436494376501,
+        "ci_upper": 0.08028920153366124
+      },
+      {
+        "outcome": "m",
+        "term": "x",
+        "estimate": 0.3465259714086285,
+        "se": 0.04888846622055167,
+        "statistic": 7.0880925133821515,
+        "df": 346,
+        "p": 7.682576817260617e-12,
+        "ci_lower": 0.25036998993008197,
+        "ci_upper": 0.44268195288717505
+      },
+      {
+        "outcome": "m",
+        "term": "w",
+        "estimate": 0.2329541958180429,
+        "se": 0.050668346520725376,
+        "statistic": 4.59762774620552,
+        "df": 346,
+        "p": 6.000154417115023e-06,
+        "ci_lower": 0.13329746763156244,
+        "ci_upper": 0.3326109240045233
+      },
+      {
+        "outcome": "m",
+        "term": "x:w",
+        "estimate": 0.30888795491274473,
+        "se": 0.04964521403236884,
+        "statistic": 6.221908011341211,
+        "df": 346,
+        "p": 1.4186326757310772e-09,
+        "ci_lower": 0.21124356861804477,
+        "ci_upper": 0.4065323412074447
+      },
+      {
+        "outcome": "y",
+        "term": "(Intercept)",
+        "estimate": 0.0045232532796707255,
+        "se": 0.05437196801135602,
+        "statistic": 0.08319090599637681,
+        "df": 345,
+        "p": 0.9337479906709871,
+        "ci_lower": -0.10241900825670684,
+        "ci_upper": 0.11146551481604829
+      },
+      {
+        "outcome": "y",
+        "term": "x",
+        "estimate": 0.1386146734380762,
+        "se": 0.0547645862269679,
+        "statistic": 2.5311005339033814,
+        "df": 345,
+        "p": 0.011814242116201735,
+        "ci_lower": 0.030900185303442324,
+        "ci_upper": 0.2463291615727101
+      },
+      {
+        "outcome": "y",
+        "term": "w",
+        "estimate": 0.1841748647016068,
+        "se": 0.05463427324054239,
+        "statistic": 3.3710499614541662,
+        "df": 345,
+        "p": 0.0008336931060603515,
+        "ci_lower": 0.07671668447683176,
+        "ci_upper": 0.2916330449263818
+      },
+      {
+        "outcome": "y",
+        "term": "m",
+        "estimate": 0.37138998729738726,
+        "se": 0.05627476141997501,
+        "statistic": 6.599583506462642,
+        "df": 345,
+        "p": 1.5554370474991132e-10,
+        "ci_lower": 0.26070519007954,
+        "ci_upper": 0.4820747845152345
+      },
+      {
+        "outcome": "y",
+        "term": "x:w",
+        "estimate": 0.10948248529624209,
+        "se": 0.054797279154060824,
+        "statistic": 1.9979547704993807,
+        "df": 345,
+        "p": 0.04650621685090553,
+        "ci_lower": 0.0017036946232334427,
+        "ci_upper": 0.21726127596925074
+      }
+    ],
+    "model_summary": [
+      {
+        "outcome": "m",
+        "n": 350,
+        "r_squared": 0.2478456220161349,
+        "adjusted_r_squared": 0.24132405226482978
+      },
+      {
+        "outcome": "y",
+        "n": 350,
+        "r_squared": 0.2535820895207689,
+        "adjusted_r_squared": 0.24492796881956036
+      }
+    ],
+    "interaction_effects": [
+      {
+        "effect": "间接交互效应 a3×b",
+        "estimate": 0.11471789365136019,
+        "se": 0.02705953850953764,
+        "p": null,
+        "ci_lower": 0.07193143797874305,
+        "ci_upper": 0.16840081824680836,
+        "_row": "2.5%"
+      },
+      {
+        "effect": "直接交互效应",
+        "estimate": 0.10948248529624209,
+        "se": 0.054797279154060824,
+        "p": 0.04650621685090553,
+        "ci_lower": 0.0017036946232334427,
+        "ci_upper": 0.21726127596925074,
+        "_row": ""
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "回归系数：t 分布 95% CI；间接效应：300 次教学 Bootstrap 百分位区间（如适用）",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0",
+  "case_id": "mediated-interaction",
+  "original_sha256": "517ff0b02458290bb647b0d40cfc9af1937fbbf88c496d51a9ebd075263ab5f8",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

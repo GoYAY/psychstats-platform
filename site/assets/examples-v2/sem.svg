@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="623pt" viewBox="0 0 760 623" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">结构方程模型可同时表示测量联系与设定的变量关系。。简图每个方面只展示一个代表题，并非可直接估计的完整模型；箭头不证明因果。</desc><title id="title">测量与结构联系放在一起</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:59.969975</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 623  L 760 623  L 760 0  L 0 0  L 0 623  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="factor-relation-0-1">
+    <path d="M 178.75 110  C 178.75 56.5 380 56.5 380 108.770163  " clip-path="url(#pa7023344f6)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 382.4 103.970163  L 380 108.770163  L 377.6 103.970163  z " clip-path="url(#pa7023344f6)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="factor-relation-1-2">
+    <path d="M 380 110  C 380 56.5 581.25 56.5 581.25 108.770163  " clip-path="url(#pa7023344f6)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 583.65 103.970163  L 581.25 108.770163  L 578.85 103.970163  z " clip-path="url(#pa7023344f6)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="factor-relation-0-2">
+    <path d="M 178.75 110  C 178.75 29.666667 581.25 29.666667 581.25 108.770163  " clip-path="url(#pa7023344f6)" style="fill: none; opacity: 0.65; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 583.65 103.970163  L 581.25 108.770163  L 578.85 103.970163  z " clip-path="url(#pa7023344f6)" style="fill: #244da4; opacity: 0.65; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_2">
+    <path d="M 178.75 172.002876  Q 178.75 227.874972 178.75 282.51723  " clip-path="url(#pa7023344f6)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 181.15 277.71723  L 178.75 282.51723  L 176.35 277.71723  z " clip-path="url(#pa7023344f6)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 380 172.002876  Q 380 227.874972 380 282.51723  " clip-path="url(#pa7023344f6)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 382.4 277.71723  L 380 282.51723  L 377.6 277.71723  z " clip-path="url(#pa7023344f6)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 581.25 172.002876  Q 581.25 227.874972 581.25 282.51723  " clip-path="url(#pa7023344f6)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 583.65 277.71723  L 581.25 282.51723  L 578.85 277.71723  z " clip-path="url(#pa7023344f6)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 178.75 116  C 197.977225 116 216.419541 118.528791 230.015242 123.029437  C 243.610943 127.530083 251.25 133.635126 251.25 140  C 251.25 146.364874 243.610943 152.469917 230.015242 156.970563  C 216.419541 161.471209 197.977225 164 178.75 164  C 159.522775 164 141.080459 161.471209 127.484758 156.970563  C 113.889057 152.469917 106.25 146.364874 106.25 140  C 106.25 133.635126 113.889057 127.530083 127.484758 123.029437  C 141.080459 118.528791 159.522775 116 178.75 116  z " clip-path="url(#pa7023344f6)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 380 116  C 399.227225 116 417.669541 118.528791 431.265242 123.029437  C 444.860943 127.530083 452.5 133.635126 452.5 140  C 452.5 146.364874 444.860943 152.469917 431.265242 156.970563  C 417.669541 161.471209 399.227225 164 380 164  C 360.772775 164 342.330459 161.471209 328.734758 156.970563  C 315.139057 152.469917 307.5 146.364874 307.5 140  C 307.5 133.635126 315.139057 127.530083 328.734758 123.029437  C 342.330459 118.528791 360.772775 116 380 116  z " clip-path="url(#pa7023344f6)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 581.25 116  C 600.477225 116 618.919541 118.528791 632.515242 123.029437  C 646.110943 127.530083 653.75 133.635126 653.75 140  C 653.75 146.364874 646.110943 152.469917 632.515242 156.970563  C 618.919541 161.471209 600.477225 164 581.25 164  C 562.022775 164 543.580459 161.471209 529.984758 156.970563  C 516.389057 152.469917 508.75 146.364874 508.75 140  C 508.75 133.635126 516.389057 127.530083 529.984758 123.029437  C 543.580459 118.528791 562.022775 116 581.25 116  z " clip-path="url(#pa7023344f6)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 115.25 291.75  L 242.25 291.75  Q 251.25 291.75 251.25 300.75  L 251.25 330.75  Q 251.25 339.75 242.25 339.75  L 115.25 339.75  Q 106.25 339.75 106.25 330.75  L 106.25 300.75  Q 106.25 291.75 115.25 291.75  z " clip-path="url(#pa7023344f6)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-4">
+    <path d="M 316.5 291.75  L 443.5 291.75  Q 452.5 291.75 452.5 300.75  L 452.5 330.75  Q 452.5 339.75 443.5 339.75  L 316.5 339.75  Q 307.5 339.75 307.5 330.75  L 307.5 300.75  Q 307.5 291.75 316.5 291.75  z " clip-path="url(#pa7023344f6)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-5">
+    <path d="M 517.75 291.75  L 644.75 291.75  Q 653.75 291.75 653.75 300.75  L 653.75 330.75  Q 653.75 339.75 644.75 339.75  L 517.75 339.75  Q 508.75 339.75 508.75 330.75  L 508.75 300.75  Q 508.75 291.75 517.75 291.75  z " clip-path="url(#pa7023344f6)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="178.75" y="143.492305" transform="rotate(-0 178.75 143.492305)">压力方面</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="380" y="143.492305" transform="rotate(-0 380 143.492305)">睡眠方面</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="581.25" y="143.49793" transform="rotate(-0 581.25 143.49793)">抑郁方面</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="178.75" y="319.260117" transform="rotate(-0 178.75 319.260117)">压力题（代表）</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="380" y="319.260117" transform="rotate(-0 380 319.260117)">睡眠题（代表）</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="581.25" y="319.260117" transform="rotate(-0 581.25 319.260117)">抑郁题（代表）</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="453.82543" transform="rotate(-0 20 453.82543)">1. 压力方面 → 睡眠方面：结构路径</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="481.82543" transform="rotate(-0 20 481.82543)">2. 睡眠方面 → 抑郁方面：结构路径</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="509.82543" transform="rotate(-0 20 509.82543)">3. 压力方面 → 抑郁方面：结构路径</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="537.588242" transform="rotate(-0 20 537.588242)">4. 压力方面 → 压力题（代表）：测量联系</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="565.588242" transform="rotate(-0 20 565.588242)">5. 睡眠方面 → 睡眠题（代表）：测量联系</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="593.588242" transform="rotate(-0 20 593.588242)">6. 抑郁方面 → 抑郁题（代表）：测量联系</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa7023344f6">
+   <rect x="0" y="0" width="760" height="623" />
+  </clipPath>
+ </defs>
+</svg>

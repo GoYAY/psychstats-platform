@@ -1,0 +1,219 @@
+{
+  "case_id": "efa",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] compiler_4.5.1       tools_4.5.1          parallel_4.5.1      \n [4] nlme_3.1-168         mnormt_2.1.2         grid_4.5.1          \n [7] psych_2.6.3          jsonlite_2.0.0       GPArotation_2025.3-1\n[10] lattice_0.22-7      \n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\nKaiser-Meyer-Olkin factor adequacy\nCall: psych::KMO(r = poly)\nOverall MSA =  0.74\nMSA for each item = \n item_1  item_2  item_3  item_4  item_5  item_6  item_7  item_8  item_9 item_10 \n   0.74    0.76    0.75    0.74    0.76    0.79    0.73    0.77    0.73    0.72 \nitem_11 item_12 \n   0.73    0.73 \n$chisq\n[1] 1267.8\n\n$p.value\n[1] 9.280781e-222\n\n$df\n[1] 66\n\nParallel analysis suggests that the number of factors =  3  and the number of components =  NA \n[1] 3\nFactor Analysis using method =  minres\nCall: psych::fa(r = poly, nfactors = 3, n.obs = nrow(items), rotate = \"oblimin\", \n    fm = \"minres\")\nStandardized loadings (pattern matrix) based upon correlation matrix\n          MR2   MR1   MR3   h2   u2 com\nitem_1   0.01 -0.01  0.66 0.43 0.57   1\nitem_2  -0.01  0.04  0.62 0.39 0.61   1\nitem_3   0.03  0.00  0.68 0.46 0.54   1\nitem_4  -0.02 -0.01  0.70 0.49 0.51   1\nitem_5   0.72 -0.03 -0.05 0.52 0.48   1\nitem_6   0.63 -0.02  0.04 0.40 0.60   1\nitem_7   0.72  0.06 -0.01 0.52 0.48   1\nitem_8   0.64 -0.02  0.06 0.41 0.59   1\nitem_9   0.01  0.70  0.01 0.49 0.51   1\nitem_10 -0.01  0.68 -0.03 0.46 0.54   1\nitem_11  0.08  0.64 -0.01 0.41 0.59   1\nitem_12 -0.07  0.69  0.04 0.50 0.50   1\n\n                       MR2  MR1  MR3\nSS loadings           1.85 1.85 1.78\nProportion Var        0.15 0.15 0.15\nCumulative Var        0.15 0.31 0.46\nProportion Explained  0.34 0.34 0.32\nCumulative Proportion 0.34 0.68 1.00\n\n With factor correlations of \n      MR2   MR1   MR3\nMR2  1.00 -0.07 -0.02\nMR1 -0.07  1.00  0.09\nMR3 -0.02  0.09  1.00\n\nMean item complexity =  1\nTest of the hypothesis that 3 factors are sufficient.\n\ndf null model =  66  with the objective function =  3.06 with Chi Square =  1267.8\ndf of  the model are 33  and the objective function was  0.15 \n\nThe root mean square of the residuals (RMSR) is  0.02 \nThe df corrected root mean square of the residuals is  0.03 \n\nThe harmonic n.obs is  420 with the empirical chi square  17.5  with prob <  0.99 \nThe total n.obs was  420  with Likelihood Chi Square =  61.6  with prob <  0.0018 \n\nTucker Lewis Index of factoring reliability =  0.952\nRMSEA index =  0.045  and the 90 % confidence intervals are  0.027 0.063\nBIC =  -137.73\nFit based upon off diagonal values = 0.99\nMeasures of factor score adequacy             \n                                                   MR2  MR1  MR3\nCorrelation of (regression) scores with factors   0.88 0.88 0.87\nMultiple R square of scores with factors          0.78 0.77 0.76\nMinimum correlation of possible factor scores     0.56 0.54 0.52\n",
+  "stderr": "Loading required namespace: GPArotation\n",
+  "metrics": {
+    "parallel_factors": 3,
+    "min_communality": 0.3901652638272205,
+    "rmsr": 0.017768879700676966,
+    "kmo": 0.7449979442298015,
+    "bartlett_p": 9.280781029526278e-222
+  },
+  "warnings": [],
+  "tables": {
+    "loadings": [
+      {
+        "item": "item_1",
+        "MR2": 0.008459482105872135,
+        "MR1": -0.014273444202876684,
+        "MR3": 0.6597959636194195,
+        "_row": "item_1"
+      },
+      {
+        "item": "item_2",
+        "MR2": -0.014176008513974603,
+        "MR1": 0.04413400138015,
+        "MR3": 0.6184466584686757,
+        "_row": "item_2"
+      },
+      {
+        "item": "item_3",
+        "MR2": 0.026091953769930093,
+        "MR1": -0.0038032663300023306,
+        "MR3": 0.679420071780729,
+        "_row": "item_3"
+      },
+      {
+        "item": "item_4",
+        "MR2": -0.017286238593464398,
+        "MR1": -0.012371055760539096,
+        "MR3": 0.6973468223619563,
+        "_row": "item_4"
+      },
+      {
+        "item": "item_5",
+        "MR2": 0.7175302881920577,
+        "MR1": -0.03121598813417953,
+        "MR3": -0.05335301053628466,
+        "_row": "item_5"
+      },
+      {
+        "item": "item_6",
+        "MR2": 0.6294015212592675,
+        "MR1": -0.02089272050953797,
+        "MR3": 0.03982261010382987,
+        "_row": "item_6"
+      },
+      {
+        "item": "item_7",
+        "MR2": 0.7225991448115809,
+        "MR1": 0.059357890666821594,
+        "MR3": -0.012150319072612242,
+        "_row": "item_7"
+      },
+      {
+        "item": "item_8",
+        "MR2": 0.6365497554790084,
+        "MR1": -0.02388392815646541,
+        "MR3": 0.06104539225337838,
+        "_row": "item_8"
+      },
+      {
+        "item": "item_9",
+        "MR2": 0.014961296691400117,
+        "MR1": 0.6999017419712972,
+        "MR3": 0.008170479478107284,
+        "_row": "item_9"
+      },
+      {
+        "item": "item_10",
+        "MR2": -0.007453237856293565,
+        "MR1": 0.6803279250065131,
+        "MR3": -0.030995215259770004,
+        "_row": "item_10"
+      },
+      {
+        "item": "item_11",
+        "MR2": 0.080642738663766,
+        "MR1": 0.6386828441943264,
+        "MR3": -0.013542949172793028,
+        "_row": "item_11"
+      },
+      {
+        "item": "item_12",
+        "MR2": -0.07350112237319842,
+        "MR1": 0.6905019861176586,
+        "MR3": 0.035723733761858445,
+        "_row": "item_12"
+      }
+    ],
+    "structure": [
+      {
+        "item": "item_1",
+        "MR2": -0.002226570401034935,
+        "MR1": 0.04726831378104768,
+        "MR3": 0.6583017778520655,
+        "_row": "item_1"
+      },
+      {
+        "item": "item_2",
+        "MR2": -0.028252088226913608,
+        "MR1": 0.10337931800173845,
+        "MR3": 0.6228543945477895,
+        "_row": "item_2"
+      },
+      {
+        "item": "item_3",
+        "MR2": 0.014319034066172104,
+        "MR1": 0.05834202951949813,
+        "MR3": 0.6785994555617163,
+        "_row": "item_3"
+      },
+      {
+        "item": "item_4",
+        "MR2": -0.028772091933041123,
+        "MR1": 0.05452454077769031,
+        "MR3": 0.6964880938169447,
+        "_row": "item_4"
+      },
+      {
+        "item": "item_5",
+        "MR2": 0.7206793382296395,
+        "MR1": -0.0868897168483215,
+        "MR3": -0.06900971287355429,
+        "_row": "item_5"
+      },
+      {
+        "item": "item_6",
+        "MR2": 0.6301705182948248,
+        "MR1": -0.061570436775015246,
+        "MR3": 0.026700051406827588,
+        "_row": "item_6"
+      },
+      {
+        "item": "item_7",
+        "MR2": 0.7186245330274259,
+        "MR1": 0.007206788213767817,
+        "MR3": -0.019366703505792175,
+        "_row": "item_7"
+      },
+      {
+        "item": "item_8",
+        "MR2": 0.6371537636810694,
+        "MR1": -0.06306748419561461,
+        "MR3": 0.047514436348034955,
+        "_row": "item_8"
+      },
+      {
+        "item": "item_9",
+        "MR2": -0.03458814374775336,
+        "MR1": 0.6996151418227241,
+        "MR3": 0.07382133583779778,
+        "_row": "item_9"
+      },
+      {
+        "item": "item_10",
+        "MR2": -0.054926867616596944,
+        "MR1": 0.6779349368083963,
+        "MR3": 0.0332094529782453,
+        "_row": "item_10"
+      },
+      {
+        "item": "item_11",
+        "MR2": 0.03579944302659504,
+        "MR1": 0.631714977120249,
+        "MR3": 0.045178300879588545,
+        "_row": "item_11"
+      },
+      {
+        "item": "item_12",
+        "MR2": -0.12287538048223277,
+        "MR1": 0.6990547042345315,
+        "MR3": 0.10205715331360088,
+        "_row": "item_12"
+      }
+    ],
+    "factor_correlations": [
+      {
+        "factor": "MR2",
+        "MR2": 1,
+        "MR1": -0.07058795799068521,
+        "MR3": -0.01772303322762847,
+        "_row": "MR2"
+      },
+      {
+        "factor": "MR1",
+        "MR2": -0.07058795799068521,
+        "MR1": 1,
+        "MR3": 0.09417895679531513,
+        "_row": "MR1"
+      },
+      {
+        "factor": "MR3",
+        "MR2": -0.01772303322762847,
+        "MR1": 0.09417895679531513,
+        "MR3": 0.9999999999999998,
+        "_row": "MR3"
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "6496255e666d15fc64f2ecedc4d93d27c127e65b59d36ca53c356b9164ec76d5",
+  "config_sha256": "a8d7f098a2a4c77dd3ef8026b70e996358f3c25a1d4cf53482f97cff0da341a9",
+  "data_sha256": {
+    "examples/data/scale_items.csv": "cb7afdf45041b8b9dc3cbea20381e7cd39abc9486b6706d0e92710cf18678e0e"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "linear-simple",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\nCall:\nlm(formula = well_being ~ stress, data = d)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-22.1859  -4.9778  -0.1102   5.3189  23.6799 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept) 71.49525    2.46186   29.04   <2e-16 ***\nstress      -0.48066    0.04996   -9.62   <2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 7.634 on 358 degrees of freedom\nMultiple R-squared:  0.2054,\tAdjusted R-squared:  0.2032 \nF-statistic: 92.55 on 1 and 358 DF,  p-value: < 2.2e-16\n\n",
+  "stderr": "",
+  "metrics": {
+    "intercept": 71.49525168156975,
+    "slope": -0.4806620993019983,
+    "ci_lower": -0.5789210241846531,
+    "ci_upper": -0.3824031744193436,
+    "r_squared": 0.2054144447574792
+  },
+  "warnings": [],
+  "tables": {
+    "coefficients": [
+      {
+        "term": "(Intercept)",
+        "Estimate": 71.49525168156975,
+        "Std. Error": 2.4618605462175482,
+        "t value": 29.041146051678876,
+        "Pr(>|t|)": 3.826087568366385e-96,
+        "_row": "(Intercept)"
+      },
+      {
+        "term": "stress",
+        "Estimate": -0.4806620993019983,
+        "Std. Error": 0.049963540830268174,
+        "t value": -9.620256917636445,
+        "Pr(>|t|)": 1.227470040238456e-19,
+        "_row": "stress"
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "8ea7df8a89dad639e3ca686ab7f5cdac26b2281b13fa61efa98fbfe09c30b6ae",
+  "config_sha256": "cb88fed29c412af79bf7215f4aac71ccd9d9390d40811e003d2c475e371c3dcd",
+  "data_sha256": {
+    "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+  }
+}

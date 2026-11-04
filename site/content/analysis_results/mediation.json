@@ -1,0 +1,121 @@
+{
+  "case_id": "mediation",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 parallel_4.5.1 lavaan_0.6-21  mnormt_2.1.2   pbivnorm_0.6.0\n[6] jsonlite_2.0.0 stats4_4.5.1   quadprog_1.5-8\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\nLength  Class   Mode \n     1 lavaan     S4 \n",
+  "stderr": "Warning: lavaan->lav_model_nvcov_bootstrap():  \n   1 bootstrap runs failed or did not converge.\n",
+  "metrics": {
+    "indirect": -0.1119132842637052,
+    "ci_lower": -0.1613664501526061,
+    "ci_upper": -0.07226275100141662,
+    "direct": -0.3687488150382937
+  },
+  "warnings": [
+    "Warning: lavaan->lav_model_nvcov_bootstrap():  "
+  ],
+  "tables": {
+    "parameters": [
+      {
+        "lhs": "social_support",
+        "op": "~",
+        "rhs": "stress",
+        "label": "a",
+        "est": -0.3567899043962672,
+        "se": 0.055349963625095276,
+        "z": -6.446072969675832,
+        "pvalue": 1.1478551442678508e-10,
+        "ci.lower": -0.4697339648991853,
+        "ci.upper": -0.24765434131797992
+      },
+      {
+        "lhs": "well_being",
+        "op": "~",
+        "rhs": "social_support",
+        "label": "b",
+        "est": 0.3136671830809685,
+        "se": 0.041910393571444396,
+        "z": 7.4842337747619085,
+        "pvalue": 7.194245199571014e-14,
+        "ci.lower": 0.24243390536849524,
+        "ci.upper": 0.3979250397299693
+      },
+      {
+        "lhs": "well_being",
+        "op": "~",
+        "rhs": "stress",
+        "label": "c",
+        "est": -0.3687488150382937,
+        "se": 0.04960167937440374,
+        "z": -7.434200206305544,
+        "pvalue": 1.0524914273446484e-13,
+        "ci.lower": -0.47272952591586265,
+        "ci.upper": -0.2733958416085825
+      },
+      {
+        "lhs": "social_support",
+        "op": "~~",
+        "rhs": "social_support",
+        "label": "",
+        "est": 74.17454688396143,
+        "se": 4.6957786858080555,
+        "z": 15.796005699360888,
+        "pvalue": 0,
+        "ci.lower": 64.53392593026629,
+        "ci.upper": 82.91925508517562
+      },
+      {
+        "lhs": "well_being",
+        "op": "~~",
+        "rhs": "well_being",
+        "label": "",
+        "est": 50.66387796213131,
+        "se": 3.8146499129095592,
+        "z": 13.281396489537437,
+        "pvalue": 0,
+        "ci.lower": 43.04319239297903,
+        "ci.upper": 57.71410797135256
+      },
+      {
+        "lhs": "stress",
+        "op": "~~",
+        "rhs": "stress",
+        "label": "",
+        "est": 64.85622191358024,
+        "se": 0,
+        "ci.lower": 64.85622191358024,
+        "ci.upper": 64.85622191358024
+      },
+      {
+        "lhs": "indirect",
+        "op": ":=",
+        "rhs": "a*b",
+        "label": "indirect",
+        "est": -0.1119132842637052,
+        "se": 0.023270690901902532,
+        "z": -4.809194739231208,
+        "pvalue": 1.5153952068747145e-06,
+        "ci.lower": -0.1613664501526061,
+        "ci.upper": -0.07226275100141662
+      },
+      {
+        "lhs": "total",
+        "op": ":=",
+        "rhs": "c+a*b",
+        "label": "total",
+        "est": -0.4806620993019989,
+        "se": 0.052989843153194605,
+        "z": -9.070834535448538,
+        "pvalue": 0,
+        "ci.lower": -0.5901104762148414,
+        "ci.upper": -0.3768172818959676
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "0bd856aa5630f4cdafeb97eae6ae9a389dfe2c73439c2f35b5cb0e567d5d5be6",
+  "config_sha256": "45f318d0990eb49b75b0f90910fb8a152cce35c6d49c9173ce74d4abc9fbbd2c",
+  "data_sha256": {
+    "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+  }
+}

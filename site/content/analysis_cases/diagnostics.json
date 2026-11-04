@@ -1,0 +1,70 @@
+{
+  "id": "diagnostics",
+  "unit_id": "diagnostics",
+  "title": "异常记录和稳健标准误怎么判断",
+  "question": "一个极端回答会改变研究结论吗，应该直接删掉吗？",
+  "design": "复用横断教学数据，线性模型先保持所有样本。显示 Cook 距离、HC3 协方差与删除最大影响记录的敏感性比较；后者不替代主要结果。",
+  "variables": "数据列、分组 ID 及时间/中心化编码见代码；已有教学数据非真实研究样本。",
+  "script": "examples/r/output_reading/diagnostics.R",
+  "data_files": [
+    "examples/data/cross_sectional_survey.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "max_cook",
+      "label": "最大 Cook 距离",
+      "meaning": "对整体系数拟合的影响指标，阈值仅是筛查线索，不自动授权删样本。",
+      "term": "influential-point",
+      "format": ".3f"
+    },
+    {
+      "field_id": "hc3_se",
+      "label": "HC3 标准误",
+      "meaning": "调整异方差和杠杆，不修复因果混杂、非线性或依赖观测。",
+      "term": "robust-standard-errors",
+      "format": ".3f"
+    },
+    {
+      "field_id": "sensitivity_beta",
+      "label": "删最大影响记录后的系数",
+      "meaning": "仅为敏感性对照，需查原记录原因并保留主要分析，不能择显著版本。",
+      "term": "sensitivity-analysis",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "先判断这些前提是否成立",
+      "body": "输入错误与真实极端值处理不同；应核查记录来源，不能因为改变 p 值而删。HC3 区间这里用渐近正态，不冒充小样本精确 t 区间。"
+    },
+    {
+      "title": "结果不显著或不稳定时",
+      "body": "分别检查数据结构、模型识别与区间精度。考虑测量质量、组数或时间覆盖是否足够；报告实际不确定性和敏感性，不以反复简化或换编码追求显著。"
+    }
+  ],
+  "report_template": "保留全部教学记录的压力系数为 {beta:.3f}，HC3 SE = {hc3_se:.3f}，渐近正态 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]。最大 Cook 距离为 {max_cook:.3f}；删该记录的敏感性系数为 {sensitivity_beta:.3f}，不替代全样本结果。",
+  "sources": [
+    {
+      "title": "估计与诊断的官方资料",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/influence.measures.html"
+    }
+  ],
+  "related_terms": [
+    "influential-point",
+    "robust-standard-errors",
+    "sensitivity-analysis"
+  ],
+  "table_labels": {
+    "fixed": "固定效应完整表",
+    "random": "随机效应方差",
+    "comparison": "ML 模型比较",
+    "parameters": "增长模型参数表",
+    "imputations": "各插补数据的估计与方差",
+    "fiml_parameters": "FIML 参数表"
+  }
+}

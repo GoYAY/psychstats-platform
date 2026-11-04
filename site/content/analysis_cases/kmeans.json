@@ -1,0 +1,59 @@
+{
+  "id": "kmeans",
+  "unit_id": "kmeans",
+  "title": "K 均值的类别数和中心怎么看",
+  "question": "想按问卷表现分组，分成两组还是三组比较合适？",
+  "design": "固定种子模拟三项连续特征。标准化后比较 k=2/3/4，50 个随机起点；轮廓系数为探索依据，不作为最终类别证明。",
+  "variables": "固定种子教学生成数据；类别或参数设定用于演示，并不代表真实参与者。",
+  "script": "examples/r/output_reading/kmeans.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "k",
+      "label": "当前候选中选择的 k",
+      "meaning": "仅在 k=2/3/4 中按轮廓系数选择，不保证全局正确类别数。",
+      "term": "k-means-clustering",
+      "format": ".0f"
+    },
+    {
+      "field_id": "within_ss",
+      "label": "组内平方和",
+      "meaning": "随 k 增加通常下降，不能仅用最小值决定组数。",
+      "term": "cluster-analysis",
+      "format": ".3f"
+    },
+    {
+      "field_id": "mean_silhouette",
+      "label": "平均轮廓宽度",
+      "meaning": "与标准化和欧氏距离绑定，不能跨不同数据直接比较。",
+      "term": "cluster-analysis",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "如何识别过度解读",
+      "body": "算法强制每个人入一组，不能据此宣称分类确定；不同起点、删异常值和尺度变化应作敏感性检查。"
+    },
+    {
+      "title": "输出不符合预期时",
+      "body": "先检查数据类型、有效样本、量纲和拟合条件；对探索选择保留过程记录。新分析应有研究依据，不通过反复换方法制造满意结果。"
+    }
+  ],
+  "report_template": "标准化指标的 K 均值探索在 2–4 类候选中选取 k = {k:.0f}（50 起点），平均轮廓宽度 {mean_silhouette:.3f}，组内平方和 {within_ss:.3f}，最小组 {min_size:.0f} 人。分类需后续稳定性与外部意义评估。",
+  "sources": [
+    {
+      "title": "模型实现的官方文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/kmeans.html"
+    }
+  ],
+  "related_terms": [
+    "k-means-clustering",
+    "cluster-analysis"
+  ]
+}

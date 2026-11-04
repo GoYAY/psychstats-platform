@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="665pt" viewBox="0 0 360 665" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">记录有共同上层单位，不能只按数据行数理解独立信息。。归属图不是效应图，也不提供组内相关大小。</desc><title id="title">学生属于班级，班级属于学校</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:55.370797</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 665  L 360 665  L 360 0  L 0 0  L 0 665  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 163.828996 133.282242  Q 147.500364 165.374284 131.729441 196.370214  " clip-path="url(#p9acc89e846)" style="fill: none; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 136.04519 193.180495  L 131.729441 196.370214  L 131.767115 191.003783  z " clip-path="url(#p9acc89e846)" style="fill: #17643b; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 196.171004 133.282242  Q 212.499636 165.374284 228.270559 196.370214  " clip-path="url(#p9acc89e846)" style="fill: none; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 228.232885 191.003783  L 228.270559 196.370214  L 223.95481 193.180495  z " clip-path="url(#p9acc89e846)" style="fill: #17643b; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 106.469614 261.184265  Q 95.499672 302.251228 84.847119 342.130015  " clip-path="url(#p9acc89e846)" style="fill: none; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 88.404577 338.111994  L 84.847119 342.130015  L 83.767177 336.873236  z " clip-path="url(#p9acc89e846)" style="fill: #17643b; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_5">
+    <path d="M 123.530386 261.184265  Q 134.500328 302.251228 145.152881 342.130015  " clip-path="url(#p9acc89e846)" style="fill: none; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 146.232823 336.873236  L 145.152881 342.130015  L 141.595423 338.111994  z " clip-path="url(#p9acc89e846)" style="fill: #17643b; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_6">
+    <path d="M 245 261.252502  Q 245 302.250243 245 342.018147  " clip-path="url(#p9acc89e846)" style="fill: none; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 247.4 337.218147  L 245 342.018147  L 242.6 337.218147  z " clip-path="url(#p9acc89e846)" style="fill: #17643b; opacity: 0.65; stroke: #17643b; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 159 77.5  L 201 77.5  Q 210 77.5 210 86.5  L 210 116.5  Q 210 125.5 201 125.5  L 159 125.5  Q 150 125.5 150 116.5  L 150 86.5  Q 150 77.5 159 77.5  z " clip-path="url(#p9acc89e846)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 94 205.25  L 136 205.25  Q 145 205.25 145 214.25  L 145 244.25  Q 145 253.25 136 253.25  L 94 253.25  Q 85 253.25 85 244.25  L 85 214.25  Q 85 205.25 94 205.25  z " clip-path="url(#p9acc89e846)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 224 205.25  L 266 205.25  Q 275 205.25 275 214.25  L 275 244.25  Q 275 253.25 266 253.25  L 224 253.25  Q 215 253.25 215 244.25  L 215 214.25  Q 215 205.25 224 205.25  z " clip-path="url(#p9acc89e846)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 55 351.25  L 97 351.25  Q 106 351.25 106 360.25  L 106 390.25  Q 106 399.25 97 399.25  L 55 399.25  Q 46 399.25 46 390.25  L 46 360.25  Q 46 351.25 55 351.25  z " clip-path="url(#p9acc89e846)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-4">
+    <path d="M 133 351.25  L 175 351.25  Q 184 351.25 184 360.25  L 184 390.25  Q 184 399.25 175 399.25  L 133 399.25  Q 124 399.25 124 390.25  L 124 360.25  Q 124 351.25 133 351.25  z " clip-path="url(#p9acc89e846)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-5">
+    <path d="M 224 351.25  L 266 351.25  Q 275 351.25 275 360.25  L 275 390.25  Q 275 399.25 266 399.25  L 224 399.25  Q 215 399.25 215 390.25  L 215 360.25  Q 215 351.25 224 351.25  z " clip-path="url(#p9acc89e846)" style="fill: #17643b; fill-opacity: 0.09; stroke: #17643b; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="180" y="104.99793" transform="rotate(-0 180 104.99793)">学校甲</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="115" y="232.601562" transform="rotate(-0 115 232.601562)">一班</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="245" y="232.601562" transform="rotate(-0 245 232.601562)">二班</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="76" y="378.74793" transform="rotate(-0 76 378.74793)">学生甲</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="154" y="378.74793" transform="rotate(-0 154 378.74793)">学生乙</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="245" y="378.74793" transform="rotate(-0 245 378.74793)">学生丙</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="523.771992" transform="rotate(-0 20 523.771992)">1. 学校甲 → 一班：所属班级</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="551.771992" transform="rotate(-0 20 551.771992)">2. 学校甲 → 二班：所属班级</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="579.801992" transform="rotate(-0 20 579.801992)">3. 一班 → 学生甲：班内学生</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="607.801992" transform="rotate(-0 20 607.801992)">4. 一班 → 学生乙：班内学生</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="635.801992" transform="rotate(-0 20 635.801992)">5. 二班 → 学生丙：班内学生</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9acc89e846">
+   <rect x="0" y="0" width="360" height="665" />
+  </clipPath>
+ </defs>
+</svg>

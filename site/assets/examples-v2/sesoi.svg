@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="650pt" viewBox="0 0 760 650" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">最小重要效应需结合成本和用途确定，可以设为平均提高三分。。三分只是此情境的预设界限，不能从本次结果挑选或套用所有研究。</desc><title id="title">学校为什么关心三分</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:02:13.005023</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 650  L 760 650  L 760 0  L 0 0  L 0 650  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 88  L 730 88  Q 744 88 744 102  L 744 296  Q 744 310 730 310  L 30 310  Q 16 310 16 296  L 16 102  Q 16 88 30 88  z " clip-path="url(#p7e14b6cd93)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 38 160  L 193 160  Q 201 160 201 168  L 201 209  Q 201 217 193 217  L 38 217  Q 30 217 30 209  L 30 168  Q 30 160 38 160  z " clip-path="url(#p7e14b6cd93)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 213 160  L 368 160  Q 376 160 376 168  L 376 209  Q 376 217 368 217  L 213 217  Q 205 217 205 209  L 205 168  Q 205 160 213 160  z " clip-path="url(#p7e14b6cd93)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 388 160  L 543 160  Q 551 160 551 168  L 551 209  Q 551 217 543 217  L 388 217  Q 380 217 380 209  L 380 168  Q 380 160 388 160  z " clip-path="url(#p7e14b6cd93)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 563 160  L 718 160  Q 726 160 726 168  L 726 209  Q 726 217 718 217  L 563 217  Q 555 217 555 209  L 555 168  Q 555 160 563 160  z " clip-path="url(#p7e14b6cd93)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 380 320.000977  Q 380 330.000166 380 338.545912  " clip-path="url(#p7e14b6cd93)" style="fill: none; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 383 332.545912  L 380 338.545912  L 377 332.545912  z " clip-path="url(#p7e14b6cd93)" style="fill: #6741ad; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_8">
+    <path d="M 30 350  L 730 350  Q 744 350 744 364  L 744 558  Q 744 572 730 572  L 30 572  Q 16 572 16 558  L 16 364  Q 16 350 30 350  z " clip-path="url(#p7e14b6cd93)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_9">
+    <path d="M 433.2 433  L 720 433  L 720 469  L 433.2 469  z " clip-path="url(#p7e14b6cd93)" style="fill: #6741ad; opacity: 0.18" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 89  L 728 89  " clip-path="url(#p7e14b6cd93)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 351  L 728 351  " clip-path="url(#p7e14b6cd93)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 40 451  L 720 451  " clip-path="url(#p7e14b6cd93)" style="fill: none; stroke: #6741ad; stroke-width: 1.5; stroke-linecap: square" />
+   </g>
+   <g id="line2d_4">
+    <path d="M 433.2 424  L 433.2 479  " clip-path="url(#p7e14b6cd93)" style="fill: none; stroke: #6741ad; stroke-width: 1.5; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="20" y="33.711406" transform="rotate(-0 20 33.711406)">学校为什么关心三分</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="61.53918" transform="rotate(-0 20 61.53918)">概念示意 · 图形不对应实际人数或结果</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="30" y="117.12248" transform="rotate(-0 30 117.12248)">学校先衡量投入与收益</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6741ad" x="115.5" y="192.257939" transform="rotate(-0 115.5 192.257939)">课时</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6741ad" x="290.5" y="192.257939" transform="rotate(-0 290.5 192.257939)">课时</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6741ad" x="465.5" y="192.257939" transform="rotate(-0 465.5 192.257939)">课时</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6741ad" x="640.5" y="192.257939" transform="rotate(-0 640.5 192.257939)">课时</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="270.834111" transform="rotate(-0 30 270.834111)">占用课时 → 需要有意义的成绩改善</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="400" y="333.492305" transform="rotate(-0 400 333.492305)">事先约定</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="30" y="379.095137" transform="rotate(-0 30 379.095137)">在研究前设定最小重要效应</text>
+   </g>
+   <g id="target-effect">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6741ad" x="433.2" y="505.114824" transform="rotate(-0 433.2 505.114824)">平均提高3分</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="554.834111" transform="rotate(-0 30 554.834111)">把教育意义用于规划与解释</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="20" y="588.820908" transform="rotate(-0 20 588.820908)">3分是此情境事先约定的界限；着色没有显示本次研究的真实效果。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7e14b6cd93">
+   <rect x="0" y="0" width="760" height="650" />
+  </clipPath>
+ </defs>
+</svg>

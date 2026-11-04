@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="518.4pt" height="227.52pt" viewBox="0 0 518.4 227.52" version="1.1" role="img">
+ <ns0:title>主成分能解释多少信息 · loadings</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-17T19:08:30.909220</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 227.52  L 518.4 227.52  L 518.4 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 72.576 197.9424  L 487.296 197.9424  L 487.296 31.8528  L 72.576 31.8528  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g clip-path="url(#pf9321f8fc1)">
+    <ns0:image ns4:href="data:image/png;base64, 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" id="image16e520eb7a" transform="scale(1 -1) translate(0 -166.32)" x="72.72" y="-31.68" width="414.72" height="166.32" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_1">
+    <ns0:g id="xtick_1">
+     <ns0:g id="line2d_1" />
+     <ns0:g id="text_1">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="95.616" y="26.325456" transform="rotate(-0 95.616 26.325456)">PC1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_2">
+     <ns0:g id="line2d_2" />
+     <ns0:g id="text_2">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="141.696" y="26.325456" transform="rotate(-0 141.696 26.325456)">PC2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_3">
+     <ns0:g id="line2d_3" />
+     <ns0:g id="text_3">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="187.776" y="26.325456" transform="rotate(-0 187.776 26.325456)">PC3</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_4">
+     <ns0:g id="line2d_4" />
+     <ns0:g id="text_4">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="233.856" y="26.325456" transform="rotate(-0 233.856 26.325456)">PC4</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_5">
+     <ns0:g id="line2d_5" />
+     <ns0:g id="text_5">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="279.936" y="26.325456" transform="rotate(-0 279.936 26.325456)">PC5</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_6">
+     <ns0:g id="line2d_6" />
+     <ns0:g id="text_6">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="326.016" y="26.325456" transform="rotate(-0 326.016 26.325456)">PC6</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_7">
+     <ns0:g id="line2d_7" />
+     <ns0:g id="text_7">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="372.096" y="26.325456" transform="rotate(-0 372.096 26.325456)">PC7</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_8">
+     <ns0:g id="line2d_8" />
+     <ns0:g id="text_8">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="418.176" y="26.325456" transform="rotate(-0 418.176 26.325456)">PC8</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_9">
+     <ns0:g id="line2d_9" />
+     <ns0:g id="text_9">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="464.256" y="26.325456" transform="rotate(-0 464.256 26.325456)">PC9</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_10">
+     <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #343e4c" x="279.936" y="208.091509" transform="rotate(-0 279.936 208.091509)">颜色方向与数值共同标示载荷；空格表示未设定该测量路径</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_2">
+    <ns0:g id="ytick_1">
+     <ns0:g id="line2d_10" />
+     <ns0:g id="text_11">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="69.076" y="44.328047" transform="rotate(-0 69.076 44.328047)">x1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_2">
+     <ns0:g id="line2d_11" />
+     <ns0:g id="text_12">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="69.076" y="62.782447" transform="rotate(-0 69.076 62.782447)">x2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_3">
+     <ns0:g id="line2d_12" />
+     <ns0:g id="text_13">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="69.076" y="81.236847" transform="rotate(-0 69.076 81.236847)">x3</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_4">
+     <ns0:g id="line2d_13" />
+     <ns0:g id="text_14">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="69.076" y="99.691247" transform="rotate(-0 69.076 99.691247)">x4</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_5">
+     <ns0:g id="line2d_14" />
+     <ns0:g id="text_15">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="69.076" y="118.145647" transform="rotate(-0 69.076 118.145647)">x5</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_6">
+     <ns0:g id="line2d_15" />
+     <ns0:g id="text_16">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="69.076" y="136.600047" transform="rotate(-0 69.076 136.600047)">x6</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_7">
+     <ns0:g id="line2d_16" />
+     <ns0:g id="text_17">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="69.076" y="155.054447" transform="rotate(-0 69.076 155.054447)">x7</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_8">
+     <ns0:g id="line2d_17" />
+     <ns0:g id="text_18">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="69.076" y="173.508847" transform="rotate(-0 69.076 173.508847)">x8</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_9">
+     <ns0:g id="line2d_18" />
+     <ns0:g id="text_19">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="69.076" y="191.963247" transform="rotate(-0 69.076 191.963247)">x9</ns0:text>
+     </ns0:g>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="text_20">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="95.616" y="43.118867" transform="rotate(-0 95.616 43.118867)">0.35</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_21">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="141.696" y="43.118867" transform="rotate(-0 141.696 43.118867)">-0.32</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_22">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="187.776" y="43.118867" transform="rotate(-0 187.776 43.118867)">0.31</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_23">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="233.856" y="43.118867" transform="rotate(-0 233.856 43.118867)">0.47</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_24">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="279.936" y="43.118867" transform="rotate(-0 279.936 43.118867)">0.22</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_25">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="326.016" y="43.118867" transform="rotate(-0 326.016 43.118867)">0.17</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_26">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="372.096" y="43.118867" transform="rotate(-0 372.096 43.118867)">0.37</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_27">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="418.176" y="43.118867" transform="rotate(-0 418.176 43.118867)">-0.44</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_28">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="464.256" y="43.118867" transform="rotate(-0 464.256 43.118867)">0.23</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_29">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="95.616" y="61.573267" transform="rotate(-0 95.616 61.573267)">0.33</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_30">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="141.696" y="61.573267" transform="rotate(-0 141.696 61.573267)">-0.33</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_31">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="187.776" y="61.573267" transform="rotate(-0 187.776 61.573267)">0.34</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_32">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="233.856" y="61.573267" transform="rotate(-0 233.856 61.573267)">-0.22</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_33">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="279.936" y="61.573267" transform="rotate(-0 279.936 61.573267)">0.03</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_34">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="326.016" y="61.573267" transform="rotate(-0 326.016 61.573267)">-0.74</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_35">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="372.096" y="61.573267" transform="rotate(-0 372.096 61.573267)">-0.25</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_36">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="418.176" y="61.573267" transform="rotate(-0 418.176 61.573267)">0.07</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_37">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="464.256" y="61.573267" transform="rotate(-0 464.256 61.573267)">0.09</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_38">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="95.616" y="80.027667" transform="rotate(-0 95.616 80.027667)">0.31</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_39">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="141.696" y="80.027667" transform="rotate(-0 141.696 80.027667)">-0.36</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_40">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="187.776" y="80.027667" transform="rotate(-0 187.776 80.027667)">0.35</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_41">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="233.856" y="80.027667" transform="rotate(-0 233.856 80.027667)">-0.21</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_42">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="279.936" y="80.027667" transform="rotate(-0 279.936 80.027667)">-0.24</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_43">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="326.016" y="80.027667" transform="rotate(-0 326.016 80.027667)">0.57</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_44">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="372.096" y="80.027667" transform="rotate(-0 372.096 80.027667)">-0.13</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_45">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="418.176" y="80.027667" transform="rotate(-0 418.176 80.027667)">0.36</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_46">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="464.256" y="80.027667" transform="rotate(-0 464.256 80.027667)">-0.28</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_47">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="95.616" y="98.482067" transform="rotate(-0 95.616 98.482067)">0.28</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_48">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="141.696" y="98.482067" transform="rotate(-0 141.696 98.482067)">0.46</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_49">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="187.776" y="98.482067" transform="rotate(-0 187.776 98.482067)">0.18</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_50">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="233.856" y="98.482067" transform="rotate(-0 233.856 98.482067)">-0.28</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_51">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="279.936" y="98.482067" transform="rotate(-0 279.936 98.482067)">0.36</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_52">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="326.016" y="98.482067" transform="rotate(-0 326.016 98.482067)">0.25</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_53">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="372.096" y="98.482067" transform="rotate(-0 372.096 98.482067)">-0.51</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_54">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="418.176" y="98.482067" transform="rotate(-0 418.176 98.482067)">-0.37</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_55">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="464.256" y="98.482067" transform="rotate(-0 464.256 98.482067)">0.11</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_56">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="95.616" y="116.936467" transform="rotate(-0 95.616 116.936467)">0.30</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_57">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="141.696" y="116.936467" transform="rotate(-0 141.696 116.936467)">0.46</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_58">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="187.776" y="116.936467" transform="rotate(-0 187.776 116.936467)">0.20</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_59">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="233.856" y="116.936467" transform="rotate(-0 233.856 116.936467)">0.25</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_60">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="279.936" y="116.936467" transform="rotate(-0 279.936 116.936467)">0.12</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_61">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="326.016" y="116.936467" transform="rotate(-0 326.016 116.936467)">-0.21</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_62">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="372.096" y="116.936467" transform="rotate(-0 372.096 116.936467)">0.25</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_63">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="418.176" y="116.936467" transform="rotate(-0 418.176 116.936467)">0.14</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_64">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="464.256" y="116.936467" transform="rotate(-0 464.256 116.936467)">-0.68</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_65">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="95.616" y="135.390867" transform="rotate(-0 95.616 135.390867)">0.28</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_66">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="141.696" y="135.390867" transform="rotate(-0 141.696 135.390867)">0.47</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_67">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="187.776" y="135.390867" transform="rotate(-0 187.776 135.390867)">0.18</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_68">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="233.856" y="135.390867" transform="rotate(-0 233.856 135.390867)">0.01</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_69">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="279.936" y="135.390867" transform="rotate(-0 279.936 135.390867)">-0.51</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_70">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="326.016" y="135.390867" transform="rotate(-0 326.016 135.390867)">-0.01</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_71">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="372.096" y="135.390867" transform="rotate(-0 372.096 135.390867)">0.22</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_72">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="418.176" y="135.390867" transform="rotate(-0 418.176 135.390867)">0.24</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_73">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="464.256" y="135.390867" transform="rotate(-0 464.256 135.390867)">0.54</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_74">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="95.616" y="153.845267" transform="rotate(-0 95.616 153.845267)">0.37</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_75">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="141.696" y="153.845267" transform="rotate(-0 141.696 153.845267)">-0.07</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_76">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="187.776" y="153.845267" transform="rotate(-0 187.776 153.845267)">-0.45</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_77">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="233.856" y="153.845267" transform="rotate(-0 233.856 153.845267)">0.21</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_78">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="279.936" y="153.845267" transform="rotate(-0 279.936 153.845267)">-0.55</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_79">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="326.016" y="153.845267" transform="rotate(-0 326.016 153.845267)">-0.05</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_80">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="372.096" y="153.845267" transform="rotate(-0 372.096 153.845267)">-0.30</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_81">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="418.176" y="153.845267" transform="rotate(-0 418.176 153.845267)">-0.41</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_82">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="464.256" y="153.845267" transform="rotate(-0 464.256 153.845267)">-0.21</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_83">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="95.616" y="172.299667" transform="rotate(-0 95.616 172.299667)">0.38</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_84">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="141.696" y="172.299667" transform="rotate(-0 141.696 172.299667)">-0.06</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_85">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="187.776" y="172.299667" transform="rotate(-0 187.776 172.299667)">-0.41</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_86">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="233.856" y="172.299667" transform="rotate(-0 233.856 172.299667)">-0.62</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_87">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="279.936" y="172.299667" transform="rotate(-0 279.936 172.299667)">0.15</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_88">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="326.016" y="172.299667" transform="rotate(-0 326.016 172.299667)">0.01</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_89">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="372.096" y="172.299667" transform="rotate(-0 372.096 172.299667)">0.53</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_90">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="418.176" y="172.299667" transform="rotate(-0 418.176 172.299667)">-0.09</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_91">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="464.256" y="172.299667" transform="rotate(-0 464.256 172.299667)">-0.02</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_92">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="95.616" y="190.754067" transform="rotate(-0 95.616 190.754067)">0.38</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_93">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="141.696" y="190.754067" transform="rotate(-0 141.696 190.754067)">-0.06</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_94">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="187.776" y="190.754067" transform="rotate(-0 187.776 190.754067)">-0.44</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_95">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="233.856" y="190.754067" transform="rotate(-0 233.856 190.754067)">0.35</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_96">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="279.936" y="190.754067" transform="rotate(-0 279.936 190.754067)">0.39</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_97">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="326.016" y="190.754067" transform="rotate(-0 326.016 190.754067)">0.05</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_98">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="372.096" y="190.754067" transform="rotate(-0 372.096 190.754067)">-0.23</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_99">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="418.176" y="190.754067" transform="rotate(-0 418.176 190.754067)">0.53</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_100">
+    <ns0:text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="464.256" y="190.754067" transform="rotate(-0 464.256 190.754067)">0.21</ns0:text>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="pf9321f8fc1">
+   <ns0:rect x="72.576" y="31.8528" width="414.72" height="166.0896" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

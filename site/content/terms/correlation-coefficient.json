@@ -1,0 +1,99 @@
+{
+  "id": "correlation-coefficient",
+  "zh": "相关系数",
+  "en": "Correlation Coefficient",
+  "aliases": [],
+  "type": "indicator",
+  "level": "basic",
+  "topic": "foundations",
+  "status": "public",
+  "summary": "描述两个变量共同变化的方向和强度。",
+  "relations": {
+    "prerequisites": [
+      "variable",
+      "descriptive-statistics"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": []
+  },
+  "real_question": "压力与幸福感一起变化，怎样量化这种关系？",
+  "operational_definition": "相关系数是按指定关联形式计算的无量纲指标；Pearson r 衡量两个数值变量之间的线性关联，范围为 -1 到 1。",
+  "plain_explanation": "正值表示一起升高的倾向，负值表示一升一降；接近零只说明线性关联弱。",
+  "problems_solved": [
+    "量化线性关联方向和强度",
+    "为回归与量表分析提供初步信息"
+  ],
+  "not_for": [
+    "相关不证明因果；r≈0 也不排除非线性关系"
+  ],
+  "decision_clues": [
+    "先看散点图",
+    "关注异常观测、线性与独立性"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：先看点云，再读方向与大小",
+      "body": "先确认两个变量来自同一批被试，检查计分方向、有效数据对和散点图。观察离群点、曲线或分群，再读 Pearson r 的正负和绝对值，并结合区间判断精度；相同 r 值可能来自不同形状的数据，接近 0 也可能隐藏明显的非线性关系。"
+    },
+    {
+      "heading": "容易混淆：负相关是坏关系，显著相关是因果吗",
+      "body": "正负号表示变化方向，含义取决于计分方向，不能直接评价好坏。相关可能受到其他变量、样本选择或反向作用的影响；p 值小也不能证明因果，或说明预测足够准确。若关心排序关系或明显非线性，应重新核对适合的分析方法。"
+    }
+  ],
+  "formula": {
+    "latex": "",
+    "note": "",
+    "verified": false
+  },
+  "quiz": {
+    "question": "Pearson r 接近 0，最谨慎的解释是？",
+    "options": [
+      "两个变量毫无关系",
+      "样本中线性关联较弱",
+      "必定存在因果关系",
+      "一定没有异常值"
+    ],
+    "answer": 1,
+    "explanation": "r 衡量线性关联，不能排除其他关系形式。",
+    "option_explanations": [
+      "r 接近零只说明所测线性关联较弱，仍可能存在非线性关系。",
+      "正确。Pearson r 衡量样本中的线性共同变化；还应查看散点图和不确定性。",
+      "相关系数不证明因果，接近零更不能推出必然因果。",
+      "异常观测可让 r 增大或减小，需要单独查看散点图和数据。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "basic_textbook",
+      "title": "现代心理与教育统计学",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": {
+    "packages": [],
+    "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+    "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\nfit <- cor.test(d$social_support, d$well_being, method=\"pearson\")\nprint(c(r=unname(fit$estimate), p_value=fit$p.value, n=nrow(d)))\n",
+    "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(is.numeric(d$x),is.numeric(d$y))\nplot(d$x,d$y); cor.test(d$x,d$y,method=\"pearson\")\n# Inspect shape, outliers, and independence before interpreting r.\n",
+    "assumption_checks": [
+      "先看散点图",
+      "关注异常观测、线性与独立性"
+    ],
+    "key_output": [
+      "r",
+      "p_value",
+      "n"
+    ],
+    "interpretation": "本代码分析社会支持与幸福感，r≈0.443 表示样本中的正线性关联；这与前面压力—幸福感的负相关图解是不同的一对变量。p_value≈8.89e−19 提供针对总体相关为 0 的检验证据，不能代替对关联大小和原因的解释。n=360 在无缺失的本教学数据中也是有效数据对数；换成自己的数据后应核对完整数据对，并另查看相关的置信区间。",
+    "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+    "common_errors": [
+      "相关不证明因果；r≈0 也不排除非线性关系"
+    ],
+    "verified": true,
+    "validation_report": "logs/r_validation.json"
+  },
+  "verified": true,
+  "candidate_evidence": {},
+  "plain_example": "例如，调查学生的压力与幸福感，想知道两者是否倾向于一升一降，可以用散点图看形状，再用相关系数量化线性关系。关系存在仍需另研究原因。"
+}

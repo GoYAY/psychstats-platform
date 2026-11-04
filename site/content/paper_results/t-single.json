@@ -1,0 +1,20 @@
+{
+  "tables": {
+    "standardized_effects": [
+      {
+        "effect": "单样本 Cohen d（参照均值 7）",
+        "estimate": 0.010775658852262511,
+        "ci_lower": -0.26204773865592385,
+        "ci_upper": 0.24770956649131898,
+        "n": 65,
+        "_row": "2.5%"
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "标准化效应量：1000 次教学 Bootstrap 百分位 95% CI",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0",
+  "case_id": "t-single",
+  "original_sha256": "976f3c407e79026f4734bea789e940b6b68facbd52febddbe0abdfc6cb5fb30d",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="518.4pt" height="244.8pt" viewBox="0 0 518.4 244.8" version="1.1" role="img">
+ <ns0:title>间接关联的区间怎么看 · model</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-17T19:08:27.072071</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 244.8  L 518.4 244.8  L 518.4 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 41.007043 167.281793  L 119.536627 167.281793  Q 123.512808 167.281793 123.512808 163.580202  L 123.512808 134.430171  Q 123.512808 130.72858 119.536627 130.72858  L 41.007043 130.72858  Q 37.030862 130.72858 37.030862 134.430171  L 37.030862 163.580202  Q 37.030862 167.281793 41.007043 167.281793  z " clip-path="url(#p6c8824cf2e)" style="fill: #953970; fill-opacity: 0.055; stroke: #953970; stroke-width: 0.8; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 219.935208 74.742013  L 298.464792 74.742013  Q 302.440973 74.742013 302.440973 71.040422  L 302.440973 41.890391  Q 302.440973 38.1888 298.464792 38.1888  L 219.935208 38.1888  Q 215.959027 38.1888 215.959027 41.890391  L 215.959027 71.040422  Q 215.959027 74.742013 219.935208 74.742013  z " clip-path="url(#p6c8824cf2e)" style="fill: #953970; fill-opacity: 0.055; stroke: #953970; stroke-width: 0.8; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 398.863373 167.281793  L 477.392957 167.281793  Q 481.369138 167.281793 481.369138 163.580202  L 481.369138 134.430171  Q 481.369138 130.72858 477.392957 130.72858  L 398.863373 130.72858  Q 394.887192 130.72858 394.887192 134.430171  L 394.887192 163.580202  Q 394.887192 167.281793 398.863373 167.281793  z " clip-path="url(#p6c8824cf2e)" style="fill: #953970; fill-opacity: 0.055; stroke: #953970; stroke-width: 0.8; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_5">
+    <ns0:path d="M 118.159296 129.410187  Q 169.736426 102.735034 220.270824 76.599171  " clip-path="url(#p6c8824cf2e)" style="fill: none; opacity: 0.85; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+    <ns0:path d="M 215.799105 76.660244  L 220.270824 76.599171  L 217.636651 80.21319  z " clip-path="url(#p6c8824cf2e)" style="fill: #953970; opacity: 0.85; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_6">
+    <ns0:path d="M 297.087461 76.060406  Q 348.664591 102.73556 399.198988 128.871423  " clip-path="url(#p6c8824cf2e)" style="fill: none; opacity: 0.85; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+    <ns0:path d="M 396.564816 125.257404  L 399.198988 128.871423  L 394.72727 128.810349  z " clip-path="url(#p6c8824cf2e)" style="fill: #953970; opacity: 0.85; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_7">
+    <ns0:path d="M 125.916866 149.005187  Q 259.198297 149.005187 391.305792 149.005187  " clip-path="url(#p6c8824cf2e)" style="fill: none; opacity: 0.85; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+    <ns0:path d="M 387.305792 147.005187  L 391.305792 149.005187  L 387.305792 151.005187  z " clip-path="url(#p6c8824cf2e)" style="fill: #953970; opacity: 0.85; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="text_1">
+    <ns0:text style="font-size: 8.4px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="80.271835" y="151.429456" transform="rotate(-0 80.271835 151.429456)">压力</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_2">
+    <ns0:text style="font-size: 8.4px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="259.2" y="58.901489" transform="rotate(-0 259.2 58.901489)">社会支持</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_3">
+    <ns0:text style="font-size: 8.4px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="438.128165" y="151.457675" transform="rotate(-0 438.128165 151.457675)">幸福感</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_4">
+    <ns0:text style="font-weight: 700; font-size: 7.5px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(112.4536 70.742754)">a = -0.357 · p &lt;0.001</ns0:text>
+    <ns0:text style="font-weight: 700; font-size: 7.5px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(109.17821 78.766436)">95% CI [-0.470, -0.248]</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_5">
+    <ns0:text style="font-weight: 700; font-size: 7.5px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(327.478822 70.742754)">b = 0.314 · p &lt;0.001</ns0:text>
+    <ns0:text style="font-weight: 700; font-size: 7.5px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(326.172181 78.766436)">95% CI [0.242, 0.398]</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_6">
+    <ns0:text style="font-weight: 700; font-size: 7.5px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(218.387109 165.596029)">c′ = -0.369 · p &lt;0.001</ns0:text>
+    <ns0:text style="font-weight: 700; font-size: 7.5px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(216.038086 173.61971)">95% CI [-0.473, -0.273]</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_7">
+    <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #953970" transform="translate(214.505 201.671938)">间接效应 a × b = -0.112</ns0:text>
+    <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #953970" transform="translate(195.85375 210.230532)">Bootstrap 95% CI [-0.161, -0.072]</ns0:text>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="p6c8824cf2e">
+   <ns0:rect x="18.144" y="17.136" width="482.112" height="210.528" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

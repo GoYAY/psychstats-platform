@@ -1,0 +1,66 @@
+{
+  "id": "multigroup",
+  "unit_id": "multigroup",
+  "title": "两组路径真的不同吗",
+  "question": "压力与幸福感的联系，在两类学生中强弱不同吗？",
+  "design": "模拟两组连续指标，多组 SEM 先保持载荷和截距相等，然后比较 f1→f3 自由与相等的路径。不能按一组显著、另一组不显著推断组差。",
+  "variables": "下方代码固定种子生成连续教学指标；共享函数同时下载可完全复现。",
+  "script": "examples/r/output_reading/multigroup.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "group_a",
+      "label": "A 组路径",
+      "meaning": "共同测量标定下的未标准化路径；不能拿不同标定系数直接比较。",
+      "term": "sem",
+      "format": ".3f"
+    },
+    {
+      "field_id": "difference",
+      "label": "A−B 路径差",
+      "meaning": "方向由组顺序决定，差是否可靠需要直接检验。",
+      "term": "path-coefficient",
+      "format": ".3f"
+    },
+    {
+      "field_id": "comparison_p",
+      "label": "路径相等约束检验 p",
+      "meaning": "直接检验组间路径相等，不是比较两个单组 p 值。",
+      "term": "model-fit",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "判断模型之前先检查这些条件",
+      "body": "共享测量约束需要证据支持；单一标签 b 跨组自动相等是额外约束，本例明确保留它并在代码展示。"
+    },
+    {
+      "title": "路径或拟合不符合预期时",
+      "body": "先区分测量问题、模型错误与证据不足。检查实际估计器、标准误、编码、有效样本和参数表。不要靠无理论依据的删题、加路径或误差相关来追求显著与完美拟合。"
+    }
+  ],
+  "report_template": "在共同载荷与截距约束的连续指标多组 SEM 中，A 组目标路径为 {group_a:.3f}，B 组为 {group_b:.3f}，A−B 差为 {difference:.3f}。目标路径相等约束的嵌套比较 p = {comparison_p:.4g}，组差判断依据该直接检验。",
+  "sources": [
+    {
+      "title": "实现与估计方法的官方文档",
+      "url": "https://lavaan.ugent.be/tutorial/groups.html"
+    }
+  ],
+  "related_terms": [
+    "sem",
+    "path-coefficient",
+    "model-fit"
+  ],
+  "table_labels": {
+    "parameters": "完整参数表：估计、标准误、区间及标准化参数",
+    "fit": "拟合指标（保留官方字段名）",
+    "loadings": "各题完整载荷",
+    "comparison": "嵌套模型比较"
+  }
+}

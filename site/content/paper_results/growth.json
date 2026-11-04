@@ -1,0 +1,38 @@
+{
+  "tables": {
+    "model_summary": [
+      {
+        "group": 1,
+        "n": 240
+      }
+    ],
+    "explained_variance": [
+      {
+        "group": 1,
+        "outcome": "y0",
+        "r_squared": 0.8332423992113175
+      },
+      {
+        "group": 1,
+        "outcome": "y1",
+        "r_squared": 0.852358820489786
+      },
+      {
+        "group": 1,
+        "outcome": "y2",
+        "r_squared": 0.8499158652501828
+      },
+      {
+        "group": 1,
+        "outcome": "y3",
+        "r_squared": 0.9189873104774369
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "SEM：参数区间沿用原模型估计器及算法；样本数与 R² 从实际模型对象提取",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] MASS_7.3-65    compiler_4.5.1 parallel_4.5.1 lavaan_0.6-21  mnormt_2.1.2  \n[6] pbivnorm_0.6.0 jsonlite_2.0.0 stats4_4.5.1   quadprog_1.5-8",
+  "case_id": "growth",
+  "original_sha256": "c5b27ad8cb62e348ad9e088f538f9ca4d5e5b3cc9670b8979e344b7a2cdb263e",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

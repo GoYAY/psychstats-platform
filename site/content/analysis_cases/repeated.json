@@ -1,0 +1,64 @@
+{
+  "id": "repeated",
+  "unit_id": "repeated",
+  "title": "同一批人重复测量怎样读",
+  "question": "同一批学生训练前、训练后和一个月后的成绩如何变化？",
+  "design": "固定种子模拟 45 人、三个时点、完整平衡数据；被试内 ANOVA 划分误差层，实际计算 Mauchly 筛查和 Greenhouse–Geisser/Huynh–Feldt 校正。另对三个配对时点差作 Holm 调整。",
+  "variables": "教学数据由下方代码固定种子生成，非真实参与者资料；参数设定可在代码中查看。",
+  "script": "examples/r/output_reading/repeated.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {"field_id":"gg_epsilon","label":"GG ε","meaning":"按本次误差协方差计算的自由度折减比例；校正不改变 F，改变其参考自由度及 p。","term":"sphericity","format":".3f"},
+    {"field_id":"gg_p","label":"GG 校正 p","meaning":"用折减自由度得到的时间检验 p，不与未校正 p 混称。","term":"sphericity","format":".4g"},
+    {"field_id":"mauchly_p","label":"Mauchly 球形性筛查 p","meaning":"未拒绝不证明球形性；本例同时显示校正结果，不靠反复选校正方式找显著。","term":"sphericity","format":".4g"},
+    {
+      "field_id": "people",
+      "label": "参与者数",
+      "meaning": "同一个人的三次记录不是三个独立参与者。",
+      "term": "repeated-measures",
+      "format": ".3f"
+    },
+    {
+      "field_id": "F",
+      "label": "时间总体 F",
+      "meaning": "检验三个时点总体均值一致，依赖本例误差结构和未校正的球形性假设。",
+      "term": "anova",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "未校正 p",
+      "meaning": "球形性不成立时不能把此 p 当校正结果；缺时点时优先考虑适合缺失结构的模型。",
+      "term": "sphericity",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这些结果最容易误读的地方",
+      "body": "缺 ID、把记录当独立样本、未做球形性处理都是独立问题；不要删除缺时点者后不说明样本变化。"
+    },
+    {
+      "title": "如果没有发现明确证据",
+      "body": "先回到研究问题和估计精度，结合区间、有效样本、数据质量及模型条件判断。证据不足不等于没有作用；不反复更换方法、删样本或放宽阈值来追求显著。"
+    }
+  ],
+  "report_template": "45 人、135 条完整三时点记录的时间主效应采用 GG 校正，ε = {gg_epsilon:.3f}，F({gg_df1:.2f}, {gg_df2:.2f}) = {F:.3f}，p = {gg_p:.4g}；Mauchly 筛查 p = {mauchly_p:.4g}。三个配对时点比较的 Holm 调整 p 见表，表中区间为逐比较 95% 区间而非同时区间。观察到时间变化不单独证明训练导致变化。",
+  "sources": [
+    {"title":"R 官方重复测量球形性校正","url":"https://stat.ethz.ch/R-manual/R-devel/library/stats/html/anova.mlm.html"},
+    {
+      "title": "R 官方 aov 文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/aov.html"
+    }
+  ],
+  "related_terms": [
+    "repeated-measures",
+    "anova",
+    "sphericity"
+  ]
+}

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="511pt" viewBox="0 0 760 511" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">非递归设定允许反馈关系。。画出双向箭头不能识别两条关系，还需额外设计条件与信息。</desc><title id="title">压力与睡眠的双向设定</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:56.023533</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 511  L 760 511  L 760 0  L 0 0  L 0 511  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 286.965914 155.254858  Q 347.477282 264.316206 470.772296 271.323345  " clip-path="url(#peca18e6913)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 466.116207 268.654856  L 470.772296 271.323345  L 465.843852 273.447123  z " clip-path="url(#peca18e6913)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 524.388163 239.921513  Q 434.086813 124.123243 289.214703 138.808134  " clip-path="url(#peca18e6913)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 294.232267 140.711829  L 289.214703 138.808134  L 293.748197 135.9363  z " clip-path="url(#peca18e6913)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 144 129.5  L 271 129.5  Q 280 129.5 280 138.5  L 280 168.5  Q 280 177.5 271 177.5  L 144 177.5  Q 135 177.5 135 168.5  L 135 138.5  Q 135 129.5 144 129.5  z " clip-path="url(#peca18e6913)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 489 247.5  L 616 247.5  Q 625 247.5 625 256.5  L 625 286.5  Q 625 295.5 616 295.5  L 489 295.5  Q 480 295.5 480 286.5  L 480 256.5  Q 480 247.5 489 247.5  z " clip-path="url(#peca18e6913)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="207.5" y="156.963242" transform="rotate(-0 207.5 156.963242)">压力</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="552.5" y="274.851562" transform="rotate(-0 552.5 274.851562)">睡眠</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="453.755117" transform="rotate(-0 20 453.755117)">1. 压力 → 睡眠：压力→睡眠</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="481.755117" transform="rotate(-0 20 481.755117)">2. 睡眠 → 压力：睡眠→压力</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="peca18e6913">
+   <rect x="0" y="0" width="760" height="511" />
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,67 @@
+{
+  "id": "missing",
+  "unit_id": "missing",
+  "title": "缺失处理后看的是哪个结果",
+  "question": "问卷有些压力分数缺了，还能利用其余信息分析吗？",
+  "design": "模拟单一连续预测变量 X 在给定 Z 后随机缺失（MAR）。以完整 Y/Z 条件正态回归进行 20 次适当参数抽样插补，Rubin 合并、Barnard–Rubin 自由度；另示 FIML 联合正态模型。限于单变量连续缺失教学。",
+  "variables": "固定种子模拟，数据与缺失机制设定在代码中明示，非真实参与者。",
+  "script": "examples/r/output_reading/missing.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "pooled",
+      "label": "插补合并系数",
+      "meaning": "先每份数据估计再合并参数与不确定性，不先把填补数据取平均再分析。",
+      "term": "multiple-imputation",
+      "format": ".3f"
+    },
+    {
+      "field_id": "se",
+      "label": "合并标准误",
+      "meaning": "同时包含插补内和插补间变异，不能仅用单份数据 SE。",
+      "term": "multiple-imputation",
+      "format": ".3f"
+    },
+    {
+      "field_id": "fiml",
+      "label": "FIML 的 X 系数",
+      "meaning": "同一数据的联合正态似然估计，不是填补后的回归，也不保证与 MI 完全一致。",
+      "term": "missing-data",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "先判断这些前提是否成立",
+      "body": "本代码不是多变量、分类或多层数据的通用插补器；MNAR 需要专门敏感性分析。两种方法接近不证明缺失机制正确。"
+    },
+    {
+      "title": "结果不显著或不稳定时",
+      "body": "分别检查数据结构、模型识别与区间精度。考虑测量质量、组数或时间覆盖是否足够；报告实际不确定性和敏感性，不以反复简化或换编码追求显著。"
+    }
+  ],
+  "report_template": "在给定 Z 后随机缺失的连续教学数据中，X 缺失比例为 {missing_proportion:.3f}。20 次条件正态插补的合并 X 系数为 {pooled:.3f}，SE = {se:.3f}，Barnard–Rubin df = {df:.2f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]；同数据 FIML 系数为 {fiml:.3f}。这些结果依赖 MAR 和模型设定。",
+  "sources": [
+    {
+      "title": "估计与诊断的官方资料",
+      "url": "https://amices.org/mice/reference/pool.html"
+    }
+  ],
+  "related_terms": [
+    "multiple-imputation",
+    "missing-data"
+  ],
+  "table_labels": {
+    "fixed": "固定效应完整表",
+    "random": "随机效应方差",
+    "comparison": "ML 模型比较",
+    "parameters": "增长模型参数表",
+    "imputations": "各插补数据的估计与方差",
+    "fiml_parameters": "FIML 参数表"
+  }
+}

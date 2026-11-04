@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="590.4pt" height="345.6pt" viewBox="0 0 590.4 345.6" version="1.1" role="img">
+ <ns0:title>交互关联是否通过另一变量传递 · model</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-17T19:08:26.632662</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 345.6  L 590.4 345.6  L 590.4 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 72.313993 255.072835  L 145.833803 255.072835  Q 149.556325 255.072835 149.556325 251.546713  L 149.556325 223.778504  Q 149.556325 220.252383 145.833803 220.252383  L 72.313993 220.252383  Q 68.591471 220.252383 68.591471 223.778504  L 68.591471 251.546713  Q 68.591471 255.072835 72.313993 255.072835  z " clip-path="url(#pe1343d306c)" style="fill: #953970; fill-opacity: 0.055; stroke: #953970; stroke-width: 0.8; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 258.440095 69.951443  L 331.959905 69.951443  Q 335.682427 69.951443 335.682427 66.425322  L 335.682427 38.657113  Q 335.682427 35.130991 331.959905 35.130991  L 258.440095 35.130991  Q 254.717573 35.130991 254.717573 38.657113  L 254.717573 66.425322  Q 254.717573 69.951443 258.440095 69.951443  z " clip-path="url(#pe1343d306c)" style="fill: #953970; fill-opacity: 0.055; stroke: #953970; stroke-width: 0.8; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 444.566197 255.072835  L 518.086007 255.072835  Q 521.808529 255.072835 521.808529 251.546713  L 521.808529 223.778504  Q 521.808529 220.252383 518.086007 220.252383  L 444.566197 220.252383  Q 440.843675 220.252383 440.843675 223.778504  L 440.843675 251.546713  Q 440.843675 255.072835 444.566197 255.072835  z " clip-path="url(#pe1343d306c)" style="fill: #953970; fill-opacity: 0.055; stroke: #953970; stroke-width: 0.8; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_5">
+    <ns0:path d="M 258.440095 193.365704  L 331.959905 193.365704  Q 335.682427 193.365704 335.682427 189.839583  L 335.682427 162.071374  Q 335.682427 158.545252 331.959905 158.545252  L 258.440095 158.545252  Q 254.717573 158.545252 254.717573 162.071374  L 254.717573 189.839583  Q 254.717573 193.365704 258.440095 193.365704  z " clip-path="url(#pe1343d306c)" style="fill: #953970; fill-opacity: 0.055; stroke: #953970; stroke-width: 0.8; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="effect-x-m">
+    <ns0:path d="M 126.578615 220.252383  Q 202.136949 145.101913 276.862942 70.779292  " clip-path="url(#pe1343d306c)" style="fill: none; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+    <ns0:path d="M 272.61649 72.182018  L 276.862942 70.779292  L 275.437252 75.01809  z " clip-path="url(#pe1343d306c)" style="fill: #953970; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="effect-x-y">
+    <ns0:path d="M 149.556325 237.662609  Q 295.2 237.662609 439.669739 237.662609  " clip-path="url(#pe1343d306c)" style="fill: none; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+    <ns0:path d="M 435.669739 235.662609  L 439.669739 237.662609  L 435.669739 239.662609  z " clip-path="url(#pe1343d306c)" style="fill: #953970; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="effect-m-y">
+    <ns0:path d="M 312.704717 69.951443  Q 388.263051 145.101913 462.989044 219.424534  " clip-path="url(#pe1343d306c)" style="fill: none; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+    <ns0:path d="M 461.563353 215.185736  L 462.989044 219.424534  L 458.742591 218.021808  z " clip-path="url(#pe1343d306c)" style="fill: #953970; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="moderates-x-m">
+    <ns0:path d="M 254.717573 162.534177  Q 228.427261 153.818045 203.251242 145.471339  " clip-path="url(#pe1343d306c)" style="fill: none; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+    <ns0:path d="M 206.41864 148.628489  L 203.251242 145.471339  L 207.677401 144.831711  z " clip-path="url(#pe1343d306c)" style="fill: #953970; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="moderates-x-y">
+    <ns0:path d="M 295.2 193.365704  Q 295.2 215.514157 295.2 236.488673  " clip-path="url(#pe1343d306c)" style="fill: none; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+    <ns0:path d="M 297.2 232.488673  L 295.2 236.488673  L 293.2 232.488673  z " clip-path="url(#pe1343d306c)" style="fill: #953970; stroke: #953970; stroke-width: 1.05; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="text_1">
+    <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="109.073898" y="239.896984" transform="rotate(-0 109.073898 239.896984)">X</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_2">
+    <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="295.2" y="54.775592" transform="rotate(-0 295.2 54.775592)">M</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_3">
+    <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="481.326102" y="239.896984" transform="rotate(-0 481.326102 239.896984)">Y</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_4">
+    <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243041" x="295.2" y="178.189853" transform="rotate(-0 295.2 178.189853)">W</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_5">
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(114.341987 130.038527)">a1 = 0.3465</ns0:text>
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(119.320112 137.741261)">p &lt;0.001</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_6">
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(274.141687 264.471918)">c1′ = 0.1386</ns0:text>
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(274.566375 272.174653)">p = 0.01181</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_7">
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(437.2112 130.038527)">b = 0.3714</ns0:text>
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(440.387638 137.741261)">p &lt;0.001</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_8">
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(251.609987 114.611744)">a3 = 0.3089</ns0:text>
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(256.588112 122.314479)">p &lt;0.001</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_9">
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(322.999789 211.580092)">c3′ = 0.1095</ns0:text>
+    <ns0:text style="font-size: 7.2px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #243041" transform="translate(323.424477 219.282826)">p = 0.04651</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_10">
+    <ns0:text style="font-size: 7px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #526575" x="295.2" y="305.831522" transform="rotate(-0 295.2 305.831522)">W 对 M 的主效应 a2 = 0.2330；W 对 Y 的主效应 c2′ = 0.1842</ns0:text>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="pe1343d306c">
+   <ns0:rect x="20.664" y="17.28" width="549.072" height="304.128" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

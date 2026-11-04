@@ -1,0 +1,156 @@
+{
+  "case_id": "repeated",
+  "covariances": [],
+  "design": "固定种子模拟 45 人、三个时点、完整平衡数据；被试内 ANOVA 划分误差层，实际计算 Mauchly 筛查和 Greenhouse–Geisser/Huynh–Feldt 校正。另对三个配对时点差作 Holm 调整。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/repeated.R",
+    "script_sha256": "38741e96f5bc94de2c2fda17437f7cd89cd434e503e0ac817b8edc1b608b5938",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "Res.Df",
+        "Gen.var.",
+        "Df",
+        "F",
+        "num Df",
+        "den Df",
+        "Pr(>F)",
+        "G-G Pr",
+        "H-F Pr"
+      ],
+      "name": "sphericity_corrections",
+      "rows": [
+        {
+          "Gen.var.": 10.166908140721267,
+          "Res.Df": 44
+        },
+        {
+          "Df": 1,
+          "F": 22.820587398978464,
+          "G-G Pr": 1.3073000341078073e-08,
+          "Gen.var.": 13.887913160674348,
+          "H-F Pr": 1.0372060622592592e-08,
+          "Pr(>F)": 1.0372060622592592e-08,
+          "Res.Df": 45,
+          "den Df": 88,
+          "num Df": 2
+        }
+      ],
+      "title": "sphericity_corrections"
+    },
+    {
+      "columns": [
+        "comparison",
+        "difference",
+        "ci_lower",
+        "ci_upper",
+        "p",
+        "p_holm"
+      ],
+      "name": "paired_comparisons",
+      "rows": [
+        {
+          "ci_lower": 3.8792941461638284,
+          "ci_upper": 7.51358694854389,
+          "comparison": "post minus pre",
+          "difference": 5.696440547353859,
+          "p": 1.1500538639983358e-07,
+          "p_holm": 3.4501615919950076e-07
+        },
+        {
+          "ci_lower": 2.6123395065347355,
+          "ci_upper": 6.34932584323258,
+          "comparison": "followup minus pre",
+          "difference": 4.480832674883658,
+          "p": 1.670133971110033e-05,
+          "p_holm": 3.340267942220066e-05
+        },
+        {
+          "ci_lower": -2.894522580686987,
+          "ci_upper": 0.4633068357465858,
+          "comparison": "followup minus post",
+          "difference": -1.2156078724702006,
+          "p": 0.15160885168895918,
+          "p_holm": 0.15160885168895918
+        }
+      ],
+      "title": "paired_comparisons"
+    },
+    {
+      "column_labels": {
+        "F": "时间总体 F",
+        "df1": "df1",
+        "df2": "df2",
+        "gg_df1": "gg_df1",
+        "gg_df2": "gg_df2",
+        "gg_epsilon": "GG ε",
+        "gg_p": "GG 校正 p",
+        "mauchly_p": "Mauchly 球形性筛查 p",
+        "observations": "observations",
+        "p": "未校正 p",
+        "people": "参与者数"
+      },
+      "columns": [
+        "analysis",
+        "gg_epsilon",
+        "gg_p",
+        "mauchly_p",
+        "people",
+        "F",
+        "p",
+        "df1",
+        "df2",
+        "observations",
+        "gg_df1",
+        "gg_df2"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "F": 22.820587399510682,
+          "analysis": "同一批人重复测量怎样读",
+          "df1": 2,
+          "df2": 88,
+          "gg_df1": 1.9692380954244533,
+          "gg_df2": 86.64647619867594,
+          "gg_epsilon": 0.9846190477122266,
+          "gg_p": 1.3073000341078073e-08,
+          "mauchly_p": 0.7128336834296514,
+          "observations": 135,
+          "p": 1.0372060618957662e-08,
+          "people": 45
+        }
+      ],
+      "source_fields": [
+        {
+          "F": "F",
+          "df1": "df1",
+          "df2": "df2",
+          "gg_df1": "gg_df1",
+          "gg_df2": "gg_df2",
+          "gg_epsilon": "gg_epsilon",
+          "gg_p": "gg_p",
+          "mauchly_p": "mauchly_p",
+          "observations": "observations",
+          "p": "p",
+          "people": "people"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "同一批人重复测量怎样读",
+  "valid": true,
+  "variances": []
+}

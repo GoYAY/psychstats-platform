@@ -1,0 +1,5 @@
+source("examples/r/analyses/_common.R")
+d <- read_data("scale_items")
+fit <- factanal(d[paste0("item_",1:12)], factors=3, rotation="varimax", scores="none")
+loading <- unclass(fit$loadings)
+emit(c(converged=1, primary_loading=mean(apply(abs(loading),1,max)), uniqueness_mean=mean(fit$uniquenesses)))

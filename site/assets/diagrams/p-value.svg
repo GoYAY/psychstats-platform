@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-labelledby="title desc">
+  <title id="title">双侧 p 值的尾部面积</title>
+  <desc id="desc">在对称的零假设分布下，观察统计量位于右侧，对称点位于左侧；两个位置以外的尾部阴影面积相加表示双侧 p 值。</desc>
+  <g font-family="system-ui, 'Microsoft YaHei', sans-serif" fill="#111827">
+    <text x="24" y="28" font-size="15" font-weight="700">前提：双侧检验，零假设下的分布对称</text>
+    <path d="M70 222 C133 222 187 214 220 182 L220 222 Z" fill="#e6daf6" stroke="none"/>
+    <path d="M540 182 C573 214 627 222 690 222 L540 222 Z" fill="#e6daf6" stroke="none"/>
+    <path d="M70 222 C135 222 186 214 220 182 C270 122 310 52 380 45 C450 52 490 122 540 182 C574 214 625 222 690 222" fill="none" stroke="#6741ad" stroke-width="3"/>
+    <path d="M70 222 H690" fill="none" stroke="#465465" stroke-width="2"/>
+    <path d="M220 181 V222 M380 45 V222 M540 181 V222" fill="none" stroke="#465465" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <text x="380" y="78" text-anchor="middle" font-size="14" fill="#424b57">零假设 H₀ 下的分布</text>
+    <text x="220" y="246" text-anchor="middle" font-size="14">−|tₒᵦₛ|</text>
+    <text x="380" y="246" text-anchor="middle" font-size="14">0</text>
+    <text x="540" y="246" text-anchor="middle" font-size="14">+|tₒᵦₛ|</text>
+    <text x="377" y="277" text-anchor="middle" font-size="14" fill="#424b57">检验统计量 T</text>
+    <rect x="214" y="290" width="18" height="12" rx="2" fill="#e6daf6" stroke="#6741ad"/>
+    <text x="240" y="301" font-size="14" fill="#424b57">两侧阴影面积相加 = 此双侧检验的 p 值</text>
+  </g>
+</svg>

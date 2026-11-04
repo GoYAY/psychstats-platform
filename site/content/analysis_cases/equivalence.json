@@ -1,0 +1,59 @@
+{
+  "id": "equivalence",
+  "unit_id": "equivalence",
+  "title": "差别小到可以忽略吗",
+  "question": "两种练习形式的效果能不能视为足够接近？",
+  "design": "固定种子模拟独立组。教学设定：可忽略的分数差为 ±3，须在看数据前根据实际意义确定。使用 Welch 的两个单侧检验（TOST）。",
+  "variables": "教学数据由下方代码固定种子生成，非真实参与者资料；参数设定可在代码中查看。",
+  "script": "examples/r/output_reading/equivalence.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "tost_p",
+      "label": "TOST p",
+      "meaning": "两个单侧 p 中较大的一个；只有二者都小于 0.05 才支持在 ±3 分内等效。",
+      "term": "equivalence-testing",
+      "format": ".4g"
+    },
+    {
+      "field_id": "ci_lower",
+      "label": "90% CI 下界",
+      "meaning": "90% 双侧区间对应显著性水平 0.05 的两个单侧检验；不是通常的 95% CI。",
+      "term": "confidence-interval",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_upper",
+      "label": "90% CI 上界",
+      "meaning": "上下界都必须在事先确定的 ±3 分内；不能事后放宽界值。",
+      "term": "confidence-interval",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这些结果最容易误读的地方",
+      "body": "既未证明差异又未证明等效时，是证据不确定；提高精度的方案应独立于当前显著性。"
+    },
+    {
+      "title": "如果没有发现明确证据",
+      "body": "先回到研究问题和估计精度，结合区间、有效样本、数据质量及模型条件判断。证据不足不等于没有作用；不反复更换方法、删样本或放宽阈值来追求显著。"
+    }
+  ],
+  "report_template": "以事先教学设定的 ±{margin:.0f} 分为等效界值，两组差为 {difference:.3f}，90% CI [{ci_lower:.3f}, {ci_upper:.3f}]；两个单侧检验的较大 p = {tost_p:.4g}。是否支持等效须同时检查两个单侧检验，不以普通差异检验不显著代替。",
+  "sources": [
+    {
+      "title": "R 官方 t.test 文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/t.test.html"
+    }
+  ],
+  "related_terms": [
+    "equivalence-testing",
+    "confidence-interval"
+  ]
+}

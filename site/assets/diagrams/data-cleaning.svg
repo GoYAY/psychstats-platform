@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-labelledby="title desc">
+  <title id="title">数据清理的可追溯流程</title>
+  <desc id="desc">保留原始数据，检查重复、缺失和异常，核实来源；有依据则修正，没有依据则标记并按预设规则处理，最后形成分析数据和日志。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#465465"/>
+    </marker>
+  </defs>
+  <g font-family="system-ui, 'Microsoft YaHei', sans-serif" fill="#111827">
+    <text x="24" y="29" font-size="15" font-weight="700">先保留，再核查；能核实才修正</text>
+    <rect x="24" y="56" width="150" height="70" rx="10" fill="#fff" stroke="#8aa8a9" stroke-width="2"/>
+    <circle cx="47" cy="79" r="13" fill="#006d70"/>
+    <text x="47" y="84" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">1</text>
+    <text x="118" y="86" text-anchor="middle" font-size="16" font-weight="700">保留原始数据</text>
+    <text x="99" y="110" text-anchor="middle" font-size="12" fill="#424b57">另存分析副本</text>
+
+    <path d="M175 91 H204" fill="none" stroke="#465465" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="210" y="56" width="175" height="70" rx="10" fill="#fff" stroke="#8aa8a9" stroke-width="2"/>
+    <circle cx="233" cy="79" r="13" fill="#006d70"/>
+    <text x="233" y="84" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">2</text>
+    <text x="297" y="86" text-anchor="middle" font-size="16" font-weight="700">系统检查</text>
+    <text x="297" y="110" text-anchor="middle" font-size="12" fill="#424b57">重复 · 缺失 · 范围 · 异常</text>
+
+    <path d="M386 91 H415" fill="none" stroke="#465465" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="422" y="56" width="170" height="70" rx="10" fill="#fff" stroke="#8aa8a9" stroke-width="2"/>
+    <circle cx="445" cy="79" r="13" fill="#006d70"/>
+    <text x="445" y="84" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">3</text>
+    <text x="507" y="86" text-anchor="middle" font-size="16" font-weight="700">核实来源</text>
+    <text x="507" y="110" text-anchor="middle" font-size="12" fill="#424b57">原记录 · 计分规则 · 测量背景</text>
+
+    <path d="M507 127 V153 H282 V164" fill="none" stroke="#465465" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M507 153 H615 V164" fill="none" stroke="#465465" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="193" y="170" width="178" height="64" rx="10" fill="#f3f9f9" stroke="#006d70" stroke-width="2"/>
+    <text x="282" y="193" text-anchor="middle" font-size="14" font-weight="700">有证据可核实</text>
+    <text x="282" y="218" text-anchor="middle" font-size="14">依据原记录修正或保留</text>
+    <rect x="520" y="170" width="190" height="64" rx="10" fill="#fff" stroke="#8aa8a9" stroke-width="2"/>
+    <text x="615" y="193" text-anchor="middle" font-size="14" font-weight="700">来源无法核实</text>
+    <text x="615" y="218" text-anchor="middle" font-size="14">标记并按预设规则处理</text>
+
+    <path d="M282 235 V257 H377 V267" fill="none" stroke="#465465" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M615 235 V257 H470 V267" fill="none" stroke="#465465" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="295" y="273" width="250" height="43" rx="10" fill="#006d70"/>
+    <text x="420" y="300" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">分析数据 ＋ 处理日志</text>
+  </g>
+</svg>

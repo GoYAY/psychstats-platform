@@ -1,0 +1,122 @@
+{
+  "tables": {
+    "model_summary": [
+      {
+        "group": 1,
+        "n": 250
+      },
+      {
+        "group": 2,
+        "n": 250
+      }
+    ],
+    "explained_variance": [
+      {
+        "group": 1,
+        "outcome": "x1",
+        "r_squared": 0.6472215949884423
+      },
+      {
+        "group": 1,
+        "outcome": "x2",
+        "r_squared": 0.6749546738807974
+      },
+      {
+        "group": 1,
+        "outcome": "x3",
+        "r_squared": 0.6605503439916944
+      },
+      {
+        "group": 1,
+        "outcome": "x4",
+        "r_squared": 0.6920711019146082
+      },
+      {
+        "group": 1,
+        "outcome": "x5",
+        "r_squared": 0.6063700820930915
+      },
+      {
+        "group": 1,
+        "outcome": "x6",
+        "r_squared": 0.6369759851260879
+      },
+      {
+        "group": 1,
+        "outcome": "x7",
+        "r_squared": 0.5891637627686638
+      },
+      {
+        "group": 1,
+        "outcome": "x8",
+        "r_squared": 0.633943436782291
+      },
+      {
+        "group": 1,
+        "outcome": "x9",
+        "r_squared": 0.6156968801658267
+      },
+      {
+        "group": 1,
+        "outcome": "f3",
+        "r_squared": 0.41013343704140426
+      },
+      {
+        "group": 2,
+        "outcome": "x1",
+        "r_squared": 0.7036003606711994
+      },
+      {
+        "group": 2,
+        "outcome": "x2",
+        "r_squared": 0.6335150417115124
+      },
+      {
+        "group": 2,
+        "outcome": "x3",
+        "r_squared": 0.6858354610924247
+      },
+      {
+        "group": 2,
+        "outcome": "x4",
+        "r_squared": 0.7043304518974894
+      },
+      {
+        "group": 2,
+        "outcome": "x5",
+        "r_squared": 0.6000776850422249
+      },
+      {
+        "group": 2,
+        "outcome": "x6",
+        "r_squared": 0.6231407098756695
+      },
+      {
+        "group": 2,
+        "outcome": "x7",
+        "r_squared": 0.6110446337192021
+      },
+      {
+        "group": 2,
+        "outcome": "x8",
+        "r_squared": 0.5548267920401948
+      },
+      {
+        "group": 2,
+        "outcome": "x9",
+        "r_squared": 0.5566128276317153
+      },
+      {
+        "group": 2,
+        "outcome": "f3",
+        "r_squared": 0.3405525929192784
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "SEM：参数区间沿用原模型估计器及算法；样本数与 R² 从实际模型对象提取",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] MASS_7.3-65    compiler_4.5.1 parallel_4.5.1 lavaan_0.6-21  mnormt_2.1.2  \n[6] pbivnorm_0.6.0 jsonlite_2.0.0 stats4_4.5.1   quadprog_1.5-8",
+  "case_id": "multigroup",
+  "original_sha256": "f97f3ce5a717404c7f5fac86d900ad8e9599e0d9f2c1c5c26c45a91f672ab476",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

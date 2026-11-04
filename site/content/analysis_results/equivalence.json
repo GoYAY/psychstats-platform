@@ -1,0 +1,23 @@
+{
+  "case_id": "equivalence",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\n\tWelch Two Sample t-test\n\ndata:  x and y\nt = 1.191, df = 177.64, p-value = 0.1176\nalternative hypothesis: true difference in means is greater than -3\n95 percent confidence interval:\n -3.569442       Inf\nsample estimates:\nmean of x mean of y \n 68.31109  69.84444 \n\n\n\tWelch Two Sample t-test\n\ndata:  x and y\nt = -3.6815, df = 177.64, p-value = 0.0001537\nalternative hypothesis: true difference in means is less than 3\n95 percent confidence interval:\n      -Inf 0.5027424\nsample estimates:\nmean of x mean of y \n 68.31109  69.84444 \n\n\n\tWelch Two Sample t-test\n\ndata:  x and y\nt = -1.2452, df = 177.64, p-value = 0.2147\nalternative hypothesis: true difference in means is not equal to 0\n90 percent confidence interval:\n -3.5694421  0.5027424\nsample estimates:\nmean of x mean of y \n 68.31109  69.84444 \n\n",
+  "stderr": "",
+  "metrics": {
+    "difference": -1.5333498245560122,
+    "lower_p": 0.1176130204909429,
+    "upper_p": 0.00015371984832276007,
+    "tost_p": 0.1176130204909429,
+    "ci_lower": -3.569442050128875,
+    "ci_upper": 0.5027424010168501,
+    "margin": 3
+  },
+  "warnings": [],
+  "tables": [],
+  "figures": [],
+  "script_sha256": "b9c75539592510c2d9af08580a4cdf388143039da23889c9aaf994233d335411",
+  "config_sha256": "1ccb748a725c63c5c904575c536f3498b7941b4514ca64a74f37264639b2b77d",
+  "data_sha256": {}
+}

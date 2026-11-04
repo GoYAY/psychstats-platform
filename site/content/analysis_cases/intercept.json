@@ -1,0 +1,70 @@
+{
+  "id": "intercept",
+  "unit_id": "intercept",
+  "title": "班级聚类对结果有什么影响",
+  "question": "同班学生更相似，不能把所有学生当完全独立吗？",
+  "design": "复用班级教学数据。先空模型计算 ICC，再加入班级均值中心化动机与班级平均动机，区分班内和班间关联。REML 估计。",
+  "variables": "数据列、分组 ID 及时间/中心化编码见代码；已有教学数据非真实研究样本。",
+  "script": "examples/r/output_reading/intercept.R",
+  "data_files": [
+    "examples/data/nested_classrooms.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "icc",
+      "label": "空模型 ICC",
+      "meaning": "同班相关的比例，按随机截距与残差方差计算，不是解释率。",
+      "term": "icc",
+      "format": ".3f"
+    },
+    {
+      "field_id": "within_beta",
+      "label": "班内动机关联",
+      "meaning": "同班学生相对本班平均动机的差异，与跨班动机差异不同。",
+      "term": "centering",
+      "format": ".3f"
+    },
+    {
+      "field_id": "groups",
+      "label": "班级数",
+      "meaning": "组层信息来自班级数，不等于学生人数。",
+      "term": "hlm",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "先判断这些前提是否成立",
+      "body": "ICC 小也不意味着可以忽略设计；REML 似然不能直接比较固定效应不同的模型，应在 ML 下比较。"
+    },
+    {
+      "title": "结果不显著或不稳定时",
+      "body": "分别检查数据结构、模型识别与区间精度。考虑测量质量、组数或时间覆盖是否足够；报告实际不确定性和敏感性，不以反复简化或换编码追求显著。"
+    }
+  ],
+  "report_template": "教学数据包含 {people:.0f} 名学生、{groups:.0f} 个班级。空模型 ICC = {icc:.3f}；REML 随机截距模型中，控制班级平均动机后的班内动机系数为 {within_beta:.3f}（p = {within_p:.4g}）。班内与班间关联已明确分开。",
+  "sources": [
+    {
+      "title": "估计与诊断的官方资料",
+      "url": "https://search.r-project.org/CRAN/refmans/nlme/html/lme.html"
+    }
+  ],
+  "related_terms": [
+    "icc",
+    "centering",
+    "hlm"
+  ],
+  "table_labels": {
+    "fixed": "固定效应完整表",
+    "random": "随机效应方差",
+    "comparison": "ML 模型比较",
+    "parameters": "增长模型参数表",
+    "imputations": "各插补数据的估计与方差",
+    "fiml_parameters": "FIML 参数表"
+  }
+}

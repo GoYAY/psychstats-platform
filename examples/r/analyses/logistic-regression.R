@@ -1,0 +1,5 @@
+source("examples/r/analyses/_common.R")
+d <- read_data("cross_sectional_survey")
+d$high_wellbeing <- as.integer(d$well_being >= median(d$well_being))
+fit <- glm(high_wellbeing ~ stress + social_support + age, data=d, family=binomial())
+emit(c(stress_log_odds=unname(coef(fit)["stress"]), support_odds_ratio=exp(unname(coef(fit)["social_support"])), converged=as.integer(fit$converged)))

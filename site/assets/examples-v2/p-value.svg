@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="760pt" height="440pt" viewBox="0 0 760 440" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">p值考察规定基准下出现同样或更极端结果的可能性。。本例使用无处理效应且组标签可交换的随机化参照；其他检验应按自己的抽样模型计算p值。</desc><title id="title">差五分在20种分组中有多极端</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-20T23:31:48.772786</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 440  L 760 440  L 760 0  L 0 0  L 0 440  z " style="fill: none" />
+  </g>
+  <g id="data-panel">
+   <g id="patch_2">
+    <path d="M 91.2 312.4  L 714.4 312.4  L 714.4 110  L 91.2 110  L 91.2 312.4  z " style="fill: none" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="143.133333" y="327.520117" transform="rotate(-0 143.133333 327.520117)">−5</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="402.8" y="327.520117" transform="rotate(-0 402.8 327.520117)">0</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="662.466667" y="327.520117" transform="rotate(-0 662.466667 327.520117)">5</text>
+     </g>
+    </g>
+    <g id="text_4">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #303b4b" x="402.8" y="343.254766" transform="rotate(-0 402.8 343.254766)">甲组均值 − 乙组均值（分）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4">
+      <path d="M 91.2 267.422222  L 714.4 267.422222  " clip-path="url(#pf0056852ab)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_5" />
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="84.2" y="271.482281" transform="rotate(-0 84.2 271.482281)">1</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <path d="M 91.2 222.444444  L 714.4 222.444444  " clip-path="url(#pf0056852ab)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_7" />
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="84.2" y="226.504503" transform="rotate(-0 84.2 226.504503)">2</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8">
+      <path d="M 91.2 177.466667  L 714.4 177.466667  " clip-path="url(#pf0056852ab)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_9" />
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="84.2" y="181.526725" transform="rotate(-0 84.2 181.526725)">3</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10">
+      <path d="M 91.2 132.488889  L 714.4 132.488889  " clip-path="url(#pf0056852ab)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_11" />
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="84.2" y="136.548947" transform="rotate(-0 84.2 136.548947)">4</text>
+     </g>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #303b4b" x="71.54834" y="211.2" transform="rotate(-90 71.54834 211.2)">同一差值下的分组数</text>
+    </g>
+   </g>
+   <g id="permutation-allocations">
+    <defs>
+     <path id="C0_0_12f308b627" d="M 0 3.807887  C 1.009863 3.807887 1.978501 3.406664 2.692582 2.692582  C 3.406664 1.978501 3.807887 1.009863 3.807887 -0  C 3.807887 -1.009863 3.406664 -1.978501 2.692582 -2.692582  C 1.978501 -3.406664 1.009863 -3.807887 0 -3.807887  C -1.009863 -3.807887 -1.978501 -3.406664 -2.692582 -2.692582  C -3.406664 -1.978501 -3.807887 -1.009863 -3.807887 0  C -3.807887 1.009863 -3.406664 1.978501 -2.692582 2.692582  C -1.978501 3.406664 -1.009863 3.807887 0 3.807887  z " />
+    </defs>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="662.466667" y="267.422222" style="fill: #6741ad; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="350.866667" y="267.422222" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="420.111111" y="267.422222" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="489.355556" y="267.422222" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="420.111111" y="222.444444" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="489.355556" y="222.444444" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="558.6" y="267.422222" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="177.755556" y="267.422222" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="247" y="267.422222" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="316.244444" y="267.422222" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="489.355556" y="177.466667" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="558.6" y="222.444444" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="627.844444" y="267.422222" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="247" y="222.444444" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="316.244444" y="222.444444" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="385.488889" y="267.422222" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="316.244444" y="177.466667" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="385.488889" y="222.444444" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="454.733333" y="267.422222" style="fill: #a9b4c3; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+    <g clip-path="url(#pf0056852ab)">
+     <use xlink:href="#C0_0_12f308b627" x="143.133333" y="267.422222" style="fill: #6741ad; fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.8" />
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 91.2 312.4  L 143.133333 312.4  L 143.133333 110  L 91.2 110  z " clip-path="url(#pf0056852ab)" style="fill: #6741ad; opacity: 0.07; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 662.466667 312.4  L 714.4 312.4  L 714.4 110  L 662.466667 110  z " clip-path="url(#pf0056852ab)" style="fill: #6741ad; opacity: 0.07; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 91.2 312.4  L 91.2 110  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_6">
+    <path d="M 91.2 312.4  L 714.4 312.4  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+  </g>
+  <g id="text_10">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="24" y="44.253438" transform="rotate(-0 24 44.253438)">把差 5 分放回随机分组中</text>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="24" y="77.036875" transform="rotate(-0 24 77.036875)">教学数据：甲 6、8、10；乙 1、3、5 分</text>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 10.5px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="24.32" y="360.833125" transform="rotate(-0 24.32 360.833125)">两端着色：2 / 20，双侧 p = 0.10</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 10.5px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="24.32" y="383.803594" transform="rotate(-0 24.32 383.803594)">每点一种分组；固定每组 3 人，穷举 20 种。</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 10.5px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="24.32" y="406.813438" transform="rotate(-0 24.32 406.813438)">参照条件：处理无效、组标签可交换。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf0056852ab">
+   <rect x="91.2" y="110" width="623.2" height="202.4" />
+  </clipPath>
+ </defs>
+</svg>

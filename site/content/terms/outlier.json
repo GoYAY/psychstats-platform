@@ -1,0 +1,142 @@
+{
+  "id": "outlier",
+  "zh": "异常值",
+  "en": "Outlier",
+  "aliases": [],
+  "type": "concept",
+  "level": "basic",
+  "topic": "data-preparation",
+  "status": "public",
+  "summary": "识别相对多数观测明显偏离的值，并判断其来源和影响。",
+  "relations": {
+    "prerequisites": [
+      "data-cleaning",
+      "descriptive-statistics"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": [
+      "multivariate-outlier"
+    ]
+  },
+  "real_question": "散点图里有一个特别高的分数，我应该删除它吗？",
+  "operational_definition": "异常值是在指定变量或变量组合中，按预设规则相对于其余观测明显偏离的记录；标记规则、数据尺度和研究情境都必须明确。",
+  "plain_explanation": "异常值是提醒你检查的标记，不是自动删除的判决；它也是数据清理中需要核查的一类线索。",
+  "problems_solved": [
+    "定位可能的录入或测量问题",
+    "检查结论对极端观测的敏感性"
+  ],
+  "not_for": [
+    "不能只因影响显著性而剔除真实观测"
+  ],
+  "decision_clues": [
+    "区分单变量与多变量异常",
+    "核查原始记录",
+    "比较含与不含该观测的结果"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：这个点来自哪里，影响了什么",
+      "body": "先查看原始记录、计分范围、测量单位和采集背景，再检查它在分布图或散点图中的位置。盒式图的 1.5 倍四分位距规则适合初筛；还应比较按有依据的方案保留或处理该记录时，关键估计和结论是否明显改变，并报告这种敏感性。"
+    },
+    {
+      "heading": "容易混淆：被标记、记录错误和影响很大是一回事吗",
+      "body": "异常值说的是相对其余观测的偏离程度，记录错误说的是数据来源是否有误，影响程度说的是它会怎样改变分析。一个真实极端值未必显著改变结果；一个看起来不极端的组合也可能强烈影响关系。删除必须有依据，并在数据清理日志中记录。"
+    }
+  ],
+  "formula": {
+    "latex": "",
+    "note": "",
+    "verified": false
+  },
+  "quiz": {
+    "question": "盒式图标记一个点为异常值，意味着什么？",
+    "options": [
+      "该记录必定错误",
+      "该记录值得进一步核查",
+      "必须删掉",
+      "变量一定不是正态分布"
+    ],
+    "answer": 1,
+    "explanation": "图形规则提供检查线索，不直接决定删除。",
+    "option_explanations": [
+      "盒式图只按相对位置标记，真实而少见的观测也会被标出。",
+      "正确。标记是核对录入、测量和分析影响的起点，不是删除指令。",
+      "是否删除应依据错误证据和预设规则，而非单个图形标记。",
+      "出现被标记的点并不能单独判定整列数据不服从正态分布。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "advanced_textbook",
+      "title": "高级心理统计",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": {
+    "packages": [],
+    "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+    "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"messy_survey.csv\", stringsAsFactors = FALSE)\nq <- quantile(d$stress, c(.25,.75), na.rm=TRUE)\niqr <- diff(q)\nflag <- !is.na(d$stress) & (d$stress < q[1]-1.5*iqr | d$stress > q[2]+1.5*iqr)\nprint(c(outlier_count=sum(flag), max_stress=max(d$stress,na.rm=TRUE), iqr=iqr))\n",
+    "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(is.numeric(d$score))\nq <- quantile(d$score,c(.25,.75),na.rm=TRUE); iqr <- diff(q)\nd$outlier_flag <- !is.na(d$score) & (d$score < q[1]-1.5*iqr | d$score > q[2]+1.5*iqr)\ntable(d$outlier_flag); d[d$outlier_flag, ]\n# Check entry errors and context; do not delete flagged cases automatically.\n",
+    "assumption_checks": [
+      "区分单变量与多变量异常",
+      "核查原始记录",
+      "比较含与不含该观测的结果"
+    ],
+    "key_output": [
+      "outlier_count",
+      "max_stress",
+      "iqr.75%"
+    ],
+    "interpretation": "本教学数据的 outlier_count=2 表示两条压力记录超过了示例的四分位距筛查界限，max_stress=99 是非缺失记录中的最大值。iqr.75%≈13.175 是四分位距；输出名中的 75% 来自 R 保留的分位数名称，不代表使用了 75% 置信水平。这些结果用于定位记录，下一步应核对来源与合法范围，代码本身没有替你判断是否删除。",
+    "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+    "common_errors": [
+      "不能只因影响显著性而剔除真实观测"
+    ],
+    "verified": true,
+    "validation_report": "logs/r_validation.json"
+  },
+  "verified": true,
+  "candidate_evidence": {
+    "textbook": [
+      {
+        "chunk_id": 17,
+        "page_print": 2,
+        "page_pdf": 15,
+        "path": "第一章",
+        "sim": 0.7401,
+        "snippet": "值（multivariateoutlier）两种。单变量异常值即在某个变量上明显高或者低的值。多变 量异常值指在两个或多个变量上值的奇怪组合，这使得该观测与其他观测明显不同。异常 "
+      },
+      {
+        "chunk_id": 37,
+        "page_print": 18,
+        "page_pdf": 31,
+        "path": "第一章",
+        "sim": 0.6872,
+        "snippet": "x3为离散变量，x4～x10为连续变量，其中x10为因变量。共有100名顾客填写了该问 卷。数据参见文件“1_1data.sav”，异常值检测部分的SPSS语句参见文件“1_2异常"
+      },
+      {
+        "chunk_id": 19,
+        "page_print": 4,
+        "page_pdf": 17,
+        "path": "第一章数据的清理与准备",
+        "sim": 0.6473,
+        "snippet": "X19 图1-3 利用散点图检验双变量异常值 （三）多变量异常值的检测 多变量异常值可以通过计算观测点的马氏距离（MahalanobisD²）进行检测。马氏距 离代表数据的协方差距"
+      }
+    ],
+    "course": [
+      {
+        "chunk_id": 400,
+        "doc": "w04-week4",
+        "page_course": 23,
+        "block_source": "TEXT_LAYER",
+        "xref": null,
+        "numeric_risk": 0,
+        "sim": 0.7022,
+        "snippet": "[讲义 w04-week4 第23页] 异常数据识别---多变量异常值（库克距离）"
+      }
+    ]
+  },
+  "plain_example": "例如，全班反应时大多不到一秒，有一条却写成十秒。它可能是毫秒与秒混用、设备中断，也可能是真实的迟缓反应，处理办法取决于核查结果。"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "t-tests",
+  "unit_id": "t-tests",
+  "title": "两种学习方式的成绩差多少",
+  "question": "采用练习回忆的学生比对照组进步更多吗？",
+  "design": "学习实验教学数据；比较 gain，参考方向为 retrieval 减 control。展示独立 Welch 检验及同一参与者前后测的配对检验。",
+  "variables": "数据列与编码见教学数据和下方 R 脚本；本页指标与完整控制台来自同一次运行。",
+  "script": "examples/r/output_reading/t-tests.R",
+  "data_files": [
+    "examples/data/learning_experiment.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "difference",
+      "label": "组间平均差",
+      "meaning": "练习回忆组减对照组；方向与下面的 t 统计量一致。",
+      "term": "effect-size",
+      "format": ".3f"
+    },
+    {
+      "field_id": "t",
+      "label": "Welch t",
+      "meaning": "差异相对标准误的大小，不是效应本身。",
+      "term": "t-test",
+      "format": ".3f"
+    },
+    {
+      "field_id": "df",
+      "label": "Welch df",
+      "meaning": "异方差折算自由度可以是小数。",
+      "term": "degrees-of-freedom",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_lower",
+      "label": "差值 95% CI 下界",
+      "meaning": "区间对应组间 gain 差，不是各组均值区间。",
+      "term": "confidence-interval",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_upper",
+      "label": "差值 95% CI 上界",
+      "meaning": "宽度与方向一起解释，不显著不等于两组相同。",
+      "term": "confidence-interval",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "组间检验 p",
+      "meaning": "配对检验的 p 是另一个问题，不能替代此值。",
+      "term": "p-value",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "遇到不符合预期的结果",
+      "body": "同一人前后测必须保持 ID 对应；两组各自显著与否不能证明组间变化有差异。"
+    },
+    {
+      "title": "这次结果的解释边界",
+      "body": "学习实验教学数据；比较 gain，参考方向为 retrieval 减 control。展示独立 Welch 检验及同一参与者前后测的配对检验。"
+    }
+  ],
+  "report_template": "练习回忆组与对照组的进步分数平均差为 {difference:.2f}，95% CI [{ci_lower:.2f}, {ci_upper:.2f}]；Welch t({df:.2f}) = {t:.3f}，p = {p:.4g}。此比较不同于合并两组后的前后变化，后者不能替代组间干预效果比较。",
+  "sources": [
+    {
+      "title": "R 官方统计函数文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "effect-size",
+    "t-test",
+    "degrees-of-freedom",
+    "confidence-interval",
+    "p-value"
+  ]
+}

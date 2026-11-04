@@ -1,0 +1,52 @@
+{
+  "id": "sampling-cluster",
+  "unit_id": "sampling",
+  "title": "整班抽样的独立单位",
+  "question": "随机抽十个班再调查全班，精度应该按多少单位算？",
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。不等大班、按规模抽样或班内再抽样需要不同权重与方差公式；不能直接推广本等大一阶段方案。",
+  "variables": "固定种子生成小型教学数据，非真实参与者；不上传数据。",
+  "script": "examples/r/output_reading/sampling-cluster.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "classes",
+      "label": "抽样班级数",
+      "meaning": "班级是简单随机抽样的独立单位，本例全班调查且班级等大。",
+      "term": "nested-data",
+      "format": ".3f"
+    },
+    {
+      "field_id": "se",
+      "label": "设计标准误",
+      "meaning": "来自班级均值的样本方差，并含班级抽样有限总体修正。",
+      "term": "standard-error",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这个变体最重要的边界",
+      "body": "不等大班、按规模抽样或班内再抽样需要不同权重与方差公式；不能直接推广本等大一阶段方案。"
+    },
+    {
+      "title": "如何继续检查",
+      "body": "先明确独立单位、估计目标及比较方向，结合完整参数与区间判断。方法改变需有研究依据并记录，不以显著性作为选择标准。"
+    }
+  ],
+  "report_template": "从 40 个等大班中简单随机抽取 {classes:.0f} 班，共调查 {records:.0f} 名学生，设计加权均值为 {mean:.3f}，SE = {se:.3f}，以班级为单位的 t 近似 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]。",
+  "sources": [
+    {
+      "title": "R 官方统计函数索引",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "nested-data",
+    "standard-error"
+  ]
+}

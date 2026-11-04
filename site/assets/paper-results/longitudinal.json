@@ -1,0 +1,156 @@
+{
+  "case_id": "longitudinal",
+  "covariances": [],
+  "design": "复用四时点教学数据，时间编码 0/1/2/3，随机截距及时间斜率（不相关）。ML 比较有无时间×组别项，人数与记录数分开。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/longitudinal_growth.csv": "1055bca512a10b280c162f77b194e072f8201950dbd78ba8bd5f9797cc0aa9fe"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/longitudinal.R",
+    "script_sha256": "5f0ee9a84610e3229795792d074d1d72a46651f6250d372569aa815841f792de",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "term",
+        "Value",
+        "Std.Error",
+        "DF",
+        "t.value",
+        "p.value"
+      ],
+      "name": "fixed",
+      "rows": [
+        {
+          "DF": 478,
+          "Std.Error": 0.9439644684013668,
+          "Value": 51.53263888888874,
+          "_row": "(Intercept)",
+          "p.value": 1.5509135923910121e-207,
+          "t.value": 54.59171463959959,
+          "term": "(Intercept)"
+        },
+        {
+          "DF": 478,
+          "Std.Error": 0.22754158190296175,
+          "Value": 1.7215277777777807,
+          "_row": "time",
+          "p.value": 1.9959590219473532e-13,
+          "t.value": 7.565772213502277,
+          "term": "time"
+        },
+        {
+          "DF": 158,
+          "Std.Error": 1.2728414295327821,
+          "Value": -2.523547979797966,
+          "_row": "treatmentintervention",
+          "p.value": 0.0491447756291096,
+          "t.value": -1.9826098689483078,
+          "term": "treatmentintervention"
+        },
+        {
+          "DF": 478,
+          "Std.Error": 0.30681700644729104,
+          "Value": 2.6909722222222183,
+          "_row": "time:treatmentintervention",
+          "p.value": 3.141728506880421e-17,
+          "t.value": 8.770609730476293,
+          "term": "time:treatmentintervention"
+        }
+      ],
+      "title": "固定效应完整表"
+    },
+    {
+      "columns": [
+        "model",
+        "call",
+        "Model",
+        "df",
+        "AIC",
+        "BIC",
+        "logLik",
+        "Test",
+        "L.Ratio",
+        "p.value"
+      ],
+      "name": "comparison",
+      "rows": [
+        {
+          "AIC": 4096.948374492638,
+          "BIC": 4123.71718355076,
+          "Model": 1,
+          "Test": "",
+          "_row": "base",
+          "call": "lme.formula(fixed = outcome ~ time + treatment, data = d, random = list(id = nlme::pdDiag(~time)),     method = \"ML\", control = nlme::lmeControl(msMaxIter = 200))",
+          "df": 6,
+          "logLik": -2042.474187246319,
+          "model": "base"
+        },
+        {
+          "AIC": 4034.486380278006,
+          "BIC": 4065.716657512482,
+          "L.Ratio": 64.46199421463189,
+          "Model": 2,
+          "Test": "1 vs 2",
+          "_row": "fit",
+          "call": "lme.formula(fixed = outcome ~ time * treatment, data = d, random = list(id = nlme::pdDiag(~time)),     method = \"ML\", control = nlme::lmeControl(msMaxIter = 200))",
+          "df": 7,
+          "logLik": -2010.243190139003,
+          "model": "fit",
+          "p.value": 9.841244529250717e-16
+        }
+      ],
+      "title": "ML 模型比较"
+    },
+    {
+      "column_labels": {
+        "comparison_p": "ML 嵌套比较 p",
+        "interaction": "时间×组别系数",
+        "observations": "observations",
+        "p": "p",
+        "people": "参与者人数"
+      },
+      "columns": [
+        "analysis",
+        "interaction",
+        "comparison_p",
+        "people",
+        "p",
+        "observations"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "连续追踪的时间交互怎么看",
+          "comparison_p": 9.841244529250717e-16,
+          "interaction": 2.6909722222222183,
+          "observations": 640,
+          "p": 3.141728506880421e-17,
+          "people": 160
+        }
+      ],
+      "source_fields": [
+        {
+          "comparison_p": "comparison_p",
+          "interaction": "interaction",
+          "observations": "observations",
+          "p": "p",
+          "people": "people"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "连续追踪的时间交互怎么看",
+  "valid": true,
+  "variances": []
+}

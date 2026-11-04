@@ -1,0 +1,60 @@
+{
+  "id": "anova",
+  "unit_id": "anova",
+  "title": "三种学习安排的成绩是否不同",
+  "question": "三种复习方式，哪一种更有帮助？",
+  "design": "固定种子生成三组教学数据，比较三组增益。总体 F 检验和 Tukey 成对比较分开阅读；仅限该完整的三组比较家族。",
+  "variables": "三组各 60 人的教学数据由代码生成，非真实参与者。前测、后测与增益（后测减前测）编码见代码。",
+  "script": "examples/r/output_reading/anova.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "F",
+      "label": "总体 F",
+      "meaning": "比较组间均值差异与组内变异，不能指出哪两组不同。",
+      "term": "anova",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "总体检验 p",
+      "meaning": "针对三组总体均值相等，不是每对比较的 p。",
+      "term": "p-value",
+      "format": ".4g"
+    },
+    {
+      "field_id": "eta_squared",
+      "label": "η²",
+      "meaning": "教学样本中组别解释的增益变异比例，不是提升分数的百分比。",
+      "term": "effect-size",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这些结果最容易误读的地方",
+      "body": "独立性来自设计，残差图用于检查方差与异常；异方差时考虑 Welch 及相匹配的成对方法，不直接接本 Tukey 表。"
+    },
+    {
+      "title": "如果没有发现明确证据",
+      "body": "先回到研究问题和估计精度，结合区间、有效样本、数据质量及模型条件判断。证据不足不等于没有作用；不反复更换方法、删样本或放宽阈值来追求显著。"
+    }
+  ],
+  "report_template": "三组学习增益的单因素方差分析得到 F({df1:.0f}, {df2:.0f}) = {F:.3f}，p = {p:.4g}，η² = {eta_squared:.3f}。具体组间差异见 Tukey 同一家族调整后的区间和 p 值；总体检验本身不定位组对。",
+  "sources": [
+    {
+      "title": "R 官方 aov 文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/aov.html"
+    }
+  ],
+  "related_terms": [
+    "anova",
+    "p-value",
+    "effect-size"
+  ]
+}

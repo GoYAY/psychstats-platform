@@ -1,0 +1,8 @@
+source("_common.R")
+d <- latent_teaching(500,4304); d$group <- rep(c("A","B"),each=250)
+free <- lavaan::sem(paste(measurement_model,'f3 ~ c(a1,a2)*f1+b*f2',sep="\n"),d,group="group",group.equal=c("loadings","intercepts"))
+equal <- lavaan::sem(paste(measurement_model,'f3 ~ c(a,a)*f1+b*f2',sep="\n"),d,group="group",group.equal=c("loadings","intercepts"))
+check_sem(free); check_sem(equal)
+comparison <- lavaan::lavTestLRT(free,equal); print(comparison); print(summary(free,standardized=TRUE))
+pe <- lavaan::parameterEstimates(free)
+finish(c(group_a=pe$est[pe$label=="a1"],group_b=pe$est[pe$label=="a2"],difference=pe$est[pe$label=="a1"]-pe$est[pe$label=="a2"],comparison_p=comparison$"Pr(>Chisq)"[2]),list(comparison=data.frame(model=rownames(comparison),comparison),parameters=pe))

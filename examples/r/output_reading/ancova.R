@@ -1,0 +1,13 @@
+source("_common.R")
+set.seed(4110)
+d <- data.frame(id=seq_len(180),condition=rep(c("control","practice","combined"),each=60),pre_score=rnorm(180,65,8))
+d$post_score <- 20+0.75*d$pre_score+rep(c(0,4,7),each=60)+rnorm(180,0,7)
+d$gain <- d$post_score-d$pre_score
+d$condition <- factor(d$condition)
+fit <- lm(post_score~pre_score+condition,d); print(summary(fit))
+base <- lm(post_score~pre_score,d)
+test <- anova(base,fit); print(test)
+interaction <- anova(fit,lm(post_score~pre_score*condition,d)); print(interaction)
+newdata <- data.frame(pre_score=mean(d$pre_score),condition=factor(levels(d$condition),levels=levels(d$condition)))
+adjusted_means <- cbind(newdata,as.data.frame(predict(fit,newdata,interval="confidence"))); print(adjusted_means)
+finish(c(F=test$F[2],df1=test$Df[2],df2=df.residual(fit),p=test$"Pr(>F)"[2],slope=unname(coef(fit)["pre_score"]),interaction_p=interaction$"Pr(>F)"[2]),list(coefficients=data.frame(term=rownames(coef(summary(fit))),coef(summary(fit)),check.names=FALSE),adjusted_means=adjusted_means))

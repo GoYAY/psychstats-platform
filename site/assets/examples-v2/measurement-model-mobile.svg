@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="609pt" viewBox="0 0 360 609" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">测量模型规定题目与潜在焦虑的联系。。误差只以标签提示，未绘完整参数图；这不检验焦虑与睡眠的因果关系。</desc><title id="title">焦虑如何由三题测量</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:48.886486</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 609  L 360 609  L 360 0  L 0 0  L 0 609  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 126.210724 245.905464  Q 173.501709 183.622749 220.048978 122.319516  " clip-path="url(#p7fb3f4aee3)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 215.234848 124.691045  L 220.048978 122.319516  L 219.057724 127.593737  z " clip-path="url(#p7fb3f4aee3)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 126.998138 247.5  Q 173.500286 247.5 218.772595 247.5  " clip-path="url(#p7fb3f4aee3)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 213.972595 245.1  L 218.772595 247.5  L 213.972595 249.9  z " clip-path="url(#p7fb3f4aee3)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 126.210724 249.094536  Q 173.501709 311.377251 220.048978 372.680484  " clip-path="url(#p7fb3f4aee3)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 219.057724 367.406263  L 220.048978 372.680484  L 215.234848 370.308955  z " clip-path="url(#p7fb3f4aee3)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 89 223.5  C 96.956093 223.5 104.587396 226.028791 110.213203 230.529437  C 115.839011 235.030083 119 241.135126 119 247.5  C 119 253.864874 115.839011 259.969917 110.213203 264.470563  C 104.587396 268.971209 96.956093 271.5 89 271.5  C 81.043907 271.5 73.412604 268.971209 67.786797 264.470563  C 62.160989 259.969917 59 253.864874 59 247.5  C 59 241.135126 62.160989 235.030083 67.786797 230.529437  C 73.412604 226.028791 81.043907 223.5 89 223.5  z " clip-path="url(#p7fb3f4aee3)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 237 80.75  L 279 80.75  Q 288 80.75 288 89.75  L 288 149.75  Q 288 158.75 279 158.75  L 237 158.75  Q 228 158.75 228 149.75  L 228 89.75  Q 228 80.75 237 80.75  z " clip-path="url(#p7fb3f4aee3)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 237 208.5  L 279 208.5  Q 288 208.5 288 217.5  L 288 277.5  Q 288 286.5 279 286.5  L 237 286.5  Q 228 286.5 228 277.5  L 228 217.5  Q 228 208.5 237 208.5  z " clip-path="url(#p7fb3f4aee3)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 237 336.25  L 279 336.25  Q 288 336.25 288 345.25  L 288 405.25  Q 288 414.25 279 414.25  L 237 414.25  Q 228 414.25 228 405.25  L 228 345.25  Q 228 336.25 237 336.25  z " clip-path="url(#p7fb3f4aee3)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="89" y="251.015742" transform="rotate(-0 89 251.015742)">焦虑</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 110.063867)">担忧题</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 123.078242)">（含误</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(246 136.302617)">差）</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 237.813867)">紧张题</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 250.828242)">（含误</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(246 264.052617)">差）</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 365.640742)">难放松</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 378.655117)">题（含</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(240 391.879492)">误差）</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="523.62293" transform="rotate(-0 20 523.62293)">1. 焦虑 → 担忧题（含误差）：载荷</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="551.62293" transform="rotate(-0 20 551.62293)">2. 焦虑 → 紧张题（含误差）：载荷</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="579.62293" transform="rotate(-0 20 579.62293)">3. 焦虑 → 难放松题（含误差）：载荷</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7fb3f4aee3">
+   <rect x="0" y="0" width="360" height="609" />
+  </clipPath>
+ </defs>
+</svg>

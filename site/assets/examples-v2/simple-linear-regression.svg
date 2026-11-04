@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="760pt" height="403pt" viewBox="0 0 760 403" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">用一条直线概括睡眠与焦虑的平均关联，而个体仍有偏离。。教学合成点；图中的下降趋势不是睡眠导致焦虑下降的证据。</desc><title id="title">睡眠与焦虑的配对趋势</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:03:37.942358</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 403  L 760 403  L 760 0  L 0 0  L 0 403  z " style="fill: none" />
+  </g>
+  <g id="data-panel-0">
+   <g id="patch_2">
+    <path d="M 76 312  L 729.6 312  L 729.6 65  L 76 65  L 76 312  z " style="fill: none" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="207.568831" y="328.744141" transform="rotate(-0 207.568831 328.744141)">5.6</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="343.381818" y="328.744141" transform="rotate(-0 343.381818 328.744141)">6.4</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="479.194805" y="328.744141" transform="rotate(-0 479.194805 328.744141)">7.2</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4" />
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="615.007792" y="328.744141" transform="rotate(-0 615.007792 328.744141)">8.0</text>
+     </g>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #303b4b" x="402.8" y="354.763906" transform="rotate(-0 402.8 354.763906)">睡眠（小时）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <path d="M 76 288.096774  L 729.6 288.096774  " clip-path="url(#pcb87a45b66)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_6" />
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="69" y="292.968845" transform="rotate(-0 69 292.968845)">8</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7">
+      <path d="M 76 208.419355  L 729.6 208.419355  " clip-path="url(#pcb87a45b66)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_8" />
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="69" y="213.291425" transform="rotate(-0 69 213.291425)">12</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9">
+      <path d="M 76 128.741935  L 729.6 128.741935  " clip-path="url(#pcb87a45b66)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_10" />
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="69" y="133.614006" transform="rotate(-0 69 133.614006)">16</text>
+     </g>
+    </g>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="madd11b11b1" d="M 0 3.041381  C 0.806584 3.041381 1.58024 2.720922 2.150581 2.150581  C 2.720922 1.58024 3.041381 0.806584 3.041381 0  C 3.041381 -0.806584 2.720922 -1.58024 2.150581 -2.150581  C 1.58024 -2.720922 0.806584 -3.041381 0 -3.041381  C -0.806584 -3.041381 -1.58024 -2.720922 -2.150581 -2.150581  C -2.720922 -1.58024 -3.041381 -0.806584 -3.041381 0  C -3.041381 0.806584 -2.720922 1.58024 -2.150581 2.150581  C -1.58024 2.720922 -0.806584 3.041381 0 3.041381  z " style="stroke: #8a5200; stroke-opacity: 0.62; stroke-width: 0.8" />
+    </defs>
+    <g clip-path="url(#pcb87a45b66)">
+     <use xlink:href="#madd11b11b1" x="105.709091" y="88.903226" style="fill: #8a5200; fill-opacity: 0.62; stroke: #8a5200; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#madd11b11b1" x="190.592208" y="128.741935" style="fill: #8a5200; fill-opacity: 0.62; stroke: #8a5200; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#madd11b11b1" x="275.475325" y="108.822581" style="fill: #8a5200; fill-opacity: 0.62; stroke: #8a5200; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#madd11b11b1" x="360.358442" y="188.5" style="fill: #8a5200; fill-opacity: 0.62; stroke: #8a5200; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#madd11b11b1" x="445.241558" y="168.580645" style="fill: #8a5200; fill-opacity: 0.62; stroke: #8a5200; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#madd11b11b1" x="530.124675" y="248.258065" style="fill: #8a5200; fill-opacity: 0.62; stroke: #8a5200; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#madd11b11b1" x="615.007792" y="228.33871" style="fill: #8a5200; fill-opacity: 0.62; stroke: #8a5200; stroke-opacity: 0.62; stroke-width: 0.8" />
+     <use xlink:href="#madd11b11b1" x="699.890909" y="288.096774" style="fill: #8a5200; fill-opacity: 0.62; stroke: #8a5200; stroke-opacity: 0.62; stroke-width: 0.8" />
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 76 312  L 76 65  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_4">
+    <path d="M 76 312  L 729.6 312  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="76" y="47" transform="rotate(-0 76 47)">焦虑（分）</text>
+   </g>
+  </g>
+  <g id="legend-swatch-0">
+   <defs>
+    <path id="m9cf4e0689b" d="M 0 2.5  C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767  C 2.236584 1.29895 2.5 0.663008 2.5 0  C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767  C 1.29895 -2.236584 0.663008 -2.5 0 -2.5  C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767  C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0  C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767  C -1.29895 2.236584 -0.663008 2.5 0 2.5  z " style="stroke: #8a5200; stroke-opacity: 0.62" />
+   </defs>
+   <g>
+    <use xlink:href="#m9cf4e0689b" x="76" y="375" style="fill: #8a5200; fill-opacity: 0.62; stroke: #8a5200; stroke-opacity: 0.62" />
+    <use xlink:href="#m9cf4e0689b" x="98.8" y="375" style="fill: #8a5200; fill-opacity: 0.62; stroke: #8a5200; stroke-opacity: 0.62" />
+   </g>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="114" y="378.036875" transform="rotate(-0 114 378.036875)">学生配对记录</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pcb87a45b66">
+   <rect x="76" y="65" width="653.6" height="247" />
+  </clipPath>
+ </defs>
+</svg>

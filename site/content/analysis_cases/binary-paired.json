@@ -1,0 +1,52 @@
+{
+  "id": "binary-paired",
+  "unit_id": "proportions",
+  "title": "同一批人前后分类的变化",
+  "question": "课程前后，同一批人是否愿意求助有变化吗？",
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。不能将这张表当两组独立样本 Fisher；不一致配对很少时应预先考虑精确方法。",
+  "variables": "固定种子生成小型教学数据，非真实参与者；不上传数据。",
+  "script": "examples/r/output_reading/binary-paired.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "discordant",
+      "label": "前后不一致人数",
+      "meaning": "McNemar 比较改变方向，主要信息来自不一致配对，不是全体人数。",
+      "term": "repeated-measures",
+      "format": ".3f"
+    },
+    {
+      "field_id": "difference",
+      "label": "后−前比例差",
+      "meaning": "同一批人的描述变化；其区间需配对方法而非独立比例差。",
+      "term": "effect-size",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这个变体最重要的边界",
+      "body": "不能将这张表当两组独立样本 Fisher；不一致配对很少时应预先考虑精确方法。"
+    },
+    {
+      "title": "如何继续检查",
+      "body": "先明确独立单位、估计目标及比较方向，结合完整参数与区间判断。方法改变需有研究依据并记录，不以显著性作为选择标准。"
+    }
+  ],
+  "report_template": "100 人教学配对数据的求助意愿后−前比例差为 {difference:.3f}，不一致配对 {discordant:.0f} 人；连续性校正 McNemar p = {p:.4g}，对应二项精确比较 p = {exact_p:.4g}。是否改变依据同人配对结构分析。",
+  "sources": [
+    {
+      "title": "R 官方统计函数索引",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "repeated-measures",
+    "effect-size"
+  ]
+}

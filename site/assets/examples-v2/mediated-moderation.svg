@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="539pt" viewBox="0 0 760 539" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">例子提出训练与自信的联系随压力变化，进而关联坚持。。虚线标示需要检验的调节设定；具体模型应结合路径及交互参数判断。</desc><title id="title">调节线索经过自信解释</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:49.569847</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 539  L 760 539  L 760 0  L 0 0  L 0 539  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 230.500549 256.75  Q 265.001412 256.75 298.272436 256.75  " clip-path="url(#pa745682103)" style="fill: none; opacity: 0.65; stroke: #953970; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 293.472436 254.35  L 298.272436 256.75  L 293.472436 259.15  z " clip-path="url(#pa745682103)" style="fill: #953970; opacity: 0.65; stroke: #953970; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 460.500549 256.75  Q 495.001412 256.75 528.272436 256.75  " clip-path="url(#pa745682103)" style="fill: none; opacity: 0.65; stroke: #953970; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 523.472436 254.35  L 528.272436 256.75  L 523.472436 259.15  z " clip-path="url(#pa745682103)" style="fill: #953970; opacity: 0.65; stroke: #953970; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="moderates-edge-0">
+    <path d="M 265 126.497795  Q 265 190.62419 265 253.520747  " clip-path="url(#pa745682103)" style="fill: none; opacity: 0.65; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #953970; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 267.4 248.720747  L 265 253.520747  L 262.6 248.720747  z " clip-path="url(#pa745682103)" style="fill: #953970; opacity: 0.65; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #953970; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 86.5 232.75  L 213.5 232.75  Q 222.5 232.75 222.5 241.75  L 222.5 271.75  Q 222.5 280.75 213.5 280.75  L 86.5 280.75  Q 77.5 280.75 77.5 271.75  L 77.5 241.75  Q 77.5 232.75 86.5 232.75  z " clip-path="url(#pa745682103)" style="fill: #953970; fill-opacity: 0.09; stroke: #953970; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 316.5 232.75  L 443.5 232.75  Q 452.5 232.75 452.5 241.75  L 452.5 271.75  Q 452.5 280.75 443.5 280.75  L 316.5 280.75  Q 307.5 280.75 307.5 271.75  L 307.5 241.75  Q 307.5 232.75 316.5 232.75  z " clip-path="url(#pa745682103)" style="fill: #953970; fill-opacity: 0.09; stroke: #953970; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 546.5 232.75  L 673.5 232.75  Q 682.5 232.75 682.5 241.75  L 682.5 271.75  Q 682.5 280.75 673.5 280.75  L 546.5 280.75  Q 537.5 280.75 537.5 271.75  L 537.5 241.75  Q 537.5 232.75 546.5 232.75  z " clip-path="url(#pa745682103)" style="fill: #953970; fill-opacity: 0.09; stroke: #953970; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 201.5 70.5  L 328.5 70.5  Q 337.5 70.5 337.5 79.5  L 337.5 109.5  Q 337.5 118.5 328.5 118.5  L 201.5 118.5  Q 192.5 118.5 192.5 109.5  L 192.5 79.5  Q 192.5 70.5 201.5 70.5  z " clip-path="url(#pa745682103)" style="fill: #953970; fill-opacity: 0.09; stroke: #953970; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="150" y="260.260117" transform="rotate(-0 150 260.260117)">学习训练</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="380" y="260.224492" transform="rotate(-0 380 260.224492)">自信提升</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="610" y="260.24793" transform="rotate(-0 610 260.24793)">坚持学习</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="265" y="97.963242" transform="rotate(-0 265 97.963242)">压力</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="453.801992" transform="rotate(-0 20 453.801992)">1. 学习训练 → 自信提升：训练联系</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="481.760742" transform="rotate(-0 20 481.760742)">2. 自信提升 → 坚持学习：后续联系</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="509.801992" transform="rotate(-0 20 509.801992)">3. 压力 ↓ 学习训练 → 自信提升：检验调节</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa745682103">
+   <rect x="0" y="0" width="760" height="539" />
+  </clipPath>
+ </defs>
+</svg>

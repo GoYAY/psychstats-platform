@@ -1,0 +1,1360 @@
+{
+  "describe": {
+    "report_template": "共获得 {n:.0f} 份有效压力记录，平均压力分数为 {mean:.2f}（SD = {sd:.2f}），中位数为 {median:.2f}，四分位距为 {iqr:.2f}。",
+    "sources": {
+      "n": {
+        "vector": "n mean sd median IQR",
+        "column": "n"
+      },
+      "mean": {
+        "vector": "n mean sd median IQR",
+        "column": "mean"
+      },
+      "sd": {
+        "vector": "n mean sd median IQR",
+        "column": "sd"
+      },
+      "median": {
+        "vector": "n mean sd median IQR",
+        "column": "median"
+      },
+      "iqr": {
+        "vector": "n mean sd median IQR",
+        "column": "IQR"
+      }
+    },
+    "meanings": {
+      "n": "有可用压力分数的参与者数。",
+      "sd": "描述参与者压力分数彼此相差多少；数值越大，分数越分散。",
+      "iqr": "把分数从低到高排好，中间约一半参与者的分数所跨越的范围。"
+    }
+  },
+  "linear-simple": {
+    "report_template": "以压力分数预测幸福感，简单线性回归的截距为 {intercept:.3f}，压力系数为 {slope:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，R² = {r_squared:.3f}。压力分数与模型预测的平均幸福感呈负向关系。",
+    "sources": {
+      "intercept": {
+        "pattern": "^\\(Intercept\\)\\s+(\\S+)",
+        "location": "summary(lm) → Coefficients → (Intercept) 行 → Estimate 列"
+      },
+      "slope": {
+        "pattern": "^stress\\s+(\\S+)",
+        "location": "summary(lm) → Coefficients → stress 行 → Estimate 列"
+      }
+    }
+  },
+  "ancova": {
+    "report_template": "控制前测分数后，组别整体检验 F({df1:.0f}, {df2:.0f}) = {F:.3f}，p = {p:.4g}。共同前测斜率为 {slope:.3f}，加入组别×前测项的模型比较 p = {interaction_p:.4g}。",
+    "sources": {
+      "slope": {
+        "pattern": "^pre_score\\s+(\\S+)",
+        "location": "Coefficients → pre_score 行 → Estimate 列"
+      },
+      "F": {
+        "pattern": "^2\\s+176\\s+\\S+\\s+2\\s+\\S+\\s+(\\S+)",
+        "location": "第一个 Analysis of Variance Table → 模型 2 行 → F 列"
+      },
+      "interaction_p": {
+        "pattern": "^2\\s+174\\s+\\S+\\s+2\\s+\\S+\\s+\\S+\\s+(\\S+)",
+        "location": "第二个 Analysis of Variance Table → 模型 2 行 → Pr(>F) 列"
+      }
+    },
+    "meanings": {
+      "F": "在共同基线斜率的模型中，检验加入组别后增加的解释量。"
+    }
+  },
+  "anova": {
+    "report_template": "三组学习增益的单因素方差分析得到 F({df1:.0f}, {df2:.0f}) = {F:.3f}，p = {p:.4g}，η² = {eta_squared:.3f}。组对比较采用 Tukey 调整，具体均值差和同时区间见表。",
+    "sources": {
+      "F": {
+        "pattern": "^condition\\s+\\S+\\s+\\S+\\s+\\S+\\s+(\\S+)",
+        "location": "ANOVA → condition 行 → F value 列"
+      },
+      "p": {
+        "pattern": "^condition\\s+\\S+\\s+\\S+\\s+\\S+\\s+\\S+\\s+(\\S+)",
+        "location": "ANOVA → condition 行 → Pr(>F) 列"
+      },
+      "eta_squared": {
+        "location": "本例脚本 → condition 的 Sum Sq ÷ 总 Sum Sq"
+      }
+    },
+    "meanings": {
+      "p": "检验三组总体均值相等这一假设。",
+      "eta_squared": "教学样本中组别解释的增益变异比例。"
+    }
+  },
+  "binary-paired": {
+    "report_template": "100 人配对数据的求助意愿后−前比例差为 {difference:.3f}，不一致配对 {discordant:.0f} 人；连续性校正 McNemar p = {p:.4g}，二项精确比较 p = {exact_p:.4g}。",
+    "sources": {
+      "discordant": {
+        "pattern": "number of trials = (\\S+),",
+        "location": "Exact binomial test → number of trials"
+      },
+      "difference": {
+        "location": "paired_counts → (前 0 后 1 人数 − 前 1 后 0 人数) ÷ 100"
+      }
+    },
+    "meanings": {
+      "discordant": "McNemar 检验比较改变方向，主要信息来自前后回答不同的配对。",
+      "difference": "同一批人的比例变化；区间使用配对比例方法。"
+    }
+  },
+  "categorical-gof": {
+    "report_template": "180 人的分类计数相对预设 0.25/0.50/0.25 分布的拟合优度检验为 χ²({df:.0f}) = {chi_square:.3f}，p = {p:.4g}，Cohen w = {w:.3f}。",
+    "sources": {
+      "chi_square": {
+        "pattern": "X-squared = (\\S+),",
+        "location": "Chi-squared test → X-squared"
+      },
+      "df": {
+        "pattern": "df = (\\S+),",
+        "location": "Chi-squared test → df"
+      },
+      "p": {
+        "pattern": "p-value = (\\S+)",
+        "location": "Chi-squared test → p-value"
+      },
+      "w": {
+        "location": "本例脚本 → sqrt(χ² ÷ n)"
+      }
+    },
+    "meanings": {
+      "chi_square": "汇总观察计数相对于预设期望计数的标准化偏离。",
+      "w": "按预设类别概率计算的总体偏离幅度。"
+    }
+  },
+  "categorical": {
+    "report_template": "列联表的 Pearson χ²({df:.0f}) = {chi_squared:.3f}，p = {p:.4g}，最小期望频数为 {min_expected:.2f}；Fisher 精确检验 p = {fisher_p:.4g}。",
+    "sources": {
+      "chi_squared": {
+        "pattern": "X-squared = (\\S+),",
+        "location": "Pearson's Chi-squared test → X-squared"
+      },
+      "min_expected": {
+        "location": "expected → Freq 列的最小值"
+      },
+      "odds_ratio": {
+        "pattern": "odds ratio\\s*\\n\\s*(\\S+)",
+        "location": "Fisher's Exact Test → sample estimates → odds ratio"
+      }
+    },
+    "meanings": {
+      "chi_squared": "衡量观察频数相对于独立性假设下期望频数的偏离。"
+    }
+  },
+  "cfa": {
+    "report_template": "预设三因子有序题目模型采用 WLSMV，scaled χ²({df:.0f}) = {chi_squared:.3f}，p = {p:.4g}，scaled CFI = {cfi:.3f}，scaled RMSEA = {rmsea:.3f}，SRMR = {srmr:.3f}。",
+    "sources": {
+      "cfi": {
+        "table": "fit",
+        "where": {
+          "index": "cfi.scaled"
+        },
+        "column": "value"
+      },
+      "rmsea": {
+        "table": "fit",
+        "where": {
+          "index": "rmsea.scaled"
+        },
+        "column": "value"
+      },
+      "srmr": {
+        "table": "fit",
+        "where": {
+          "index": "srmr"
+        },
+        "column": "value"
+      }
+    }
+  },
+  "conditional-mediation": {
+    "report_template": "第一段受 W 调节的模型得到有调节中介指数 {index:.3f}，300 次逐人百分位 Bootstrap 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]；中心化 W=0 时的间接关联为 {at_zero:.3f}。",
+    "sources": {
+      "index": {
+        "table": "conditional_effects",
+        "where": {
+          "effect": "index"
+        },
+        "column": "estimate"
+      },
+      "at_zero": {
+        "table": "conditional_effects",
+        "where": {
+          "effect": "at_zero"
+        },
+        "column": "estimate"
+      },
+      "ci_lower": {
+        "table": "conditional_effects",
+        "where": {
+          "effect": "index"
+        },
+        "column": "ci_lower"
+      }
+    },
+    "meanings": {
+      "at_zero": "中心化 W=0 时，模型估计的条件间接关联。"
+    }
+  },
+  "contrasts": {
+    "report_template": "按 1、−0.5、−0.5 的预定权重，控制组相对于两训练组等权平均的增益差为 {difference:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，t({df:.0f}) = {t:.3f}，p = {p:.4g}。",
+    "sources": {
+      "difference": {
+        "vector": "estimate SE t df p",
+        "column": "estimate"
+      },
+      "se": {
+        "vector": "estimate SE t df p",
+        "column": "SE"
+      },
+      "p": {
+        "vector": "estimate SE t df p",
+        "column": "p"
+      }
+    },
+    "meanings": {
+      "se": "结合各均值估计的协方差和对比权重计算对比的标准误。"
+    }
+  },
+  "correlation-types": {
+    "report_template": "控制年龄的线性偏相关为 {partial_r:.3f}，t 检验 df = {df:.0f}，p = {partial_p:.4g}。未控制年龄的 Kendall τ = {kendall_tau:.3f}；二元回答示例的点二列 r = {point_biserial:.3f}、φ = {phi:.3f}。",
+    "sources": {
+      "partial_r": {
+        "vector": "partial_r t df p",
+        "column": "partial_r"
+      },
+      "kendall_tau": {
+        "pattern": "tau\\s*\\n\\s*(\\S+)",
+        "location": "Kendall's rank correlation → sample estimates → tau"
+      },
+      "phi": {
+        "vector": "point_biserial phi",
+        "column": "phi"
+      }
+    }
+  },
+  "correlation": {
+    "report_template": "压力与幸福感的 Pearson 相关为 r = {r:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，p = {p:.4g}（n = {n:.0f}）；Spearman 秩相关为 ρ = {rho:.3f}。",
+    "sources": {
+      "r": {
+        "pattern": "cor\\s*\\n\\s*(\\S+)",
+        "location": "Pearson → sample estimates → cor"
+      },
+      "rho": {
+        "pattern": "rho\\s*\\n\\s*(\\S+)",
+        "location": "Spearman → sample estimates → rho"
+      },
+      "ci_lower": {
+        "pattern": "95 percent confidence interval:\\s*\\n\\s*(\\S+)",
+        "location": "Pearson → 95 percent confidence interval → 左端点"
+      },
+      "ci_upper": {
+        "pattern": "95 percent confidence interval:\\s*\\n\\s*\\S+\\s+(\\S+)",
+        "location": "Pearson → 95 percent confidence interval → 右端点"
+      },
+      "p": {
+        "pattern": "p-value (< 2.2e-16)",
+        "location": "Pearson → p-value；软件按精度显示上界"
+      }
+    },
+    "meanings": {
+      "rho": "同一数据的秩关联，反映两变量排序的一致程度。"
+    }
+  },
+  "design-invalid": {
+    "sources": {
+      "classes": {
+        "location": "class/condition 表 → 不同班级数"
+      },
+      "records": {
+        "location": "本例脚本 → 原始教学数据行数"
+      }
+    },
+    "meanings": {
+      "classes": "干预分配在班级层面；本例只有两个独立分配单位。"
+    }
+  },
+  "diagnostics": {
+    "report_template": "保留全部记录时，压力系数为 {beta:.3f}，HC3 SE = {hc3_se:.3f}，渐近正态 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]。最大 Cook 距离为 {max_cook:.3f}；删除该记录后的敏感性系数为 {sensitivity_beta:.3f}。",
+    "sources": {
+      "max_cook": {
+        "table": "influential",
+        "where": {
+          "row": 351
+        },
+        "column": "cook"
+      },
+      "hc3_se": {
+        "vector": "max_Cook row.351 HC3_SE",
+        "column": "HC3_SE"
+      },
+      "sensitivity_beta": {
+        "pattern": "^stress\\s+(\\S+)",
+        "occurrence": 1,
+        "location": "第二个 Coefficients → 删除最大 Cook 距离记录的模型 → stress → Estimate"
+      }
+    }
+  },
+  "discriminant": {
+    "report_template": "留一交叉验证的 LDA 准确率为 {lda_accuracy:.3f}，QDA 为 {qda_accuracy:.3f}；LDA 平均最大后验分类概率为 {mean_posterior:.3f}。",
+    "sources": {
+      "lda_accuracy": {
+        "location": "第一个 truth × predicted 列联表 → 对角线人数之和 ÷ 总人数"
+      },
+      "qda_accuracy": {
+        "location": "第二个 truth × predicted 列联表 → 对角线人数之和 ÷ 总人数"
+      },
+      "mean_posterior": {
+        "location": "本例脚本 → LDA 各人最大后验概率的平均值"
+      }
+    },
+    "meanings": {
+      "mean_posterior": "模型内部分类确信度，计算依赖先验概率和分布假设。"
+    }
+  },
+  "efa": {
+    "report_template": "五级题目采用多分相关矩阵、minres 提取与 oblimin 斜交旋转。三因子解的相关残差 RMSR = {rmsr:.3f}，最低共同度 {min_communality:.3f}；20 次平行分析建议 {parallel_factors:.0f} 个因子。",
+    "sources": {
+      "kmo": {
+        "pattern": "Overall MSA =\\s+(\\S+)",
+        "location": "psych::KMO → Overall MSA"
+      },
+      "bartlett_p": {
+        "pattern": "\\$p.value\\s*\\n\\[1\\] (\\S+)",
+        "location": "Bartlett 输出 → $p.value"
+      },
+      "parallel_factors": {
+        "pattern": "number of factors =\\s+(\\S+)",
+        "location": "Parallel analysis → number of factors"
+      },
+      "min_communality": {
+        "location": "本例脚本 → 三因子解 communality 的最小值"
+      },
+      "rmsr": {
+        "pattern": "RMSR\\) is\\s+(\\S+)",
+        "location": "Factor Analysis → root mean square of residuals (RMSR)"
+      }
+    },
+    "meanings": {
+      "kmo": "共同方差信号相对于偏相关的概括指标，结合逐题检查阅读。",
+      "parallel_factors": "比较观察特征值与随机参照；本例用20次重复演示操作，正式分析需增加重复次数并检查稳定性。"
+    }
+  },
+  "equivalence": {
+    "report_template": "以预设 ±{margin:.0f} 分为等效界值，两组差为 {difference:.3f}，90% CI [{ci_lower:.3f}, {ci_upper:.3f}]；两个单侧检验的较大 p = {tost_p:.4g}，本例等效检验未达到 0.05 的显著性水平。",
+    "sources": {
+      "tost_p": {
+        "pattern": "p-value = (\\S+)",
+        "location": "第一个 Welch 单侧检验 → p-value；与第二个 p 比较取较大者"
+      },
+      "ci_lower": {
+        "pattern": "90 percent confidence interval:\\s*\\n\\s*(\\S+)",
+        "location": "第三个 Welch 输出 → 90 percent confidence interval → 左端点"
+      },
+      "ci_upper": {
+        "pattern": "90 percent confidence interval:\\s*\\n\\s*\\S+\\s+(\\S+)",
+        "location": "第三个 Welch 输出 → 90 percent confidence interval → 右端点"
+      }
+    },
+    "meanings": {
+      "ci_lower": "90%双侧区间与显著性水平0.05的两个单侧等效检验对应。"
+    }
+  },
+  "factorial-blocks": {
+    "report_template": "平衡 2×2 设计的训练×反馈交互 F({df1:.0f}, {df2:.0f}) = {interaction_F:.3f}，p = {interaction_p:.4g}；八区组三条件的区组调整比较 p = {block_p:.4g}。",
+    "sources": {
+      "interaction_F": {
+        "table": "factorial",
+        "where": {
+          "term": "training:feedback"
+        },
+        "column": "F.value"
+      },
+      "block_p": {
+        "table": "blocked",
+        "where": {
+          "term": "condition"
+        },
+        "column": "Pr..F."
+      }
+    },
+    "meanings": {
+      "interaction_F": "在平衡2×2设计中，检验训练差异是否随反馈条件变化。"
+    }
+  },
+  "feedback": {
+    "report_template": "在包含方程专属外生变量与排除约束的同时方程模型中，双向路径估计为 {a:.3f} 与 {b:.3f}，反馈乘积为 {feedback_product:.3f}，模型 df = {df:.0f}。",
+    "sources": {
+      "a": {
+        "table": "parameters",
+        "where": {
+          "label": "a"
+        },
+        "column": "est"
+      },
+      "b": {
+        "table": "parameters",
+        "where": {
+          "label": "b"
+        },
+        "column": "est"
+      },
+      "feedback_product": {
+        "location": "parameters → a 与 b 两条估计路径相乘"
+      }
+    },
+    "meanings": {
+      "a": "模型根据 z 对压力无直接作用等排除约束识别反馈路径。",
+      "feedback_product": "本两变量线性反馈模型中，路径乘积绝对值小于1对应稳定性条件；识别另有约束要求。"
+    }
+  },
+  "friedman-sign": {
+    "report_template": "35 人三条件评分的 Friedman χ²({df:.0f}) = {chi_squared:.3f}，p = {p:.4g}。预定 B−A 对照的符号检验包含 {nonzero_pairs:.0f} 个非零配对，p = {sign_p:.4g}。",
+    "sources": {
+      "chi_squared": {
+        "pattern": "Friedman chi-squared = (\\S+),",
+        "location": "Friedman rank sum test → Friedman chi-squared"
+      },
+      "sign_p": {
+        "pattern": "number of trials = \\S+, p-value = (\\S+)",
+        "location": "Exact binomial test → p-value"
+      }
+    }
+  },
+  "growth": {
+    "report_template": "四时点线性潜增长模型以 0/1/2/3 标定时间，潜截距均值为 {intercept_mean:.3f}，潜斜率均值为 {slope_mean:.3f}，斜率方差为 {slope_variance:.3f}，CFI = {cfi:.3f}。",
+    "sources": {
+      "intercept_mean": {
+        "table": "parameters",
+        "where": {
+          "lhs": "i",
+          "op": "~1"
+        },
+        "column": "est"
+      },
+      "slope_mean": {
+        "table": "parameters",
+        "where": {
+          "lhs": "s",
+          "op": "~1"
+        },
+        "column": "est"
+      },
+      "slope_variance": {
+        "table": "parameters",
+        "where": {
+          "lhs": "s",
+          "op": "~~",
+          "rhs": "s"
+        },
+        "column": "est"
+      }
+    },
+    "meanings": {
+      "slope_mean": "每个设定时间单位的平均线性变化。",
+      "slope_variance": "描述不同人的变化速度差异；负方差提示不当解，需要检查模型。"
+    }
+  },
+  "hierarchical": {
+    "report_template": "标准化三项指标后，以欧氏距离和 Ward.D2 层次聚类作三组切分，最小组 {min_size:.0f} 人，平均轮廓宽度 {mean_silhouette:.3f}。各组指标均值见画像表。",
+    "sources": {
+      "k": {
+        "pattern": "Silhouette of \\S+ units in (\\S+) clusters",
+        "location": "Silhouette → clusters 数"
+      },
+      "min_size": {
+        "location": "cluster 频数表 → 三组人数的最小值"
+      },
+      "mean_silhouette": {
+        "pattern": "Individual silhouette widths:\\s*\\n[^\\n]*\\n\\s*\\S+\\s+\\S+\\s+\\S+\\s+(\\S+)",
+        "location": "Individual silhouette widths → Mean"
+      }
+    },
+    "meanings": {
+      "mean_silhouette": "综合同组紧密程度和异组分离程度，数值受距离和尺度影响。"
+    }
+  },
+  "intercept": {
+    "report_template": "数据包含 {people:.0f} 名学生、{groups:.0f} 个班级。空模型 ICC = {icc:.3f}；REML 随机截距模型中，控制班级平均动机后的班内动机系数为 {within_beta:.3f}（p = {within_p:.4g}）。",
+    "sources": {
+      "icc": {
+        "location": "空模型 Random effects → 班级方差 ÷ (班级方差 + Residual 方差)"
+      },
+      "within_beta": {
+        "table": "fixed",
+        "where": {
+          "term": "motivation_within"
+        },
+        "column": "Value"
+      },
+      "groups": {
+        "pattern": "Number of Groups: (\\S+)",
+        "location": "混合模型摘要 → Number of Groups"
+      }
+    },
+    "meanings": {
+      "icc": "随机截距模型中的同班相关，按班级方差占总方差的比例计算。"
+    }
+  },
+  "intervals-variance": {
+    "report_template": "正态独立样本 n = {n:.0f}，方差为 {variance:.3f}，方差 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，标准差区间 [{sd_lower:.3f}, {sd_upper:.3f}]。",
+    "sources": {
+      "variance": {
+        "vector": "variance variance_lower variance_upper sd",
+        "column": "variance"
+      },
+      "sd_lower": {
+        "location": "variance_lower → 开平方得到标准差区间下界"
+      }
+    },
+    "meanings": {
+      "variance": "以分数平方为单位描述分数的离散程度。"
+    }
+  },
+  "intervals": {
+    "report_template": "平均压力为 {estimate:.2f}，95% CI [{ci_lower:.2f}, {ci_upper:.2f}]，有效记录 {n:.0f} 人。",
+    "sources": {
+      "estimate": {
+        "pattern": "mean of x\\s*\\n\\s*(\\S+)",
+        "location": "One Sample t-test → sample estimates → mean of x"
+      },
+      "ci_lower": {
+        "pattern": "95 percent confidence interval:\\s*\\n\\s*(\\S+)",
+        "location": "95 percent confidence interval → 左端点"
+      },
+      "ci_upper": {
+        "pattern": "95 percent confidence interval:\\s*\\n\\s*\\S+\\s+(\\S+)",
+        "location": "95 percent confidence interval → 右端点"
+      },
+      "n": {
+        "location": "One Sample t-test → df + 1"
+      }
+    },
+    "meanings": {
+      "ci_lower": "结合上界判断总体均值估计的范围和精度。"
+    }
+  },
+  "invariance": {
+    "report_template": "连续指标多组 CFA 中，载荷约束相对构型模型的 ΔCFI = {metric_delta_cfi:.3f}，嵌套比较 p = {metric_p:.4g}；进一步约束截距的 ΔCFI = {scalar_delta_cfi:.3f}，p = {scalar_p:.4g}。",
+    "sources": {
+      "metric_delta_cfi": {
+        "location": "本例脚本 → metric 与 config 模型 CFI 之差"
+      },
+      "scalar_delta_cfi": {
+        "location": "本例脚本 → scalar 与 metric 模型 CFI 之差"
+      },
+      "scalar_p": {
+        "table": "comparison",
+        "where": {
+          "model": "scalar"
+        },
+        "column": "Pr..Chisq."
+      }
+    },
+    "meanings": {
+      "scalar_p": "检验新增截距约束引起的拟合变化，结合拟合变化量和局部诊断判断。"
+    }
+  },
+  "kmeans": {
+    "report_template": "标准化指标的 K 均值聚类在 2–4 类候选中选取 k = {k:.0f}（50 起点），平均轮廓宽度 {mean_silhouette:.3f}，组内平方和 {within_ss:.3f}，最小组 {min_size:.0f} 人。",
+    "sources": {
+      "k": {
+        "pattern": "K-means clustering with (\\S+) clusters",
+        "location": "K-means 摘要 → clusters 数"
+      },
+      "within_ss": {
+        "table": "candidates",
+        "where": {
+          "k": 2
+        },
+        "column": "within_ss"
+      },
+      "mean_silhouette": {
+        "table": "candidates",
+        "where": {
+          "k": 2
+        },
+        "column": "silhouette"
+      }
+    }
+  },
+  "latent-interaction": {
+    "report_template": "匹配乘积指标、双均值中心化的连续潜交互模型采用 MLR，未标准化交互路径 b = {interaction:.3f}，稳健 Wald p = {p:.4g}。调节潜因子为零时目标斜率为 {mean_slope:.3f}；±1 标定单位的斜率及稳健区间见表。",
+    "sources": {
+      "interaction": {
+        "table": "parameters",
+        "where": {
+          "label": "bw"
+        },
+        "column": "est"
+      },
+      "p": {
+        "table": "parameters",
+        "where": {
+          "label": "bw"
+        },
+        "column": "pvalue"
+      },
+      "mean_slope": {
+        "table": "simple_slopes",
+        "where": {
+          "f2_marker_units": 0
+        },
+        "column": "slope"
+      }
+    },
+    "meanings": {
+      "interaction": "匹配乘积指标测量的潜交互因子所对应的路径系数。",
+      "p": "本例使用MLR稳健标准误检验交互路径。",
+      "mean_slope": "潜因子按首指标量纲标定；表中的±1表示该量纲的一单位变化。"
+    }
+  },
+  "latent-mediation": {
+    "report_template": "连续指标潜变量中介模型的未标准化间接路径为 {indirect:.3f}，Delta 方法 SE = {se:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，整体 CFI = {cfi:.3f}。",
+    "sources": {
+      "indirect": {
+        "table": "parameters",
+        "where": {
+          "lhs": "indirect",
+          "op": ":="
+        },
+        "column": "est"
+      },
+      "se": {
+        "table": "parameters",
+        "where": {
+          "lhs": "indirect",
+          "op": ":="
+        },
+        "column": "se"
+      },
+      "cfi": {
+        "table": "fit",
+        "where": {
+          "index": "cfi"
+        },
+        "column": "value"
+      }
+    },
+    "meanings": {
+      "indirect": "测量标定决定潜构念量纲，据此解释间接路径乘积。",
+      "se": "用一阶近似估计标准误；乘积分布形态会影响区间表现。"
+    }
+  },
+  "lca": {
+    "report_template": "对五个二元指标拟合 1–4 类模型，每个候选五个起点，最低 BIC 候选为 {k:.0f} 类（BIC = {bic:.3f}），相对熵 {entropy:.3f}，平均最大后验概率 {mean_posterior:.3f}，最小类别比例 {min_proportion:.3f}。各类回答 2 的条件概率见表。",
+    "sources": {
+      "bic": {
+        "table": "candidates",
+        "where": {
+          "k": 2
+        },
+        "column": "bic"
+      },
+      "k": {
+        "pattern": "Fit for (\\S+) latent classes:",
+        "location": "poLCA 摘要 → Fit for ... latent classes"
+      },
+      "entropy": {
+        "location": "本例脚本 → poLCA 后验概率矩阵计算相对熵"
+      }
+    }
+  },
+  "linear": {
+    "report_template": "在包含年龄与社会支持的线性模型中，压力的未标准化系数 b = {beta:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，p = {p:.4g}；模型 R² = {r_squared:.3f}，有效样本 n = {n:.0f}。",
+    "sources": {
+      "beta": {
+        "pattern": "^stress\\s+(\\S+)",
+        "location": "Coefficients → stress 行 → Estimate 列"
+      },
+      "r_squared": {
+        "pattern": "Multiple R-squared:\\s+(\\S+),",
+        "location": "summary(lm) → Multiple R-squared"
+      },
+      "ci_lower": {
+        "pattern": "^stress\\s+(\\S+)\\s+\\S+\\s*$",
+        "occurrence": 0,
+        "location": "confint → stress 行 → 2.5% 列"
+      },
+      "ci_upper": {
+        "pattern": "^stress\\s+\\S+\\s+(\\S+)\\s*$",
+        "location": "confint → stress 行 → 97.5% 列"
+      },
+      "p": {
+        "pattern": "^stress\\s+\\S+\\s+\\S+\\s+\\S+\\s+(\\S+)",
+        "location": "Coefficients → stress 行 → Pr(>|t|) 列"
+      }
+    },
+    "meanings": {
+      "r_squared": "样本中被模型解释的结果变量变异比例。",
+      "p": "检验模型中压力系数为零这一假设。"
+    }
+  },
+  "logistic": {
+    "report_template": "控制压力与年龄后，每增加一小时睡眠对应的事件优势比 OR = {odds_ratio:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，p = {p:.4g}（n = {n:.0f}）。",
+    "sources": {
+      "log_odds": {
+        "pattern": "^sleep_hours\\s+(\\S+)",
+        "location": "glm Coefficients → sleep_hours → Estimate（对数优势尺度）"
+      },
+      "odds_ratio": {
+        "pattern": "^sleep_hours\\s+(\\S+)\\s+\\S+\\s+\\S+\\s*$",
+        "location": "exp(cbind(...)) → sleep_hours → Estimate（OR 尺度）"
+      },
+      "ci_lower": {
+        "pattern": "^sleep_hours\\s+\\S+\\s+(\\S+)\\s+\\S+\\s*$",
+        "location": "OR 表 → sleep_hours → 2.5%"
+      },
+      "ci_upper": {
+        "pattern": "^sleep_hours\\s+\\S+\\s+\\S+\\s+(\\S+)\\s*$",
+        "location": "OR 表 → sleep_hours → 97.5%"
+      },
+      "p": {
+        "pattern": "^sleep_hours\\s+\\S+\\s+\\S+\\s+\\S+\\s+(\\S+)",
+        "location": "glm Coefficients → sleep_hours → Pr(>|z|)"
+      }
+    },
+    "meanings": {
+      "log_odds": "睡眠每增加一小时，对应的对数优势变化。",
+      "odds_ratio": "给定压力和年龄，睡眠每多一小时对应的优势倍率。",
+      "ci_lower": "优势比区间的下界，结合上界与无效值1阅读。"
+    }
+  },
+  "longitudinal": {
+    "report_template": "四时点数据包含 {people:.0f} 人、{observations:.0f} 条记录。ML 随机截距及时间斜率模型的时间×组别系数为 {interaction:.3f}（p = {p:.4g}），有无该项的嵌套比较 p = {comparison_p:.4g}；时间按 0–3 编码。",
+    "sources": {
+      "interaction": {
+        "table": "fixed",
+        "where": {
+          "term": "time:treatmentintervention"
+        },
+        "column": "Value"
+      },
+      "comparison_p": {
+        "table": "comparison",
+        "where": {
+          "model": "fit"
+        },
+        "column": "p.value"
+      },
+      "people": {
+        "location": "本例脚本 → 不重复的 id 数；Number of Observations 记录的是多时点行数"
+      }
+    },
+    "meanings": {
+      "interaction": "与对照组相比，每个编码时间单位的平均变化差。",
+      "people": "独立参与者人数；同一人的多次观测共同描述其变化轨迹。"
+    }
+  },
+  "lpa": {
+    "report_template": "对三项连续指标拟合 1–4 类 EEI/VVI 高斯混合候选，mclust 选取 {k:.0f} 类，包定义的 BIC = {bic:.3f}（越大越好），相对熵 {entropy:.3f}，平均最大后验概率 {mean_posterior:.3f}，最小估计类别比例 {min_proportion:.3f}。",
+    "sources": {
+      "restart_same_structure": {
+        "vector": "same_structure bic_gap adjusted_rand",
+        "column": "same_structure"
+      },
+      "restart_bic_gap": {
+        "vector": "same_structure bic_gap adjusted_rand",
+        "column": "bic_gap"
+      },
+      "restart_ari": {
+        "vector": "same_structure bic_gap adjusted_rand",
+        "column": "adjusted_rand"
+      },
+      "bic": {
+        "pattern": "log-likelihood\\s+n\\s+df\\s+BIC\\s+ICL\\s*\\n\\s*\\S+\\s+\\S+\\s+\\S+\\s+(\\S+)",
+        "location": "第一个 Mclust 摘要 → BIC 列"
+      },
+      "entropy": {
+        "location": "本例脚本 → Mclust 后验概率 z → 相对熵"
+      },
+      "mean_posterior": {
+        "location": "本例脚本 → 各人最大后验概率的平均值"
+      }
+    },
+    "meanings": {
+      "restart_ari": "比较两次分组的一致性，不受类别编号对调影响；1表示两次分组相同。",
+      "entropy": "本例计算的0–1分类清晰度，结合拟合、类别大小和稳定性选择模型。"
+    }
+  },
+  "manova": {
+    "report_template": "未调整联合组别比较得到 Pillai 迹 = {pillai:.3f}，F({df1:.0f}, {df2:.0f}) = {F:.3f}，p = {p:.4g}；控制基线后的 MANCOVA 得到 Pillai 迹 = {adjusted_pillai:.3f}，F({adjusted_df1:.0f}, {adjusted_df2:.0f}) = {adjusted_F:.3f}，p = {adjusted_p:.4g}。两项单变量组检验与六项调整后逐对比较共八个后续检验采用 Holm 调整，方向和逐比较 95% 区间见表。",
+    "sources": {
+      "adjusted_pillai": {
+        "table": "multivariate",
+        "where": {
+          "term": "group"
+        },
+        "column": "Pillai"
+      },
+      "adjusted_F": {
+        "table": "multivariate",
+        "where": {
+          "term": "group"
+        },
+        "column": "approx F"
+      },
+      "adjusted_p": {
+        "table": "multivariate",
+        "where": {
+          "term": "group"
+        },
+        "column": "Pr(>F)"
+      },
+      "pillai": {
+        "pattern": "^group\\s+\\S+\\s+(\\S+)",
+        "location": "第一个 MANOVA → group 行 → Pillai"
+      },
+      "p": {
+        "pattern": "^group\\s+\\S+\\s+\\S+\\s+\\S+\\s+\\S+\\s+\\S+\\s+(\\S+)",
+        "location": "第一个 MANOVA → group 行 → Pr(>F)"
+      }
+    },
+    "meanings": {
+      "p": "检验组间联合均值向量相等这一假设。"
+    }
+  },
+  "mediated-interaction": {
+    "report_template": "以 X×W 为关注预测项的模型中，通过 M 的间接交互关联为 {indirect:.3f}，300 次 Bootstrap 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]；给定 M 后的直接交互系数为 {direct_interaction:.3f}。",
+    "sources": {
+      "indirect": {
+        "vector": "indirect direct_interaction",
+        "column": "indirect"
+      },
+      "direct_interaction": {
+        "vector": "indirect direct_interaction",
+        "column": "direct_interaction"
+      },
+      "ci_lower": {
+        "pattern": "2.5%\\s+97.5%\\s*\\n\\s*(\\S+)",
+        "location": "Bootstrap 分位点 → 2.5% 列"
+      }
+    },
+    "meanings": {
+      "direct_interaction": "控制M后，模型中剩余的X×W条件关联。"
+    }
+  },
+  "mediation": {
+    "report_template": "间接关联 a×b = {indirect:.3f}，300 次百分位 Bootstrap 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]；直接路径 c′ = {direct:.3f}。",
+    "sources": {
+      "indirect": {
+        "table": "parameters",
+        "where": {
+          "lhs": "indirect",
+          "op": ":="
+        },
+        "column": "est"
+      },
+      "ci_lower": {
+        "table": "parameters",
+        "where": {
+          "lhs": "indirect",
+          "op": ":="
+        },
+        "column": "ci.lower"
+      },
+      "direct": {
+        "table": "parameters",
+        "where": {
+          "label": "c"
+        },
+        "column": "est"
+      }
+    }
+  },
+  "missing": {
+    "report_template": "在给定 Z 后随机缺失的连续数据中，X 缺失比例为 {missing_proportion:.3f}。20 次条件正态插补的合并 X 系数为 {pooled:.3f}，SE = {se:.3f}，Barnard–Rubin df = {df:.2f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]；同数据 FIML 系数为 {fiml:.3f}。",
+    "sources": {
+      "pooled": {
+        "vector": "pooled se df",
+        "column": "pooled"
+      },
+      "se": {
+        "vector": "pooled se df",
+        "column": "se"
+      },
+      "fiml": {
+        "table": "fiml_parameters",
+        "where": {
+          "lhs": "y",
+          "op": "~",
+          "rhs": "x"
+        },
+        "column": "est"
+      }
+    },
+    "meanings": {
+      "fiml": "基于同一数据的联合正态似然估计，直接利用模型中可用的观测信息。"
+    }
+  },
+  "mixed-design": {
+    "report_template": "72 人、216 条三时点记录的混合设计中，组别×时间采用 GG 校正，ε = {gg_epsilon:.3f}，F({interaction_df1:.2f}, {interaction_df2:.2f}) = {interaction_F:.3f}，p = {interaction_gg_p:.4g}。随访减前测的变化比较中，训练组相对对照组的差为 {change_difference:.3f}，95% CI [{change_ci_lower:.3f}, {change_ci_upper:.3f}]。",
+    "sources": {
+      "group_F": {
+        "table": "mixed_effects",
+        "where": {
+          "effect": "group"
+        },
+        "column": "F"
+      },
+      "interaction_F": {
+        "table": "mixed_effects",
+        "where": {
+          "effect": "group:time"
+        },
+        "column": "F"
+      },
+      "interaction_gg_p": {
+        "table": "mixed_effects",
+        "where": {
+          "effect": "group:time"
+        },
+        "column": "p_reference"
+      },
+      "change_difference": {
+        "table": "change_comparison",
+        "where": {
+          "comparison": "practice minus control: followup-pre"
+        },
+        "column": "difference"
+      }
+    },
+    "meanings": {
+      "people": "72名参与者，每人三个时点，共216行记录。",
+      "group_F": "在这个平衡设计中，比较跨时点平均后的组间差异。"
+    }
+  },
+  "moderation": {
+    "report_template": "中心化压力与支持后，乘积项系数 b = {interaction:.3f}，p = {p:.4g}。支持处于均值时的压力斜率为 {mean_slope:.3f}，均值下/上一个 SD 时分别为 {low_slope:.3f} 与 {high_slope:.3f}；具体区间见简单斜率表。本例交互项检验未达到 0.05 的显著性水平。",
+    "sources": {
+      "interaction": {
+        "pattern": "^x:w\\s+(\\S+)",
+        "location": "Coefficients → x:w 行 → Estimate"
+      },
+      "p": {
+        "pattern": "^x:w\\s+\\S+\\s+\\S+\\s+\\S+\\s+(\\S+)",
+        "location": "Coefficients → x:w 行 → Pr(>|t|)"
+      },
+      "mean_slope": {
+        "pattern": "^x\\s+(\\S+)",
+        "location": "Coefficients → x 行 → Estimate；支持中心化为零时的压力斜率"
+      }
+    },
+    "meanings": {
+      "mean_slope": "支持经过中心化，零对应样本平均支持水平。",
+      "p": "检验压力斜率是否随支持水平变化。"
+    }
+  },
+  "multigroup": {
+    "report_template": "在共同载荷与截距约束的连续指标多组 SEM 中，A 组目标路径为 {group_a:.3f}，B 组为 {group_b:.3f}，A−B 差为 {difference:.3f}；目标路径相等约束的嵌套比较 p = {comparison_p:.4g}。",
+    "sources": {
+      "comparison_p": {
+        "table": "comparison",
+        "where": {
+          "model": "equal"
+        },
+        "column": "Pr..Chisq."
+      },
+      "group_a": {
+        "table": "parameters",
+        "where": {
+          "lhs": "f3",
+          "op": "~",
+          "rhs": "f1",
+          "group": 1
+        },
+        "column": "est"
+      },
+      "difference": {
+        "location": "parameters → A 组路径估计 − B 组路径估计"
+      }
+    },
+    "meanings": {
+      "comparison_p": "直接检验两组路径系数相等这一假设。"
+    }
+  },
+  "path": {
+    "report_template": "观测变量路径模型得到压力与支持路径 a = {a:.3f}，给定压力后的支持与幸福感路径 b = {b:.3f}，压力直接路径 c = {c:.3f}；模型 df = {df:.0f}。",
+    "sources": {
+      "a": {
+        "table": "parameters",
+        "where": {
+          "label": "a"
+        },
+        "column": "est"
+      },
+      "b": {
+        "table": "parameters",
+        "where": {
+          "label": "b"
+        },
+        "column": "est"
+      },
+      "df": {
+        "table": "fit",
+        "where": {
+          "index": "df"
+        },
+        "column": "value"
+      }
+    },
+    "meanings": {
+      "b": "给定压力后，支持与结果的条件关联。"
+    }
+  },
+  "pca": {
+    "report_template": "九项连续指标经标准化主成分分析，第一成分解释总变异 {first_prop:.3f}，前三成分累计 {three_prop:.3f}，第一特征值 {first_eigenvalue:.3f}。",
+    "sources": {
+      "first_prop": {
+        "table": "variance",
+        "where": {
+          "component": 1
+        },
+        "column": "proportion"
+      },
+      "three_prop": {
+        "table": "variance",
+        "where": {
+          "component": 3
+        },
+        "column": "cumulative"
+      },
+      "first_eigenvalue": {
+        "table": "variance",
+        "where": {
+          "component": 1
+        },
+        "column": "eigenvalue"
+      }
+    },
+    "meanings": {
+      "first_prop": "第一成分占九项标准化变量总变异的比例。"
+    }
+  },
+  "power": {
+    "report_template": "采用双侧 α = 0.05、功效 {power:.2f}、目标差值 3 分及标准差 8 分，需要每组至少 {per_group:.0f} 个可分析样本；按 15% 流失预留，每组招募 {recruit_per_group:.0f} 人。",
+    "sources": {
+      "power": {
+        "pattern": "power = (\\S+)",
+        "location": "power.t.test → power"
+      },
+      "per_group": {
+        "location": "power.t.test → n；向上取整得到每组人数"
+      },
+      "recruit_per_group": {
+        "location": "本例脚本 → 每组有效人数 ÷ 0.85，再向上取整"
+      }
+    },
+    "meanings": {
+      "per_group": "R输出的n为每组人数，向上取整得到目标人数。",
+      "recruit_per_group": "按教学设定的85%保留率，将每组目标人数除以0.85并向上取整。",
+      "power": "在设定差值、方差和检验条件下，检出目标差异的规划概率。"
+    }
+  },
+  "proportions": {
+    "report_template": "两组阳性比例差为 {difference:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，比例检验 p = {p:.4g}。连续指标方差比示例为 {variance_ratio:.3f}（p = {variance_p:.4g}）。",
+    "sources": {
+      "single_rate": {
+        "table": "single_proportion",
+        "where": {
+          "positive": 20
+        },
+        "column": "estimate"
+      },
+      "p": {
+        "pattern": "p-value = (\\S+)",
+        "location": "2-sample test for equality of proportions → p-value"
+      },
+      "difference": {
+        "location": "prop 1 − prop 2"
+      },
+      "variance_ratio": {
+        "table": "variance_comparison",
+        "where": {
+          "df1": 59
+        },
+        "column": "ratio"
+      }
+    },
+    "meanings": {
+      "single_rate": "单组的事件比例。下表提供精确二项比例区间；控制台中的0.20是教学检验参考值。",
+      "difference": "第一组比例减第二组比例，乘以100后以百分点表达。"
+    }
+  },
+  "ranks": {
+    "report_template": "独立组等待时间的 Wilcoxon 检验 W = {W:.0f}，p = {p:.4g}，位置位移估计为 {shift:.3f}；三组 Kruskal–Wallis p = {kw_p:.4g}，配对数据的符号秩检验 p = {paired_p:.4g}。",
+    "sources": {
+      "W": {
+        "pattern": "W = (\\S+),",
+        "location": "Wilcoxon rank sum test → W"
+      },
+      "shift": {
+        "pattern": "difference in location\\s*\\n\\s*(\\S+)",
+        "location": "Wilcoxon rank sum test → difference in location"
+      },
+      "paired_p": {
+        "pattern": "V = \\S+, p-value = (\\S+)",
+        "location": "Wilcoxon signed rank test → p-value"
+      }
+    },
+    "meanings": {
+      "W": "根据两组合并后的秩位置比较独立组。"
+    }
+  },
+  "reliability-omega": {
+    "report_template": "三项连续指标的单因子、误差不相关模型给出原始加总分 ω = {omega:.3f}，同数据原始 α = {alpha:.3f}（n = {n:.0f}）。",
+    "sources": {
+      "omega": {
+        "vector": "omega_total alpha",
+        "column": "omega_total"
+      },
+      "alpha": {
+        "vector": "omega_total alpha",
+        "column": "alpha"
+      }
+    }
+  },
+  "reliability": {
+    "report_template": "第 1–4 题分量表在 {n:.0f} 人数据中的原始 Cronbach α = {alpha:.3f}，标准化 α = {standardized_alpha:.3f}，平均题间相关 {average_r:.3f}。",
+    "sources": {
+      "alpha": {
+        "pattern": "^\\s+raw_alpha std.alpha[^\\n]*\\n\\s*(\\S+)",
+        "location": "psych::alpha → raw_alpha 列"
+      },
+      "standardized_alpha": {
+        "pattern": "^\\s+raw_alpha std.alpha[^\\n]*\\n\\s*\\S+\\s+(\\S+)",
+        "location": "psych::alpha → std.alpha 列"
+      },
+      "min_item_rest": {
+        "table": "items",
+        "where": {
+          "item": "item_2"
+        },
+        "column": "r.drop"
+      }
+    }
+  },
+  "repeated": {
+    "report_template": "45 人、135 条完整三时点记录的时间主效应采用 GG 校正，ε = {gg_epsilon:.3f}，F({gg_df1:.2f}, {gg_df2:.2f}) = {F:.3f}，p = {gg_p:.4g}；Mauchly 检验 p = {mauchly_p:.4g}。三个配对时点比较采用 Holm 调整，表中报告逐比较 95% 区间。",
+    "sources": {
+      "gg_p": {
+        "table": "sphericity_corrections",
+        "where": {
+          "Res.Df": 45
+        },
+        "column": "G-G Pr"
+      },
+      "F": {
+        "table": "sphericity_corrections",
+        "where": {
+          "Res.Df": 45
+        },
+        "column": "F"
+      },
+      "p": {
+        "table": "sphericity_corrections",
+        "where": {
+          "Res.Df": 45
+        },
+        "column": "Pr(>F)"
+      },
+      "mauchly_p": {
+        "pattern": "W = \\S+, p-value = (\\S+)",
+        "location": "Mauchly's test → p-value"
+      }
+    },
+    "meanings": {
+      "people": "独立参与者人数；每位参与者贡献三次记录。"
+    }
+  },
+  "sampling-cluster": {
+    "report_template": "从 40 个等大班中简单随机抽取 {classes:.0f} 班，共调查 {records:.0f} 名学生，设计加权均值为 {mean:.3f}，SE = {se:.3f}，以班级为单位的 t 近似 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]。",
+    "sources": {
+      "classes": {
+        "vector": "sampled_classes student_records estimate se",
+        "column": "sampled_classes"
+      },
+      "se": {
+        "vector": "sampled_classes student_records estimate se",
+        "column": "se"
+      }
+    }
+  },
+  "sampling": {
+    "report_template": "在已知年级规模、年级内随机抽样的设计下，加权睡眠均值为 {mean:.3f} 小时，设计 SE = {se:.3f}，正态近似 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]；未加权均值为 {naive_mean:.3f} 小时。",
+    "sources": {
+      "mean": {
+        "vector": "weighted_mean SE unweighted_mean",
+        "column": "weighted_mean"
+      },
+      "se": {
+        "vector": "weighted_mean SE unweighted_mean",
+        "column": "SE"
+      },
+      "naive_mean": {
+        "vector": "weighted_mean SE unweighted_mean",
+        "column": "unweighted_mean"
+      }
+    },
+    "meanings": {
+      "mean": "按年级总体人数比例80%/20%，加权合并各年级样本均值。",
+      "se": "结合分层内方差、抽样人数和抽样比例，计算均值估计的标准误。"
+    }
+  },
+  "selection-blocks": {
+    "report_template": "预定年龄→支持→压力的分块顺序中，最后压力块的 ΔR² = {delta_r_squared:.3f}，增量 F({df1:.0f}, {df2:.0f}) = {F:.3f}，p = {p:.4g}。",
+    "sources": {
+      "p": {
+        "table": "comparison",
+        "where": {
+          "model": "3"
+        },
+        "column": "Pr..F."
+      },
+      "delta_r_squared": {
+        "location": "两模型 summary → 加入压力后的 R² − 加入压力前的 R²"
+      }
+    },
+    "meanings": {
+      "p": "在相同样本的嵌套模型中，检验新增压力项带来的解释增量。"
+    }
+  },
+  "selection": {
+    "report_template": "探索性 AIC 选择得到 AIC = {selected_aic:.3f}，完整候选模型 AIC = {full_aic:.3f}；所选模型样本 R² = {selected_r_squared:.3f}。",
+    "sources": {
+      "full_aic": {
+        "location": "本例脚本 → AIC(完整模型)；与 step 日志使用的准则常数不同"
+      },
+      "selected_aic": {
+        "location": "本例脚本 → AIC(所选模型)；比较时保持相同函数"
+      },
+      "selected_r_squared": {
+        "pattern": "Multiple R-squared:\\s+(\\S+),",
+        "location": "所选模型 summary → Multiple R-squared"
+      }
+    },
+    "meanings": {
+      "selected_r_squared": "模型在训练数据中的解释比例，配合独立验证评估预测表现。"
+    }
+  },
+  "sem": {
+    "report_template": "连续指标的潜变量 SEM 采用 ML，f1→f3 的未标准化路径为 {a:.3f}（p = {a_p:.4g}），f2→f3 为 {b:.3f}；CFI = {cfi:.3f}，RMSEA = {rmsea:.3f}，SRMR = {srmr:.3f}。",
+    "sources": {
+      "a": {
+        "table": "parameters",
+        "where": {
+          "lhs": "f3",
+          "op": "~",
+          "rhs": "f1"
+        },
+        "column": "est"
+      },
+      "cfi": {
+        "table": "fit",
+        "where": {
+          "index": "cfi"
+        },
+        "column": "value"
+      },
+      "rmsea": {
+        "table": "fit",
+        "where": {
+          "index": "rmsea"
+        },
+        "column": "value"
+      }
+    }
+  },
+  "slope": {
+    "report_template": "包含班内动机、班级平均动机及教师支持的随机斜率模型，跨层交互系数为 {interaction:.4f}（p = {p:.4g}），班内动机的随机斜率方差为 {slope_variance:.4f}，共 {groups:.0f} 个班级；本例将截距与斜率随机项的协方差设为零。",
+    "sources": {
+      "interaction": {
+        "table": "fixed",
+        "where": {
+          "term": "mw:tc"
+        },
+        "column": "Value"
+      },
+      "slope_variance": {
+        "table": "random",
+        "where": {
+          "term": "mw"
+        },
+        "column": "variance"
+      },
+      "groups": {
+        "pattern": "Number of Groups: (\\S+)",
+        "location": "混合模型摘要 → Number of Groups"
+      }
+    }
+  },
+  "t-single": {
+    "report_template": "睡眠均值为 {mean:.3f} 小时，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]；相对参照 7 小时，t({df:.0f}) = {t:.3f}，p = {p:.4g}。",
+    "sources": {
+      "mean": {
+        "pattern": "mean of x\\s*\\n\\s*(\\S+)",
+        "location": "One Sample t-test → mean of x"
+      },
+      "p": {
+        "pattern": "p-value = (\\S+)",
+        "location": "One Sample t-test → p-value"
+      }
+    },
+    "meanings": {
+      "p": "检验总体均值与预先设定的参考值相等这一假设；参考值需要研究依据。"
+    }
+  },
+  "t-tests": {
+    "report_template": "练习回忆组与对照组的进步分数平均差为 {difference:.2f}，95% CI [{ci_lower:.2f}, {ci_upper:.2f}]；Welch t({df:.2f}) = {t:.3f}，p = {p:.4g}。",
+    "sources": {
+      "difference": {
+        "location": "第一个 Welch 输出 → mean of x − mean of y"
+      },
+      "t": {
+        "pattern": "t = (\\S+),",
+        "location": "第一个 Welch Two Sample t-test → t"
+      },
+      "df": {
+        "pattern": "df = (\\S+),",
+        "location": "第一个 Welch Two Sample t-test → df"
+      },
+      "ci_lower": {
+        "pattern": "95 percent confidence interval:\\s*\\n\\s*(\\S+)",
+        "location": "第一个 Welch 输出 → 区间左端点"
+      },
+      "ci_upper": {
+        "pattern": "95 percent confidence interval:\\s*\\n\\s*\\S+\\s+(\\S+)",
+        "location": "第一个 Welch 输出 → 区间右端点"
+      },
+      "p": {
+        "pattern": "p-value = (\\S+)",
+        "location": "第一个 Welch Two Sample t-test → p-value"
+      }
+    },
+    "meanings": {
+      "t": "均值差除以其标准误，衡量差异相对于估计不确定性的大小。",
+      "ci_lower": "组间gain均值差区间的下界，结合上界判断差异的范围和精度。"
+    }
+  },
+  "welch": {
+    "report_template": "异方差独立组的 Welch 单因素检验为 F({df1:.0f}, {df2:.2f}) = {F:.3f}，p = {p:.4g}；组对比较采用不合并方差的 Welch 检验并进行 Holm 调整。",
+    "sources": {
+      "F": {
+        "pattern": "F = (\\S+),",
+        "location": "One-way analysis of means → F"
+      },
+      "df2": {
+        "pattern": "denom df = (\\S+),",
+        "location": "One-way analysis of means → denom df"
+      },
+      "p": {
+        "pattern": "p-value = (\\S+)",
+        "location": "One-way analysis of means → p-value"
+      }
+    },
+    "meanings": {
+      "F": "结合各组方差和样本量，检验总体均值差异。",
+      "df2": "方差信息折算得到的自由度，允许出现小数。"
+    }
+  }
+}

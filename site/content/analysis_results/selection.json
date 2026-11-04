@@ -1,0 +1,48 @@
+{
+  "case_id": "selection",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\nStart:  AIC=1420.86\nwell_being ~ stress + social_support + age\n\n                 Df Sum of Sq   RSS    AIC\n- age             1     11.05 18239 1419.1\n<none>                        18228 1420.9\n- social_support  1   2621.60 20850 1467.2\n- stress          1   2854.10 21082 1471.2\n\nStep:  AIC=1419.08\nwell_being ~ stress + social_support\n\n                 Df Sum of Sq   RSS    AIC\n<none>                        18239 1419.1\n+ age             1     11.05 18228 1420.9\n- social_support  1   2627.21 20866 1465.5\n- stress          1   2856.81 21096 1469.5\n\nCall:\nlm(formula = well_being ~ stress + social_support + age, data = d)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-19.7890  -4.7977  -0.1401   4.7135  20.8625 \n\nCoefficients:\n               Estimate Std. Error t value Pr(>|t|)    \n(Intercept)    49.98950    3.90425  12.804  < 2e-16 ***\nstress         -0.36858    0.04937  -7.466 6.42e-13 ***\nsocial_support  0.31337    0.04379   7.155 4.79e-12 ***\nage             0.01451    0.03123   0.464    0.643    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 7.156 on 356 degrees of freedom\nMultiple R-squared:  0.3059,\tAdjusted R-squared:    0.3 \nF-statistic: 52.29 on 3 and 356 DF,  p-value: < 2.2e-16\n\n\nCall:\nlm(formula = well_being ~ stress + social_support, data = d)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-19.5771  -4.6748  -0.1179   4.7744  20.6361 \n\nCoefficients:\n               Estimate Std. Error t value Pr(>|t|)    \n(Intercept)    50.52969    3.72293  13.573  < 2e-16 ***\nstress         -0.36875    0.04931  -7.478 5.91e-13 ***\nsocial_support  0.31367    0.04374   7.171 4.32e-12 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 7.148 on 357 degrees of freedom\nMultiple R-squared:  0.3055,\tAdjusted R-squared:  0.3016 \nF-statistic:  78.5 on 2 and 357 DF,  p-value: < 2.2e-16\n\n",
+  "stderr": "",
+  "metrics": {
+    "full_aic": 2444.494377375582,
+    "selected_aic": 2442.712492466594,
+    "selected_r_squared": 0.3054588128736307
+  },
+  "warnings": [],
+  "tables": {
+    "coefficients": [
+      {
+        "term": "(Intercept)",
+        "Estimate": 50.529691884006326,
+        "Std. Error": 3.72293123369031,
+        "t value": 13.572555793333681,
+        "Pr(>|t|)": 3.998327257092375e-34,
+        "_row": "(Intercept)"
+      },
+      {
+        "term": "stress",
+        "Estimate": -0.36874881503829343,
+        "Std. Error": 0.04931241561248507,
+        "t value": -7.47780879233449,
+        "Pr(>|t|)": 5.911621215530918e-13,
+        "_row": "stress"
+      },
+      {
+        "term": "social_support",
+        "Estimate": 0.3136671830809683,
+        "Std. Error": 0.0437408940266299,
+        "t value": 7.171028166228256,
+        "Pr(>|t|)": 4.317499037693909e-12,
+        "_row": "social_support"
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "8384b4de1bfc43b51e808a58a3f4ae52f484deac825ac79c21348e256d52e58e",
+  "config_sha256": "c446171deffa51b96085505572ad6f55ddcefb4edce452bf5dd1caf52ad1dde1",
+  "data_sha256": {
+    "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+  }
+}

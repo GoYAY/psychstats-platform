@@ -1,0 +1,53 @@
+{
+  "id": "design-invalid",
+  "unit_id": "diagnostics",
+  "title": "先停止：组别与班级完全混在一起",
+  "question": "一个班全部训练、另两个班全部不训练，能直接说训练有效吗？",
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。训练班仅一个且班级与条件混杂，不能以普通 t 检验或增加学生数修复；需要设计层面的独立重复。",
+  "variables": "固定种子生成小型教学数据，非真实参与者；不上传数据。",
+  "script": "examples/r/output_reading/design-invalid.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "classes",
+      "label": "独立分配单位数",
+      "meaning": "分配在班级层面，60 行不是 60 个独立干预重复。",
+      "term": "independence",
+      "format": ".3f"
+    },
+    {
+      "field_id": "records",
+      "label": "学生记录数",
+      "meaning": "多测学生增加班内信息，不增加训练班数量。",
+      "term": "nested-data",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这个变体最重要的边界",
+      "body": "训练班仅一个且班级与条件混杂，不能以普通 t 检验或增加学生数修复；需要设计层面的独立重复。"
+    },
+    {
+      "title": "如何继续检查",
+      "body": "先明确独立单位、估计目标及比较方向，结合完整参数与区间判断。方法改变需有研究依据并记录，不以显著性作为选择标准。"
+    }
+  ],
+  "report_template": "本例不得报告训练有效。",
+  "sources": [
+    {
+      "title": "R 官方统计函数索引",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "independence",
+    "nested-data"
+  ],
+  "invalid_reason": "训练班仅一个且班级与条件混杂，不能以普通 t 检验或增加学生数修复；需要设计层面的独立重复。"
+}

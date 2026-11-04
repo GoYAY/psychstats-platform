@@ -1,0 +1,6 @@
+source("_common.R")
+d <- read.csv("cross_sectional_survey.csv")
+fit <- lm(well_being ~ stress + social_support + age,data=d)
+print(summary(fit)); print(confint(fit))
+s <- summary(fit); ci <- unname(confint(fit)["stress",])
+finish(c(beta=coef(fit)["stress"][[1]],ci_lower=ci[1],ci_upper=ci[2],p=s$coefficients["stress",4],r_squared=s$r.squared,n=nobs(fit)))

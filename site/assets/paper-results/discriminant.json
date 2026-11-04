@@ -1,0 +1,110 @@
+{
+  "case_id": "discriminant",
+  "covariances": [],
+  "design": "模拟三个已知类别、每类 70 人及两个连续特征。分别作 LDA/QDA，使用留一交叉验证；类先验为教学平衡样本频率。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/discriminant.R",
+    "script_sha256": "9098d3c54c6fd5bc40b3cc7cf661206958a21a9da36b80954ce235561664378e",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "truth",
+        "predicted",
+        "Freq"
+      ],
+      "name": "confusion",
+      "rows": [
+        {
+          "Freq": 43,
+          "predicted": "A",
+          "truth": "A"
+        },
+        {
+          "Freq": 13,
+          "predicted": "A",
+          "truth": "B"
+        },
+        {
+          "Freq": 8,
+          "predicted": "A",
+          "truth": "C"
+        },
+        {
+          "Freq": 21,
+          "predicted": "B",
+          "truth": "A"
+        },
+        {
+          "Freq": 47,
+          "predicted": "B",
+          "truth": "B"
+        },
+        {
+          "Freq": 10,
+          "predicted": "B",
+          "truth": "C"
+        },
+        {
+          "Freq": 6,
+          "predicted": "C",
+          "truth": "A"
+        },
+        {
+          "Freq": 10,
+          "predicted": "C",
+          "truth": "B"
+        },
+        {
+          "Freq": 52,
+          "predicted": "C",
+          "truth": "C"
+        }
+      ],
+      "title": "分类混淆矩阵"
+    },
+    {
+      "column_labels": {
+        "lda_accuracy": "LDA 留一准确率",
+        "mean_posterior": "平均最大后验概率",
+        "qda_accuracy": "QDA 留一准确率"
+      },
+      "columns": [
+        "analysis",
+        "lda_accuracy",
+        "qda_accuracy",
+        "mean_posterior"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "已知类别时预测新学生",
+          "lda_accuracy": 0.6761904761904762,
+          "mean_posterior": 0.725618023662609,
+          "qda_accuracy": 0.680952380952381
+        }
+      ],
+      "source_fields": [
+        {
+          "lda_accuracy": "lda_accuracy",
+          "mean_posterior": "mean_posterior",
+          "qda_accuracy": "qda_accuracy"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "已知类别时预测新学生",
+  "valid": true,
+  "variances": []
+}

@@ -1,0 +1,86 @@
+{
+  "case_id": "sampling-cluster",
+  "covariances": [],
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。不等大班、按规模抽样或班内再抽样需要不同权重与方差公式；不能直接推广本等大一阶段方案。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/sampling-cluster.R",
+    "script_sha256": "4085881a773be6c9a4e39b5aa26d95a3e810c27e01d7a935a351973b14308ef8",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "se"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": 62.53013738166113,
+          "ci_upper": 69.79894079414622,
+          "effect": "整群抽样均值",
+          "estimate": 66.16453908790368,
+          "se": 1.6066088448721778
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "column_labels": {
+        "ci_lower": "95% CI 下限",
+        "ci_upper": "95% CI 上限",
+        "classes": "抽样班级数",
+        "mean": "均值",
+        "records": "records",
+        "se": "设计标准误"
+      },
+      "columns": [
+        "analysis",
+        "classes",
+        "se",
+        "mean",
+        "ci_lower",
+        "ci_upper",
+        "records"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "整班抽样的独立单位",
+          "ci_lower": 62.53013738166113,
+          "ci_upper": 69.79894079414622,
+          "classes": 10,
+          "mean": 66.16453908790368,
+          "records": 200,
+          "se": 1.6066088448721778
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "classes": "classes",
+          "mean": "mean",
+          "records": "records",
+          "se": "se"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "整班抽样的独立单位",
+  "valid": true,
+  "variances": []
+}

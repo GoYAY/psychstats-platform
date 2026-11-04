@@ -1,0 +1,99 @@
+{
+  "case_id": "anova",
+  "covariances": [],
+  "design": "固定种子生成三组教学数据，比较三组增益。总体 F 检验和 Tukey 成对比较分开阅读；仅限该完整的三组比较家族。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/anova.R",
+    "script_sha256": "b6c2c953340eae791b0bf7462b65a580f5ebbdd9461e8d355e5a2650a0addd31",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "comparison",
+        "diff",
+        "lwr",
+        "upr",
+        "p adj"
+      ],
+      "name": "pairwise",
+      "rows": [
+        {
+          "_row": "control-combined",
+          "comparison": "control-combined",
+          "diff": -7.2603843625264854,
+          "lwr": -10.53804965326241,
+          "p adj": 1.3814707250370262e-06,
+          "upr": -3.982719071790561
+        },
+        {
+          "_row": "practice-combined",
+          "comparison": "practice-combined",
+          "diff": -4.317445991855086,
+          "lwr": -7.595111282591011,
+          "p adj": 0.006082593703541805,
+          "upr": -1.0397807011191618
+        },
+        {
+          "_row": "practice-control",
+          "comparison": "practice-control",
+          "diff": 2.9429383706713996,
+          "lwr": -0.33472692006452487,
+          "p adj": 0.08825233536347032,
+          "upr": 6.220603661407324
+        }
+      ],
+      "title": "pairwise"
+    },
+    {
+      "column_labels": {
+        "F": "总体 F",
+        "df1": "df1",
+        "df2": "df2",
+        "eta_squared": "η²",
+        "p": "总体检验 p"
+      },
+      "columns": [
+        "analysis",
+        "F",
+        "p",
+        "eta_squared",
+        "df1",
+        "df2"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "F": 13.869632859086254,
+          "analysis": "三种学习安排的成绩是否不同",
+          "df1": 2,
+          "df2": 177,
+          "eta_squared": 0.1354858122640536,
+          "p": 2.537073564126287e-06
+        }
+      ],
+      "source_fields": [
+        {
+          "F": "F",
+          "df1": "df1",
+          "df2": "df2",
+          "eta_squared": "eta_squared",
+          "p": "p"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "三种学习安排的成绩是否不同",
+  "valid": true,
+  "variances": []
+}

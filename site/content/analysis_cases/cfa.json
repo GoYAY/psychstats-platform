@@ -1,0 +1,67 @@
+{
+  "id": "cfa",
+  "unit_id": "cfa",
+  "title": "检验预想量表结构",
+  "question": "问卷预设三个维度，回答数据支持这种结构吗？",
+  "design": "12 道五级题目，预设每四题一个因子。ordered + WLSMV；读取 scaled χ²/CFI/RMSEA 与 SRMR，参数表包含阈值，不把题目当连续 ML。",
+  "variables": "已有教学 CSV 的列名和题目编码见代码；非真实研究样本。",
+  "script": "examples/r/output_reading/cfa.R",
+  "data_files": [
+    "examples/data/scale_items.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "cfi",
+      "label": "scaled CFI",
+      "meaning": "本例 WLSMV 的 scaled 字段，不混用普通或 robust 版本。",
+      "term": "fit-indices",
+      "format": ".3f"
+    },
+    {
+      "field_id": "rmsea",
+      "label": "scaled RMSEA",
+      "meaning": "近似误差指标，结合自由度、区间与残差，不凭单阈值定胜负。",
+      "term": "rmsea",
+      "format": ".3f"
+    },
+    {
+      "field_id": "srmr",
+      "label": "SRMR",
+      "meaning": "标准化残差汇总，仍须看具体题目拟合和载荷。",
+      "term": "fit-indices",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "判断模型之前先检查这些条件",
+      "body": "先看正常收敛、负方差及异常标准误；不要仅按修正指数反复加误差相关以制造好拟合。"
+    },
+    {
+      "title": "路径或拟合不符合预期时",
+      "body": "先区分测量问题、模型错误与证据不足。检查实际估计器、标准误、编码、有效样本和参数表。不要靠无理论依据的删题、加路径或误差相关来追求显著与完美拟合。"
+    }
+  ],
+  "report_template": "预设三因子有序题目模型采用 WLSMV，scaled χ²({df:.0f}) = {chi_squared:.3f}，p = {p:.4g}，scaled CFI = {cfi:.3f}，scaled RMSEA = {rmsea:.3f}，SRMR = {srmr:.3f}。结构判断还需核对阈值、载荷和题目内容，拟合指标不直接证明效度。",
+  "sources": [
+    {
+      "title": "实现与估计方法的官方文档",
+      "url": "https://lavaan.ugent.be/tutorial/cat.html"
+    }
+  ],
+  "related_terms": [
+    "fit-indices",
+    "rmsea"
+  ],
+  "table_labels": {
+    "parameters": "完整参数表：估计、标准误、区间及标准化参数",
+    "fit": "拟合指标（保留官方字段名）",
+    "loadings": "各题完整载荷",
+    "comparison": "嵌套模型比较"
+  }
+}

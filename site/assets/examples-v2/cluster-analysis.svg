@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="500pt" viewBox="0 0 760 500" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">聚类用于描述睡眠、活动和压力的组合模式。。归组不是诊断，组数与成员可能随尺度和算法变化。</desc><title id="title">相近的生活记录归组</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:02:39.081788</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 500  L 760 500  L 760 0  L 0 0  L 0 500  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 76  L 344 76  Q 358 76 358 90  L 358 422  Q 358 436 344 436  L 30 436  Q 16 436 16 422  L 16 90  Q 16 76 30 76  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 416 76  L 730 76  Q 744 76 744 90  L 744 422  Q 744 436 730 436  L 416 436  Q 402 436 402 422  L 402 90  Q 402 76 416 76  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.055" />
+   </g>
+   <g id="patch_4">
+    <path d="M 366.001831 256  Q 379.500918 256 391.54656 256  " clip-path="url(#p8f00860a3e)" style="fill: none; opacity: 0.75; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 385.94656 253.2  L 391.54656 256  L 385.94656 258.8  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.75; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_5">
+    <path d="M 132.38 169  L 166.38 169  Q 174.38 169 174.38 177  L 174.38 189  Q 174.38 197 166.38 197  L 132.38 197  Q 124.38 197 124.38 189  L 124.38 177  Q 124.38 169 132.38 169  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 214.46 169  L 248.46 169  Q 256.46 169 256.46 177  L 256.46 189  Q 256.46 197 248.46 197  L 214.46 197  Q 206.46 197 206.46 189  L 206.46 177  Q 206.46 169 214.46 169  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 293.12 169  L 327.12 169  Q 335.12 169 335.12 177  L 335.12 189  Q 335.12 197 327.12 197  L 293.12 197  Q 285.12 197 285.12 189  L 285.12 177  Q 285.12 169 293.12 169  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 132.38 212  L 166.38 212  Q 174.38 212 174.38 220  L 174.38 232  Q 174.38 240 166.38 240  L 132.38 240  Q 124.38 240 124.38 232  L 124.38 220  Q 124.38 212 132.38 212  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_9">
+    <path d="M 214.46 212  L 248.46 212  Q 256.46 212 256.46 220  L 256.46 232  Q 256.46 240 248.46 240  L 214.46 240  Q 206.46 240 206.46 232  L 206.46 220  Q 206.46 212 214.46 212  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_10">
+    <path d="M 293.12 212  L 327.12 212  Q 335.12 212 335.12 220  L 335.12 232  Q 335.12 240 327.12 240  L 293.12 240  Q 285.12 240 285.12 232  L 285.12 220  Q 285.12 212 293.12 212  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_11">
+    <path d="M 132.38 255  L 166.38 255  Q 174.38 255 174.38 263  L 174.38 275  Q 174.38 283 166.38 283  L 132.38 283  Q 124.38 283 124.38 275  L 124.38 263  Q 124.38 255 132.38 255  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_12">
+    <path d="M 214.46 255  L 248.46 255  Q 256.46 255 256.46 263  L 256.46 275  Q 256.46 283 248.46 283  L 214.46 283  Q 206.46 283 206.46 275  L 206.46 263  Q 206.46 255 214.46 255  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_13">
+    <path d="M 293.12 255  L 327.12 255  Q 335.12 255 335.12 263  L 335.12 275  Q 335.12 283 327.12 283  L 293.12 283  Q 285.12 283 285.12 275  L 285.12 263  Q 285.12 255 293.12 255  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_14">
+    <path d="M 132.38 298  L 166.38 298  Q 174.38 298 174.38 306  L 174.38 318  Q 174.38 326 166.38 326  L 132.38 326  Q 124.38 326 124.38 318  L 124.38 306  Q 124.38 298 132.38 298  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_15">
+    <path d="M 214.46 298  L 248.46 298  Q 256.46 298 256.46 306  L 256.46 318  Q 256.46 326 248.46 326  L 214.46 326  Q 206.46 326 206.46 318  L 206.46 306  Q 206.46 298 214.46 298  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_16">
+    <path d="M 293.12 298  L 327.12 298  Q 335.12 298 335.12 306  L 335.12 318  Q 335.12 326 327.12 326  L 293.12 326  Q 285.12 326 285.12 318  L 285.12 306  Q 285.12 298 293.12 298  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_17">
+    <path d="M 573 156  C 611.984856 156 649.378241 160.109286 676.944697 167.422836  C 704.511153 174.736385 720 184.657079 720 195  C 720 205.342921 704.511153 215.263615 676.944697 222.577164  C 649.378241 229.890714 611.984856 234 573 234  C 534.015144 234 496.621759 229.890714 469.055303 222.577164  C 441.488847 215.263615 426 205.342921 426 195  C 426 184.657079 441.488847 174.736385 469.055303 167.422836  C 496.621759 160.109286 534.015144 156 573 156  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.08; stroke-dasharray: 4,4; stroke-dashoffset: 0; stroke: #006d70; stroke-linejoin: miter" />
+   </g>
+   <g id="cluster-member-甲">
+    <path d="M 531 180  C 532.591219 180 534.117479 180.632198 535.242641 181.757359  C 536.367802 182.882521 537 184.408781 537 186  C 537 187.591219 536.367802 189.117479 535.242641 190.242641  C 534.117479 191.367802 532.591219 192 531 192  C 529.408781 192 527.882521 191.367802 526.757359 190.242641  C 525.632198 189.117479 525 187.591219 525 186  C 525 184.408781 525.632198 182.882521 526.757359 181.757359  C 527.882521 180.632198 529.408781 180 531 180  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.8; stroke: #006d70; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="cluster-member-乙">
+    <path d="M 615 180  C 616.591219 180 618.117479 180.632198 619.242641 181.757359  C 620.367802 182.882521 621 184.408781 621 186  C 621 187.591219 620.367802 189.117479 619.242641 190.242641  C 618.117479 191.367802 616.591219 192 615 192  C 613.408781 192 611.882521 191.367802 610.757359 190.242641  C 609.632198 189.117479 609 187.591219 609 186  C 609 184.408781 609.632198 182.882521 610.757359 181.757359  C 611.882521 180.632198 613.408781 180 615 180  z " clip-path="url(#p8f00860a3e)" style="fill: #006d70; opacity: 0.8; stroke: #006d70; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_18">
+    <path d="M 573 261  C 611.984856 261 649.378241 265.109286 676.944697 272.422836  C 704.511153 279.736385 720 289.657079 720 300  C 720 310.342921 704.511153 320.263615 676.944697 327.577164  C 649.378241 334.890714 611.984856 339 573 339  C 534.015144 339 496.621759 334.890714 469.055303 327.577164  C 441.488847 320.263615 426 310.342921 426 300  C 426 289.657079 441.488847 279.736385 469.055303 272.422836  C 496.621759 265.109286 534.015144 261 573 261  z " clip-path="url(#p8f00860a3e)" style="fill: #6657bd; opacity: 0.08; stroke-dasharray: 4,4; stroke-dashoffset: 0; stroke: #6657bd; stroke-linejoin: miter" />
+   </g>
+   <g id="cluster-member-丙">
+    <path d="M 531 285  C 532.591219 285 534.117479 285.632198 535.242641 286.757359  C 536.367802 287.882521 537 289.408781 537 291  C 537 292.591219 536.367802 294.117479 535.242641 295.242641  C 534.117479 296.367802 532.591219 297 531 297  C 529.408781 297 527.882521 296.367802 526.757359 295.242641  C 525.632198 294.117479 525 292.591219 525 291  C 525 289.408781 525.632198 287.882521 526.757359 286.757359  C 527.882521 285.632198 529.408781 285 531 285  z " clip-path="url(#p8f00860a3e)" style="fill: #6657bd; opacity: 0.8; stroke: #6657bd; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="cluster-member-丁">
+    <path d="M 615 285  C 616.591219 285 618.117479 285.632198 619.242641 286.757359  C 620.367802 287.882521 621 289.408781 621 291  C 621 292.591219 620.367802 294.117479 619.242641 295.242641  C 618.117479 296.367802 616.591219 297 615 297  C 613.408781 297 611.882521 296.367802 610.757359 295.242641  C 609.632198 294.117479 609 292.591219 609 291  C 609 289.408781 609.632198 287.882521 610.757359 286.757359  C 611.882521 285.632198 613.408781 285 615 285  z " clip-path="url(#p8f00860a3e)" style="fill: #6657bd; opacity: 0.8; stroke: #6657bd; stroke-width: 1.1; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 77  L 342 77  " clip-path="url(#p8f00860a3e)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 418 77  L 728 77  " clip-path="url(#p8f00860a3e)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #006d70" x="20" y="34.680156" transform="rotate(-0 20 34.680156)">相近的生活记录归组</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="62.53918" transform="rotate(-0 20 62.53918)">概念故事 · 操作与关系示意</text>
+   </g>
+   <g id="stage-0">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #006d70" x="32" y="108.095137" transform="rotate(-0 32 108.095137)">每人一组生活记录</text>
+   </g>
+   <g id="stage-1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #006d70" x="418" y="108.095137" transform="rotate(-0 418 108.095137)">按相近的组合描述模式</text>
+   </g>
+   <g id="conceptual-only">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="473.53918" transform="rotate(-0 20 473.53918)">位置与连线为概念示意，不代表实际测量或分析结果。</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="34" y="145.49793" transform="rotate(-0 34 145.49793)">学生</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="149.38" y="145.351562" transform="rotate(-0 149.38 145.351562)">睡眠</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="231.46" y="145.45668" transform="rotate(-0 231.46 145.45668)">活动</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="310.12" y="145.463242" transform="rotate(-0 310.12 145.463242)">压力</text>
+   </g>
+   <g id="input-student-甲">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="39" y="186.910156" transform="rotate(-0 39 186.910156)">甲</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="149.38" y="186.503555" transform="rotate(-0 149.38 186.503555)">较足</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="231.46" y="186.503555" transform="rotate(-0 231.46 186.503555)">较多</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="310.12" y="186.503555" transform="rotate(-0 310.12 186.503555)">较低</text>
+   </g>
+   <g id="input-student-乙">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="39" y="229.910156" transform="rotate(-0 39 229.910156)">乙</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="149.38" y="229.503555" transform="rotate(-0 149.38 229.503555)">较足</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="231.46" y="229.503555" transform="rotate(-0 231.46 229.503555)">较多</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="310.12" y="229.503555" transform="rotate(-0 310.12 229.503555)">较低</text>
+   </g>
+   <g id="input-student-丙">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="39" y="272.910156" transform="rotate(-0 39 272.910156)">丙</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="149.38" y="272.503555" transform="rotate(-0 149.38 272.503555)">较短</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="231.46" y="272.503555" transform="rotate(-0 231.46 272.503555)">较少</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="310.12" y="272.544805" transform="rotate(-0 310.12 272.544805)">较高</text>
+   </g>
+   <g id="input-student-丁">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="39" y="315.910156" transform="rotate(-0 39 315.910156)">丁</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="149.38" y="315.503555" transform="rotate(-0 149.38 315.503555)">较短</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="231.46" y="315.503555" transform="rotate(-0 231.46 315.503555)">较少</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="310.12" y="315.544805" transform="rotate(-0 310.12 315.544805)">较高</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="377.533555" transform="rotate(-0 32 377.533555)">相近程度同时考虑多个记录</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="407.533555" transform="rotate(-0 32 407.533555)">单位和尺度需要先考虑</text>
+   </g>
+   <g id="group-student-甲">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="531" y="214.351562" transform="rotate(-0 531 214.351562)">甲</text>
+   </g>
+   <g id="group-student-乙">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="615" y="214.351562" transform="rotate(-0 615 214.351562)">乙</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="573" y="247.503555" transform="rotate(-0 573 247.503555)">睡眠较足 · 活动较多</text>
+   </g>
+   <g id="group-student-丙">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6657bd" x="531" y="319.351562" transform="rotate(-0 531 319.351562)">丙</text>
+   </g>
+   <g id="group-student-丁">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6657bd" x="615" y="319.351562" transform="rotate(-0 615 319.351562)">丁</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6657bd" x="573" y="352.544805" transform="rotate(-0 573 352.544805)">睡眠较短 · 压力较高</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="418" y="377.503555" transform="rotate(-0 418 377.503555)">分组边界可随方法与样本改变</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="418" y="407.53918" transform="rotate(-0 418 407.53918)">模式示意，不是诊断或测量坐标</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8f00860a3e">
+   <rect x="0" y="0" width="760" height="500" />
+  </clipPath>
+ </defs>
+</svg>

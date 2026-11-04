@@ -1,0 +1,228 @@
+{
+  "case_id": "manova",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n           Df  Pillai approx F num Df den Df    Pr(>F)    \ngroup       2 0.18782   7.6176      4    294 7.494e-06 ***\nResiduals 147                                             \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n           Df   Pillai approx F num Df den Df    Pr(>F)    \nbaseline    1 0.050106   3.8243      2    145   0.02407 *  \ngroup       2 0.216839   8.8771      4    292 8.903e-07 ***\nResiduals 146                                              \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n            outcome         F df1 df2           p       p_holm\nmemory       memory 19.201621   2 146 3.95052e-08 2.765364e-07\nattention attention  8.623608   2 146 2.88414e-04 1.442070e-03\n              outcome              comparison   baseline difference       se\nmemory.1       memory  control minus combined 0.01412297  2.5943284 1.006266\nmemory.2       memory practice minus combined 0.01412297  6.2472504 1.012945\nmemory.3       memory  practice minus control 0.01412297  3.6529220 1.006738\nattention.1 attention  control minus combined 0.01412297  0.9524371 1.052251\nattention.2 attention practice minus combined 0.01412297  4.1930629 1.059236\nattention.3 attention  practice minus control 0.01412297  3.2406257 1.052745\n             df   ci_lower ci_upper            p       p_holm\nmemory.1    146  0.6055988 4.583058 1.092197e-02 2.184393e-02\nmemory.2    146  4.2453204 8.249181 6.463053e-09 5.170443e-08\nmemory.3    146  1.6632594 5.642585 3.934935e-04 1.573974e-03\nattention.1 146 -1.1271754 3.032050 3.668813e-01 3.668813e-01\nattention.2 146  2.0996467 6.286479 1.173621e-04 7.041726e-04\nattention.3 146  1.1600376 5.321214 2.487629e-03 7.462887e-03\n",
+  "stderr": "",
+  "metrics": {
+    "pillai": 0.18781620194240542,
+    "F": 7.617599747643294,
+    "df1": 4,
+    "df2": 294,
+    "p": 7.494003139969439e-06,
+    "adjusted_p": 8.902510581699133e-07,
+    "adjusted_pillai": 0.21683882602776614,
+    "adjusted_F": 8.877063123108023,
+    "adjusted_df1": 4,
+    "adjusted_df2": 292
+  },
+  "warnings": [],
+  "tables": {
+    "multivariate": [
+      {
+        "term": "baseline",
+        "Df": 1,
+        "Pillai": 0.05010633834933603,
+        "approx F": 3.8243328458621084,
+        "num Df": 2,
+        "den Df": 145,
+        "Pr(>F)": 0.024067820193905194,
+        "_row": "baseline"
+      },
+      {
+        "term": "group",
+        "Df": 2,
+        "Pillai": 0.21683882602776614,
+        "approx F": 8.877063123108023,
+        "num Df": 4,
+        "den Df": 292,
+        "Pr(>F)": 8.902510581699133e-07,
+        "_row": "group"
+      },
+      {
+        "term": "Residuals",
+        "Df": 146,
+        "_row": "Residuals"
+      }
+    ],
+    "univariate_followup": [
+      {
+        "outcome": "memory",
+        "F": 19.20162067252278,
+        "df1": 2,
+        "df2": 146,
+        "p": 3.9505201314847245e-08,
+        "p_holm": 2.765364092039307e-07,
+        "_row": "memory"
+      },
+      {
+        "outcome": "attention",
+        "F": 8.623607891714377,
+        "df1": 2,
+        "df2": 146,
+        "p": 0.0002884139825493479,
+        "p_holm": 0.0014420699127467393,
+        "_row": "attention"
+      }
+    ],
+    "adjusted_pairwise_comparisons": [
+      {
+        "outcome": "memory",
+        "comparison": "control minus combined",
+        "baseline": 0.014122966549180754,
+        "difference": 2.5943284140877445,
+        "se": 1.0062661070254968,
+        "df": 146,
+        "ci_lower": 0.6055987661028777,
+        "ci_upper": 4.583058062072611,
+        "p": 0.010921967488525846,
+        "p_holm": 0.021843934977051692,
+        "_row": "memory.1"
+      },
+      {
+        "outcome": "memory",
+        "comparison": "practice minus combined",
+        "baseline": 0.014122966549180754,
+        "difference": 6.247250447379474,
+        "se": 1.0129453085265803,
+        "df": 146,
+        "ci_lower": 4.245320388531784,
+        "ci_upper": 8.249180506227164,
+        "p": 6.463053170281985e-09,
+        "p_holm": 5.170442536225588e-08,
+        "_row": "memory.2"
+      },
+      {
+        "outcome": "memory",
+        "comparison": "practice minus control",
+        "baseline": 0.014122966549180754,
+        "difference": 3.6529220332917296,
+        "se": 1.00673819642946,
+        "df": 146,
+        "ci_lower": 1.6632593734647605,
+        "ci_upper": 5.642584693118699,
+        "p": 0.00039349349743825657,
+        "p_holm": 0.0015739739897530263,
+        "_row": "memory.3"
+      },
+      {
+        "outcome": "attention",
+        "comparison": "control minus combined",
+        "baseline": 0.014122966549180754,
+        "difference": 0.9524371340997873,
+        "se": 1.0522514264287557,
+        "df": 146,
+        "ci_lower": -1.1271754000628185,
+        "ci_upper": 3.0320496682623927,
+        "p": 0.3668813124356889,
+        "p_holm": 0.3668813124356889,
+        "_row": "attention.1"
+      },
+      {
+        "outcome": "attention",
+        "comparison": "practice minus combined",
+        "baseline": 0.014122966549180754,
+        "difference": 4.193062874537271,
+        "se": 1.059235860524122,
+        "df": 146,
+        "ci_lower": 2.0996466844004913,
+        "ci_upper": 6.286479064674051,
+        "p": 0.00011736209200242782,
+        "p_holm": 0.000704172552014567,
+        "_row": "attention.2"
+      },
+      {
+        "outcome": "attention",
+        "comparison": "practice minus control",
+        "baseline": 0.014122966549180754,
+        "difference": 3.2406257404374843,
+        "se": 1.0527450898297728,
+        "df": 146,
+        "ci_lower": 1.1600375567574464,
+        "ci_upper": 5.321213924117522,
+        "p": 0.0024876289214705036,
+        "p_holm": 0.007462886764411511,
+        "_row": "attention.3"
+      }
+    ],
+    "coefficients": [
+      {
+        "outcome": "memory",
+        "term": "(Intercept)",
+        "Estimate": 63.12541166920882,
+        "Std. Error": 0.7137013136787482,
+        "t value": 88.44794097944295,
+        "Pr(>|t|)": 1.0425751142595712e-128,
+        "_row": "memory.(Intercept)"
+      },
+      {
+        "outcome": "memory",
+        "term": "baseline",
+        "Estimate": 1.4104593412068331,
+        "Std. Error": 0.43817880728672515,
+        "t value": 3.2189127309479617,
+        "Pr(>|t|)": 0.0015857448265481566,
+        "_row": "memory.baseline"
+      },
+      {
+        "outcome": "memory",
+        "term": "groupcontrol",
+        "Estimate": 2.5943284140877445,
+        "Std. Error": 1.0062661070254968,
+        "t value": 2.578173304233141,
+        "Pr(>|t|)": 0.010921967488525846,
+        "_row": "memory.groupcontrol"
+      },
+      {
+        "outcome": "memory",
+        "term": "grouppractice",
+        "Estimate": 6.247250447379474,
+        "Std. Error": 1.0129453085265803,
+        "t value": 6.167411403945056,
+        "Pr(>|t|)": 6.463053170281985e-09,
+        "_row": "memory.grouppractice"
+      },
+      {
+        "outcome": "attention",
+        "term": "(Intercept)",
+        "Estimate": 42.117238999235724,
+        "Std. Error": 0.7463167248894642,
+        "t value": 56.433465303184306,
+        "Pr(>|t|)": 4.79669331556648e-101,
+        "_row": "attention.(Intercept)"
+      },
+      {
+        "outcome": "attention",
+        "term": "baseline",
+        "Estimate": 0.4708034855661477,
+        "Std. Error": 0.4582031251765342,
+        "t value": 1.0274995077450833,
+        "Pr(>|t|)": 0.3058846082424558,
+        "_row": "attention.baseline"
+      },
+      {
+        "outcome": "attention",
+        "term": "groupcontrol",
+        "Estimate": 0.9524371340997873,
+        "Std. Error": 1.0522514264287557,
+        "t value": 0.90514216486479,
+        "Pr(>|t|)": 0.3668813124356889,
+        "_row": "attention.groupcontrol"
+      },
+      {
+        "outcome": "attention",
+        "term": "grouppractice",
+        "Estimate": 4.193062874537271,
+        "Std. Error": 1.059235860524122,
+        "t value": 3.9585733742648173,
+        "Pr(>|t|)": 0.00011736209200242782,
+        "_row": "attention.grouppractice"
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "d1ff75a205285e0a7a9508c84d570dbf512c7f1c38d12ebaf75a8a09e4de2622",
+  "config_sha256": "203d1e005cc233b9ad1fb99efdc5ace48d7a34a957b93f04c1bd81eeda327172",
+  "data_sha256": {}
+}

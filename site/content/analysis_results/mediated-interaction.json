@@ -1,0 +1,20 @@
+{
+  "case_id": "mediated-interaction",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\nCall:\nlm(formula = m ~ x * w, data = d)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-3.13345 -0.63190  0.04314  0.61800  2.82090 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept) -0.02185    0.05193  -0.421    0.674    \nx            0.34653    0.04889   7.088 7.68e-12 ***\nw            0.23295    0.05067   4.598 6.00e-06 ***\nx:w          0.30889    0.04965   6.222 1.42e-09 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.9695 on 346 degrees of freedom\nMultiple R-squared:  0.2478,\tAdjusted R-squared:  0.2413 \nF-statistic:    38 on 3 and 346 DF,  p-value: < 2.2e-16\n\n\nCall:\nlm(formula = y ~ x * w + m, data = d)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-2.83975 -0.68897 -0.02537  0.73438  2.54027 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept) 0.004523   0.054372   0.083 0.933748    \nx           0.138615   0.054765   2.531 0.011814 *  \nw           0.184175   0.054634   3.371 0.000834 ***\nm           0.371390   0.056275   6.600 1.56e-10 ***\nx:w         0.109482   0.054797   1.998 0.046506 *  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.015 on 345 degrees of freedom\nMultiple R-squared:  0.2536,\tAdjusted R-squared:  0.2449 \nF-statistic:  29.3 on 4 and 345 DF,  p-value: < 2.2e-16\n\n          indirect direct_interaction \n         0.1147179          0.1094825 \n      2.5%      97.5% \n0.07193144 0.16840082 \n",
+  "stderr": "",
+  "metrics": {
+    "indirect": 0.11471789365136019,
+    "direct_interaction": 0.10948248529624209,
+    "ci_lower": 0.07193143797874305,
+    "ci_upper": 0.16840081824680836
+  },
+  "warnings": [],
+  "tables": [],
+  "figures": [],
+  "script_sha256": "31ffda4237ea29155548e2ee090ae342e49e825c172e057e7ac2700fb66d6ad0",
+  "config_sha256": "81c756e92aef7384733863994ab65bb0c73e850b68c19fd069a16bdaaec7958b",
+  "data_sha256": {}
+}

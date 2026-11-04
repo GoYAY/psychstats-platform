@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="650pt" viewBox="0 0 760 650" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">效应存在时，样本少且波动大可能较难获得拒绝零假设的证据。。功效是规定备择和设计下的长期概率，不是本次显著结论正确的概率。</desc><title id="title">真实改善也可能没发现</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:02:27.344769</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 650  L 760 650  L 760 0  L 0 0  L 0 650  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 88  L 730 88  Q 744 88 744 102  L 744 296  Q 744 310 730 310  L 30 310  Q 16 310 16 296  L 16 102  Q 16 88 30 88  z " clip-path="url(#p825093860d)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 43 197  L 190.5 197  Q 198.5 197 198.5 205  L 198.5 225  Q 198.5 233 190.5 233  L 43 233  Q 35 233 35 225  L 35 205  Q 35 197 43 197  z " clip-path="url(#p825093860d)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 214 224  L 361.5 224  Q 369.5 224 369.5 232  L 369.5 252  Q 369.5 260 361.5 260  L 214 260  Q 206 260 206 252  L 206 232  Q 206 224 214 224  z " clip-path="url(#p825093860d)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 385 190  L 532.5 190  Q 540.5 190 540.5 198  L 540.5 218  Q 540.5 226 532.5 226  L 385 226  Q 377 226 377 218  L 377 198  Q 377 190 385 190  z " clip-path="url(#p825093860d)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 556 212  L 703.5 212  Q 711.5 212 711.5 220  L 711.5 240  Q 711.5 248 703.5 248  L 556 248  Q 548 248 548 240  L 548 220  Q 548 212 556 212  z " clip-path="url(#p825093860d)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 30 350  L 730 350  Q 744 350 744 364  L 744 558  Q 744 572 730 572  L 30 572  Q 16 572 16 558  L 16 364  Q 16 350 30 350  z " clip-path="url(#p825093860d)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_8">
+    <path d="M 318 409  L 442 409  Q 450 409 450 417  L 450 443  Q 450 451 442 451  L 318 451  Q 310 451 310 443  L 310 417  Q 310 409 318 409  z " clip-path="url(#p825093860d)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_9">
+    <path d="M 378.025627 462.302917  Q 288.750339 475.999948 200.911684 489.476564  " clip-path="url(#p825093860d)" style="fill: none; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 207.29724 491.531965  L 200.911684 489.476564  L 206.387339 485.60136  z " clip-path="url(#p825093860d)" style="fill: #6741ad; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="detect-effect">
+    <path d="M 38 499  L 357 499  Q 365 499 365 507  L 365 539  Q 365 547 357 547  L 38 547  Q 30 547 30 539  L 30 507  Q 30 499 38 499  z " clip-path="url(#p825093860d)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_10">
+    <path d="M 381.974373 462.302917  Q 471.249661 475.999948 559.088316 489.476564  " clip-path="url(#p825093860d)" style="fill: none; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 553.612661 485.60136  L 559.088316 489.476564  L 552.70276 491.531965  z " clip-path="url(#p825093860d)" style="fill: #6741ad; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="miss-effect">
+    <path d="M 403 499  L 722 499  Q 730 499 730 507  L 730 539  Q 730 547 722 547  L 403 547  Q 395 547 395 539  L 395 507  Q 395 499 403 499  z " clip-path="url(#p825093860d)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 89  L 728 89  " clip-path="url(#p825093860d)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 351  L 728 351  " clip-path="url(#p825093860d)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="20" y="33.726406" transform="rotate(-0 20 33.726406)">真实改善也可能没发现</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="61.53918" transform="rotate(-0 20 61.53918)">概念示意 · 图形不对应实际人数或结果</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="30" y="117.135605" transform="rotate(-0 30 117.135605)">真实改善存在，样本记录仍有波动</text>
+   </g>
+   <g id="target-effect">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="30" y="158.114824" transform="rotate(-0 30 158.114824)">设真实平均提高3分</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6741ad" x="116.75" y="218.656377" transform="rotate(-0 116.75 218.656377)">记录</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6741ad" x="287.75" y="245.656377" transform="rotate(-0 287.75 245.656377)">记录</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6741ad" x="458.75" y="211.656377" transform="rotate(-0 458.75 211.656377)">记录</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6741ad" x="629.75" y="233.656377" transform="rotate(-0 629.75 233.656377)">记录</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="294.840205" transform="rotate(-0 30 294.840205)">人数少、差异大，证据可能不稳定</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="30" y="379.135605" transform="rotate(-0 30 379.135605)">保持真实改善，重复研究可能分流</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6741ad" x="380" y="433.795518" transform="rotate(-0 380 433.795518)">反复收集样本</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="197.5" y="526.808721" transform="rotate(-0 197.5 526.808721)">足以拒绝基准</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="562.5" y="526.719346" transform="rotate(-0 562.5 526.719346)">证据不足</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="20" y="588.840205" transform="rotate(-0 20 588.840205)">功效是规定效应和设计下长期发现的概率；更充分的规划可能提高机会，仍非保证。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p825093860d">
+   <rect x="0" y="0" width="760" height="650" />
+  </clipPath>
+ </defs>
+</svg>

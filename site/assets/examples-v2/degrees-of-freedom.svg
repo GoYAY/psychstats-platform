@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="710pt" viewBox="0 0 760 710" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">前两人出二十与三十元，第三人只能出四十元：三个金额有两个自由位置。。这里只解释固定总额带来的约束，不要求三人平摊；不同统计方法的自由度须按各自定义计算，有些自由度可以是小数。</desc><title id="title">三人合付九十元</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:02:35.430941</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 710  L 760 710  L 760 0  L 0 0  L 0 710  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 84  L 730 84  Q 744 84 744 98  L 744 205  Q 744 219 730 219  L 30 219  Q 16 219 16 205  L 16 98  Q 16 84 30 84  z " clip-path="url(#p806854b324)" style="fill: #a33052; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 36 161  L 724 161  Q 730 161 730 167  L 730 185  Q 730 191 724 191  L 36 191  Q 30 191 30 185  L 30 167  Q 30 161 36 161  z " clip-path="url(#p806854b324)" style="fill: #a33052; opacity: 0.06; stroke: #a33052; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 30 235  L 730 235  Q 744 235 744 249  L 744 356  Q 744 370 730 370  L 30 370  Q 16 370 16 356  L 16 249  Q 16 235 30 235  z " clip-path="url(#p806854b324)" style="fill: #a33052; opacity: 0.055" />
+   </g>
+   <g id="patch_5">
+    <path d="M 36 312  L 724 312  Q 730 312 730 318  L 730 336  Q 730 342 724 342  L 36 342  Q 30 342 30 336  L 30 318  Q 30 312 36 312  z " clip-path="url(#p806854b324)" style="fill: #a33052; opacity: 0.06; stroke: #a33052; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 30 312  L 185.555556 312  L 185.555556 342  L 30 342  z " clip-path="url(#p806854b324)" style="fill: #a33052; opacity: 0.26; stroke: #ffffff; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 30 386  L 730 386  Q 744 386 744 400  L 744 507  Q 744 521 730 521  L 30 521  Q 16 521 16 507  L 16 400  Q 16 386 30 386  z " clip-path="url(#p806854b324)" style="fill: #a33052; opacity: 0.055" />
+   </g>
+   <g id="patch_8">
+    <path d="M 36 463  L 724 463  Q 730 463 730 469  L 730 487  Q 730 493 724 493  L 36 493  Q 30 493 30 487  L 30 469  Q 30 463 36 463  z " clip-path="url(#p806854b324)" style="fill: #a33052; opacity: 0.06; stroke: #a33052; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_9">
+    <path d="M 30 463  L 185.555556 463  L 185.555556 493  L 30 493  z " clip-path="url(#p806854b324)" style="fill: #a33052; opacity: 0.26; stroke: #ffffff; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_10">
+    <path d="M 185.555556 463  L 418.888889 463  L 418.888889 493  L 185.555556 493  z " clip-path="url(#p806854b324)" style="fill: #246b91; opacity: 0.26; stroke: #ffffff; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_11">
+    <path d="M 30 537  L 730 537  Q 744 537 744 551  L 744 658  Q 744 672 730 672  L 30 672  Q 16 672 16 658  L 16 551  Q 16 537 30 537  z " clip-path="url(#p806854b324)" style="fill: #a33052; opacity: 0.055" />
+   </g>
+   <g id="patch_12">
+    <path d="M 36 614  L 724 614  Q 730 614 730 620  L 730 638  Q 730 644 724 644  L 36 644  Q 30 644 30 638  L 30 620  Q 30 614 36 614  z " clip-path="url(#p806854b324)" style="fill: #a33052; opacity: 0.06; stroke: #a33052; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_13">
+    <path d="M 30 614  L 185.555556 614  L 185.555556 644  L 30 644  z " clip-path="url(#p806854b324)" style="fill: #a33052; opacity: 0.26; stroke: #ffffff; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_14">
+    <path d="M 185.555556 614  L 418.888889 614  L 418.888889 644  L 185.555556 644  z " clip-path="url(#p806854b324)" style="fill: #246b91; opacity: 0.26; stroke: #ffffff; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_15">
+    <path d="M 418.888889 614  L 730 614  L 730 644  L 418.888889 644  z " clip-path="url(#p806854b324)" style="fill: #187b55; opacity: 0.26; stroke: #ffffff; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 85  L 728 85  " clip-path="url(#p806854b324)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 236  L 728 236  " clip-path="url(#p806854b324)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 32 387  L 728 387  " clip-path="url(#p806854b324)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_4">
+    <path d="M 32 538  L 728 538  " clip-path="url(#p806854b324)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a33052" x="20" y="31.663906" transform="rotate(-0 20 31.663906)">三个人，一张90元账单</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="20" y="58.764033" transform="rotate(-0 20 58.764033)">可以不平摊，但最后必须付够90元。</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a33052" x="30" y="111.630859" transform="rotate(-0 30 111.630859)">01</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="65" y="112.387646" transform="rotate(-0 65 112.387646)">先定总额</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="139.510117" transform="rotate(-0 30 139.510117)">三人还没有决定各付多少</text>
+   </g>
+   <g id="remaining-0">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="30" y="214.074355" transform="rotate(-0 30 214.074355)">还差 90 元</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a33052" x="30" y="262.630859" transform="rotate(-0 30 262.630859)">02</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="65" y="263.365381" transform="rotate(-0 65 263.365381)">甲自行选20元</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="290.48668" transform="rotate(-0 30 290.48668)">他可以改，但其他人要一起补足</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #a33052" x="107.777778" y="330.351562" transform="rotate(-0 107.777778 330.351562)">甲 20</text>
+   </g>
+   <g id="remaining-1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="30" y="365.074355" transform="rotate(-0 30 365.074355)">还差 70 元</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a33052" x="30" y="413.630859" transform="rotate(-0 30 413.630859)">03</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="65" y="414.365381" transform="rotate(-0 65 414.365381)">乙自行选30元</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="441.503555" transform="rotate(-0 30 441.503555)">前两笔定下，剩余金额随之确定</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #a33052" x="107.777778" y="481.351562" transform="rotate(-0 107.777778 481.351562)">甲 20</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #246b91" x="302.222222" y="481.351562" transform="rotate(-0 302.222222 481.351562)">乙 30</text>
+   </g>
+   <g id="remaining-2">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="30" y="516.074355" transform="rotate(-0 30 516.074355)">还差 40 元</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a33052" x="30" y="564.630859" transform="rotate(-0 30 564.630859)">04</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="65" y="565.423975" transform="rotate(-0 65 565.423975)">丙只能补40元</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="592.53918" transform="rotate(-0 30 592.53918)">不是第三次独立选择，而是补足余额</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #a33052" x="107.777778" y="632.351562" transform="rotate(-0 107.777778 632.351562)">甲 20</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #246b91" x="302.222222" y="632.351562" transform="rotate(-0 302.222222 632.351562)">乙 30</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #187b55" x="574.444444" y="632.351562" transform="rotate(-0 574.444444 632.351562)">丙 40</text>
+   </g>
+   <g id="remaining-3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #187b55" x="30" y="667.074355" transform="rotate(-0 30 667.074355)">正好 90 元</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a33052" x="20" y="692.08748" transform="rotate(-0 20 692.08748)">能各自定的金额只有两笔。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p806854b324">
+   <rect x="0" y="0" width="760" height="710" />
+  </clipPath>
+ </defs>
+</svg>

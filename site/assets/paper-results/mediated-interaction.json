@@ -1,0 +1,305 @@
+{
+  "case_id": "mediated-interaction",
+  "covariances": [],
+  "design": "模拟 X×W 预测 M，Y 同时回归 X、W、X×W 和 M。将乘积项视作关注的预测项，间接交互关联 a3×b；300 次逐人 Bootstrap。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [
+    {
+      "beta": null,
+      "estimate": 0.3465259714086285,
+      "label": "a1",
+      "p": 7.682576817260617e-12,
+      "source": "x",
+      "target": "m"
+    },
+    {
+      "beta": null,
+      "estimate": 0.2329541958180429,
+      "label": "a2",
+      "p": 6.000154417115023e-06,
+      "source": "w",
+      "target": "m"
+    },
+    {
+      "beta": null,
+      "estimate": 0.30888795491274473,
+      "label": "a3",
+      "p": 1.4186326757310772e-09,
+      "source": "x:w",
+      "target": "m"
+    },
+    {
+      "beta": null,
+      "estimate": 0.1386146734380762,
+      "label": "c1′",
+      "p": 0.011814242116201735,
+      "source": "x",
+      "target": "y"
+    },
+    {
+      "beta": null,
+      "estimate": 0.1841748647016068,
+      "label": "c2′",
+      "p": 0.0008336931060603515,
+      "source": "w",
+      "target": "y"
+    },
+    {
+      "beta": null,
+      "estimate": 0.37138998729738726,
+      "label": "b",
+      "p": 1.5554370474991132e-10,
+      "source": "m",
+      "target": "y"
+    },
+    {
+      "beta": null,
+      "estimate": 0.10948248529624209,
+      "label": "c3′",
+      "p": 0.04650621685090553,
+      "source": "x:w",
+      "target": "y"
+    }
+  ],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/mediated-interaction.R",
+    "script_sha256": "31ffda4237ea29155548e2ee090ae342e49e825c172e057e7ac2700fb66d6ad0",
+    "supplement_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": 0.07193143797874305,
+          "ci_upper": 0.16840081824680836,
+          "effect": "间接交互效应 a3 × b",
+          "estimate": 0.11471789365136019
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "columns": [
+        "outcome",
+        "term",
+        "estimate",
+        "se",
+        "statistic",
+        "df",
+        "p",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "path_coefficients",
+      "rows": [
+        {
+          "ci_lower": -0.12398436494376501,
+          "ci_upper": 0.08028920153366124,
+          "df": 346,
+          "estimate": -0.021847581705051886,
+          "outcome": "m",
+          "p": 0.6742222074883558,
+          "se": 0.0519292778302689,
+          "statistic": -0.420717996049566,
+          "term": "(Intercept)"
+        },
+        {
+          "ci_lower": 0.25036998993008197,
+          "ci_upper": 0.44268195288717505,
+          "df": 346,
+          "estimate": 0.3465259714086285,
+          "outcome": "m",
+          "p": 7.682576817260617e-12,
+          "se": 0.04888846622055167,
+          "statistic": 7.0880925133821515,
+          "term": "x"
+        },
+        {
+          "ci_lower": 0.13329746763156244,
+          "ci_upper": 0.3326109240045233,
+          "df": 346,
+          "estimate": 0.2329541958180429,
+          "outcome": "m",
+          "p": 6.000154417115023e-06,
+          "se": 0.050668346520725376,
+          "statistic": 4.59762774620552,
+          "term": "w"
+        },
+        {
+          "ci_lower": 0.21124356861804477,
+          "ci_upper": 0.4065323412074447,
+          "df": 346,
+          "estimate": 0.30888795491274473,
+          "outcome": "m",
+          "p": 1.4186326757310772e-09,
+          "se": 0.04964521403236884,
+          "statistic": 6.221908011341211,
+          "term": "x:w"
+        },
+        {
+          "ci_lower": -0.10241900825670684,
+          "ci_upper": 0.11146551481604829,
+          "df": 345,
+          "estimate": 0.0045232532796707255,
+          "outcome": "y",
+          "p": 0.9337479906709871,
+          "se": 0.05437196801135602,
+          "statistic": 0.08319090599637681,
+          "term": "(Intercept)"
+        },
+        {
+          "ci_lower": 0.030900185303442324,
+          "ci_upper": 0.2463291615727101,
+          "df": 345,
+          "estimate": 0.1386146734380762,
+          "outcome": "y",
+          "p": 0.011814242116201735,
+          "se": 0.0547645862269679,
+          "statistic": 2.5311005339033814,
+          "term": "x"
+        },
+        {
+          "ci_lower": 0.07671668447683176,
+          "ci_upper": 0.2916330449263818,
+          "df": 345,
+          "estimate": 0.1841748647016068,
+          "outcome": "y",
+          "p": 0.0008336931060603515,
+          "se": 0.05463427324054239,
+          "statistic": 3.3710499614541662,
+          "term": "w"
+        },
+        {
+          "ci_lower": 0.26070519007954,
+          "ci_upper": 0.4820747845152345,
+          "df": 345,
+          "estimate": 0.37138998729738726,
+          "outcome": "y",
+          "p": 1.5554370474991132e-10,
+          "se": 0.05627476141997501,
+          "statistic": 6.599583506462642,
+          "term": "m"
+        },
+        {
+          "ci_lower": 0.0017036946232334427,
+          "ci_upper": 0.21726127596925074,
+          "df": 345,
+          "estimate": 0.10948248529624209,
+          "outcome": "y",
+          "p": 0.04650621685090553,
+          "se": 0.054797279154060824,
+          "statistic": 1.9979547704993807,
+          "term": "x:w"
+        }
+      ],
+      "title": "各段路径系数"
+    },
+    {
+      "columns": [
+        "outcome",
+        "n",
+        "r_squared",
+        "adjusted_r_squared"
+      ],
+      "name": "model_summary",
+      "rows": [
+        {
+          "adjusted_r_squared": 0.24132405226482978,
+          "n": 350,
+          "outcome": "m",
+          "r_squared": 0.2478456220161349
+        },
+        {
+          "adjusted_r_squared": 0.24492796881956036,
+          "n": 350,
+          "outcome": "y",
+          "r_squared": 0.2535820895207689
+        }
+      ],
+      "title": "模型解释率与样本量"
+    },
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "se",
+        "p",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "interaction_effects",
+      "rows": [
+        {
+          "_row": "2.5%",
+          "ci_lower": 0.07193143797874305,
+          "ci_upper": 0.16840081824680836,
+          "effect": "间接交互效应 a3×b",
+          "estimate": 0.11471789365136019,
+          "p": null,
+          "se": 0.02705953850953764
+        },
+        {
+          "_row": "",
+          "ci_lower": 0.0017036946232334427,
+          "ci_upper": 0.21726127596925074,
+          "effect": "直接交互效应",
+          "estimate": 0.10948248529624209,
+          "p": 0.04650621685090553,
+          "se": 0.054797279154060824
+        }
+      ],
+      "title": "间接与直接交互效应"
+    },
+    {
+      "column_labels": {
+        "ci_lower": "间接乘积区间下界",
+        "ci_upper": "95% CI 上限",
+        "direct_interaction": "给定 M 后直接交互",
+        "indirect": "间接交互关联 a3×b"
+      },
+      "columns": [
+        "analysis",
+        "indirect",
+        "direct_interaction",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "交互关联是否通过另一变量传递",
+          "ci_lower": 0.07193143797874305,
+          "ci_upper": 0.16840081824680836,
+          "direct_interaction": 0.10948248529624209,
+          "indirect": 0.11471789365136019
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "direct_interaction": "direct_interaction",
+          "indirect": "indirect"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "交互关联是否通过另一变量传递",
+  "valid": true,
+  "variances": []
+}

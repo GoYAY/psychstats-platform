@@ -1,0 +1,18 @@
+{
+  "case_id": "design-invalid",
+  "status": "diagnostic-demo",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n   class condition\n1      A  training\n21     B   control\n41     C   control\nDesign diagnosis: only one treated class; class and intervention are confounded. No confirmatory treatment-effect test is reported.\n",
+  "stderr": "",
+  "metrics": {
+    "classes": 3,
+    "records": 60
+  },
+  "warnings": [],
+  "tables": [],
+  "figures": [],
+  "script_sha256": "46301ff39c362288ab5664ed28dc54a0f6e368a8fea9ef7dc2d3b7fe16fc3c32",
+  "config_sha256": "eb7d6dead4f6db659cad0e55f592446c225dbc393f6cf7114b7ac46bcbe090bc",
+  "data_sha256": {}
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "datasets": [
+    {"id": "cross_sectional_survey", "title": "横断调查", "status": "available", "scenario": "心理变量、人口学变量与结果变量的横断关系", "suitable_for": ["描述统计", "相关", "多元回归"], "source_file": "examples/data/cross_sectional_survey.csv", "download": "data/cross_sectional_survey.csv"},
+    {"id": "learning_experiment", "title": "学习实验", "status": "available", "scenario": "两种学习条件与前后测成绩", "suitable_for": ["t 检验", "方差分析", "重复测量"], "source_file": "examples/data/learning_experiment.csv", "download": "data/learning_experiment.csv"},
+    {"id": "scale_items", "title": "量表题目", "status": "available", "scenario": "多维心理量表的条目反应", "suitable_for": ["信度", "EFA", "CFA"], "source_file": "examples/data/scale_items.csv", "download": "data/scale_items.csv"},
+    {"id": "nested_classrooms", "title": "班级嵌套", "status": "available", "scenario": "学生嵌套于班级的数据", "suitable_for": ["ICC", "随机截距模型"], "source_file": "examples/data/nested_classrooms.csv", "download": "data/nested_classrooms.csv"},
+    {"id": "longitudinal_growth", "title": "纵向增长", "status": "available", "scenario": "多时点重复观测", "suitable_for": ["增长模型", "时间编码"], "source_file": "examples/data/longitudinal_growth.csv", "download": "data/longitudinal_growth.csv"},
+    {"id": "messy_survey", "title": "故意脏数据", "status": "available", "scenario": "含缺失、重复、不一致编码和异常值的调查数据", "suitable_for": ["数据清理", "异常值", "缺失数据"], "source_file": "examples/data/messy_survey.csv", "download": "data/messy_survey.csv"},
+    {"id": "binary_outcome_teaching", "title": "模拟筛查事件", "status": "available", "scenario": "固定种子20261001生成300人；id为编号，sleep_hours为小时，stress为教学评分，age为岁，screen_positive为按预设logit概率抽样的0/1事件（1模拟阳性）。生成脚本examples/r/generate_binary_outcome.R；无真实筛查或诊断效度。", "suitable_for": ["Logistic回归", "优势比", "预测概率"], "source_file": "examples/data/binary_outcome_teaching.csv", "download": "data/binary_outcome_teaching.csv"}
+  ]
+}

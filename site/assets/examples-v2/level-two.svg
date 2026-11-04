@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="153pt" viewBox="0 0 760 153" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">第二层由归属关系决定，不必永远是班级。。资料结构为概念例子；层级变量仍需符合实际研究设计。</desc><title id="title">第二层可以是学生</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:04:16.102524</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 153  L 760 153  L 760 0  L 0 0  L 0 153  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 12  L 730 12  Q 744 12 744 26  L 744 39  Q 744 53 730 53  L 30 53  Q 16 53 16 39  L 16 26  Q 16 12 30 12  z " clip-path="url(#pa0a4d236e1)" style="fill: #17643b; opacity: 0.09" />
+   </g>
+   <g id="patch_3">
+    <path d="M 30 55  L 730 55  Q 744 55 744 69  L 744 82  Q 744 96 730 96  L 30 96  Q 16 96 16 82  L 16 69  Q 16 55 30 55  z " clip-path="url(#pa0a4d236e1)" style="fill: #17643b; opacity: 0.035" />
+   </g>
+   <g id="patch_4">
+    <path d="M 30 98  L 730 98  Q 744 98 744 112  L 744 125  Q 744 139 730 139  L 30 139  Q 16 139 16 125  L 16 112  Q 16 98 30 98  z " clip-path="url(#pa0a4d236e1)" style="fill: #17643b; opacity: 0.065" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 13  L 728 13  " clip-path="url(#pa0a4d236e1)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 56  L 728 56  " clip-path="url(#pa0a4d236e1)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 32 99  L 728 99  " clip-path="url(#pa0a4d236e1)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17643b" x="28" y="37.61375" transform="rotate(-0 28 37.61375)">下层记录</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17643b" x="270.666667" y="37.671875" transform="rotate(-0 270.666667 37.671875)">第二层单位</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17643b" x="513.333333" y="37.66625" transform="rotate(-0 513.333333 37.66625)">第二层例子</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="80.683125" transform="rotate(-0 28 80.683125)">多个学生</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="270.666667" y="80.695312" transform="rotate(-0 270.666667 80.695312)">班级</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="513.333333" y="80.6775" transform="rotate(-0 513.333333 80.6775)">班级支持</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="123.642812" transform="rotate(-0 28 123.642812)">多个月份记录</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="270.666667" y="123.789062" transform="rotate(-0 270.666667 123.789062)">学生</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="513.333333" y="123.73" transform="rotate(-0 513.333333 123.73)">学生个人特点</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa0a4d236e1">
+   <rect x="0" y="0" width="760" height="153" />
+  </clipPath>
+ </defs>
+</svg>

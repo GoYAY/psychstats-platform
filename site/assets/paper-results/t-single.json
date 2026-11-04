@@ -1,0 +1,111 @@
+{
+  "case_id": "t-single",
+  "covariances": [],
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。参照不是随机样本估计时才用这一单样本路线；不是把两个独立研究平均数直接相减后套本检验。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/t-single.R",
+    "script_sha256": "e998329902a997222f5a87c50c562b81cf0efd22a3cc04e88747bfd92273edfc",
+    "supplement_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "df",
+        "t",
+        "p"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": 6.690035526788018,
+          "ci_upper": 7.338149278031569,
+          "df": 64,
+          "effect": "样本均值",
+          "estimate": 7.014092402409793,
+          "p": 0.9310412083240143,
+          "t": 0.08687613907467527
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "n"
+      ],
+      "name": "standardized_effects",
+      "rows": [
+        {
+          "_row": "2.5%",
+          "ci_lower": -0.26204773865592385,
+          "ci_upper": 0.24770956649131898,
+          "effect": "单样本 Cohen d（参照均值 7）",
+          "estimate": 0.010775658852262511,
+          "n": 65
+        }
+      ],
+      "title": "标准化效应量"
+    },
+    {
+      "column_labels": {
+        "ci_lower": "95% CI 下限",
+        "ci_upper": "95% CI 上限",
+        "df": "df",
+        "mean": "样本平均小时数",
+        "p": "均值等于 7 的检验 p",
+        "t": "t"
+      },
+      "columns": [
+        "analysis",
+        "mean",
+        "p",
+        "t",
+        "df",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "单样本平均值的比较方向",
+          "ci_lower": 6.690035526788018,
+          "ci_upper": 7.338149278031569,
+          "df": 64,
+          "mean": 7.014092402409793,
+          "p": 0.9310412083240143,
+          "t": 0.08687613907467527
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "df": "df",
+          "mean": "mean",
+          "p": "p",
+          "t": "t"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "单样本平均值的比较方向",
+  "valid": true,
+  "variances": []
+}

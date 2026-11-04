@@ -1,0 +1,24 @@
+{
+  "case_id": "correlation-types",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n    partial_r             t            df             p \n-4.530912e-01 -9.603196e+00  3.570000e+02  1.417902e-19 \n\n\tKendall's rank correlation tau\n\ndata:  d$stress and d$well_being\nz = -8.4807, p-value < 2.2e-16\nalternative hypothesis: true tau is not equal to 0\nsample estimates:\n       tau \n-0.3005445 \n\npoint_biserial            phi \n   -0.05521387    -0.06059423 \n",
+  "stderr": "",
+  "metrics": {
+    "partial_r": -0.45309115319511706,
+    "partial_p": 1.4179015762027236e-19,
+    "kendall_tau": -0.3005444657430034,
+    "point_biserial": -0.055213874296739816,
+    "phi": -0.060594226182026485,
+    "df": 357
+  },
+  "warnings": [],
+  "tables": [],
+  "figures": [],
+  "script_sha256": "1f6c6004ad558652024977a4c078ed50fe6605b6662309671a2ab6f4a239e049",
+  "config_sha256": "85f37246baaef2b8397b81468b12e744d120b3cf6876e2174e9c822e59977de8",
+  "data_sha256": {
+    "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+  }
+}

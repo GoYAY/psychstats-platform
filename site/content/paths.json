@@ -1,0 +1,669 @@
+{
+  "schema_version": "1.0",
+  "paths": [
+    {
+      "id": "foundations",
+      "title": "心理统计基础",
+      "description": "从变量、样本和描述统计建立统计推断的共同语言。",
+      "steps": [
+        {
+          "title": "认识数据",
+          "prerequisite": "基础心理学研究方法",
+          "goal": "区分变量类型、总体和样本",
+          "terms": [
+            "measurement-scales",
+            "population-and-sample",
+            "parameter-and-statistic"
+          ]
+        },
+        {
+          "title": "描述分布",
+          "prerequisite": "认识数据",
+          "goal": "概括中心、离散和分布形态",
+          "terms": [
+            "descriptive-statistics",
+            "central-tendency-and-dispersion",
+            "normal-distribution"
+          ]
+        },
+        {
+          "title": "理解抽样",
+          "prerequisite": "描述分布",
+          "goal": "理解统计量为何会波动",
+          "terms": [
+            "sampling-distribution",
+            "standard-error",
+            "confidence-interval"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-results",
+      "title": "看懂研究结果",
+      "description": "把显著性、区间、效应大小和检验力放在一起解释。",
+      "steps": [
+        {
+          "title": "假设检验语言",
+          "prerequisite": "心理统计基础",
+          "goal": "正确解释检验结论",
+          "terms": [
+            "null-and-alternative-hypotheses",
+            "p-value",
+            "significance-level",
+            "type-i-and-type-ii-errors"
+          ]
+        },
+        {
+          "title": "超越显著性",
+          "prerequisite": "假设检验语言",
+          "goal": "判断效应大小和估计精度",
+          "terms": [
+            "effect-size",
+            "confidence-interval",
+            "statistical-power",
+            "sample-size-planning",
+            "sesoi",
+            "equivalence-testing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "choose-method",
+      "title": "选择分析方法",
+      "description": "根据变量类型、研究问题和设计选择常见分析。",
+      "steps": [
+        {
+          "title": "比较差异",
+          "prerequisite": "看懂研究结果",
+          "goal": "区分两组、多组和分类变量比较",
+          "terms": [
+            "t-test",
+            "anova",
+            "chi-square-test",
+            "nonparametric-test",
+            "welch-anova",
+            "planned-contrast",
+            "fisher-exact-test"
+          ]
+        },
+        {
+          "title": "分析关系",
+          "prerequisite": "比较差异",
+          "goal": "选择相关或回归模型",
+          "terms": [
+            "correlation-coefficient",
+            "simple-linear-regression",
+            "multiple-regression",
+            "logistic-regression",
+            "intercept",
+            "causal-relationship"
+          ]
+        },
+        {
+          "title": "检查模型",
+          "prerequisite": "分析关系",
+          "goal": "识别假设与异常观测问题",
+          "terms": [
+            "statistical-assumptions",
+            "residual",
+            "multicollinearity",
+            "influential-point",
+            "model-fit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "title": "进阶心理统计",
+      "description": "进入潜变量、作用机制以及嵌套和纵向数据。",
+      "steps": [
+        {
+          "title": "潜变量模型",
+          "prerequisite": "选择分析方法",
+          "goal": "理解测量结构与模型拟合",
+          "terms": [
+            "efa",
+            "cfa",
+            "path-coefficient",
+            "sem",
+            "model-fit",
+            "fit-indices"
+          ]
+        },
+        {
+          "title": "机制与条件",
+          "prerequisite": "回归模型",
+          "goal": "解释中介、调节和条件效应",
+          "terms": [
+            "mediation-effect",
+            "moderation-effect",
+            "direct-effect",
+            "conditional-effect"
+          ]
+        },
+        {
+          "title": "层级与时间",
+          "prerequisite": "回归模型",
+          "goal": "处理嵌套与重复观测",
+          "terms": [
+            "nested-data",
+            "icc",
+            "hlm",
+            "growth-model",
+            "time-coding"
+          ]
+        }
+      ]
+    }
+  ],
+  "network": {
+    "foundation": [
+      {
+        "title": "认识研究数据",
+        "terms": [
+          "variable",
+          "measurement-scales",
+          "population-and-sample",
+          "descriptive-statistics"
+        ]
+      },
+      {
+        "title": "整理并核查数据",
+        "terms": [
+          "data-cleaning",
+          "missing-data",
+          "outlier",
+          "statistical-assumptions",
+          "reverse-scoring",
+          "scale-scoring"
+        ]
+      },
+      {
+        "title": "理解统计推断",
+        "terms": [
+          "sampling-distribution",
+          "standard-error",
+          "confidence-interval",
+          "p-value",
+          "effect-size",
+          "sample-size-planning",
+          "sesoi",
+          "equivalence-testing"
+        ]
+      },
+      {
+        "title": "建立关系模型语言",
+        "terms": [
+          "correlation-coefficient",
+          "simple-linear-regression",
+          "residual",
+          "intercept",
+          "model-fit",
+          "causal-relationship"
+        ]
+      }
+    ],
+    "directions": [
+      {
+        "id": "comparisons",
+        "title": "组间差异与干预评估",
+        "question": "比较不同训练条件或干预前后，结果有没有差别？",
+        "topic": "group-comparisons",
+        "stages": [
+          {
+            "title": "确认比较设计",
+            "detail": "区分独立组、同人重复测量与多个结果。",
+            "terms": [
+              "repeated-measures",
+              "covariate"
+            ]
+          },
+          {
+            "title": "选择比较方法",
+            "detail": "结合组数、结果尺度与研究设计，不仅看是否正态。",
+            "terms": [
+              "t-test",
+              "anova",
+              "manova",
+              "chi-square-test",
+              "nonparametric-test",
+              "welch-anova",
+              "planned-contrast",
+              "fisher-exact-test"
+            ]
+          },
+          {
+            "title": "检查模型条件",
+            "detail": "检查观测独立性、误差结构及适用的方差条件。",
+            "terms": [
+              "homogeneity-of-variance",
+              "sphericity",
+              "multivariate-normality"
+            ]
+          },
+          {
+            "title": "定位具体差异",
+            "detail": "按预设对比或事后比较定位差异，控制多次检验。",
+            "terms": [
+              "post-hoc-comparison",
+              "multiple-comparison-correction"
+            ]
+          },
+          {
+            "title": "判断实际意义",
+            "detail": "一起看差异大小、区间、设计和检验力。",
+            "terms": [
+              "effect-size",
+              "partial-eta-squared",
+              "confidence-interval",
+              "statistical-power"
+            ]
+          }
+        ],
+        "connections": [
+          {
+            "target": "prediction",
+            "label": "控制背景变量时连接回归模型",
+            "terms": [
+              "multiple-regression"
+            ]
+          },
+          {
+            "target": "multilevel",
+            "label": "同人追踪或班级分组时连接层级模型",
+            "terms": [
+              "nested-data",
+              "growth-model"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "prediction",
+        "title": "相关关系与结果预测",
+        "question": "压力、支持等因素与幸福感有什么关系，能否帮助预测？",
+        "topic": "regression",
+        "stages": [
+          {
+            "title": "明确结果尺度",
+            "detail": "区分连续结果与二分类事件；明确预测和解释的目标。",
+            "terms": [
+              "measurement-scales",
+              "correlation-coefficient",
+              "spearman-correlation",
+              "partial-correlation"
+            ]
+          },
+          {
+            "title": "建立预测模型",
+            "detail": "从单一关系到多个预测项，再进入二分类结果。",
+            "terms": [
+              "simple-linear-regression",
+              "multiple-regression",
+              "logistic-regression"
+            ]
+          },
+          {
+            "title": "核对编码与诊断",
+            "detail": "确认参照组、残差、共线性与影响点。",
+            "terms": [
+              "dummy-coding",
+              "residual",
+              "multicollinearity",
+              "influential-point",
+              "heteroscedasticity",
+              "robust-standard-errors",
+              "model-fit"
+            ]
+          },
+          {
+            "title": "读取模型结果",
+            "detail": "按单位和结果编码解释系数、区间与解释比例。",
+            "terms": [
+              "regression-coefficient",
+              "standard-error",
+              "r-squared",
+              "odds-ratio",
+              "intercept"
+            ]
+          },
+          {
+            "title": "限定推广与解释",
+            "detail": "预测表现需样本外检验；横断面关联不等于因果。",
+            "terms": [
+              "population-and-sample",
+              "confidence-interval",
+              "stepwise-regression",
+              "cross-validation",
+              "confounding",
+              "sensitivity-analysis",
+              "causal-relationship"
+            ]
+          }
+        ],
+        "connections": [
+          {
+            "target": "mechanisms",
+            "label": "想进一步研究机制与条件",
+            "terms": [
+              "mediation-effect",
+              "moderation-effect"
+            ]
+          },
+          {
+            "target": "multilevel",
+            "label": "预测关系在群组间不同时",
+            "terms": [
+              "random-slope-model"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "classification",
+        "title": "类别区分与人群分型",
+        "question": "能否区分已知类别，或发现具有相似特征的人群？",
+        "topic": "classification-clustering",
+        "stages": [
+          {
+            "title": "区分已知与未知类别",
+            "detail": "有已知分组是分类问题；没有标签时聚类是探索。",
+            "terms": [
+              "discriminant-analysis",
+              "cluster-analysis"
+            ]
+          },
+          {
+            "title": "整理特征与尺度",
+            "detail": "处理缺失，决定标准化口径与距离度量。",
+            "terms": [
+              "missing-data",
+              "standardization",
+              "euclidean-distance"
+            ]
+          },
+          {
+            "title": "选择分型方法",
+            "detail": "比较层次结构、中心划分或已知类别判别。",
+            "terms": [
+              "hierarchical-clustering",
+              "k-means-clustering",
+              "discriminant-analysis"
+            ]
+          },
+          {
+            "title": "检查结果稳定性",
+            "detail": "改变样本、特征或初始值检查分组；分类用留出数据。",
+            "terms": [
+              "bootstrap",
+              "outlier",
+              "multivariate-outlier"
+            ]
+          },
+          {
+            "title": "回到心理学解释",
+            "detail": "用外部特征核查，不把算法分组直接当作自然类型。",
+            "terms": [
+              "population-and-sample",
+              "descriptive-statistics"
+            ]
+          }
+        ],
+        "connections": [
+          {
+            "target": "measurement",
+            "label": "题目太多时先辨认测量维度",
+            "terms": [
+              "pca",
+              "efa"
+            ]
+          },
+          {
+            "target": "comparisons",
+            "label": "分组后比较须避免循环论证",
+            "terms": [
+              "anova",
+              "effect-size"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "measurement",
+        "title": "量表维度与潜变量关系",
+        "question": "一个量表有几个维度，各维度能否支持后续的关系研究？",
+        "topic": "factor-analysis",
+        "stages": [
+          {
+            "title": "确定测量目标",
+            "detail": "从构念和题意出发，区分观测分数与潜变量。",
+            "terms": [
+              "latent-variable",
+              "measurement-error",
+              "common-factor",
+              "reliability",
+              "internal-consistency",
+              "validity"
+            ]
+          },
+          {
+            "title": "探索候选维度",
+            "detail": "结合数据条件、维数证据与旋转，不只依赖单一阈值。",
+            "terms": [
+              "kmo",
+              "bartlett-test",
+              "efa",
+              "number-of-factors",
+              "factor-rotation",
+              "parallel-analysis",
+              "polychoric-correlation"
+            ]
+          },
+          {
+            "title": "验证测量结构",
+            "detail": "预设载荷结构、尺度和识别；最好使用独立样本。",
+            "terms": [
+              "cfa",
+              "factor-loading",
+              "model-identification",
+              "measurement-model"
+            ]
+          },
+          {
+            "title": "检查整体与局部",
+            "detail": "读拟合指标、区间和残差，修正须有内容依据。",
+            "terms": [
+              "fit-indices",
+              "rmsea",
+              "modification-index",
+              "model-modification",
+              "cronbach-alpha",
+              "mcdonald-omega",
+              "measurement-invariance",
+              "model-fit"
+            ]
+          },
+          {
+            "title": "扩展结构关系",
+            "detail": "先保证测量可解释，再研究潜变量之间的理论路径。",
+            "terms": [
+              "path-coefficient",
+              "path-analysis",
+              "structural-model",
+              "sem"
+            ]
+          }
+        ],
+        "connections": [
+          {
+            "target": "mechanisms",
+            "label": "测量模型可支持机制模型，但不证明因果",
+            "terms": [
+              "mediation-effect",
+              "indirect-effect"
+            ]
+          },
+          {
+            "target": "prediction",
+            "label": "观测分数回归与潜变量建模的对照",
+            "terms": [
+              "multiple-regression",
+              "measurement-error"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mechanisms",
+        "title": "作用机制与适用条件",
+        "question": "支持为何与幸福感有关，这种关系在什么条件下不同？",
+        "topic": "mediation-moderation",
+        "stages": [
+          {
+            "title": "提出机制或条件",
+            "detail": "区分解释途径的中介与改变关系强弱的调节。",
+            "terms": [
+              "mediator",
+              "moderator",
+              "mediation-effect",
+              "moderation-effect"
+            ]
+          },
+          {
+            "title": "设计时间与控制",
+            "detail": "论证时间顺序、混杂控制与变量测量，不只画箭头。",
+            "terms": [
+              "longitudinal-data",
+              "covariate",
+              "measurement-error",
+              "causal-relationship"
+            ]
+          },
+          {
+            "title": "估计路径或交互",
+            "detail": "采用与结果尺度匹配的模型，区分直接与间接关系。",
+            "terms": [
+              "direct-effect",
+              "indirect-effect",
+              "total-effect",
+              "conditional-effect"
+            ]
+          },
+          {
+            "title": "表达不确定性",
+            "detail": "合理重抽样；在有意义的调节值处看条件斜率。",
+            "terms": [
+              "bootstrap",
+              "sobel-test",
+              "simple-slope-test",
+              "interaction-plot"
+            ]
+          },
+          {
+            "title": "按理论扩展模型",
+            "detail": "确有理论需求再组合中介与调节，避免堆叠模型。",
+            "terms": [
+              "moderated-mediation",
+              "mediated-moderation"
+            ]
+          }
+        ],
+        "connections": [
+          {
+            "target": "prediction",
+            "label": "路径和交互共享回归基础",
+            "terms": [
+              "multiple-regression",
+              "centering"
+            ]
+          },
+          {
+            "target": "multilevel",
+            "label": "跨层条件与时间顺序需要层级设计",
+            "terms": [
+              "hlm",
+              "time-coding"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "multilevel",
+        "title": "群组层级与发展变化",
+        "question": "学生属于不同班级，或同一人被多次测量，怎样分析差异与变化？",
+        "topic": "multilevel-longitudinal",
+        "stages": [
+          {
+            "title": "识别记录层次",
+            "detail": "确认谁被重复测量、谁属于哪个群组及各层样本量。",
+            "terms": [
+              "nested-data",
+              "longitudinal-data",
+              "level-one",
+              "level-two"
+            ]
+          },
+          {
+            "title": "建立基线结构",
+            "detail": "用空模型了解组间与组内变异；ICC只是模型描述。",
+            "terms": [
+              "null-model",
+              "icc",
+              "fixed-effect",
+              "random-effect"
+            ]
+          },
+          {
+            "title": "加入层级关系",
+            "detail": "按理论选择截距或斜率变异，区分组内与组间解释。",
+            "terms": [
+              "hlm",
+              "random-intercept-model",
+              "random-slope-model",
+              "centering"
+            ]
+          },
+          {
+            "title": "研究发展轨迹",
+            "detail": "确定时间零点与变化形式，选择适当随机结构。",
+            "terms": [
+              "time-coding",
+              "growth-model"
+            ]
+          },
+          {
+            "title": "检查与报告",
+            "detail": "核对收敛、方差结构和残差，采用正确的模型比较口径。",
+            "terms": [
+              "reml",
+              "maximum-likelihood",
+              "residual",
+              "confidence-interval"
+            ]
+          }
+        ],
+        "connections": [
+          {
+            "target": "comparisons",
+            "label": "重复测量差异与增长轨迹的衔接",
+            "terms": [
+              "repeated-measures",
+              "sphericity"
+            ]
+          },
+          {
+            "target": "mechanisms",
+            "label": "机制的时间与层级扩展需额外假设",
+            "terms": [
+              "mediation-effect",
+              "moderation-effect"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "data-cleaning": {
+    "file": "data-cleaning-glass.svg",
+    "mobile_file": "data-cleaning-mobile-glass.svg",
+    "alt": "流程从保留原始数据开始，检查重复、缺失和异常，再核实记录；能核实的依据原记录修正，不能核实的标记并按预设规则处理，最后输出分析数据及处理日志。",
+    "caption": "异常值不应自动删除；每次修正都应保留依据。无法核实的记录应标记，并按预设规则处理。",
+    "width": 760,
+    "height": 330,
+    "source_file": "data-cleaning.svg",
+    "source_mobile_file": "data-cleaning-mobile.svg"
+  },
+  "p-value": {
+    "file": "p-value-glass.svg",
+    "mobile_file": "p-value-mobile-glass.svg",
+    "alt": "一条对称的零假设分布曲线，以零为中心；观察统计量右侧以及左侧对称点之外的两块尾部区域，共同表示双侧 p 值。",
+    "caption": "双侧、对称零假设分布的示意：两侧阴影面积相加才是此例的 p 值；它不是零假设为真的概率。具体检验的尾部定义取决于备择假设与统计量。",
+    "width": 760,
+    "height": 330,
+    "source_file": "p-value.svg",
+    "source_mobile_file": "p-value-mobile.svg"
+  },
+  "correlation-coefficient": {
+    "file": "correlation-coefficient-glass.svg",
+    "mobile_file": "correlation-coefficient-mobile-glass.svg",
+    "alt": "教学构造的散点图。横轴为压力评分，纵轴为幸福感评分；点云总体从左上向右下倾斜，表示负的线性关联。",
+    "caption": "教学构造的示意数据：下降趋势表示负相关，但不证明压力导致幸福感变化。解释 Pearson r 前还要检查离群点、非线性和分群。",
+    "width": 760,
+    "height": 330,
+    "source_file": "correlation-coefficient.svg",
+    "source_mobile_file": "correlation-coefficient-mobile.svg"
+  },
+  "t-test": {
+    "file": "t-test-design-glass.svg",
+    "mobile_file": "t-test-design-mobile-glass.svg",
+    "alt": "独立组、同人配对与单样本三种分支；独立比较训练减控制，同人先按ID配对再分析后减前，单样本比较均值和事先参考值。",
+    "caption": "选法先看设计；缺失配对保留参与者对应，而不是按行号比较。",
+    "width": 760,
+    "height": 330,
+    "preview_only": true,
+    "source_file": "t-test-design.svg",
+    "source_mobile_file": "t-test-design-mobile.svg"
+  },
+  "anova": {
+    "file": "anova-variation-glass.svg",
+    "mobile_file": "anova-variation-mobile-glass.svg",
+    "alt": "三组灰色观测点与主题色均值线，说明组内波动和组间均值差是不同来源；示意不使用真实测量结果。",
+    "caption": "概念示意：总体F比较组间相对组内变异；它不指出所有组对都不同。",
+    "width": 760,
+    "height": 340,
+    "preview_only": true,
+    "source_file": "anova-variation.svg",
+    "source_mobile_file": "anova-variation-mobile.svg"
+  },
+  "standard-error": {
+    "file": "precision-uncertainty-glass.svg",
+    "mobile_file": "precision-uncertainty-mobile-glass.svg",
+    "alt": "左或上图表示个体分数SD，右或下图表示重复抽样均值SE；两者分布对象不同，不是同一资料自动被压窄。",
+    "caption": "示意曲线，无实测参数。独立同分布条件下均值SE=SD/√n；更大样本提高均值精度，不令个体本身更相似。",
+    "width": 760,
+    "height": 340,
+    "preview_only": true,
+    "source_file": "precision-uncertainty.svg",
+    "source_mobile_file": "precision-uncertainty-mobile.svg"
+  },
+  "number-of-factors": {
+    "file": "factor-number-choice-glass.svg",
+    "mobile_file": "factor-number-choice-mobile-glass.svg",
+    "alt": "教学SMC平行分析前五顺位观察特征根约1.766、1.542、1.363、0.026、负0.016；对应随机95%线约0.381、0.290、0.220、0.169、0.119，前三超过参考。",
+    "caption": "沿用本页固定种子、200次置换的教学结果；初步3因素仍须比较载荷、边界解与内容，不是最终结构裁决。",
+    "width": 760,
+    "height": 340,
+    "preview_only": true,
+    "source_file": "factor-number-choice.svg",
+    "source_mobile_file": "factor-number-choice-mobile.svg"
+  },
+  "measurement-invariance": {
+    "file": "measurement-invariance-glass.svg",
+    "mobile_file": "measurement-invariance-mobile-glass.svg",
+    "alt": "两组量尺示意分别核查相同形态、载荷与位置条件；载荷相同只支持单位可比，有序指标另核查阈值与识别。",
+    "caption": "示意量尺：不变性不要求真实群体均值相同；连续截距程序不能直接套到有序阈值模型。",
+    "width": 760,
+    "height": 340,
+    "preview_only": true,
+    "source_file": "measurement-invariance.svg",
+    "source_mobile_file": "measurement-invariance-mobile.svg"
+  }
+}

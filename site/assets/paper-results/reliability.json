@@ -1,0 +1,124 @@
+{
+  "case_id": "reliability",
+  "covariances": [],
+  "design": "复用 12 道五级题目教学数据，只对第 1–4 题的同一拟定分量表计算原始与标准化 α。不自动反向题目；量表计分须先核对题意。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/scale_items.csv": "cb7afdf45041b8b9dc3cbea20381e7cd39abc9486b6706d0e92710cf18678e0e"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/reliability.R",
+    "script_sha256": "e77063f766a05d7292870c31850748cd3d2a2d7db26d362dc535ba4fbcff4803",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "item",
+        "n",
+        "raw.r",
+        "std.r",
+        "r.cor",
+        "r.drop",
+        "mean",
+        "sd"
+      ],
+      "name": "items",
+      "rows": [
+        {
+          "_row": "item_1",
+          "item": "item_1",
+          "mean": 3.007142857142857,
+          "n": 420,
+          "r.cor": 0.6084698628400876,
+          "r.drop": 0.51695068600093,
+          "raw.r": 0.7438998078878092,
+          "sd": 1.0956396235960648,
+          "std.r": 0.7415239926427694
+        },
+        {
+          "_row": "item_2",
+          "item": "item_2",
+          "mean": 2.966666666666667,
+          "n": 420,
+          "r.cor": 0.5739807741887428,
+          "r.drop": 0.48919804267031447,
+          "raw.r": 0.7222790487577128,
+          "sd": 1.0764714448969837,
+          "std.r": 0.7236059821465592
+        },
+        {
+          "_row": "item_3",
+          "item": "item_3",
+          "mean": 2.914285714285714,
+          "n": 420,
+          "r.cor": 0.62243888627893,
+          "r.drop": 0.5315792945190685,
+          "raw.r": 0.7479509399345752,
+          "sd": 1.0668740564384336,
+          "std.r": 0.7507343027947021
+        },
+        {
+          "_row": "item_4",
+          "item": "item_4",
+          "mean": 2.9571428571428573,
+          "n": 420,
+          "r.cor": 0.6353441104998004,
+          "r.drop": 0.5427068835754753,
+          "raw.r": 0.7594223624032064,
+          "sd": 1.0915476646145457,
+          "std.r": 0.757733139854034
+        }
+      ],
+      "title": "items"
+    },
+    {
+      "column_labels": {
+        "alpha": "原始 α",
+        "average_r": "average_r",
+        "min_item_rest": "最低题目－其余题相关",
+        "n": "n",
+        "standardized_alpha": "标准化 α"
+      },
+      "columns": [
+        "analysis",
+        "alpha",
+        "standardized_alpha",
+        "min_item_rest",
+        "average_r",
+        "n"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "alpha": 0.7301614278234793,
+          "analysis": "量表内部一致性如何读",
+          "average_r": 0.40352346674952716,
+          "min_item_rest": 0.48919804267031447,
+          "n": 420,
+          "standardized_alpha": 0.7301707590116115
+        }
+      ],
+      "source_fields": [
+        {
+          "alpha": "alpha",
+          "average_r": "average_r",
+          "min_item_rest": "min_item_rest",
+          "n": "n",
+          "standardized_alpha": "standardized_alpha"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "量表内部一致性如何读",
+  "valid": true,
+  "variances": []
+}

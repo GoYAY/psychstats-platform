@@ -1,0 +1,148 @@
+{
+  "case_id": "selection-blocks",
+  "covariances": [],
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。不能在各块使用不同缺失个案集合比较；加入顺序应由研究目标决定，不是逐步筛选的另一名称。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/selection-blocks.R",
+    "script_sha256": "8dbef9610d77357bb1a9dd1cb717579f42d4a0f565d71879aef0b47cbcedbc14",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "model",
+        "Res.Df",
+        "RSS",
+        "Df",
+        "Sum.of.Sq",
+        "F",
+        "Pr..F."
+      ],
+      "name": "comparison",
+      "rows": [
+        {
+          "RSS": 26235.475995156125,
+          "Res.Df": 358,
+          "model": "1"
+        },
+        {
+          "Df": 1,
+          "F": 100.6487705609932,
+          "Pr..F.": 5.041481882074684e-21,
+          "RSS": 21082.04722464355,
+          "Res.Df": 357,
+          "Sum.of.Sq": 5153.428770512575,
+          "model": "2"
+        },
+        {
+          "Df": 1,
+          "F": 55.74181861411917,
+          "Pr..F.": 6.420287293424302e-13,
+          "RSS": 18227.948856967865,
+          "Res.Df": 356,
+          "Sum.of.Sq": 2854.098367675684,
+          "model": "3"
+        }
+      ],
+      "title": "comparison"
+    },
+    {
+      "columns": [
+        "model",
+        "term",
+        "Estimate",
+        "Std. Error",
+        "statistic",
+        "p"
+      ],
+      "name": "console_coefficients",
+      "rows": [
+        {
+          "Estimate": 49.9895,
+          "Std. Error": 3.90425,
+          "model": 1,
+          "p": "< 2e-16",
+          "statistic": 12.804,
+          "term": "(Intercept)"
+        },
+        {
+          "Estimate": 0.01451,
+          "Std. Error": 0.03123,
+          "model": 1,
+          "p": 0.643,
+          "statistic": 0.464,
+          "term": "age"
+        },
+        {
+          "Estimate": 0.31337,
+          "Std. Error": 0.04379,
+          "model": 1,
+          "p": 4.79e-12,
+          "statistic": 7.155,
+          "term": "social_support"
+        },
+        {
+          "Estimate": -0.36858,
+          "Std. Error": 0.04937,
+          "model": 1,
+          "p": 6.42e-13,
+          "statistic": -7.466,
+          "term": "stress"
+        }
+      ],
+      "title": "软件打印的回归系数"
+    },
+    {
+      "column_labels": {
+        "F": "F",
+        "delta_r_squared": "最后一块 ΔR²",
+        "df1": "df1",
+        "df2": "df2",
+        "p": "最后一块增量检验 p"
+      },
+      "columns": [
+        "analysis",
+        "delta_r_squared",
+        "p",
+        "F",
+        "df1",
+        "df2"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "F": 55.74181861411917,
+          "analysis": "分块加入变量增加了什么",
+          "delta_r_squared": 0.10868409978530799,
+          "df1": 1,
+          "df2": 356,
+          "p": 6.420287293424302e-13
+        }
+      ],
+      "source_fields": [
+        {
+          "F": "F",
+          "delta_r_squared": "delta_r_squared",
+          "df1": "df1",
+          "df2": "df2",
+          "p": "p"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "分块加入变量增加了什么",
+  "valid": true,
+  "variances": []
+}

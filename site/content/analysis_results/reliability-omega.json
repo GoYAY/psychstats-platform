@@ -1,0 +1,97 @@
+{
+  "case_id": "reliability-omega",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] compiler_4.5.1 tools_4.5.1    parallel_4.5.1 lavaan_0.6-21  nlme_3.1-168  \n [6] mnormt_2.1.2   grid_4.5.1     pbivnorm_0.6.0 psych_2.6.3    jsonlite_2.0.0\n[11] stats4_4.5.1   lattice_0.22-7 quadprog_1.5-8\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\nLength  Class   Mode \n     1 lavaan     S4 \nomega_total       alpha \n  0.8472572   0.8456699 \n",
+  "stderr": "Number of categories should be increased  in order to count frequencies. \n",
+  "metrics": {
+    "omega": 0.8472571686986744,
+    "alpha": 0.845669926964832,
+    "n": 400
+  },
+  "warnings": [],
+  "tables": {
+    "parameters": [
+      {
+        "lhs": "f",
+        "op": "=~",
+        "rhs": "x1",
+        "est": 1,
+        "se": 0,
+        "ci.lower": 1,
+        "ci.upper": 1
+      },
+      {
+        "lhs": "f",
+        "op": "=~",
+        "rhs": "x2",
+        "est": 0.9177192374843763,
+        "se": 0.057790377507235584,
+        "z": 15.880139169699563,
+        "pvalue": 0,
+        "ci.lower": 0.804452178917221,
+        "ci.upper": 1.0309862960515317
+      },
+      {
+        "lhs": "f",
+        "op": "=~",
+        "rhs": "x3",
+        "est": 0.8619215691145952,
+        "se": 0.0571491235421137,
+        "z": 15.081973540319257,
+        "pvalue": 0,
+        "ci.lower": 0.7499113452240223,
+        "ci.upper": 0.9739317930051681
+      },
+      {
+        "lhs": "x1",
+        "op": "~~",
+        "rhs": "x1",
+        "est": 0.3073526023987351,
+        "se": 0.04198422116574514,
+        "z": 7.320669381608145,
+        "pvalue": 2.466915560717098e-13,
+        "ci.lower": 0.22506504099491037,
+        "ci.upper": 0.3896401638025598
+      },
+      {
+        "lhs": "x2",
+        "op": "~~",
+        "rhs": "x2",
+        "est": 0.3131030056986208,
+        "se": 0.03748906720242117,
+        "z": 8.35184839377384,
+        "pvalue": 0,
+        "ci.lower": 0.23962578416787358,
+        "ci.upper": 0.386580227229368
+      },
+      {
+        "lhs": "x3",
+        "op": "~~",
+        "rhs": "x3",
+        "est": 0.4396257118774423,
+        "se": 0.04096966644999617,
+        "z": 10.73051723313416,
+        "pvalue": 0,
+        "ci.lower": 0.3593266411768309,
+        "ci.upper": 0.5199247825780537
+      },
+      {
+        "lhs": "f",
+        "op": "~~",
+        "rhs": "f",
+        "est": 0.7610553439346229,
+        "se": 0.08078054409214375,
+        "z": 9.421270337898589,
+        "pvalue": 0,
+        "ci.lower": 0.6027283868624713,
+        "ci.upper": 0.9193823010067745
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "173cdff5b2aad863c38698f46e6972d8eb81eb88f43409ad3aa8dde9f9443e5e",
+  "config_sha256": "4f289c23c6188628a48d8a0001511c16e438afdb631eda331a8a8cf8c40db6da",
+  "data_sha256": {}
+}

@@ -1,0 +1,31 @@
+[Unit]
+Description=PsychStats durable generation worker (one concurrent job)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=psychstats-beta
+Group=psychstats-beta
+WorkingDirectory=/opt/psychstats-beta/current
+EnvironmentFile=/etc/psychstats-beta.env
+Environment=MPLCONFIGDIR=/var/cache/psychstats-beta/matplotlib
+ExecStart=/opt/psychstats-beta/venv/bin/python -X utf8 tools/term_generation_worker.py
+Restart=on-failure
+RestartSec=10
+UMask=0077
+StateDirectory=psychstats-beta
+StateDirectoryMode=0700
+CacheDirectory=psychstats-beta
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/psychstats-beta /var/cache/psychstats-beta
+MemoryMax=2G
+TasksMax=64
+KillMode=control-group
+TimeoutStopSec=10
+
+[Install]
+WantedBy=multi-user.target

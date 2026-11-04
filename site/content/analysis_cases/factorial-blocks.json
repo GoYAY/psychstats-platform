@@ -1,0 +1,52 @@
+{
+  "id": "factorial-blocks",
+  "unit_id": "anova",
+  "title": "主效应、交互与区组比较",
+  "question": "训练方式的效果，会随是否有反馈而不同吗？",
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。交互存在时总体主效应可能掩盖条件差异；不平衡设计的顺序平方和受项顺序影响，本例不推广为任意 Type III 检验。",
+  "variables": "固定种子生成小型教学数据，非真实参与者；不上传数据。",
+  "script": "examples/r/output_reading/factorial-blocks.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "interaction_F",
+      "label": "训练×反馈 F",
+      "meaning": "平衡 2×2 设计检验训练差异是否随反馈改变，不是两个主效应之和。",
+      "term": "interaction",
+      "format": ".3f"
+    },
+    {
+      "field_id": "block_p",
+      "label": "区组调整的条件 p",
+      "meaning": "另一个随机区组教学设计，控制区组差异后比较三条件。",
+      "term": "anova",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这个变体最重要的边界",
+      "body": "交互存在时总体主效应可能掩盖条件差异；不平衡设计的顺序平方和受项顺序影响，本例不推广为任意 Type III 检验。"
+    },
+    {
+      "title": "如何继续检查",
+      "body": "先明确独立单位、估计目标及比较方向，结合完整参数与区间判断。方法改变需有研究依据并记录，不以显著性作为选择标准。"
+    }
+  ],
+  "report_template": "平衡 2×2 教学设计的训练×反馈交互 F({df1:.0f}, {df2:.0f}) = {interaction_F:.3f}，p = {interaction_p:.4g}。另示八区组三条件的区组调整比较 p = {block_p:.4g}，它与被试内重复测量不是相同数据。",
+  "sources": [
+    {
+      "title": "R 官方统计函数索引",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "interaction",
+    "anova"
+  ]
+}

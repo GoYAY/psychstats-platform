@@ -1,0 +1,78 @@
+{
+  "tables": {
+    "model_summary": [
+      {
+        "group": 1,
+        "n": 420
+      }
+    ],
+    "explained_variance": [
+      {
+        "group": 1,
+        "outcome": "item_1",
+        "r_squared": 0.4366913439093618
+      },
+      {
+        "group": 1,
+        "outcome": "item_2",
+        "r_squared": 0.39616941753536583
+      },
+      {
+        "group": 1,
+        "outcome": "item_3",
+        "r_squared": 0.46043814613487133
+      },
+      {
+        "group": 1,
+        "outcome": "item_4",
+        "r_squared": 0.4782599106957418
+      },
+      {
+        "group": 1,
+        "outcome": "item_5",
+        "r_squared": 0.5213283823919092
+      },
+      {
+        "group": 1,
+        "outcome": "item_6",
+        "r_squared": 0.4067735767136854
+      },
+      {
+        "group": 1,
+        "outcome": "item_7",
+        "r_squared": 0.5068775069706306
+      },
+      {
+        "group": 1,
+        "outcome": "item_8",
+        "r_squared": 0.40047252058898697
+      },
+      {
+        "group": 1,
+        "outcome": "item_9",
+        "r_squared": 0.48424872990503
+      },
+      {
+        "group": 1,
+        "outcome": "item_10",
+        "r_squared": 0.46889367075818966
+      },
+      {
+        "group": 1,
+        "outcome": "item_11",
+        "r_squared": 0.3940102379874103
+      },
+      {
+        "group": 1,
+        "outcome": "item_12",
+        "r_squared": 0.49896069366323204
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "SEM：参数区间沿用原模型估计器及算法；样本数与 R² 从实际模型对象提取",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 parallel_4.5.1 lavaan_0.6-21  mnormt_2.1.2   pbivnorm_0.6.0\n[6] jsonlite_2.0.0 stats4_4.5.1   quadprog_1.5-8",
+  "case_id": "cfa",
+  "original_sha256": "83bd5dc1ae784b5e390c91f4028363cd6ee23a01e2be65eb557e7f4bf87ae2fb",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

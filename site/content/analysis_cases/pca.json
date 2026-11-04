@@ -1,0 +1,65 @@
+{
+  "id": "pca",
+  "unit_id": "pca",
+  "title": "主成分能解释多少信息",
+  "question": "九项表现指标太多，能压缩成几项综合指标吗？",
+  "design": "固定种子生成九个连续指标，标准化后 PCA。展示所有成分的解释比例与载荷；演示前三个成分，不等于确认三个心理构念。",
+  "variables": "下方代码固定种子生成连续教学指标；共享函数同时下载可完全复现。",
+  "script": "examples/r/output_reading/pca.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "first_prop",
+      "label": "第一成分解释比例",
+      "meaning": "九项标准化总变异中第一成分占比；不是共同因子解释率。",
+      "term": "pca",
+      "format": ".4g"
+    },
+    {
+      "field_id": "three_prop",
+      "label": "前三成分累计比例",
+      "meaning": "压缩保留的信息比例，不能按阈值自动决定构念数量。",
+      "term": "pca",
+      "format": ".4g"
+    },
+    {
+      "field_id": "first_eigenvalue",
+      "label": "第一特征值",
+      "meaning": "第一成分方差，取决于本例相关矩阵分析。",
+      "term": "eigenvalue",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "判断模型之前先检查这些条件",
+      "body": "载荷符号可整体翻转而含义不变；高累计解释率不意味着测量结构已经验证。"
+    },
+    {
+      "title": "路径或拟合不符合预期时",
+      "body": "先区分测量问题、模型错误与证据不足。检查实际估计器、标准误、编码、有效样本和参数表。不要靠无理论依据的删题、加路径或误差相关来追求显著与完美拟合。"
+    }
+  ],
+  "report_template": "九项连续教学指标经标准化主成分分析，第一成分解释总变异 {first_prop:.3f}，前三成分累计 {three_prop:.3f}，第一特征值 {first_eigenvalue:.3f}。本分析为数据压缩，不能用主成分直接证实潜在心理构念。",
+  "sources": [
+    {
+      "title": "实现与估计方法的官方文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/prcomp.html"
+    }
+  ],
+  "related_terms": [
+    "pca",
+    "eigenvalue"
+  ],
+  "table_labels": {
+    "parameters": "完整参数表：估计、标准误、区间及标准化参数",
+    "fit": "拟合指标（保留官方字段名）",
+    "loadings": "各题完整载荷",
+    "comparison": "嵌套模型比较"
+  }
+}

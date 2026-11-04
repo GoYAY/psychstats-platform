@@ -1,0 +1,69 @@
+{
+  "case_id": "ranks",
+  "covariances": [],
+  "design": "固定种子生成独立组偏斜等待时间。Wilcoxon 秩和检验与 Kruskal–Wallis 三组变体；另示有 ID 配对的符号秩检验。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/ranks.R",
+    "script_sha256": "6c6c6aa8bf1fff6267b040384bf2f7beb45e958fb82ac8df5c8a42b1b06c94c6",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "variables",
+        "method",
+        "statistic_name",
+        "statistic",
+        "estimate",
+        "p"
+      ],
+      "name": "tests",
+      "rows": [
+        {
+          "estimate": -2.119853417303479,
+          "method": "Wilcoxon 秩和检验",
+          "p": 0.0773185604444636,
+          "statistic": 1334,
+          "statistic_name": "W",
+          "variables": "独立组 a 与 b"
+        },
+        {
+          "method": "Kruskal–Wallis 检验",
+          "p": 0.21016997022425016,
+          "variables": "独立组 a、b、c"
+        },
+        {
+          "method": "Wilcoxon 符号秩检验",
+          "p": 3.3738958929743724e-05,
+          "variables": "同一人的 before 与 after"
+        }
+      ],
+      "source_fields": [
+        {
+          "estimate": "shift",
+          "p": "p",
+          "statistic": "W"
+        },
+        {
+          "p": "kw_p"
+        },
+        {
+          "p": "paired_p"
+        }
+      ],
+      "title": "各研究比较与检验结果"
+    }
+  ],
+  "title": "分布偏斜时怎样比较",
+  "valid": true,
+  "variances": []
+}

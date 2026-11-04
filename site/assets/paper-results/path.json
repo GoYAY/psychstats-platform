@@ -1,0 +1,309 @@
+{
+  "case_id": "path",
+  "covariances": [],
+  "design": "横断教学调查中的观测变量路径模型：压力预测支持，压力和支持共同预测幸福感。该三变量路径模型饱和，不能凭完美拟合支持方向。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [
+    {
+      "beta": -0.31647829870287836,
+      "estimate": -0.3567899043962672,
+      "group": null,
+      "label": "a",
+      "p": 2.4496515926841766e-10,
+      "source": "stress",
+      "target": "social_support"
+    },
+    {
+      "beta": 0.3334366367445334,
+      "estimate": 0.3136671830809685,
+      "group": null,
+      "label": "b",
+      "p": 5.972999872483342e-13,
+      "source": "social_support",
+      "target": "well_being"
+    },
+    {
+      "beta": -0.3477012439690573,
+      "estimate": -0.3687488150382937,
+      "group": null,
+      "label": "c",
+      "p": 5.950795411990839e-14,
+      "source": "stress",
+      "target": "well_being"
+    }
+  ],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/path.R",
+    "script_sha256": "696f193dd95d719468680f5efd6af0a9ce0d860d8f038ce0b52ea3c67bf28057",
+    "supplement_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+  },
+  "tables": [
+    {
+      "columns": [
+        "lhs",
+        "op",
+        "rhs",
+        "label",
+        "est",
+        "se",
+        "z",
+        "pvalue",
+        "ci.lower",
+        "ci.upper",
+        "std.all",
+        "std.nox"
+      ],
+      "name": "parameters",
+      "rows": [
+        {
+          "ci.lower": -0.467260951022927,
+          "ci.upper": -0.24631885776960738,
+          "est": -0.3567899043962672,
+          "label": "a",
+          "lhs": "social_support",
+          "op": "~",
+          "pvalue": 2.4496515926841766e-10,
+          "rhs": "stress",
+          "se": 0.05636381458947273,
+          "std.all": -0.31647829870287836,
+          "std.lv": -0.3567899043962672,
+          "std.nox": -0.03929778861982563,
+          "z": -6.33012344879344
+        },
+        {
+          "ci.lower": 0.2282945641805248,
+          "ci.upper": 0.39903980198141226,
+          "est": 0.3136671830809685,
+          "label": "b",
+          "lhs": "well_being",
+          "op": "~",
+          "pvalue": 5.972999872483342e-13,
+          "rhs": "social_support",
+          "se": 0.04355825901590645,
+          "std.all": 0.3334366367445334,
+          "std.lv": 0.3136671830809685,
+          "std.nox": 0.3334366367445334,
+          "z": 7.201095502150916
+        },
+        {
+          "ci.lower": -0.46499582047402926,
+          "ci.upper": -0.27250180960255815,
+          "est": -0.3687488150382937,
+          "label": "c",
+          "lhs": "well_being",
+          "op": "~",
+          "pvalue": 5.950795411990839e-14,
+          "rhs": "stress",
+          "se": 0.0491065173620126,
+          "std.all": -0.3477012439690573,
+          "std.lv": -0.3687488150382937,
+          "std.nox": -0.043174808649911904,
+          "z": -7.509162425832039
+        },
+        {
+          "ci.lower": 63.33860317048699,
+          "ci.upper": 85.01049059743586,
+          "est": 74.17454688396143,
+          "label": "",
+          "lhs": "social_support",
+          "op": "~~",
+          "pvalue": 0,
+          "rhs": "social_support",
+          "se": 5.528644301092763,
+          "std.all": 0.8998414864501318,
+          "std.lv": 74.17454688396143,
+          "std.nox": 0.8998414864501318,
+          "z": 13.416407864998742
+        },
+        {
+          "ci.lower": 43.26253945765977,
+          "ci.upper": 58.06521646660285,
+          "est": 50.66387796213131,
+          "label": "",
+          "lhs": "well_being",
+          "op": "~~",
+          "pvalue": 0,
+          "rhs": "well_being",
+          "se": 3.7762625042359734,
+          "std.all": 0.6945411871263693,
+          "std.lv": 50.66387796213131,
+          "std.nox": 0.6945411871263693,
+          "z": 13.416407864998728
+        },
+        {
+          "ci.lower": 64.85622191358024,
+          "ci.upper": 64.85622191358024,
+          "est": 64.85622191358024,
+          "label": "",
+          "lhs": "stress",
+          "op": "~~",
+          "rhs": "stress",
+          "se": 0,
+          "std.all": 1,
+          "std.lv": 64.85622191358024,
+          "std.nox": 64.85622191358024
+        }
+      ],
+      "title": "完整参数表：估计、标准误、区间及标准化参数"
+    },
+    {
+      "columns": [
+        "model",
+        "chisq",
+        "df",
+        "pvalue",
+        "cfi",
+        "tli",
+        "aic",
+        "bic",
+        "rmsea",
+        "rmsea.ci.lower",
+        "rmsea.ci.upper",
+        "srmr"
+      ],
+      "name": "fit",
+      "rows": [
+        {
+          "aic": 5016.659817043312,
+          "bic": 5036.090337200562,
+          "cfi": 1,
+          "chisq": 0,
+          "df": 0,
+          "model": "路径模型系数怎么读",
+          "pvalue": null,
+          "rmsea": 0,
+          "rmsea.ci.lower": 0,
+          "rmsea.ci.upper": 0,
+          "srmr": 9.064933036736789e-17,
+          "tli": 1
+        }
+      ],
+      "title": "模型拟合指标"
+    },
+    {
+      "columns": [
+        "group",
+        "n"
+      ],
+      "name": "model_summary",
+      "rows": [
+        {
+          "group": 1,
+          "n": 360
+        }
+      ],
+      "title": "模型解释率与样本量"
+    },
+    {
+      "columns": [
+        "group",
+        "outcome",
+        "r_squared"
+      ],
+      "name": "explained_variance",
+      "rows": [
+        {
+          "group": 1,
+          "outcome": "social_support",
+          "r_squared": 0.10015851354986816
+        },
+        {
+          "group": 1,
+          "outcome": "well_being",
+          "r_squared": 0.30545881287363075
+        }
+      ],
+      "title": "各结果变量与指标的解释率"
+    },
+    {
+      "column_labels": {
+        "a": "压力→支持路径 a",
+        "b": "支持→幸福感路径 b",
+        "c": "c",
+        "df": "模型自由度"
+      },
+      "columns": [
+        "analysis",
+        "a",
+        "b",
+        "df",
+        "c"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "a": -0.3567899043962672,
+          "analysis": "路径模型系数怎么读",
+          "b": 0.3136671830809685,
+          "c": -0.3687488150382937,
+          "df": 0
+        }
+      ],
+      "source_fields": [
+        {
+          "a": "a",
+          "b": "b",
+          "c": "c",
+          "df": "df"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "路径模型系数怎么读",
+  "valid": true,
+  "variances": [
+    {
+      "ci.lower": 63.33860317048699,
+      "ci.upper": 85.01049059743586,
+      "est": 74.17454688396143,
+      "label": "",
+      "lhs": "social_support",
+      "op": "~~",
+      "pvalue": 0,
+      "rhs": "social_support",
+      "se": 5.528644301092763,
+      "std.all": 0.8998414864501318,
+      "std.lv": 74.17454688396143,
+      "std.nox": 0.8998414864501318,
+      "z": 13.416407864998742
+    },
+    {
+      "ci.lower": 43.26253945765977,
+      "ci.upper": 58.06521646660285,
+      "est": 50.66387796213131,
+      "label": "",
+      "lhs": "well_being",
+      "op": "~~",
+      "pvalue": 0,
+      "rhs": "well_being",
+      "se": 3.7762625042359734,
+      "std.all": 0.6945411871263693,
+      "std.lv": 50.66387796213131,
+      "std.nox": 0.6945411871263693,
+      "z": 13.416407864998728
+    },
+    {
+      "ci.lower": 64.85622191358024,
+      "ci.upper": 64.85622191358024,
+      "est": 64.85622191358024,
+      "label": "",
+      "lhs": "stress",
+      "op": "~~",
+      "rhs": "stress",
+      "se": 0,
+      "std.all": 1,
+      "std.lv": 64.85622191358024,
+      "std.nox": 64.85622191358024
+    }
+  ]
+}

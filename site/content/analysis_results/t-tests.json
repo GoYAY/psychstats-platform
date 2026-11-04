@@ -1,0 +1,26 @@
+{
+  "case_id": "t-tests",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\n\tWelch Two Sample t-test\n\ndata:  a and b\nt = 5.7599, df = 177.76, p-value = 3.636e-08\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n 4.762423 9.726466\nsample estimates:\nmean of x mean of y \n 9.872222  2.627778 \n\n\n\tPaired t-test\n\ndata:  d$post_score and d$pre_score\nt = 9.15, df = 179, p-value < 2.2e-16\nalternative hypothesis: true mean difference is not equal to 0\n95 percent confidence interval:\n 4.902121 7.597879\nsample estimates:\nmean difference \n           6.25 \n\n",
+  "stderr": "During startup - Warning messages:\n1: Setting LC_COLLATE=C.UTF-8 failed \n2: Setting LC_CTYPE=C.UTF-8 failed \n3: Setting LC_MONETARY=C.UTF-8 failed \n4: Setting LC_TIME=C.UTF-8 failed \n",
+  "metrics": {
+    "difference": 7.244444444444444,
+    "ci_lower": 4.762422876332318,
+    "ci_upper": 9.72646601255657,
+    "t": 5.7598942351089,
+    "df": 177.7574694462005,
+    "p": 3.63613076171663e-08
+  },
+  "warnings": [
+    "During startup - Warning messages:"
+  ],
+  "tables": [],
+  "figures": [],
+  "script_sha256": "b433a8361cdc91eedfd71009216982d0b9b71e91d4b108b0e38a5c5bda282fc4",
+  "config_sha256": "b66f922eeac2f36e0c03012fe8a7481dc0a645a0aeadcef90bcbc018171ec660",
+  "data_sha256": {
+    "examples/data/learning_experiment.csv": "82a8bd37ee782296f26c84ffd23a51e15ff03b1512d661b4437454b26d24a391"
+  }
+}

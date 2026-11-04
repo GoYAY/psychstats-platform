@@ -1,0 +1,12 @@
+{
+  "source": "Project-controlled Apache-2.0 nature audit tools with permissive PDFium/pypdf adapter; provenance in SOURCE-NOTICE.txt",
+  "sha256": {
+    "audit_figure_collisions.py": "b5290373f319c2859237d8d511c57e44eb30d8625dbd9f10af2f25adfeb813e5",
+    "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+    "audit_pdf_text.py": "11b8f3ec50bc13e2bd8561eeb7cd204307f4ce5a70ac57fa24c809ce1b9c252c",
+    "LICENSE.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "pdfium_geometry.py": "40b3fceed9ee6bb326513e523cac65f738e9f931ee2ff4593bc53fb29f37fdba",
+    "SOURCE-NOTICE.txt": "ca310fdd100221e315a6f6cae224e63f224113eb3760f7560a03f7691b8f82ab"
+  },
+  "requireRuntimeNotices": true
+}

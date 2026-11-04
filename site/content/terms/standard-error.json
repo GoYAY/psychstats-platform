@@ -1,0 +1,159 @@
+{
+  "id": "standard-error",
+  "zh": "标准误",
+  "en": "Standard Error",
+  "aliases": [],
+  "type": "indicator",
+  "level": "basic",
+  "topic": "regression",
+  "status": "public",
+  "summary": "用一个数概括统计量在重复抽样中的典型波动。",
+  "relations": {
+    "prerequisites": [
+      "sampling-distribution"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": [
+      "r-squared"
+    ]
+  },
+  "real_question": "两项调查得到的平均压力分数相近，怎样判断哪个估计更稳定？",
+  "operational_definition": "标准误是统计量抽样分布的标准差；在独立同分布样本中，样本均值的估计标准误常用样本标准差除以样本量平方根。",
+  "plain_explanation": "标准差描述个体分数的散布，标准误描述换样本后估计值的散布。",
+  "problems_solved": [
+    "量化估计精度",
+    "构造区间和检验统计量"
+  ],
+  "not_for": [
+    "有聚类、配对或复杂抽样时不能机械套用独立样本公式"
+  ],
+  "decision_clues": [
+    "识别统计量与抽样设计",
+    "检查独立性"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：估计精度要连同样本与单位一起读",
+      "body": "先确认标准误对应均值、均值差还是其他估计量，再看它的单位及有效样本量。独立观测的均值标准误可由样本标准差除以样本量平方根估计；班级内学生或同一人的多次记录存在关联时，需要匹配研究设计的计算方法。"
+    },
+    {
+      "heading": "容易混淆：误差小就表示样本代表性好吗",
+      "body": "标准误描述统计量的抽样波动，标准差描述个体分数散布。小标准误不保证抽样没有偏差，也不代表个体差异小；把更多相关记录当独立样本，可能让精度看起来过高。判断估计质量时还应查看置信区间与抽样设计。"
+    }
+  ],
+  "formula": {
+    "latex": "SE(平均数)=s/√n（独立样本近似）",
+    "note": "按页面所述前提使用；公式中的量须与研究设计一致。",
+    "verified": true
+  },
+  "quiz": {
+    "question": "均值标准误主要描述什么？",
+    "options": [
+      "个体得分之间的差异",
+      "重复抽样下均值的波动",
+      "测量工具的信度",
+      "效应大小"
+    ],
+    "answer": 1,
+    "explanation": "标准误以统计量的抽样分布为对象。",
+    "option_explanations": [
+      "个体得分的散布通常用样本标准差描述，而不是均值的标准误。",
+      "正确。均值标准误概括相同抽样设计下，样本均值在重复抽样中的典型波动。",
+      "信度讨论测量结果的一致性，与均值抽样波动不是同一概念。",
+      "效应大小描述差异或关联的量级，不是估计值的抽样精度。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "basic_textbook",
+      "title": "现代心理与教育统计学",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": {
+    "packages": [],
+    "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+    "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\nse <- sd(d$stress)/sqrt(sum(!is.na(d$stress)))\nprint(c(standard_error=se, sample_sd=sd(d$stress), n=nrow(d)))\n",
+    "your_data_code": "d <- read.csv(\"your_data.csv\")\nx <- na.omit(d$score)\nse_mean <- sd(x)/sqrt(length(x)); se_mean\n# The formula assumes independent observations; clustered data need another method.\n",
+    "assumption_checks": [
+      "识别统计量与抽样设计",
+      "检查独立性"
+    ],
+    "key_output": [
+      "standard_error",
+      "sample_sd",
+      "n"
+    ],
+    "interpretation": "示例的 sample_sd≈8.06 描述学生之间的压力分数散布，n=360 是数据行数；本教学数据没有缺失，standard_error≈0.425 由 8.06/√360 得到，描述均值估计的抽样波动。更换数据时，应使用有效独立观测数，并同步处理标准差计算中的缺失；班级聚类或重复测量数据不能直接套用此公式。",
+    "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+    "common_errors": [
+      "有聚类、配对或复杂抽样时不能机械套用独立样本公式"
+    ],
+    "verified": true,
+    "validation_report": "logs/r_validation.json"
+  },
+  "verified": true,
+  "candidate_evidence": {
+    "textbook": [
+      {
+        "chunk_id": 385,
+        "page_print": 251,
+        "page_pdf": 264,
+        "path": "第十章结构方程模型",
+        "sim": 0.5639,
+        "snippet": "然，这不是说应用 协方差结构模型时绝对不能使用相关矩阵，在符合下列两个条件时，完全可以应用相关 矩阵来进行分析：（1）模型为“不随量标转变”模型（scale-invariantmo"
+      },
+      {
+        "chunk_id": 308,
+        "page_print": 196,
+        "page_pdf": 209,
+        "path": "第八章",
+        "sim": 0.5829,
+        "snippet": "X9 0. 533 6.059 0.088 0.000 X10 0. 680 0.078 8. 699 0. 000 X11 0. 995 0.013 76.907 0. 000 "
+      },
+      {
+        "chunk_id": 53,
+        "page_print": 28,
+        "page_pdf": 41,
+        "path": "第一章数据的清理与准备",
+        "sim": 0.5546,
+        "snippet": "计量的值分别由各变量的偏度值或峰度值除以相应的标准误（偏度标准误0.241，峰度 标准误0.478）得到。由偏度和峰度的检验可知，x7和x9在偏度检验上显著，它们可 能服从偏态分布"
+      }
+    ],
+    "course": [
+      {
+        "chunk_id": 9,
+        "doc": "w01-ch1-intro",
+        "page_course": 6,
+        "block_source": "TEXT_LAYER",
+        "xref": null,
+        "numeric_risk": 4,
+        "sim": 0.6134,
+        "snippet": "[讲义 w01-ch1-intro 第6页] 验 高级心理统计 24 X X t b SE  crit X crit X CI b F SE        1 1 "
+      },
+      {
+        "chunk_id": 703,
+        "doc": "w07-regression",
+        "page_course": 30,
+        "block_source": "TABLE_CANDIDATE",
+        "xref": 206,
+        "numeric_risk": 9,
+        "sim": 0.5487,
+        "snippet": "[讲义 w07-regression 第30页] 775 0. 439 ## MASTGOAL 7. 831 1. 726 4. 536 5.91e-06 *** ## Signi"
+      },
+      {
+        "chunk_id": 672,
+        "doc": "w07-regression",
+        "page_course": 17,
+        "block_source": "TABLE_CANDIDATE",
+        "xref": 150,
+        "numeric_risk": 24,
+        "sim": 0.5393,
+        "snippet": "[讲义 w07-regression 第17页] nif.codes:0***0.001***0.01*0.05.0.1²1 | | | | | | | | | | | ## | "
+      }
+    ]
+  },
+  "plain_example": "例如，两项调查测量同样的学生群体，一项抽取 40 人，另一项抽取 400 人。其他条件相近且观测独立时，后者的平均压力估计通常更稳定，即使学生之间的分数差异差不多。"
+}

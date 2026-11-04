@@ -1,0 +1,34 @@
+{
+  "case_id": "power",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\n     Two-sample t test power calculation \n\n              n = 112.597\n          delta = 3\n             sd = 8\n      sig.level = 0.05\n          power = 0.8\n    alternative = two.sided\n\nNOTE: n is number in *each* group\n\n  delta per_group\n1     2       253\n2     3       113\n3     4        64\n",
+  "stderr": "",
+  "metrics": {
+    "per_group": 113,
+    "recruit_per_group": 133,
+    "power": 0.8
+  },
+  "warnings": [],
+  "tables": {
+    "sensitivity": [
+      {
+        "delta": 2,
+        "per_group": 253
+      },
+      {
+        "delta": 3,
+        "per_group": 113
+      },
+      {
+        "delta": 4,
+        "per_group": 64
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "89b0936d09f12a86c0a8066db20e2314f494f8dd557a0bbfae9edafac2da5707",
+  "config_sha256": "613fb1e5ee7ce8a47acedcabfd9a5d7d835572618fae42693093b731eedf6898",
+  "data_sha256": {}
+}

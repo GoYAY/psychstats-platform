@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="518.4pt" height="230.4pt" viewBox="0 0 518.4 230.4" version="1.1" role="img">
+ <ns0:title>潜剖面输出如何确定人数类型 · profiles</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-17T19:08:25.754048</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 230.4  L 518.4 230.4  L 518.4 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 57.024 184.32  L 497.664 184.32  L 497.664 55.296  L 57.024 55.296  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_1">
+    <ns0:g id="xtick_1">
+     <ns0:g id="line2d_1">
+      <ns0:defs>
+       <ns0:path id="m8e6fb4ca85" d="M 0 0  L 0 3.5  " style="stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:defs>
+      <ns0:g>
+       <ns0:use ns4:href="#m8e6fb4ca85" x="77.053091" y="184.32" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_1">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="77.053091" y="197.965" transform="rotate(-0 77.053091 197.965)">压力</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_2">
+     <ns0:g id="line2d_2">
+      <ns0:g>
+       <ns0:use ns4:href="#m8e6fb4ca85" x="277.344" y="184.32" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_2">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="277.344" y="197.9875" transform="rotate(-0 277.344 197.9875)">社会支持</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_3">
+     <ns0:g id="line2d_3">
+      <ns0:g>
+       <ns0:use ns4:href="#m8e6fb4ca85" x="477.634909" y="184.32" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_3">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4c5869" x="477.634909" y="198.01875" transform="rotate(-0 477.634909 198.01875)">幸福感</ns0:text>
+     </ns0:g>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_2">
+    <ns0:g id="ytick_1">
+     <ns0:g id="line2d_4">
+      <ns0:path d="M 57.024 164.604583  L 497.664 164.604583  " clip-path="url(#p89e60f4ae5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_5">
+      <ns0:defs>
+       <ns0:path id="m1533686bcf" d="M 0 0  L -3.5 0  " style="stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:defs>
+      <ns0:g>
+       <ns0:use ns4:href="#m1533686bcf" x="57.024" y="164.604583" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_4">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="50.024" y="167.85263" transform="rotate(-0 50.024 167.85263)">−1.0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_2">
+     <ns0:g id="line2d_6">
+      <ns0:path d="M 57.024 140.924568  L 497.664 140.924568  " clip-path="url(#p89e60f4ae5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_7">
+      <ns0:g>
+       <ns0:use ns4:href="#m1533686bcf" x="57.024" y="140.924568" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_5">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="50.024" y="144.172615" transform="rotate(-0 50.024 144.172615)">−0.5</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_3">
+     <ns0:g id="line2d_8">
+      <ns0:path d="M 57.024 117.244553  L 497.664 117.244553  " clip-path="url(#p89e60f4ae5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_9">
+      <ns0:g>
+       <ns0:use ns4:href="#m1533686bcf" x="57.024" y="117.244553" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_6">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="50.024" y="120.492599" transform="rotate(-0 50.024 120.492599)">0.0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_4">
+     <ns0:g id="line2d_10">
+      <ns0:path d="M 57.024 93.564537  L 497.664 93.564537  " clip-path="url(#p89e60f4ae5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_11">
+      <ns0:g>
+       <ns0:use ns4:href="#m1533686bcf" x="57.024" y="93.564537" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_7">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="50.024" y="96.812584" transform="rotate(-0 50.024 96.812584)">0.5</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_5">
+     <ns0:g id="line2d_12">
+      <ns0:path d="M 57.024 69.884522  L 497.664 69.884522  " clip-path="url(#p89e60f4ae5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_13">
+      <ns0:g>
+       <ns0:use ns4:href="#m1533686bcf" x="57.024" y="69.884522" style="fill: #4c5869; stroke: #4c5869; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_8">
+      <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #4c5869" x="50.024" y="73.132569" transform="rotate(-0 50.024 73.132569)">1.0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_9">
+     <ns0:text style="font-size: 8px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #343e4c" x="26.754156" y="119.808" transform="rotate(-90 26.754156 119.808)">标准化指标均值（全体样本 SD 单位）</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="line2d_14">
+    <ns0:path d="M 77.053091 107.290479  L 277.344 117.265883  L 477.634909 119.171795  " clip-path="url(#p89e60f4ae5)" style="fill: none; stroke: #006d70; stroke-opacity: 0.85; stroke-width: 1.15; stroke-linecap: square" />
+    <ns0:defs>
+     <ns0:path id="maa756947b6" d="M 0 2  C 0.530406 2 1.03916 1.789267 1.414214 1.414214  C 1.789267 1.03916 2 0.530406 2 0  C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214  C 1.03916 -1.789267 0.530406 -2 0 -2  C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214  C -1.789267 -1.03916 -2 -0.530406 -2 0  C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214  C -1.03916 1.789267 -0.530406 2 0 2  z " style="stroke: #006d70; stroke-opacity: 0.85" />
+    </ns0:defs>
+    <ns0:g clip-path="url(#p89e60f4ae5)">
+     <ns0:use ns4:href="#maa756947b6" x="77.053091" y="107.290479" style="fill: #006d70; fill-opacity: 0.85; stroke: #006d70; stroke-opacity: 0.85" />
+     <ns0:use ns4:href="#maa756947b6" x="277.344" y="117.265883" style="fill: #006d70; fill-opacity: 0.85; stroke: #006d70; stroke-opacity: 0.85" />
+     <ns0:use ns4:href="#maa756947b6" x="477.634909" y="119.171795" style="fill: #006d70; fill-opacity: 0.85; stroke: #006d70; stroke-opacity: 0.85" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="line2d_15">
+    <ns0:path d="M 77.053091 165.404349  L 277.344 79.835299  L 477.634909 74.498302  " clip-path="url(#p89e60f4ae5)" style="fill: none; stroke: #3c7da3; stroke-opacity: 0.85; stroke-width: 1.15; stroke-linecap: square" />
+    <ns0:defs>
+     <ns0:path id="m58b6d874be" d="M -2 2  L 2 2  L 2 -2  L -2 -2  z " style="stroke: #3c7da3; stroke-opacity: 0.85; stroke-linejoin: miter" />
+    </ns0:defs>
+    <ns0:g clip-path="url(#p89e60f4ae5)">
+     <ns0:use ns4:href="#m58b6d874be" x="77.053091" y="165.404349" style="fill: #3c7da3; fill-opacity: 0.85; stroke: #3c7da3; stroke-opacity: 0.85; stroke-linejoin: miter" />
+     <ns0:use ns4:href="#m58b6d874be" x="277.344" y="79.835299" style="fill: #3c7da3; fill-opacity: 0.85; stroke: #3c7da3; stroke-opacity: 0.85; stroke-linejoin: miter" />
+     <ns0:use ns4:href="#m58b6d874be" x="477.634909" y="74.498302" style="fill: #3c7da3; fill-opacity: 0.85; stroke: #3c7da3; stroke-opacity: 0.85; stroke-linejoin: miter" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="line2d_16">
+    <ns0:path d="M 77.053091 61.160727  L 277.344 173.568641  L 477.634909 178.455273  " clip-path="url(#p89e60f4ae5)" style="fill: none; stroke: #268475; stroke-opacity: 0.85; stroke-width: 1.15; stroke-linecap: square" />
+    <ns0:defs>
+     <ns0:path id="m3d40d46672" d="M 0 -2  L -2 2  L 2 2  z " style="stroke: #268475; stroke-opacity: 0.85; stroke-linejoin: miter" />
+    </ns0:defs>
+    <ns0:g clip-path="url(#p89e60f4ae5)">
+     <ns0:use ns4:href="#m3d40d46672" x="77.053091" y="61.160727" style="fill: #268475; fill-opacity: 0.85; stroke: #268475; stroke-opacity: 0.85; stroke-linejoin: miter" />
+     <ns0:use ns4:href="#m3d40d46672" x="277.344" y="173.568641" style="fill: #268475; fill-opacity: 0.85; stroke: #268475; stroke-opacity: 0.85; stroke-linejoin: miter" />
+     <ns0:use ns4:href="#m3d40d46672" x="477.634909" y="178.455273" style="fill: #268475; fill-opacity: 0.85; stroke: #268475; stroke-opacity: 0.85; stroke-linejoin: miter" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 57.024 184.32  L 57.024 55.296  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 57.024 184.32  L 497.664 184.32  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="legend_1">
+    <ns0:g id="line2d_17">
+     <ns0:path d="M 63.324 31.869674  L 70.324 31.869674  L 77.324 31.869674  " style="fill: none; stroke: #006d70; stroke-opacity: 0.85; stroke-width: 1.15; stroke-linecap: square" />
+     <ns0:g>
+      <ns0:use ns4:href="#maa756947b6" x="70.324" y="31.869674" style="fill: #006d70; fill-opacity: 0.85; stroke: #006d70; stroke-opacity: 0.85" />
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_10">
+     <ns0:text style="font-size: 7px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #243041" x="82.924" y="34.319674" transform="rotate(-0 82.924 34.319674)">组 1</ns0:text>
+    </ns0:g>
+    <ns0:g id="line2d_18">
+     <ns0:path d="M 110.100406 31.869674  L 117.100406 31.869674  L 124.100406 31.869674  " style="fill: none; stroke: #3c7da3; stroke-opacity: 0.85; stroke-width: 1.15; stroke-linecap: square" />
+     <ns0:g>
+      <ns0:use ns4:href="#m58b6d874be" x="117.100406" y="31.869674" style="fill: #3c7da3; fill-opacity: 0.85; stroke: #3c7da3; stroke-opacity: 0.85; stroke-linejoin: miter" />
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_11">
+     <ns0:text style="font-size: 7px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #243041" x="129.700406" y="34.319674" transform="rotate(-0 129.700406 34.319674)">组 2</ns0:text>
+    </ns0:g>
+    <ns0:g id="line2d_19">
+     <ns0:path d="M 156.876812 31.869674  L 163.876812 31.869674  L 170.876812 31.869674  " style="fill: none; stroke: #268475; stroke-opacity: 0.85; stroke-width: 1.15; stroke-linecap: square" />
+     <ns0:g>
+      <ns0:use ns4:href="#m3d40d46672" x="163.876812" y="31.869674" style="fill: #268475; fill-opacity: 0.85; stroke: #268475; stroke-opacity: 0.85; stroke-linejoin: miter" />
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_12">
+     <ns0:text style="font-size: 7px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #243041" x="176.476812" y="34.319674" transform="rotate(-0 176.476812 34.319674)">组 3</ns0:text>
+    </ns0:g>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="p89e60f4ae5">
+   <ns0:rect x="57.024" y="55.296" width="440.64" height="129.024" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="609pt" viewBox="0 0 360 609" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">路径图把指定变量联系放在同一模型中。。箭头来自研究设定，不是数据已证明的因果方向。</desc><title id="title">压力、睡眠与抑郁的路径</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:57.897584</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 609  L 360 609  L 360 0  L 0 0  L 0 609  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 112.314941 318.524235  Q 128.000099 220.124377 143.491663 122.939023  " clip-path="url(#p70534cb806)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 140.365993 127.301383  L 143.491663 122.939023  L 145.106149 128.056975  z " clip-path="url(#p70534cb806)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 216.314941 121.725765  Q 232.000099 220.125623 247.491663 317.310977  " clip-path="url(#p70534cb806)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 249.106149 312.193025  L 247.491663 317.310977  L 244.365993 312.948617  z " clip-path="url(#p70534cb806)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 113.996338 320.5  Q 179.998294 320.5 244.770413 320.5  " clip-path="url(#p70534cb806)" style="fill: none; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 239.970413 318.1  L 244.770413 320.5  L 239.970413 322.9  z " clip-path="url(#p70534cb806)" style="fill: #244da4; opacity: 0.65; stroke: #244da4; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 55 291.5  L 97 291.5  Q 106 291.5 106 300.5  L 106 340.5  Q 106 349.5 97 349.5  L 55 349.5  Q 46 349.5 46 340.5  L 46 300.5  Q 46 291.5 55 291.5  z " clip-path="url(#p70534cb806)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 159 90.75  L 201 90.75  Q 210 90.75 210 99.75  L 210 139.75  Q 210 148.75 201 148.75  L 159 148.75  Q 150 148.75 150 139.75  L 150 99.75  Q 150 90.75 159 90.75  z " clip-path="url(#p70534cb806)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 263 291.5  L 305 291.5  Q 314 291.5 314 300.5  L 314 340.5  Q 314 349.5 305 349.5  L 263 349.5  Q 254 349.5 254 340.5  L 254 300.5  Q 254 291.5 263 291.5  z " clip-path="url(#p70534cb806)" style="fill: #244da4; fill-opacity: 0.09; stroke: #244da4; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(58 317.479492)">压力分</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(70 330.516367)">数</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(162 116.729492)">睡眠分</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(174 129.766367)">数</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(266 317.479492)">抑郁分</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(278 330.516367)">数</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="523.737305" transform="rotate(-0 20 523.737305)">1. 压力分数 → 睡眠分数：指定联系</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="551.737305" transform="rotate(-0 20 551.737305)">2. 睡眠分数 → 抑郁分数：指定联系</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="579.737305" transform="rotate(-0 20 579.737305)">3. 压力分数 → 抑郁分数：指定联系</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p70534cb806">
+   <rect x="0" y="0" width="360" height="609" />
+  </clipPath>
+ </defs>
+</svg>

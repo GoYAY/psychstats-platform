@@ -1,0 +1,92 @@
+{
+  "tables": {
+    "reported_coefficients": [
+      {
+        "outcome": "screen_positive",
+        "term": "(Intercept)",
+        "estimate": -0.2921340072519241,
+        "se": 1.3042422446999917,
+        "statistic": -0.22398753639445426,
+        "df": null,
+        "p": 0.8227670013813931,
+        "ci_lower": -2.8484018339795836,
+        "ci_upper": 2.264133819475735
+      },
+      {
+        "outcome": "screen_positive",
+        "term": "sleep_hours",
+        "estimate": -0.38815793270348203,
+        "se": 0.12018920005082959,
+        "statistic": -3.2295575021659597,
+        "df": null,
+        "p": 0.0012398194634357924,
+        "ci_lower": -0.6237244361337876,
+        "ci_upper": -0.15259142927317645
+      },
+      {
+        "outcome": "screen_positive",
+        "term": "stress",
+        "estimate": 0.07195969691227647,
+        "se": 0.015829021069251974,
+        "statistic": 4.546061098627184,
+        "df": null,
+        "p": 5.46591753851501e-06,
+        "ci_lower": 0.0409353857060169,
+        "ci_upper": 0.10298400811853603
+      },
+      {
+        "outcome": "screen_positive",
+        "term": "age",
+        "estimate": -0.03910819948164695,
+        "se": 0.033544902562450435,
+        "statistic": -1.1658462685601587,
+        "df": null,
+        "p": 0.2436766064556024,
+        "ci_lower": -0.10485500036895515,
+        "ci_upper": 0.02663860140566126
+      }
+    ],
+    "odds_ratios": [
+      {
+        "term": "(Intercept)",
+        "OR": 0.746668470278942,
+        "ci_lower": 0.05793683961339469,
+        "ci_upper": 9.622785920476769,
+        "p": 0.8227670013813931
+      },
+      {
+        "term": "sleep_hours",
+        "OR": 0.6783052082289424,
+        "ci_lower": 0.5359446242934744,
+        "ci_upper": 0.8584804001291125,
+        "p": 0.0012398194634357924
+      },
+      {
+        "term": "stress",
+        "OR": 1.0746120330079998,
+        "ci_lower": 1.041784789182068,
+        "ci_upper": 1.1084736823545316,
+        "p": 5.46591753851501e-06
+      },
+      {
+        "term": "age",
+        "OR": 0.9616466538476297,
+        "ci_lower": 0.9004550787749321,
+        "ci_upper": 1.0269965805673322,
+        "p": 0.2436766064556024
+      }
+    ],
+    "model_summary": [
+      {
+        "n": 300,
+        "AIC": 364.53272870704916
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "log-odds / OR：Wald 95% CI",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0",
+  "case_id": "logistic",
+  "original_sha256": "84bf6b021ab0cc4458554cb7f0e4579aace0618099b37a3dbe2f627c2280fd3c",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

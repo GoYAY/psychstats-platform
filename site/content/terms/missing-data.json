@@ -1,0 +1,141 @@
+{
+  "id": "missing-data",
+  "zh": "缺失数据",
+  "en": "Missing Data",
+  "aliases": [],
+  "type": "concept",
+  "level": "basic",
+  "topic": "data-preparation",
+  "status": "public",
+  "summary": "记录未观测到的变量取值，并评估缺失模式对分析的影响。",
+  "relations": {
+    "prerequisites": [
+      "data-cleaning"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": [
+      "missing-data-mechanism"
+    ]
+  },
+  "real_question": "问卷有空题，直接删掉整位被试会带来什么问题？",
+  "operational_definition": "缺失数据指本应在研究设计中观测的单元或变量取值未获得；需区分缺失比例、模式、原因与分析方法的缺失处理方式。",
+  "plain_explanation": "空白并不总等于零；删掉空白记录也可能改变留下来的样本。",
+  "problems_solved": [
+    "量化各变量缺失程度",
+    "选择有根据的缺失处理策略"
+  ],
+  "not_for": [
+    "不能仅凭缺失比例判定数据随机缺失"
+  ],
+  "decision_clues": [
+    "按变量与群体查看缺失",
+    "记录缺失原因",
+    "比较完整个案与原样本"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：空白集中在谁、哪道题和哪个时点",
+      "body": "分别统计每个变量的缺失数量和比例，再按群体、题目位置或测量时点查看分布，能获取原因时一并记录。核对量表对漏题的计分规定，并检查分析软件实际用了多少完整记录；结合研究背景选择处理方案，而不是只看一个总缺失比例。"
+    },
+    {
+      "heading": "容易混淆：没填、填零和随机缺失",
+      "body": "缺失表示没有获得所需信息，零可能是一个合法观测值，两者的含义不同。缺失比例低也不能证明缺失与研究变量无关；软件能运行不代表删行没有影响。均值填补会改变分数散布和变量关系，处理方案需要说明假设与适用条件。"
+    }
+  ],
+  "formula": {
+    "latex": "",
+    "note": "",
+    "verified": false
+  },
+  "quiz": {
+    "question": "下列哪种做法最稳妥？",
+    "options": [
+      "把所有空白填 0",
+      "先查看缺失模式并记录处理理由",
+      "只看总缺失比例",
+      "忽略软件自动删行"
+    ],
+    "answer": 1,
+    "explanation": "处理方式应根据缺失的分布与研究背景决定。",
+    "option_explanations": [
+      "空白通常表示未获得数据，不等于实际得分为零。",
+      "正确。按变量、群体和时点查看缺失，并结合原因选择和记录处理方法。",
+      "相同的总比例可能掩盖缺失集中在某些群体或关键变量上的问题。",
+      "软件自动删行会改变有效样本，应核对删除了哪些记录及其影响。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "advanced_textbook",
+      "title": "高级心理统计",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": {
+    "packages": [],
+    "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+    "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"messy_survey.csv\", stringsAsFactors = FALSE)\nmissing <- colSums(is.na(d) | d == \"\")\nprint(c(stress_missing=as.numeric(missing[\"stress\"]), age_missing=as.numeric(missing[\"age_text\"]), rows=nrow(d)))\n",
+    "your_data_code": "d <- read.csv(\"your_data.csv\",stringsAsFactors=FALSE)\ncolSums(is.na(d)); colMeans(is.na(d))\n# Inspect patterns and study context before choosing complete cases or imputation.\n",
+    "assumption_checks": [
+      "按变量与群体查看缺失",
+      "记录缺失原因",
+      "比较完整个案与原样本"
+    ],
+    "key_output": [
+      "stress_missing",
+      "age_missing",
+      "rows"
+    ],
+    "interpretation": "示例输出 stress_missing=2、age_missing=1、rows=252，分别表示压力列的空白或 NA 数、年龄文本列的空白或 NA 数，以及文件总行数。这里尚未去除重复记录，分母 rows 不能直接当作独立被试人数；年龄列中非空但无法转换的文本也不在 age_missing 的计数内。这段代码描述缺失数量，不能判定缺失原因或决定插补方法。",
+    "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+    "common_errors": [
+      "不能仅凭缺失比例判定数据随机缺失"
+    ],
+    "verified": true,
+    "validation_report": "logs/r_validation.json"
+  },
+  "verified": true,
+  "candidate_evidence": {
+    "textbook": [
+      {
+        "chunk_id": 20,
+        "page_print": 5,
+        "page_pdf": 18,
+        "path": "第一章娄",
+        "sim": 0.6921,
+        "snippet": "数据的清理与准备 第三节 缺失数据的处理 、缺失数据的定义及影响 缺失数据是指在一个数据集中，由各种各样的原因而导致个案在一个或多个变量上信 息的缺失。缺失数据是数据分析过程中普遍"
+      },
+      {
+        "chunk_id": 23,
+        "page_print": 8,
+        "page_pdf": 21,
+        "path": "第一章",
+        "sim": 0.7193,
+        "snippet": "（三）诊断数据的缺失机制 常见的数据缺失机制有以下三种：完全随机缺失（missingcompletelyatrandom， MCAR）、随机缺失（missingatrandom，M"
+      },
+      {
+        "chunk_id": 21,
+        "page_print": 6,
+        "page_pdf": 19,
+        "path": "第一章娄",
+        "sim": 0.6445,
+        "snippet": "高级心理统计量一 步骤1：检查数据的缺失类型 对于可忽略的缺 缺失数据（设计上）是否可以忽略？ 失数据，采取专 门的技术 步骤2：检查数据的缺失程度 缺失数据是否多到需要处理？ 删"
+      }
+    ],
+    "course": [
+      {
+        "chunk_id": 457,
+        "doc": "w04-week4",
+        "page_course": 54,
+        "block_source": "TEXT_LAYER",
+        "xref": null,
+        "numeric_risk": 1,
+        "sim": 0.7339,
+        "snippet": "[讲义 w04-week4 第54页] 缺失数据识别与处理（R） library(VIM) library(mice) # VIM聚合可视化 aggr(df, col=c(\"#3B"
+      }
+    ]
+  },
+  "plain_example": "例如，压力较高的学生更容易漏答最后几题。若直接删掉整位学生，留下的数据可能更偏向压力较低的人，分析前应先检查漏答集中在哪里。"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "standard-score",
+  "zh": "标准分数",
+  "en": "Standard Score",
+  "aliases": [],
+  "type": "concept",
+  "level": "basic",
+  "topic": "foundations",
+  "status": "public",
+  "summary": "把观测值转换为相对平均水平的标准差单位。",
+  "relations": {
+    "prerequisites": [
+      "descriptive-statistics"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": [
+      "descriptive-statistics"
+    ]
+  },
+  "real_question": "两份量表分数范围不同，怎样比较同一个人的相对位置？",
+  "operational_definition": "标准分数 z 是观测值与参照组均值之差除以该组标准差，表示该观测距均值多少个标准差。",
+  "plain_explanation": "z 为 1 表示高于参照组均值约一个标准差；参照组一变，解释也会变。",
+  "problems_solved": [
+    "比较不同量尺上的相对位置",
+    "识别远离均值的观测"
+  ],
+  "not_for": [
+    "标准化不会消除偏态或证明量表等值"
+  ],
+  "decision_clues": [
+    "说明参照组",
+    "标准差须大于零"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：这个分数相对哪群人偏高或偏低",
+      "body": "先确认参照组是否适合研究对象，以及分数越高代表什么。z 的正负说明相对均值的方向，绝对值说明相距多少个标准差；比较不同量表前还须核对计分方向和测量含义，不能把相同的相对位置当作相同的心理水平。"
+    },
+    {
+      "heading": "容易混淆：标准化后就是正态分布或百分位吗",
+      "body": "标准分数改变单位与位置，保留原始排序和分布形状；偏态不会自动消失。z=1 也不是“超过 100% 的人”，百分位必须结合参照分布计算。不同参照组算出的 z 分数回答不同问题，不能脱离参照组比较。"
+    }
+  ],
+  "formula": {
+    "latex": "z=(x-平均数)/标准差",
+    "note": "按页面所述前提使用；公式中的量须与研究设计一致。",
+    "verified": true
+  },
+  "quiz": {
+    "question": "同一分数换一个参照群体后，z 值可能怎样变化？",
+    "options": [
+      "一定相同",
+      "可能变化",
+      "一定变成 0",
+      "无法计算"
+    ],
+    "answer": 1,
+    "explanation": "均值和标准差来自参照群体，群体变化会影响 z 值。",
+    "option_explanations": [
+      "同一原始分数相对不同参照群体的均值和标准差，位置可能不同。",
+      "正确。参照群体的均值或标准差变化后，同一个人的 z 值也可能改变。",
+      "只有分数恰好等于新参照群体均值时，z 值才是零。",
+      "只要参照群体有可用均值且标准差大于零，仍可计算 z 值。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "basic_textbook",
+      "title": "现代心理与教育统计学",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": {
+    "packages": [],
+    "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+    "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\nz <- as.numeric(scale(d$stress))\nprint(c(z_mean=mean(z), z_sd=sd(z), first_z=z[1]))\n",
+    "your_data_code": "d <- read.csv(\"your_data.csv\")\nstopifnot(is.numeric(d$score))\nd$z_score <- as.numeric(scale(d$score))\nsummary(d$z_score)\n",
+    "assumption_checks": [
+      "说明参照组",
+      "标准差须大于零"
+    ],
+    "key_output": [
+      "z_mean",
+      "z_sd",
+      "first_z"
+    ],
+    "interpretation": "示例的 z_mean 约为 0，极小的负值是浮点计算误差；z_sd=1 是用本样本均值和标准差进行标准化的结果。first_z≈−0.66 表示第一位学生的压力分数低于这个样本均值约 0.66 个标准差。这些结果用于核对转换和相对位置，不能据此认定数据正态或作临床判断。",
+    "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+    "common_errors": [
+      "标准化不会消除偏态或证明量表等值"
+    ],
+    "verified": true,
+    "validation_report": "logs/r_validation.json"
+  },
+  "verified": true,
+  "candidate_evidence": {},
+  "plain_example": "例如，同一个人在两份分数范围不同的量表上都得了 60 分，位置却可能不同：在各自合适的参照组中换算 z 分数，才能看出哪一项更偏离平均水平。"
+}

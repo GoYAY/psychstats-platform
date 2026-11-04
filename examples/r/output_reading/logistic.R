@@ -1,0 +1,8 @@
+source("_common.R")
+d <- read.csv("binary_outcome_teaching.csv")
+fit <- glm(screen_positive ~ sleep_hours + stress + age,data=d,family=binomial())
+print(summary(fit))
+ci <- unname(confint.default(fit)["sleep_hours",])
+print(exp(cbind(Estimate=coef(fit),confint.default(fit))))
+stopifnot(isTRUE(fit$converged))
+finish(c(log_odds=coef(fit)["sleep_hours"][[1]],odds_ratio=exp(coef(fit)["sleep_hours"][[1]]),ci_lower=exp(ci[1]),ci_upper=exp(ci[2]),p=summary(fit)$coefficients["sleep_hours",4],n=nobs(fit)))

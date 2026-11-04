@@ -1,0 +1,142 @@
+{
+  "case_id": "proportions",
+  "covariances": [],
+  "design": "固定种子生成两组独立教学样本。先比较阳性比例，再另示连续指标的方差比检验；后者依赖正态假设。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/proportions.R",
+    "script_sha256": "9834d8bddbf7c52f23c2a2f821af1aedb645907c616da27f5fd79515aeab74a6",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "p"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": -0.19130352547484442,
+          "ci_upper": 0.07574796991928878,
+          "effect": "两组比例差",
+          "estimate": -0.05777777777777782,
+          "p": 0.4544829220551896
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "columns": [
+        "group",
+        "positive",
+        "N",
+        "estimate",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "single_proportion",
+      "rows": [
+        {
+          "N": 90,
+          "ci_lower": 0.14133689846537043,
+          "ci_upper": 0.3221268123270985,
+          "estimate": 0.2222222222222222,
+          "group": "A",
+          "positive": 20
+        }
+      ],
+      "title": "single_proportion"
+    },
+    {
+      "columns": [
+        "ratio",
+        "df1",
+        "df2",
+        "ci_lower",
+        "ci_upper",
+        "p"
+      ],
+      "name": "variance_comparison",
+      "rows": [
+        {
+          "ci_lower": 0.7316194733767459,
+          "ci_upper": 2.0085126567636435,
+          "df1": 59,
+          "df2": 64,
+          "p": 0.456529928251423,
+          "ratio": 1.2090443432552538
+        }
+      ],
+      "title": "variance_comparison"
+    },
+    {
+      "column_labels": {
+        "ci_lower": "95% CI 下限",
+        "ci_upper": "95% CI 上限",
+        "difference": "阳性比例差",
+        "p": "比例检验 p",
+        "single_ci_lower": "single_ci_lower",
+        "single_ci_upper": "single_ci_upper",
+        "single_rate": "A 组阳性比例",
+        "variance_p": "variance_p",
+        "variance_ratio": "连续指标方差比"
+      },
+      "columns": [
+        "analysis",
+        "single_rate",
+        "difference",
+        "p",
+        "variance_ratio",
+        "ci_lower",
+        "ci_upper",
+        "variance_p",
+        "single_ci_lower",
+        "single_ci_upper"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "筛查阳性比例是否不同",
+          "ci_lower": -0.19130352547484442,
+          "ci_upper": 0.07574796991928878,
+          "difference": -0.05777777777777782,
+          "p": 0.4544829220551896,
+          "single_ci_lower": 0.14133689846537043,
+          "single_ci_upper": 0.3221268123270985,
+          "single_rate": 0.2222222222222222,
+          "variance_p": 0.456529928251423,
+          "variance_ratio": 1.2090443432552538
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "difference": "difference",
+          "p": "p",
+          "single_ci_lower": "single_ci_lower",
+          "single_ci_upper": "single_ci_upper",
+          "single_rate": "single_rate",
+          "variance_p": "variance_p",
+          "variance_ratio": "variance_ratio"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "筛查阳性比例是否不同",
+  "valid": true,
+  "variances": []
+}

@@ -1,0 +1,71 @@
+{
+  "id": "efa",
+  "unit_id": "efa",
+  "title": "探索量表维度的输出怎么看",
+  "question": "新问卷可能有几个方面，各道题属于哪里？",
+  "design": "复用五级题目，基于多分相关矩阵作平行分析（20 次有限教学迭代）和三因子 minres/oblimin EFA。三因子是探索示范，不根据同一数据冒充验证。",
+  "variables": "已有教学 CSV 的列名和题目编码见代码；非真实研究样本。",
+  "script": "examples/r/output_reading/efa.R",
+  "data_files": [
+    "examples/data/scale_items.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {"field_id":"kmo","label":"整体 KMO","meaning":"共同方差信号相对偏相关的概括，不是因子数证明，也不代替逐题检查。","term":"efa","format":".3f"},
+    {"field_id":"bartlett_p","label":"Bartlett 球形检验 p 值","meaning":"这里基于多分相关的近似筛查；原假设为相关矩阵是单位阵。显著不证明题目结构良好或维度数量正确。","term":"efa","format":".3g"},
+    {
+      "field_id": "parallel_factors",
+      "label": "平行分析建议数量",
+      "meaning": "观察特征值与随机参照比较，20 次仅作轻量教学，不是精确稳定性结论。",
+      "term": "parallel-analysis",
+      "format": ".3f"
+    },
+    {
+      "field_id": "min_communality",
+      "label": "最低共同度",
+      "meaning": "该题被共同因子解释的变异比例，不能与单个载荷混为一谈。",
+      "term": "communality",
+      "format": ".3f"
+    },
+    {
+      "field_id": "rmsr",
+      "label": "相关残差均方根",
+      "meaning": "拟合相关与观察相关的平均偏离，需结合交叉载荷及理论。",
+      "term": "efa",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "判断模型之前先检查这些条件",
+      "body": "斜交旋转下，模式矩阵是控制其他因子后的载荷，结构矩阵是题目与因子的相关，两者不能混称。结合因子相关和交叉载荷检查，不机械按最大载荷归属；类别稀疏可能使多分相关不稳定。KMO 和 Bartlett 仅作筛查，不决定维度数。"
+    },
+    {
+      "title": "路径或拟合不符合预期时",
+      "body": "先区分测量问题、模型错误与证据不足。检查实际估计器、标准误、编码、有效样本和参数表。不要靠无理论依据的删题、加路径或误差相关来追求显著与完美拟合。"
+    }
+  ],
+  "report_template": "五级题目采用多分相关矩阵、minres 提取与 oblimin 斜交旋转，三因子示范的相关残差 RMSR = {rmsr:.3f}，最低共同度 {min_communality:.3f}；20 次平行分析建议 {parallel_factors:.0f} 个因子。结构需在独立数据中进一步验证。",
+  "sources": [
+    {
+      "title": "实现与估计方法的官方文档",
+      "url": "https://search.r-project.org/CRAN/refmans/psych/html/fa.html"
+    }
+  ],
+  "related_terms": [
+    "parallel-analysis",
+    "communality",
+    "efa"
+  ],
+  "table_labels": {
+    "structure": "结构矩阵：题目与因子的相关",
+    "parameters": "完整参数表：估计、标准误、区间及标准化参数",
+    "fit": "拟合指标（保留官方字段名）",
+    "loadings": "各题完整载荷",
+    "comparison": "嵌套模型比较"
+  }
+}

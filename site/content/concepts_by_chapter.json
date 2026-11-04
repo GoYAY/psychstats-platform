@@ -1,0 +1,3727 @@
+{
+ "source": "教材 OCR 抽取（候选，未人工核对）",
+ "chapters": {
+  "第一章": {
+   "page_pdf_range": [
+    14,
+    48
+   ],
+   "page_print_range": [
+    1,
+    35
+   ],
+   "n_sections": 5,
+   "sections": [
+    {
+     "page_pdf": 14,
+     "title": "第一节数据清理和准备的主要目的"
+    },
+    {
+     "page_pdf": 14,
+     "title": "第二节极端数据的处理"
+    },
+    {
+     "page_pdf": 18,
+     "title": "第三节缺失数据的处理"
+    },
+    {
+     "page_pdf": 24,
+     "title": "第四节多元分析前提假设条件的检验"
+    },
+    {
+     "page_pdf": 30,
+     "title": "第五节数据清理与整理应用案例"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 14,
+     "text": "了解异常值的概念和产生原因，掌握检验与处理异常值的方法。"
+    },
+    {
+     "page_pdf": 14,
+     "text": "了解数据的缺失类型，掌握检查数据缺失程度、诊断数据缺失机制的方法，知道"
+    },
+    {
+     "page_pdf": 14,
+     "text": "熟悉多元分析的常见假设，并掌握这些假设的检验方法，知道违背多元分析假设"
+    },
+    {
+     "page_pdf": 48,
+     "text": "在某个变量上明显高或者低的值称为单变量异常值，在两个或多个变量上值的奇"
+    },
+    {
+     "page_pdf": 48,
+     "text": "处理缺失数据的一般步骤包括：（1）检查数据的缺失类型；（2）检查数据的缺失"
+    },
+    {
+     "page_pdf": 48,
+     "text": "多元分析的基本假设涉及多元正态性、方差齐性、线性和误差独立性。检验多元"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 15,
+     "text": "（3）异常的观测。这是指研究者无法解释的观测值，要考虑其是否代表了总体中的有",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 16,
+     "text": "mildoutliers），用空心点表示，如图中11和22号数据点；处于3倍四分位距之外",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 16,
+     "text": "tremeoutliers），用星号表示，如图中18号数据点。可在划",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 17,
+     "text": "离代表数据的协方差距离，是一种可有效计算两个未知样本集的相似度的方法，具有尺度",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 18,
+     "text": "缺失数据是指在一个数据集中，由各种各样的原因而导致个案在一个或多个变量上信",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 19,
+     "text": "法进行处理。事件史分析方法是一种小样本分析技术，指对一系列研究事件的发生及其发",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 24,
+     "text": "计中，要求单个变量服从正态分布，又称为一元正态；而在多元统计中，由于涉及同时分",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 44,
+     "text": "合理地表示这个关系。如果发现非线性关系，可以转换一个变量或者两个变量都进行转换",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 44,
+     "text": "之间关系变为线性，或者创建新的变量来表示非线性成分。线性关系的检验",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 44,
+     "text": "1为Y轴，以PRE1为X轴做散点图，即为残差散点图：在SPSS中选",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 48,
+     "text": "怪组合称为多变量异常值。单变量异常值可以通过计算数据的标准分数或画盒式图进行检",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第二章": {
+   "page_pdf_range": [
+    49,
+    70
+   ],
+   "page_print_range": [
+    36,
+    57
+   ],
+   "n_sections": 5,
+   "sections": [
+    {
+     "page_pdf": 49,
+     "title": "第一节多元方差分析的一般目的和描述"
+    },
+    {
+     "page_pdf": 50,
+     "title": "第二节多元方差分析主要回答的问题"
+    },
+    {
+     "page_pdf": 51,
+     "title": "第三节多元方差分析的主要类型"
+    },
+    {
+     "page_pdf": 53,
+     "title": "第四节多元方差分析的过程"
+    },
+    {
+     "page_pdf": 65,
+     "title": "第五节多元方差分析应用案例及SPSS操作"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 49,
+     "text": "知道多元方差分析与一元方差分析的主要类型及其差异。"
+    },
+    {
+     "page_pdf": 49,
+     "text": "了解多元方差分析的假设。"
+    },
+    {
+     "page_pdf": 49,
+     "text": "知道多元方差分析的显著性检验标准。"
+    },
+    {
+     "page_pdf": 49,
+     "text": "描述多元方差分析与一元方差分析的事后检验方法。"
+    },
+    {
+     "page_pdf": 49,
+     "text": "熟释多元方差分析中交互作用的解释。"
+    },
+    {
+     "page_pdf": 49,
+     "text": "了解多元协方差分析的目的。"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 49,
+     "text": "要特别指出的是，多元回归分析的“元”指的是自变量的数目，而多元方差分析的“元”",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 49,
+     "text": "指的是因变量的数目。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 50,
+     "text": "多个单变量问题是指在研究中有多个因变量（如年龄、收人、受教育程度），每个因",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 50,
+     "text": "结构上的多变量问题是指研究中的两个或多个因变量之间有某种特殊的关系。最常见",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 50,
+     "text": "本质上的多变量问题是指研究最关心的问题，即这些因变量在整体上有没有组间差",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 52,
+     "text": "式中，表示因变量个数，表示水平个数，表示变量力在第个水平上的均值。多元",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 52,
+     "text": "方差分析的零假设即为各水平的均值向量相等。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 58,
+     "text": "组合。每个自变量都有一个估计权重用来表示对预",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 58,
+     "text": "CR）、Wilks'lambda（又称为U",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 58,
+     "text": "Wilkslambda检验常被称为多元F检验，经常用于多元情境下组间整体差异的显",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 59,
+     "text": "（power）与前面假设检验中相同，是指当处理效应真实",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 59,
+     "text": "，能够检验出这个处理效应的概率，可以表示为1减去犯二类错误的概率β，即",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 62,
+     "text": "主效应是指自变量对因变量的作用。如果在不同组间因变量存在显著差异，就称主效",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 62,
+     "text": "应显著则不能保证各组之间差异显著，而是指至少有两个组间的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 62,
+     "text": "交互作用是指两个或两个以上自变量的联合作用。只要一个研究设计包含两个或更多",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 62,
+     "text": "段这种性别差异的大小又不相同，此时就称为一致的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 62,
+     "text": "的满意度高于男性，此时就称为不一致的交互作用。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 64,
+     "text": "Bonferroni校正是指通过选择α水平，来控制多组比较中犯一类错误的概率。校正公式",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 70,
+     "text": "5事后检验是指在数据模型建立之后，检验所有自变量的不同水平之间的因变量差",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 70,
+     "text": "6.交互作用是指两个或两个以上自变量的联合作用。不显著的交互作用意味着因素",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第三章": {
+   "page_pdf_range": [
+    71,
+    98
+   ],
+   "page_print_range": [
+    58,
+    85
+   ],
+   "n_sections": 9,
+   "sections": [
+    {
+     "page_pdf": 71,
+     "title": "第一节多元回归分析的一般目的和描述"
+    },
+    {
+     "page_pdf": 72,
+     "title": "第二节多元回归分析主要回答的问题"
+    },
+    {
+     "page_pdf": 73,
+     "title": "第三节·多元回归分析的假设及模型"
+    },
+    {
+     "page_pdf": 75,
+     "title": "第四节多元回归分析的类型"
+    },
+    {
+     "page_pdf": 78,
+     "title": "第五节多元回归分析中自变量的重要性"
+    },
+    {
+     "page_pdf": 82,
+     "title": "第六节多元回归分析中的统计检验"
+    },
+    {
+     "page_pdf": 84,
+     "title": "第七节多元回归分析中一些值得注意的问题"
+    },
+    {
+     "page_pdf": 88,
+     "title": "第八节回归分析的局限性"
+    },
+    {
+     "page_pdf": 89,
+     "title": "第九节多元回归分析应用案例及SPSS操作"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 71,
+     "text": "了解多元回归的概念及其可以解决的问题。"
+    },
+    {
+     "page_pdf": 71,
+     "text": "掌握三种不同类型多元回归的特点及它们之间的区别，了解自变量的进入顺序对"
+    },
+    {
+     "page_pdf": 71,
+     "text": "掌握检验回归方程整体显著性和比较自变量重要性大小的指标和方法。"
+    },
+    {
+     "page_pdf": 71,
+     "text": "了解可能对回归分析准确性产生影响的因素。"
+    },
+    {
+     "page_pdf": 98,
+     "text": "多元回归分析是同时考察多个自变量对一个因变量影响的一种多元统计方法，在"
+    },
+    {
+     "page_pdf": 98,
+     "text": "多元回归有三种主要类型，即标准多元回归、序列（分层）回归、统计回归，它"
+    },
+    {
+     "page_pdf": 98,
+     "text": "多元回归中有多种可衡量自变量重要性的指标，包括多元测定系数（R2）、调整的"
+    },
+    {
+     "page_pdf": 98,
+     "text": "进行多元回归分析之前，要对数据是否违背多元回归的各种前提假设进行检验甄"
+    },
+    {
+     "page_pdf": 98,
+     "text": "对分类变量可使用虚拟编码生成多个新变量，然后将它们纳入多元回归中进行"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 71,
+     "text": "在回归分析中，如果自变量只有一个，则称为一元回归分析，它只能处理两个变量之",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 72,
+     "text": "需要预先控制的变量称为协变量。在多元回归中，可以让协变量先进入回归方程，再加入",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 73,
+     "text": "间的差异最小。此时可使用统计回归。这是一种数据驱动的回归类型，按照一定",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 74,
+     "text": "量；bi，b2，，bk为偏回归系数，表示其他自变量",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 74,
+     "text": "变量）线性回归方程为例，回归方程可以表示为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 75,
+     "text": "本节将使用韦恩图表示变量之间的关系。以图3=1为例，共有三个自变量（Xi、X2",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 76,
+     "text": "故又称为同时回归（simultaneousregression）。标准多元回归仅度量了每个自变量进人方",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 76,
+     "text": "仅计算X剩余可解释的部分，即为c和d。X，最后进入，它与之前所有进入的自变量相互",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 76,
+     "text": "没有考虑变量的意义和理论解释的问题，是一种富有争议的回归类型。一个变量进入或被",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 78,
+     "text": "总平方和的比值称为多元测定系数（coefficientofmultipledetermination），用R?表示，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 79,
+     "text": "多元测定系数可以表示所得到的回归方程在多大程度上解释了因变量Y的变异，取值",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 79,
+     "text": "范围为［O，1]。R²越接近1，表示方程中的自变量对因变量Y的解释力越强。例如，R²=",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 79,
+     "text": "多元测定系数的算术平方根称为复相关（multiplecorrelation）。复相关表示Y与Xr，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 79,
+     "text": "围为[O，1]。复相关系数越接近1，表示Y与",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 79,
+     "text": "相关系数等于0时，表示Y的变异与X1，X2，，X的线性变化无关。因此，复相关系",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 79,
+     "text": "artialcorrelation）指的是控制其他自变量后Y和X的相关，它等于从Y和",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 79,
+     "text": "的个数称为阶，所以控制一个、两个、三个变量的偏相关就分别称为一阶（first-order）、",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 79,
+     "text": "称为零阶（zero-order）相关。以一阶偏相关为例，它涉及三个变量，一阶偏相关系数与",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 79,
+     "text": "该偏相关系数表示控制变量后，变量a与变量b的相关大小。将偏相关系数平方后便可",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 80,
+     "text": "取值范围为［0，1]。Z（Y一Y.2表示X和X2的回归平方",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 80,
+     "text": "和，Z（Y一Y)表示X的回归平方和，而Z（Y一Y则表示被X1解释后的残差平方和。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 80,
+     "text": "（partcorrelation），是指从X中",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 80,
+     "text": "分。如图3-3所示，（c）的阴影部分表示控制X1后X2与Y的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 80,
+     "text": "偏相关，而（d）的阴影部分则表示控制X后X2与Y的半偏相关。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 80,
+     "text": "量在何时进入方程便尤为重要。图3一4表示",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 82,
+     "text": "量纲的变量，所以此时的回归系数β，就称为标准化回归系数",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 84,
+     "text": "0.35。其中，f=r/（1一），r指的是有最小预期效应量的自变量的偏相关系数。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 85,
+     "text": "，或者一个自变量可以由其他自变量线性表示，即认为",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 85,
+     "text": "注意的是，多重共线性现象指的是变量之间存在线性相关，当自变量之间存在非线性相关",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 85,
+     "text": "好，说明该自变量无法用其余自变量线性表示。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 86,
+     "text": "值删除变量，去掉可以被其余自变量线性表示的变量，（3）增大样本量；（4）采用",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 86,
+     "text": "残差的散点图，进行残差分析，其中横轴表示因变量的预测值，纵",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 86,
+     "text": "轴表示残差。如果满足上述所有假设，残差将对称且随机地分布在值为零的直线上下，整",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 86,
+     "text": "残差的正态性假设指的是每个因变量的预测分数下的残差都呈正态分布。如果在散点",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 86,
+     "text": "线性假设指的是残差与预测分数呈直线关系。如果在散点图中分布呈弯曲的形状而不",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 86,
+     "text": "方差同质性假设指的是在所有预测分数下残差的方差相同。如果在散点图垂直方向上",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 87,
+     "text": "此外，Durbin-Watson检验是一种常用的检验序列数据",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 87,
+     "text": "时，回归方程仅剩截距项，表示因变量在参考类别（新闻式）上的组均值为73.22。偏回",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 87,
+     "text": "的回归方程。综上可见，虚拟编码是一种操作和解释都很方便的编码方式。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 87,
+     "text": "码换为一1而不是0，形成的编码方式则称为效应",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 88,
+     "text": "另一种常用的编码方式称为对照编码（contrastcoding）。它要求在第一个变量上将参",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 88,
+     "text": "为0，且不同变量两两之间内积为0，则称为正交编码。很",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 90,
+     "text": "中最后一个值即为条件指数。本例中为1.876，同样可以判断没有多重共线性。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 94,
+     "text": "该系数表示的是，在其他两个自变量不变的情况下，身体健康症状每变化一个单位，因变",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 97,
+     "text": ".192，力<0.001），其偏相关表示将身体健康症状可解",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 97,
+     "text": "小，为0.221；而半偏相关表示仅在应急生活事件中去掉与身体健康症状重叠的部分后，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 97,
+     "text": "相关相较于上一层有所减小，减少的部分即为新加人的应急生活事",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第四章": {
+   "page_pdf_range": [
+    99,
+    110
+   ],
+   "page_print_range": [
+    86,
+    97
+   ],
+   "n_sections": 5,
+   "sections": [
+    {
+     "page_pdf": 99,
+     "title": "第一节Logistic回归分析的一般目的和描述"
+    },
+    {
+     "page_pdf": 100,
+     "title": "第二节Logistic回归分析主要回答的问题"
+    },
+    {
+     "page_pdf": 100,
+     "title": "第三节Logistic回归分析的前提假设与模型"
+    },
+    {
+     "page_pdf": 104,
+     "title": "第四节Logistic回归分析中一些值得注意的问题"
+    },
+    {
+     "page_pdf": 105,
+     "title": "第五节Logistic回归分析应用案例及SPSS操作"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 99,
+     "text": "了解logistic回归的基本概念和原理，掌握其适用的基本情境。"
+    },
+    {
+     "page_pdf": 99,
+     "text": "了解logistic回归方程中的系数的含义与解释。"
+    },
+    {
+     "page_pdf": 99,
+     "text": "学习logistic回归方程的整体检验和拟合优度的评价标准。"
+    },
+    {
+     "page_pdf": 99,
+     "text": "掌握SPSS软件展示logistic回归的操作过程和结果解释。"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 101,
+     "text": "量或分类变量，我们常常采用虚拟代码来表示其类别，比如将",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 101,
+     "text": "虚拟变量，town=1且city=0表示城镇，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 101,
+     "text": "town=0且city=1表示城市，town=0且city=0表示农村。在虚拟代码中选择任一组别",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 101,
+     "text": "，得到的对数发生比（logodds）称为p的logit",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 103,
+     "text": "Wald统计量服从卡方分布，其值越大表示该预测变",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 103,
+     "text": "［即exp（B)］称为“优势比”（oddsratio，OR），即odds*（p）/odds（p）[odds*（p）表",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 103,
+     "text": "示新的发生比，odds（p）表示原来的发生比，表示预测变量增加1个单位对原先发生比",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 103,
+     "text": "它表示与参考组相比，另一组别对发生比的倍数影响。举例而言，虚拟变量性别中，将女",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 103,
+     "text": "编码为1。若exp（B）为1.5，则表示男生组的发生比",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 103,
+     "text": "（B）为0.8，则表示男生组的发生比是女生组发生比的0.8倍，即男生组的发生比比女生",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 104,
+     "text": "式中，Lul表示截距模型的似然值，Lmode表示含有预测变量的模型对应的似然值，n为样",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 105,
+     "text": "=男，O=女）、cold。其中，ID表示个案编号，cold为二分结果",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 105,
+     "text": "变量，1表示患感冒，0表示未患感冒。其余变量为预测变量，均为10点评分。我们将",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 107,
+     "text": "=2反映了因变量的编码方式。本例中0表示未患感冒，1表示患感冒",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 108,
+     "text": "不同。Exp（B）表示截距项的幂logit系数，反映了患有感冒的发生比（294/244=",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 108,
+     "text": "结果相同，其卡方值为109.564，表示的是此模型的一2LL值",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 110,
+     "text": "分别表示每一步加入变量后的模型结果，其解释与上述相同。如果选择了统计回归，那么",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第五章": {
+   "page_pdf_range": [
+    111,
+    124
+   ],
+   "page_print_range": [
+    98,
+    111
+   ],
+   "n_sections": 6,
+   "sections": [
+    {
+     "page_pdf": 111,
+     "title": "第一节判别分析的一般目的和描述"
+    },
+    {
+     "page_pdf": 112,
+     "title": "第二节判别分析主要回答的问题"
+    },
+    {
+     "page_pdf": 113,
+     "title": "第三节判别分析的假设条件及模型"
+    },
+    {
+     "page_pdf": 114,
+     "title": "第四节判别分析的主要类型"
+    },
+    {
+     "page_pdf": 116,
+     "title": "第五节判别分析的参数及解释"
+    },
+    {
+     "page_pdf": 117,
+     "title": "第六节判别分析应用案例及SPSS操作"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 111,
+     "text": "了解判别分析的基本前提假设及适用情境。"
+    },
+    {
+     "page_pdf": 111,
+     "text": "了解判别函数和分类函数的相关概念和主要类型。"
+    },
+    {
+     "page_pdf": 111,
+     "text": "掌握判别分析的重要参数，如判别系数、结构系数、矩心、特征根等的含义。"
+    },
+    {
+     "page_pdf": 111,
+     "text": "学习SPSS软件中判别分析的操作过程和结果解释。"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 111,
+     "text": "有广泛应用。判别分析是一种以已知属于不同类别的样本为标准，结合所观测的不同样",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 112,
+     "text": "底处于何种水平？这里用到的函数被我们称为“分类函数”（classifica-",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 114,
+     "text": "判别函数表示分组变量与满足条件假设的观测指标变量之间的关系。和多元线性回归",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 114,
+     "text": "式中，C表示第组的分类函数，c表示分类函数的系数，表示各判别变量，Cjo是截",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 114,
+     "text": "式中，n表示第i组的样本量，N表示样本总量。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 116,
+     "text": "量的原始值直接计算得到的参数估计值，称为“非标准化判别系数”。非标",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 116,
+     "text": "计算参数估计值，得到的判别函数的系数称为“标准化",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 116,
+     "text": "量对判别函数的贡献大小，其绝对值越大表示判别作用越大，符号则反映了",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 117,
+     "text": "、GROUP（类别）变量。其中，ID表示个",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 118,
+     "text": "的个案可以用缺失值表示，也可以用超出值域的其他数字表示。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 119,
+     "text": "-outclassification是指分析中每个个案都是根据除此个案",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 119,
+     "text": "果的界限，每组的平均值在其边界内用*表示。本",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 120,
+     "text": "through2”表示当建立了两个判别函数之后的结果，可以看出WilksLambda值为",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 120,
+     "text": "共同的判别作用是显著的。第二列“2”表示将",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 121,
+     "text": "以将待分类的个案进行分组。矩心的图形表示如",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 121,
+     "text": "所对应的方程，那么其函数值最大的组别即为其分类",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 123,
+     "text": "1.判别分析是一种以已知属于不同类别的样本为标准，结合所观测的不同样本的观",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 124,
+     "text": "述了每个类别判别函数值的均值；特征根表示组间差异与组内差",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第六章": {
+   "page_pdf_range": [
+    125,
+    142
+   ],
+   "page_print_range": [
+    112,
+    129
+   ],
+   "n_sections": 6,
+   "sections": [
+    {
+     "page_pdf": 125,
+     "title": "第一节聚类分析的一般目的和描述"
+    },
+    {
+     "page_pdf": 126,
+     "title": "第二节聚类分析主要回答的问题"
+    },
+    {
+     "page_pdf": 126,
+     "title": "第三节聚类分析的模型及原理"
+    },
+    {
+     "page_pdf": 129,
+     "title": "第四节聚类分析的主要类型"
+    },
+    {
+     "page_pdf": 133,
+     "title": "第五节聚类分析中一些值得注意的问题"
+    },
+    {
+     "page_pdf": 134,
+     "title": "第六节聚类分析应用案例及SPSS操作"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 125,
+     "text": "掌握聚类分析的基本概念，熟悉聚类分析的应用场景。"
+    },
+    {
+     "page_pdf": 125,
+     "text": "了解层次聚类法和非层次聚类法的概念，并掌握它们的计算步骤。"
+    },
+    {
+     "page_pdf": 125,
+     "text": "知道如何对聚类分析的结果进行解释。"
+    },
+    {
+     "page_pdf": 125,
+     "text": "了解聚类分析与因素分析、回归分析的区别与联系。"
+    },
+    {
+     "page_pdf": 142,
+     "text": "聚类分析是将所观测的事物或观测事物的指标进行分类的一种统计分析方法，它"
+    },
+    {
+     "page_pdf": 142,
+     "text": "根据聚类分析的对象，可以将聚类分析分为对样品进行聚类的Q型聚类和对指标"
+    },
+    {
+     "page_pdf": 142,
+     "text": "聚类分析主要应用于探索性的研究，其分析的结果可以提供多个可能的解，选择"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 125,
+     "text": "统分类方法的主要区别在于，它是一种数值分类的方法，分类准则不是事先决定的，而是",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 125,
+     "text": "种，一种是对样品也即个案或被试聚类（称为Q型聚类），另一",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 125,
+     "text": "种是对指标也即变量进行聚类（称为R型聚类）。心理学研究中经常会涉及这方面的问题。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 126,
+     "text": "用；表示第i个样品的第个指标，第j个指标的平均值和标准差记为，和s，用d，表",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 127,
+     "text": "量进行分类时，通常用相似系数来表示变量之间的亲疏程度。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 128,
+     "text": "它表示指标讠和之间的夹角余弦。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 128,
+     "text": "中心化是一种标准化处理方法，它是先求出两个变量的样本平均值，再用原始数据减",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 129,
+     "text": "据矩阵中每个变量的最大值与最小值之差称为极差。极差正规化变换是从每一个原",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 129,
+     "text": "（称为Q型聚类），另一种是对指标进行聚类（称为R型聚类），不过这两种聚类在数学上",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 130,
+     "text": "最短距离法把类与类之间的距离定义为一个类的所有个体与另一个类的所有个体之间",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 130,
+     "text": "最小值，即将类G，与类G。之间的距离定义为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 130,
+     "text": "最短距离法是一种单调的、空间收缩式的聚类分析方法。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 130,
+     "text": "的聚合策略相反，它把类与类之间的距离定义为它们之间两个",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 130,
+     "text": "距离，即将类G，与类G。之间的距离D定义为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 130,
+     "text": "聚类过程与最短距离法相同。最长距离法是一种单调的、空间守恒式的聚",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 131,
+     "text": "而是采用介于两者之间的距离，这时称为中间距离法。当类G，与类G合并成新类G，=(Gp，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 131,
+     "text": "G时，G与任意一类G的距离D可定义为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 131,
+     "text": "中间距离法是一种非单调的、空间守恒式的聚类分析方法。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 131,
+     "text": "中，如果将两类之间的距离定义为两类重心之间的距离，这类聚类法称为重心法。其聚类步",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 131,
+     "text": "任意一类G的距离D可定义为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 131,
+     "text": "重心法是一种非单调的、空间守恒式的聚类分析方法",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 131,
+     "text": "的平方定义为这两类元素两两之间的平均平方距离，即：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 131,
+     "text": "用此定义的聚类法称为类平均法。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 131,
+     "text": "平均法既在空间上守恒，又有单调性质，是一种使用较广、聚类效果较好的方法。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 134,
+     "text": "的计算。这是一种简捷的计算回归的方法，可能比全部自变量进入回归分析能更好地反映自",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 140,
+     "text": "可见K平均数法是一种快速高效的聚类方法。",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第七章": {
+   "page_pdf_range": [
+    143,
+    185
+   ],
+   "page_print_range": [
+    130,
+    172
+   ],
+   "n_sections": 8,
+   "sections": [
+    {
+     "page_pdf": 143,
+     "title": "第一节探索性因素分析的一般目的和描述"
+    },
+    {
+     "page_pdf": 145,
+     "title": "第二节因素分析的模型、假设及基本步骤"
+    },
+    {
+     "page_pdf": 149,
+     "title": "第三节探索性因素分析前的准备"
+    },
+    {
+     "page_pdf": 151,
+     "title": "第四节因素的抽取和旋转"
+    },
+    {
+     "page_pdf": 157,
+     "title": "第五节探索性因素分析的应用"
+    },
+    {
+     "page_pdf": 159,
+     "title": "第六节探索性因素分析中一些值得注意的问题"
+    },
+    {
+     "page_pdf": 162,
+     "title": "第七节探索性因素分析应用案例及SPSS操作"
+    },
+    {
+     "page_pdf": 177,
+     "title": "第八节探索性因素分析应用案例及Mplus操作"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 143,
+     "text": "了解探索性因素分析回答的心理学研究问题。"
+    },
+    {
+     "page_pdf": 143,
+     "text": "了解探索性因素分析必须满足的前提假设。"
+    },
+    {
+     "page_pdf": 143,
+     "text": "学习确定公共因素数量的方法。"
+    },
+    {
+     "page_pdf": 143,
+     "text": "学习因素旋转的原因和方法。"
+    },
+    {
+     "page_pdf": 143,
+     "text": "掌握探索性因素分析结果的应用。"
+    },
+    {
+     "page_pdf": 184,
+     "text": "因素分析的基本模型是将观察到的数据表示成几个潜在因素的线性组合。探索性"
+    },
+    {
+     "page_pdf": 184,
+     "text": "探索性因素分析的基本假设是，所选择的变量确实存在潜在的相关结构。其中，"
+    },
+    {
+     "page_pdf": 184,
+     "text": "一般来说，可以结合先验的标准、特征根准则、碎石检验准则、因素累积解释方"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 143,
+     "text": "分析（factoranalysis）是一种将描述某一事物的多个可观测的变量（即观测变",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 143,
+     "text": "用少数几个有意义、相互独立的因素来表示数据的基本结构。因此，因素分析又被形象地",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 145,
+     "text": "因素分析的基本模型是将观测到的数据表示成几个潜在因素的线性组合：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 145,
+     "text": "特殊因素。i表示被试数量，i表示观测变量数量，m表示因素个数，n表示变量个数。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 145,
+     "text": "和数学能力（f2）表示成：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 146,
+     "text": "全分量模型是指对n个观测变量用n个新的潜在因素线性来表示的因素分析模型：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 146,
+     "text": "式中，特殊因子项αe，表示被忽略的几项因素之和。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 146,
+     "text": "中，所有观测变量中的每个观测变量均可表示为㎡个公共因素和1个",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 147,
+     "text": "A，从而对因素的含义做出解释。第一步称为因素抽取，所得到的因",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 147,
+     "text": "素载荷矩阵称为初始因素载荷矩阵。第二步称为因素旋转，所得到的因素载荷矩阵称为旋",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 147,
+     "text": "况下，通常是将公共因素的系数称为因素载荷，即因素分析模型中的系数am，见公式（7－5）。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 147,
+     "text": "如果将所有的因素载荷以矩阵的形式表示，可得到：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 147,
+     "text": "每个观测变量特有的部分，而误差是指模型没有抽取出来的随机误差。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 147,
+     "text": "共同度（communality）是指公共因素方差在观测变量总方差中所占的比例，即用公",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 147,
+     "text": "个变量的信息被保留的程度，一般用h?表示。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 148,
+     "text": "于变量个数n，贡献率则可表示为入/n。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 148,
+     "text": "包括理论假设与统计假设。理论假设是指所选的一组变量中，确实存在某种潜在结构。统",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 148,
+     "text": "计假设是指，观测变量之间应该有较强的相关关系。如果变量之间的相关程度很小，则它",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 148,
+     "text": "tionmatrix）非对角线上的值表示变量之间负的偏相",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 150,
+     "text": "二是数据简化，即进一步采用因素分（又称为因子得分）",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 150,
+     "text": "替原始变量对原始数据进行描述。因素分是指将潜在因素表示为观测变量的线性组合而",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 152,
+     "text": "式中，α，称为第n个公共因素在观测变量土的载荷向量。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 152,
+     "text": "法在SPSS中用PAF命令表示。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 152,
+     "text": "映象的概念来源于对变量的几何表示。例如，两个变量被表示在一个二维平面中：一",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 152,
+     "text": "个变量的映象是指它可以在一定领域中被其他变量所确定的部分，可通过多重回归过程求",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 153,
+     "text": "得，其余部分称为“反映象”（anti-image）。对由映象组成的协方差矩阵按主轴因素法进",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 153,
+     "text": "这种方法在SPSS中用image命令表示，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 153,
+     "text": "这种方法在SPSS中用alpha命令表示。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 153,
+     "text": "先验的标准是指研究者根据已有的理论，对拟抽取的公共因素数目的设定。应用这个",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 155,
+     "text": "而有利于解释因素所表示的意义。四次方最大法通过使因素载荷矩阵中每一行因素载荷平",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 155,
+     "text": "式中，k表示变量数，i表示第i个变量，m表示因素数，i表示第i个因素，b表示因素",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 156,
+     "text": "式中，权数等于m/2，m表示因素数量。当因素数为2时，等量最大法与方差最大法的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 157,
+     "text": "荷仅表示每个变量对因素的唯一贡献，而后者包含了变量对因素的唯一贡献（方差）和因",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 157,
+     "text": "效度验证是指评估探索性因素分析结果的泛化性，即所得到的因素结构是否能代表总",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 158,
+     "text": "这是指选出最能代表某个因素的变量，然后对这些变量值求平均值或加和，使用这个",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 158,
+     "text": "因素所对应的每个样本个案的值，这些值称为因素得分，又叫因子分。求解因素得分",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 158,
+     "text": "因素，第力个因素在第个个案上的值可以表示为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 158,
+     "text": "因素分析模型是用因素的线性组合来表示观测变量，因素载荷实际是该线性组合的权",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 158,
+     "text": "正好相反，它是用观测变量的线性组合来表示因素，因素得",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 158,
+     "text": "加，权数的大小表示变量对因素的重要程度。对于用主成分分析法得到的因素解，可以直",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 160,
+     "text": "正交旋转之后，因素载荷矩阵中的数值表示变量和因素的相关。研究者可以确定一",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 162,
+     "text": "始数据导入SPSS文件中，并将缺失值定义为一1。具体见文件“7_2.sav”",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 169,
+     "text": "valuebelow”后填人0.3，表示因素载荷矩阵中只显示绝",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 171,
+     "text": "below”后填入0.30，表示绝对值低于0.30的因素载荷不显示。然后点击Continue-OK。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 177,
+     "text": "每一行表示一个被试，每一列表示一个变量，具体可参见文件“7_4.dat”",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 178,
+     "text": "第二行DATA表示读取的数据文件名称为7_4.dat，注意数据文件应当与语句文件放",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 178,
+     "text": "G定义了缺失值，对于所有的变量，一1表示缺失值。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 178,
+     "text": "个数字表示抽取的因素数量范围，即3～6个因素。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 179,
+     "text": "C、卡方值、RMSEA和SRMR越小表示模型越",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 180,
+     "text": "好，CFI/TLI越大，越接近1表示模型越好。比较各模型拟合结果可以发现，4个因素的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 183,
+     "text": "个因素上有较大的载荷，是一种理想的模式。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 184,
+     "text": "1。因素分析是一种将描述某一事物的多个可观测的“变量”缩减成描述该事物的少",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第八章": {
+   "page_pdf_range": [
+    186,
+    222
+   ],
+   "page_print_range": [
+    173,
+    209
+   ],
+   "n_sections": 8,
+   "sections": [
+    {
+     "page_pdf": 186,
+     "title": "第一节验证性因素分析与探索性因素分析的比较"
+    },
+    {
+     "page_pdf": 187,
+     "title": "第二节验证性因素分析的图示、模型及基本步骤"
+    },
+    {
+     "page_pdf": 189,
+     "title": "第三节验证性因素分析模型的确定和识别"
+    },
+    {
+     "page_pdf": 193,
+     "title": "第四节验证性因素分析中的数据收集和参数估计"
+    },
+    {
+     "page_pdf": 196,
+     "title": "第五节验证性因素分析中的模型评价与修正"
+    },
+    {
+     "page_pdf": 200,
+     "title": "第六节验证性因素分析模型的应用"
+    },
+    {
+     "page_pdf": 203,
+     "title": "第七节验证性因素分析应用案例及Mplus操作"
+    },
+    {
+     "page_pdf": 213,
+     "title": "第八节等价性检验应用案例及Mplus操作"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 186,
+     "text": "了解验证性因素分析和探索性因素分析的异同。"
+    },
+    {
+     "page_pdf": 186,
+     "text": "了解验证性因素分析要解决的问题。"
+    },
+    {
+     "page_pdf": 186,
+     "text": "学习验证性因素分析模型识别的基本准则。"
+    },
+    {
+     "page_pdf": 186,
+     "text": "学习验证性因素分析模型的评价与修正。"
+    },
+    {
+     "page_pdf": 186,
+     "text": "掌握等价性检验的基本步骤。"
+    },
+    {
+     "page_pdf": 221,
+     "text": "验证性因素分析是在探索性因素分析的基础上发展起来的，它是对已有的理论模"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 187,
+     "text": "变量之间的相关关系，用少数几个因素来表示原来变量的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 187,
+     "text": "、结构方程模型等章节的说法统一，本章称为潜变量）的关系。根据一定的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 187,
+     "text": "荷、因素之间的关系和误差项。在用图表示时，我们用椭圆形表示潜变量，用方形表示观",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 187,
+     "text": "测变量。接着，用箭头表示潜变量及测量该因素的观测变量之间的关系。注意，这时的箭",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 187,
+     "text": "指向观测变量。另外，还可以用双向箭头表示潜变量之间的相关。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 187,
+     "text": "量都含有误差项，也就是有一个用椭圆形表示的误差项（潜在变量），",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 187,
+     "text": "头表示。与探索性因素分析中的定义相同，误差项描述了潜变量中不能解释的变异。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 188,
+     "text": "上式称为协方差方程。其中，是观测变量向量之间的方差和协方差的总体矩阵，Ax是观",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 192,
+     "text": "对参数无意义的估计和解释。模型识别是指判断模型参数是否有唯一解，即模型的协方差",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 192,
+     "text": "、恰好识别和超识别三种情况。不可识别是指模型中方程式的个数小于要估计的参",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 192,
+     "text": "数的个数，使参数有多个解。恰好识别是指模型中方程式的个数等于要估计的参数的个",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 192,
+     "text": "数，每个参数都能求得唯一解。超识别是指模型中方程式的个数大于要估计的参数的个",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 192,
+     "text": "个待识别的参数可以用一个以上的已知量表示时，该参数可取不同值。其中，恰好",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 192,
+     "text": "识别和超识别统称为可以识别的情况。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 192,
+     "text": "T准则是指模型中自由参数的个数不能超过协方差矩阵的元素数，即：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 192,
+     "text": "三指标准则是指：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 193,
+     "text": "二指标准则是指：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 195,
+     "text": "式中，Tr表示TRACE，即求“迹”运算，也就是求矩阵中对角线上元素之和。S表示样",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 195,
+     "text": "本协方差矩阵，表示由验证性因素分析模型衍生的协方差矩阵。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 195,
+     "text": "式中，Tr表示TRACE，即求“迹”运算，也就是求矩阵中对角线上元素之和。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 195,
+     "text": "式中，Tr表示TRACE，即求“迹”运算，也就是求矩阵中对角线上元素之和。log|、",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 195,
+     "text": "logS|分别表示矩阵Z、S的行列式的对数。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 195,
+     "text": "能收敛就是一个常见原因。估计不能收敛是指参数估计过程经过反复送代之",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 196,
+     "text": "-of-fitindex，GFD）被定义为（Tanaka&Huba，1984）：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 196,
+     "text": "of-fitindex，AGFI）被定义为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 196,
+     "text": "式中，df表示自由度。估计参数相对于样本矩阵的个数越小或df越大，AGFI就越接近",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 196,
+     "text": "数的值介于0和1之间，一般大于0.9表示观测数据较好地拟合定",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 196,
+     "text": "roximation，RMSEA）被定义为",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 197,
+     "text": "以下，表示数据与定义模型拟合较好。如果模型拟合较好，RMSEA的P值应大于0.05，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 197,
+     "text": "义的模型自由度的影响，这种改进的指标即为递增拟合指数，其计算公式为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 198,
+     "text": "值也介于0至1之间，大于0.9表示模型拟合较好。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 198,
+     "text": "ncriterion，AIC），其被定义为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 198,
+     "text": "criterion，CAIC），其被定义为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 198,
+     "text": "tionindex，ECVI），其被定义为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 199,
+     "text": "模型的选取应该遵循省俭原则，省俭原则是指当两个模型",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 199,
+     "text": "出的一种改进模型拟合程度的方法。该值表示，如果估计",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 200,
+     "text": "个嵌套模型的卡方值和自由度的差值可以表示为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 201,
+     "text": "示一个测验结构效度的高低。结构效度就是指量表或测验题目真实地反映潜在的理论结构",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 201,
+     "text": "区分效度是指不同的潜变量之间存在区别的程度。如果潜变量的区分效度高，则说明",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 201,
+     "text": "以被定义为公共因素与观测变量相关的平方，它表示在一个观测变量的总方差中，能够由",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 201,
+     "text": "化，模型中就不再包含截距。于是可以表示为1=入11S1十1，所以：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 201,
+     "text": "式中，Cov（s，i）表示求和a的协方差，表示的方差。那么，和i的相关系数为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 202,
+     "text": "式中，11表示的标准差。根据信度的定义，观测变量1的信度为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 202,
+     "text": "下面的公式表示：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 202,
+     "text": "式中，L表示题目i的标准化因素载荷，e表示误差项的方差，n表示代表某个因素的题目",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 203,
+     "text": "年龄（分类变量）、性别（分类变量：0表示男性，1表示女性）。数据可参",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 205,
+     "text": "第一行DATA表示读取的数据文件名称为8_1.dat。注意，数据文件应当与语句文件",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 205,
+     "text": "果。MODINDICES（allO）表示计算所",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 207,
+     "text": "DYXStandardization表示使用连续潜变",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 207,
+     "text": "TDYStandardization表示使用连续潜变量、结果变量的方差进行",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 207,
+     "text": "STDStandardization表示使用连续潜变量的方差进行标准化的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 209,
+     "text": "潜变量解释的部分越大，表示测验题目的信度越高；反之，测验题目的信度越低。R²结",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 209,
+     "text": "果即为每道题的标准化因素载荷的平方，它也描述了题目信度的高低。与前面类似，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 213,
+     "text": "DATA语句表示所用到的数据文件是8_1.dat。VARIABLE语句中，NAMESARE",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 213,
+     "text": "xl-xl3gender表示数据文件中的变量名分别是xl=xl3和gender（性别）；USEOBSER",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 214,
+     "text": "ATIONSAREgenderEQO表示使用gender这一变量的值为O（即男生）的数据进行估",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 214,
+     "text": "VARIABLESARExI-x1O表示所用到的变量有xl一x1O；关于模型定义",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 214,
+     "text": "，F1byxl@1和F2byx7@1表示对",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 214,
+     "text": "差固定为1的方式。［xl-x10*］表示自由估计观测变量的截距；xl-x10表示自由估",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 214,
+     "text": "计观测变量的误差方差；F1-F2*表示自由估计潜变量的方差；［F1-F2@0］表示将潜",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 214,
+     "text": "为0。注意，在Mplus的语句中，*表示自由估计，@表示固定为@后面",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 215,
+     "text": "LESARExl-xl0gender表示所用",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 215,
+     "text": "NGISgender（0=M1=F）表示分组变量是",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 215,
+     "text": "gender，其中0表示男生（M），1表示女生（F）。MODEL语句首先定义了总体模型。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 215,
+     "text": "MODEL部分，一些参数后面的圆括号表示对括号前的参数进行标",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第九章": {
+   "page_pdf_range": [
+    223,
+    253
+   ],
+   "page_print_range": [
+    210,
+    240
+   ],
+   "n_sections": 8,
+   "sections": [
+    {
+     "page_pdf": 223,
+     "title": "第一节路径分析的一般目的和描述"
+    },
+    {
+     "page_pdf": 224,
+     "title": "第二节路径分析主要解决的问题"
+    },
+    {
+     "page_pdf": 227,
+     "title": "第三节路径分析的模型和原理"
+    },
+    {
+     "page_pdf": 230,
+     "title": "第四节路径分析中的模型分类和识别"
+    },
+    {
+     "page_pdf": 236,
+     "title": "第五节路径分析中的效应分解及计算"
+    },
+    {
+     "page_pdf": 241,
+     "title": "第六节路径分析模型的评价与修正"
+    },
+    {
+     "page_pdf": 245,
+     "title": "第七节路径分析中一些值得注意的问题"
+    },
+    {
+     "page_pdf": 246,
+     "title": "第八节路径分析应用案例及Mplus操作"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 223,
+     "text": "了解验证多个变量两两之间因果假设的方法和步骤，掌握路径分析的基本原理和"
+    },
+    {
+     "page_pdf": 223,
+     "text": "了解路径分析模型的类型，以及它们各自在应用中的特点和需要注意的事项。"
+    },
+    {
+     "page_pdf": 223,
+     "text": "学习路径分析中模型识别、评价和修正的基本原理和方法。"
+    },
+    {
+     "page_pdf": 223,
+     "text": "学习对路径分析结果进行效应分解、解释和推论的方法。"
+    },
+    {
+     "page_pdf": 223,
+     "text": "掌握应用Mplus软件实现路径分析的过程。"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 223,
+     "text": "，相关蕴含了因果关系；第二，路径分析是一种“证实性技术”，而不是",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 223,
+     "text": "路径分析是一种将观测变量间的关系以模型化的方式进行分析的统计技术。事物之间",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 225,
+     "text": "恰当的，因为标准化回归系数所表示的就是单个自变量对因变量的独立影响。然而，自变",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 227,
+     "text": "路径图通过符号表示出所有需要估计的模型参数，当研究者需要将模型中的变量关系转化",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 227,
+     "text": "系用带箭头的线条表示，包括单箭头直线（一→）与双箭头曲线（）两种。单箭",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 227,
+     "text": "头直线表示两个变量之间存在因果作用关系，箭头从原因变量指向结果变量；双箭头曲线",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 227,
+     "text": "则表示两者之间只有相关。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 227,
+     "text": "的双箭头曲线表示同伴关系和教师期望两个变量之间存在相关，但不存在因果关系。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 227,
+     "text": "干扰项（disturbance），也称为残差项，通常用e来表示，其下标与相应的内源变量",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 227,
+     "text": "而得到的变量，在路径图中用矩形框（）表示；残差项是潜变量，即由测量",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 227,
+     "text": "出来的变量，在路径图中用圆或椭圆（）表示。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 227,
+     "text": "因变量，又是结果变量，那么这个变量就称为中介变量（media-",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 227,
+     "text": "ariable）。指向中介变量的变量称为它的前置变量，中介变量指向的变量称为它的后",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 228,
+     "text": "3与Xs、X与Xs之间的单箭头直线所表示的均是两",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 228,
+     "text": "两个或两个以上的直接效应箭头相连来表示。在图9-1中，X1不仅直接作用于X5，而且",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 228,
+     "text": "果关系中的不足也主要体现在它很难表示出变量间的间接因果关系，以至于得出过于简单",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 228,
+     "text": "假相关指的是两个变量之间存在相关关系，但并不是因为这两个变量间确实存在着相关，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 229,
+     "text": "路径分析既可以通过路径图的方式来表示，也可以通过建立结构方程组来表示。路径",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 229,
+     "text": "量的向量；B为力×p的路径系数矩阵，表示内源变量之间的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 229,
+     "text": "关系；T为×9的路径系数矩阵，表示内源变量和外源变量之间的关系；为力×1的残",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 229,
+     "text": "ar（）=是p×p的残差协方差矩阵，表示内源观测变量向量Y的误差；Var",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 229,
+     "text": "估计方法进行估计得到的，通常被称为自由参数，路径图中所有直接效应、外源变量方差",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 229,
+     "text": "这个常数是提前给定的，这些参数通常被称为固定参数，固定参数被设",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 229,
+     "text": "定为0，表示指定相应的变量之间没有关系；第三种是限定参数，在路径分析模型中，可",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 229,
+     "text": "的例子中的变量关系用结构方程式的方法表示出来，可以表示为",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 229,
+     "text": "结构方程组由三个结构方程构成。方程中表示出了变量间的作用关系，比如公式",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 229,
+     "text": "（9-2）表示X3的变化是由模型内的变量X1、X2与X4，以及模型外的其他因素e3（残差）",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 229,
+     "text": "程式来表示该模型，这一相关则体现在残差的方差协方差矩阵的设定中：若指定相关不",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 231,
+     "text": "递归模型同时具备两个特点：（1）表示内源变量之间关系的路径系数矩阵B为下三角",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 231,
+     "text": "矩阵，表示内源变量之间的因果关系都是单向的，没有反馈回路（feedbackloop）；（2）残差",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 231,
+     "text": "的方差协方差矩阵业为对角矩阵，表示残差之间没有相关。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 231,
+     "text": "模型至少满足下面两个特点之一：（1）表示内源变量之间关系的路径系数矩阵",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 231,
+     "text": "部分之外的位置至少存在一个非零元素，表示内源变量之间的因果关系存在反",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 231,
+     "text": "表示残差之间存在相关。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 231,
+     "text": "直接反馈回路表示两个变量之间的相互作用，间接反馈回路至少包含三个变量。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 231,
+     "text": "差协方差矩阵记为（矩阵中元素称为观测值）。我们可以通过样本数据估计得到群体",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 231,
+     "text": "或者表示相关的双箭头弧线所连接，也就是假设所有变量间都是有关系的，这种模型就称",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 232,
+     "text": "设这些路径系数为0，所形成的新模型则称为非饱和模型。实际研究中，饱和模型并不",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 232,
+     "text": "变量的残差存在相关的一组直接反馈回路称为一个块（block），图",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 232,
+     "text": "块的内部是非递归的，这样的模型也可以称为块递归",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 234,
+     "text": "经过这三步可以得到一个降维的新矩阵（称为余子式C）。于是所考察的内源变量方程",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 234,
+     "text": "量具有直接效应，或是内源变量自身，0表示该位置对应列所指示的变量对",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 234,
+     "text": "程，其中第1、6列位置的元素为1，表示对应列所指示的变量X，和Y3对内源变量Y有直",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 234,
+     "text": "结构方程中）；第4列位置的元素为1，表示是内源变量自身；第2、3、",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 234,
+     "text": "5列位置的元素为0，表示X2、X3和Y2对内源变量Yi有没有直接效应（即不在Yi的结构",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 234,
+     "text": "过程可以表示为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 235,
+     "text": "是指事先将参数设定为O或某一常数（constant），或者使一些参数相等或不等。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 235,
+     "text": "影响，即路径系数为0。这样的外源变量称为工具",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 236,
+     "text": "虚假相关指的是两个变量之间存在着相关关系，但并不是因为这两个变量间确实存在",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 236,
+     "text": "通过效应分解可以更清晰地表示出变量之间复杂的作用关系。然而，在两个变量中往",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 238,
+     "text": "将表9-1中的参数在图中表示出来，就得到了图9-7（图中只标出了标准化路径系",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 241,
+     "text": "数可以由相应的路径系数完全或者近似地表示。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 241,
+     "text": "除路径前的模型称为基准模型，删除路径后的模型称为检验模型（也叫备选模型），两个",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 242,
+     "text": "X5一X2的路径系数为0。用数学形式表示则为：Ho：P52=0。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 242,
+     "text": "是删除路径X5←X2后的非饱和模型，称为非饱和模型1。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 246,
+     "text": "，普通最小二乘法的参数估计结果中用来表示方差",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 249,
+     "text": "的标准化协方差一0.03表示相关系数；ResidualVariances中残差ei、e2和e3的标准化方",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 249,
+     "text": "0.841、0.934和0.817）表示相应内源变量的方差中没有被模型解释的部分所占比",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 249,
+     "text": "一R²（R?为回归方程中的测定系数，表示方差中被解释的部分所占的比例）。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 249,
+     "text": "注：单向实线箭头表示显著的路径，单向虚线箭头表示不显著的路径。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 252,
+     "text": "表示修正后模型的标准化参数估计结果的路径图见图9-14。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 252,
+     "text": "注：单向实线箭头表示显著的路径，单向虚线箭头表示不显著的路径。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 253,
+     "text": "2.路径分析是一种“证实性技术”，作为检验因果关系的有力工具，不仅需要严谨的",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第十章": {
+   "page_pdf_range": [
+    254,
+    285
+   ],
+   "page_print_range": [
+    241,
+    272
+   ],
+   "n_sections": 8,
+   "sections": [
+    {
+     "page_pdf": 254,
+     "title": "第一节结构方程模型概述"
+    },
+    {
+     "page_pdf": 256,
+     "title": "第二节结构方程模型中的图示、模型及假设"
+    },
+    {
+     "page_pdf": 258,
+     "title": "第三节结构方程模型中的模型使用步骤"
+    },
+    {
+     "page_pdf": 261,
+     "title": "第四节结构方程模型中模型比较的应用"
+    },
+    {
+     "page_pdf": 263,
+     "title": "第五节结构方程模型分析中一些值得注意的问题"
+    },
+    {
+     "page_pdf": 266,
+     "title": "第六节结构方程模型的局限性"
+    },
+    {
+     "page_pdf": 266,
+     "title": "第七节结构方程模型估计应用案例及Mplus操作"
+    },
+    {
+     "page_pdf": 272,
+     "title": "第八节结构方程模型多组比较应用案例及Mplus操作"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 254,
+     "text": "了解结构方程模型主要能解决的问题。"
+    },
+    {
+     "page_pdf": 254,
+     "text": "了解结构方程模型的组成部分。"
+    },
+    {
+     "page_pdf": 254,
+     "text": "掌握应用结构方程模型的步骤。"
+    },
+    {
+     "page_pdf": 254,
+     "text": "知道结构方程模型的多组比较的顺序。"
+    },
+    {
+     "page_pdf": 285,
+     "text": "结构方程模型是一般线性模型的扩展，它是路径分析和因素分析的有机结合，因"
+    },
+    {
+     "page_pdf": 285,
+     "text": "结构方程模型由两部分组成：测量模型（即验证性因素分析模型）和结构模型"
+    },
+    {
+     "page_pdf": 285,
+     "text": "应用结构方程模型解决实际问题时，一般步骤分为：模型设定、模型识别、模型"
+    },
+    {
+     "page_pdf": 285,
+     "text": "与验证性因素分析中多组比较的思路类似，在结构方程模型中的多组比较，也是"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 256,
+     "text": "1所示，在结构方程模型中，两侧的方框表示观测变量，其中X系列表示外",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 256,
+     "text": "源观测变量，Y系列表示内源观测变量；中间椭圆表示潜变量，系列被称为外源潜变量，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 256,
+     "text": "n系列被称为内源潜变量。、分别表示外源观测变量和内源观测变量的误差，即不受公",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 257,
+     "text": "的。构想也被称为潜在构想（latentconstruct），是模型中设定的潜变量（latentvaria-",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 258,
+     "text": "上式称为协方差方程。其中，Z是观测变量之间的方差和协方差的总体矩阵；A和Ax分",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 258,
+     "text": "式中，@表示外源变量向量之间的协方差矩阵，亚表示结构方程中的误方差矩阵",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 259,
+     "text": "odelspecification）是指，在模型估计之前，研究者先要根据理论或以往",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 259,
+     "text": "结构方程模型的最大似然估计函数表示如下：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 260,
+     "text": "标准拟合指数（TLI）。以上指数越大表示模型拟合越好。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 261,
+     "text": "异显著，则说明模型中的变化的确是一种改善。这部分内容详见验证性因素分析的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 261,
+     "text": "模型是指研究者根据一定的理论提出假设进而建立的模型。饱和模型是指各观测变量之间",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 261,
+     "text": "模型的选取应该遵循省俭原则，省俭原则是指当两个模型同样拟合数据时，应当取两个模",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 264,
+     "text": "数的标准误仍然保持不变，则这些参数被称为量标自由参数。而经",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 264,
+     "text": "过量标重整会发生改变的参数被称为量标依变参数（scale-dependentparameters）。假设",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 265,
+     "text": "同、拟合度相同但结构不同的模型称为等同模型。对于任意一个协方差结构模型，都会有",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 265,
+     "text": "结构方程模型是一种融回归分析、相关分析、因素分析、路径分析和结构分析于一体",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 266,
+     "text": "1）与探索性因素分析相比结构方程模型是一种验证性的分析思路，常常被用于检",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 266,
+     "text": "3）影响结构方程模型解释力的主要问题是指定误差，但结构方程模型程序目前还",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 266,
+     "text": "自一个关于教师倦怠感的研究。教师倦感是指教师在教育情境的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 267,
+     "text": "（5）sex，表示学生的性别，1为男生，2为女生。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 268,
+     "text": "的语句分别表示工作超负荷（WO）预测情感枯竭（EE），情感枯竭（EE）预测自我感丧",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 272,
+     "text": "据的最后一列是分类变量，表示被试的性别，其中1代表男生，2代表女生。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 277,
+     "text": "限定误差方差相等。注意，这里的误差都是指测量模型部分观测变量",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 285,
+     "text": "测量模型主要用于表示观测变量与潜变量之间的关系，而结构模型主要用来表示潜变量之",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第十一章": {
+   "page_pdf_range": [
+    286,
+    313
+   ],
+   "page_print_range": [
+    273,
+    300
+   ],
+   "n_sections": 6,
+   "sections": [
+    {
+     "page_pdf": 286,
+     "title": "第一节中介分析的一般目的和描述"
+    },
+    {
+     "page_pdf": 287,
+     "title": "第二节中介模型和中介效应"
+    },
+    {
+     "page_pdf": 289,
+     "title": "第三节中介效应的检验"
+    },
+    {
+     "page_pdf": 295,
+     "title": "第四节潜变量中介模型"
+    },
+    {
+     "page_pdf": 297,
+     "title": "第五节中介分析中一些值得注意的问题"
+    },
+    {
+     "page_pdf": 303,
+     "title": "第六节中介分析应用案例及Mplus操作"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 286,
+     "text": "了解中介效应和中介变量的定义。"
+    },
+    {
+     "page_pdf": 286,
+     "text": "了解中介效应所涉及的效应分解，区分完全中介和部分中介。"
+    },
+    {
+     "page_pdf": 286,
+     "text": "掌握中介效应的常用检验方法及各方法的特点。"
+    },
+    {
+     "page_pdf": 286,
+     "text": "熟悉建构中介模型时需要满足的假设及注意事项。"
+    },
+    {
+     "page_pdf": 286,
+     "text": "了解中介效应现有的效应量指标及其特点"
+    },
+    {
+     "page_pdf": 312,
+     "text": "当考虑自变量X对因变量Y的影响时，如果X通过影响变量M来影响Y，则称M"
+    },
+    {
+     "page_pdf": 312,
+     "text": "对中介效应的估计是一个效应分解的过程，即将总效应分解为直接效应和中介效"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 287,
+     "text": "程模型和路径分析中对各中介效应的估计称为效应分解（effectdecomposi-",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 287,
+     "text": "介和部分中介。完全中介指的是自变量X对因变量Y的直接效应为0，但通过M影响Y",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 287,
+     "text": "图11-2是一个表示两个变量（自变量X与因变量Y）之间因果关系的最简单的模",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 287,
+     "text": "型。由X指向Y的箭头表示X能够预测Y，并且这条路径的系数用c表示。该图下方的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 287,
+     "text": "图中所示X与Y之间的关系。其中，ei表示Y中没有被它",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 287,
+     "text": "与X之间关系所解释的部分，表示截距。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 287,
+     "text": "上图表示的仅是没有考虑其他变量的情况下X与Y之间总的关系，因此它是一个总",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 288,
+     "text": "Y的直接效应。每个箭头旁边标记的字母表示相应的路径系数：a是自变量X",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 288,
+     "text": "没有控制中介变量M的影响。另外，e2表示中介变量M中没有被它与X之间关系所解",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 288,
+     "text": "释的部分，e3则表示因变量Y中没有被它与X和M之间关系所解释的部分，i2和i都是截",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 288,
+     "text": "数c、a、b和c，有两种不同的方式来表示中介的效应量。第一种：由于中",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 288,
+     "text": "径的效应可以用所包含路径系数的乘积来表示，即用ab来表",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 288,
+     "text": "直接效应，中介效应也可以表示为总效应与直接效应的差值，即c一。也就是说，我",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 290,
+     "text": "stentmediation），或者称为遮掩效应（suppressingeffects），",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 290,
+     "text": "指的是中介效应和直接效应符号相反的情况。此时，中介变量M是一个抑制变量（sup-",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 292,
+     "text": "于，前者是用总效应与直接效应的差值来表示间接效应，而后者",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 292,
+     "text": "而现在的研究大多使用αb来表示中介效应。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 292,
+     "text": "也称为非参数百分位Boostrap方法。研究者发现，非参数百分位Boostrap方法对中介效",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 293,
+     "text": "率、ProdUpper-类错误率分别表示从乘积分布",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 296,
+     "text": "号表示相应的路径系数。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 296,
+     "text": "ML）或其他方法估计得到。极大似然法是一种",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 297,
+     "text": "在第二节中，我们介绍了表示中介模型的回归方程。实际上，每个中介回归方程都要",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 297,
+     "text": "这个假设指的是中介回归方程反映了正确的潜在模型，没有遗漏重要的变量或影响。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 298,
+     "text": "这个假设指的是对变量X、M和Y的测量都是可信且有效的。测量误差会导致M与",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 298,
+     "text": "这个假设指的是在各个回归方程中，残差与自变量不相关，残差之间相互独立，并",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 299,
+     "text": "，因此在中介变量不服从正态分布时，它是一种合适的方法。但是，如果中介模型中所",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 300,
+     "text": "aSS表示a和b都是小效应，SM表示a较小，而b中等：SL表示a较小而b较大。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 300,
+     "text": "种可能是模型中存在不一致的中介，或者称为遮",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 300,
+     "text": "掩效应。这种效应指的是中介效应和自变量X对因变量Y的直接效应（即不通过中介变",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 301,
+     "text": "。因此，显著性检验的结果并不能很好地表示",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 301,
+     "text": "标准化的回归系数也是一种效应量的度量指标。它表示的是自变量改变一个标准差",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 302,
+     "text": "响的偏相关的平方。公式（11-10）表示的是通过公式（11－9）计算得到的结",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 302,
+     "text": "1）。这个值是用Y的标准差作为单位来表示ab的大小。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 302,
+     "text": "有关模拟研究表示，相关以及标准化系数的度量即使在小样本下偏差也较低。中介比",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 303,
+     "text": "）的效应量指标，而a和6各自无法单独表示出中介效应",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 304,
+     "text": "量的情况下，该假设可以用一个模型图来表示，具体可见图11一6。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 304,
+     "text": "utput：standardized表示输出标准化解，如果不需要也可以不",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 307,
+     "text": "sis：bootstrap=1000表示设定的分析方法是Bootstrap方法，1000表",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 307,
+     "text": "output语句中cinterval表示需要输",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 309,
+     "text": "验（diffusepriors），也称为无信息先验（non-informativepri-",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第十二章": {
+   "page_pdf_range": [
+    314,
+    363
+   ],
+   "page_print_range": [
+    301,
+    350
+   ],
+   "n_sections": 6,
+   "sections": [
+    {
+     "page_pdf": 314,
+     "title": "第一节调节效应概述"
+    },
+    {
+     "page_pdf": 315,
+     "title": "第二节调节效应的解释和重要性"
+    },
+    {
+     "page_pdf": 316,
+     "title": "第三节显变量的调节效应"
+    },
+    {
+     "page_pdf": 330,
+     "title": "第四节潜变量的调节效应"
+    },
+    {
+     "page_pdf": 349,
+     "title": "第五节有调节的中介"
+    },
+    {
+     "page_pdf": 358,
+     "title": "第六节不"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 314,
+     "text": "了解调节效应的概念，以及解释调节效应的必要性。"
+    },
+    {
+     "page_pdf": 314,
+     "text": "区分调节效应与交互作用的概念。"
+    },
+    {
+     "page_pdf": 314,
+     "text": "区分调节效应与中介效应的概念。"
+    },
+    {
+     "page_pdf": 314,
+     "text": "掌握不同调节变量类型所对应的调节效应检验方法。"
+    },
+    {
+     "page_pdf": 314,
+     "text": "了解有调节的中介和有中介的调节，识别二者的区别和联系，掌握各自的检验"
+    },
+    {
+     "page_pdf": 363,
+     "text": "若变量M的不同取值会使得自变量X对因变量Y的影响程度不同，则称M调节"
+    },
+    {
+     "page_pdf": 363,
+     "text": "调节作用在统计模型上等同于交互作用。但在理论假设和解释上，在调节效应中，"
+    },
+    {
+     "page_pdf": 363,
+     "text": "对于显变量的调节效应，根据自变量与调节变量的变量类型，可以使用多元回归"
+    },
+    {
+     "page_pdf": 363,
+     "text": "当检验发现调节效应存在时，需要进一步观察调节变量如何影响自变量与因变量"
+    },
+    {
+     "page_pdf": 363,
+     "text": "有调节的中介和有中介的调节都是模型中同时包含中介和调节两类效应。简单来"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 314,
+     "text": "节了X与Y之间的关系。变量M被称为调节变量（moderator），X与Y之间关系依赖于",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 315,
+     "text": "式中，Y表示预测的Y值，61和62分别表示变量X和M对Y的斜率。在这个回归方程中，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 315,
+     "text": "纵轴，我们可以用图12-2表示出X与Y的关系。结合公式（12-1）与图12-3，我们可",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 315,
+     "text": "虑交互作用时，可以通过X和M的乘积来表示X和M的交互作",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 317,
+     "text": "mmycoding）即可，交互作用则表示为变量的乘积项。但实际操作中，根据不同的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 317,
+     "text": "更有意义，例如此时的截距b。表示的是变量X和M在各自的平均值水平时，Y的取值。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 318,
+     "text": "归分析中，变量的影响效应（回归系数）表示的是当其他变量取值为0时，这个变",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 318,
+     "text": "是说，对于公式（12-2），系数6b表示的是M=0时，X对Y的影",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 318,
+     "text": "响；中心化后，b则表示M取平均水平时（CM=O），Cx对Y的影响。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 320,
+     "text": "根据上面的计算，我们可以用图形直观地表示出在不同的社会支持水平上（低于平均",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 320,
+     "text": "归分析，在结果中报告非标准化的结果，即为正确的标准化回归系数。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 321,
+     "text": "以上的计算，我们可以使用图12－7来表示在不同的社会支持水平上，工作压力",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 322,
+     "text": "我们知道，调节（交互）作用表示自变量X和因变量Y的关系依赖于调节变量M。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 323,
+     "text": "即变量乘积项）的标准化回归系数本身就是一种效应量，但是不够",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 324,
+     "text": "ken&West，1991），该指标表示的是",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 324,
+     "text": "式中，RAI表示同时包含主效应和要考察的交互作用的模型对因变量变异的解释率，R.A",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 324,
+     "text": "对因变量变异的解释率。f2=0.02表示",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 324,
+     "text": "小的效应，f2=0.15表示中等效应，f2=0.26表示大的效应（Cohen，1988）。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 324,
+     "text": "M进行虚拟编码，生成新的虚拟变量，或称为哑变量，这种编码",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 325,
+     "text": "虚拟变量的影响系数表示取值为1的类别与参照类别在因变量上均值的差异；如以组",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 325,
+     "text": "1为参照类别，di的回归系数就表示组2与组1因变量均值的差异。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 329,
+     "text": "虚拟变量的影响系数表示编码为1的组在因变量上的均值与非加权总体均值的差异；",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 329,
+     "text": "如方法1中d1的回归系数表示组2在因变量上的均值与三个组非加权总体均值的差异。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 330,
+     "text": "29的均值；交互项的系数一0.204表示的是男性组或女性组相",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 330,
+     "text": "的平均值。交互项的系数一0.142也表示男性组或女性组的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 337,
+     "text": "的其他参数来表示的。因此在估计乘积指标的载荷、截距、特殊因子方差及协方差时，就",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 338,
+     "text": "法中需要用11和工4的参数来表示。除了不加约束，无约束方法的其他假设都与药束方法",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 339,
+     "text": "类：标准化估计和完全标准化估计。前者指的是",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 343,
+     "text": "为与饮酒行为之间的关系，再用图形表示出调节效应，如图12－15所示。由图可以发现，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 345,
+     "text": "使用调节项对因变量方差变异的解释率来表示，也",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 349,
+     "text": "edmediationmodel），指的是自变量X通过中介变量M对因变量Y产生的影响，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 352,
+     "text": "这个中介效应是否会发生变化，这种方法称为条件",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 353,
+     "text": "分类变量，0表示小的企业规模，1表示大的企业规模",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 356,
+     "text": "L部分的语句如下（其中XZ和MZ分别表示X与Z的乘积项以及M与Z的乘",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 357,
+     "text": "！不加括号则表示固定选代次数",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 358,
+     "text": "dmoderationmodel），指的是调节变量Z对自变量X与因变量Y之间关系的调节",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 358,
+     "text": "为一个简单的有中介的调节模型。该模型表示的是，自变量X与调节变量Z之",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 358,
+     "text": "直接效应为C3。该模型与图12-21表示的模型是相同的。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 363,
+     "text": "依赖于M的程度，就是调节效应；变量M即为调",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第十三章": {
+   "page_pdf_range": [
+    364,
+    397
+   ],
+   "page_print_range": [
+    351,
+    384
+   ],
+   "n_sections": 5,
+   "sections": [
+    {
+     "page_pdf": 364,
+     "title": "第一节多层线性模型概述"
+    },
+    {
+     "page_pdf": 369,
+     "title": "第二节多层线性分析主要回答的问题"
+    },
+    {
+     "page_pdf": 371,
+     "title": "第三节多层线性分析中的模型及假设"
+    },
+    {
+     "page_pdf": 377,
+     "title": "第四节多元线性分析中一些值得注意的问题"
+    },
+    {
+     "page_pdf": 379,
+     "title": "第五节多层线性模型应用案例及操作"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 364,
+     "text": "学习各种多层线性模型，以及如何在HLM、SPSS、Mplus软件中进行多层线性模"
+    },
+    {
+     "page_pdf": 364,
+     "text": "掌握各种多层线性模型中参数的定义、特点、运用及解释。"
+    },
+    {
+     "page_pdf": 364,
+     "text": "了解多层线性模型的参数估计方法。"
+    },
+    {
+     "page_pdf": 397,
+     "text": "社会科学研究中的调查数据往往具有层次结构的特点，例如，第一水平是学生，"
+    },
+    {
+     "page_pdf": 397,
+     "text": "随机效应一元方差分析模型又称零模型，模型中没有考虑任何预测变量对因变量"
+    },
+    {
+     "page_pdf": 397,
+     "text": "随机效应单因素协方差分析模型与传统协方差模型的区别在于将组间效应定义为"
+    },
+    {
+     "page_pdf": 397,
+     "text": "在随机系数回归模型中，模型的截距是随机的，自变量对因变量影响的斜率也是"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 364,
+     "text": "第二水平是班级，学生嵌套于班级之中，称为分层数据。如果",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 367,
+     "text": "Ware，1982）；在计量经济学中称为随机系数回归模型（random-coefficientregression",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 367,
+     "text": "中，主要是一种关于如何从整体上系统地分析研究得来的数据特征和合理建立模型的统计",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 370,
+     "text": "跨级交互作用是指第一水平个体的预测变量与第二水平小组的预测变量是否存在交",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 372,
+     "text": "中的回归模型来表示，如前文所示，这样就不能分析出两个学校之间的差异。在这种情",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 372,
+     "text": "对上面的例子用两水平模型来表示，第一水平为学生，第二水平为学校，水平1的模",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 372,
+     "text": "水平模型。两水平分层模型可表示如下：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 372,
+     "text": "合并的模型可表示为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 372,
+     "text": "业成绩），X，表示第；个班级第个学生预测变量的观测值（如学生的学习动机），W，表示",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 372,
+     "text": "分别表示第个学校的平均社会经济地位对学生学业成绩回归直线的截距和斜率，e表示",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 372,
+     "text": "对于第二水平模型，Yoo和Yo1分别表示学校变量W，对",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 372,
+     "text": "距βo；的回归直线的截距和斜率，uo表示由第个学校的学校变量带来的截距上的误",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 372,
+     "text": "差。Y1o和i1分别表示班级变量W，对于截距β1的回归直线的截距和斜率，u表示由第i",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 373,
+     "text": "在上述模型中，o0，，Y11称为水平2的固定系数；X，称为水平1的预测变量，W，称",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 373,
+     "text": "为水平2的预测变量；e称为水平1的随机效应，uo和u称为水平2的随机效应；为水",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 373,
+     "text": "平1随机效应的方差，称为水平2随机效应的协方差矩阵。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 373,
+     "text": "截距与斜率之间的相关系数大小表示不同学校平均学业成绩与学习动机对学生学业成",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 373,
+     "text": "影响强度之间的关系，相关系数大于零，表示平均成绩越高，学习动机对学业成绩的影",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 373,
+     "text": "两水平模型可表示为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 373,
+     "text": "-6）和公式（13-7）用矩阵形式可表示为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 375,
+     "text": "在上面定义的模型中，预测变量X即为传统协方差分析中的协变量。将上面两水平",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 375,
+     "text": "效应协方差分析模型。此时，组合模型可表示为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 376,
+     "text": "uoi和uii不等于O，则模型可表示为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 377,
+     "text": "4)］中，如果直接采用原始数据，截距表示的意义就是当预测变",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 377,
+     "text": "表示某种药物的使用剂量，X，=0是有实际意义的，在对回归截距进行解释时，表示不使",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 378,
+     "text": "时，一定特别注意所用的预测变量本身所表示的意义。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 378,
+     "text": "量，如定义X，0表示男生，X，=1表示女生。这样，在上面第一水平的回归模型中，截",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 378,
+     "text": "距βo,就表示第个学校男生的因变量Y，的总均值（或期望值），即X，=0时，因变量Y",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 378,
+     "text": "的总均值。β表示女生与男生之间的差异，β显著大于O表示女生平均成绩高于男生，显",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 378,
+     "text": "著小于O则表示女生平均成绩低于男生。Var（βo）表示不同学校男生平均成绩的方差。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 378,
+     "text": "距βo，表示学校中以总体女生比例进行调整后的因变量的总均值。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 378,
+     "text": "例。用组均值进行中心化后，截距βo，表示学校中以该校女生比例进行调整后的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 379,
+     "text": "W一W，其中W表示所有学校的总均值。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 379,
+     "text": "多层线性模型中的解释率是指预测变量所能解释因变量的方差和总方差的比值。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 381,
+     "text": "将ID定义为“ID”变量，将MINORITY、FEMALE、SES、MATHACH定义为",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 382,
+     "text": "注意，需要将与水平1中名称相同的ID定义为",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 383,
+     "text": "“MATHACH”，将其选为因变量，表示零模型，窗口如",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 383,
+     "text": "该模型中Yoo表示学生数学成绩的均值，总的变异分解为组内和组间Too两个部分，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 384,
+     "text": "该模型中Y1表示预测变量社会经济地位（SES）对数学成绩的影响，1表示随机斜",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 385,
+     "text": "该模型中Yo1表示预测变量学校纪律环境（DISCLIM）对数学成绩的影响。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 385,
+     "text": "该模型中Yu1表示预测变量学校纪律环境（DISCLIM）对社会经济地位与数学成绩关",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 389,
+     "text": "IncludeIntercept”，表示模型中包括截距项。在下面“SubjectGroupings”中，将变",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 390,
+     "text": "中的Intercept表示模型截距项，此行的数据表示截距项βo的固定部分Yoo的估计结果。ses",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 390,
+     "text": "表示第一水平预测变量，此行的数据表示表示斜率βi的固定部分1o的估计结果",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 390,
+     "text": "截距在第二水平的变异，UN（2，1）表示二者协方差，UN",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 390,
+     "text": "（2，2）表示ses的斜率的方差（即t11）。具体参数的含义可参考HLM部分的结果解释。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 391,
+     "text": "估计结果，表格中的Intercept表示模型截距项，此行的数据表示截距项βo的固",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 391,
+     "text": "定部分oo的估计结果。ses表示第一水平预测变量，此行的数据表示斜率βi的固定部分Y1o的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 391,
+     "text": "估计结果。disclim表示第二水平预测变量，此行的数据表示截距项β斜率的oi估计结果。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 391,
+     "text": "UN（1，1）表示截距的方差（即Too），即截距在第二水平的变异，UN（2，1）表示二者",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 391,
+     "text": "协方差，UN（2，2）表示ses的斜率的方差（即T11）。具体参数的含义可参考HLM部",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 392,
+     "text": "估计结果，表格中的Intercept表示模型截距项，此行的数据表",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 392,
+     "text": "o的固定部分Yoo的估计结果。ses表示第一水平预测变量，此行的数据表示斜率",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 392,
+     "text": "定部分1o的估计结果。disclim表示第二水平预测变量，此行的数据表示截距项βo",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 392,
+     "text": "o的估计结果。ses*disclim表示第一水平预测变量和第二水平预测变量的交互作",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 392,
+     "text": "用，此行的数据表示斜率项β1的斜率Y的估计结果。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 392,
+     "text": "阵估计结果。其中UN（1，1）表示截距的方差（即too），即截距在第二水平的变异，",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 392,
+     "text": "UN（2，1）表示二者协方差，UN（2，2）表示ses的斜率的方差（即t11）。具体参数的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 393,
+     "text": "分析部分，type=twolevel表示这是一个两水平的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 393,
+     "text": "嵌套关系的变量，within一ses表示组内变量是ses。在分析部分，type=",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 393,
+     "text": "twolevelrandom表示这是一个两水平的分析，并且模型中包括随机部分。接下来，在模",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 393,
+     "text": "etalj|mathachonses表示ses对mathach的影响系数为be-",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 395,
+     "text": "inLevel)，Variances表示第一水平的变异估计结果。在第二水平",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 395,
+     "text": "eans部分是Mathach的截距，表示学生数学成绩的平均水平，Vari-",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 395,
+     "text": "，ResidualVariances表示第一水平的变异。在第二水平",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 395,
+     "text": "，MATHACHWITHBETA1J表示截距与斜率的相关，Means部分是",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 395,
+     "text": "MATHACH的截距，表示学生数学成绩的平均水平，可以发现，BETAIJ的均值（截",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 395,
+     "text": "距）为2.394，达到显著性水平，表示学校间社会经济地位对学生数学成绩的影响是显著",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 395,
+     "text": "不同的。Variances部分表示变异，MATHACH表示截距部分的变异，即too，BETA1J",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 395,
+     "text": "表示斜率在第二水平的变异。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 397,
+     "text": "第二水平是学校，学生嵌套于学校之中，称为分层数据。如果观测涉及不同的学校，同时",
+     "status": "CANDIDATE"
+    }
+   ]
+  },
+  "第十四章": {
+   "page_pdf_range": [
+    398,
+    433
+   ],
+   "page_print_range": [
+    385,
+    420
+   ],
+   "n_sections": 5,
+   "sections": [
+    {
+     "page_pdf": 398,
+     "title": "第一节能"
+    },
+    {
+     "page_pdf": 399,
+     "title": "第二节追踪研究中的多层线性模型"
+    },
+    {
+     "page_pdf": 401,
+     "title": "第三节一些值得注意的问题"
+    },
+    {
+     "page_pdf": 401,
+     "title": "第四节应用案例一及操作"
+    },
+    {
+     "page_pdf": 420,
+     "title": "第五节应用案例二及操作"
+    }
+   ],
+   "bullets": [
+    {
+     "page_pdf": 398,
+     "text": "学习追踪研究中的多层线性模型，以及如何在HLM、SPSS、Mplus软件中进行"
+    },
+    {
+     "page_pdf": 398,
+     "text": "掌握追踪研究中多层线性模型中参数的定义、特点、运用及解释。"
+    },
+    {
+     "page_pdf": 425,
+     "text": "多层线性模型将重复测量看作嵌套于个体观测数据的多层分析模型，通过同时考"
+    },
+    {
+     "page_pdf": 425,
+     "text": "多层线性模型对于重复测量的次数和重复测量之间的时间跨度没有严格的限制，"
+    }
+   ],
+   "definitions": [
+    {
+     "page_pdf": 399,
+     "text": "和个体水平不同的差异，从而明确表示出个体在水平1（不同测量点）的变化情况，而且",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 399,
+     "text": "型就可以定义为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 399,
+     "text": "式中，Y，表示第i个学生第次测量的自我概念的观测值，模型假设学生自我概念随着年",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "目的是使得对截距的解释更有意义：截距表示三年",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "级时个体自我概念的得分。e表示第一水平随机测量的误差，多层线性模型的标准假设ei",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "式中，βoo和β1o分别表示截距和斜率的整体均值，用来描述总体的变化趋势。随机部分Yoi",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "和表示截距和斜率的残差，通常假设：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "Too表示第一水平随机截距对应的方差，T11表示第一水平随机斜率对应的方差，To1表示随",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "上述第二水平不含任何预测变量的模型称为无条件增长模型，这一模型主要用来检验个体",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "含有第二水平预测变量的模型可以表示为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "模型中的固定参数βoo表示第二水平预测变量取值为0时，第一水平截距的总体均值，如",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "这里表示退缩行为得分为0的女生三年级时自我概念的平均分：βo1表示在控制另外一个第",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "级）时的差异；βo2表示在控制性别影响后，退缩行为每变化一个单位，自我概念截距（初",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "始状态，即三年级）的差异。β1o表示第水平预测变量取值为0时，第一水平斜率的总体",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "均值，如这里表示退缩行为得分为0的女生自我概念变化的平均斜率；β11表示在控制另一",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "生相对女生变化速度的平均差异，β12表示在控制",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "随机部分T00表示在控制性别和退缩行为后，第一水平截距对应的残差的方差；T11表",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 400,
+     "text": "为后，第一水平斜率残差的方差；To1表示在控制性别和退缩行为后",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 401,
+     "text": "必须在各次测量中具有等价性。结果变量是指水平1上的因",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 402,
+     "text": "这里采用自我概念四个分量表的平均分数表示儿童的自我概念的得分。研究者通常关",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 402,
+     "text": "三年级赋值为0，表示初始状态，对应于后面截距的解释），以及一个描述四次自我概念测",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 403,
+     "text": "将变量ID定义为“ID”变量，将测量次数和自我概念的测量值定义为MDM文件中",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 405,
+     "text": "表示无条件均值模型（在追踪研究中将零模型叫作无条件均值模型）。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 407,
+     "text": "2i。不含第二水平预测变量的模型可以表示为：",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 413,
+     "text": "IncludeIntercept”，表示模型中包括截距项。在下面“SubjectGroupings”",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 414,
+     "text": "cept”，表示模型中包括截距项。在“FactorsandCovariates”中，将变量time选人",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 414,
+     "text": "IncludeIntercept”，表示模型中包",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 415,
+     "text": "方差矩阵估计结果。其中UN（1，1）表示截距的方差（即too），即截距在第",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 415,
+     "text": "二水平的变异，UN（2，1）表示二者协方差，UN（2，2）表示时间的斜率的方差（即",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 417,
+     "text": "分析部分，type三twolevel表示这是一个两水平的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 417,
+     "text": "套关系的变量，within一time表示组内变量是time。在分析部分，type一",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 417,
+     "text": "twolevelrandom表示这是一个两水平的分析，并且模型中包括随机部分。接下来，在模",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 417,
+     "text": "中，betaljselfontime表示time对self的影响系数为betalj（斜",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 417,
+     "text": "水平中，selfwithbetalj表示self的截",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 418,
+     "text": "inLevel），Variances表示第一水平的变异估计结果。在第二水平",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 418,
+     "text": "），Means部分是SELF的截距，表示个体层面自我概念的平均水平，Va-",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 418,
+     "text": "riances部分表示变异，SELF表示截距部分的变异（第二水平变异），即zoo。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 419,
+     "text": "，ResidualVariances表示第一水平的变异。在第二水平",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 419,
+     "text": "el），SELFWITHBETA1J表示截距与斜率的相关，Means部分是SELF的",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 419,
+     "text": "截距，表示个体层面自我概念的平均水平，可以发现，BETA1J的均值为一0.084，达到",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 419,
+     "text": "显著性水平，表示自我概念随着时间增长而降低，Variances部分表示变异，SELF表示截",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 419,
+     "text": "距部分的变异，即T00，BETA1J表示斜率在第二水平的变异。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 420,
+     "text": "有两种评价，0表示没有问题，1表示有问题（为了解释上的简单，本例将此变量最后合",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 420,
+     "text": "成的值重新编码为0和1取值的变量，0表示在所有项目上评价都为0，1表示至少有一个",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 420,
+     "text": "的数据中，有描述被试编号的变量id、表示婚姻幸福感的变量marhap、表",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 420,
+     "text": "距表示的含义为25岁不存在婚姻问题的个体对婚姻幸福感评价的估计值，用ager_25表",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 423,
+     "text": "方差矩阵估计结果。其中UN（1，1）表示截距的方差（即Too），即截距在第",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 423,
+     "text": "二水平的变异，UN（2，1）表示二者协方差，UN（2，2）表示时间的斜率的方差（即",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 424,
+     "text": "lj丨marhaponager_25表示",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 424,
+     "text": "marhaponmarprol表示marprol对marhap的影响，且这个系数在第二个水平不包含随",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 424,
+     "text": "平，marhapwithbetalj表示marhap的截距项和betalj（斜率）之间存",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 424,
+     "text": "，ResidualVariances表示第一水平的变异。在第二水平",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 424,
+     "text": "），MARHAPWITHBETAIJ表示截距与斜率的相关，Means部分是",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 424,
+     "text": "MARHAP的截距，表示个体层面婚姻幸福感的平均水平，可以发现，BETA1J的均值为",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 424,
+     "text": "一0.131，达到显著性水平，表示婚姻幸福感随着年龄增长而减小。MARHAPON",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 424,
+     "text": "MARPRO1表示随时间变化的变量“婚姻是否有问题”对婚姻幸福感有显著影响，且婚姻",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 424,
+     "text": "婚姻无问题者。Variances部分表示变异，MARHAP表",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 424,
+     "text": "距部分的变异，即Too，BETA1J表示斜率在第二水平的变异。",
+     "status": "CANDIDATE"
+    },
+    {
+     "page_pdf": 425,
+     "text": "虑测量水平和个体水平的差异，可以明确表示出总体的发展趋势及其个体在发展趋势上的",
+     "status": "CANDIDATE"
+    }
+   ]
+  }
+ }
+}

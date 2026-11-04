@@ -1,0 +1,49 @@
+{
+  "case_id": "selection-blocks",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\nAnalysis of Variance Table\n\nModel 1: well_being ~ age\nModel 2: well_being ~ age + social_support\nModel 3: well_being ~ age + social_support + stress\n  Res.Df   RSS Df Sum of Sq       F    Pr(>F)    \n1    358 26236                                   \n2    357 21082  1    5153.4 100.649 < 2.2e-16 ***\n3    356 18228  1    2854.1  55.742  6.42e-13 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nCall:\nlm(formula = well_being ~ age + social_support + stress, data = d)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-19.7890  -4.7977  -0.1401   4.7135  20.8625 \n\nCoefficients:\n               Estimate Std. Error t value Pr(>|t|)    \n(Intercept)    49.98950    3.90425  12.804  < 2e-16 ***\nage             0.01451    0.03123   0.464    0.643    \nsocial_support  0.31337    0.04379   7.155 4.79e-12 ***\nstress         -0.36858    0.04937  -7.466 6.42e-13 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 7.156 on 356 degrees of freedom\nMultiple R-squared:  0.3059,\tAdjusted R-squared:    0.3 \nF-statistic: 52.29 on 3 and 356 DF,  p-value: < 2.2e-16\n\n",
+  "stderr": "",
+  "metrics": {
+    "delta_r_squared": 0.10868409978530799,
+    "F": 55.74181861411917,
+    "df1": 1,
+    "df2": 356,
+    "p": 6.420287293424302e-13
+  },
+  "warnings": [],
+  "tables": {
+    "comparison": [
+      {
+        "model": "1",
+        "Res.Df": 358,
+        "RSS": 26235.475995156125
+      },
+      {
+        "model": "2",
+        "Res.Df": 357,
+        "RSS": 21082.04722464355,
+        "Df": 1,
+        "Sum.of.Sq": 5153.428770512575,
+        "F": 100.6487705609932,
+        "Pr..F.": 5.041481882074684e-21
+      },
+      {
+        "model": "3",
+        "Res.Df": 356,
+        "RSS": 18227.948856967865,
+        "Df": 1,
+        "Sum.of.Sq": 2854.098367675684,
+        "F": 55.74181861411917,
+        "Pr..F.": 6.420287293424302e-13
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "8dbef9610d77357bb1a9dd1cb717579f42d4a0f565d71879aef0b47cbcedbc14",
+  "config_sha256": "6f1181c3d24a9fdf003003d601135c186ef34e4de3193d8a03c0ebe9fcb22199",
+  "data_sha256": {
+    "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+  }
+}

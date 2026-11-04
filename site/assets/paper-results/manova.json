@@ -1,0 +1,336 @@
+{
+  "case_id": "manova",
+  "covariances": [],
+  "design": "固定种子生成独立三组、两个连续相关结果和基线。先 MANOVA，再另示 MANCOVA（控制基线），均读取 Pillai 多变量检验。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/manova.R",
+    "script_sha256": "d1ff75a205285e0a7a9508c84d570dbf512c7f1c38d12ebaf75a8a09e4de2622",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "term",
+        "Df",
+        "Pillai",
+        "approx F",
+        "num Df",
+        "den Df",
+        "Pr(>F)"
+      ],
+      "name": "multivariate",
+      "rows": [
+        {
+          "Df": 1,
+          "Pillai": 0.05010633834933603,
+          "Pr(>F)": 0.024067820193905194,
+          "_row": "baseline",
+          "approx F": 3.8243328458621084,
+          "den Df": 145,
+          "num Df": 2,
+          "term": "baseline"
+        },
+        {
+          "Df": 2,
+          "Pillai": 0.21683882602776614,
+          "Pr(>F)": 8.902510581699133e-07,
+          "_row": "group",
+          "approx F": 8.877063123108023,
+          "den Df": 292,
+          "num Df": 4,
+          "term": "group"
+        },
+        {
+          "Df": 146,
+          "_row": "Residuals",
+          "term": "Residuals"
+        }
+      ],
+      "title": "multivariate"
+    },
+    {
+      "columns": [
+        "outcome",
+        "F",
+        "df1",
+        "df2",
+        "p",
+        "p_holm"
+      ],
+      "name": "univariate_followup",
+      "rows": [
+        {
+          "F": 19.20162067252278,
+          "_row": "memory",
+          "df1": 2,
+          "df2": 146,
+          "outcome": "memory",
+          "p": 3.9505201314847245e-08,
+          "p_holm": 2.765364092039307e-07
+        },
+        {
+          "F": 8.623607891714377,
+          "_row": "attention",
+          "df1": 2,
+          "df2": 146,
+          "outcome": "attention",
+          "p": 0.0002884139825493479,
+          "p_holm": 0.0014420699127467393
+        }
+      ],
+      "title": "univariate_followup"
+    },
+    {
+      "columns": [
+        "outcome",
+        "comparison",
+        "baseline",
+        "difference",
+        "se",
+        "df",
+        "ci_lower",
+        "ci_upper",
+        "p",
+        "p_holm"
+      ],
+      "name": "adjusted_pairwise_comparisons",
+      "rows": [
+        {
+          "_row": "memory.1",
+          "baseline": 0.014122966549180754,
+          "ci_lower": 0.6055987661028777,
+          "ci_upper": 4.583058062072611,
+          "comparison": "control minus combined",
+          "df": 146,
+          "difference": 2.5943284140877445,
+          "outcome": "memory",
+          "p": 0.010921967488525846,
+          "p_holm": 0.021843934977051692,
+          "se": 1.0062661070254968
+        },
+        {
+          "_row": "memory.2",
+          "baseline": 0.014122966549180754,
+          "ci_lower": 4.245320388531784,
+          "ci_upper": 8.249180506227164,
+          "comparison": "practice minus combined",
+          "df": 146,
+          "difference": 6.247250447379474,
+          "outcome": "memory",
+          "p": 6.463053170281985e-09,
+          "p_holm": 5.170442536225588e-08,
+          "se": 1.0129453085265803
+        },
+        {
+          "_row": "memory.3",
+          "baseline": 0.014122966549180754,
+          "ci_lower": 1.6632593734647605,
+          "ci_upper": 5.642584693118699,
+          "comparison": "practice minus control",
+          "df": 146,
+          "difference": 3.6529220332917296,
+          "outcome": "memory",
+          "p": 0.00039349349743825657,
+          "p_holm": 0.0015739739897530263,
+          "se": 1.00673819642946
+        },
+        {
+          "_row": "attention.1",
+          "baseline": 0.014122966549180754,
+          "ci_lower": -1.1271754000628185,
+          "ci_upper": 3.0320496682623927,
+          "comparison": "control minus combined",
+          "df": 146,
+          "difference": 0.9524371340997873,
+          "outcome": "attention",
+          "p": 0.3668813124356889,
+          "p_holm": 0.3668813124356889,
+          "se": 1.0522514264287557
+        },
+        {
+          "_row": "attention.2",
+          "baseline": 0.014122966549180754,
+          "ci_lower": 2.0996466844004913,
+          "ci_upper": 6.286479064674051,
+          "comparison": "practice minus combined",
+          "df": 146,
+          "difference": 4.193062874537271,
+          "outcome": "attention",
+          "p": 0.00011736209200242782,
+          "p_holm": 0.000704172552014567,
+          "se": 1.059235860524122
+        },
+        {
+          "_row": "attention.3",
+          "baseline": 0.014122966549180754,
+          "ci_lower": 1.1600375567574464,
+          "ci_upper": 5.321213924117522,
+          "comparison": "practice minus control",
+          "df": 146,
+          "difference": 3.2406257404374843,
+          "outcome": "attention",
+          "p": 0.0024876289214705036,
+          "p_holm": 0.007462886764411511,
+          "se": 1.0527450898297728
+        }
+      ],
+      "title": "adjusted_pairwise_comparisons"
+    },
+    {
+      "columns": [
+        "outcome",
+        "term",
+        "Estimate",
+        "Std. Error",
+        "t value",
+        "Pr(>|t|)"
+      ],
+      "name": "coefficients",
+      "rows": [
+        {
+          "Estimate": 63.12541166920882,
+          "Pr(>|t|)": 1.0425751142595712e-128,
+          "Std. Error": 0.7137013136787482,
+          "_row": "memory.(Intercept)",
+          "outcome": "memory",
+          "t value": 88.44794097944295,
+          "term": "(Intercept)"
+        },
+        {
+          "Estimate": 1.4104593412068331,
+          "Pr(>|t|)": 0.0015857448265481566,
+          "Std. Error": 0.43817880728672515,
+          "_row": "memory.baseline",
+          "outcome": "memory",
+          "t value": 3.2189127309479617,
+          "term": "baseline"
+        },
+        {
+          "Estimate": 2.5943284140877445,
+          "Pr(>|t|)": 0.010921967488525846,
+          "Std. Error": 1.0062661070254968,
+          "_row": "memory.groupcontrol",
+          "outcome": "memory",
+          "t value": 2.578173304233141,
+          "term": "groupcontrol"
+        },
+        {
+          "Estimate": 6.247250447379474,
+          "Pr(>|t|)": 6.463053170281985e-09,
+          "Std. Error": 1.0129453085265803,
+          "_row": "memory.grouppractice",
+          "outcome": "memory",
+          "t value": 6.167411403945056,
+          "term": "grouppractice"
+        },
+        {
+          "Estimate": 42.117238999235724,
+          "Pr(>|t|)": 4.79669331556648e-101,
+          "Std. Error": 0.7463167248894642,
+          "_row": "attention.(Intercept)",
+          "outcome": "attention",
+          "t value": 56.433465303184306,
+          "term": "(Intercept)"
+        },
+        {
+          "Estimate": 0.4708034855661477,
+          "Pr(>|t|)": 0.3058846082424558,
+          "Std. Error": 0.4582031251765342,
+          "_row": "attention.baseline",
+          "outcome": "attention",
+          "t value": 1.0274995077450833,
+          "term": "baseline"
+        },
+        {
+          "Estimate": 0.9524371340997873,
+          "Pr(>|t|)": 0.3668813124356889,
+          "Std. Error": 1.0522514264287557,
+          "_row": "attention.groupcontrol",
+          "outcome": "attention",
+          "t value": 0.90514216486479,
+          "term": "groupcontrol"
+        },
+        {
+          "Estimate": 4.193062874537271,
+          "Pr(>|t|)": 0.00011736209200242782,
+          "Std. Error": 1.059235860524122,
+          "_row": "attention.grouppractice",
+          "outcome": "attention",
+          "t value": 3.9585733742648173,
+          "term": "grouppractice"
+        }
+      ],
+      "title": "回归系数"
+    },
+    {
+      "column_labels": {
+        "F": "F",
+        "adjusted_F": "MANCOVA 的近似 F",
+        "adjusted_df1": "adjusted_df1",
+        "adjusted_df2": "adjusted_df2",
+        "adjusted_p": "MANCOVA 组别 p",
+        "adjusted_pillai": "MANCOVA 的 Pillai 迹",
+        "df1": "df1",
+        "df2": "df2",
+        "p": "MANOVA 组别 p",
+        "pillai": "Pillai 迹"
+      },
+      "columns": [
+        "analysis",
+        "adjusted_pillai",
+        "adjusted_F",
+        "pillai",
+        "p",
+        "adjusted_p",
+        "F",
+        "df1",
+        "df2",
+        "adjusted_df1",
+        "adjusted_df2"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "F": 7.617599747643294,
+          "adjusted_F": 8.877063123108023,
+          "adjusted_df1": 4,
+          "adjusted_df2": 292,
+          "adjusted_p": 8.902510581699133e-07,
+          "adjusted_pillai": 0.21683882602776614,
+          "analysis": "多个结果怎样一起比较",
+          "df1": 4,
+          "df2": 294,
+          "p": 7.494003139969439e-06,
+          "pillai": 0.18781620194240542
+        }
+      ],
+      "source_fields": [
+        {
+          "F": "F",
+          "adjusted_F": "adjusted_F",
+          "adjusted_df1": "adjusted_df1",
+          "adjusted_df2": "adjusted_df2",
+          "adjusted_p": "adjusted_p",
+          "adjusted_pillai": "adjusted_pillai",
+          "df1": "df1",
+          "df2": "df2",
+          "p": "p",
+          "pillai": "pillai"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "多个结果怎样一起比较",
+  "valid": true,
+  "variances": []
+}

@@ -1,0 +1,67 @@
+{
+  "case_id": "categorical",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n     \n       0  1\n  no  63 27\n  yes 44 46\n\n\tPearson's Chi-squared test\n\ndata:  tab\nX-squared = 8.319, df = 1, p-value = 0.003923\n\n     \n         0    1\n  no  53.5 36.5\n  yes 53.5 36.5\n\n\tFisher's Exact Test for Count Data\n\ndata:  tab\np-value = 0.006107\nalternative hypothesis: true odds ratio is not equal to 1\n95 percent confidence interval:\n 1.267478 4.717370\nsample estimates:\nodds ratio \n  2.426985 \n\n",
+  "stderr": "",
+  "metrics": {
+    "chi_squared": 8.319037255152988,
+    "df": 1,
+    "p": 0.003923170793984089,
+    "min_expected": 36.5,
+    "odds_ratio": 2.426985320141477,
+    "fisher_p": 0.0061067736158379755
+  },
+  "warnings": [],
+  "tables": {
+    "counts": [
+      {
+        "Var1": "no",
+        "Var2": "0",
+        "Freq": 63
+      },
+      {
+        "Var1": "yes",
+        "Var2": "0",
+        "Freq": 44
+      },
+      {
+        "Var1": "no",
+        "Var2": "1",
+        "Freq": 27
+      },
+      {
+        "Var1": "yes",
+        "Var2": "1",
+        "Freq": 46
+      }
+    ],
+    "expected": [
+      {
+        "Var1": "no",
+        "Var2": "0",
+        "Freq": 53.5
+      },
+      {
+        "Var1": "yes",
+        "Var2": "0",
+        "Freq": 53.5
+      },
+      {
+        "Var1": "no",
+        "Var2": "1",
+        "Freq": 36.5
+      },
+      {
+        "Var1": "yes",
+        "Var2": "1",
+        "Freq": 36.5
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "a5cac2861b1c85ac3a0d01459a8ddf7fabcc82316614748113b8dcf3bca0833e",
+  "config_sha256": "217a2f044d8a40e58e96c72e5543b7ef7d9e0201d2a1f1e7edca493a11865b75",
+  "data_sha256": {}
+}

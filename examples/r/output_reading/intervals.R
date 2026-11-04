@@ -1,0 +1,5 @@
+source("_common.R")
+d <- read.csv("cross_sectional_survey.csv")
+fit <- t.test(d$stress)
+print(fit)
+finish(c(estimate=mean(d$stress),ci_lower=fit$conf.int[1],ci_upper=fit$conf.int[2],n=sum(!is.na(d$stress))))

@@ -1,0 +1,35 @@
+{
+  "tables": {
+    "standardized_profiles": [
+      {
+        "cluster": 1,
+        "stress": -1.165628183732223,
+        "sleep": 0.9839161495885504,
+        "wellbeing": 0.958508210649556
+      },
+      {
+        "cluster": 2,
+        "stress": 0.020940619503668673,
+        "sleep": 0.09895052248893076,
+        "wellbeing": 0.25703712816400437
+      },
+      {
+        "cluster": 3,
+        "stress": 1.1226533104104193,
+        "sleep": -1.0596937859095115,
+        "wellbeing": -1.1866711727943924
+      }
+    ],
+    "model_summary": [
+      {
+        "n": 150
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "画像：全体样本均值及 SD 标准化，未计算置信区间",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1  jsonlite_2.0.0  cluster_2.1.8.1",
+  "case_id": "hierarchical",
+  "original_sha256": "f3d3783790f896ea852507b08c7104ab034cd8ea6d33e3e2a86b874993eea7f1",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

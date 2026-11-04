@@ -1,0 +1,62 @@
+{
+  "id": "selection",
+  "unit_id": "selection",
+  "title": "探索变量选择而不误认确定答案",
+  "question": "收集了不少指标，哪些值得进入预测模型？",
+  "design": "复用横断数据。用 AIC 逐步选择作探索示范，同时保留完整模型；选后 p 值不是预设单次检验的可靠证据。",
+  "variables": "采用已有教学 CSV，列名及量纲见代码；不是真实研究样本。",
+  "script": "examples/r/output_reading/selection.R",
+  "data_files": [
+    "examples/data/cross_sectional_survey.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "full_aic",
+      "label": "完整模型 AIC",
+      "meaning": "仅在同一响应、同一数据与同一似然定义下比较，较低相对更优。",
+      "term": "fit-indices",
+      "format": ".3f"
+    },
+    {
+      "field_id": "selected_aic",
+      "label": "选择模型 AIC",
+      "meaning": "探索选择的相对指标，不意味着找到唯一正确或因果模型。",
+      "term": "stepwise-regression",
+      "format": ".3f"
+    },
+    {
+      "field_id": "selected_r_squared",
+      "label": "选择后样本 R²",
+      "meaning": "训练数据内表现，需要独立验证；不是泛化能力的证明。",
+      "term": "r-squared",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "如何识别过度解读",
+      "body": "不要逐步删变量寻找显著；小样本多候选变量会不稳定，需留出验证或重抽样评价完整选择流程。"
+    },
+    {
+      "title": "输出不符合预期时",
+      "body": "先检查数据类型、有效样本、量纲和拟合条件；对探索选择保留过程记录。新分析应有研究依据，不通过反复换方法制造满意结果。"
+    }
+  ],
+  "report_template": "探索性 AIC 选择得到 AIC = {selected_aic:.3f}，完整候选模型 AIC = {full_aic:.3f}；所选模型样本 R² = {selected_r_squared:.3f}。该分析用于探索变量组合，选后系数显著性不按预设验证性检验解释。",
+  "sources": [
+    {
+      "title": "模型实现的官方文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/step.html"
+    }
+  ],
+  "related_terms": [
+    "fit-indices",
+    "stepwise-regression",
+    "r-squared"
+  ]
+}

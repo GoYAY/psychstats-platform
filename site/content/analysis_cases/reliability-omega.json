@@ -1,0 +1,52 @@
+{
+  "id": "reliability-omega",
+  "unit_id": "reliability",
+  "title": "ω 对应哪种总分",
+  "question": "题目都测同一个方面但强弱不同，总分可靠性怎么估计？",
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。只有三题的单因子 CFA 是饱和模型，不能用完美拟合确认单维；本例未计算区间，正式报告应另估不确定性。",
+  "variables": "固定种子生成小型教学数据，非真实参与者；不上传数据。",
+  "script": "examples/r/output_reading/reliability-omega.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "omega",
+      "label": "单因子原始总分 ω",
+      "meaning": "对应未标准化题目简单求和，在单因子、误差不相关等假设下分解可靠变异。",
+      "term": "mcdonald-omega",
+      "format": ".3f"
+    },
+    {
+      "field_id": "alpha",
+      "label": "同数据原始 α",
+      "meaning": "与 ω 不同估计假设，差异不授权择大者报告。",
+      "term": "cronbach-alpha",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这个变体最重要的边界",
+      "body": "只有三题的单因子 CFA 是饱和模型，不能用完美拟合确认单维；本例未计算区间，正式报告应另估不确定性。"
+    },
+    {
+      "title": "如何继续检查",
+      "body": "先明确独立单位、估计目标及比较方向，结合完整参数与区间判断。方法改变需有研究依据并记录，不以显著性作为选择标准。"
+    }
+  ],
+  "report_template": "三项连续教学指标的单因子、误差不相关模型给出原始加总分 ω = {omega:.3f}，同数据原始 α = {alpha:.3f}（n = {n:.0f}）。该估计针对特定计分与测量模型，不等于效度或重测稳定性。",
+  "sources": [
+    {
+      "title": "R 官方统计函数索引",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "mcdonald-omega",
+    "cronbach-alpha"
+  ]
+}

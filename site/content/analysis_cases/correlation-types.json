@@ -1,0 +1,62 @@
+{
+  "id": "correlation-types",
+  "unit_id": "correlation",
+  "title": "偏相关、Kendall 与二元相关",
+  "question": "年龄可能同时影响压力和幸福感，怎样看扣除年龄后的关联？",
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。偏相关检验要扣除控制变量的自由度，不能直接将残差 cor.test 默认 df 当正确结果。",
+  "variables": "复用已有规范教学 CSV，未改变原始文件。",
+  "script": "examples/r/output_reading/correlation-types.R",
+  "data_files": [
+    "examples/data/cross_sectional_survey.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "partial_r",
+      "label": "控制年龄的偏 r",
+      "meaning": "线性剔除年龄后的残差相关，不等于消除所有混杂。",
+      "term": "partial-correlation",
+      "format": ".3f"
+    },
+    {
+      "field_id": "kendall_tau",
+      "label": "Kendall τ",
+      "meaning": "基于成对排序一致性，与 Pearson r 的数值含义不同。",
+      "term": "data-rank",
+      "format": ".3f"
+    },
+    {
+      "field_id": "phi",
+      "label": "φ 系数",
+      "meaning": "另示两个观测 0/1 回答的 Pearson 相关，与理论二分潜变量相关不同。",
+      "term": "correlation-coefficient",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这个变体最重要的边界",
+      "body": "偏相关检验要扣除控制变量的自由度，不能直接将残差 cor.test 默认 df 当正确结果。"
+    },
+    {
+      "title": "如何继续检查",
+      "body": "先明确独立单位、估计目标及比较方向，结合完整参数与区间判断。方法改变需有研究依据并记录，不以显著性作为选择标准。"
+    }
+  ],
+  "report_template": "控制年龄的线性偏相关为 {partial_r:.3f}，t 检验 df = {df:.0f}，p = {partial_p:.4g}。同数据未控制的 Kendall τ = {kendall_tau:.3f}。独立教学生成二元回答的点二列 r = {point_biserial:.3f}、φ = {phi:.3f}，三类目标不能互换。",
+  "sources": [
+    {
+      "title": "R 官方统计函数索引",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "partial-correlation",
+    "data-rank",
+    "correlation-coefficient"
+  ]
+}

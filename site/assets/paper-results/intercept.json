@@ -1,0 +1,105 @@
+{
+  "case_id": "intercept",
+  "covariances": [],
+  "design": "复用班级教学数据。先空模型计算 ICC，再加入班级均值中心化动机与班级平均动机，区分班内和班间关联。REML 估计。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/nested_classrooms.csv": "fbfb8a3313de70cf112b6337df89b342abc4f5cdf36e1c7b1fd73aeb1205ec87"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/intercept.R",
+    "script_sha256": "6b263c78557a66d7c65d0267e3ba0a9b8814500be837e676ce00e2f636865b61",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "term",
+        "Value",
+        "Std.Error",
+        "DF",
+        "t.value",
+        "p.value"
+      ],
+      "name": "fixed",
+      "rows": [
+        {
+          "DF": 689,
+          "Std.Error": 20.69769631029425,
+          "Value": 58.26672132841733,
+          "_row": "(Intercept)",
+          "p.value": 0.005015004196179488,
+          "t.value": 2.815130749572244,
+          "term": "(Intercept)"
+        },
+        {
+          "DF": 689,
+          "Std.Error": 0.027065273751393316,
+          "Value": 0.36181565649106134,
+          "_row": "motivation_within",
+          "p.value": 2.0883093676484785e-36,
+          "t.value": 13.368261478324605,
+          "term": "motivation_within"
+        },
+        {
+          "DF": 28,
+          "Std.Error": 0.3767634797251249,
+          "Value": 0.17199602800751917,
+          "_row": "motivation_mean",
+          "p.value": 0.6515453985507813,
+          "t.value": 0.4565092883551299,
+          "term": "motivation_mean"
+        }
+      ],
+      "title": "固定效应完整表"
+    },
+    {
+      "column_labels": {
+        "groups": "班级数",
+        "icc": "空模型 ICC",
+        "people": "people",
+        "within_beta": "班内动机关联",
+        "within_p": "within_p"
+      },
+      "columns": [
+        "analysis",
+        "icc",
+        "within_beta",
+        "groups",
+        "within_p",
+        "people"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "班级聚类对结果有什么影响",
+          "groups": 30,
+          "icc": 0.25959171294306194,
+          "people": 720,
+          "within_beta": 0.36181565649106134,
+          "within_p": 2.0883093676484785e-36
+        }
+      ],
+      "source_fields": [
+        {
+          "groups": "groups",
+          "icc": "icc",
+          "people": "people",
+          "within_beta": "within_beta",
+          "within_p": "within_p"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "班级聚类对结果有什么影响",
+  "valid": true,
+  "variances": []
+}

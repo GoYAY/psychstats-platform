@@ -1,0 +1,10 @@
+source("_common.R")
+set.seed(4110)
+d <- data.frame(id=seq_len(180),condition=rep(c("control","practice","combined"),each=60),pre_score=rnorm(180,65,8))
+d$post_score <- 20+0.75*d$pre_score+rep(c(0,4,7),each=60)+rnorm(180,0,7)
+d$gain <- d$post_score-d$pre_score
+d$condition <- factor(d$condition)
+fit <- aov(gain~condition,d); tab <- summary(fit)[[1]]; print(summary(fit))
+post <- TukeyHSD(fit)$condition; print(post)
+out <- data.frame(comparison=rownames(post),post,check.names=FALSE)
+finish(c(F=tab[1,"F value"],df1=tab[1,"Df"],df2=tab[2,"Df"],p=tab[1,"Pr(>F)"],eta_squared=tab[1,"Sum Sq"]/sum(tab[,"Sum Sq"])),list(pairwise=out))

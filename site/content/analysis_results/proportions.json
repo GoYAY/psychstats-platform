@@ -1,0 +1,46 @@
+{
+  "case_id": "proportions",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\n\t2-sample test for equality of proportions with continuity correction\n\ndata:  c(sum(a), sum(b)) out of c(length(a), length(b))\nX-squared = 0.55945, df = 1, p-value = 0.4545\nalternative hypothesis: two.sided\n95 percent confidence interval:\n -0.19130353  0.07574797\nsample estimates:\n   prop 1    prop 2 \n0.2222222 0.2800000 \n\n\n\tExact binomial test\n\ndata:  sum(a) and length(a)\nnumber of successes = 20, number of trials = 90, p-value = 0.5983\nalternative hypothesis: true probability of success is not equal to 0.2\n95 percent confidence interval:\n 0.1413369 0.3221268\nsample estimates:\nprobability of success \n             0.2222222 \n\n\n\tF test to compare two variances\n\ndata:  x and y\nF = 1.209, num df = 59, denom df = 64, p-value = 0.4565\nalternative hypothesis: true ratio of variances is not equal to 1\n95 percent confidence interval:\n 0.7316195 2.0085127\nsample estimates:\nratio of variances \n          1.209044 \n\n",
+  "stderr": "",
+  "metrics": {
+    "difference": -0.05777777777777782,
+    "ci_lower": -0.19130352547484442,
+    "ci_upper": 0.07574796991928878,
+    "p": 0.4544829220551896,
+    "variance_ratio": 1.2090443432552538,
+    "variance_p": 0.456529928251423,
+    "single_rate": 0.2222222222222222,
+    "single_ci_lower": 0.14133689846537043,
+    "single_ci_upper": 0.3221268123270985
+  },
+  "warnings": [],
+  "tables": {
+    "single_proportion": [
+      {
+        "group": "A",
+        "positive": 20,
+        "N": 90,
+        "estimate": 0.2222222222222222,
+        "ci_lower": 0.14133689846537043,
+        "ci_upper": 0.3221268123270985
+      }
+    ],
+    "variance_comparison": [
+      {
+        "ratio": 1.2090443432552538,
+        "df1": 59,
+        "df2": 64,
+        "ci_lower": 0.7316194733767459,
+        "ci_upper": 2.0085126567636435,
+        "p": 0.456529928251423
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "9834d8bddbf7c52f23c2a2f821af1aedb645907c616da27f5fd79515aeab74a6",
+  "config_sha256": "61ee59847bf7e88514d30a578138e8f78c14c2bf6148b608a5ac0c8d133af2f2",
+  "data_sha256": {}
+}

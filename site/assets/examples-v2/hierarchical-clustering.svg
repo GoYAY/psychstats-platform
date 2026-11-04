@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="567pt" viewBox="0 0 760 567" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">层次聚类保留逐步合并的关系。。概念合并图不表示真实合并距离；分支不是永远不变的人群类别。</desc><title id="title">作息相近的人逐步合并</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-05T22:35:38.834446</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 567  L 760 567  L 760 0  L 0 0  L 0 567  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 205.091716 284.216293  Q 221.87432 264.125814 237.868478 244.979185  " clip-path="url(#p3681d19089)" style="fill: none; opacity: 0.65; stroke: #006d70; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 232.949306 247.124354  L 237.868478 244.979185  L 236.63311 250.201624  z " clip-path="url(#p3681d19089)" style="fill: #006d70; opacity: 0.65; stroke: #006d70; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_3">
+    <path d="M 324.908284 284.216293  Q 308.12568 264.125814 292.131522 244.979185  " clip-path="url(#p3681d19089)" style="fill: none; opacity: 0.65; stroke: #006d70; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 293.36689 250.201624  L 292.131522 244.979185  L 297.050694 247.124354  z " clip-path="url(#p3681d19089)" style="fill: #006d70; opacity: 0.65; stroke: #006d70; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 343.796585 210.524361  Q 351.250054 160.874642 358.520944 112.441134  " clip-path="url(#p3681d19089)" style="fill: none; opacity: 0.65; stroke: #006d70; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 355.434942 116.831646  L 358.520944 112.441134  L 360.181753 117.544242  z " clip-path="url(#p3681d19089)" style="fill: #006d70; opacity: 0.65; stroke: #006d70; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="patch_5">
+    <path d="M 559.222468 284.106972  Q 509.374741 212.499628 460.229652 141.90164  " clip-path="url(#p3681d19089)" style="fill: none; opacity: 0.65; stroke: #006d70; stroke-width: 1.1; stroke-linecap: round" />
+    <path d="M 461.002285 147.212293  L 460.229652 141.90164  L 464.941754 144.469926  z " clip-path="url(#p3681d19089)" style="fill: #006d70; opacity: 0.65; stroke: #006d70; stroke-width: 1.1; stroke-linecap: round" />
+   </g>
+   <g id="node-0">
+    <path d="M 115.25 291.75  L 242.25 291.75  Q 251.25 291.75 251.25 300.75  L 251.25 330.75  Q 251.25 339.75 242.25 339.75  L 115.25 339.75  Q 106.25 339.75 106.25 330.75  L 106.25 300.75  Q 106.25 291.75 115.25 291.75  z " clip-path="url(#p3681d19089)" style="fill: #006d70; fill-opacity: 0.09; stroke: #006d70; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-1">
+    <path d="M 287.75 291.75  L 414.75 291.75  Q 423.75 291.75 423.75 300.75  L 423.75 330.75  Q 423.75 339.75 414.75 339.75  L 287.75 339.75  Q 278.75 339.75 278.75 330.75  L 278.75 300.75  Q 278.75 291.75 287.75 291.75  z " clip-path="url(#p3681d19089)" style="fill: #006d70; fill-opacity: 0.09; stroke: #006d70; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-2">
+    <path d="M 517.75 291.75  L 644.75 291.75  Q 653.75 291.75 653.75 300.75  L 653.75 330.75  Q 653.75 339.75 644.75 339.75  L 517.75 339.75  Q 508.75 339.75 508.75 330.75  L 508.75 300.75  Q 508.75 291.75 517.75 291.75  z " clip-path="url(#p3681d19089)" style="fill: #006d70; fill-opacity: 0.09; stroke: #006d70; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-3">
+    <path d="M 201.5 188.5  L 328.5 188.5  Q 337.5 188.5 337.5 197.5  L 337.5 227.5  Q 337.5 236.5 328.5 236.5  L 201.5 236.5  Q 192.5 236.5 192.5 227.5  L 192.5 197.5  Q 192.5 188.5 201.5 188.5  z " clip-path="url(#p3681d19089)" style="fill: #006d70; fill-opacity: 0.09; stroke: #006d70; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="node-4">
+    <path d="M 374 85.25  L 501 85.25  Q 510 85.25 510 94.25  L 510 124.25  Q 510 133.25 501 133.25  L 374 133.25  Q 365 133.25 365 124.25  L 365 94.25  Q 365 85.25 374 85.25  z " clip-path="url(#p3681d19089)" style="fill: #006d70; fill-opacity: 0.09; stroke: #006d70; stroke-opacity: 0.45; stroke-width: 0.9; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="178.75" y="319.24793" transform="rotate(-0 178.75 319.24793)">学生甲</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="351.25" y="319.24793" transform="rotate(-0 351.25 319.24793)">学生乙</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="581.25" y="319.24793" transform="rotate(-0 581.25 319.24793)">学生丙</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="265" y="215.992305" transform="rotate(-0 265 215.992305)">甲乙先合并</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="437.5" y="112.742305" transform="rotate(-0 437.5 112.742305)">再合并丙</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="453.78418" transform="rotate(-0 20 453.78418)">1. 学生甲 → 甲乙先合并：作息最近</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="481.78418" transform="rotate(-0 20 481.78418)">2. 学生乙 → 甲乙先合并：作息最近</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="509.755117" transform="rotate(-0 20 509.755117)">3. 甲乙先合并 → 再合并丙：继续合并</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="537.760742" transform="rotate(-0 20 537.760742)">4. 学生丙 → 再合并丙：继续合并</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3681d19089">
+   <rect x="0" y="0" width="760" height="567" />
+  </clipPath>
+ </defs>
+</svg>

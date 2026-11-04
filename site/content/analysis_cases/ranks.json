@@ -1,0 +1,60 @@
+{
+  "id": "ranks",
+  "unit_id": "ranks",
+  "title": "分布偏斜时怎样比较",
+  "question": "等待求助的时间有少数特别长，怎么比较两组？",
+  "design": "固定种子生成独立组偏斜等待时间。Wilcoxon 秩和检验与 Kruskal–Wallis 三组变体；另示有 ID 配对的符号秩检验。",
+  "variables": "教学数据由下方代码固定种子生成，非真实参与者资料；参数设定可在代码中查看。",
+  "script": "examples/r/output_reading/ranks.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "W",
+      "label": "秩和 W",
+      "meaning": "依据合并后秩的位置比较独立组，不是原始时间差。",
+      "term": "wilcoxon-rank-sum",
+      "format": ".3f"
+    },
+    {
+      "field_id": "shift",
+      "label": "位置位移估计",
+      "meaning": "伪中位数/位置位移估计；不一般等于两组中位数之差。",
+      "term": "data-rank",
+      "format": ".3f"
+    },
+    {
+      "field_id": "paired_p",
+      "label": "配对符号秩 p",
+      "meaning": "另一个配对教学数据，目标是配对差值；不能套在本独立组上。",
+      "term": "wilcoxon-signed-rank",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这些结果最容易误读的地方",
+      "body": "非参数不等于没有假设；分布形状不同不能把秩和显著直接写成中位数差异。"
+    },
+    {
+      "title": "如果没有发现明确证据",
+      "body": "先回到研究问题和估计精度，结合区间、有效样本、数据质量及模型条件判断。证据不足不等于没有作用；不反复更换方法、删样本或放宽阈值来追求显著。"
+    }
+  ],
+  "report_template": "独立组等待时间的 Wilcoxon 检验 W = {W:.0f}，p = {p:.4g}，位置位移估计为 {shift:.3f}。另示三组 Kruskal–Wallis p = {kw_p:.4g}，以及不同配对数据的符号秩 p = {paired_p:.4g}；三者数据结构与目标不可混用。",
+  "sources": [
+    {
+      "title": "R 官方 wilcox.test 文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/wilcox.test.html"
+    }
+  ],
+  "related_terms": [
+    "wilcoxon-rank-sum",
+    "data-rank",
+    "wilcoxon-signed-rank"
+  ]
+}

@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="1278pt" viewBox="0 0 360 1278" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">乘积指标是交互模型的输入，需要与其他题对共同建模。。概念流程；乘积不等于两种心理状态的完整测量，处理方法依模型而定。</desc><title id="title">两道题组成乘积输入</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:03:30.361093</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1278  L 360 1278  L 360 0  L 0 0  L 0 1278  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 88  L 330 88  Q 344 88 344 102  L 344 424  Q 344 438 330 438  L 30 438  Q 16 438 16 424  L 16 102  Q 16 88 30 88  z " clip-path="url(#p85ececa84c)" style="fill: #8a5200; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 30 476  L 330 476  Q 344 476 344 490  L 344 812  Q 344 826 330 826  L 30 826  Q 16 826 16 812  L 16 490  Q 16 476 30 476  z " clip-path="url(#p85ececa84c)" style="fill: #8a5200; opacity: 0.055" />
+   </g>
+   <g id="patch_4">
+    <path d="M 180 445.998901  Q 180 456.498487 180 465.544629  " clip-path="url(#p85ececa84c)" style="fill: none; opacity: 0.75; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 182.8 459.944629  L 180 465.544629  L 177.2 459.944629  z " clip-path="url(#p85ececa84c)" style="fill: #8a5200; opacity: 0.75; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_5">
+    <path d="M 30 864  L 330 864  Q 344 864 344 878  L 344 1200  Q 344 1214 330 1214  L 30 1214  Q 16 1214 16 1200  L 16 878  Q 16 864 30 864  z " clip-path="url(#p85ececa84c)" style="fill: #8a5200; opacity: 0.055" />
+   </g>
+   <g id="patch_6">
+    <path d="M 180 833.998901  Q 180 844.498487 180 853.544629  " clip-path="url(#p85ececa84c)" style="fill: none; opacity: 0.75; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 182.8 847.944629  L 180 853.544629  L 177.2 847.944629  z " clip-path="url(#p85ececa84c)" style="fill: #8a5200; opacity: 0.75; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_7">
+    <path d="M 42 151  L 318 151  Q 326 151 326 159  L 326 215  Q 326 223 318 223  L 42 223  Q 34 223 34 215  L 34 159  Q 34 151 42 151  z " clip-path="url(#p85ececa84c)" style="fill: #8a5200; opacity: 0.11; stroke: #8a5200; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 42 250  L 318 250  Q 326 250 326 258  L 326 314  Q 326 322 318 322  L 42 322  Q 34 322 34 314  L 34 258  Q 34 250 42 250  z " clip-path="url(#p85ececa84c)" style="fill: #6657bd; opacity: 0.11; stroke: #6657bd; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_9">
+    <path d="M 42 539  L 318 539  Q 326 539 326 547  L 326 571  Q 326 579 318 579  L 42 579  Q 34 579 34 571  L 34 547  Q 34 539 42 539  z " clip-path="url(#p85ececa84c)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_10">
+    <path d="M 180 588.996094  Q 180 602.99633 180 615.543121  " clip-path="url(#p85ececa84c)" style="fill: none; opacity: 0.75; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 182.8 609.943121  L 180 615.543121  L 177.2 609.943121  z " clip-path="url(#p85ececa84c)" style="fill: #006d70; opacity: 0.75; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="question-pair-product">
+    <path d="M 42 627  L 318 627  Q 326 627 326 635  L 326 671  Q 326 679 318 679  L 42 679  Q 34 679 34 671  L 34 635  Q 34 627 42 627  z " clip-path="url(#p85ececa84c)" style="fill: #8a5200; opacity: 0.11; stroke: #8a5200; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_11">
+    <path d="M 180 689.000977  Q 180 699.000166 180 707.545912  " clip-path="url(#p85ececa84c)" style="fill: none; opacity: 0.75; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 182.8 701.945912  L 180 707.545912  L 177.2 701.945912  z " clip-path="url(#p85ececa84c)" style="fill: #8a5200; opacity: 0.75; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_12">
+    <path d="M 42 960  L 164 960  Q 172 960 172 968  L 172 998  Q 172 1006 164 1006  L 42 1006  Q 34 1006 34 998  L 34 968  Q 34 960 42 960  z " clip-path="url(#p85ececa84c)" style="fill: #8a5200; opacity: 0.11; stroke: #8a5200; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_13">
+    <path d="M 196 960  L 318 960  Q 326 960 326 968  L 326 998  Q 326 1006 318 1006  L 196 1006  Q 188 1006 188 998  L 188 968  Q 188 960 196 960  z " clip-path="url(#p85ececa84c)" style="fill: #6657bd; opacity: 0.11; stroke: #6657bd; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_14">
+    <path d="M 103.914563 1015.776489  Q 116.900275 1041.000534 129.220717 1064.932327  " clip-path="url(#p85ececa84c)" style="fill: none; opacity: 0.75; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 129.146954 1058.671771  L 129.220717 1064.932327  L 124.168015 1061.235003  z " clip-path="url(#p85ececa84c)" style="fill: #8a5200; opacity: 0.75; stroke: #8a5200; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_15">
+    <path d="M 256.267542 1015.862183  Q 246.379887 1041.000286 237.024247 1064.785814  " clip-path="url(#p85ececa84c)" style="fill: none; opacity: 0.75; stroke: #6657bd; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 241.679731 1060.599352  L 237.024247 1064.785814  L 236.468368 1058.549549  z " clip-path="url(#p85ececa84c)" style="fill: #6657bd; opacity: 0.75; stroke: #6657bd; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_16">
+    <path d="M 42 1076  L 318 1076  Q 326 1076 326 1084  L 326 1117  Q 326 1125 318 1125  L 42 1125  Q 34 1125 34 1117  L 34 1084  Q 34 1076 42 1076  z " clip-path="url(#p85ececa84c)" style="fill: #006d70; opacity: 0.11; stroke: #006d70; stroke-width: 0.8; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 89  L 328 89  " clip-path="url(#p85ececa84c)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 477  L 328 477  " clip-path="url(#p85ececa84c)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 32 865  L 328 865  " clip-path="url(#p85ececa84c)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="20" y="39.695156" transform="rotate(-0 20 39.695156)">两道题组成乘积输入</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="73.53918" transform="rotate(-0 20 73.53918)">概念故事 · 操作与关系示意</text>
+   </g>
+   <g id="stage-0">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="32" y="120.080918" transform="rotate(-0 32 120.080918)">选定压力与支持题</text>
+   </g>
+   <g id="stage-1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="32" y="508.08748" transform="rotate(-0 32 508.08748)">按方法处理后相乘</text>
+   </g>
+   <g id="stage-2">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a5200" x="32" y="896.067793" transform="rotate(-0 32 896.067793)">与其他题对共同建模</text>
+   </g>
+   <g id="conceptual-only">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="1251.53918" transform="rotate(-0 20 1251.53918)">位置与连线为概念示意，不代表实际测量或分析结果。</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #8a5200" transform="translate(148.352344 183.38748)">压力题 p1</text>
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #8a5200" transform="translate(152 198.693418)">经常担忧</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #6657bd" transform="translate(149.582812 282.386387)">支持题 s1</text>
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #6657bd" transform="translate(131 297.733887)">困难时有人帮助</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="379.510117" transform="rotate(-0 32 379.510117)">每一道题提供一个指标</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="409.49793" transform="rotate(-0 32 409.49793)">同一学生保留题目配对</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="180" y="562.492305" transform="rotate(-0 180 562.492305)">选定方法处理两题</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 18px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8a5200" x="180" y="658.027344" transform="rotate(-0 180 658.027344)">p1 × s1</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8a5200" x="180" y="737.047012" transform="rotate(-0 180 737.047012)">一个乘积指标</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="767.510117" transform="rotate(-0 32 767.510117)">符号代表处理后的指标</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="797.515742" transform="rotate(-0 32 797.515742)">处理方式依具体模型决定</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8a5200" x="103" y="986.351562" transform="rotate(-0 103 986.351562)">p1 × s1</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6657bd" x="257" y="986.468867" transform="rotate(-0 257 986.468867)">其他题对</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="180" y="1104.580918" transform="rotate(-0 180 1104.580918)">交互模型</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="1155.510117" transform="rotate(-0 32 1155.510117)">结合测量部分一起建模</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="32" y="1185.53918" transform="rotate(-0 32 1185.53918)">一个乘积不能替代完整测量</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p85ececa84c">
+   <rect x="0" y="0" width="360" height="1278" />
+  </clipPath>
+ </defs>
+</svg>

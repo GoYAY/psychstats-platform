@@ -1,0 +1,6 @@
+import {writeFile} from 'node:fs/promises';import {isolatedPage,wait} from './native-cdp.mjs';
+const ctx=await isolatedPage('9291'),{page,run,until}=ctx,events=[];
+try{await page.send('Page.navigate',{url:'http://127.0.0.1:8766/psy-stats/'});await until('document.readyState==="complete"&&!!document.querySelector(".topic-nav")');await wait(350);await run(`document.querySelector('[data-topic-link="structural-equation-modeling"]').click()`);await wait(400);
+ page.events.set('Tracing.dataCollected',e=>events.push(...e.value));await page.send('Tracing.start',{categories:'devtools.timeline,disabled-by-default-devtools.timeline',transferMode:'ReportEvents'});await run(`document.querySelector('.term-card[data-id="sem"] a[data-expand-card]').click()`);await until('(window.PsychNativeMetrics||[]).some(x=>x.kind==="expand")');await wait(100);
+ const ended=new Promise(r=>page.events.set('Tracing.tracingComplete',r));await page.send('Tracing.end');await ended;const stamp=new Date().toISOString().replace(/[:.]/g,'-'),file=`logs/native-cold-trace-${stamp}.json`;await writeFile(file,JSON.stringify(events));console.log(file);console.log(JSON.stringify(events.filter(e=>e.ph==='X'&&e.dur>15000).map(e=>({name:e.name,duration:e.dur/1000,args:e.args})),null,2));
+}finally{await ctx.close();}

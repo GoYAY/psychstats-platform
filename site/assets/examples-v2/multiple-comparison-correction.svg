@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="239pt" viewBox="0 0 760 239" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">三种训练有三对比较，十项结果会带来更多检验，需定义检验家族。。不能由数量直接选择校正方法；探索与预设比较也需交代。</desc><title id="title">三种训练有三对比较</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:01:37.115699</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 239  L 760 239  L 760 0  L 0 0  L 0 239  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 12  L 730 12  Q 744 12 744 26  L 744 39  Q 744 53 730 53  L 30 53  Q 16 53 16 39  L 16 26  Q 16 12 30 12  z " clip-path="url(#pf9c2f18a53)" style="fill: #6741ad; opacity: 0.09" />
+   </g>
+   <g id="patch_3">
+    <path d="M 30 55  L 730 55  Q 744 55 744 69  L 744 82  Q 744 96 730 96  L 30 96  Q 16 96 16 82  L 16 69  Q 16 55 30 55  z " clip-path="url(#pf9c2f18a53)" style="fill: #6741ad; opacity: 0.035" />
+   </g>
+   <g id="patch_4">
+    <path d="M 30 98  L 730 98  Q 744 98 744 112  L 744 125  Q 744 139 730 139  L 30 139  Q 16 139 16 125  L 16 112  Q 16 98 30 98  z " clip-path="url(#pf9c2f18a53)" style="fill: #6741ad; opacity: 0.065" />
+   </g>
+   <g id="patch_5">
+    <path d="M 30 141  L 730 141  Q 744 141 744 155  L 744 168  Q 744 182 730 182  L 30 182  Q 16 182 16 168  L 16 155  Q 16 141 30 141  z " clip-path="url(#pf9c2f18a53)" style="fill: #6741ad; opacity: 0.035" />
+   </g>
+   <g id="patch_6">
+    <path d="M 30 184  L 730 184  Q 744 184 744 198  L 744 211  Q 744 225 730 225  L 30 225  Q 16 225 16 211  L 16 198  Q 16 184 30 184  z " clip-path="url(#pf9c2f18a53)" style="fill: #6741ad; opacity: 0.065" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 13  L 728 13  " clip-path="url(#pf9c2f18a53)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 56  L 728 56  " clip-path="url(#pf9c2f18a53)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 32 99  L 728 99  " clip-path="url(#pf9c2f18a53)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_4">
+    <path d="M 32 142  L 728 142  " clip-path="url(#pf9c2f18a53)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_5">
+    <path d="M 32 185  L 728 185  " clip-path="url(#pf9c2f18a53)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="28" y="37.654063" transform="rotate(-0 28 37.654063)">比较</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="270.666667" y="37.713125" transform="rotate(-0 270.666667 37.713125)">结果指标数</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="513.333333" y="37.713125" transform="rotate(-0 513.333333 37.713125)">各指标都检验时</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="80.713125" transform="rotate(-0 28 80.713125)">训练甲与乙</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="270.666667" y="81.061875" transform="rotate(-0 270.666667 81.061875)">10</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="513.333333" y="80.58375" transform="rotate(-0 513.333333 80.58375)">10项检验</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="123.713125" transform="rotate(-0 28 123.713125)">训练甲与丙</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="270.666667" y="124.061875" transform="rotate(-0 270.666667 124.061875)">10</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="513.333333" y="123.58375" transform="rotate(-0 513.333333 123.58375)">10项检验</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="166.713125" transform="rotate(-0 28 166.713125)">训练乙与丙</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="270.666667" y="167.061875" transform="rotate(-0 270.666667 167.061875)">10</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="513.333333" y="166.58375" transform="rotate(-0 513.333333 166.58375)">10项检验</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="209.735625" transform="rotate(-0 28 209.735625)">三对全部比较</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="270.666667" y="210.061875" transform="rotate(-0 270.666667 210.061875)">10</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="513.333333" y="209.58375" transform="rotate(-0 513.333333 209.58375)">共30项检验</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf9c2f18a53">
+   <rect x="0" y="0" width="760" height="239" />
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,65 @@
+{
+  "id": "latent-interaction",
+  "unit_id": "latent-interaction",
+  "title": "潜变量交互不等于总分乘积",
+  "question": "想研究两个心理构念的联合作用，同时考虑问卷测量误差，可以怎么分析？",
+  "design": "模拟两个独立连续潜预测因子及交互结果，各三个指标。semTools 匹配乘积指标、双均值中心化，lavaan MLR；不是 Mplus LMS/XWITH。",
+  "variables": "固定种子生成的连续教学指标。X/W/M/Y 或潜因子的统计角色见设计与代码，非真实参与者。",
+  "script": "examples/r/output_reading/latent-interaction.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "interaction",
+      "label": "潜交互路径",
+      "meaning": "对应匹配乘积指标的潜交互因子，不是构念总分直接相乘。",
+      "term": "product-indicator",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "稳健 Wald p",
+      "meaning": "本例 MLR 稳健标准误的路径检验，不是 LMS 似然比。",
+      "term": "robust-standard-errors",
+      "format": ".4g"
+    },
+    {
+      "field_id": "mean_slope",
+      "label": "调节因子为零时斜率",
+      "meaning": "按潜因子首指标量纲标定；表中 ±1 是该量纲一单位，不是一个 SD。",
+      "term": "simple-slope-test",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "何时不能这样解释",
+      "body": "乘积构造、指标匹配及残差结构需有依据；不能用普通 CFA 截断标准机械判定交互模型，也不把 ±1 标定单位误叫 ±1 SD。"
+    },
+    {
+      "title": "路径或交互不显著怎么办",
+      "body": "检查区间精度、测量质量、取值范围及模型条件。零假设证据不足不是证明零效应，不改中心化方式、分组切点或删控制项来追求显著。横断观察不能仅凭路径确立中介机制。"
+    }
+  ],
+  "report_template": "匹配乘积指标、双均值中心化的连续潜交互教学模型采用 MLR，未标准化交互路径 b = {interaction:.3f}，稳健 Wald p = {p:.4g}。调节潜因子为零时目标斜率为 {mean_slope:.3f}；±1 标定单位的斜率及稳健区间见表。该方法不等同于 Mplus LMS。",
+  "sources": [
+    {
+      "title": "估计实现的官方文档",
+      "url": "https://search.r-project.org/CRAN/refmans/semTools/html/indProd.html"
+    }
+  ],
+  "related_terms": [
+    "product-indicator",
+    "robust-standard-errors",
+    "simple-slope-test"
+  ],
+  "table_labels": {
+    "parameters": "完整路径与测量参数",
+    "simple_slopes": "指定条件下的简单斜率及区间",
+    "conditional_effects": "条件间接关联与指数的 Bootstrap 区间"
+  }
+}

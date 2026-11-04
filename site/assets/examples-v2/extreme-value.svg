@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="650pt" viewBox="0 0 760 650" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">三小时相对六至八小时很极端，原因可能真实也可能是记录问题。。极端不等于错误，不能据图自动删除这名学生。</desc><title id="title">三小时睡眠值得回查</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:01:15.747431</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 650  L 760 650  L 760 0  L 0 0  L 0 650  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 88  L 730 88  Q 744 88 744 102  L 744 296  Q 744 310 730 310  L 30 310  Q 16 310 16 296  L 16 102  Q 16 88 30 88  z " clip-path="url(#p017675b88a)" style="fill: #006d70; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 445.2 174  L 706 174  L 706 208  L 445.2 208  z " clip-path="url(#p017675b88a)" style="fill: #006d70; opacity: 0.22" />
+   </g>
+   <g id="unusual-record">
+    <path d="M 54 185  C 55.591219 185 57.117479 185.632198 58.242641 186.757359  C 59.367802 187.882521 60 189.408781 60 191  C 60 192.591219 59.367802 194.117479 58.242641 195.242641  C 57.117479 196.367802 55.591219 197 54 197  C 52.408781 197 50.882521 196.367802 49.757359 195.242641  C 48.632198 194.117479 48 192.591219 48 191  C 48 189.408781 48.632198 187.882521 49.757359 186.757359  C 50.882521 185.632198 52.408781 185 54 185  z " clip-path="url(#p017675b88a)" style="fill: #966111" />
+   </g>
+   <g id="patch_4">
+    <path d="M 30 350  L 730 350  Q 744 350 744 364  L 744 558  Q 744 572 730 572  L 30 572  Q 16 572 16 558  L 16 364  Q 16 350 30 350  z " clip-path="url(#p017675b88a)" style="fill: #006d70; opacity: 0.055" />
+   </g>
+   <g id="patch_5">
+    <path d="M 331 400  L 429 400  Q 437 400 437 408  L 437 432  Q 437 440 429 440  L 331 440  Q 323 440 323 432  L 323 408  Q 323 400 331 400  z " clip-path="url(#p017675b88a)" style="fill: #006d70; opacity: 0.1; stroke: #006d70; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 378.041718 446.396057  Q 290.999973 464.000006 205.382828 481.315833  " clip-path="url(#p017675b88a)" style="fill: none; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 211.858458 483.066896  L 205.382828 481.315833  L 210.669056 477.185967  z " clip-path="url(#p017675b88a)" style="fill: #006d70; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_7">
+    <path d="M 38 487  L 366 487  Q 374 487 374 495  L 374 528  Q 374 536 366 536  L 38 536  Q 30 536 30 528  L 30 495  Q 30 487 38 487  z " clip-path="url(#p017675b88a)" style="fill: #006d70; opacity: 0.1; stroke: #006d70; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 381.958282 446.396057  Q 469.000027 464.000006 554.617172 481.315833  " clip-path="url(#p017675b88a)" style="fill: none; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 549.330944 477.185967  L 554.617172 481.315833  L 548.141542 483.066896  z " clip-path="url(#p017675b88a)" style="fill: #006d70; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_9">
+    <path d="M 394 487  L 722 487  Q 730 487 730 495  L 730 528  Q 730 536 722 536  L 394 536  Q 386 536 386 528  L 386 495  Q 386 487 394 487  z " clip-path="url(#p017675b88a)" style="fill: #006d70; opacity: 0.1; stroke: #006d70; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 89  L 728 89  " clip-path="url(#p017675b88a)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 54 191  L 706 191  " clip-path="url(#p017675b88a)" style="fill: none; stroke: #006d70; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 32 351  L 728 351  " clip-path="url(#p017675b88a)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #006d70" x="20" y="33.656406" transform="rotate(-0 20 33.656406)">三小时睡眠值得回查</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="61.53918" transform="rotate(-0 20 61.53918)">概念示意 · 图形不对应实际人数或结果</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #006d70" x="30" y="117.129043" transform="rotate(-0 30 117.129043)">把待核查记录放回常见范围</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="54" y="233.757939" transform="rotate(-0 54 233.757939)">甲：3小时</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="274.820908" transform="rotate(-0 30 274.820908)">浅色带：常见6—8小时</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="300.834111" transform="rotate(-0 30 300.834111)">标出的点需核查，不能直接删除</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #006d70" x="30" y="379.067793" transform="rotate(-0 30 379.067793)">同一条记录，回查不同来源</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="380" y="423.770127" transform="rotate(-0 380 423.770127)">原始记录</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="202" y="515.295518" transform="rotate(-0 202 515.295518)">真实熬夜</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="558" y="515.302627" transform="rotate(-0 558 515.302627)">填写单位</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="20" y="588.808721" transform="rotate(-0 20 588.808721)">远离常见范围提示回查。核对来源与预先规则之后，再决定如何处理。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p017675b88a">
+   <rect x="0" y="0" width="760" height="650" />
+  </clipPath>
+ </defs>
+</svg>

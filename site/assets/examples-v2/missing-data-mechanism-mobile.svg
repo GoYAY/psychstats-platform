@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="760pt" viewBox="0 0 360 760" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">随机漏发与高压力学生不愿填答可能产生不同的偏差。。场景不涵盖所有缺失机制，也不能仅从已观测数据确认非随机缺失。</desc><title id="title">漏发与不愿填不同</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:01:34.265491</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 760  L 360 760  L 360 0  L 0 0  L 0 760  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 88  L 330 88  Q 344 88 344 102  L 344 320  Q 344 334 330 334  L 30 334  Q 16 334 16 320  L 16 102  Q 16 88 30 88  z " clip-path="url(#pd1f41be916)" style="fill: #006d70; opacity: 0.055" />
+   </g>
+   <g id="missing-cell-0-0">
+    <path d="M 38 191  L 114 191  Q 122 191 122 199  L 122 238  Q 122 246 114 246  L 38 246  Q 30 246 30 238  L 30 199  Q 30 191 38 191  z " clip-path="url(#pd1f41be916)" style="fill: #006d70; fill-opacity: 0.045; stroke-dasharray: 4.44,1.92; stroke-dashoffset: 0; stroke: #966111; stroke-opacity: 0.65; stroke-width: 1.2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_3">
+    <path d="M 142 191  L 218 191  Q 226 191 226 199  L 226 238  Q 226 246 218 246  L 142 246  Q 134 246 134 238  L 134 199  Q 134 191 142 191  z " clip-path="url(#pd1f41be916)" style="fill: #006d70; opacity: 0.1; stroke: #006d70; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 246 191  L 322 191  Q 330 191 330 199  L 330 238  Q 330 246 322 246  L 246 246  Q 238 246 238 238  L 238 199  Q 238 191 246 191  z " clip-path="url(#pd1f41be916)" style="fill: #006d70; opacity: 0.1; stroke: #006d70; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 30 388  L 330 388  Q 344 388 344 402  L 344 620  Q 344 634 330 634  L 30 634  Q 16 634 16 620  L 16 402  Q 16 388 30 388  z " clip-path="url(#pd1f41be916)" style="fill: #006d70; opacity: 0.055" />
+   </g>
+   <g id="patch_6">
+    <path d="M 38 491  L 114 491  Q 122 491 122 499  L 122 538  Q 122 546 114 546  L 38 546  Q 30 546 30 538  L 30 499  Q 30 491 38 491  z " clip-path="url(#pd1f41be916)" style="fill: #006d70; opacity: 0.1; stroke: #006d70; stroke-linejoin: miter" />
+   </g>
+   <g id="missing-cell-1-1">
+    <path d="M 142 491  L 218 491  Q 226 491 226 499  L 226 538  Q 226 546 218 546  L 142 546  Q 134 546 134 538  L 134 499  Q 134 491 142 491  z " clip-path="url(#pd1f41be916)" style="fill: #006d70; fill-opacity: 0.045; stroke-dasharray: 4.44,1.92; stroke-dashoffset: 0; stroke: #966111; stroke-opacity: 0.65; stroke-width: 1.2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 246 491  L 322 491  Q 330 491 330 499  L 330 538  Q 330 546 322 546  L 246 546  Q 238 546 238 538  L 238 499  Q 238 491 246 491  z " clip-path="url(#pd1f41be916)" style="fill: #006d70; opacity: 0.1; stroke: #006d70; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 89  L 328 89  " clip-path="url(#pd1f41be916)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 389  L 328 389  " clip-path="url(#pd1f41be916)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #006d70" x="20" y="33.640156" transform="rotate(-0 20 33.640156)">漏发与不愿填不同</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="61.53918" transform="rotate(-0 20 61.53918)">概念示意 · 图形不对应实际人数或结果</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #006d70" x="30" y="117.114824" transform="rotate(-0 30 117.114824)">随机漏发：与压力高低无关</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="76" y="161.503555" transform="rotate(-0 76 161.503555)">压力较低</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="76" y="222.277236" transform="rotate(-0 76 222.277236)">未收到</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="180" y="161.544805" transform="rotate(-0 180 161.544805)">压力较高</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="180" y="222.295518" transform="rotate(-0 180 222.295518)">有回答</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="284" y="161.503555" transform="rotate(-0 284 161.503555)">压力较低</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="284" y="222.295518" transform="rotate(-0 284 222.295518)">有回答</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="296.789424" transform="rotate(-0 30 296.789424)">漏发位置不按压力挑选</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #006d70" x="30" y="417.08748" transform="rotate(-0 30 417.08748)">拒答可能与未观测压力有关</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="76" y="461.503555" transform="rotate(-0 76 461.503555)">压力较低</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="76" y="522.295518" transform="rotate(-0 76 522.295518)">有回答</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="180" y="461.544805" transform="rotate(-0 180 461.544805)">压力较高</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="180" y="522.289424" transform="rotate(-0 180 522.289424)">未填答</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="284" y="461.503555" transform="rotate(-0 284 461.503555)">压力较低</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #006d70" x="284" y="522.295518" transform="rotate(-0 284 522.295518)">有回答</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="596.834111" transform="rotate(-0 30 596.834111)">留下的回答可能更偏向轻松者</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(20 691.645518)">虚线框表示未取得回答。压力是情境设定，真实缺</text>
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(20 705.959736)">失者的压力可能未知；不能据图确认机制。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd1f41be916">
+   <rect x="0" y="0" width="360" height="760" />
+  </clipPath>
+ </defs>
+</svg>

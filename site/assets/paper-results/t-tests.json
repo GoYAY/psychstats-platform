@@ -1,0 +1,166 @@
+{
+  "case_id": "t-tests",
+  "covariances": [],
+  "design": "学习实验教学数据；比较 gain，参考方向为 retrieval 减 control。展示独立 Welch 检验及同一参与者前后测的配对检验。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/learning_experiment.csv": "82a8bd37ee782296f26c84ffd23a51e15ff03b1512d661b4437454b26d24a391"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/t-tests.R",
+    "script_sha256": "b433a8361cdc91eedfd71009216982d0b9b71e91d4b108b0e38a5c5bda282fc4",
+    "supplement_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "df",
+        "t",
+        "p"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": 4.762422876332318,
+          "ci_upper": 9.72646601255657,
+          "df": 177.7574694462005,
+          "effect": "组间均值差",
+          "estimate": 7.244444444444444,
+          "p": 3.63613076171663e-08,
+          "t": 5.7598942351089
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "columns": [
+        "variable",
+        "group",
+        "n",
+        "mean",
+        "sd"
+      ],
+      "name": "group_descriptives",
+      "rows": [
+        {
+          "group": "retrieval",
+          "mean": 9.872222222222222,
+          "n": 90,
+          "sd": 8.591582342099368,
+          "variable": "成绩增量（gain）"
+        },
+        {
+          "group": "control",
+          "mean": 2.6277777777777778,
+          "n": 90,
+          "sd": 8.279879874525914,
+          "variable": "成绩增量（gain）"
+        }
+      ],
+      "title": "各组描述统计"
+    },
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "standardized_effects",
+      "rows": [
+        {
+          "_row": "2.5%",
+          "ci_lower": 0.5663663871704302,
+          "ci_upper": 1.1442401056853078,
+          "effect": "独立组 Hedges g（合并 SD）",
+          "estimate": 0.8550114071694479
+        }
+      ],
+      "title": "标准化效应量"
+    },
+    {
+      "columns": [
+        "n",
+        "difference",
+        "se",
+        "t",
+        "df",
+        "p",
+        "ci_lower",
+        "ci_upper",
+        "d_z"
+      ],
+      "name": "paired_change",
+      "rows": [
+        {
+          "ci_lower": 4.902120555772974,
+          "ci_upper": 7.5978794442270265,
+          "d_z": 0.6820041642290051,
+          "df": 179,
+          "difference": 6.25,
+          "n": 180,
+          "p": 1.2689978275228005e-16,
+          "se": 0.6830566728856992,
+          "t": 9.150046032923916
+        }
+      ],
+      "title": "配对变化及效应量"
+    },
+    {
+      "column_labels": {
+        "ci_lower": "差值 95% CI 下界",
+        "ci_upper": "差值 95% CI 上界",
+        "df": "Welch df",
+        "difference": "组间平均差",
+        "p": "组间检验 p",
+        "t": "Welch t"
+      },
+      "columns": [
+        "analysis",
+        "difference",
+        "t",
+        "df",
+        "ci_lower",
+        "ci_upper",
+        "p"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "两种学习方式的成绩差多少",
+          "ci_lower": 4.762422876332318,
+          "ci_upper": 9.72646601255657,
+          "df": 177.7574694462005,
+          "difference": 7.244444444444444,
+          "p": 3.63613076171663e-08,
+          "t": 5.7598942351089
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "df": "df",
+          "difference": "difference",
+          "p": "p",
+          "t": "t"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "两种学习方式的成绩差多少",
+  "valid": true,
+  "variances": []
+}

@@ -1,0 +1,51 @@
+{
+  "case_id": "conditional-mediation",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\nCall:\nlm(formula = m ~ x * w, data = d)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-2.40730 -0.69100 -0.03304  0.54334  2.92736 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)  0.06845    0.05430   1.261 0.208304    \nx            0.42344    0.06038   7.012 1.24e-11 ***\nw            0.20806    0.05498   3.784 0.000182 ***\nx:w          0.15810    0.06371   2.482 0.013551 *  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.007 on 346 degrees of freedom\nMultiple R-squared:  0.1843,\tAdjusted R-squared:  0.1773 \nF-statistic: 26.06 on 3 and 346 DF,  p-value: 3.183e-15\n\n\nCall:\nlm(formula = y ~ x + m + w, data = d)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-3.2173 -0.7399  0.0596  0.7496  3.4144 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept) -0.08156    0.05486  -1.487  0.13804    \nx            0.17354    0.06533   2.656  0.00827 ** \nm            0.55303    0.05402  10.237  < 2e-16 ***\nw            0.07026    0.05624   1.249  0.21243    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.021 on 346 degrees of freedom\nMultiple R-squared:  0.3256,\tAdjusted R-squared:  0.3197 \nF-statistic: 55.68 on 3 and 346 DF,  p-value: < 2.2e-16\n\n         effect   estimate   ci_lower  ci_upper\nindex     index 0.08743315 0.01040588 0.1748055\nat_zero at_zero 0.23417546 0.15994013 0.3286369\nat_low   at_low 0.14674231 0.04526771 0.2310454\nat_high at_high 0.32160861 0.20363152 0.4465453\n",
+  "stderr": "",
+  "metrics": {
+    "index": 0.08743315022324416,
+    "ci_lower": 0.010405882189662274,
+    "ci_upper": 0.17480549148413438,
+    "at_zero": 0.23417546393333633
+  },
+  "warnings": [],
+  "tables": {
+    "conditional_effects": [
+      {
+        "effect": "index",
+        "estimate": 0.08743315022324416,
+        "ci_lower": 0.010405882189662274,
+        "ci_upper": 0.17480549148413438,
+        "_row": "index"
+      },
+      {
+        "effect": "at_zero",
+        "estimate": 0.23417546393333633,
+        "ci_lower": 0.15994013403673873,
+        "ci_upper": 0.32863685944376975,
+        "_row": "at_zero"
+      },
+      {
+        "effect": "at_low",
+        "estimate": 0.14674231371009216,
+        "ci_lower": 0.045267707734171186,
+        "ci_upper": 0.23104538487550766,
+        "_row": "at_low"
+      },
+      {
+        "effect": "at_high",
+        "estimate": 0.3216086141565805,
+        "ci_lower": 0.20363152131866014,
+        "ci_upper": 0.4465452863145085,
+        "_row": "at_high"
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "b80c2749f897a1b5def8b5f66ed98a658e9e839ba00bb4ffa966a759ace3defe",
+  "config_sha256": "991057be44a0e819032766cd89b6d6c022147b824ca375586dda3e0640ce4505",
+  "data_sha256": {}
+}

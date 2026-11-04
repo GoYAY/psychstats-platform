@@ -1,0 +1,59 @@
+{
+  "id": "power",
+  "unit_id": "power",
+  "title": "下一项研究需要多少人",
+  "question": "我希望检出至少 3 分的差别，需要招募多少参与者？",
+  "design": "规划情境而不是已完成的研究：两组独立、双侧 0.05，目标功效 0.80，预期标准差 8；对差值 2/3/4 分进行敏感性规划。",
+  "variables": "教学数据由下方代码固定种子生成，非真实参与者资料；参数设定可在代码中查看。",
+  "script": "examples/r/output_reading/power.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "per_group",
+      "label": "每组可分析人数",
+      "meaning": "R 的 n 是每组人数，不是总样本；向上取整保证最低目标。",
+      "term": "sample-size-planning",
+      "format": ".3f"
+    },
+    {
+      "field_id": "recruit_per_group",
+      "label": "考虑流失后的每组招募数",
+      "meaning": "教学假定保留率 85%，除以 0.85 后再取整；不是软件自动预测流失率。",
+      "term": "sample-size-planning",
+      "format": ".3f"
+    },
+    {
+      "field_id": "power",
+      "label": "目标功效",
+      "meaning": "在设定差值、方差和检验成立时的规划概率，不是本次结果正确的概率。",
+      "term": "statistical-power",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这些结果最容易误读的地方",
+      "body": "不计算基于观察效应的事后功效来解释不显著；聚类、重复测量和复杂 SEM 不能套用本独立两组公式。"
+    },
+    {
+      "title": "如果没有发现明确证据",
+      "body": "先回到研究问题和估计精度，结合区间、有效样本、数据质量及模型条件判断。证据不足不等于没有作用；不反复更换方法、删样本或放宽阈值来追求显著。"
+    }
+  ],
+  "report_template": "规划采用双侧 α = 0.05、功效 {power:.2f}、目标差值 3 分及标准差 8 分，需要每组至少 {per_group:.0f} 个可分析样本；按教学假设 15% 流失预留，每组招募 {recruit_per_group:.0f} 人。最终设定应由研究意义和先验资料支持。",
+  "sources": [
+    {
+      "title": "R 官方 power.t.test 文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/power.t.test.html"
+    }
+  ],
+  "related_terms": [
+    "sample-size-planning",
+    "statistical-power"
+  ]
+}

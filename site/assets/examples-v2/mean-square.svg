@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="153pt" viewBox="0 0 760 153" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">组间与组内均方各有对应分母，不能随意除以组人数。。教学合成方差分析数量；未提供完整原始资料或检验结论。</desc><title id="title">平方和按相应自由度平均</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:03:12.697664</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 153  L 760 153  L 760 0  L 0 0  L 0 153  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 12  L 730 12  Q 744 12 744 26  L 744 39  Q 744 53 730 53  L 30 53  Q 16 53 16 39  L 16 26  Q 16 12 30 12  z " clip-path="url(#pa360e75810)" style="fill: #a33052; opacity: 0.09" />
+   </g>
+   <g id="patch_3">
+    <path d="M 30 55  L 730 55  Q 744 55 744 69  L 744 82  Q 744 96 730 96  L 30 96  Q 16 96 16 82  L 16 69  Q 16 55 30 55  z " clip-path="url(#pa360e75810)" style="fill: #a33052; opacity: 0.035" />
+   </g>
+   <g id="patch_4">
+    <path d="M 30 98  L 730 98  Q 744 98 744 112  L 744 125  Q 744 139 730 139  L 30 139  Q 16 139 16 125  L 16 112  Q 16 98 30 98  z " clip-path="url(#pa360e75810)" style="fill: #a33052; opacity: 0.065" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 13  L 728 13  " clip-path="url(#pa360e75810)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 56  L 728 56  " clip-path="url(#pa360e75810)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 32 99  L 728 99  " clip-path="url(#pa360e75810)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a33052" x="28" y="37.689688" transform="rotate(-0 28 37.689688)">变异来源</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a33052" x="210" y="37.660625" transform="rotate(-0 210 37.660625)">平方和</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a33052" x="392" y="37.695312" transform="rotate(-0 392 37.695312)">自由度</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a33052" x="574" y="37.7075" transform="rotate(-0 574 37.7075)">均方</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="80.724375" transform="rotate(-0 28 80.724375)">组间</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="210" y="81.038438" transform="rotate(-0 210 81.038438)">60</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="392" y="81.114375" transform="rotate(-0 392 81.114375)">2</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="574" y="81.038438" transform="rotate(-0 574 81.038438)">30</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="28" y="123.725313" transform="rotate(-0 28 123.725313)">组内</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="210" y="124.038438" transform="rotate(-0 210 124.038438)">90</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="392" y="124.038438" transform="rotate(-0 392 124.038438)">9</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="574" y="124.061875" transform="rotate(-0 574 124.061875)">10</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa360e75810">
+   <rect x="0" y="0" width="760" height="153" />
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,52 @@
+{
+  "tables": {
+    "reported_coefficients": [
+      {
+        "outcome": "well_being",
+        "term": "(Intercept)",
+        "estimate": 50.529691884006326,
+        "se": 3.72293123369031,
+        "statistic": 13.572555793333681,
+        "df": 357,
+        "p": 3.998327257092375e-34,
+        "ci_lower": 43.20805914812314,
+        "ci_upper": 57.85132461988951
+      },
+      {
+        "outcome": "well_being",
+        "term": "stress",
+        "estimate": -0.36874881503829343,
+        "se": 0.04931241561248507,
+        "statistic": -7.47780879233449,
+        "df": 357,
+        "p": 5.911621215530918e-13,
+        "ci_lower": -0.4657281503444586,
+        "ci_upper": -0.2717694797321283
+      },
+      {
+        "outcome": "well_being",
+        "term": "social_support",
+        "estimate": 0.3136671830809683,
+        "se": 0.0437408940266299,
+        "statistic": 7.171028166228256,
+        "df": 357,
+        "p": 4.317499037693909e-12,
+        "ci_lower": 0.2276449759813432,
+        "ci_upper": 0.3996893901805934
+      }
+    ],
+    "model_summary": [
+      {
+        "n": 360,
+        "r_squared": 0.3054588128736307,
+        "adjusted_r_squared": 0.3015678258309059
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "回归系数：t 分布 95% CI；间接效应：300 次教学 Bootstrap 百分位区间（如适用）",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0",
+  "case_id": "selection",
+  "original_sha256": "83d1c38f060ec5c95c655f8a38c197b4b197a40894a7c005e989d00756a053f8",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

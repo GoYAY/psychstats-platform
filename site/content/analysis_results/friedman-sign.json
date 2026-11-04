@@ -1,0 +1,21 @@
+{
+  "case_id": "friedman-sign",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\n\tFriedman rank sum test\n\ndata:  y\nFriedman chi-squared = 3.2571, df = 2, p-value = 0.1962\n\n\n\tExact binomial test\n\ndata:  sum(nonzero > 0) and length(nonzero)\nnumber of successes = 21, number of trials = 35, p-value = 0.3105\nalternative hypothesis: true probability of success is not equal to 0.5\n95 percent confidence interval:\n 0.4211177 0.7612919\nsample estimates:\nprobability of success \n                   0.6 \n\n",
+  "stderr": "",
+  "metrics": {
+    "chi_squared": 3.257142857142857,
+    "df": 2,
+    "p": 0.19620967354189398,
+    "sign_p": 0.31050465907901514,
+    "nonzero_pairs": 35
+  },
+  "warnings": [],
+  "tables": [],
+  "figures": [],
+  "script_sha256": "606746c0f628ff5215a5215eeb1a9888c32e7faa0375effc2e5b692c6b33e6a5",
+  "config_sha256": "8f86e08a84b3ed540d1c9917ca4f0f02111faa75a3e3cb7e9e31670580afd41b",
+  "data_sha256": {}
+}

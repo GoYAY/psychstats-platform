@@ -1,0 +1,149 @@
+{
+  "id": "confidence-interval",
+  "zh": "置信区间",
+  "en": "Confidence Interval",
+  "aliases": [],
+  "type": "indicator",
+  "level": "basic",
+  "topic": "hypothesis-testing",
+  "status": "public",
+  "summary": "用区间展示参数估计的不确定性与可兼容范围。",
+  "relations": {
+    "prerequisites": [
+      "standard-error"
+    ],
+    "components": [],
+    "contrasts": [],
+    "used_in": [],
+    "next": [
+      "multiple-comparison-correction"
+    ]
+  },
+  "real_question": "估计学生的平均压力水平时，怎样说明这个数字有多不确定？",
+  "operational_definition": "95% 置信区间由重复抽样下覆盖目标参数约 95% 的构造程序生成；对已计算的区间，参数是否在内并非频率学概率事件。",
+  "plain_explanation": "把程序反复用于新样本，长期看约 95% 的区间会覆盖真值；这次区间同时提示估计精度。",
+  "problems_solved": [
+    "表达估计的不确定性",
+    "评估与理论上重要效应值的兼容性"
+  ],
+  "not_for": [
+    "不能在不核对模型与抽样设计时机械解释覆盖率"
+  ],
+  "decision_clues": [
+    "标明置信水平和目标参数",
+    "检查区间构造方法与研究设计"
+  ],
+  "sections": [
+    {
+      "heading": "怎么看：区间容许哪些实际结论",
+      "body": "先确认估计的对象、单位和置信水平，再同时看点估计、上下限及区间宽度。判断区间是否跨越一个基准时，该基准必须对应研究问题：均值差常比较 0，比值常比较 1；单个量表均值不应机械地与 0 比较，还要看量表范围和有意义的标准。"
+    },
+    {
+      "heading": "容易混淆：95% 指被试、当前区间还是估计程序",
+      "body": "常规频率学派的 95% 置信区间不是包含 95% 被试分数的范围，也不是这次固定区间含真值的 95% 概率。它对应重复抽样时构造区间的覆盖性质。匹配的双侧检验与区间常有对应关系，但仅看是否跨过基准会丢掉区间所显示的效应量级与精度。"
+    }
+  ],
+  "formula": {
+    "latex": "",
+    "note": "",
+    "verified": false
+  },
+  "quiz": {
+    "question": "频率学 95% 置信区间中的 95% 主要指什么？",
+    "options": [
+      "真值每次随机移动的概率",
+      "构造程序在重复抽样中的长期覆盖率",
+      "样本有 95% 概率正确",
+      "效应为零的概率"
+    ],
+    "answer": 1,
+    "explanation": "95% 描述构造方法的长期表现。",
+    "option_explanations": [
+      "频率学解释把目标参数视为固定值，随机变化的是样本和由此得到的区间。",
+      "正确。若在相同条件下重复抽样并按同一方法构造区间，约 95% 的区间会覆盖目标参数。",
+      "置信水平不是给整个样本贴上“正确”的概率。",
+      "区间的置信水平不等于效应为零的概率；可另看区间与零值的关系。"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "basic_textbook",
+      "title": "现代心理与教育统计学",
+      "role": "概念与方法核对"
+    }
+  ],
+  "r_practice": {
+    "packages": [],
+    "data_shape": "CSV 的一行是一条观测；先下载示例数据并放到 R 当前工作目录。",
+    "example_code": "# 将示例 CSV 放在 R 当前工作目录；也可使用完整路径\nd <- read.csv(\"cross_sectional_survey.csv\", stringsAsFactors = FALSE)\nfit <- t.test(d$stress)\nprint(c(estimate=unname(fit$estimate), ci_lower=unname(fit$conf.int[1]), ci_upper=unname(fit$conf.int[2])))\n",
+    "your_data_code": "d <- read.csv(\"your_data.csv\")\nt.test(d$score,conf.level=.95)$conf.int\n# The interval procedure's assumptions and sampling design matter.\n",
+    "assumption_checks": [
+      "标明置信水平和目标参数",
+      "检查区间构造方法与研究设计"
+    ],
+    "key_output": [
+      "estimate",
+      "ci_lower",
+      "ci_upper"
+    ],
+    "interpretation": "此代码估计总体平均压力，estimate≈48.61 是样本均值，ci_lower≈47.77、ci_upper≈49.45 是默认 95% 置信区间的上下限，单位都是原量表分数。区间宽度约 1.67 分，描述此方法下估计的不确定性；它不表示 95% 的学生落在这段范围内。换成两组比较后，区间估计对象会变为均值差，须先核对对象再解释。",
+    "report_template": "报告所用方法、样本量、关键估计量及其不确定性，并交代适用条件。",
+    "common_errors": [
+      "不能在不核对模型与抽样设计时机械解释覆盖率"
+    ],
+    "verified": true,
+    "validation_report": "logs/r_validation.json"
+  },
+  "verified": true,
+  "candidate_evidence": {
+    "textbook": [
+      {
+        "chunk_id": 424,
+        "page_print": 280,
+        "page_pdf": 293,
+        "path": "第十一章中介分析",
+        "sim": 0.6491,
+        "snippet": "可以从PRODCLIN程序①中得到，在程序中输人估计的a、Sa、6、 sb、a和6的相关，以及设定的一类错误率即可。 基于乘积分布临界值的不对称置信区间和Bootstrap方法得到"
+      },
+      {
+        "chunk_id": 422,
+        "page_print": 279,
+        "page_pdf": 292,
+        "path": "第十一章中介分析",
+        "sim": 0.6521,
+        "snippet": "。根据所抽取的N个样本，就能得到ab的 分布情况，进而获得a6的置信区间（一般是使用95%置信区间）。如果置信区间不包括 0，则说明该参数估计值显著。该置信区间是从多个样本统计量构"
+      },
+      {
+        "chunk_id": 423,
+        "page_print": 280,
+        "page_pdf": 293,
+        "path": "第十一章中介分析",
+        "sim": 0.6011,
+        "snippet": "如此（Fritz，Taylor，&MacKinnon，2012）。因此，如果希望获得高检验力，那么推荐 使用偏差校正的Bootstrap方法；但如果研究者也在乎一类错误率，那么使用"
+      }
+    ],
+    "course": [
+      {
+        "chunk_id": 74,
+        "doc": "w09-mediation",
+        "page_course": 2,
+        "block_source": "TEXT_LAYER",
+        "xref": null,
+        "numeric_risk": 3,
+        "sim": 0.6076,
+        "snippet": "[讲义 w09-mediation 第2页] 2025/11/20 2 中介效应 • 中介效应分析 中介效应 5 1 2 3 Y c X M a X Y b M c X   "
+      },
+      {
+        "chunk_id": 359,
+        "doc": "w02-week2",
+        "page_course": 57,
+        "block_source": "TEXT_LAYER",
+        "xref": null,
+        "numeric_risk": 1,
+        "sim": 0.5254,
+        "snippet": "[讲义 w02-week2 第57页] 课后问题 • 1、一个学生做48道单项选择题（4个选项），每题2分。如果学生完全不会做，全靠猜测， TA得分的范围是多大？（按照正态分布95"
+      }
+    ]
+  },
+  "plain_example": "例如，想估计全校学生的平均压力，报告“约 49 分”之外再给一个区间，读者就能看到估计有多精确。区间很宽时，现有数据仍容许相差较大的总体平均水平。"
+}

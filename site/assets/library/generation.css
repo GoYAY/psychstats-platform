@@ -1,0 +1,23 @@
+.generation-page{max-width:960px;margin:24px auto 64px;color:var(--ink,#111827)}
+.generation-page h2{font-size:clamp(25px,3vw,34px);line-height:1.35;letter-spacing:-.02em;margin:0 0 16px}
+.generation-page h3{font-size:20px;margin:24px 0 12px}.generation-intro{color:var(--muted,#626976);line-height:1.7}
+.generation-form,.generation-login{display:grid;gap:20px;margin:24px 0;max-width:700px}
+.generation-page label{display:grid;gap:8px;font-size:15px;font-weight:600;line-height:1.6}
+.generation-page input:not([type=checkbox]),.generation-page textarea{width:100%;box-sizing:border-box;min-height:44px;padding:11px 13px;border:1px solid #d7dce4;border-radius:10px;background:#fff;color:inherit;font:inherit}
+.generation-page label:has(input[type=checkbox]){display:flex;align-items:flex-start;gap:10px;font-weight:400;min-height:44px}
+.generation-page input[type=checkbox]{margin-top:6px;accent-color:var(--accent,#4263bd)}
+.generation-page button{min-height:44px;padding:10px 16px;margin:4px 8px 4px 0;border:1px solid #d7dce4;border-radius:10px;background:#fff;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.generation-page button:hover{background:color-mix(in srgb,var(--accent,#4263bd) 9%,white);border-color:var(--accent,#4263bd)}
+.generation-page button[type=submit]{background:var(--accent,#4263bd);color:white;border-color:transparent;text-align:center}
+.generation-page small,.generation-file-summary{font-size:13px;color:var(--muted,#626976);line-height:1.75;overflow-wrap:anywhere}
+.generation-detail{margin-top:28px;padding:20px 24px;border-radius:16px;background:color-mix(in srgb,var(--accent,#4263bd) 5%,white);box-shadow:0 5px 22px color-mix(in srgb,var(--accent,#4263bd) 9%,transparent)}
+.generation-detail:empty{display:none}.generation-notice{min-height:24px;font-size:14px;line-height:1.7}.generation-notice[data-error=true]{color:#a63535}
+.generation-page :focus-visible{outline:2px solid var(--accent,#4263bd);outline-offset:3px}
+@media(max-width:600px){.generation-page{margin:20px 0 40px}.generation-form{gap:18px}.generation-detail{padding:16px}.generation-page button{max-width:100%;overflow-wrap:anywhere}}
+.generation-page:has(.generation-preview){max-width:none}
+.generation-detail.is-preview{padding:0;background:transparent;box-shadow:none}
+.generation-detail.is-preview>:not(.generation-preview){display:none}
+.generation-preview{scroll-margin-top:145px}
+.generation-preview .library-reading-layout{margin-top:28px}
+.generation-usage{font-size:13px;color:var(--muted,#626976)}
+.generation-download{font-size:13px;color:var(--muted,#626976);font-variant-numeric:tabular-nums}

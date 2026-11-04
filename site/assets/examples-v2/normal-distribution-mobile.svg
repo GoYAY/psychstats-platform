@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="403pt" viewBox="0 0 360 403" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">对称钟形是正态分布的直觉参照，有限样本只能近似呈现。。示意钟形不说明所有心理变量正态，反应时常有不同形状。</desc><title id="title">多数居中而两端较少</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:01:43.615737</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 403  L 360 403  L 360 0  L 0 0  L 0 403  z " style="fill: none" />
+  </g>
+  <g id="data-panel-0">
+   <g id="patch_2">
+    <path d="M 61.2 312  L 345.6 312  L 345.6 65  L 61.2 65  L 61.2 312  z " style="fill: none" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="86.523288" y="328.744141" transform="rotate(-0 86.523288 328.744141)">30</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="144.961644" y="328.744141" transform="rotate(-0 144.961644 328.744141)">45</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="203.4" y="328.744141" transform="rotate(-0 203.4 328.744141)">60</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4" />
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="261.838356" y="328.744141" transform="rotate(-0 261.838356 328.744141)">75</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5" />
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #465366" x="320.276712" y="328.744141" transform="rotate(-0 320.276712 328.744141)">90</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #303b4b" x="203.4" y="354.822031" transform="rotate(-0 203.4 354.822031)">测验成绩区间中点（分；组距10分）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <path d="M 61.2 312  L 345.6 312  " clip-path="url(#pf333833705)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_7" />
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="316.87207" transform="rotate(-0 54.2 316.87207)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <path d="M 61.2 245.839286  L 345.6 245.839286  " clip-path="url(#pf333833705)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_9" />
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="250.711356" transform="rotate(-0 54.2 250.711356)">3</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_10">
+      <path d="M 61.2 179.678571  L 345.6 179.678571  " clip-path="url(#pf333833705)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_11" />
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="184.550642" transform="rotate(-0 54.2 184.550642)">6</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12">
+      <path d="M 61.2 113.517857  L 345.6 113.517857  " clip-path="url(#pf333833705)" style="fill: none; stroke: #8193af; stroke-opacity: 0.14; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_13" />
+     <g id="text_10">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #465366" x="54.2" y="118.389927" transform="rotate(-0 54.2 118.389927)">9</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 67.043836 312  L 106.00274 312  L 106.00274 289.946429  L 67.043836 289.946429  z " clip-path="url(#pf333833705)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 106.00274 312  L 144.961644 312  L 144.961644 245.839286  L 106.00274 245.839286  z " clip-path="url(#pf333833705)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 144.961644 312  L 183.920548 312  L 183.920548 157.625  L 144.961644 157.625  z " clip-path="url(#pf333833705)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 183.920548 312  L 222.879452 312  L 222.879452 91.464286  L 183.920548 91.464286  z " clip-path="url(#pf333833705)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 222.879452 312  L 261.838356 312  L 261.838356 157.625  L 222.879452 157.625  z " clip-path="url(#pf333833705)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 261.838356 312  L 300.79726 312  L 300.79726 245.839286  L 261.838356 245.839286  z " clip-path="url(#pf333833705)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_9">
+    <path d="M 300.79726 312  L 339.756164 312  L 339.756164 289.946429  L 300.79726 289.946429  z " clip-path="url(#pf333833705)" style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.85; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_10">
+    <path d="M 61.2 312  L 61.2 65  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_11">
+    <path d="M 61.2 312  L 345.6 312  " style="fill: none; stroke: #a7b1bf; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="61.2" y="47" transform="rotate(-0 61.2 47)">学生人数（人）</text>
+   </g>
+  </g>
+  <g id="legend-swatch-0">
+   <path d="M 36 379  L 45.72 379  L 45.72 371  L 36 371  z " style="fill: #244da4; opacity: 0.35; stroke: #244da4; stroke-width: 0.85; stroke-linejoin: miter" />
+  </g>
+  <g id="text_12">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="54" y="378.119375" transform="rotate(-0 54 378.119375)">近似钟形示意</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf333833705">
+   <rect x="61.2" y="65" width="284.4" height="247" />
+  </clipPath>
+ </defs>
+</svg>

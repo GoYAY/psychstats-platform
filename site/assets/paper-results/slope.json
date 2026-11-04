@@ -1,0 +1,141 @@
+{
+  "case_id": "slope",
+  "covariances": [],
+  "design": "复用班级教学数据，动机按班级均值中心化，教师支持总体中心化。班级随机截距和动机随机斜率设为不相关（pdDiag），固定项含跨层交互。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/nested_classrooms.csv": "fbfb8a3313de70cf112b6337df89b342abc4f5cdf36e1c7b1fd73aeb1205ec87"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/slope.R",
+    "script_sha256": "fc47d667d1375ecebb107684a9d235c68d631347d1c52ad782455c2e74f5f199",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "term",
+        "Value",
+        "Std.Error",
+        "DF",
+        "t.value",
+        "p.value"
+      ],
+      "name": "fixed",
+      "rows": [
+        {
+          "DF": 688,
+          "Std.Error": 21.071614557444512,
+          "Value": 57.249452434189024,
+          "_row": "(Intercept)",
+          "p.value": 0.006755343629220829,
+          "t.value": 2.7168991857799067,
+          "term": "(Intercept)"
+        },
+        {
+          "DF": 688,
+          "Std.Error": 0.027211595365140624,
+          "Value": 0.3619462903764511,
+          "_row": "mw",
+          "p.value": 4.321534043190747e-36,
+          "t.value": 13.301178615941124,
+          "term": "mw"
+        },
+        {
+          "DF": 27,
+          "Std.Error": 0.11981731885896679,
+          "Value": 0.061061442264521766,
+          "_row": "tc",
+          "p.value": 0.6144573418612251,
+          "t.value": 0.5096211703451258,
+          "term": "tc"
+        },
+        {
+          "DF": 27,
+          "Std.Error": 0.38357326520287943,
+          "Value": 0.1905312368061373,
+          "_row": "motivation_mean",
+          "p.value": 0.6234018942721969,
+          "t.value": 0.49672710298347195,
+          "term": "motivation_mean"
+        },
+        {
+          "DF": 688,
+          "Std.Error": 0.0033881055315246418,
+          "Value": -0.0035295839457171784,
+          "_row": "mw:tc",
+          "p.value": 0.29789010565427315,
+          "t.value": -1.041757381190211,
+          "term": "mw:tc"
+        }
+      ],
+      "title": "固定效应完整表"
+    },
+    {
+      "columns": [
+        "term",
+        "variance"
+      ],
+      "name": "random",
+      "rows": [
+        {
+          "term": "(Intercept)",
+          "variance": 23.18584
+        },
+        {
+          "term": "mw",
+          "variance": 0.0002385822
+        },
+        {
+          "term": "Residual",
+          "variance": 48.34812
+        }
+      ],
+      "title": "随机效应方差"
+    },
+    {
+      "column_labels": {
+        "groups": "班级数",
+        "interaction": "动机×教师支持系数",
+        "p": "p",
+        "slope_variance": "随机斜率方差"
+      },
+      "columns": [
+        "analysis",
+        "interaction",
+        "slope_variance",
+        "groups",
+        "p"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "班级之间的斜率也会不同吗",
+          "groups": 30,
+          "interaction": -0.0035295839457171784,
+          "p": 0.29789010565427315,
+          "slope_variance": 0.0002385822
+        }
+      ],
+      "source_fields": [
+        {
+          "groups": "groups",
+          "interaction": "interaction",
+          "p": "p",
+          "slope_variance": "slope_variance"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "班级之间的斜率也会不同吗",
+  "valid": true,
+  "variances": []
+}

@@ -1,0 +1,5 @@
+source("examples/r/analyses/_common.R")
+d <- read_data("cross_sectional_survey")
+d$gender <- factor(d$gender)
+fit <- lm(well_being ~ stress + social_support + age + gender, data=d)
+emit(c(stress_beta=unname(coef(fit)["stress"]), support_beta=unname(coef(fit)["social_support"]), r_squared=summary(fit)$r.squared))

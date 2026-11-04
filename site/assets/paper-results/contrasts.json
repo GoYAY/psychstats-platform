@@ -1,0 +1,156 @@
+{
+  "case_id": "contrasts",
+  "covariances": [],
+  "design": "固定种子生成三组教学数据。预先设定一个对比：control −(另一组+再另一组)/2，系数 1,-0.5,-0.5；演示该单一对比而非逐组搜索。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/contrasts.R",
+    "script_sha256": "dc4c302e2c6853f9d8eff355e44781bea9eb8becd51d02305916fba1f2b2d68c",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "se",
+        "df",
+        "t",
+        "p"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": -7.471666737449263,
+          "ci_upper": -2.731655995748659,
+          "df": 177,
+          "effect": "计划对比",
+          "estimate": -5.101661366598961,
+          "p": 3.4795524551607305e-05,
+          "se": 1.2009408508764423,
+          "t": -4.248053817867705
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "columns": [
+        "group",
+        "weight"
+      ],
+      "name": "weights",
+      "rows": [
+        {
+          "group": "conditioncombined",
+          "weight": -0.5
+        },
+        {
+          "group": "conditioncontrol",
+          "weight": 1
+        },
+        {
+          "group": "conditionpractice",
+          "weight": -0.5
+        }
+      ],
+      "title": "weights"
+    },
+    {
+      "columns": [
+        "model",
+        "term",
+        "Estimate",
+        "Std. Error",
+        "statistic",
+        "p"
+      ],
+      "name": "console_coefficients",
+      "rows": [
+        {
+          "Estimate": 10.6219,
+          "Std. Error": 0.9806,
+          "model": 1,
+          "p": "< 2e-16",
+          "statistic": 10.832,
+          "term": "conditioncombined"
+        },
+        {
+          "Estimate": 3.3616,
+          "Std. Error": 0.9806,
+          "model": 1,
+          "p": 0.000756,
+          "statistic": 3.428,
+          "term": "conditioncontrol"
+        },
+        {
+          "Estimate": 6.3045,
+          "Std. Error": 0.9806,
+          "model": 1,
+          "p": 1.15e-09,
+          "statistic": 6.429,
+          "term": "conditionpractice"
+        }
+      ],
+      "title": "软件打印的回归系数"
+    },
+    {
+      "column_labels": {
+        "ci_lower": "95% CI 下限",
+        "ci_upper": "95% CI 上限",
+        "df": "df",
+        "difference": "计划对比估计",
+        "p": "单一计划对比 p",
+        "se": "对比标准误",
+        "t": "t"
+      },
+      "columns": [
+        "analysis",
+        "difference",
+        "se",
+        "p",
+        "t",
+        "df",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "研究真正关心的组别差异",
+          "ci_lower": -7.471666737449263,
+          "ci_upper": -2.731655995748659,
+          "df": 177,
+          "difference": -5.101661366598961,
+          "p": 3.4795524551607305e-05,
+          "se": 1.2009408508764423,
+          "t": -4.248053817867705
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "df": "df",
+          "difference": "difference",
+          "p": "p",
+          "se": "se",
+          "t": "t"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "研究真正关心的组别差异",
+  "valid": true,
+  "variances": []
+}

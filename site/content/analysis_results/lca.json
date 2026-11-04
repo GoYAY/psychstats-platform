@@ -1,0 +1,106 @@
+{
+  "case_id": "lca",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] MASS_7.3-65          compiler_4.5.1       scatterplot3d_0.3-45\n[4] poLCA_1.6.0.2        jsonlite_2.0.0      \n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n  k      bic      aic\n1 1 2223.561 2204.720\n2 2 2098.677 2057.225\n3 3 2102.060 2037.998\n4 4 2130.870 2044.198\nConditional item response (column) probabilities,\n by outcome variable, for each class (row) \n \n$q1\n           Pr(1)  Pr(2)\nclass 1:  0.1413 0.8587\nclass 2:  0.7309 0.2691\n\n$q2\n           Pr(1)  Pr(2)\nclass 1:  0.3382 0.6618\nclass 2:  0.7645 0.2355\n\n$q3\n           Pr(1)  Pr(2)\nclass 1:  0.1914 0.8086\nclass 2:  0.7471 0.2529\n\n$q4\n           Pr(1)  Pr(2)\nclass 1:  0.3507 0.6493\nclass 2:  0.8108 0.1892\n\n$q5\n           Pr(1)  Pr(2)\nclass 1:  0.2113 0.7887\nclass 2:  0.7030 0.2970\n\nEstimated class population shares \n 0.4446 0.5554 \n \nPredicted class memberships (by modal posterior prob.) \n 0.45 0.55 \n \n========================================================= \nFit for 2 latent classes: \n========================================================= \nnumber of observations: 320 \nnumber of estimated parameters: 11 \nresidual degrees of freedom: 20 \nmaximum log-likelihood: -1017.612 \n \nAIC(2): 2057.225\nBIC(2): 2098.677\nG^2(2): 42.39851 (Likelihood ratio/deviance statistic) \nX^2(2): 41.06852 (Chi-square goodness of fit) \n \n           item class probability_response_2\nclass 1:     q1     1              0.8587283\nclass 2:     q1     2              0.2690997\nclass 1: 1   q2     1              0.6617754\nclass 2: 1   q2     2              0.2354584\nclass 1: 2   q3     1              0.8086198\nclass 2: 2   q3     2              0.2529462\nclass 1: 3   q4     1              0.6493299\nclass 2: 3   q4     2              0.1891553\nclass 1: 4   q5     1              0.7887062\nclass 2: 4   q5     2              0.2970202\n",
+  "stderr": "",
+  "metrics": {
+    "k": 2,
+    "bic": 2098.6765091479265,
+    "entropy": 0.6324335279593333,
+    "min_proportion": 0.44460240844319726,
+    "mean_posterior": 0.8978286154958717
+  },
+  "warnings": [],
+  "tables": {
+    "candidates": [
+      {
+        "k": 1,
+        "bic": 2223.561206322592,
+        "aic": 2204.7196013436233
+      },
+      {
+        "k": 2,
+        "bic": 2098.6765091479265,
+        "aic": 2057.224978194195
+      },
+      {
+        "k": 3,
+        "bic": 2102.0595655823554,
+        "aic": 2037.9981086538612
+      },
+      {
+        "k": 4,
+        "bic": 2130.869766937442,
+        "aic": 2044.198384034185
+      }
+    ],
+    "conditional_probabilities": [
+      {
+        "item": "q1",
+        "class": 1,
+        "probability_response_2": 0.8587282593546527,
+        "_row": "class 1: "
+      },
+      {
+        "item": "q1",
+        "class": 2,
+        "probability_response_2": 0.26909974037473094,
+        "_row": "class 2: "
+      },
+      {
+        "item": "q2",
+        "class": 1,
+        "probability_response_2": 0.6617754189896812,
+        "_row": "class 1: 1"
+      },
+      {
+        "item": "q2",
+        "class": 2,
+        "probability_response_2": 0.23545844788797027,
+        "_row": "class 2: 1"
+      },
+      {
+        "item": "q3",
+        "class": 1,
+        "probability_response_2": 0.80861978062097,
+        "_row": "class 1: 2"
+      },
+      {
+        "item": "q3",
+        "class": 2,
+        "probability_response_2": 0.25294617793951735,
+        "_row": "class 2: 2"
+      },
+      {
+        "item": "q4",
+        "class": 1,
+        "probability_response_2": 0.6493298750235962,
+        "_row": "class 1: 3"
+      },
+      {
+        "item": "q4",
+        "class": 2,
+        "probability_response_2": 0.189155256139861,
+        "_row": "class 2: 3"
+      },
+      {
+        "item": "q5",
+        "class": 1,
+        "probability_response_2": 0.7887062130091763,
+        "_row": "class 1: 4"
+      },
+      {
+        "item": "q5",
+        "class": 2,
+        "probability_response_2": 0.29702022596029726,
+        "_row": "class 2: 4"
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "177989cdbf3e98220fdcdf053d64c01598d29bf67c2455891120e2889484a661",
+  "config_sha256": "24993b7e1c9295509bd711e4cb4c0a3d9bc1d43e98a689efd63bb751e1099e30",
+  "data_sha256": {}
+}

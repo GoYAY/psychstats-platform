@@ -1,0 +1,70 @@
+{
+  "case_id": "correlation",
+  "covariances": [],
+  "design": "横断教学调查，压力和幸福感在同一人上配对。Pearson 描述线性关联，Spearman 描述秩的单调关联。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/correlation.R",
+    "script_sha256": "44f26dffeff2d089c64f500bd81905fc99bd3506c9b64f13690cce05decb312c",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "variables",
+        "method",
+        "coefficient",
+        "n",
+        "ci_lower",
+        "ci_upper",
+        "p"
+      ],
+      "name": "correlations",
+      "rows": [
+        {
+          "ci_lower": -0.5316812080277982,
+          "ci_upper": -0.36706031287926916,
+          "coefficient": -0.453226703491177,
+          "method": "Pearson r",
+          "n": 360,
+          "p": 1.2274700402383843e-19,
+          "variables": "压力（stress）与幸福感（well_being）"
+        },
+        {
+          "coefficient": -0.4337536367183371,
+          "method": "Spearman ρ",
+          "n": 360,
+          "p": "<2.2e-16",
+          "variables": "压力（stress）与幸福感（well_being）"
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "coefficient": "r",
+          "n": "n",
+          "p": "p"
+        },
+        {
+          "coefficient": "rho",
+          "n": "n"
+        }
+      ],
+      "title": "各变量对与相关方法的结果"
+    }
+  ],
+  "title": "压力与幸福感的关系有多强",
+  "valid": true,
+  "variances": []
+}

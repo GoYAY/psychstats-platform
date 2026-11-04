@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="360pt" height="760pt" viewBox="0 0 360 760" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">显著性水平控制规定条件下长期的一类错误率。。零点零五不是这一次结论有百分之五概率出错。</desc><title id="title">先约定检验的判断规则</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:02:16.684337</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 760  L 360 760  L 360 0  L 0 0  L 0 760  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 88  L 330 88  Q 344 88 344 102  L 344 320  Q 344 334 330 334  L 30 334  Q 16 334 16 320  L 16 102  Q 16 88 30 88  z " clip-path="url(#p80eb09530e)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 38 149  L 322 149  Q 330 149 330 157  L 330 259  Q 330 267 322 267  L 38 267  Q 30 267 30 259  L 30 157  Q 30 149 38 149  z " clip-path="url(#p80eb09530e)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 180 351.000977  Q 180 361.000166 180 369.545912  " clip-path="url(#p80eb09530e)" style="fill: none; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 183 363.545912  L 180 369.545912  L 177 363.545912  z " clip-path="url(#p80eb09530e)" style="fill: #6741ad; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_5">
+    <path d="M 30 388  L 330 388  Q 344 388 344 402  L 344 620  Q 344 634 330 634  L 30 634  Q 16 634 16 620  L 16 402  Q 16 388 30 388  z " clip-path="url(#p80eb09530e)" style="fill: #6741ad; opacity: 0.055" />
+   </g>
+   <g id="truth-to-rule">
+    <path d="M 180 463.996338  Q 180 470.496338 180 475.542893  " clip-path="url(#p80eb09530e)" style="fill: none; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 183 469.542893  L 180 475.542893  L 177 469.542893  z " clip-path="url(#p80eb09530e)" style="fill: #6741ad; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_6">
+    <path d="M 93 484  L 267 484  Q 275 484 275 492  L 275 514  Q 275 522 267 522  L 93 522  Q 85 522 85 514  L 85 492  Q 85 484 93 484  z " clip-path="url(#p80eb09530e)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="rule-to-reject">
+    <path d="M 178.032568 529.37262  Q 140.399133 536.500164 104.193755 543.357243  " clip-path="url(#p80eb09530e)" style="fill: none; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 110.647213 545.188329  L 104.193755 543.357243  L 109.530698 539.293128  z " clip-path="url(#p80eb09530e)" style="fill: #6741ad; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_7">
+    <path d="M 60.8 548  L 140.8 548  Q 148.8 548 148.8 556  L 148.8 574  Q 148.8 582 140.8 582  L 60.8 582  Q 52.8 582 52.8 574  L 52.8 556  Q 52.8 548 60.8 548  z " clip-path="url(#p80eb09530e)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="rule-to-retain">
+    <path d="M 181.967432 529.37262  Q 219.600867 536.500164 255.806245 543.357243  " clip-path="url(#p80eb09530e)" style="fill: none; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 250.469302 539.293128  L 255.806245 543.357243  L 249.352787 545.188329  z " clip-path="url(#p80eb09530e)" style="fill: #6741ad; opacity: 0.7; stroke: #6741ad; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_8">
+    <path d="M 219.2 548  L 299.2 548  Q 307.2 548 307.2 556  L 307.2 574  Q 307.2 582 299.2 582  L 219.2 582  Q 211.2 582 211.2 574  L 211.2 556  Q 211.2 548 219.2 548  z " clip-path="url(#p80eb09530e)" style="fill: #6741ad; opacity: 0.1; stroke: #6741ad; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 89  L 328 89  " clip-path="url(#p80eb09530e)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 389  L 328 389  " clip-path="url(#p80eb09530e)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="20" y="33.680156" transform="rotate(-0 20 33.680156)">先约定检验的判断规则</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="20" y="61.53918" transform="rotate(-0 20 61.53918)">概念示意 · 图形不对应实际人数或结果</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="30" y="117.08748" transform="rotate(-0 30 117.08748)">研究前：把判断规则写入方案</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="48" y="181.074355" transform="rotate(-0 48 181.074355)">检验问题与方法</text>
+   </g>
+   <g id="alpha-rule">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="48" y="227.053574" transform="rotate(-0 48 227.053574)">显著性水平 α = 0.05</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="200" y="364.492305" transform="rotate(-0 200 364.492305)">固定规则</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6741ad" x="30" y="417.080918" transform="rotate(-0 30 417.080918)">同一预设规则作用于每一次研究</text>
+   </g>
+   <g id="null-is-true">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="180" y="450.834111" transform="rotate(-0 180 450.834111)">条件：零假设成立</text>
+   </g>
+   <g id="fixed-alpha-rule">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="180" y="506.701064" transform="rotate(-0 180 506.701064)">同一规则：α = 0.05</text>
+   </g>
+   <g id="alpha-reject">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="100.8" y="568.789424" transform="rotate(-0 100.8 568.789424)">拒绝</text>
+   </g>
+   <g id="alpha-false-rejection">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #ae3f53" x="100.8" y="602.49793" transform="rotate(-0 100.8 602.49793)">第一类错误</text>
+   </g>
+   <g id="alpha-retain">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202a38" x="259.2" y="568.789424" transform="rotate(-0 259.2 568.789424)">不拒绝</text>
+   </g>
+   <g id="alpha-correct-retention">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #187b55" x="259.2" y="602.503555" transform="rotate(-0 259.2 602.503555)">正确不拒绝</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(20 691.677002)">显著性水平控制条件满足时长期错误拒绝的比率；</text>
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #202a38" transform="translate(20 705.940439)">分支不表示实际频率比例。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p80eb09530e">
+   <rect x="0" y="0" width="360" height="760" />
+  </clipPath>
+ </defs>
+</svg>

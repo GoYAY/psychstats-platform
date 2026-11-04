@@ -1,0 +1,48 @@
+{
+  "case_id": "describe",
+  "covariances": [],
+  "design": "固定生成的横断调查教学数据。一行一名参与者，压力为教学量尺分数；描述此样本，不能据此断言整个学生群体的水平。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/describe.R",
+    "script_sha256": "ae0ea0e6b250355ec8cbf6c534a0443c562945d3885365202fd456e2f6eb5d60",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "variable",
+        "n",
+        "mean",
+        "sd",
+        "median",
+        "iqr"
+      ],
+      "name": "descriptives",
+      "rows": [
+        {
+          "iqr": 10.525000000000006,
+          "mean": 48.61055555555556,
+          "median": 49,
+          "n": 360,
+          "sd": 8.064544619092855,
+          "variable": "压力分数（stress）"
+        }
+      ],
+      "title": "研究变量的描述统计"
+    }
+  ],
+  "title": "先读懂一份问卷的分数分布",
+  "valid": true,
+  "variances": []
+}

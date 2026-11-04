@@ -1,0 +1,344 @@
+{
+  "case_id": "feedback",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 parallel_4.5.1 lavaan_0.6-21  mnormt_2.1.2   pbivnorm_0.6.0\n[6] jsonlite_2.0.0 stats4_4.5.1   quadprog_1.5-8\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\nLength  Class   Mode \n     1 lavaan     S4 \n",
+  "stderr": "",
+  "metrics": {
+    "a": 0.22000204609884358,
+    "b": 0.20400330220256657,
+    "feedback_product": 0.04488114389548537,
+    "df": 0
+  },
+  "warnings": [],
+  "tables": {
+    "parameters": [
+      {
+        "lhs": "y1",
+        "op": "~",
+        "rhs": "y2",
+        "label": "a",
+        "est": 0.22000204609884358,
+        "se": 0.048186580559387515,
+        "z": 4.565628927076538,
+        "pvalue": 4.979990110953736e-06,
+        "ci.lower": 0.12555808366430615,
+        "ci.upper": 0.314446008533381,
+        "std.lv": 0.22000204609884358,
+        "std.all": 0.21893519260225525
+      },
+      {
+        "lhs": "y1",
+        "op": "~",
+        "rhs": "x",
+        "label": "c",
+        "est": 0.7233354975985306,
+        "se": 0.04133033821304521,
+        "z": 17.50132055222868,
+        "pvalue": 0,
+        "ci.lower": 0.6423295232321025,
+        "ci.upper": 0.8043414719649586,
+        "std.lv": 0.7233354975985306,
+        "std.all": 0.5553942455199686
+      },
+      {
+        "lhs": "y2",
+        "op": "~",
+        "rhs": "y1",
+        "label": "b",
+        "est": 0.20400330220256657,
+        "se": 0.04983336038217547,
+        "z": 4.093709527875528,
+        "pvalue": 4.245260906921011e-05,
+        "ci.lower": 0.10633171062489749,
+        "ci.upper": 0.30167489378023565,
+        "std.lv": 0.20400330220256657,
+        "std.all": 0.2049973938042113
+      },
+      {
+        "lhs": "y2",
+        "op": "~",
+        "rhs": "z",
+        "label": "d",
+        "est": 0.7953586731213376,
+        "se": 0.038804688328431834,
+        "z": 20.49645822148211,
+        "pvalue": 0,
+        "ci.lower": 0.7193028815663094,
+        "ci.upper": 0.8714144646763657,
+        "std.lv": 0.7953586731213376,
+        "std.all": 0.6184273404546964
+      },
+      {
+        "lhs": "y1",
+        "op": "~~",
+        "rhs": "y2",
+        "label": "",
+        "est": -0.0802584868422992,
+        "se": 0.07419391685980754,
+        "z": -1.0817394503372955,
+        "pvalue": 0.2793683182794915,
+        "ci.lower": -0.22567589175948105,
+        "ci.upper": 0.06515891807488265,
+        "std.lv": -0.0802584868422992,
+        "std.all": -0.08943823101661416
+      },
+      {
+        "lhs": "y1",
+        "op": "~~",
+        "rhs": "y1",
+        "label": "",
+        "est": 0.9615012763653283,
+        "se": 0.05673055563840259,
+        "z": 16.948560886550876,
+        "pvalue": 0,
+        "ci.lower": 0.8503114304911136,
+        "ci.upper": 1.072691122239543,
+        "std.lv": 0.9615012763653283,
+        "std.all": 0.5779274249818931
+      },
+      {
+        "lhs": "y2",
+        "op": "~~",
+        "rhs": "y2",
+        "label": "",
+        "est": 0.8375016441318673,
+        "se": 0.04955593041052062,
+        "z": 16.9001295545057,
+        "pvalue": 0,
+        "ci.lower": 0.7403738053068737,
+        "ci.upper": 0.934629482956861,
+        "std.lv": 0.8375016441318673,
+        "std.all": 0.5083132048972467
+      },
+      {
+        "lhs": "x",
+        "op": "~~",
+        "rhs": "x",
+        "label": "",
+        "est": 0.980843583471528,
+        "se": 0.05662903069502035,
+        "z": 17.320508075688785,
+        "pvalue": 0,
+        "ci.lower": 0.8698527228298749,
+        "ci.upper": 1.091834444113181,
+        "std.lv": 0.980843583471528,
+        "std.all": 1
+      },
+      {
+        "lhs": "x",
+        "op": "~~",
+        "rhs": "z",
+        "label": "",
+        "est": 0.028860618684816087,
+        "se": 0.0403703109746363,
+        "z": 0.7148971109721826,
+        "pvalue": 0.4746726223247777,
+        "ci.lower": -0.05026373687015313,
+        "ci.upper": 0.1079849742397853,
+        "std.lv": 0.028860618684816087,
+        "std.all": 0.02919799036291964
+      },
+      {
+        "lhs": "z",
+        "op": "~~",
+        "rhs": "z",
+        "label": "",
+        "est": 0.9961060928231034,
+        "se": 0.057510212083284405,
+        "z": 17.320508075688803,
+        "pvalue": 0,
+        "ci.lower": 0.8833881483966057,
+        "ci.upper": 1.108824037249601,
+        "std.lv": 0.9961060928231034,
+        "std.all": 1
+      }
+    ],
+    "fit": [
+      {
+        "index": "npar",
+        "value": 10
+      },
+      {
+        "index": "fmin",
+        "value": 0
+      },
+      {
+        "index": "chisq",
+        "value": 0
+      },
+      {
+        "index": "df",
+        "value": 0
+      },
+      {
+        "index": "pvalue"
+      },
+      {
+        "index": "baseline.chisq",
+        "value": 684.6941082432004
+      },
+      {
+        "index": "baseline.df",
+        "value": 5
+      },
+      {
+        "index": "baseline.pvalue",
+        "value": 0
+      },
+      {
+        "index": "cfi",
+        "value": 1
+      },
+      {
+        "index": "tli",
+        "value": 1
+      },
+      {
+        "index": "nnfi",
+        "value": 1
+      },
+      {
+        "index": "rfi",
+        "value": 1
+      },
+      {
+        "index": "nfi",
+        "value": 1
+      },
+      {
+        "index": "pnfi",
+        "value": 0
+      },
+      {
+        "index": "ifi",
+        "value": 1
+      },
+      {
+        "index": "rni",
+        "value": 1
+      },
+      {
+        "index": "logl",
+        "value": -3358.3883282984116
+      },
+      {
+        "index": "unrestricted.logl",
+        "value": -3358.3883282984116
+      },
+      {
+        "index": "aic",
+        "value": 6736.776656596823
+      },
+      {
+        "index": "bic",
+        "value": 6780.745953148985
+      },
+      {
+        "index": "ntotal",
+        "value": 600
+      },
+      {
+        "index": "bic2",
+        "value": 6748.9986927464315
+      },
+      {
+        "index": "rmsea",
+        "value": 0
+      },
+      {
+        "index": "rmsea.ci.lower",
+        "value": 0
+      },
+      {
+        "index": "rmsea.ci.upper",
+        "value": 0
+      },
+      {
+        "index": "rmsea.ci.level",
+        "value": 0.9
+      },
+      {
+        "index": "rmsea.pvalue"
+      },
+      {
+        "index": "rmsea.close.h0",
+        "value": 0.05
+      },
+      {
+        "index": "rmsea.notclose.pvalue"
+      },
+      {
+        "index": "rmsea.notclose.h0",
+        "value": 0.08
+      },
+      {
+        "index": "rmr",
+        "value": 1.7648882308667375e-09
+      },
+      {
+        "index": "rmr_nomean",
+        "value": 1.7648882308667375e-09
+      },
+      {
+        "index": "srmr",
+        "value": 1.1764597136171258e-09
+      },
+      {
+        "index": "srmr_bentler",
+        "value": 1.1764597136171258e-09
+      },
+      {
+        "index": "srmr_bentler_nomean",
+        "value": 1.1764597136171258e-09
+      },
+      {
+        "index": "crmr",
+        "value": 1.4992390116874917e-09
+      },
+      {
+        "index": "crmr_nomean",
+        "value": 1.4992390116874917e-09
+      },
+      {
+        "index": "srmr_mplus",
+        "value": 1.3667325663420127e-09
+      },
+      {
+        "index": "srmr_mplus_nomean",
+        "value": 1.3667325663420127e-09
+      },
+      {
+        "index": "cn_05"
+      },
+      {
+        "index": "cn_01"
+      },
+      {
+        "index": "gfi",
+        "value": 1
+      },
+      {
+        "index": "agfi",
+        "value": 1
+      },
+      {
+        "index": "pgfi",
+        "value": 0
+      },
+      {
+        "index": "mfi",
+        "value": 1
+      },
+      {
+        "index": "ecvi",
+        "value": 0.03333333333333333
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "71b04e2fcdaa814f6ec86b714f08e54fef54f4dc74cd18474f6f8dca36bcdd4f",
+  "config_sha256": "a2240dcd43f9d21d80d5fde791a2e5435562624becbbbfbb3c1ace6ad71fa5bc",
+  "data_sha256": {}
+}

@@ -1,0 +1,21 @@
+Runtime third-party distribution records — 2026-10-25
+
+python-runtime/inventory.json records the exact locked runtime versions and
+SHA-256 of complete license files copied from installed wheels. It additionally
+contains the license files from downloaded Ubuntu-compatible CPython 3.12 Linux
+wheels, including native PDFium and other bundled third-party notices.
+
+The new online runtime lock does not depend on PyMuPDF. Historical offline OCR
+tools and earlier immutable releases are outside this runtime migration.
+No historical license obligations are represented as retroactively removed.
+
+Project-maintained nature-figure QA tools retain their Apache-2.0 LICENSE and
+SOURCE-NOTICE alongside the scripts. Modified geometry and overlay adapters are
+identified there. Do not replace these with the author's installed skill copy.
+
+Production uses an operator-provided, licensed CJK font. This release does not
+redistribute the local Windows font used for testing. The target operator must
+verify the selected Noto CJK font package and retain its applicable notice.
+
+License inventory and wheel resolution are technical distribution records,
+not a legal opinion or proof of successful execution on the Linux host.

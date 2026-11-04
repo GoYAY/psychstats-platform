@@ -1,0 +1,86 @@
+{
+  "case_id": "intervals-variance",
+  "covariances": [],
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。χ² 方差区间强依赖正态，不用于偏态等待时间；对 SD 的不确定性不是对均值的不确定性。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/intervals-variance.R",
+    "script_sha256": "59cf8cc756a5063e0eaa95d90ddc46478f78d12eef1a06d7ba96de8db52e7f53",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "n"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": 57.08538468774462,
+          "ci_upper": 111.79815092810034,
+          "effect": "总体方差估计",
+          "estimate": 77.64975023325499,
+          "n": 70
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "column_labels": {
+        "ci_lower": "95% CI 下限",
+        "ci_upper": "95% CI 上限",
+        "n": "n",
+        "sd_lower": "SD 区间下界",
+        "sd_upper": "sd_upper",
+        "variance": "样本方差"
+      },
+      "columns": [
+        "analysis",
+        "variance",
+        "sd_lower",
+        "ci_lower",
+        "ci_upper",
+        "sd_upper",
+        "n"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "分数波动的区间如何读",
+          "ci_lower": 57.08538468774462,
+          "ci_upper": 111.79815092810034,
+          "n": 70,
+          "sd_lower": 7.555487058273915,
+          "sd_upper": 10.573464471406727,
+          "variance": 77.64975023325499
+        }
+      ],
+      "source_fields": [
+        {
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "n": "n",
+          "sd_lower": "sd_lower",
+          "sd_upper": "sd_upper",
+          "variance": "variance"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "分数波动的区间如何读",
+  "valid": true,
+  "variances": []
+}

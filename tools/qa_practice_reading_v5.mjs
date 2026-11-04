@@ -1,0 +1,42 @@
+import {writeFile} from 'node:fs/promises';
+import {pathToFileURL} from 'node:url';
+const port=Number(process.argv[2]||9261),root=process.argv[3],width=Number(process.argv[4]||1280),height=Number(process.argv[5]||900);
+const targets=await(await fetch(`http://127.0.0.1:${port}/json`)).json();
+const ws=new WebSocket(targets.find(p=>p.type==='page').webSocketDebuggerUrl);
+await new Promise(r=>ws.onopen=r);let seq=0;const pending=new Map(),errors=[];
+ws.onmessage=e=>{const m=JSON.parse(e.data);if(m.method==='Runtime.exceptionThrown')errors.push(m.params.exceptionDetails.text);const p=pending.get(m.id);if(p){pending.delete(m.id);m.error?p.reject(m.error):p.resolve(m.result)}};
+const send=(method,params={})=>new Promise((resolve,reject)=>{pending.set(++seq,{resolve,reject});ws.send(JSON.stringify({id:seq,method,params}))});
+const evaluate=async expression=>{const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(r.exceptionDetails.exception?.description||r.exceptionDetails.text);return r.result.value};
+const check=(v,m)=>{if(!v)throw Error(m)};
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+async function open(path){const url=pathToFileURL(root+'/'+path).href;await send('Page.navigate',{url});for(let i=0;i<40;i++){await wait(60);if(await evaluate(`location.href===${JSON.stringify(url)}&&document.readyState==='complete'`))return}throw Error('load timeout')}
+try{
+ await send('Page.enable');await send('Runtime.enable');await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:width<600});
+ await open('terms/degrees-of-freedom.html');
+ check(await evaluate(`[...document.querySelectorAll('.breadcrumb a')].every(a=>getComputedStyle(a).textDecorationLine==='none'&&getComputedStyle(a).clipPath!=='none')`),'breadcrumb must be filled chevrons without underline');
+ check(await evaluate(`[...document.querySelectorAll('.sequence-link')].every(a=>!a.textContent.includes('上一术语')&&!a.textContent.includes('下一术语')&&!!a.getAttribute('aria-label')&&getComputedStyle(a).boxShadow!=='none')`),'sequence cards need compact labels and accessible directions');
+ const sidebar=await evaluate(`(()=>{const s=document.querySelector('.knowledge-sidebar'),a=document.querySelector('.term-content'),b=s.getBoundingClientRect();const widths=[...s.querySelectorAll('li a')].map(e=>e.getBoundingClientRect().width);return{width:b.width,longest:Math.max(...widths),article:a.getBoundingClientRect().width}})()`);
+ if(width>=1200)check(sidebar.width-sidebar.longest<=60&&sidebar.article>=650,'knowledge sidebar must fit its longest line, not a broad fixed column');
+ const shot=await send('Page.captureScreenshot',{format:'png'});await writeFile(`logs/reading-v5-term-${width}.png`,Buffer.from(shot.data,'base64'));
+ await open('practice.html');
+ check(await evaluate(`!document.querySelector('.practice-reading h2')&&!!document.querySelector('.practice-reading-placeholder')`),'answer must not be revealed before first choice');
+ await evaluate(`(()=>{const q=window.PsychPracticeData[0];document.querySelector('[data-choice="'+((q.answer+1)%q.options.length)+'"]').click()})()`);
+ check(await evaluate(`document.querySelector('.practice-reading h2').textContent===window.PsychSiteData.search.find(t=>t.id===window.PsychPracticeData[0].term_id).zh&&document.querySelector('.explain').textContent.includes('回答错误')`),'wrong answer still opens correct term explanation');
+ const score=await evaluate(`document.querySelector('.practice-score').textContent`);
+ await evaluate(`document.querySelector('[data-choice="'+window.PsychPracticeData[0].answer+'"]').click()`);
+ check(await evaluate(`document.querySelector('.practice-score').textContent===${JSON.stringify(score)}&&document.querySelector('.explain').textContent.includes('回答正确')&&[...document.querySelectorAll('[data-choice]')].every(b=>!b.disabled&&b.getAttribute('aria-expanded')==='true')`),'switching options must change explanation without changing score or locking choices');
+ const practice=await evaluate(`(()=>{const q=document.querySelector('.practice-question').getBoundingClientRect(),r=document.querySelector('.practice-reading').getBoundingClientRect();return{q:{x:q.x,right:q.right,y:q.y,bottom:q.bottom},r:{x:r.x,y:r.y},questionSize:parseFloat(getComputedStyle(document.querySelector('.practice-question h2')).fontSize),optionSize:parseFloat(getComputedStyle(document.querySelector('[data-choice]')).fontSize),scroll:document.documentElement.scrollWidth}})()`);
+ check(practice.questionSize>=27&&practice.optionSize>=18&&practice.scroll<=width,'practice typography and overflow');
+ check(width>800?practice.r.x>practice.q.right:practice.r.y>=practice.q.bottom,'practice must be side by side on desktop, stacked on mobile');
+ const pic=await send('Page.captureScreenshot',{format:'png'});await writeFile(`logs/reading-v5-practice-${width}.png`,Buffer.from(pic.data,'base64'));
+ await evaluate(`document.querySelector('[data-next-question]').click()`);
+ check(await evaluate(`!!document.querySelector('.practice-reading-placeholder')&&!document.querySelector('.practice-reading h2')&&document.activeElement===document.querySelector('.practice-question h2')`),'next question clears reading and gives keyboard focus to question');
+ await evaluate(`document.querySelector('[data-choice]').focus()`);
+ await send('Input.dispatchKeyEvent',{type:'keyDown',key:'Enter',code:'Enter',windowsVirtualKeyCode:13,text:'\r'});
+ await send('Input.dispatchKeyEvent',{type:'keyUp',key:'Enter',code:'Enter',windowsVirtualKeyCode:13});
+ check(await evaluate(`document.querySelector('[data-choice]').getAttribute('aria-pressed')==='true'&&!!document.querySelector('.practice-reading h2')`),'native keyboard Enter must select and reveal reading');
+ await evaluate(`(()=>{const longest=window.PsychPracticeData.reduce((a,b)=>a.question.length+a.options.join('').length>b.question.length+b.options.join('').length?a:b);window.PsychPracticeData=[longest];window.PsychPractice.init(document.querySelector('#practice-app'));document.querySelector('[data-choice]').click();document.querySelector('[data-next-question]').scrollIntoView({block:'center',behavior:'instant'})})()`);
+ check(await evaluate(`(()=>{const b=document.querySelector('[data-next-question]').getBoundingClientRect(),h=document.querySelector('.site-head').getBoundingClientRect();return b.top>=h.bottom&&b.bottom<=innerHeight})()`),'long question next control must be reachable in short viewport');
+ check(errors.length===0,'runtime exceptions '+errors.join(','));
+ await writeFile(`logs/reading-v5-${width}-${height}.json`,JSON.stringify({passed:true,width,height,sidebar,practice},null,2));console.log(JSON.stringify({passed:true,width,height,sidebar,practice}));
+}finally{ws.close()}

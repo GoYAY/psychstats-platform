@@ -1,0 +1,196 @@
+{
+  "case_id": "diagnostics",
+  "covariances": [],
+  "design": "复用横断教学数据，线性模型先保持所有样本。显示 Cook 距离、HC3 协方差与删除最大影响记录的敏感性比较；后者不替代主要结果。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {
+      "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+    },
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/diagnostics.R",
+    "script_sha256": "7bb89e2cd6f30a7112dd5fcd595e45445b69cb7f2731c426ecf1d545c14a7c95",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "effect",
+        "estimate",
+        "ci_lower",
+        "ci_upper",
+        "se"
+      ],
+      "name": "effect_summary",
+      "rows": [
+        {
+          "ci_lower": -0.4648144655107431,
+          "ci_upper": -0.2723522079761612,
+          "effect": "压力系数（HC3 区间）",
+          "estimate": -0.3685833367434522,
+          "se": 0.049098416872121034
+        }
+      ],
+      "title": "主要效应及区间"
+    },
+    {
+      "columns": [
+        "row",
+        "cook"
+      ],
+      "name": "influential",
+      "rows": [
+        {
+          "cook": 0.03973014753379695,
+          "row": 351
+        },
+        {
+          "cook": 0.02744568147177479,
+          "row": 289
+        },
+        {
+          "cook": 0.0235687692731925,
+          "row": 334
+        },
+        {
+          "cook": 0.02301793013145225,
+          "row": 51
+        },
+        {
+          "cook": 0.019016426012300885,
+          "row": 245
+        }
+      ],
+      "title": "influential"
+    },
+    {
+      "columns": [
+        "model",
+        "term",
+        "Estimate",
+        "Std. Error",
+        "statistic",
+        "p"
+      ],
+      "name": "console_coefficients",
+      "rows": [
+        {
+          "Estimate": 49.9895,
+          "Std. Error": 3.90425,
+          "model": 1,
+          "p": "< 2e-16",
+          "statistic": 12.804,
+          "term": "(Intercept)"
+        },
+        {
+          "Estimate": -0.36858,
+          "Std. Error": 0.04937,
+          "model": 1,
+          "p": 6.42e-13,
+          "statistic": -7.466,
+          "term": "stress"
+        },
+        {
+          "Estimate": 0.31337,
+          "Std. Error": 0.04379,
+          "model": 1,
+          "p": 4.79e-12,
+          "statistic": 7.155,
+          "term": "social_support"
+        },
+        {
+          "Estimate": 0.01451,
+          "Std. Error": 0.03123,
+          "model": 1,
+          "p": 0.643,
+          "statistic": 0.464,
+          "term": "age"
+        },
+        {
+          "Estimate": 50.30735,
+          "Std. Error": 3.87414,
+          "model": 2,
+          "p": "< 2e-16",
+          "statistic": 12.985,
+          "term": "(Intercept)"
+        },
+        {
+          "Estimate": -0.36163,
+          "Std. Error": 0.04903,
+          "model": 2,
+          "p": 1.17e-12,
+          "statistic": -7.375,
+          "term": "stress"
+        },
+        {
+          "Estimate": 0.30199,
+          "Std. Error": 0.04365,
+          "model": 2,
+          "p": 2.14e-11,
+          "statistic": 6.918,
+          "term": "social_support"
+        },
+        {
+          "Estimate": 0.01066,
+          "Std. Error": 0.03101,
+          "model": 2,
+          "p": 0.731,
+          "statistic": 0.344,
+          "term": "age"
+        }
+      ],
+      "title": "软件打印的回归系数"
+    },
+    {
+      "column_labels": {
+        "beta": "beta",
+        "ci_lower": "95% CI 下限",
+        "ci_upper": "95% CI 上限",
+        "hc3_se": "HC3 标准误",
+        "max_cook": "最大 Cook 距离",
+        "sensitivity_beta": "删最大影响记录后的系数"
+      },
+      "columns": [
+        "analysis",
+        "max_cook",
+        "hc3_se",
+        "sensitivity_beta",
+        "beta",
+        "ci_lower",
+        "ci_upper"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "异常记录和稳健标准误怎么判断",
+          "beta": -0.3685833367434522,
+          "ci_lower": -0.4648144655107431,
+          "ci_upper": -0.2723522079761612,
+          "hc3_se": 0.049098416872121034,
+          "max_cook": 0.03973014753379695,
+          "sensitivity_beta": -0.36163356133980956
+        }
+      ],
+      "source_fields": [
+        {
+          "beta": "beta",
+          "ci_lower": "ci_lower",
+          "ci_upper": "ci_upper",
+          "hc3_se": "hc3_se",
+          "max_cook": "max_cook",
+          "sensitivity_beta": "sensitivity_beta"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "异常记录和稳健标准误怎么判断",
+  "valid": true,
+  "variances": []
+}

@@ -1,0 +1,60 @@
+{
+  "id": "sampling",
+  "unit_id": "sampling",
+  "title": "不同年级抽样比例不同怎么办",
+  "question": "高年级招得少，直接平均会不会代表错了学校的学生？",
+  "design": "模拟两个年级总体，各自简单随机不放回抽样。年级总体规模已知，按分层权重估计均值；显式加入有限总体修正。",
+  "variables": "教学数据由下方代码固定种子生成，非真实参与者资料；参数设定可在代码中查看。",
+  "script": "examples/r/output_reading/sampling.R",
+  "data_files": [],
+  "output_blocks": [
+    "metrics",
+    "tables",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "mean",
+      "label": "分层加权均值",
+      "meaning": "按年级总体人数比例 80%/20% 合并年级样本均值，而不是样本人数比例。",
+      "term": "population-and-sample",
+      "format": ".3f"
+    },
+    {
+      "field_id": "se",
+      "label": "设计标准误",
+      "meaning": "同时考虑分层内方差、抽样人数和抽样比例，不是把权重当重复次数的普通标准误。",
+      "term": "standard-error",
+      "format": ".3f"
+    },
+    {
+      "field_id": "naive_mean",
+      "label": "未加权均值",
+      "meaning": "两年级各招 50 人时相当于给予相同权重，不代表设定的学校总体。",
+      "term": "central-tendency-and-dispersion",
+      "format": ".3f"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "这些结果最容易误读的地方",
+      "body": "这不是便利抽样的万能修正；整班抽样还需要处理班级聚类，不能套用本分层独立样本标准误。"
+    },
+    {
+      "title": "如果没有发现明确证据",
+      "body": "先回到研究问题和估计精度，结合区间、有效样本、数据质量及模型条件判断。证据不足不等于没有作用；不反复更换方法、删样本或放宽阈值来追求显著。"
+    }
+  ],
+  "report_template": "在已知年级规模、年级内随机抽样的教学设计下，加权睡眠均值为 {mean:.3f} 小时，设计 SE = {se:.3f}，正态近似 95% CI [{ci_lower:.3f}, {ci_upper:.3f}]。未加权均值为 {naive_mean:.3f} 小时，针对的是不同年级构成。",
+  "sources": [
+    {
+      "title": "R 官方 weighted.mean 文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/weighted.mean.html"
+    }
+  ],
+  "related_terms": [
+    "population-and-sample",
+    "standard-error",
+    "central-tendency-and-dispersion"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "case_id": "mixed-design",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\nError: id\n          Df Sum Sq Mean Sq F value Pr(>F)  \ngroup      1    604   603.8   4.987 0.0287 *\nResiduals 70   8475   121.1                 \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nError: id:time\n            Df Sum Sq Mean Sq F value   Pr(>F)    \ntime         2   1516   758.1   14.96 1.29e-06 ***\ngroup:time   2    360   179.9    3.55   0.0314 *  \nResiduals  140   7094    50.7                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\tMauchly's test of sphericity\n\tContrasts orthogonal to\n\t~1\n\n\ndata:  SSD matrix from lm(formula = wide ~ group)\nW = 0.82852, p-value = 0.001519\n\n      effect         F df1 df2  epsilon reference_df1 reference_df2\n1      group  4.987057   1  70 1.000000      1.000000       70.0000\n2       time 14.961556   2 140 0.853621      1.707242      119.5069\n3 group:time  3.549568   2 140 0.853621      1.707242      119.5069\n   p_reference\n1 2.873648e-02\n2 5.938816e-06\n3 3.868127e-02\n                            comparison difference       df  ci_lower ci_upper\n1 practice minus control: followup-pre   2.623494 68.33492 -2.215706 7.462694\n          p\n1 0.2831817\n",
+  "stderr": "",
+  "metrics": {
+    "people": 72,
+    "observations": 216,
+    "group_F": 4.987057487906622,
+    "group_p": 0.02873647945751435,
+    "interaction_F": 3.5495681295560364,
+    "interaction_gg_p": 0.03868126915577581,
+    "gg_epsilon": 0.8536209726089989,
+    "interaction_df1": 1.7072419452179979,
+    "interaction_df2": 119.50693616525984,
+    "change_difference": 2.6234936682145307,
+    "change_ci_lower": -2.2157064079028337,
+    "change_ci_upper": 7.4626937443318955
+  },
+  "warnings": [],
+  "tables": {
+    "mixed_effects": [
+      {
+        "effect": "group",
+        "F": 4.987057487906622,
+        "df1": 1,
+        "df2": 70,
+        "epsilon": 1,
+        "reference_df1": 1,
+        "reference_df2": 70,
+        "p_reference": 0.02873647945751435
+      },
+      {
+        "effect": "time",
+        "F": 14.961556047446106,
+        "df1": 2,
+        "df2": 140,
+        "epsilon": 0.8536209726089989,
+        "reference_df1": 1.7072419452179979,
+        "reference_df2": 119.50693616525984,
+        "p_reference": 5.938815694023663e-06
+      },
+      {
+        "effect": "group:time",
+        "F": 3.5495681295560364,
+        "df1": 2,
+        "df2": 140,
+        "epsilon": 0.8536209726089989,
+        "reference_df1": 1.7072419452179979,
+        "reference_df2": 119.50693616525984,
+        "p_reference": 0.03868126915577581
+      }
+    ],
+    "change_comparison": [
+      {
+        "comparison": "practice minus control: followup-pre",
+        "difference": 2.6234936682145307,
+        "df": 68.33491961071172,
+        "ci_lower": -2.2157064079028337,
+        "ci_upper": 7.4626937443318955,
+        "p": 0.2831817300289463
+      }
+    ]
+  },
+  "figures": [],
+  "script_sha256": "ef30efe87d786704185531daa466e3867a508c452ebaf04c68d415dad6a59e13",
+  "config_sha256": "254aab7bf3c974d2a225fde8134a03d561181bd82305e48e93aa3a52e0179fb0",
+  "data_sha256": {}
+}

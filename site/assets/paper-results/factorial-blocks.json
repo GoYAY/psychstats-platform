@@ -1,0 +1,149 @@
+{
+  "case_id": "factorial-blocks",
+  "covariances": [],
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。交互存在时总体主效应可能掩盖条件差异；不平衡设计的顺序平方和受项顺序影响，本例不推广为任意 Type III 检验。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/factorial-blocks.R",
+    "script_sha256": "a5842df3abc47a10fdf6556a07e2d8ec45295bbaef6199f0a79871d0005d3db8",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "term",
+        "Df",
+        "Sum.Sq",
+        "Mean.Sq",
+        "F.value",
+        "Pr..F."
+      ],
+      "name": "factorial",
+      "rows": [
+        {
+          "Df": 1,
+          "F.value": 11.007872277202734,
+          "Mean.Sq": 642.1134237465438,
+          "Pr..F.": 0.001129038777901544,
+          "Sum.Sq": 642.1134237465438,
+          "_row": "training         ",
+          "term": "training         "
+        },
+        {
+          "Df": 1,
+          "F.value": 17.80799308512545,
+          "Mean.Sq": 1038.7794409302887,
+          "Pr..F.": 4.1328591641612284e-05,
+          "Sum.Sq": 1038.7794409302887,
+          "_row": "feedback         ",
+          "term": "feedback         "
+        },
+        {
+          "Df": 1,
+          "F.value": 9.253002139759763,
+          "Mean.Sq": 539.7479852850415,
+          "Pr..F.": 0.002759021144210384,
+          "Sum.Sq": 539.7479852850415,
+          "_row": "training:feedback",
+          "term": "training:feedback"
+        },
+        {
+          "Df": 156,
+          "Mean.Sq": 58.332201498772704,
+          "Sum.Sq": 9099.823433808542,
+          "_row": "Residuals        ",
+          "term": "Residuals        "
+        }
+      ],
+      "title": "factorial"
+    },
+    {
+      "columns": [
+        "term",
+        "Df",
+        "Sum.Sq",
+        "Mean.Sq",
+        "F.value",
+        "Pr..F."
+      ],
+      "name": "blocked",
+      "rows": [
+        {
+          "Df": 7,
+          "F.value": 23.24337559518768,
+          "Mean.Sq": 21.776621102728097,
+          "Pr..F.": 1.108089076810112e-06,
+          "Sum.Sq": 152.4363477190967,
+          "_row": "block      ",
+          "term": "block      "
+        },
+        {
+          "Df": 2,
+          "F.value": 58.86205837931299,
+          "Mean.Sq": 55.14761560357646,
+          "Pr..F.": 1.5319309248697918e-07,
+          "Sum.Sq": 110.29523120715292,
+          "_row": "condition  ",
+          "term": "condition  "
+        },
+        {
+          "Df": 14,
+          "Mean.Sq": 0.9368958055832793,
+          "Sum.Sq": 13.116541278165911,
+          "_row": "Residuals  ",
+          "term": "Residuals  "
+        }
+      ],
+      "title": "blocked"
+    },
+    {
+      "column_labels": {
+        "block_p": "区组调整的条件 p",
+        "df1": "df1",
+        "df2": "df2",
+        "interaction_F": "训练×反馈 F",
+        "interaction_p": "interaction_p"
+      },
+      "columns": [
+        "analysis",
+        "interaction_F",
+        "block_p",
+        "df1",
+        "df2",
+        "interaction_p"
+      ],
+      "name": "metrics",
+      "rows": [
+        {
+          "analysis": "主效应、交互与区组比较",
+          "block_p": 1.5319309248697918e-07,
+          "df1": 1,
+          "df2": 156,
+          "interaction_F": 9.253002139759763,
+          "interaction_p": 0.002759021144210384
+        }
+      ],
+      "source_fields": [
+        {
+          "block_p": "block_p",
+          "df1": "df1",
+          "df2": "df2",
+          "interaction_F": "interaction_F",
+          "interaction_p": "interaction_p"
+        }
+      ],
+      "title": "本次分析的统计指标汇总"
+    }
+  ],
+  "title": "主效应、交互与区组比较",
+  "valid": true,
+  "variances": []
+}

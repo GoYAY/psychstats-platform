@@ -1,0 +1,29 @@
+{
+  "tables": {
+    "standardized_profiles": [
+      {
+        "cluster": 1,
+        "stress": 1.0197332999726512,
+        "sleep": -0.9269650509583198,
+        "wellbeing": -1.0379516673917653
+      },
+      {
+        "cluster": 2,
+        "stress": -0.6642299476886078,
+        "sleep": 0.6038029231012914,
+        "wellbeing": 0.6760969576588564
+      }
+    ],
+    "model_summary": [
+      {
+        "n": 180
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "画像：全体样本均值及 SD 标准化，未计算置信区间",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1  jsonlite_2.0.0  cluster_2.1.8.1",
+  "case_id": "kmeans",
+  "original_sha256": "bc1dde44f6e9c3cd234745146e3ea4c3caa31be2b9b68ed98ac2715a37aac950",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

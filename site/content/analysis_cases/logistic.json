@@ -1,0 +1,76 @@
+{
+  "id": "logistic",
+  "unit_id": "logistic",
+  "title": "二分类结果中的 OR 与概率怎样读",
+  "question": "睡眠时间与筛查阳性的可能性有什么关系？",
+  "design": "二分类教学模拟数据；screen_positive=1 是模拟阳性事件，0 为非阳性。睡眠单位为小时，年龄与压力为协变量；不具备临床诊断效度。",
+  "variables": "数据列与编码见教学数据和下方 R 脚本；本页指标与完整控制台来自同一次运行。",
+  "script": "examples/r/output_reading/logistic.R",
+  "data_files": [
+    "examples/data/binary_outcome_teaching.csv"
+  ],
+  "output_blocks": [
+    "metrics",
+    "stdout"
+  ],
+  "annotations": [
+    {
+      "field_id": "log_odds",
+      "label": "睡眠 log-odds 系数",
+      "meaning": "对数优势尺度，不是概率百分点。",
+      "term": "logistic-regression",
+      "format": ".3f"
+    },
+    {
+      "field_id": "odds_ratio",
+      "label": "睡眠 OR",
+      "meaning": "每多一小时睡眠，给定压力和年龄后的优势倍率，不是风险比。",
+      "term": "odds-ratio",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_lower",
+      "label": "OR 95% CI 下界",
+      "meaning": "OR 无效值是 1，不是 0。",
+      "term": "confidence-interval",
+      "format": ".3f"
+    },
+    {
+      "field_id": "ci_upper",
+      "label": "OR 95% CI 上界",
+      "meaning": "宽区间或极端估计需要排查稀疏事件与完全分离。",
+      "term": "confidence-interval",
+      "format": ".3f"
+    },
+    {
+      "field_id": "p",
+      "label": "睡眠系数 p",
+      "meaning": "检验 log-odds 系数为零；结论仍受模拟数据边界约束。",
+      "term": "p-value",
+      "format": ".4g"
+    }
+  ],
+  "diagnostics": [
+    {
+      "title": "遇到不符合预期的结果",
+      "body": "先核对 1 代表什么，发现巨大 OR 或警告先排查分离；不直接报告不稳定估计。"
+    },
+    {
+      "title": "这次结果的解释边界",
+      "body": "二分类教学模拟数据；screen_positive=1 是模拟阳性事件，0 为非阳性。睡眠单位为小时，年龄与压力为协变量；不具备临床诊断效度。"
+    }
+  ],
+  "report_template": "在本二分类教学模型中，控制压力与年龄后，每增加一小时睡眠对应 OR = {odds_ratio:.3f}，95% CI [{ci_lower:.3f}, {ci_upper:.3f}]，p = {p:.4g}（n = {n:.0f}）。OR 为优势倍率而非概率变化，模拟事件不支持临床筛查效度结论。",
+  "sources": [
+    {
+      "title": "R 官方统计函数文档",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html"
+    }
+  ],
+  "related_terms": [
+    "logistic-regression",
+    "odds-ratio",
+    "confidence-interval",
+    "p-value"
+  ]
+}

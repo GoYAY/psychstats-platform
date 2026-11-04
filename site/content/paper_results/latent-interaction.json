@@ -1,0 +1,83 @@
+{
+  "tables": {
+    "model_summary": [
+      {
+        "group": 1,
+        "n": 500
+      }
+    ],
+    "explained_variance": [
+      {
+        "group": 1,
+        "outcome": "x1",
+        "r_squared": 0.6757765143807127
+      },
+      {
+        "group": 1,
+        "outcome": "x2",
+        "r_squared": 0.5804057543297976
+      },
+      {
+        "group": 1,
+        "outcome": "x3",
+        "r_squared": 0.6741914977097554
+      },
+      {
+        "group": 1,
+        "outcome": "x4",
+        "r_squared": 0.6491903323755692
+      },
+      {
+        "group": 1,
+        "outcome": "x5",
+        "r_squared": 0.670050067403323
+      },
+      {
+        "group": 1,
+        "outcome": "x6",
+        "r_squared": 0.6987552114568372
+      },
+      {
+        "group": 1,
+        "outcome": "x7",
+        "r_squared": 0.6071303705905235
+      },
+      {
+        "group": 1,
+        "outcome": "x8",
+        "r_squared": 0.6890952488568574
+      },
+      {
+        "group": 1,
+        "outcome": "x9",
+        "r_squared": 0.6084250116469792
+      },
+      {
+        "group": 1,
+        "outcome": "p1",
+        "r_squared": 0.5117419819799072
+      },
+      {
+        "group": 1,
+        "outcome": "p2",
+        "r_squared": 0.3736664866691035
+      },
+      {
+        "group": 1,
+        "outcome": "p3",
+        "r_squared": 0.4713349139534476
+      },
+      {
+        "group": 1,
+        "outcome": "f3",
+        "r_squared": 0.3449154711302529
+      }
+    ]
+  },
+  "prediction_grid": [],
+  "interval_method": "SEM：参数区间沿用原模型估计器及算法；样本数与 R² 从实际模型对象提取",
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 parallel_4.5.1 lavaan_0.6-21  mnormt_2.1.2   pbivnorm_0.6.0\n[6] jsonlite_2.0.0 stats4_4.5.1   semTools_0.5-9 quadprog_1.5-8",
+  "case_id": "latent-interaction",
+  "original_sha256": "d23bb9521e2da7756d7a01f87c8e386fc55cd7141ca6fd355095c0aa22123f73",
+  "extractor_sha256": "1b03eddce01ed6fd69745f14fc0e2480d42675bdfdf5f1f7918943e25c2838aa"
+}

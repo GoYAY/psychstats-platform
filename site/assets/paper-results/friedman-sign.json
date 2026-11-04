@@ -1,0 +1,64 @@
+{
+  "case_id": "friedman-sign",
+  "covariances": [],
+  "design": "明确的教学变体，研究目标、假设与编码以下方可复现代码为准。符号检验和符号秩检验不同，后者利用绝对差值的秩；不能因同称“非参数”忽略对称性等条件。",
+  "measurement": [],
+  "model_scale": "standardized",
+  "observations": [],
+  "paths": [],
+  "prediction_coefficients": {},
+  "prediction_spec": {},
+  "predictions": [],
+  "provenance": {
+    "data_sha256": {},
+    "prediction_sha256": null,
+    "script": "examples/r/output_reading/friedman-sign.R",
+    "script_sha256": "606746c0f628ff5215a5215eeb1a9888c32e7faa0375effc2e5b692c6b33e6a5",
+    "supplement_sha256": null
+  },
+  "tables": [
+    {
+      "columns": [
+        "variables",
+        "method",
+        "statistic_name",
+        "statistic",
+        "df",
+        "n",
+        "p"
+      ],
+      "name": "tests",
+      "rows": [
+        {
+          "df": 2,
+          "method": "Friedman 检验",
+          "p": 0.19620967354189398,
+          "statistic": 3.257142857142857,
+          "statistic_name": "χ²",
+          "variables": "同一人的三种条件"
+        },
+        {
+          "method": "符号检验",
+          "n": 35,
+          "p": 0.31050465907901514,
+          "variables": "同一人的 B − A"
+        }
+      ],
+      "source_fields": [
+        {
+          "df": "df",
+          "p": "p",
+          "statistic": "chi_squared"
+        },
+        {
+          "n": "nonzero_pairs",
+          "p": "sign_p"
+        }
+      ],
+      "title": "各研究比较与检验结果"
+    }
+  ],
+  "title": "重复排序与方向改变",
+  "valid": true,
+  "variances": []
+}

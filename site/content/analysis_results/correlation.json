@@ -1,0 +1,26 @@
+{
+  "case_id": "correlation",
+  "status": "valid",
+  "exit_code": 0,
+  "session_info": "R version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Asia/Shanghai\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.1 jsonlite_2.0.0\n",
+  "stdout": "[1] \"LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8\"\n\n\tPearson's product-moment correlation\n\ndata:  d$stress and d$well_being\nt = -9.6203, df = 358, p-value < 2.2e-16\nalternative hypothesis: true correlation is not equal to 0\n95 percent confidence interval:\n -0.5316812 -0.3670603\nsample estimates:\n       cor \n-0.4532267 \n\n\n\tSpearman's rank correlation rho\n\ndata:  d$stress and d$well_being\nS = 11148782, p-value < 2.2e-16\nalternative hypothesis: true rho is not equal to 0\nsample estimates:\n       rho \n-0.4337536 \n\n",
+  "stderr": "During startup - Warning messages:\n1: Setting LC_COLLATE=C.UTF-8 failed \n2: Setting LC_CTYPE=C.UTF-8 failed \n3: Setting LC_MONETARY=C.UTF-8 failed \n4: Setting LC_TIME=C.UTF-8 failed \n",
+  "metrics": {
+    "r": -0.453226703491177,
+    "rho": -0.4337536367183371,
+    "ci_lower": -0.5316812080277982,
+    "ci_upper": -0.36706031287926916,
+    "p": 1.2274700402383843e-19,
+    "n": 360
+  },
+  "warnings": [
+    "During startup - Warning messages:"
+  ],
+  "tables": [],
+  "figures": [],
+  "script_sha256": "44f26dffeff2d089c64f500bd81905fc99bd3506c9b64f13690cce05decb312c",
+  "config_sha256": "892639606e736176c2a1c0dae86a04a0ffc57eb29e932ab34a3ea18ac7a41021",
+  "data_sha256": {
+    "examples/data/cross_sectional_survey.csv": "98cfc90411368704119c9718de1a4dc3c7c7d316cfcc12ba0976553f908cbf59"
+  }
+}

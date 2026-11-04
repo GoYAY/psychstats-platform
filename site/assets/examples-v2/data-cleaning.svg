@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760pt" height="570pt" viewBox="0 0 760 570" version="1.1" role="img" aria-labelledby="title desc">
+ <desc id="desc">不合理年龄、重复提交、单位混用需要不同核查方式。。这些是概念示例，不是可直接套用的清洗规则。重复编号不一定是重复个体，极端值也不一定是错误；真实资料应依研究设计、来源与预先规则处理。</desc><title id="title">三种需要核对的记录</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-04T01:01:05.327478</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 570  L 760 570  L 760 0  L 0 0  L 0 570  z " style="fill: none" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30 62  L 730 62  Q 744 62 744 76  L 744 199  Q 744 213 730 213  L 30 213  Q 16 213 16 199  L 16 76  Q 16 62 30 62  z " clip-path="url(#pdf8441b328)" style="fill: #006d70; opacity: 0.055" />
+   </g>
+   <g id="patch_3">
+    <path d="M 226.999451 146  Q 248.498584 146 268.544273 146  " clip-path="url(#pdf8441b328)" style="fill: none; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 262.544273 143  L 268.544273 146  L 262.544273 149  z " clip-path="url(#pdf8441b328)" style="fill: #006d70; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_4">
+    <path d="M 478.004272 146  Q 495.501825 146 511.545932 146  " clip-path="url(#pdf8441b328)" style="fill: none; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 505.545932 143  L 511.545932 146  L 505.545932 149  z " clip-path="url(#pdf8441b328)" style="fill: #006d70; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_5">
+    <path d="M 30 228  L 730 228  Q 744 228 744 242  L 744 365  Q 744 379 730 379  L 30 379  Q 16 379 16 365  L 16 242  Q 16 228 30 228  z " clip-path="url(#pdf8441b328)" style="fill: #006d70; opacity: 0.055" />
+   </g>
+   <g id="patch_6">
+    <path d="M 226.999451 312  Q 248.498584 312 268.544273 312  " clip-path="url(#pdf8441b328)" style="fill: none; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 262.544273 309  L 268.544273 312  L 262.544273 315  z " clip-path="url(#pdf8441b328)" style="fill: #006d70; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_7">
+    <path d="M 478.004272 312  Q 495.501825 312 511.545932 312  " clip-path="url(#pdf8441b328)" style="fill: none; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 505.545932 309  L 511.545932 312  L 505.545932 315  z " clip-path="url(#pdf8441b328)" style="fill: #006d70; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_8">
+    <path d="M 30 394  L 730 394  Q 744 394 744 408  L 744 531  Q 744 545 730 545  L 30 545  Q 16 545 16 531  L 16 408  Q 16 394 30 394  z " clip-path="url(#pdf8441b328)" style="fill: #006d70; opacity: 0.055" />
+   </g>
+   <g id="patch_9">
+    <path d="M 226.999451 478  Q 248.498584 478 268.544273 478  " clip-path="url(#pdf8441b328)" style="fill: none; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 262.544273 475  L 268.544273 478  L 262.544273 481  z " clip-path="url(#pdf8441b328)" style="fill: #006d70; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="patch_10">
+    <path d="M 478.004272 478  Q 495.501825 478 511.545932 478  " clip-path="url(#pdf8441b328)" style="fill: none; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+    <path d="M 505.545932 475  L 511.545932 478  L 505.545932 481  z " clip-path="url(#pdf8441b328)" style="fill: #006d70; opacity: 0.7; stroke: #006d70; stroke-width: 1.3; stroke-linecap: round" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 32 63  L 728 63  " clip-path="url(#pdf8441b328)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 32 229  L 728 229  " clip-path="url(#pdf8441b328)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 32 395  L 728 395  " clip-path="url(#pdf8441b328)" style="fill: none; stroke: #ffffff; stroke-opacity: 0.9; stroke-width: 2; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #006d70" x="20" y="31.656406" transform="rotate(-0 20 31.656406)">先核对证据，再改记录</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="89.080918" transform="rotate(-0 30 89.080918)">年龄</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="30" y="121.093857" transform="rotate(-0 30 121.093857)">原记录</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #ae3f53" x="30" y="152.248193" transform="rotate(-0 30 152.248193)">200 岁</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="290" y="131.503555" transform="rotate(-0 290 131.503555)">原始问卷确认：20岁</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="290" y="162.222764" transform="rotate(-0 290 162.222764)">证据 → 处理依据</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #187b55" x="536" y="148.306787" transform="rotate(-0 536 148.306787)">20 岁</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="196.48668" transform="rotate(-0 30 196.48668)">修正多输入的一个零；保留修改记录。</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="255.080918" transform="rotate(-0 30 255.080918)">同一编号</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="30" y="287.093857" transform="rotate(-0 30 287.093857)">原记录</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #966111" x="30" y="318.189453" transform="rotate(-0 30 318.189453)">ID07 / ID07</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="290" y="297.503555" transform="rotate(-0 290 297.503555)">核对提交时间与有效版本</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="290" y="328.222764" transform="rotate(-0 290 328.222764)">证据 → 处理依据</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #187b55" x="536" y="314.299756" transform="rotate(-0 536 314.299756)">ID07 一份</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="362.503555" transform="rotate(-0 30 362.503555)">按预先规则保留有效版本；保留修改记录。</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="421.047012" transform="rotate(-0 30 421.047012)">睡眠时长</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="30" y="453.093857" transform="rotate(-0 30 453.093857)">原记录</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #966111" x="30" y="484.372412" transform="rotate(-0 30 484.372412)">7 小时 / 420 分钟</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="290" y="463.510117" transform="rotate(-0 290 463.510117)">原问卷确认各自填写单位</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #465366" x="290" y="494.222764" transform="rotate(-0 290 494.222764)">证据 → 处理依据</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #187b55" x="536" y="480.299756" transform="rotate(-0 536 480.299756)">7 小时 / 7 小时</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #202a38" x="30" y="528.510117" transform="rotate(-0 30 528.510117)">换成同一单位，含义不变；保留修改记录。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdf8441b328">
+   <rect x="0" y="0" width="760" height="570" />
+  </clipPath>
+ </defs>
+</svg>
