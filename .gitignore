@@ -27,6 +27,8 @@ site/assets/img/course/
 site/content/course_manifest.json
 site/materials/
 data/*.txt
+data/*.pdf
+data/papers/
 rag/rag_data/
 rag/models/
 rag/logs/

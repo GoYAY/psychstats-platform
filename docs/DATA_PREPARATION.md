@@ -30,3 +30,5 @@ python rag/build_index.py --src "自己的带页码文本.txt"
 原开发目录中的课程 PDF、课程页图片、`site/content/course_manifest.json` 与 `site/materials/` 未复制。需要该分支时，使用自己的材料查看 `tools/ingest_course_pdfs.py --help`，再按工具要求生成清单和资源。
 
 自行创建的文本、向量索引和课程页资源保持在本地；拥有明确分享许可后再决定分发范围。
+
+材料与索引路径可通过环境变量配置，见[可移植路径说明](PORTABILITY.md)。
