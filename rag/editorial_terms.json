@@ -1,0 +1,1467 @@
+{
+  "terms": [
+    {
+      "slug": "outlier",
+      "zh": "异常值",
+      "en": "Outlier",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "data-cleaning",
+          "descriptive-statistics"
+        ]
+      }
+    },
+    {
+      "slug": "multivariate-outlier",
+      "zh": "多变量异常值",
+      "en": "Multivariate Outlier",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "outlier",
+          "covariance"
+        ]
+      }
+    },
+    {
+      "slug": "mahalanobis-distance",
+      "zh": "马氏距离",
+      "en": "Mahalanobis Distance",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "covariance",
+          "multivariate-outlier",
+          "matrix-inverse"
+        ]
+      }
+    },
+    {
+      "slug": "box-plot",
+      "zh": "盒式图",
+      "en": "Box Plot",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics",
+          "outlier"
+        ]
+      }
+    },
+    {
+      "slug": "missing-data",
+      "zh": "缺失数据",
+      "en": "Missing Data",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "data-cleaning"
+        ]
+      }
+    },
+    {
+      "slug": "missing-data-mechanism",
+      "zh": "缺失机制",
+      "en": "Missing Data Mechanism",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "missing-data"
+        ]
+      }
+    },
+    {
+      "slug": "multiple-imputation",
+      "zh": "多重插补",
+      "en": "Multiple Imputation",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "missing-data-mechanism"
+        ]
+      }
+    },
+    {
+      "slug": "standardization",
+      "zh": "数据标准化",
+      "en": "Standardization",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "standard-score"
+        ]
+      }
+    },
+    {
+      "slug": "centering",
+      "zh": "数据中心化",
+      "en": "Centering",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "variable"
+        ]
+      }
+    },
+    {
+      "slug": "manova",
+      "zh": "多元方差分析",
+      "en": "MANOVA",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "covariance",
+          "anova"
+        ],
+        "components": [
+          "wilks-lambda"
+        ],
+        "contrasts": [
+          "multiple-regression"
+        ]
+      }
+    },
+    {
+      "slug": "anova",
+      "zh": "一元方差分析",
+      "en": "ANOVA",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics",
+          "p-value",
+          "effect-size"
+        ],
+        "components": [
+          "planned-contrast"
+        ],
+        "contrasts": [
+          "welch-anova"
+        ]
+      }
+    },
+    {
+      "slug": "wilks-lambda",
+      "zh": "Wilks 统计量",
+      "en": "Wilks' Lambda",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "manova",
+          "determinant"
+        ],
+        "contrasts": [
+          "r-squared"
+        ],
+        "used_in": [
+          "manova"
+        ]
+      }
+    },
+    {
+      "slug": "covariate",
+      "zh": "协变量",
+      "en": "Covariate",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "variable",
+          "linearity"
+        ],
+        "contrasts": [
+          "mediator"
+        ],
+        "used_in": [
+          "multiple-regression",
+          "anova"
+        ]
+      }
+    },
+    {
+      "slug": "main-effect",
+      "zh": "主效应",
+      "en": "Main Effect",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "variable"
+        ],
+        "contrasts": [
+          "interaction"
+        ],
+        "used_in": [
+          "anova",
+          "multiple-regression"
+        ]
+      }
+    },
+    {
+      "slug": "interaction",
+      "zh": "交互作用",
+      "en": "Interaction",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "main-effect"
+        ],
+        "contrasts": [
+          "main-effect"
+        ],
+        "used_in": [
+          "anova",
+          "moderation-effect"
+        ]
+      }
+    },
+    {
+      "slug": "simple-slope-test",
+      "zh": "简单斜率检验",
+      "en": "Simple Slope Test",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "interaction",
+          "regression-coefficient"
+        ],
+        "contrasts": [
+          "main-effect"
+        ],
+        "used_in": [
+          "moderation-effect"
+        ]
+      }
+    },
+    {
+      "slug": "homogeneity-of-variance",
+      "zh": "方差齐性",
+      "en": "Homogeneity of Variance",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "central-tendency-and-dispersion"
+        ],
+        "contrasts": [
+          "sphericity"
+        ],
+        "used_in": [
+          "anova",
+          "t-test"
+        ]
+      }
+    },
+    {
+      "slug": "multivariate-normality",
+      "zh": "多元正态性",
+      "en": "Multivariate Normality",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "normal-distribution",
+          "covariance"
+        ],
+        "contrasts": [
+          "normality"
+        ],
+        "used_in": [
+          "manova",
+          "maximum-likelihood"
+        ]
+      }
+    },
+    {
+      "slug": "sphericity",
+      "zh": "球形假设",
+      "en": "Sphericity",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "repeated-measures",
+          "covariance"
+        ],
+        "contrasts": [
+          "homogeneity-of-variance",
+          "bartlett-test"
+        ],
+        "used_in": [
+          "anova"
+        ]
+      }
+    },
+    {
+      "slug": "multiple-regression",
+      "zh": "多元回归",
+      "en": "Multiple Regression",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "simple-linear-regression"
+        ],
+        "components": [
+          "regression-coefficient",
+          "residual",
+          "r-squared"
+        ],
+        "contrasts": [
+          "manova"
+        ],
+        "used_in": [
+          "mediation-effect",
+          "moderation-effect"
+        ]
+      }
+    },
+    {
+      "slug": "regression-coefficient",
+      "zh": "回归系数",
+      "en": "Regression Coefficient",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "simple-linear-regression",
+          "standardization"
+        ],
+        "contrasts": [
+          "correlation-coefficient"
+        ],
+        "used_in": [
+          "multiple-regression"
+        ]
+      }
+    },
+    {
+      "slug": "standard-error",
+      "zh": "标准误",
+      "en": "Standard Error",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "sampling-distribution"
+        ]
+      }
+    },
+    {
+      "slug": "r-squared",
+      "zh": "决定系数",
+      "en": "R-squared",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "simple-linear-regression",
+          "sum-of-squares"
+        ],
+        "contrasts": [
+          "wilks-lambda"
+        ],
+        "used_in": [
+          "multiple-regression"
+        ]
+      }
+    },
+    {
+      "slug": "multicollinearity",
+      "zh": "多重共线性",
+      "en": "Multicollinearity",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "multiple-regression",
+          "correlation-coefficient",
+          "design-matrix",
+          "matrix-rank",
+          "linear-dependence"
+        ],
+        "used_in": [
+          "multiple-regression"
+        ]
+      }
+    },
+    {
+      "slug": "dummy-coding",
+      "zh": "虚拟编码",
+      "en": "Dummy Coding",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "measurement-scales"
+        ],
+        "contrasts": [
+          "standardization"
+        ],
+        "used_in": [
+          "multiple-regression",
+          "logistic-regression"
+        ]
+      }
+    },
+    {
+      "slug": "stepwise-regression",
+      "zh": "逐步回归",
+      "en": "Stepwise Regression",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "multiple-regression"
+        ],
+        "used_in": [
+          "multiple-regression"
+        ]
+      }
+    },
+    {
+      "slug": "residual",
+      "zh": "残差",
+      "en": "Residual",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "simple-linear-regression"
+        ],
+        "contrasts": [
+          "influential-point"
+        ],
+        "used_in": [
+          "multiple-regression"
+        ]
+      }
+    },
+    {
+      "slug": "logistic-regression",
+      "zh": "Logistic 回归",
+      "en": "Logistic Regression",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "regression-coefficient",
+          "dummy-coding"
+        ],
+        "components": [
+          "odds-ratio"
+        ],
+        "contrasts": [
+          "simple-linear-regression"
+        ]
+      }
+    },
+    {
+      "slug": "odds-ratio",
+      "zh": "优势比",
+      "en": "Odds Ratio",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "variable"
+        ],
+        "contrasts": [
+          "regression-coefficient"
+        ],
+        "used_in": [
+          "logistic-regression"
+        ]
+      }
+    },
+    {
+      "slug": "maximum-likelihood",
+      "zh": "极大似然估计",
+      "en": "Maximum Likelihood",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "parameter-and-statistic"
+        ],
+        "contrasts": [
+          "reml"
+        ],
+        "used_in": [
+          "logistic-regression",
+          "sem"
+        ]
+      }
+    },
+    {
+      "slug": "product-indicator",
+      "zh": "交互项乘积指标",
+      "en": "Product Indicator",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "latent-variable",
+          "measurement-model",
+          "interaction"
+        ],
+        "contrasts": [
+          "interaction"
+        ],
+        "used_in": [
+          "sem",
+          "moderation-effect"
+        ]
+      }
+    },
+    {
+      "slug": "discriminant-analysis",
+      "zh": "判别分析",
+      "en": "Discriminant Analysis",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "multivariate-normality"
+        ],
+        "contrasts": [
+          "cluster-analysis",
+          "logistic-regression"
+        ]
+      }
+    },
+    {
+      "slug": "cluster-analysis",
+      "zh": "聚类分析",
+      "en": "Cluster Analysis",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "standardization"
+        ],
+        "components": [
+          "hierarchical-clustering",
+          "k-means-clustering"
+        ],
+        "contrasts": [
+          "discriminant-analysis"
+        ]
+      }
+    },
+    {
+      "slug": "hierarchical-clustering",
+      "zh": "层次聚类",
+      "en": "Hierarchical Clustering",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "cluster-analysis",
+          "euclidean-distance"
+        ],
+        "contrasts": [
+          "k-means-clustering"
+        ],
+        "used_in": [
+          "cluster-analysis"
+        ]
+      }
+    },
+    {
+      "slug": "k-means-clustering",
+      "zh": "K 均值聚类",
+      "en": "K-means Clustering",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "cluster-analysis",
+          "euclidean-distance"
+        ],
+        "contrasts": [
+          "hierarchical-clustering"
+        ],
+        "used_in": [
+          "cluster-analysis"
+        ]
+      }
+    },
+    {
+      "slug": "euclidean-distance",
+      "zh": "欧氏距离",
+      "en": "Euclidean Distance",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "variable",
+          "standardization"
+        ],
+        "contrasts": [
+          "mahalanobis-distance"
+        ],
+        "used_in": [
+          "hierarchical-clustering",
+          "k-means-clustering"
+        ]
+      }
+    },
+    {
+      "slug": "efa",
+      "zh": "探索性因素分析",
+      "en": "EFA",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "correlation-coefficient"
+        ],
+        "components": [
+          "factor-extraction",
+          "factor-rotation",
+          "number-of-factors",
+          "parallel-analysis",
+          "polychoric-correlation"
+        ],
+        "contrasts": [
+          "cfa",
+          "pca"
+        ]
+      }
+    },
+    {
+      "slug": "cfa",
+      "zh": "验证性因素分析",
+      "en": "CFA",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "latent-variable",
+          "measurement-error"
+        ],
+        "components": [
+          "measurement-model",
+          "factor-loading"
+        ],
+        "contrasts": [
+          "efa"
+        ],
+        "used_in": [
+          "sem"
+        ]
+      }
+    },
+    {
+      "slug": "factor-loading",
+      "zh": "因素载荷",
+      "en": "Factor Loading",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "common-factor"
+        ],
+        "contrasts": [
+          "correlation-coefficient"
+        ],
+        "used_in": [
+          "efa",
+          "cfa"
+        ]
+      }
+    },
+    {
+      "slug": "common-factor",
+      "zh": "公共因素",
+      "en": "Common Factor",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "covariance"
+        ],
+        "contrasts": [
+          "pca"
+        ],
+        "used_in": [
+          "efa",
+          "cfa"
+        ]
+      }
+    },
+    {
+      "slug": "eigenvalue",
+      "zh": "特征根",
+      "en": "Eigenvalue",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "covariance"
+        ],
+        "used_in": [
+          "pca",
+          "number-of-factors"
+        ]
+      }
+    },
+    {
+      "slug": "scree-plot",
+      "zh": "碎石图",
+      "en": "Scree Plot",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "eigenvalue"
+        ],
+        "used_in": [
+          "number-of-factors",
+          "efa"
+        ]
+      }
+    },
+    {
+      "slug": "factor-rotation",
+      "zh": "因子旋转",
+      "en": "Factor Rotation",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "factor-loading"
+        ],
+        "used_in": [
+          "efa"
+        ]
+      }
+    },
+    {
+      "slug": "number-of-factors",
+      "zh": "公共因素数确定",
+      "en": "Number of Factors",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "eigenvalue"
+        ],
+        "components": [
+          "scree-plot",
+          "parallel-analysis",
+          "polychoric-correlation"
+        ],
+        "used_in": [
+          "efa",
+          "factor-extraction"
+        ]
+      }
+    },
+    {
+      "slug": "model-identification",
+      "zh": "模型识别",
+      "en": "Model Identification",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "covariance",
+          "latent-variable"
+        ],
+        "used_in": [
+          "cfa",
+          "sem",
+          "non-recursive-model"
+        ]
+      }
+    },
+    {
+      "slug": "fit-indices",
+      "zh": "模型拟合指数",
+      "en": "Fit Indices",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "model-identification"
+        ],
+        "components": [
+          "rmsea"
+        ],
+        "used_in": [
+          "cfa",
+          "sem"
+        ]
+      }
+    },
+    {
+      "slug": "rmsea",
+      "zh": "RMSEA",
+      "en": "RMSEA",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "degrees-of-freedom"
+        ],
+        "used_in": [
+          "fit-indices",
+          "cfa",
+          "sem"
+        ]
+      }
+    },
+    {
+      "slug": "modification-index",
+      "zh": "修正指数",
+      "en": "Modification Index",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "fit-indices"
+        ],
+        "contrasts": [
+          "model-modification"
+        ],
+        "used_in": [
+          "cfa",
+          "sem"
+        ]
+      }
+    },
+    {
+      "slug": "path-analysis",
+      "zh": "路径分析",
+      "en": "Path Analysis",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "multiple-regression"
+        ],
+        "components": [
+          "direct-effect",
+          "indirect-effect"
+        ],
+        "contrasts": [
+          "measurement-model"
+        ],
+        "used_in": [
+          "sem"
+        ]
+      }
+    },
+    {
+      "slug": "sem",
+      "zh": "结构方程模型",
+      "en": "SEM",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "covariance",
+          "model-identification"
+        ],
+        "components": [
+          "measurement-model",
+          "structural-model"
+        ]
+      }
+    },
+    {
+      "slug": "latent-variable",
+      "zh": "潜变量",
+      "en": "Latent Variable",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "variable"
+        ],
+        "used_in": [
+          "cfa",
+          "sem"
+        ]
+      }
+    },
+    {
+      "slug": "measurement-model",
+      "zh": "测量模型",
+      "en": "Measurement Model",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "latent-variable",
+          "measurement-error"
+        ],
+        "components": [
+          "factor-loading"
+        ],
+        "contrasts": [
+          "structural-model"
+        ],
+        "used_in": [
+          "cfa",
+          "sem"
+        ]
+      }
+    },
+    {
+      "slug": "structural-model",
+      "zh": "结构模型",
+      "en": "Structural Model",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "multiple-regression"
+        ],
+        "components": [
+          "direct-effect",
+          "indirect-effect"
+        ],
+        "contrasts": [
+          "measurement-model"
+        ],
+        "used_in": [
+          "sem"
+        ]
+      }
+    },
+    {
+      "slug": "non-recursive-model",
+      "zh": "非递归模型",
+      "en": "Non-recursive Model",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "model-identification",
+          "structural-model"
+        ],
+        "contrasts": [
+          "covariance"
+        ],
+        "used_in": [
+          "sem"
+        ]
+      }
+    },
+    {
+      "slug": "model-modification",
+      "zh": "模型修正",
+      "en": "Model Modification",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "fit-indices"
+        ],
+        "components": [
+          "modification-index"
+        ],
+        "used_in": [
+          "cfa",
+          "sem"
+        ]
+      }
+    },
+    {
+      "slug": "mediation-effect",
+      "zh": "中介效应",
+      "en": "Mediation Effect",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "multiple-regression"
+        ],
+        "components": [
+          "mediator",
+          "indirect-effect",
+          "direct-effect",
+          "total-effect"
+        ],
+        "contrasts": [
+          "moderation-effect"
+        ],
+        "used_in": [
+          "moderated-mediation"
+        ]
+      }
+    },
+    {
+      "slug": "mediator",
+      "zh": "中介变量",
+      "en": "Mediator",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "variable"
+        ],
+        "contrasts": [
+          "moderator",
+          "covariate"
+        ],
+        "used_in": [
+          "mediation-effect"
+        ]
+      }
+    },
+    {
+      "slug": "indirect-effect",
+      "zh": "间接效应",
+      "en": "Indirect Effect",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "mediator",
+          "multiple-regression"
+        ],
+        "contrasts": [
+          "direct-effect",
+          "total-effect"
+        ],
+        "used_in": [
+          "mediation-effect",
+          "moderated-mediation"
+        ]
+      }
+    },
+    {
+      "slug": "bootstrap",
+      "zh": "Bootstrap 检验",
+      "en": "Bootstrap",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "sampling-distribution",
+          "confidence-interval"
+        ],
+        "contrasts": [
+          "sobel-test"
+        ],
+        "used_in": [
+          "indirect-effect",
+          "moderated-mediation"
+        ]
+      }
+    },
+    {
+      "slug": "sobel-test",
+      "zh": "Sobel 检验",
+      "en": "Sobel Test",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "indirect-effect",
+          "standard-error"
+        ],
+        "contrasts": [
+          "bootstrap"
+        ],
+        "used_in": [
+          "mediation-effect"
+        ]
+      }
+    },
+    {
+      "slug": "moderation-effect",
+      "zh": "调节效应",
+      "en": "Moderation Effect",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "multiple-regression",
+          "interaction"
+        ],
+        "components": [
+          "moderator",
+          "conditional-effect"
+        ],
+        "contrasts": [
+          "mediation-effect"
+        ],
+        "used_in": [
+          "moderated-mediation"
+        ]
+      }
+    },
+    {
+      "slug": "moderator",
+      "zh": "调节变量",
+      "en": "Moderator",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "variable"
+        ],
+        "contrasts": [
+          "mediator",
+          "covariate"
+        ],
+        "used_in": [
+          "moderation-effect"
+        ]
+      }
+    },
+    {
+      "slug": "moderated-mediation",
+      "zh": "有调节的中介",
+      "en": "Moderated Mediation",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "indirect-effect",
+          "moderation-effect"
+        ],
+        "components": [
+          "conditional-effect"
+        ],
+        "contrasts": [
+          "mediated-moderation"
+        ]
+      }
+    },
+    {
+      "slug": "mediated-moderation",
+      "zh": "有中介的调节",
+      "en": "Mediated Moderation",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "moderated-mediation"
+        ],
+        "contrasts": [
+          "moderated-mediation"
+        ]
+      }
+    },
+    {
+      "slug": "interaction-plot",
+      "zh": "交互作用图",
+      "en": "Interaction Plot",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "interaction",
+          "conditional-effect"
+        ],
+        "used_in": [
+          "moderation-effect"
+        ]
+      }
+    },
+    {
+      "slug": "hlm",
+      "zh": "多层线性模型",
+      "en": "HLM",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "nested-data",
+          "multiple-regression"
+        ],
+        "components": [
+          "fixed-effect",
+          "random-effect",
+          "level-one",
+          "level-two"
+        ],
+        "used_in": [
+          "growth-model"
+        ]
+      }
+    },
+    {
+      "slug": "null-model",
+      "zh": "零模型",
+      "en": "Null Model",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "random-intercept-model"
+        ],
+        "contrasts": [
+          "null-hypothesis"
+        ],
+        "used_in": [
+          "icc",
+          "hlm"
+        ]
+      }
+    },
+    {
+      "slug": "random-intercept-model",
+      "zh": "随机截距模型",
+      "en": "Random Intercept Model",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "random-effect",
+          "hlm"
+        ],
+        "components": [
+          "fixed-effect",
+          "random-effect"
+        ],
+        "contrasts": [
+          "random-slope-model"
+        ]
+      }
+    },
+    {
+      "slug": "random-slope-model",
+      "zh": "随机斜率模型",
+      "en": "Random Slope Model",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "random-intercept-model"
+        ],
+        "components": [
+          "random-effect"
+        ],
+        "contrasts": [
+          "random-intercept-model"
+        ],
+        "used_in": [
+          "growth-model"
+        ]
+      }
+    },
+    {
+      "slug": "icc",
+      "zh": "组内相关系数",
+      "en": "ICC",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "null-model",
+          "covariance"
+        ],
+        "contrasts": [
+          "correlation-coefficient"
+        ],
+        "used_in": [
+          "hlm"
+        ]
+      }
+    },
+    {
+      "slug": "fixed-effect",
+      "zh": "固定效应",
+      "en": "Fixed Effect",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "multiple-regression",
+          "design-matrix"
+        ],
+        "contrasts": [
+          "random-effect"
+        ],
+        "used_in": [
+          "hlm",
+          "growth-model"
+        ]
+      }
+    },
+    {
+      "slug": "random-effect",
+      "zh": "随机效应",
+      "en": "Random Effect",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "fixed-effect",
+          "nested-data"
+        ],
+        "contrasts": [
+          "fixed-effect"
+        ],
+        "used_in": [
+          "hlm"
+        ]
+      }
+    },
+    {
+      "slug": "growth-model",
+      "zh": "增长模型",
+      "en": "Growth Model",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "longitudinal-data",
+          "time-coding",
+          "random-slope-model"
+        ],
+        "components": [
+          "fixed-effect",
+          "random-effect"
+        ]
+      }
+    },
+    {
+      "slug": "longitudinal-data",
+      "zh": "追踪研究数据",
+      "en": "Longitudinal Data",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "variable"
+        ],
+        "used_in": [
+          "growth-model",
+          "hlm"
+        ]
+      }
+    },
+    {
+      "slug": "effect-size",
+      "zh": "效应量",
+      "en": "Effect Size",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "descriptive-statistics"
+        ]
+      }
+    },
+    {
+      "slug": "partial-eta-squared",
+      "zh": "偏 η²",
+      "en": "Partial Eta Squared",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "effect-size",
+          "sum-of-squares"
+        ],
+        "contrasts": [
+          "r-squared"
+        ],
+        "used_in": [
+          "anova"
+        ]
+      }
+    },
+    {
+      "slug": "statistical-power",
+      "zh": "统计检验力",
+      "en": "Statistical Power",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "effect-size",
+          "type-i-and-type-ii-errors"
+        ],
+        "contrasts": [
+          "p-value"
+        ],
+        "used_in": [
+          "t-test",
+          "anova"
+        ]
+      }
+    },
+    {
+      "slug": "significance-level",
+      "zh": "显著性水平",
+      "en": "Significance Level",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "null-hypothesis"
+        ],
+        "contrasts": [
+          "p-value"
+        ],
+        "used_in": [
+          "t-test",
+          "chi-square-test"
+        ]
+      }
+    },
+    {
+      "slug": "p-value",
+      "zh": "p 值",
+      "en": "p-value",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "null-hypothesis"
+        ]
+      }
+    },
+    {
+      "slug": "confidence-interval",
+      "zh": "置信区间",
+      "en": "Confidence Interval",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "standard-error"
+        ]
+      }
+    },
+    {
+      "slug": "multiple-comparison-correction",
+      "zh": "多重比较校正",
+      "en": "Multiple Comparison Correction",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "significance-level",
+          "p-value"
+        ],
+        "used_in": [
+          "post-hoc-comparison"
+        ]
+      }
+    },
+    {
+      "slug": "t-test",
+      "zh": "t 检验",
+      "en": "t-test",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "standard-error",
+          "p-value",
+          "effect-size"
+        ]
+      }
+    },
+    {
+      "slug": "chi-square-test",
+      "zh": "卡方检验",
+      "en": "Chi-square Test",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "measurement-scales",
+          "independence"
+        ],
+        "components": [
+          "degrees-of-freedom"
+        ],
+        "contrasts": [
+          "t-test",
+          "fisher-exact-test"
+        ]
+      }
+    },
+    {
+      "slug": "post-hoc-comparison",
+      "zh": "事后比较",
+      "en": "Post Hoc Comparison",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "anova",
+          "multiple-comparison-correction"
+        ],
+        "used_in": [
+          "anova",
+          "manova"
+        ]
+      }
+    },
+    {
+      "slug": "nonparametric-test",
+      "zh": "非参数检验",
+      "en": "Nonparametric Test",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "measurement-scales",
+          "independence"
+        ],
+        "contrasts": [
+          "t-test"
+        ]
+      }
+    },
+    {
+      "slug": "degrees-of-freedom",
+      "zh": "自由度",
+      "en": "Degrees of Freedom",
+      "aliases": [],
+      "relations": {
+        "prerequisites": [
+          "parameter-and-statistic",
+          "matrix-rank"
+        ],
+        "used_in": [
+          "t-test",
+          "f-statistic",
+          "chi-square-test"
+        ]
+      }
+    }
+  ]
+}

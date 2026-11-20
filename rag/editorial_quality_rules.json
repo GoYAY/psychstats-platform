@@ -1,0 +1,709 @@
+{
+  "reviewed_at": "2026-11-20",
+  "rules": [
+    {
+      "id": "KQ-01",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 360,
+      "match_text": "而最优的回归方程，应该是方程显著且每\n个自变量的偏回归系数都显著。因此，为\n了建立最优的回归方程，需要对自变量进\n行选择，作用不显著的自变量不必进入回\n归方程。一般选择自变量，建立最优回归\n方程的方法有如下几种。\n(一)最优方程选择法\n即从所有可能的自变量组合建立的回\n归方程中选择最优的。例如，有四个自变\n量(记为X₁,X₂,X₃,X₄),\n先分别用\n每一个自变量与因变量Y 建立简单回归方\n程，共4个方程；再每次从四个自变量中\n任选两个分别与Y 建立双自变量线性回归\n方程，共C²=6 个方程；然后再每次任取\n三个自变量分别与Y 建立回归方程，共\nC³=4 个方程；最后将四个自变量一同与\nY建立回归方程。",
+      "reason": "将所有系数均显著当作最优模型的定义，并由此主张删除不显著变量。最优性取决于预测、解释或因果目标；层级项和混杂控制变量可能应保留，显著性不足以确定最优模型。",
+      "authority_urls": [
+        "https://support.minitab.com/en-us/minitab/help-and-how-to/statistical-modeling/regression/supporting-topics/basics/using-stepwise-regression-and-best-subsets-regression/"
+      ],
+      "suggestion": "隔离这一规则；保留逐步选择的操作性描述，外部方法说明补充目标、层级约束和独立验证。"
+    },
+    {
+      "id": "KQ-02",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 361,
+      "match_text": "兼具二者的优点，一般来说，求得的回归\n方程最优。",
+      "reason": "贪心逐步选择不保证全局最优，也不保证样本外最佳预测。",
+      "authority_urls": [
+        "https://support.minitab.com/en-us/minitab/help-and-how-to/statistical-modeling/regression/supporting-topics/basics/using-stepwise-regression-and-best-subsets-regression/"
+      ],
+      "suggestion": "隔离最优保证；其余算法步骤可保留。"
+    },
+    {
+      "id": "KQ-03",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 361,
+      "match_text": "向前法和向后法可以找到最有预\n测力的变量，同时也可以避免共线性的影\n响，适合做探索性的研究使用。逐步法适\n合用于预测性研究，协助建立最佳预测模\n型。",
+      "reason": "向前或向后选择不能保证最有预测力，也不能保证避免共线性；相关预测量反而会使选择不稳定。",
+      "authority_urls": [
+        "https://support.minitab.com/en-us/minitab/help-and-how-to/statistical-modeling/regression/supporting-topics/basics/using-stepwise-regression-and-best-subsets-regression/"
+      ],
+      "suggestion": "隔离这组保证性结论，预测任务使用外部验证而非据此承诺。"
+    },
+    {
+      "id": "KQ-04",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 59,
+      "match_text": "研究者可以选择α水平，特别是当数据已经收集回来之后，效\n应值和样本量都不能再改变的时候，调整α水平是提高统计检验力的首要方法。",
+      "reason": "固定检验中提高α可以增加检验力，这一数学关系正确；但把收集数据后调整α作为首要提高检验力方法，缺少预先设计与多重性控制，会诱导结果驱动的阈值选择。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
+        "https://magazine.amstat.org/blog/2021/08/01/task-force-statement-p-value/"
+      ],
+      "suggestion": "隔离数据收集后调α的推荐句；保留α与检验力的理论权衡，阈值按研究目标和错误代价事前确定。"
+    },
+    {
+      "id": "KQ-05",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 59,
+      "match_text": "此时，研究者有必要合理地放宽每个单独比较的α水平。",
+      "reason": "多重比较中直接放宽每项α未说明所控制的整体错误率和选择程序，会破坏所声称的错误率控制。",
+      "authority_urls": [
+        "https://magazine.amstat.org/blog/2021/08/01/task-force-statement-p-value/",
+        "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/p.adjust.html"
+      ],
+      "suggestion": "隔离该推荐句；如需介绍其他错误率框架，单独提供带条件的权威外部证据。"
+    },
+    {
+      "id": "KQ-06",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 231,
+      "match_text": "B在下三角部分之外的位置至少存在一个非零元素，表示内源变量之间的因果关系存在反\n馈回路；",
+      "reason": "没有规定变量排序时，上三角的一个非零元素不意味着有向环。例如 B=[[0,1],[0,0]] 只有一条单向边，交换变量即可成为下三角。应判断能否重排成严格下三角或直接判断有向环。残差相关是否也称非递归是命名约定，另行标记而不判为科学错误。",
+      "authority_urls": [
+        "https://centerstat.org/wp-content/uploads/2023/05/SEM-Lecture-Notes-2023.pdf",
+        "https://www.stata.com/support/faqs/statistics/instrumental-variables-for-recursive-systems/"
+      ],
+      "suggestion": "隔离该矩阵判定句；保留反馈实例与识别讨论，补充可重排条件。"
+    },
+    {
+      "id": "KQ-07",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 360,
+      "match_text": "并且通常认为只有△R²超过2%（或者3%），调\n节效应才有实际意义，否则也不会对其做进一步的考量",
+      "reason": "2%或3%的ΔR²不能作为调节具有实际意义的通用必要门槛。实际意义依赖领域、量尺、后果及研究目标；此处带有出处的经验意见仍不能自动作为普遍事实。",
+      "authority_urls": [
+        "https://magazine.amstat.org/blog/2021/08/01/task-force-statement-p-value/",
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf"
+      ],
+      "suggestion": "隔离普遍门槛结论；如确需展示，标为特定文献建议并与实际意义判断分开。"
+    },
+    {
+      "id": "KQ-08",
+      "source": "course",
+      "doc": "w08-moderation",
+      "page_pdf": 3,
+      "match_text": "若主效应不显著，不再报告主效应",
+      "reason": "按显著性决定不报告模型低阶项，会选择性呈现结果；交互模型低阶系数仍应保留并按另一变量为零时的条件效应解释。若原意仅是不作单独展开，必须明确区分报告与解读。",
+      "authority_urls": [
+        "https://magazine.amstat.org/blog/2021/08/01/task-force-statement-p-value/",
+        "https://stats.oarc.ucla.edu/r/seminars/interactions-r/"
+      ],
+      "suggestion": "隔离不报告规则；模型完整结果可报告，正文按研究问题展开条件效应。"
+    },
+    {
+      "id": "KQ-09",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 246,
+      "match_text": "假如拒绝虚无假设的p 值( p-value)\n定为p=0.05,",
+      "reason": "把预设显著性水平α命名为p值。p值由数据、统计量及零假设模型计算；研究者预设的是α。这段在v2的p-value资料包中靠前，易污染核心定义。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf"
+      ],
+      "suggestion": "隔离该命名句及后文p值可定为0.01的同类表述；使用已召回的讲义29页定义。"
+    },
+    {
+      "id": "KQ-10",
+      "source": "course",
+      "doc": "w08-moderation",
+      "page_pdf": 4,
+      "match_text": "掌握目标每增加1个单位，阅读成绩增加22.31分。",
+      "reason": "该页模型中掌握目标的斜率为7.50−18.77×阅读兴趣；阅读兴趣为0时应为7.50。原文22.31是另一预测量的低阶系数。该页给出的−1和+1简单斜率26.27和−11.27也支持7.50。",
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/r/seminars/interactions-r/"
+      ],
+      "suggestion": "隔离这一句及紧接的指代歧义说明；不得从错位的公式提取结果自动补写。"
+    },
+    {
+      "id": "KQ-11",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 291,
+      "match_text": "如果总的犯一类错\n误的概率为0.05，则对两个参数分别检验时应该用0.025的显著性水平，并且是双尾\n检验。",
+      "reason": "单一中介效应的联合显著性为交并检验，要求两条路径均在α水平显著即可控制该联合检验的size≤α；不需要各取α/2。其他同时检验多个中介假设的多重性须另行处理。",
+      "authority_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2819363/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8991388/"
+      ],
+      "suggestion": "隔离强制0.025规则。该页在v1的power包出现，v2优先8包未出现，仍应全局隔离避免以后召回。"
+    },
+    {
+      "id": "KQ-12",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 291,
+      "match_text": "该统计量是一个自由度为1的分数",
+      "reason": "Sobel z使用大样本标准正态参考分布；z没有t或χ²式的自由度参数。其平方在相应近似下可按χ²(1)解释，不能混为z自身有1个自由度。",
+      "authority_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2819363/"
+      ],
+      "suggestion": "隔离该分布描述；公式及小样本限制改由外部证据包负责。"
+    },
+    {
+      "id": "KQ-13",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 120,
+      "match_text": "的结果不显著，因此满足各组别方差相等的假设。",
+      "reason": "不显著仅表示该检验未检测到违背，不能由此认定总体方差相等，尤其检验力低时。该片段从页首续句开始，检验对象和统计量也在上一页，父页未恢复此条件。",
+      "authority_urls": [
+        "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35a.htm"
+      ],
+      "suggestion": "隔离满足假设的断言；若保留实例，补充检验对象、样本情况与诊断结果。"
+    },
+    {
+      "id": "KQ-15",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 246,
+      "match_text": "另外，p 值也可定为0.01。",
+      "reason": "与KQ-09同类：可以预设的是显著性水平α，不能预设计算所得的p值。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf"
+      ],
+      "suggestion": "隔离该句。"
+    },
+    {
+      "id": "KQ-F01",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 257,
+      "match_text": "（3）各潜在因素之间相互独立。",
+      "reason": "测量模型/CFA的一般形式允许公共因素相关，不能把各潜在因素相互独立写成一般假设；这是特定正交模型的额外限制。lavaan官方三因素CFA直接估计因素协方差。",
+      "authority_urls": [
+        "https://lavaan.ugent.be/tutorial/cfa.html"
+      ],
+      "suggestion": "隔离该错误句所重叠的子块，父页和旧锚点扩展同步执行；保留其他有依据的内容。"
+    },
+    {
+      "id": "KQ-F02",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 127,
+      "match_text": "欧氏距离的基本假定是坐标系是正交的，在统计分析中即要求各\n指标之间互不相关。",
+      "reason": "混淆正交坐标基与随机变量不相关。欧氏距离对给定向量可直接计算，不要求指标独立或不相关；变量相关可能影响是否应采用Mahalanobis等度量，但不使欧氏距离失效。",
+      "authority_urls": [
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.euclidean.html"
+      ],
+      "suggestion": "隔离该错误句所重叠的子块，父页和旧锚点扩展同步执行；保留其他有依据的内容。"
+    },
+    {
+      "id": "KQ-F03",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 349,
+      "match_text": "如果\na, b 二因素间没有交互作用，则两条线平行，表示因素之间相互独立；",
+      "reason": "交互图中的平行线表示在指定响应尺度上缺少交互，并不表示预测因素X和W的联合分布独立。相关预测变量同样可以只有加性条件均值；独立因素也可对Y有交互。",
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/r/seminars/interactions-r/"
+      ],
+      "suggestion": "隔离该错误句所重叠的子块，父页和旧锚点扩展同步执行；保留其他有依据的内容。"
+    },
+    {
+      "id": "KQ-F03-duplicate-62",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 62,
+      "match_text": "不显著的交互作用意味着因素之间相互独立",
+      "reason": "无交互作用不等于预测因素的联合分布独立；检验不显著也不是无交互的证明。",
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/r/seminars/interactions-r/"
+      ],
+      "suggestion": "隔离该推断，按指定响应尺度上的条件效应解释交互图。"
+    },
+    {
+      "id": "KQ-F03-duplicate-70",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 70,
+      "match_text": "不显著的交互作用意味着因素之间相互独立",
+      "reason": "无交互作用不等于预测因素的联合分布独立；检验不显著也不是无交互的证明。",
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/r/seminars/interactions-r/"
+      ],
+      "suggestion": "隔离该推断，按指定响应尺度上的条件效应解释交互图。"
+    },
+    {
+      "id": "H01",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 310,
+      "match_text": "载荷系数均显著，表明观测变量均良好地测量了潜变量。",
+      "reason": "显著性只检验载荷是否为零；须结合载荷大小、整体拟合与可靠性/效度证据。",
+      "authority_urls": [
+        "https://lavaan.ugent.be/tutorial/cfa.html"
+      ],
+      "suggestion": "隔离该过度推断；分别说明参数检验对象，并结合效应大小、模型和测量质量证据判断。"
+    },
+    {
+      "id": "H06",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 395,
+      "match_text": "BETAIJ的均值（截距）为2.394，达到显著性水平，表示学校间社会经济地位对学生数学成绩的影响是显著不同的",
+      "reason": "固定/平均斜率不为零与斜率的群组间方差不为零是不同检验；不能由平均显著推群组异质性。",
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/"
+      ],
+      "suggestion": "隔离该过度推断；分别说明参数检验对象，并结合效应大小、模型和测量质量证据判断。"
+    },
+    {
+      "id": "H08",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 17,
+      "match_text": "由于D/df近似服从t分布，可以对其进行显著性检验",
+      "reason": "所示马氏平方距离/df为非负量，不能服从取正负值的Student t分布。总体正态且参数已知时平方马氏距离服从卡方；样本估计距离还须区分内部/外部及相应校准。",
+      "authority_urls": [
+        "https://scikit-learn.org/stable/auto_examples/covariance/plot_mahalanobis_distances.html",
+        "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3664.htm"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H10",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 38,
+      "match_text": "检验缺失数据机制是否为非随机缺失（MCAR）可以使用LittlesMCAR检验",
+      "reason": "MCAR是完全随机缺失，不是非随机缺失；Little检验的零假设是MCAR，拒绝不直接识别MAR或MNAR。",
+      "authority_urls": [
+        "https://naniar.njtierney.com/reference/mcar_test.html"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H11",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 21,
+      "match_text": "无须担心任何估计偏差，可以直接删除也\n可以使用均值插补等插补方法",
+      "reason": "MCAR下完整个案分析有无偏性质，但均值插补仍缩小方差、扰乱相关与标准误。不能把MCAR扩展成任何插补都无偏。",
+      "authority_urls": [
+        "https://stefvanbuuren.name/fimd/sec-simplesolutions.html"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H16",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 324,
+      "match_text": "f2=0.26表示大的效应",
+      "reason": "在文中采用Cohen多元回归f²惯例时，大效应值为0.35，0.26错误。0.02/0.15/0.35也仅为经验参照。",
+      "authority_urls": [
+        "https://www.psychologie.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Psychologie/AAP/gpower/GPowerManual.pdf"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H19",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 86,
+      "match_text": "线性假设指的是残差与预测分数呈直线关系",
+      "reason": "线性条件均值模型正确时，残差对拟合值应围绕零无系统模式；不是二者具有一般的直线关联。后文U形诊断可保留，但该定义会误导。",
+      "authority_urls": [
+        "https://www.itl.nist.gov/div898/handbook/pmd/section4/pmd441.htm"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H21",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 76,
+      "match_text": "而b和d没有被纳人该回归方程可解释的范围",
+      "reason": "上下文先讲各预测项的独特贡献，随后明确把共享b/d排除于整个方程解释范围。控制其他项的独特贡献不分配共享部分，整体R²仍包含共享解释部分。",
+      "authority_urls": [
+        "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/summary.lm.html",
+        "https://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.OLSResults.rsquared.html"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H25",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 188,
+      "match_text": "如果一个观测变量同时受\n多个潜变量的影响，则称该模型为多质多法模型",
+      "reason": "交叉载荷并不充分定义多特质多方法设计；MTMM要求区分多个特质和多个测量方法的系统测量结构。后文特质/方法例子不能使前面的通用等同成立。",
+      "authority_urls": [
+        "https://garfield.library.upenn.edu/classics1987/A1987G546400001.pdf",
+        "https://users.cla.umn.edu/~nwaller/prelim/campbelfiskemtmm.pdf"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H29",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 179,
+      "match_text": "还可以计算得\n到每个潜在因素能够解释的变异比例",
+      "reason": "本段实际输出是SAMPLE CORRELATION MATRIX的谱，除以变量数是标准化PCA对应成分解释比例；不能直接作为极大似然共同因素的各因素解释变异。",
+      "authority_urls": [
+        "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html",
+        "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/factanal.html"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H32",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 272,
+      "match_text": "R?结果可以代表观测变量和潜变量的信度",
+      "reason": "指标R²在指定测量模型条件下可表示指标的共同解释比例；内源潜变量的结构R²是结构预测解释比例，不是其测量信度。",
+      "authority_urls": [
+        "https://www.statmodel.com/download/StandardizedCoefficients.pdf",
+        "https://lavaan.ugent.be/tutorial/cfa.html"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H36",
+      "source": "course",
+      "doc": "w08-moderation",
+      "page_pdf": 4,
+      "match_text": "一般地，调节效应量ΔR2大于2%即可表示有意义的大小",
+      "reason": "ΔR²没有适用于所有研究的2%实质意义阈值，解释需结合任务、设计、变量分布与成本。该句是既有问题的另一措辞。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
+        "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00863/full"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H40",
+      "source": "course",
+      "doc": "w08-moderation",
+      "page_pdf": 5,
+      "match_text": "如果放宽到p=.10，tcrit=1.293",
+      "reason": "本段因预定.05未检出而改到.10报告边缘显著，需明确只作探索并保留预定检验结论；且这些tcrit与前述双侧t/p口径不一致。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
+        "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3664.htm"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H41",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 359,
+      "match_text": "不考虑调节变量Z\n时X-M-→Y的中介效应，实际上就是调节变量Z=0时的简单中介效应",
+      "reason": "从模型删去Z并重新拟合与在含Z/交互项的模型内计算Z=0条件间接效应不同。只有额外特殊约束下才可能相等。",
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/r/seminars/interactions-r/"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H42",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 361,
+      "match_text": "只要61或\nb2中任一显著，就表明M对Y的影响显著",
+      "reason": "条件斜率为b1+b2Z。单独一个系数显著不保证任一指定Z下该和显著；须检验线性组合及其协方差。",
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/r/seminars/interactions-r/"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H46",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 101,
+      "match_text": "我们将二分结果变量转换到连续的尺度上",
+      "reason": "Logistic链接变换的是条件发生概率p的odds与log odds，观测Y仍为0/1，不能直接对二分结果取有限logit。",
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H56",
+      "source": "course",
+      "doc": "w06-efa",
+      "page_pdf": 11,
+      "match_text": "表示男生的发生概率是女生发生概率的0.8倍",
+      "reason": "OR=.8表示男生与女生的odds之比为.8，概率比依赖女生基线风险，通常不等于.8。本页还把每单位OR=1.5误作绝对odds=1.5。",
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H57",
+      "source": "course",
+      "doc": "w06-efa",
+      "page_pdf": 16,
+      "match_text": "意味着性别并不会对\n科学成绩（是否为优生）产生影响",
+      "reason": "p=.119仅为未检出所建模的性别系数差异，不能证明没有关联，更不能确定没有因果影响。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H60",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 379,
+      "match_text": "加入第一水平预\n测变量后的第一水平的变异减去零模型中第一水平的变异",
+      "reason": "所描述的方差减少比例应为(零模型方差−加入预测变量后的方差)/零模型方差。本句颠倒相减顺序，改善模型会得到负解释率。须同时注明该方差减少指标不是所有随机斜率模型通用R²。",
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H64",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 268,
+      "match_text": "ON之后的变量是外源变量，ON之前的变量是内源变量",
+      "reason": "Mplus ON右侧是该方程预测量，不必是整个SEM的外源变量。本页D ON EE、EE ON WO使EE既是预测量又是内源潜变量，恰好构成反例。应以整个系统是否被其他变量预测判断外源/内源。",
+      "authority_urls": [
+        "https://www.statmodel.com/language.html",
+        "https://lavaan.ugent.be/tutorial/sem.html"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H69",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 188,
+      "match_text": "据此样\n本的平均数对总体参数进行估计，犯错误\n的可能很小(不超过5%或1%的概率)",
+      "reason": "置信水平描述重复抽样区间构造法覆盖率，不是这一个已观测样本估计错误的概率。应说明重复抽样与所构造区间。",
+      "authority_urls": [
+        "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H72",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 284,
+      "match_text": "在\n计算理论次数时，在3×2=6的单元格内，\n只有两个单元格内的数目可以自由变动",
+      "reason": "给定行列边缘后，自由变化的是观察列联表的(R-1)(C-1)个计数；独立零假设下的期望频数由边缘乘积/总数全部确定，没有自由变化的期望格。后文用边缘减法计算期望表是计算技巧，不是自由度本身。",
+      "authority_urls": [
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.contingency.expected_freq.html",
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H73",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 278,
+      "match_text": "552名中学生的身高分布符合正\n态分布",
+      "reason": "依据不显著拟合优度检验，只能报告没有检出与所拟合正态分布的显著偏离；不证明总体分布为正态。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chisquare.html"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H07",
+      "source": "course",
+      "doc": "w04-week4",
+      "page_pdf": 21,
+      "match_text": "<0.5不是异常值点",
+      "reason": "Cook距离衡量删除观测对拟合的影响；Cook<0.5不保证没有响应异常或多变量异常。阈值只是影响诊断经验，不是排除异常的充分条件。",
+      "authority_urls": [
+        "https://www.statsmodels.org/stable/examples/notebooks/generated/regression_plots.html"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H13",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 66,
+      "match_text": "即可认为两个因变量的线性组合在不同组之间满足协方差齐性假设。",
+      "reason": "本段从Box M的p>.05推出满足齐性假设。应报告未检出不齐，不能把不拒绝当作总体矩阵相等的证明。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H14",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 67,
+      "match_text": "由表2－7的结果可知，因变量男性气质和女性气质误差方差在不同组之间是相等的。",
+      "reason": "本段依据Levene p=.171、.336不显著断言不同组误差方差相等；应改未发现不齐的充分证据。",
+      "authority_urls": [
+        "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35a.htm",
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H15",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 248,
+      "match_text": "可以认为各组方差是齐性的",
+      "reason": "根据未显著方差检验直接确立方差齐性，与其原假设接受概率混淆。应表述未检出明显方差差异，并考虑检验力/稳健方法。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H23",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 133,
+      "match_text": "二者都依据观测变量的相关系数进行计算",
+      "reason": "本段把聚类普遍当成R型变量聚类。样品聚类也可基于欧氏/其他距离，不需从相关系数计算；不能把变量聚类特例扩成全部聚类的定义。",
+      "authority_urls": [
+        "https://scikit-learn.org/stable/modules/clustering.html"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H48",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 212,
+      "match_text": "H₀:μ₁≠μo(μ₁≤μo)",
+      "reason": "单侧备择μ>μ0对应零假设μ≤μ0；括号外μ1≠μ0与之不等价。应去除错误外式，保留正确的不等式，避免把OCR/排印错误直接供建站引用。",
+      "authority_urls": [
+        "https://www.itl.nist.gov/div898/handbook/prc/section2/prc22.htm"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H71",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 228,
+      "match_text": "需要通过对样本方差的差异检\n验来证明",
+      "reason": "方差齐性检验未拒绝相等零假设不构成相等的证明；且独立样本Welch t并不要求等方差，不能把方差预检验作为所有独立样本t的必须步骤。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H05",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 200,
+      "match_text": "反之，模型B中的限定条件成立",
+      "reason": "未拒绝嵌套限制不证明总体限制成立。该句与方差检验不显著即相等属同类问题，统一升级为major；同段嵌套差异检验原理可保留。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "FV01",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 294,
+      "reason": "未显著间接效应检验不能证明间接效应严格不存在。同段直接效应不显著即完全中介也把未拒绝等同于参数为零。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2819363/"
+      ],
+      "match_text": "如果结果不显著，就可以判定中介效应不存在",
+      "suggestion": "隔离这两条绝对结论，其他检验步骤可保留。"
+    },
+    {
+      "id": "FV01-direct",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 294,
+      "reason": "未显著间接效应检验不能证明间接效应严格不存在。同段直接效应不显著即完全中介也把未拒绝等同于参数为零。",
+      "authority_urls": [
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2819363/"
+      ],
+      "match_text": "若不显著，则说明是完全中介效\n应",
+      "suggestion": "隔离这两条绝对结论，其他检验步骤可保留。"
+    },
+    {
+      "id": "FV02",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 340,
+      "reason": "把所有测验的再测稳定性设为0.90硬性起码要求不成立；所需精度取决于用途、群体与后果。r²是两次分数的线性解释比例，不应据其推出普遍信度门槛。",
+      "authority_urls": [
+        "https://www.testingstandards.net/uploads/7/6/6/4/76643089/standards_2014edition.pdf"
+      ],
+      "match_text": "规定信度系数0.90左\n右 ，r²=0.81, 保证共变部分不少于80%\n是稳定性的起码要求",
+      "suggestion": "隔离无用途条件的0.90/80%最低门槛，保留显著相关不等于高相关的正确说明。"
+    },
+    {
+      "id": "H46-p110-link",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 110,
+      "match_text": "从而将二分结果变量转移到连续的尺度\n上",
+      "reason": "Logistic链接变换的是条件发生概率p的odds与log odds，观测Y仍为0/1，不能直接对二分结果取有限logit。",
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "H46-p110-response",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 110,
+      "match_text": "Logistic回归方程由于对结果变量进行了转换",
+      "reason": "Logistic链接变换的是条件发生概率p的odds与log odds，观测Y仍为0/1，不能直接对二分结果取有限logit。",
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/"
+      ],
+      "suggestion": "隔离包含此明确错误句的子块，并过滤父页相同原句；保留原始首测数据。"
+    },
+    {
+      "id": "FV02-p339",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 339,
+      "reason": "把所有测验的再测稳定性设为0.90硬性起码要求不成立；所需精度取决于用途、群体与后果。r²是两次分数的线性解释比例，不应据其推出普遍信度门槛。",
+      "authority_urls": [
+        "https://www.testingstandards.net/uploads/7/6/6/4/76643089/standards_2014edition.pdf"
+      ],
+      "match_text": "在心理与教育测验中常要求信度系数(相\n关系数)在0.90左右，才能说某个测验可\n信",
+      "suggestion": "隔离无用途条件的0.90/80%最低门槛，保留显著相关不等于高相关的正确说明。"
+    },
+    {
+      "id": "FV02-p339-r2",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 339,
+      "match_text": "若比率为零，则说明\nY的变异与X 无关，回归方程无效。",
+      "reason": "含截距的一元线性回归R²为零表示拟合的线性项没有减少平方误差。X、Y仍可能存在非线性关系。",
+      "authority_urls": [
+        "https://www.itl.nist.gov/div898/handbook/pmd/section4/pmd441.htm"
+      ],
+      "suggestion": "明确这里度量的是给定模型的拟合表现，勿据此否认非线性关联。"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "reviewed_at": "2026-11-19",
+  "policy": "条件说明；不据此自动隔离内容",
+  "notes": [
+    {
+      "id": "H31",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 148,
+      "match_text": "而两个矩阵所计算的特征根不同",
+      "reason": "这里前文把载荷列平方和命名为特征根，意图可能是旋转后各因素平方载荷和改变；若按原相关矩阵谱定义，特征值不因旋转改变。将二者明确分名即可，不宜把全部方差重分配说成错误。",
+      "authority_urls": [
+        "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/varimax.html",
+        "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/factanal.html"
+      ],
+      "suggestion": "保留证据，并在编写该知识点时明确所列适用条件和术语区别。",
+      "severity": "minor"
+    },
+    {
+      "id": "H47",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 262,
+      "match_text": "在单因素实验设计中，由于SS 处理+SS误差= SS,\nη²和偏η²是相等的",
+      "reason": "该等式对单因素被试间模型成立；单因素重复测量还分解被试项，偏η²一般不等于η²。段首提及组间设计，后面泛称单因素/相关样本时应把限定带上。",
+      "authority_urls": [
+        "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00863/full"
+      ],
+      "suggestion": "保留证据，并在编写该知识点时明确所列适用条件和术语区别。",
+      "severity": "minor"
+    },
+    {
+      "id": "H62",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 301,
+      "match_text": "中介\n比值等于0.1527/0.2076=0.736",
+      "reason": "例中直接效应为-0.2076。若RM=ab/c'应为负；若延续前文绝对值约定应明确称效应绝对值之比，不再声称是有向效应比。",
+      "authority_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2819363/"
+      ],
+      "suggestion": "保留证据，并在编写该知识点时明确所列适用条件和术语区别。",
+      "severity": "minor"
+    },
+    {
+      "id": "H12",
+      "source": "textbook",
+      "doc": "advanced",
+      "page_pdf": 56,
+      "match_text": "有5个因变量时，5个相关和10个协方差在不同组间均要相等",
+      "reason": "5×5协方差矩阵对角线是5个方差，另有10个独特协方差，不是5个相关。上下文整体意图是协方差矩阵齐性，替换该词即可。",
+      "authority_urls": [
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.Covariance.html"
+      ],
+      "suggestion": "保留证据，并在编写该知识点时明确所列适用条件和术语区别。",
+      "severity": "minor"
+    },
+    {
+      "id": "H28",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 367,
+      "match_text": "正交旋转法是\n最佳的策略",
+      "reason": "这是寻求明确且区分因子的量表目标下的教学建议，同段也提醒可能扭曲真实相关。须按理论选择相关结构，不能单独摘录为普遍最优策略；前面载荷平方变异最大是varimax准则而非一切正交准则。",
+      "authority_urls": [
+        "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/varimax.html"
+      ],
+      "suggestion": "保留证据，并在编写该知识点时明确所列适用条件和术语区别。",
+      "severity": "minor"
+    },
+    {
+      "id": "H55",
+      "source": "basic",
+      "doc": "basic",
+      "page_pdf": 263,
+      "match_text": "考虑到计\n算的方便性和更好的统计效果，在此主要\n介绍N-K\n检验法",
+      "reason": "N-K检验更有检验力但不强控制家族错误率；不能以更好效果概括为比Tukey/Scheffe更可靠的多重检验。应说明控制目标。",
+      "authority_urls": [
+        "https://search.r-project.org/CRAN/refmans/mutoss/html/snk.html"
+      ],
+      "suggestion": "保留证据，并在编写该知识点时明确所列适用条件和术语区别。",
+      "severity": "minor"
+    }
+  ]
+}

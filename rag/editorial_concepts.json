@@ -1,0 +1,52 @@
+{
+  "channel": "external_verified_concept",
+  "reviewed_at": "2026-11-19",
+  "provenance": "依据已实际查看的官方统计文档与方法论文归纳；作为外部证据卡提供，未修改教材原文或索引。",
+  "records": [
+    {
+      "slug": "fixed-effect",
+      "zh": "固定效应",
+      "scope": "线性混合模型/多层线性模型",
+      "definition": "在线性混合模型中，固定效应是由共同参数描述的系统性平均关系；随机效应则描述不同群组或个体相对这一关系的偏差。例如，固定斜率可表示总体平均的时间趋势，随机斜率表示各人的趋势差异。",
+      "necessary_conditions": [
+        "本卡限定线性混合/多层模型语境，固定效应的系数需要估计；“固定”不是事先已知数值。",
+        "在随机效应及残差的条件均值为零等模型设定成立时，固定部分Xβ给出相应总体平均均值结构；固定系数的具体含义依赖设计矩阵、参照组、中心化及交互项。",
+        "随机截距/斜率及组内相关应按实际嵌套、重复测量或交叉结构建模；推断还需匹配所用估计方法的误差、协方差和分布条件。"
+      ],
+      "authority_urls": [
+        "https://www.statsmodels.org/stable/mixed_linear.html",
+        "https://cran.r-project.org/web/packages/lme4/vignettes/lmer.pdf"
+      ],
+      "source_locator": [
+        "statsmodels: simple random-coefficient example, shared fixed parameters and zero-mean random coefficients",
+        "Bates et al.: section 1.1, conditional response model and zero-mean random effects"
+      ],
+      "reviewstatus": "pass",
+      "formula_evidence_slug": "fixed-effect"
+    },
+    {
+      "slug": "chi-square-test",
+      "zh": "Pearson卡方检验",
+      "scope": "分类频数的Pearson拟合优度或独立性检验",
+      "definition": "Pearson卡方检验比较分类数据的观察频数与零假设下的期望频数，判断差异是否超过该模型下抽样波动可解释的程度。拟合优度检验考察各类别比例是否符合指定分布；列联表独立性检验考察两个分类变量是否独立。",
+      "necessary_conditions": [
+        "输入为互斥类别中的计数；须明确独立观测或相应独立抽样设计。同一个体的配对或重复记录，不能直接按独立频数处理。",
+        "期望频数由零假设和抽样设计确定，公式中参与求和的期望频数须大于零；独立性检验通常依据边际频数计算期望值，常规固定样本量检验中观察与期望频数总和应一致。",
+        "采用渐近卡方p值前须检查期望频数、样本量和表格稀疏程度；稀疏时应选择与设计相容的精确方法或Monte Carlo方法，例如适当2×2表的Fisher精确检验。",
+        "须注明使用拟合优度还是独立性分支、相应自由度以及是否作连续性校正。"
+      ],
+      "authority_urls": [
+        "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/chisq.test.html",
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html",
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chisquare.html"
+      ],
+      "source_locator": [
+        "R stats chisq.test: Details, nonnegative integer counts, goodness-of-fit and independence nulls, asymptotic/Monte Carlo distinction",
+        "SciPy chi2_contingency: expected frequencies, Pearson statistic, correction and resampling options",
+        "SciPy chisquare: independent categorical sampling, equal observed/expected totals, adjusted degrees of freedom"
+      ],
+      "reviewstatus": "pass",
+      "formula_evidence_slug": "chi-square-test"
+    }
+  ]
+}

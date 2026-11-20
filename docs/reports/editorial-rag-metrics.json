@@ -1,0 +1,79 @@
+{
+  "scope": "offline editorial evidence evaluation; the report uses aggregate measures and source locations",
+  "source_scope_30_terms": {
+    "two_source_default": {
+      "total_requirements": 90,
+      "indexed_supported": 78,
+      "top8_supported": 63,
+      "retrieval_misses": 15,
+      "conditional_recall_at_8": 0.8076923076923077
+    },
+    "three_source_explicit": {
+      "total_requirements": 90,
+      "indexed_supported": 86,
+      "top8_supported": 66,
+      "retrieval_misses": 20,
+      "conditional_recall_at_8": 0.7674418604651163
+    }
+  },
+  "matched_citations_30_terms": {
+    "textbook_first_requirements": 80,
+    "older_three_source_top8_after_same_filter": 50,
+    "new_top8": 53,
+    "new_editorial_context": 57,
+    "older_raw_mean_characters": 5036.6,
+    "new_context_mean_characters": 7802.333333333333
+  },
+  "ranking_30_terms": {
+    "older_three_source": {
+      "queries": 30,
+      "relevant_chunks": 143,
+      "returned_chunks": 240,
+      "P@8": 0.5958333333333333,
+      "P@1": 0.8,
+      "MRR@8": 0.878095238095238,
+      "Hit@8": 1.0
+    },
+    "new_editorial": {
+      "queries": 30,
+      "relevant_chunks": 143,
+      "returned_chunks": 240,
+      "P@8": 0.5958333333333333,
+      "P@1": 0.7666666666666667,
+      "MRR@8": 0.8511904761904762,
+      "Hit@8": 1.0
+    }
+  },
+  "new_term_audit": {
+    "queries": 8,
+    "P@8": 0.515625,
+    "P@1": 0.625,
+    "MRR@8": 0.7083333333333334,
+    "Hit@8": 0.875,
+    "context_fields": {
+      "sufficient": 11,
+      "missing": 4,
+      "partial": 1
+    }
+  },
+  "registered_scientific_issues": {
+    "reviewed_major_spans_locatable": 57,
+    "minor_condition_notes": 6,
+    "final_queries_bound_to_current_inputs": 40,
+    "public_evidence_units_checked": 1387,
+    "known_major_span_leaks": 0,
+    "approved_formula_routes": 22,
+    "approved_concept_routes": 2
+  },
+  "optional_experiments": {
+    "all_frozen_text_citation_groups": 86,
+    "default_context_coverage": 59,
+    "joint_rerank_context_coverage": 57,
+    "relation_expansion_context_coverage": 57,
+    "new_relation_rows_in_top8_across_48_terms": 0,
+    "odds_ratio_first_relevant_rank": [
+      8,
+      1
+    ]
+  }
+}

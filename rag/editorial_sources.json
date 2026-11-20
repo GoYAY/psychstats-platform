@@ -1,0 +1,700 @@
+{
+  "review_round": "formula-knowledge-independent-1",
+  "review_standard": "mathematics and applicable conditions, independently checked against authoritative sources",
+  "records": [
+    {
+      "slug": "box-plot",
+      "zh": "盒式图",
+      "original_latex": "IQR=Q_3-Q_1,\\qquad [Q_1-1.5IQR,\\;Q_3+1.5IQR]",
+      "approved_latex": "IQR=Q_3-Q_1,\\qquad [Q_1-1.5IQR,\\;Q_3+1.5IQR]",
+      "original_note": "Q₁、Q₃为第一和第三四分位数；括号内是常见筛查界限，实际须通常落在界限内最远观测处。",
+      "variables": {
+        "Q_1": "第一四分位数",
+        "Q_3": "第三四分位数",
+        "IQR": "四分位距"
+      },
+      "conditions": [
+        "采用常见Tukey 1.5IQR规则；界限不等于实际须端点，须通常止于界限内最远观测。",
+        "超界点是需核查的候选，不据此自动删除；分位数算法可能随软件改变。"
+      ],
+      "authority_urls": [
+        "https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html"
+      ],
+      "source_read_locator": "whis参数，默认1.5与须位置定义",
+      "decision": "pass",
+      "finding": "主体正确，补清筛查界限与须端点的区别。",
+      "independent_check": "Q1=2、Q3=6时IQR=4，界限[-4,12]；若最远观测为0与10，须端点为0与10。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "homogeneity-of-variance",
+      "zh": "方差齐性",
+      "original_latex": "\\sigma_1^2=\\sigma_2^2=\\cdots=\\sigma_k^2",
+      "approved_latex": "\\sigma_1^2=\\sigma_2^2=\\cdots=\\sigma_k^2",
+      "original_note": "σⱼ² 为第 j 组总体误差方差，k 为组数；该等式表达组间方差齐性，不涉及组均值，也不是重复测量球形条件。",
+      "variables": {
+        "sigma_j^2": "第j组总体误差方差",
+        "k": "比较组数"
+      },
+      "conditions": [
+        "等式表达组间方差齐性，不表示均值相等，也不是重复测量球形性。",
+        "对Levene不显著应写未检出方差差异，不能写证明相等。"
+      ],
+      "authority_urls": [
+        "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35a.htm"
+      ],
+      "source_read_locator": "Definition H0及例子结论",
+      "decision": "pass",
+      "finding": "主体正确；齐性约束与检验决策分开。",
+      "independent_check": "两组均值不同但方差均为4仍满足等式；等均值而方差1与4不满足。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "residual",
+      "zh": "残差",
+      "original_latex": "e_i=y_i-\\hat y_i",
+      "approved_latex": "e_i=y_i-\\hat y_i",
+      "original_note": "eᵢ 为第 i 条观测的原始残差，yᵢ 为观测结果，ŷᵢ 为拟合值；该定义不同于标准化、学生化、Pearson 或偏差残差。",
+      "variables": {
+        "e_i": "第i条观测的原始残差",
+        "y_i": "观察到的结果",
+        "hat_y_i": "同条观测的拟合值"
+      },
+      "conditions": [
+        "原始响应残差采用观察减拟合方向。",
+        "不是未知总体误差，也不同于标准化、学生化、Pearson与偏差残差。"
+      ],
+      "authority_urls": [
+        "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/lm.html"
+      ],
+      "source_read_locator": "Value: residuals=response minus fitted values",
+      "decision": "pass",
+      "finding": "主体与原始残差定义正确。",
+      "independent_check": "y=5、拟合=3时e=2；拟合加残差恰为观察值。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "stepwise-regression",
+      "zh": "逐步回归",
+      "original_latex": "AIC=-2\\log\\widehat L+2k",
+      "approved_latex": "AIC=-2\\log\\widehat L+2k",
+      "original_note": "示例 step 使用 AIC 比较候选模型：L̂ 是极大化似然，k 是软件计算的自由参数数目。只比较同一数据和相容似然口径下的模型；不是某个模型为真的概率。",
+      "variables": {
+        "hat_L": "已极大化的相应似然",
+        "k": "该模型自由参数个数，不是R step参数k的同一记号"
+      },
+      "conditions": [
+        "这里给AIC型逐步选择例子，不代表所有逐步回归均用AIC。",
+        "比较同一数据、相容似然及常数口径的模型；似然须极大化。",
+        "搜索依赖起点、scope与方向；AIC小不表示模型为真概率较大。"
+      ],
+      "authority_urls": [
+        "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/AIC.html",
+        "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/step.html"
+      ],
+      "source_read_locator": "AIC Description/Details；step direction、scope、Warning",
+      "decision": "pass",
+      "finding": "主体正确。必须避免把公式中的参数数k与R step的惩罚系数参数k混为一谈。",
+      "independent_check": "logL=-10、参数数3时AIC=26；同logL多一参数时AIC增加2。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "multiple-regression",
+      "zh": "多元回归",
+      "original_latex": "Y_i=b_0+\\sum_{j=1}^{p}b_jX_{ij}+e_i",
+      "approved_latex": "Y_i=b_0+\\sum_{j=1}^{p}b_jX_{ij}+e_i",
+      "original_note": "Yᵢ 为第 i 人结果，Xᵢⱼ 为第 j 个预测项，p 为预测项数，b₀ 为截距，bⱼ 为系数，eᵢ 为残差；连续结果线性条件均值模型，推断还需适当误差与独立性条件。",
+      "variables": {
+        "Y_i": "第i条观察结果",
+        "b_0": "拟合截距",
+        "b_j": "第j个拟合回归系数",
+        "X_ij": "第i条记录第j个预测项",
+        "p": "预测项数",
+        "e_i": "观察结果减拟合值的样本残差"
+      },
+      "conditions": [
+        "本式以b和e表达拟合后的分解：Y=拟合线性部分+样本残差。",
+        "若表达总体条件均值模型，应改用总体参数与误差符号并明确E(error|X)=0等模型条件；不得混称样本残差为未知总体误差。",
+        "系数的条件解释取决于实际包含的预测项、编码与模型设定。"
+      ],
+      "authority_urls": [
+        "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/lm.html"
+      ],
+      "source_read_locator": "Details: response/formula及Value: fitted.values/residuals",
+      "decision": "pass",
+      "finding": "公式作为拟合分解正确；与总体随机模型分开使用。",
+      "independent_check": "b0=1、b=(2,-1)、X=(3,4)时拟合=3；若Y=5则e=2，分解成立。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "euclidean-distance",
+      "zh": "欧氏距离",
+      "original_latex": "d(\\mathbf{x},\\mathbf{y})=\\sqrt{\\sum_{j=1}^{p}(x_j-y_j)^2}",
+      "approved_latex": "d(\\mathbf{x},\\mathbf{y})=\\sqrt{\\sum_{j=1}^{p}(x_j-y_j)^2}",
+      "original_note": "x_j、y_j 是两个对象在第 j 维的数值，p 是维度数；各维的单位和权重须有研究意义。",
+      "variables": {
+        "x_j": "对象x第j维坐标",
+        "y_j": "对象y第j维坐标",
+        "p": "共同维数"
+      },
+      "conditions": [
+        "实数等维向量的非加权欧氏距离，各维权重为1。",
+        "单位、尺度和权重改变距离；是否标准化应由比较目的决定。"
+      ],
+      "authority_urls": [
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.euclidean.html"
+      ],
+      "source_read_locator": "定义式及默认权重1",
+      "decision": "pass",
+      "finding": "主体正确，等同SciPy默认等权形式。",
+      "independent_check": "(0,0)与(3,4)距离5；相同向量距离0。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "k-means-clustering",
+      "zh": "K 均值聚类",
+      "original_latex": "\\min_{C_1,\\ldots,C_K}\\sum_{k=1}^{K}\\sum_{i\\in C_k}\\|\\mathbf{x}_i-\\boldsymbol{\\mu}_k\\|^2",
+      "approved_latex": "\\min_{C_1,\\ldots,C_K}\\sum_{k=1}^{K}\\sum_{i\\in C_k}\\|\\mathbf{x}_i-\\boldsymbol{\\mu}_k\\|^2",
+      "original_note": "C_k 为第 k 组，μ_k 为组均值，x_i 为数值向量；使用平方欧氏距离，尺度须先合理处理，算法未必取得全局最小值。",
+      "variables": {
+        "C_k": "非空且互不重叠的第k个簇，覆盖所分析对象",
+        "mu_k": "簇内数值向量的算术均值",
+        "x_i": "第i个数值向量",
+        "K": "预先指定簇数"
+      },
+      "conditions": [
+        "目标为平方欧氏组内离差和；簇中心是均值。",
+        "常用迭代算法可停在局部最优；尺度与初值影响结果。",
+        "公式是优化目标，不保证真实类别或全局解。"
+      ],
+      "authority_urls": [
+        "https://scikit-learn.org/stable/modules/clustering.html#k-means"
+      ],
+      "source_read_locator": "2.3.2 K-means，inertia目标式",
+      "decision": "pass",
+      "finding": "主体正确，与最近中心表示的目标等价。",
+      "independent_check": "一维簇{0,2}均值1，组内平方和2；把中心移至0时平方和4，符合均值最小性质。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "common-factor",
+      "zh": "公共因素",
+      "original_latex": "x_i=\\nu_i+\\sum_{j=1}^{m}\\lambda_{ij}\\eta_j+\\epsilon_i",
+      "approved_latex": "x_i=\\nu_i+\\sum_{j=1}^{m}\\lambda_{ij}\\eta_j+\\epsilon_i",
+      "original_note": "指标 i 由截距 ν_i、m 个共同因素 η_j 的加权贡献和独特残差 ε_i 构成；λ_ij 是载荷。这是线性测量模型，不表示共同因素已经被直接观测。",
+      "variables": {
+        "x_i": "某一对象第i个观测指标；i在此索引指标",
+        "nu_i": "该指标截距",
+        "lambda_ij": "指标i对共同因子j的载荷",
+        "eta_j": "第j个未直接观测的共同因子",
+        "epsilon_i": "指标独特/测量残差",
+        "m": "共同因子数"
+      },
+      "conditions": [
+        "线性连续指标测量模型；给定因子后的残差均值需与截距定义一致。",
+        "通常需规定潜变量尺度与均值原点以识别；残差协方差是否为零须另说明。",
+        "含截距的非中心化模型与标准化零均值特例区分。"
+      ],
+      "authority_urls": [
+        "https://www.statmodel.com/download/StandardizedCoefficients.pdf",
+        "https://lavaan.ugent.be/tutorial/means.html",
+        "https://scikit-learn.org/stable/modules/decomposition.html#factor-analysis"
+      ],
+      "source_read_locator": "Mplus公式(1)取直接X效应为0；lavaan Meanstructures；sklearn 2.5.5",
+      "decision": "pass",
+      "finding": "主体正确；截距不应因教材常用标准化特例而删去。",
+      "independent_check": "nu=2、载荷(0.5,1)、因子(2,3)、残差0.2得到x=6.2；矩阵形式nu+Lambda eta+epsilon各项同维。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "eigenvalue",
+      "zh": "特征根",
+      "original_latex": "\\mathbf{A}\\mathbf{v}=\\lambda\\mathbf{v},\\quad\\mathbf{v}\\ne\\mathbf{0}",
+      "approved_latex": "\\mathbf{A}\\mathbf{v}=\\lambda\\mathbf{v},\\quad\\mathbf{v}\\ne\\mathbf{0}",
+      "original_note": "A 为所分析矩阵，λ 为特征根，v 为特征向量；协方差或相关矩阵 PCA 的 λ 表示对应成分方差。",
+      "variables": {
+        "A": "n×n方阵",
+        "v": "对应的n维非零右特征向量",
+        "lambda": "特征值，可为复数"
+      },
+      "conditions": [
+        "一般方阵定义；协方差/相关矩阵PCA时矩阵为对称半正定，特征根为非负实数并对应成分方差。",
+        "特征向量允许乘非零常数；不得省略v非零。",
+        "特征根大于1不是通用矩阵定义，也不是保留真实因子数的保证。"
+      ],
+      "authority_urls": [
+        "https://numpy.org/doc/stable/reference/generated/numpy.linalg.eig.html",
+        "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html"
+      ],
+      "source_read_locator": "NumPy Notes定义；sklearn explained_variance_",
+      "decision": "pass",
+      "finding": "主体正确，区分一般矩阵定义与PCA专用解释。",
+      "independent_check": "A=diag(2,3)、v=(1,0)时Av=2v；零向量对任意lambda都满足等式，因此必须排除。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "non-recursive-model",
+      "zh": "非递归模型",
+      "original_latex": "\\eta_1=b_{12}\\eta_2+\\gamma_1x_1+\\zeta_1,\\qquad\\eta_2=b_{21}\\eta_1+\\gamma_2x_2+\\zeta_2",
+      "approved_latex": "\\eta_1=b_{12}\\eta_2+\\gamma_1x_1+\\zeta_1,\\qquad\\eta_2=b_{21}\\eta_1+\\gamma_2x_2+\\zeta_2",
+      "original_note": "η_1、η_2 为反馈变量，b 为反馈系数；示意 x_1、x_2 各有排除路径限制，但这些限制本身不保证识别，工具有效性及误差假设须另审查。",
+      "variables": {
+        "eta_1,eta_2": "互相依赖的两个内生变量",
+        "b_12,b_21": "对方变量到本变量的反馈路径系数",
+        "x_1,x_2": "外生预测/候选工具变量",
+        "gamma_1,gamma_2": "各自进入方程的外生系数",
+        "zeta_1,zeta_2": "方程扰动，可按模型设定相关"
+      },
+      "conditions": [
+        "本例省略截距，需声明变量已适当中心化或截距固定为0；不代表反馈模型一律无截距。",
+        "排除路径只是模型限制，不能单独保证识别；需检查工具相关性、外生性及相应秩/误差假设。",
+        "联立约化解要求1-b12*b21不等于0。若采用迭代反馈的稳定解释，还需谱半径rho(B)<1；此二变量例等价于|b12*b21|<1。",
+        "模型识别、联立可解与稳定性是不同要求；静态方程不直接证明双向因果。"
+      ],
+      "authority_urls": [
+        "https://www.stata.com/manuals/semexample7.pdf",
+        "https://www.stata.com/manuals/semmethodsandformulasforsem.pdf",
+        "https://www.stata.com/manuals/semestatstable.pdf"
+      ],
+      "source_read_locator": "Example7双向路径；Methods and formulas模型式；estat stable",
+      "decision": "pass",
+      "finding": "主体作为零截距双向联立示例正确；已补原说明未明确的零截距约定，并区分三类条件。",
+      "independent_check": "B=[[0,0.2],[0.3,0]]时det(I-B)=0.94且rho=sqrt(0.06)<1；b12=1.2,b21=1.1时I-B仍可逆但rho>1，说明可逆不等于稳定。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "structural-model",
+      "zh": "结构模型",
+      "original_latex": "\\boldsymbol{\\eta}=\\boldsymbol{\\alpha}+\\mathbf{B}\\boldsymbol{\\eta}+\\boldsymbol{\\Gamma}\\boldsymbol{\\xi}+\\boldsymbol{\\zeta}",
+      "approved_latex": "\\boldsymbol{\\eta}=\\boldsymbol{\\alpha}+\\mathbf{B}\\boldsymbol{\\eta}+\\boldsymbol{\\Gamma}\\boldsymbol{\\xi}+\\boldsymbol{\\zeta}",
+      "original_note": "η 为内生潜变量，ξ 为外生变量，B 与 Γ 为路径矩阵，α 为截距，ζ 为扰动；模型需要识别，若有反馈还须检查 I−B 可逆及稳定性。",
+      "variables": {
+        "eta": "m维内生潜变量向量",
+        "alpha": "m维截距向量",
+        "B": "m×m内生路径系数矩阵，通常对角为0",
+        "xi": "q维外生变量向量",
+        "Gamma": "m×q外生到内生的路径矩阵",
+        "zeta": "m维扰动向量"
+      },
+      "conditions": [
+        "线性结构方程，变量均值、扰动均值/协方差及外生性需与模型一致。",
+        "约化形式需要I-B可逆；参数是否可识别还需独立检查。",
+        "当解释反复反馈过程或累积效果时检查rho(B)<1稳定性；不能把可逆、识别、稳定当作同一个条件。",
+        "路径是建模假设；拟合良好本身不确立因果关系。"
+      ],
+      "authority_urls": [
+        "https://www.statmodel.com/download/StandardizedCoefficients.pdf",
+        "https://www.stata.com/manuals/semmethodsandformulasforsem.pdf",
+        "https://www.stata.com/manuals/semestatstable.pdf"
+      ],
+      "source_read_locator": "Mplus式(2)，Stata Model and parameterization及Stability",
+      "decision": "pass",
+      "finding": "主体正确；外生xi和扰动zeta与原始来源符号可换名，但必须在变量表中明确。",
+      "independent_check": "B为m×m、Gamma为m×q、xi为q×1，各项均m×1；B=0退化为无内生反馈的多方程回归。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "moderator",
+      "zh": "调节变量",
+      "original_latex": "\\frac{\\partial E(Y\\mid X,W)}{\\partial X}=\\beta_1+\\beta_3W",
+      "approved_latex": "\\frac{\\partial E(Y\\mid X,W)}{\\partial X}=\\beta_1+\\beta_3W",
+      "original_note": "W 为连续调节变量；β1 是 W=0 时 X 的线性斜率，β3 为交互系数；该表达式依赖指定线性交互模型。",
+      "variables": {
+        "X": "可作导数解释的连续预测变量",
+        "W": "连续调节变量",
+        "beta_1": "W=0时X条件斜率",
+        "beta_3": "W每增1单位，X斜率的改变量"
+      },
+      "conditions": [
+        "建立E(Y|X,W)=beta0+beta1X+beta2W+beta3XW的线性交互条件均值模型。",
+        "W固定后对X求导；分类预测变量需改用相应离散差异/编码解释。",
+        "存在调节是交互系数问题，不能用某一组显著而另一组不显著替代斜率差检验。"
+      ],
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/r/seminars/interactions-r/",
+        "https://www.statmodel.com/download/2025RMA.pdf"
+      ],
+      "source_read_locator": "UCLA Main vs Simple Effects及simple slope；Mplus线性交互模型",
+      "decision": "pass",
+      "finding": "主体正确；导数是所指定均值模型的代数结果。",
+      "independent_check": "beta1=2、beta3=-0.5、W=4时条件斜率0；W增1使斜率降0.5。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "moderation-effect",
+      "zh": "调节效应",
+      "original_latex": "Y=\\beta_0+\\beta_1X+\\beta_2W+\\beta_3XW+\\varepsilon",
+      "approved_latex": "Y=\\beta_0+\\beta_1X+\\beta_2W+\\beta_3XW+\\varepsilon",
+      "original_note": "X 为压力等预测变量，W 为调节变量，Y 为结果；β3 表示 W 每增加一单位时 X 斜率的改变量，适用于指定的线性交互模型。",
+      "variables": {
+        "Y": "观察结果",
+        "X": "预测变量",
+        "W": "调节变量",
+        "beta_0": "截距",
+        "beta_1,beta_2": "相应另一变量为0时的低阶系数",
+        "beta_3": "线性交互系数",
+        "epsilon": "总体模型随机误差"
+      },
+      "conditions": [
+        "观察结果Y的总体模型必须保留epsilon；若写拟合值Yhat则改用估计系数并不加随机误差。",
+        "用条件均值解释时要求E(epsilon|X,W)=0；模型包含相应低阶项。",
+        "beta3表示条件斜率的变化，不是未经设计支持的因果效应。"
+      ],
+      "authority_urls": [
+        "https://www.statmodel.com/download/2025RMA.pdf",
+        "https://stats.oarc.ucla.edu/r/seminars/interactions-r/"
+      ],
+      "source_read_locator": "Mplus回归章(1.32)-(1.33)；UCLA交互模型",
+      "decision": "pass",
+      "finding": "主体含误差项正确；没有把预测均值与观察结果混写。",
+      "independent_check": "令epsilon=0得到条件均值；对X求导得到beta1+beta3W，与调节变量式一致。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "interaction-plot",
+      "zh": "交互作用图",
+      "original_latex": "\\widehat Y(X\\mid W=w)=\\hat\\beta_0+\\hat\\beta_2w+(\\hat\\beta_1+\\hat\\beta_3w)X",
+      "approved_latex": "\\widehat Y(X\\mid W=w)=\\hat\\beta_0+\\hat\\beta_2w+(\\hat\\beta_1+\\hat\\beta_3w)X",
+      "original_note": "w 为图中指定的调节变量水平；β̂ 为拟合线性交互模型的系数，Ŷ 为条件均值预测；含协变量时还需说明其固定或平均方式。",
+      "variables": {
+        "Yhat": "拟合条件均值",
+        "w": "绘图时指定的调节水平",
+        "hat_beta": "拟合模型的系数"
+      },
+      "conditions": [
+        "图中每条线固定W=w，来自同一线性交互模型。",
+        "这是拟合条件均值，不包含新观察值的随机误差；预测区间与均值置信区间区分。",
+        "额外协变量须写明固定值或平均方式；避免超出数据支持范围外推。",
+        "线条差异的推断需相应交互/斜率差检验。"
+      ],
+      "authority_urls": [
+        "https://stats.oarc.ucla.edu/r/seminars/interactions-r/"
+      ],
+      "source_read_locator": "Predicted Values vs Slopes、Plotting、Be wary of extrapolation",
+      "decision": "pass",
+      "finding": "主体是交互模型代数重排，正确。",
+      "independent_check": "展开(beta1+beta3w)X后等于beta0+beta1X+beta2w+beta3Xw；w=0恢复参考线。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "hlm",
+      "zh": "多层线性模型",
+      "original_latex": "Y_{ij}=\\gamma_{00}+\\gamma_{10}X_{ij}+\\gamma_{01}W_j+u_{0j}+e_{ij}",
+      "approved_latex": "Y_{ij}=\\gamma_{00}+\\gamma_{10}X_{ij}+\\gamma_{01}W_j+u_{0j}+e_{ij}",
+      "original_note": "i 为低层单位，j 为群组，X_ij 为低层预测，W_j 为高层预测；γ 为固定系数，u_0j 为随机截距偏差，e_ij 为残差；这是两层随机截距线性示例。",
+      "variables": {
+        "i": "低层观测单位",
+        "j": "群组",
+        "X_ij": "低层预测变量",
+        "W_j": "群组层预测变量",
+        "gamma_00": "X和W参考值时总体截距",
+        "gamma_10": "共同低层斜率",
+        "gamma_01": "群组协变量系数",
+        "u_0j": "群组随机截距偏差",
+        "e_ij": "低层误差"
+      },
+      "conditions": [
+        "两层随机截距线性示例；不含随机斜率或跨层交互。",
+        "通常设随机效应均值0，并与相应外生预测/低层误差条件相容；群组间独立及方差结构需明确。",
+        "X的组内/组间解释受中心化与是否纳入群组均值影响。"
+      ],
+      "authority_urls": [
+        "https://cran.r-project.org/web/packages/lme4/vignettes/lmer.pdf",
+        "https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/"
+      ],
+      "source_read_locator": "lme4式(2)-(3)；UCLA分层与合并表示",
+      "decision": "pass",
+      "finding": "主体是一般线性混合模型的随机截距特例，正确。",
+      "independent_check": "令beta0j=gamma00+gamma01Wj+u0j，beta1j=gamma10，代入Yij=beta0j+beta1jXij+eij得到目标式。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "growth-model",
+      "zh": "增长模型",
+      "original_latex": "Y_{it}=\\beta_{0i}+\\beta_{1i}t+e_{it},\\quad \\beta_{0i}=\\gamma_{00}+u_{0i},\\quad \\beta_{1i}=\\gamma_{10}+u_{1i}",
+      "approved_latex": "Y_{it}=\\beta_{0i}+\\beta_{1i}t+e_{it},\\quad \\beta_{0i}=\\gamma_{00}+u_{0i},\\quad \\beta_{1i}=\\gamma_{10}+u_{1i}",
+      "original_note": "i 为个人，t 为编码时间；γ00 为平均起点，γ10 为平均线性变化率，u_0i、u_1i 为个体起点和变化率偏差，e_it 为时点残差；此为简单线性多层增长模型。",
+      "variables": {
+        "i": "个人",
+        "t": "编码时间",
+        "beta_0i": "个人在t=0时截距",
+        "beta_1i": "个人每时间单位变化率",
+        "gamma_00,gamma_10": "总体平均截距、线性斜率",
+        "u_0i,u_1i": "个人截距/斜率偏差",
+        "e_it": "时点误差"
+      },
+      "conditions": [
+        "简单线性多层增长模型；随机截距与斜率可相关。",
+        "时间编码决定起点、单位及随机参数解释；不要求时间一定是从1开始的整数。",
+        "个体内误差结构需要建模；重复观测不能当作相互独立个体。"
+      ],
+      "authority_urls": [
+        "https://www.statsmodels.org/stable/mixed_linear.html",
+        "https://stats.oarc.ucla.edu/mplus/seminars/intromplus-part1/mplus-class-notesmodelinglongitudinal-data/"
+      ],
+      "source_read_locator": "statsmodels随机系数公式取X=time；UCLA纵向随机截距/随机斜率",
+      "decision": "pass",
+      "finding": "主体正确，是随机系数模型将预测变量设为时间的特例。",
+      "independent_check": "代入两条随机系数式，得到Yit=gamma00+gamma10t+u0i+u1it+eit；t=0时斜率项消失。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "fixed-effect",
+      "zh": "固定效应",
+      "original_latex": "Y=X\\beta+Zu+\\varepsilon",
+      "approved_latex": "Y=X\\beta+Zu+\\varepsilon",
+      "original_note": "X 为固定效应设计矩阵，β 为共同系数，Z 为随机效应设计矩阵，u 为群组偏差，ε 为残差；这是线性混合模型表示，固定效应解释依赖编码与条件。",
+      "variables": {
+        "Y": "n×1结果向量",
+        "X": "n×p固定效应设计矩阵",
+        "beta": "p×1共同系数",
+        "Z": "n×q随机效应设计矩阵",
+        "u": "q×1随机效应",
+        "epsilon": "n×1观测层误差"
+      },
+      "conditions": [
+        "线性混合模型语境；E(u)=0，误差和随机效应的协方差及外生性需另设。",
+        "高斯线性混合模型常设u~N(0,G)、epsilon~N(0,R)且相互独立；符号公式本身不强制R只能是sigma²I。",
+        "beta解释依赖编码和模型条件；与面板“固定效应估计”术语区别。"
+      ],
+      "authority_urls": [
+        "https://cran.r-project.org/web/packages/lme4/vignettes/lmer.pdf"
+      ],
+      "source_read_locator": "式(2)-(3)，offset取0，W按基础等权情形；允许一般协方差记号",
+      "decision": "pass",
+      "finding": "主体正确。固定和随机部分并列存在；固定效应不是“变量不会变化”的意思。",
+      "independent_check": "Xbeta与Zu均为n×1；Z=0时退化为线性回归；E(u)=E(epsilon)=0时E(Y)=Xbeta。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "p-value",
+      "zh": "p 值",
+      "original_latex": "p=\\Pr_{H_0}\\!\\left(|T|\\ge |t_{\\mathrm{obs}}|\\right)",
+      "approved_latex": "p=\\Pr_{H_0}\\!\\left(|T|\\ge |t_{\\mathrm{obs}}|\\right)",
+      "original_note": "这是以统计量绝对值为极端程度的双侧检验示例：T 是零假设下的统计量，t_obs 是观测值。不是零假设为真的概率；其他检验需要不同的极端性规则。",
+      "variables": {
+        "T": "在指定零假设和模型条件下的检验统计量",
+        "t_obs": "观察到的统计量",
+        "p": "以绝对值衡量极端性的尾概率"
+      },
+      "conditions": [
+        "这是对称t类统计量常用双侧示例，不是所有检验的统一双侧规则。",
+        "必须指明H0与统计量分布；有未知干扰参数时需说明处理方式或近似。",
+        "p不是H0为真概率、效应大小或研究结论为真的概率。"
+      ],
+      "authority_urls": [
+        "https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm",
+        "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf"
+      ],
+      "source_read_locator": "NIST双侧临界区；ASA六原则",
+      "decision": "pass",
+      "finding": "主体作为已限定的双侧示例正确。",
+      "independent_check": "在连续对称t分布下可写2*sf(abs(t_obs))；t_obs=0得到p=1。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "partial-eta-squared",
+      "zh": "偏 η²",
+      "original_latex": "\\eta_p^2=\\frac{SS_{\\mathrm{effect}}}{SS_{\\mathrm{effect}}+SS_{\\mathrm{error}}}",
+      "approved_latex": "\\eta_p^2=\\frac{SS_{\\mathrm{effect}}}{SS_{\\mathrm{effect}}+SS_{\\mathrm{error}}}",
+      "original_note": "SS effect 为所检验效应平方和，SS error 为该效应对应误差平方和；须按设计选取误差项，分母不是自动等于总平方和。",
+      "variables": {
+        "SS_effect": "该效应平方和",
+        "SS_error": "该效应对应误差平方和",
+        "eta_p^2": "样本偏eta平方"
+      },
+      "conditions": [
+        "方差分析等具有相应平方和分解的场景；误差项须匹配设计和所检验效应。",
+        "分母为效应加相应误差平方和，不自动等于总平方和。",
+        "设计改变会改变分母，不能把不同设计数值机械解释成同一总体解释率。"
+      ],
+      "authority_urls": [
+        "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00863/full"
+      ],
+      "source_read_locator": "Eta-squared in between and within-subjects comparisons，式(12)",
+      "decision": "pass",
+      "finding": "主体正确；需保留相应误差项限定。",
+      "independent_check": "SS_effect=20、SS_error=80得到0.2；另加不在该分母的因素平方和不会直接改变此比值。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "statistical-power",
+      "zh": "统计检验力",
+      "original_latex": "\\mathrm{Power}(\\theta)=P_{\\theta}(\\text{reject }H_0)=1-\\beta(\\theta)",
+      "approved_latex": "\\mathrm{Power}(\\theta)=P_{\\theta}(\\text{reject }H_0)=1-\\beta(\\theta)",
+      "original_note": "θ 为预先指定的备择参数，β(θ) 为在该真实效应下不拒绝零假设的概率；数值还依赖检验规则、样本量、噪声与设计。",
+      "variables": {
+        "theta": "指定的真实备择参数值",
+        "beta(theta)": "该备择参数下不拒绝H0的概率",
+        "reject H0": "预先规定检验规则的拒绝事件"
+      },
+      "conditions": [
+        "讨论检验力时theta位于备择参数范围；固定检验规则、显著性水平、样本量与设计。",
+        "复合备择下一般是随theta变化的函数，不是检验的无条件单一常数。"
+      ],
+      "authority_urls": [
+        "https://www.stats.ox.ac.uk/~laws/msc/Statistics.pdf"
+      ],
+      "source_read_locator": "3.4，PDF38页，power与power function",
+      "decision": "pass",
+      "finding": "主体正确；1-beta与拒绝/未拒绝两个事件互补相容。",
+      "independent_check": "固定theta下拒绝概率0.8，则不拒绝概率0.2；二者和为1。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "chi-square-test",
+      "zh": "卡方检验",
+      "original_latex": "\\chi^2=\\sum_{j=1}^{K}\\frac{(O_j-E_j)^2}{E_j}",
+      "approved_latex": "\\chi^2=\\sum_{j=1}^{K}\\frac{(O_j-E_j)^2}{E_j}",
+      "original_note": "Oⱼ 为第 j 格观察频数，Eⱼ 为零假设下期望频数，K 为格子数；此为未连续性校正的 Pearson 统计量，Eⱼ 应为正，卡方渐近参考需相应条件。",
+      "variables": {
+        "O_j": "第j格观察频数",
+        "E_j": "零假设下该格期望频数",
+        "K": "分析格数"
+      },
+      "conditions": [
+        "未连续性校正的Pearson卡方统计量，各E_j须为正。",
+        "观测独立、期望频数及其他设计条件影响卡方近似；拟合优度与独立性使用不同自由度。",
+        "独立性r×c表在常规情形df=(r-1)(c-1)；拟合优度已固定类别概率时df=K-1，估计参数时需按具体估计方式调整。",
+        "稀疏表可考虑适用的精确、置换或蒙特卡罗方法，不能仅凭固定观察频数阈值判断。"
+      ],
+      "authority_urls": [
+        "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35f.htm",
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html"
+      ],
+      "source_read_locator": "NIST统计量/自由度；SciPy method和期望频数",
+      "decision": "pass",
+      "finding": "主体正确，需与具体检验设计及自由度配套。",
+      "independent_check": "O=(30,20)、E=(25,25)得到25/25+25/25=2；O=E时统计量0。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    },
+    {
+      "slug": "t-test",
+      "zh": "t 检验",
+      "original_latex": "t=\\frac{\\bar{x}_1-\\bar{x}_2}{\\sqrt{s_1^2/n_1+s_2^2/n_2}}",
+      "approved_latex": "t=\\frac{\\bar{x}_1-\\bar{x}_2}{\\sqrt{s_1^2/n_1+s_2^2/n_2}}",
+      "original_note": "独立两组的 Welch t 统计量；分母是均值差标准误，自由度使用 Welch–Satterthwaite 近似。配对检验使用差值数据的另一公式。",
+      "variables": {
+        "bar_x_1,bar_x_2": "两独立组样本均值",
+        "s_1^2,s_2^2": "两组无偏样本方差",
+        "n_1,n_2": "两组样本量"
+      },
+      "conditions": [
+        "H0均值差为0的Welch两独立样本t统计量；非零原假设差应在分子减去delta0。",
+        "不要求总体方差相等；独立性及有限方差等抽样条件仍需满足，小样本推断通常依赖适当分布条件。",
+        "配对资料使用配对差值公式，不能直接套用本式。",
+        "Welch–Satterthwaite近似自由度：nu=(s1²/n1+s2²/n2)² / [((s1²/n1)²/(n1-1))+((s2²/n2)²/(n2-1))]；n1,n2>1且标准误为正。"
+      ],
+      "authority_urls": [
+        "https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm",
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html"
+      ],
+      "source_read_locator": "NIST Test Statistic及Welch-Satterthwaite df；SciPy equal_var=False",
+      "decision": "pass",
+      "finding": "主体正确；已把自由度公式完整记录，避免与Cochran–Cox方案混用。",
+      "independent_check": "取均值3与1、方差4与9、样本量10与20：t=2/sqrt(0.85)，nu=0.85²/(0.4²/9+0.45²/19)。",
+      "source_checked_at": "2026-11-18",
+      "content_type": "external_formula_evidence",
+      "reviewer": "knowledge_quality_reviewer",
+      "human_review": null,
+      "notation_status": "same_as_original_latex; conditions explicitly reviewed"
+    }
+  ],
+  "summary": {
+    "reviewed": 22,
+    "formula_body_pass": 22,
+    "latex_changed": 0,
+    "conditions_expanded": [
+      "non-recursive-model",
+      "structural-model",
+      "multiple-regression",
+      "moderation-effect",
+      "t-test"
+    ],
+    "status": "pass_with_recorded_conditions"
+  }
+}

@@ -1,5 +1,7 @@
 **完整产品设计与迭代报告：[阅读 PDF](docs/reports/psychstats-product-design-and-iteration.pdf) · [下载 Word](docs/reports/psychstats-product-design-and-iteration.docx)**
 
+**2026 年 11 月 21 日更新**。报告新增教材 RAG 质量复核。同一套错误过滤下，80 项教材主责要求中可确认的数量由 50 项增至 57 项，前八条片段相关率为 59.6%。[查看评测对照](docs/reports/editorial-rag-evaluation.md) · [运行新版取材入口](rag/README_EDITORIAL.md)
+
 # 心理统计学术语图鉴 · PsychStats Platform
 
 从一个陌生术语出发，理解它的含义与用途，再把新概念连接进自己的知识框架。
