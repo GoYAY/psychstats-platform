@@ -2,6 +2,20 @@
 
 用于建站时准备术语资料包。当前网站页面不因本入口而改变；原来的`rag_multi.py`和三个索引保留。
 
+## 优化二版逐要点核验
+
+`editorial_semantic.py` 是可选的编辑期入口，用明确问题和所需信息点准备一份教材资料。它从长块与短块两路各取最多 24 条候选，再补读短块所在页。DeepSeek 核验每个要点能否由候选直接回答，程序核对摘录并在 3,000 字符内优先选互补证据。返回的 `assessments` 说明各要点的判断，`priority_ids` 标记优先选入的原文，`contexts` 保留出处。其余位置仍可能有背景段落，编辑可据引文继续查证。
+
+先按[数据准备说明](../docs/DATA_PREPARATION.md)准备本地索引和 BGE 嵌入模型。该入口使用项目现有 `DEEPSEEK_API_KEY` 配置，向 DeepSeek 发送问题、要点名称与候选原文。公式用下方的 `--field formula` 入口取已核验外部证据。
+
+```powershell
+python -X utf8 rag/editorial_semantic.py manova `
+  --question "经典多元方差分析的推断需要哪些基本假设？" `
+  --point "观测之间的关系" --point "各组协方差的要求" --point "因变量联合分布的要求"
+```
+
+[旧版与优化二版离线对照](../docs/reports/editorial-rag-evaluation.md)
+
 ## 内容分工
 
 | 内容 | 提供者 | 交付方式 |

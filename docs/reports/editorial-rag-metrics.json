@@ -1,79 +1,582 @@
 {
-  "scope": "offline editorial evidence evaluation; the report uses aggregate measures and source locations",
-  "source_scope_30_terms": {
-    "two_source_default": {
-      "total_requirements": 90,
-      "indexed_supported": 78,
-      "top8_supported": 63,
-      "retrieval_misses": 15,
-      "conditional_recall_at_8": 0.8076923076923077
+  "date": "2026-11-23",
+  "scope": "offline_editorial_source_coverage",
+  "terms": 8,
+  "text_questions": 24,
+  "textbook_requirements": 22,
+  "external_formula_requirements": 5,
+  "all_requirements": 29,
+  "context_budget_per_question": 3000,
+  "context_budget_per_page": 9000,
+  "sources": [
+    "textbook",
+    "basic",
+    "course"
+  ],
+  "legacy_candidate_limit": 8,
+  "optimized_v2_candidate_limit_per_lane": 24,
+  "confirmed_passage_share_is_a_lower_bound": true,
+  "requirements": [
+    {
+      "id": "missing-data.K1",
+      "query": "统计分析中，什么情形可以称为缺失数据？",
+      "route": "textbook_rag_first"
     },
-    "three_source_explicit": {
-      "total_requirements": 90,
-      "indexed_supported": 86,
-      "top8_supported": 66,
-      "retrieval_misses": 20,
-      "conditional_recall_at_8": 0.7674418604651163
-    }
-  },
-  "matched_citations_30_terms": {
-    "textbook_first_requirements": 80,
-    "older_three_source_top8_after_same_filter": 50,
-    "new_top8": 53,
-    "new_editorial_context": 57,
-    "older_raw_mean_characters": 5036.6,
-    "new_context_mean_characters": 7802.333333333333
-  },
-  "ranking_30_terms": {
-    "older_three_source": {
-      "queries": 30,
-      "relevant_chunks": 143,
-      "returned_chunks": 240,
-      "P@8": 0.5958333333333333,
-      "P@1": 0.8,
-      "MRR@8": 0.878095238095238,
-      "Hit@8": 1.0
+    {
+      "id": "missing-data.K2",
+      "query": "在决定如何处理缺失数据之前，需要先检查哪些方面？",
+      "route": "textbook_rag_first"
     },
-    "new_editorial": {
-      "queries": 30,
-      "relevant_chunks": 143,
-      "returned_chunks": 240,
-      "P@8": 0.5958333333333333,
-      "P@1": 0.7666666666666667,
-      "MRR@8": 0.8511904761904762,
-      "Hit@8": 1.0
+    {
+      "id": "missing-data.K3",
+      "query": "缺失数据会怎样影响统计分析的精度和结论？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "manova.K1",
+      "query": "多元方差分析（MANOVA）用于比较什么？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "manova.K2",
+      "query": "多元方差分析（MANOVA）的‘多元’具体指什么？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "manova.K3",
+      "query": "经典多元方差分析（MANOVA）的推断需要哪些基本假设？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "main-effect.K1",
+      "query": "在含多个因素的方差分析里，怎样解释一个因素的主效应？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "main-effect.K2",
+      "query": "怎样区分方差分析的主效应、交互作用和在某个水平上的条件效应？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "main-effect.K3",
+      "query": "一个多水平因素的主效应显著时，可以对各水平之间的差异作出什么结论？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "euclidean-distance.K1",
+      "query": "欧氏距离的数学定义是什么？",
+      "route": "external_verified_supplement"
+    },
+    {
+      "id": "euclidean-distance.K2",
+      "query": "在已选定变量与单位的情况下，怎样解释欧氏距离的大小？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "euclidean-distance.K3",
+      "query": "变量单位和尺度对欧氏距离有什么影响，什么时候需要先处理尺度？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "euclidean-distance.F",
+      "query": "欧氏距离如何由两组坐标计算，各符号和适用条件是什么？",
+      "route": "external_verified_formula"
+    },
+    {
+      "id": "p-value.K1",
+      "query": "统计检验里的 p 值是什么，它以什么为前提？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "p-value.K2",
+      "query": "如何用 p 值和预先设定的显著性水平作出检验决策？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "p-value.K3",
+      "query": "p 值可以解释为零假设为真的概率或效应大小吗？",
+      "route": "external_verified_supplement"
+    },
+    {
+      "id": "p-value.F",
+      "query": "当双侧检验用统计量绝对值衡量极端程度时，p 值的概率表达式及适用条件是什么？",
+      "route": "external_verified_formula"
+    },
+    {
+      "id": "fixed-effect.K1",
+      "query": "在线性混合模型中，固定效应是什么？",
+      "route": "rag_with_external_concept"
+    },
+    {
+      "id": "fixed-effect.K2",
+      "query": "多层模型的固定效应和群组随机截距、随机斜率有什么区别？",
+      "route": "rag_with_external_concept"
+    },
+    {
+      "id": "fixed-effect.K3",
+      "query": "同一个多层模型里能同时包含固定效应和随机效应吗？",
+      "route": "rag_with_external_concept"
+    },
+    {
+      "id": "fixed-effect.F",
+      "query": "线性混合模型如何用一个方程写出固定部分、随机部分和观测误差？",
+      "route": "external_verified_formula"
+    },
+    {
+      "id": "chi-square-test.K1",
+      "query": "Pearson 卡方检验适用于什么数据，可以检验哪些问题？",
+      "route": "rag_with_external_concept"
+    },
+    {
+      "id": "chi-square-test.K2",
+      "query": "Pearson 卡方检验统计量比较的是哪两类频数？",
+      "route": "rag_with_external_concept"
+    },
+    {
+      "id": "chi-square-test.K3",
+      "query": "Pearson 卡方检验对独立观测和频数有哪些要求，遇到稀疏频数时怎么办？",
+      "route": "rag_with_external_concept"
+    },
+    {
+      "id": "chi-square-test.F",
+      "query": "未作连续性校正时，Pearson 卡方检验的统计量、变量和适用条件是什么？",
+      "route": "external_verified_formula"
+    },
+    {
+      "id": "t-test.K1",
+      "query": "t 检验使用什么统计量，主要检验什么？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "t-test.K2",
+      "query": "应当根据怎样的研究设计在独立样本和配对样本 t 检验之间选择？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "t-test.K3",
+      "query": "独立样本与配对 t 检验应分别怎样检查独立性、分布和方差条件？",
+      "route": "textbook_rag_first"
+    },
+    {
+      "id": "t-test.F",
+      "query": "两独立样本 Welch t 检验的统计量、各项含义及近似自由度是什么？",
+      "route": "external_verified_formula"
     }
-  },
-  "new_term_audit": {
-    "queries": 8,
-    "P@8": 0.515625,
-    "P@1": 0.625,
-    "MRR@8": 0.7083333333333334,
-    "Hit@8": 0.875,
-    "context_fields": {
-      "sufficient": 11,
-      "missing": 4,
-      "partial": 1
+  ],
+  "results": {
+    "legacy": {
+      "candidate_pool_supported": 11,
+      "candidate_top8_supported": 11,
+      "question_supported": 11,
+      "page_supported": 16,
+      "joint_supported": 24,
+      "complete_pages": 3,
+      "context_confirmed_support_passages": {
+        "supported": 15,
+        "returned": 113
+      },
+      "by_requirement": {
+        "missing-data.K1": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 1,
+          "context_supported": true
+        },
+        "missing-data.K2": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 1,
+          "context_supported": true
+        },
+        "missing-data.K3": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 1,
+          "context_supported": true
+        },
+        "manova.K1": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 2,
+          "context_supported": true
+        },
+        "manova.K2": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 2,
+          "context_supported": true
+        },
+        "manova.K3": {
+          "page_supported": false,
+          "external_supported": false,
+          "joint_supported": false,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "main-effect.K1": {
+          "page_supported": false,
+          "external_supported": false,
+          "joint_supported": false,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "main-effect.K2": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 3,
+          "context_supported": true
+        },
+        "main-effect.K3": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 1,
+          "context_supported": true
+        },
+        "euclidean-distance.K1": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "euclidean-distance.K2": {
+          "page_supported": false,
+          "external_supported": false,
+          "joint_supported": false,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "euclidean-distance.K3": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": 5,
+          "context_supported": true
+        },
+        "euclidean-distance.F": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true
+        },
+        "p-value.K1": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "p-value.K2": {
+          "page_supported": false,
+          "external_supported": false,
+          "joint_supported": false,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "p-value.K3": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "p-value.F": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true
+        },
+        "fixed-effect.K1": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "fixed-effect.K2": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": 2,
+          "context_supported": true
+        },
+        "fixed-effect.K3": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "fixed-effect.F": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true
+        },
+        "chi-square-test.K1": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": 3,
+          "context_supported": true
+        },
+        "chi-square-test.K2": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "chi-square-test.K3": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "chi-square-test.F": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true
+        },
+        "t-test.K1": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "t-test.K2": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": 2,
+          "context_supported": true
+        },
+        "t-test.K3": {
+          "page_supported": false,
+          "external_supported": false,
+          "joint_supported": false,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "t-test.F": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true
+        }
+      }
+    },
+    "optimized_v2": {
+      "candidate_pool_supported": 18,
+      "candidate_top8_supported": 12,
+      "question_supported": 15,
+      "page_supported": 17,
+      "joint_supported": 25,
+      "complete_pages": 4,
+      "context_confirmed_support_passages": {
+        "supported": 29,
+        "returned": 131
+      },
+      "by_requirement": {
+        "missing-data.K1": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 1,
+          "context_supported": true
+        },
+        "missing-data.K2": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 2,
+          "context_supported": true
+        },
+        "missing-data.K3": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 1,
+          "context_supported": true
+        },
+        "manova.K1": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 3,
+          "context_supported": true
+        },
+        "manova.K2": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 1,
+          "context_supported": true
+        },
+        "manova.K3": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 3,
+          "context_supported": true
+        },
+        "main-effect.K1": {
+          "page_supported": false,
+          "external_supported": false,
+          "joint_supported": false,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "main-effect.K2": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 6,
+          "context_supported": true
+        },
+        "main-effect.K3": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 1,
+          "context_supported": true
+        },
+        "euclidean-distance.K1": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "euclidean-distance.K2": {
+          "page_supported": false,
+          "external_supported": false,
+          "joint_supported": false,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "euclidean-distance.K3": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": 9,
+          "context_supported": true
+        },
+        "euclidean-distance.F": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true
+        },
+        "p-value.K1": {
+          "page_supported": true,
+          "external_supported": false,
+          "joint_supported": true,
+          "candidate_rank": 23,
+          "context_supported": true
+        },
+        "p-value.K2": {
+          "page_supported": false,
+          "external_supported": false,
+          "joint_supported": false,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "p-value.K3": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "p-value.F": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true
+        },
+        "fixed-effect.K1": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": 16,
+          "context_supported": false
+        },
+        "fixed-effect.K2": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": 2,
+          "context_supported": true
+        },
+        "fixed-effect.K3": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": 2,
+          "context_supported": true
+        },
+        "fixed-effect.F": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true
+        },
+        "chi-square-test.K1": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": 6,
+          "context_supported": true
+        },
+        "chi-square-test.K2": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": 32,
+          "context_supported": true
+        },
+        "chi-square-test.K3": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": null,
+          "context_supported": false
+        },
+        "chi-square-test.F": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true
+        },
+        "t-test.K1": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": 35,
+          "context_supported": true
+        },
+        "t-test.K2": {
+          "page_supported": true,
+          "external_supported": true,
+          "joint_supported": true,
+          "candidate_rank": 4,
+          "context_supported": false
+        },
+        "t-test.K3": {
+          "page_supported": false,
+          "external_supported": false,
+          "joint_supported": false,
+          "candidate_rank": 43,
+          "context_supported": false
+        },
+        "t-test.F": {
+          "page_supported": false,
+          "external_supported": true,
+          "joint_supported": true
+        }
+      }
     }
-  },
-  "registered_scientific_issues": {
-    "reviewed_major_spans_locatable": 57,
-    "minor_condition_notes": 6,
-    "final_queries_bound_to_current_inputs": 40,
-    "public_evidence_units_checked": 1387,
-    "known_major_span_leaks": 0,
-    "approved_formula_routes": 22,
-    "approved_concept_routes": 2
-  },
-  "optional_experiments": {
-    "all_frozen_text_citation_groups": 86,
-    "default_context_coverage": 59,
-    "joint_rerank_context_coverage": 57,
-    "relation_expansion_context_coverage": 57,
-    "new_relation_rows_in_top8_across_48_terms": 0,
-    "odds_ratio_first_relevant_rank": [
-      8,
-      1
-    ]
   }
 }
